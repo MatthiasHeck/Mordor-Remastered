@@ -46,7 +46,8 @@ h2{font-size:28px;line-height:1.25;margin:55px 0 20px;color:#173f36;font-weight:
 <a href="#section-27">27 Sources and supporting files</a></nav></aside>
 <main id="document"><article><div class="tools"><span>27 sections · numerical appendices · linked evidence</span><button type="button" onclick="window.print()">Print</button><a href="Mordor%20Remastered%20Design%20Document.md">Markdown source</a></div><h1>Mordor The Depths of Dejenol Remastered</h1>
 <h2>Game design and preservation specification</h2>
-<p><strong>Document version:</strong> 1.2 · <strong>Research date:</strong> October 9, 2026 · <strong>Scope:</strong> a faithful remaster of David Allen’s 1995 game.</p>
+<p><strong>Document version:</strong> 1.3 · <strong>Research date:</strong> October 9, 2026 · <strong>Scope:</strong> a faithful remaster of David Allen’s 1995 game.</p>
+<p><strong>Revision 1.3:</strong> a further pass through the supplied original decompilation traces shop charge bundles, combining and uncurse behavior, companion services, hired and waiting rescue, pending raises, recovery penalties, town healing and timer guards. It adds source-linked algorithms and runtime fixtures, and records new discrepancies in inventory indexing, timing and suspicious recovery/ailment branches. These are static interpretations, not passed original-game tests. See the <a href="research/original-followup-review.md">follow-up review and source anchors</a> and section 26.13. Original files and prior numerical exports remain unchanged.</p>
 <p><strong>Revision 1.2:</strong> the supplied original files add a fingerprinted local baseline, 105 spell records, complete fifteen-floor cell data, race creation pools, and static evidence for HP growth, healing, spell access, item use and payment rules. Original-file exports remain separate from earlier printed/help tables. See the <a href="research/local-original-review.md">original-file review and source anchors</a> and section 26.12. The supplied <code>Mordor</code> folder is read-only; all new work is in <code>Mordor Remastered</code>.</p>
 <p><strong>Revision 1.1:</strong> a second internet research pass expands character growth, spell arbitration, item rules, shop transactions, and fidelity tests. The supplied DungeonsOfDejremake project is pinned to a specific revision and evaluated as a comparison source. Its intentional rules changes are excluded. See the <a href="research/second-pass-review.md">review and evidence record</a>.</p>
 <p>The remaster should reproduce the original game’s character development, dungeon, enemies, equipment, spells, economy, discoveries, and consequences, while rebuilding its presentation and software for modern computers. A familiar strategy must work for the same reasons, an original danger must remain dangerous, and a numerical advantage must not appear merely because the renderer or interface changed.</p>
@@ -250,6 +251,9 @@ h2{font-size:28px;line-height:1.25;margin:55px 0 20px;color:#173f36;font-weight:
 <p><strong>Proposed display:</strong> a compact companion panel under its owner, showing information that character legitimately knows. Show binding or loyalty using the original numeric scale where exposed. Make warnings persistent and readable without introducing advance knowledge of the next obedience roll.</p>
 <h3>7.3 Acceptance</h3>
 <p>Test solo, two-, three-, and four-character parties; every party slot as leader; an incapacitated leader; mixed living and dead members; full companion capacity; a charm attempt at capacity; companion escape mid-encounter; ownership transfers; and party dissolution after a total defeat. Verify how XP and treasure are allocated in each case.</p>
+<h3>7.4 Companion purchase, binding and revival</h3>
+<p><strong>Static decompiler evidence:</strong> Holding and Confinement purchases scan four slots, reject a full roster before payment, start the creature at its base HP and full identification, and set binding to <code>min(10, 5 + monster first-level field)</code>. Paid binding raises the current value by four to a maximum of twelve. Negative binding identifies a voluntary companion that the UI refuses to bind; retain the sign in storage. These purchase/service rules do not define obedience or the binding produced by spells.</p>
+<p>Companion raising is a separate Morgue transaction. Its source-derived fee is <code>max HP × 1244.34 × monster first-level field</code>, assigned to a VB Long. After payment, failure occurs when <code>Int(Rnd × 100) &gt; min(98, 75 + monster CON)</code>: failure removes the companion identity, success restores maximum HP. Preserve the strict comparison and loss outcome; a threshold of 98 accepts 99 of the 100 possible integer roll values, so it must not be simplified to a nominal 98% roll. Verify conversion and RNG behavior before certification. <a href="research/original-followup-review.md">Companion source paths and binding-price caveat</a>.</p>
 <h2 id="section-8">8 Combat and simulation time</h2>
 <h3>8.1 Combat model</h3>
 <p>Preserve the original real-time combat model. Do not redesign it into turn-based initiative, action combat, or a timer that advances only on player input. The official product description explicitly calls out real-time action and combat. <a href="https://www.decklinsdemise.com/mordor.htm">Official product page</a>.</p>
@@ -269,7 +273,10 @@ h2{font-size:28px;line-height:1.25;margin:55px 0 20px;color:#173f36;font-weight:
 <h3>8.6 Physical swing chaining and opening attacks</h3>
 <p><strong>Later official help documents:</strong> an additional weapon or guild swing requires the preceding swing to kill its target. In its three-swing example, killing the first creature and only wounding the second prevents a third swing. A multiple-swing field must therefore not become a fixed number of attacks against a surviving enemy. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>5hmud3.htm</code> and <code>d7eivm.htm</code>.</p>
 <p>Compare miss, nonlethal hit, lethal hit, immunity, critical kill, last target in a group, and last hostile group. Determine whether excess swings can cross groups and how guild and weapon contributions combine. The candidate item&#39;s <code>extra_swings</code> column is a parser label; validate whether the stored quantity is a total, an increment, or another parameter before adding it to anything.</p>
-<p>Do not adopt the comparison project&#39;s approximately one-second combat interval or its fixed player-first description. Its own changelog describes a hostile opening-strike exception. Measure original surprise, peaceful-to-hostile transitions, and withdrawal independently; preserve the two-second default as the later-help comparison target until confirmed. No new Tank action or aggro redirection enters the faithful rules. <a href="https://github.com/matteo-prosperi/DungeonsOfDejremake/blob/c932f12ec163693e120a4dc236610619f6af96ab/docs/help/dungeon.md">Comparison dungeon guide</a>, <a href="https://github.com/matteo-prosperi/DungeonsOfDejremake/blob/c932f12ec163693e120a4dc236610619f6af96ab/docs/help/changelog.md">changelog</a>.</p>
+<p>The comparison project&#39;s approximately one-second combat interval and fixed player-first description cannot establish original behavior. Its own changelog describes a hostile opening-strike exception. Measure original surprise, peaceful-to-hostile transitions, and withdrawal independently. Section 8.7 now supplies independent original-source timer evidence to compare with the later-help two-second target. No new Tank action or aggro redirection enters the faithful rules. <a href="https://github.com/matteo-prosperi/DungeonsOfDejremake/blob/c932f12ec163693e120a4dc236610619f6af96ab/docs/help/dungeon.md">Comparison dungeon guide</a>, <a href="https://github.com/matteo-prosperi/DungeonsOfDejremake/blob/c932f12ec163693e120a4dc236610619f6af96ab/docs/help/changelog.md">changelog</a>.</p>
+<h3>8.7 Source timer initialization and minimized-window guards</h3>
+<p><strong>Static decompiler evidence:</strong> dungeon initialization calls a routine assigning <strong>1,000 ms</strong> to the combat timer; its callback invokes the combat-round dispatcher. This creates a concrete discrepancy with the later-help two-second default, but does not alone establish the interval between successful attacks. Recover cooldowns, other dispatcher callers, state guards and original UI timer behavior before freezing the scheduler. F09 remains open.</p>
+<p>Combat and ailment callbacks are separate and both skip work while a shared flag is set. The main-window resize handler sets that flag when minimized and clears it in the maximized branch. Treat minimize, restore-to-normal, restore-to-maximized, focus loss and modal dialogs as separate experiments. Do not infer universal focus-loss pause or the ailment cadence from the combat interval. <a href="research/original-followup-review.md">Timer call chain and source anchors</a>.</p>
 <h2 id="section-9">9 Magic and status effects</h2>
 <h3>9.1 Spell model</h3>
 <p>Preserve each original spell’s identity, category, guild access, required spell level, stat requirements, SP cost calculation, power, targets, effect limits, resistances, duration, failure behavior, and experience or side effects. Preserve whether it acts on a character, companion, enemy, group, multiple groups, the party, a location, or an item.</p>
@@ -345,6 +352,8 @@ h2{font-size:28px;line-height:1.25;margin:55px 0 20px;color:#173f36;font-weight:
 <p><strong>Extracted file facts:</strong> MDATA2 contains <strong>105 physical spell records and 103 distinct embedded IDs</strong>, compared with the earlier later-help transcription&#39;s 100 category entries. ID 93 is shared by Mass Sight Veil and Mass Protection; ID 94 by Fate and She&#39;tal. Preserve physical identity and names rather than deduplicating by ID. All 132 positive item-to-spell references match the embedded ID at their one-based target record. ID 0 is Charm of Opening and must not become a universal null value.</p>
 <p>The local guild/category matrix derives 205 guild/spell relations across 101 physical spells. Fate, She&#39;tal, Life Domination and Shock Lance have base level 50 and no ordinary access in that matrix; retain them without inventing unlocks. Access involves category permission/cap, base level times category multiplier, spell level <code>floor(guild level / 2 + 0.5)</code>, and effective stat requirements. The resulting guild-level thresholds remain source-derived candidates until verified.</p>
 <p>Local base levels and requirements disagree with later help in nine compared fields, including Firebolt level 1 rather than 2 and Blue Flame 3 rather than 4. Preserve edition-specific values and explicit aliases. Stored cost parameters are not final SP prices; the detail display adds one to the stored power modifier, whereas runtime equations can use the raw coefficient. <a href="research/local-original/spell-reference.md">Complete original spell table</a>, <a href="research/local-original/guild-spell-access-local.csv">guild access</a>, <a href="research/local-original/spell-help-comparison.json">help comparison</a>.</p>
+<h3>9.9 Source ailment-tick candidates</h3>
+<p><strong>Static decompiler evidence:</strong> the ailment callback rolls separately for poison and disease. Poison computes <code>Int(Rnd × 200) + 2 × (effective CON − 10) − 2 × poison severity</code>; a result above 185 clears it, otherwise it removes two HP. Disease uses a threshold above 195 and otherwise removes one HP, but the displayed disease expression also reads <strong>poison severity</strong>. Preserve this as a suspected source/decompiler defect (F23); do not silently substitute disease severity. Test poison alone, disease alone, both, and stat modifiers, including RNG ordering with identification and environmental work in the same callback. Tick duration remains unresolved. <a href="research/original-followup-review.md">Ailment evidence</a>.</p>
 <h2 id="section-10">10 Dungeon and exploration</h2>
 <h3>10.1 Geometry</h3>
 <p>Preserve fifteen floors with their original layouts. A historical retrospective describes each floor as 30 by 30 cells, giving 13,500 coordinate positions across the full dungeon; that includes solid rock and is not a count of walkable spaces. <a href="https://crpgbook.wordpress.com/review-index/1995-mordor-depths-of-dejenol/">CRPG Book retrospective</a>. The supplied original MDATA11 now provides those complete cell records; section 10.5 defines the remaining behavioral checks.</p>
@@ -391,6 +400,7 @@ h2{font-size:28px;line-height:1.25;margin:55px 0 20px;color:#173f36;font-weight:
 <h3>12.5 Capacity, equipment classes, and action distinctions</h3>
 <p><strong>Later official help documents:</strong> forty character item slots, plus the separately documented forty bank slots. Equipment is constrained by item class: only one equipped member of a class, including rings or stones, rather than a modern assumption of two ring slots. Subclasses such as swords and daggers belong to broader equipment classes. Some consumables and casting objects can be Used without being Equipped. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>5hmud3.htm</code>.</p>
 <p>Implement <code>Equip</code>, <code>Unequip</code>, <code>Use</code>, <code>Give</code>, <code>Drop</code>, and town services as separate commands with their own eligibility and consequences. A split equipment/pack view must still use the original occupancy accounting. Verify whether equipped items consume the forty slots, how charges occupy slots, and where a failed transfer leaves the item. Do not infer extra carrying space from a redesigned screen. The source&#39;s category examples do not establish a complete slot enumeration; derive that from the approved item-class data.</p>
+<p><strong>New static boundary evidence:</strong> Store purchase searches indexes <strong>1 through 39</strong>, excluding index zero. This does not establish a universal 39-item limit. F22 requires comparing purchase, loot, transfer, equipment and index-zero occupancy before settling capacity and display numbering. <a href="research/original-followup-review.md">Purchase handler</a>.</p>
 <h3>12.6 Class restriction and alignment decision table</h3>
 <p>The later help supplies the following behavioral targets. Exact thresholds, affected bonuses, rounding, and exceptions remain original-build checks. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>5hmud3.htm</code> and <code>9dns9..htm</code>.</p>
 <div class="table-wrap" tabindex="0"><table>
@@ -440,6 +450,8 @@ h2{font-size:28px;line-height:1.25;margin:55px 0 20px;color:#173f36;font-weight:
 <h3>12.9 Local item structure and spell references</h3>
 <p>The supplied MDATA3 matches the public item bytes exactly, corroborating all 366 candidate records for this local input. MDATA1 adds 35 item subtypes and 24 classes, including a special −1 equippable value for Miscellaneous Object; preserve raw values until their predicates are traced. The decompiled item structure separates charges and the next field into 16-bit values, but the latter&#39;s purpose is not established by a third-party label.</p>
 <p>The Crest of Thief&#39;s spell index 1 / spell ID 0 resolves to Charm of Opening in MDATA2. Preserve both one-based record references and embedded IDs. The charged spell-item branch of <code>sub1577</code> rejects mismatched alignment before charge debit; a later general-item path debits first. Test both with charged and depleted instances rather than implementing the help summary indiscriminately. <a href="research/local-original/items-local.csv">Local item records</a>, <a href="research/local-original/item-spell-links-local.csv">item spell links</a>, <a href="research/local-original-review.md">source interpretation</a>.</p>
+<h3>12.10 Uncurse as separation and identification</h3>
+<p><strong>Static decompiler evidence:</strong> the Store rejects uncurse for an uncursed or unequipped instance. After payment it forces separation, fully identifies the instance and updates knowledge; it clears the instance curse only if the item definition is not intrinsically cursed. Thus removal can leave an inherently cursed object dangerous to equip again. The fee routine returns <code>(.8 × base price) / .5</code> through a VB Long. Keep separation, identification and curse removal as distinct state changes, with numeric conversion and re-equipping checked in the original. <a href="research/original-followup-review.md">Uncurse handlers and fee</a>.</p>
 <h2 id="section-13">13 Treasure and economy</h2>
 <h3>13.1 Containers and traps</h3>
 <p><strong>Later official help documents:</strong> boxes and chests have distinct rewards; recognizing a trap and disarming it are different checks; magically locked containers require appropriate magic; opening during combat consumes rounds. Listed traps include Disease Spores, Poison Gas, Exploding Box, Fire Trap, Slime, Fate, Teleporter, Fear, Withering, and Blackout. Withering adds four weeks of age; a Teleporter trap moves the opener rather than the entire party. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>36mud0.htm</code>, Encounters Treasure.</p>
@@ -453,13 +465,19 @@ h2{font-size:28px;line-height:1.25;margin:55px 0 20px;color:#173f36;font-weight:
 <p><strong>Proposed transaction behavior:</strong> show a quote based on current legitimate knowledge; commit the original action atomically; show its actual outcome. A player cannot undo a failed risky service. Preventing a duplicate click is appropriate; refunding an unfavorable result is a rules change.</p>
 <h3>13.4 Charge transactions and shop stock</h3>
 <p>Use category-specific charge rules. Later official help distinguishes rechargeable spell-casting equipment from consumables: depleted swords/artifacts can reappear charged after sale, whereas an insufficient remainder of a potion need not generate a stock unit. It also documents selling charge chunks and combining compatible items into the first selected instance. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>irl356.htm</code>.</p>
-<p>The comparison store guide&#39;s broad statement that original partially charged goods disappeared is therefore not safe to apply across all item types. <strong>F17 remains open</strong> for the selected original build. Neither discard all partial-charge objects nor recharge all consumables. <a href="https://github.com/matteo-prosperi/DungeonsOfDejremake/blob/c932f12ec163693e120a4dc236610619f6af96ab/docs/help/general-store.md">Comparison store guide</a>.</p>
+<p>The comparison store guide&#39;s broad statement that original partially charged goods disappeared is therefore not safe to apply across all item types. <strong>F17 now has subtype-specific static evidence in section 13.5, but remains open for runtime verification</strong> in the selected original build. Neither discard all partial-charge objects nor recharge all consumables. <a href="https://github.com/matteo-prosperi/DungeonsOfDejremake/blob/c932f12ec163693e120a4dc236610619f6af96ab/docs/help/general-store.md">Comparison store guide</a>.</p>
 <p>For each supported service define a transaction record containing source instances, type and alignment, knowledge, charges before/after, quote, payment accounts, stock change and surviving instance. Test charges at zero, one, one below a stock unit, exactly a unit, and above a unit. Check charge overflow and restrictions on combining alignment variants; do not assume equal names are sufficient. Cancellation leaves all fields unchanged; a completed original action applies all its consequences together.</p>
 <p>Town payment fallback is distinct from automatic banking. <strong>Static decompiler evidence:</strong> <code>Module6.fn114E</code> spends carried gold first; if that is insufficient but combined funds cover the charge, it zeros carried gold and deducts only the remainder from the bank. Insufficient combined funds reject payment. Validate callers and numeric boundaries per service. Do not deposit carried funds as an implementation shortcut. <a href="research/local-original-review.md">Original payment routine</a>.</p>
+<h3>13.5 Original Store charge and stock transitions</h3>
+<p><strong>Static decompiler evidence:</strong> the bundle/combining set is exactly subtype codes <strong>23–28, 30 and 31</strong>: Potion, Scroll, Tome, Dust, Crystal, Rod, Sphere and Cube. Stone, Artifact and Guild Crest are outside this list. Do not confuse these subtypes with equipment classes.</p>
+<p>For a bundle subtype with positive base charges B, selling C&lt;B removes the instance without creating stock; C=B removes it and permits one stock unit; C&gt;B retains C−B charges and permits one stock unit. Other subtypes, or definitions without positive base charges, remove the instance and permit stock. Additional guards can suppress stocking: the first-level-zero/default-alignment case, an inherently cursed definition, or a selected-alignment stock bucket already at nine. Purchased instances receive base charges. A completed sale and increased stock are therefore separate outcomes.</p>
+<p>Combining requires full identification (raw field zero), at least two selections, an allowed subtype, the same item definition and matching alignment. The first selection receives accepted donors&#39; charges; donor identities are cleared. Mismatched donors are handled within the loop after the initial identification precheck, so preserve partial acceptance if runtime behavior confirms it. Transaction atomicity must prevent interrupted writes without changing which donors the original accepts. Overflow and duplicate selections remain tests, not permission to add a new cap.</p>
+<p>Sell quotes depend on alignment stock, identification, definition curse and charge differences. The <a href="research/original-followup-review.md">follow-up review</a> records the candidate equation and intermediate VB types. The purchase-price function contains an unassigned local index in a charge adjustment; its intended behavior is unresolved. Preserve this blocker in F12 rather than replacing prices with a fixed fraction of base value. <a href="research/local-original/item-subtypes-local.csv">Subtype export</a>.</p>
 <h2 id="section-14">14 Town services and guild quests</h2>
 <h3>14.1 Town structure</h3>
 <p>Use an illustrated, menu-accessible town hub with direct access to Store, Bank, Guilds, Library, Morgue, Seer, and Holding and Confinement. It should be quicker to read, but it must not add a travel-time simulation between shops or a free-healing inn with new rules. Retain the original service boundaries and shared world state.</p>
 <p><strong>Later official help documents:</strong> returning to town restores HP and SP, treats poison and disease, and heals companions, while recovery advances age. Town is therefore a recovery location with a time consequence. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>swkvkg.htm</code>, The City.</p>
+<p><strong>Static decompiler evidence refines this:</strong> town loading processes party members individually, refills SP from the natural-stat capacity routine, clears poison, disease and paralysis, and heals only companions whose current HP is positive. Dead companions require revival. HP recovery adds age according to missing-HP percentage; section 15.7 records the candidate calculation and world-time caveat. Town entry also updates and releases a carried character&#39;s saved location. <a href="research/original-followup-review.md">Town source path</a>.</p>
 <h3>14.2 Bank</h3>
 <p><strong>Later official help documents:</strong> forty stored items, protected banked possessions, access limited to town, and distinct party operations for pooling or depositing carried and banked gold. Preserve account ownership and exactly which funds each service may draw from. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>swjne9.htm</code>, The City Bank.</p>
 <p><strong>Proposed UI:</strong> label source and destination accounts explicitly. A preview explains which balances will change before a pooling command executes. A full bank must reject an extra item without deleting or duplicating it. Carried gold stays carried until the player performs an original-equivalent deposit.</p>
@@ -470,6 +488,7 @@ h2{font-size:28px;line-height:1.25;margin:55px 0 20px;color:#173f36;font-weight:
 <p>Keep paid inquiries and uncertain results. The Seer must not become a guaranteed waypoint service. Preserve required target names, repeated attempts, depth-dependent difficulty, answer precision, and the distinction between locating a character and seeking a monster or an item. Show the actual answer with a transcript so the player need not memorize a disappearing dialog. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>1f6.qsp.htm</code>, The City Seer.</p>
 <h3>14.5 Holding and Confinement</h3>
 <p>Keep creature purchase, sale, identification, binding, and realignment as separate actions. Preserve alignment-specific stock, original binding on purchase, failed realignment outcomes, and restrictions on rebinding voluntary companions. Selling a dangerous companion must retain its original distinction from dismissing one in the dungeon. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>6m9o_0i.htm</code>, Holding and Confinement.</p>
+<p>Section 7.4 adds original-source purchase and binding limits. The binding-price function uses a different factor near its cap than below it; verify binding levels 7–12 and voluntary-companion rejection before adopting a uniform price per point. <a href="research/original-followup-review.md">Binding source evidence</a>.</p>
 <h3>14.6 Service acceptance</h3>
 <p>For every service compare eligibility, quote, payment source, success or failure, age change, inventory change, stock mutation, knowledge gained, and saved result. Test insufficient carried gold with sufficient bank funds, insufficient combined funds, a full container, a dead character, changed prices between selection and commitment, and crash recovery immediately after payment.</p>
 <h3>14.7 Quest parameters and assignment gates</h3>
@@ -487,6 +506,18 @@ h2{font-size:28px;line-height:1.25;margin:55px 0 20px;color:#173f36;font-weight:
 <p>Keep permanent stat loss and failed revival outcomes. Preserve body access restrictions, including the original Hide option if supported by the chosen baseline. Store any local character password as a modern protected credential rather than reproducing insecure historical storage; passwords do not become an online-account requirement.</p>
 <h3>15.4 Acceptance</h3>
 <p>Test ordinary death, party wipe, stoning, rock entombment, absent rescuers, failed rescue, successful rescue, failed raise, repeated raises, low Constitution, advanced relative racial age, inventory retrieval, and loading during every intermediate state. Verify that a body cannot be carried twice, duplicated by load, or raised while a stale copy remains in the dungeon.</p>
+<h3>15.5 Hired rescue versus waiting</h3>
+<p><strong>Static decompiler evidence:</strong> hiring rescuers quotes <code>372567.52 × ln(F + 1) × F</code>, assigned to a VB Long, using the <strong>supplied</strong> floor F. Payment precedes the outcome. Search proceeds only if <code>Rnd × 100 &gt; 4F</code>, then requires the correct floor and differences strictly below eight on <strong>both</strong> X and Y. The tolerance is per-axis, not a radius. Keep failed expedition and inaccurate-location outcomes separate; the shown handler refunds neither.</p>
+<p>A living target at ≤20% maximum HP is moved to town; a healthier target is left in place. Rock is reported without retrieval; other fatal states are moved to the Morgue. The injured-target message claims healing, but this handler visibly changes location rather than HP. Verify when healing actually occurs before implementing it at search completion.</p>
+<p>Waiting for rescue uses a separate simulated-day loop. Its draw denominator changes from 10,000 to 1,000 after a depth-dependent counter threshold; floor 1/area≤18 and a raw automap flag supply other branches. It increments elapsed days before the success draw, moves the casualty to town on success, adds those days to age and invokes recovery processing. Preserve this algorithm separately from paid search; the <a href="research/original-followup-review.md">review</a> gives the expressions, branch order and unresolved flag meaning. Neither service grants free resurrection.</p>
+<h3>15.6 Pending raises, fees and failure consequences</h3>
+<p><strong>Static decompiler evidence:</strong> raising another character writes a pending threshold, initiator name, method and location to the target&#39;s saved record. The target later accepts the offer and rolls for recovery. Preserve the pending state across saves; do not clear death or grant HP at payment time. Successful recovery processing restores 1 HP for source methods 20/21 and maximum HP for 22/23. Rock retains additional restrictions and special handling requiring validation.</p>
+<p>The source quotes a character raise from <code>2912.32 × (max HP / 1.5)</code>. Saved-target quotation uses Long conversion while the immediate self-service path explicitly uses <code>Int</code>; verify the difference. Threshold calculation uses natural CON and method, clamped to 10–98, but saved-target Morgue and self-service paths supply different method inputs. Both use a strict <code>Int(Rnd × 100) &gt; threshold</code> failure check. Do not replace these paths with one percentage formula. A subsidy applies only when the highest guild level is ≤5 and combined carried/banked funds cannot cover the fee.</p>
+<p>A failed raise can enter a <strong>complications recovery</strong> branch: lose five from each natural stat with racial-minimum floors, age 5,475 days, reduce maximum HP to <code>Int(max HP / 1.2)</code>, and recheck equipment eligibility. Its age/racial-lifespan roll and Rock override are in the <a href="research/original-followup-review.md">source review</a>. Returning true lets the caller continue recovery; failure is not invariably a terminal rejection. The alternate failure branch adds 54 days and clears pending fields.</p>
+<p>Ordinary recovery in these callers adds 54 days; stoning selects 84 and loses one CON. Morgue recovery has an additional <code>Rnd × 100 &lt; 50 − 2 × CON</code> loss check. Some branches apply complications and normal recovery time cumulatively; the immediate and pending paths also differ in visible CON-floor handling. Preserve call order and record discrepancies in F10/F23 until original tests establish the result.</p>
+<h3>15.7 Recovery age and natural-death boundaries</h3>
+<p><strong>Static decompiler evidence:</strong> the town rest helper assigns <code>(100 − current HP / maximum HP × 100) / 3.25</code> to an Integer day count, fills HP and adds that count to age. Explicit-day callers instead add their supplied duration. Party-index-zero rest invokes world-update helpers, which does not establish sum-of-party or maximum-party recovery time. Test unequal injuries, party order, rounding, and full HP with depleted SP.</p>
+<p>The ailment callback starts an age check at relative racial age ≥98%, with <code>Int(Rnd × 100) &lt; 5 + ln(relative age percent − 98)</code>. The displayed expression is undefined exactly at 98%; do not invent an epsilon or guaranteed birthday death. F23 requires checking the original error/control flow and adjacent ages. <a href="research/original-followup-review.md">Age helper, town caller and ailment callback</a>.</p>
 <h2 id="section-16">16 Discovery and information design</h2>
 <p>Knowledge is part of progression. The remaster must maintain separate facts for encountered, partially identified, fully identified, currently observed, and remembered information. Map discovery, item knowledge, monster knowledge, and last-known locations must follow their original sharing scope.</p>
 <p><strong>Later official help documents:</strong> a shared library that grows through identification, historical location and discovery information, and fuller monster identification through companion study or services. Simulated other explorers can affect knowledge and stock. Preserve those systems rather than replacing them with a complete encyclopedia at first launch. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>zhdvci.htm</code>, The Library.</p>
@@ -595,6 +626,7 @@ h2{font-size:28px;line-height:1.25;margin:55px 0 20px;color:#173f36;font-weight:
 <h3>21.3 Original save import</h3>
 <p><strong>Proposed feature, conditional on format verification:</strong> import a copy of a supported legacy world. Fingerprint the source edition, parse all records, preserve unresolved fields, and show a migration report. Never overwrite the original files. Import characters, map/library knowledge, guild histories, quests, holdings, companions, deaths, and world stock together. Unsupported or modified data must receive a clear report, not silent repair.</p>
 <p>Export back to the original binary format is outside launch scope because lossy conversion and undocumented fields can corrupt a legacy world. If parity cannot be established, release new campaigns first and label legacy import as unavailable rather than presenting an approximate transfer as faithful.</p>
+<p>Pending resurrection is part of compatibility, not transient UI state: preserve initiator, threshold, method, location and fatal condition until original-equivalent acceptance/processing. A body location update or paid raise must not be mistaken for completed revival. Test importing before payment, after a pending offer is stored, and after acceptance or complications. <a href="research/original-followup-review.md">Saved-state evidence</a>.</p>
 <h3>21.4 Cloud and local profiles</h3>
 <p>Offline local play requires no account. Optional cloud synchronization is a later convenience, and must synchronize a whole consistent world. A conflict preserves both versions and asks which world to continue; it never merges gold or inventories independently. Allow separate worlds with separate progression and discoveries, subject to reference roster rules within each world.</p>
 <h2 id="section-22">22 Software and data architecture</h2>
@@ -854,6 +886,78 @@ h2{font-size:28px;line-height:1.25;margin:55px 0 20px;color:#173f36;font-weight:
 <h3>23.7 Original-file audit and new comparison cases</h3>
 <p>Completed static checks compare installed and packaged inputs, parse declared record counts, preserve duplicate IDs, compare public/local item and monster fields, compare selected printed race/guild fields, resolve every positive item-spell reference and extract all fifteen floors. These checks establish data consistency, not gameplay equivalence. The whole source tree has a before/after path, size and SHA256 comparison; see the <a href="research/local-original/source-preservation-check.json">preservation report</a>.</p>
 <p>Add original/remaster fixtures for all nine creation pools; natural versus modified SP and A/D; every HP breakpoint and the 999 cap; both duplicate spell-ID pairs; ID-zero item casting; active-guild versus fixed-item healing; alignment failures before/after charge debit; quest levels 4/5 and 15/16; split cash/bank payments; and every floor&#39;s first/last cell, area boundary and transition. Check the Dark Shape field against the chosen source and original library/loot behavior. Required runtime fixtures remain outstanding; do not label the static audit as passing those tests.</p>
+<h3>23.8 Follow-up source comparison cases</h3>
+<p>These are <strong>unexecuted original/remaster test specifications</strong>. Revision 1.3&#39;s completed checks cover source hashes, anchor validity, unchanged inputs and document structure; they do not pass these behavioral cases.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>Case</th>
+<th>Controlled setup</th>
+<th>Required observations</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>V17 Charge bundles</td>
+<td>Each of eight subtypes; charges 0/B−1/B/B+1/2B; compare Stone/Artifact/Crest</td>
+<td>Quote, remaining instance, charge debit, stock and repurchase charges</td>
+</tr>
+<tr>
+<td>V18 Stock and knowledge</td>
+<td>Alignment bucket 0/1/8/9; another alignment stocked; each identification state; cursed definition</td>
+<td>Sell/identify/buy quotes, conversion, no-stock sale outcomes</td>
+</tr>
+<tr>
+<td>V19 Combining and uncurse</td>
+<td>Mixed donors, unknown item, mismatched alignment, duplicate index, near-overflow charges; inherent/instance curse</td>
+<td>Precheck versus partial acceptance, surviving identity, separation and retained curse</td>
+</tr>
+<tr>
+<td>V20 Inventory index zero</td>
+<td>Only index zero empty, then only index 39 empty; repeat purchase/loot/give</td>
+<td>Actual usable slots, rejection before payment, no lost item</td>
+</tr>
+<tr>
+<td>V21 Companion services</td>
+<td>Four occupied slots; binding 7–12 and negative; dead companion</td>
+<td>Purchase rejection, binding increments/fees, revival fee, success HP and failure removal</td>
+</tr>
+<tr>
+<td>V22 Hired search</td>
+<td>Floors 1/15; coordinate differences 7/8 on each axis; wrong floor; HP around 20%; Rock</td>
+<td>Fee/debit before result, search branches, returned location and actual HP before/after load</td>
+</tr>
+<tr>
+<td>V23 Wait for rescue</td>
+<td>Floor/area boundary, raw flag 23, draws around threshold and denominator change</td>
+<td>Elapsed-day order, aging, location and separate raise requirement</td>
+</tr>
+<tr>
+<td>V24 Pending raise</td>
+<td>Paid saved-target versus self-service; methods 20–23; accept/decline/reload</td>
+<td>Stored fields, quote rounding, threshold path, charge once, HP 1 versus max</td>
+</tr>
+<tr>
+<td>V25 Complications</td>
+<td>Highest guild 5/6, insufficient/sufficient funds, young/old, racial stat minima, stoning/Rock</td>
+<td>Subsidy, failure branch, stacked age, HP reduction, CON floors and equipment loss</td>
+</tr>
+<tr>
+<td>V26 Town recovery</td>
+<td>Different injury per party member, swap leader, full HP/empty SP, living/dead companions</td>
+<td>Per-character age rounding, world updates, status clearing and body release</td>
+</tr>
+<tr>
+<td>V27 Timer/pause</td>
+<td>Idle hostile/peaceful room; minimize and both restore states; focus/modal changes</td>
+<td>Callback and attack cadence, guard behavior, command interaction and no frame-rate dependence</td>
+</tr>
+<tr>
+<td>V28 Ailment/age anomalies</td>
+<td>Poison/disease separately/together, effective CON changes, relative age below/exactly/above 98%</td>
+<td>Severity source, draws, HP loss, original error path and any interrupted tick work</td>
+</tr>
+</tbody></table></div>
+<p>The <a href="research/original-followup-review.md">follow-up evidence review</a> supplies source anchors and caveats for each family. Preserve suspected defects as questions until executable comparison and an explicit change decision.</p>
 <h2 id="section-24">24 Production scope and milestones</h2>
 <h3>24.1 Deliverables</h3>
 <p>Launch scope includes the complete approved original rules and content; remastered desktop presentation; full keyboard/mouse control; accessible navigation and scalable UI; tested controller support; offline persistent worlds; documentation; and a fidelity report. Original-style assets and legacy-save import are conditional features requiring successful rights and compatibility work.</p>
@@ -976,26 +1080,26 @@ h2{font-size:28px;line-height:1.25;margin:55px 0 20px;color:#173f36;font-weight:
 <tr>
 <td>F09</td>
 <td>Combat math and clock</td>
-<td>Documented 2-second default and +50% Defend</td>
-<td>Verify scheduling, hit/damage, specials, XP and rounding</td>
+<td>Later-help 2-second default versus static 1,000 ms timer initialization; minimize guards located</td>
+<td>Measure effective cadence and pause behavior; recover hit/damage, specials, XP and rounding</td>
 </tr>
 <tr>
 <td>F10</td>
 <td>Death, age and rescue</td>
-<td>Distinct systems documented; exact probabilities unknown</td>
-<td>Measure formulas, time units and permanent losses</td>
+<td>Static hired/waiting rescue, pending raises, method-specific recovery and complications traced</td>
+<td>Verify threshold domains, path-specific fees/chances, time accumulation and losses</td>
 </tr>
 <tr>
 <td>F11</td>
 <td>Companions</td>
-<td>Four per character documented; caster-limit scope unclear</td>
-<td>Verify obedience, friendly fire, capacity and caster arbitration</td>
+<td>Four-slot purchase, binding 4-point increments/cap 12 and separate revival traced</td>
+<td>Verify service boundaries, obedience, friendly fire and caster arbitration</td>
 </tr>
 <tr>
 <td>F12</td>
 <td>Economy and world timers</td>
-<td>Services and shared stock documented; formulas incomplete</td>
-<td>Recover fees, charges, refresh and simulated explorers</td>
+<td>Static sale/stock/fee paths; buy-price routine references an unassigned local index</td>
+<td>Verify quote conversions and suspicious index, refresh and party world-time updates</td>
 </tr>
 <tr>
 <td>F13</td>
@@ -1024,8 +1128,8 @@ h2{font-size:28px;line-height:1.25;margin:55px 0 20px;color:#173f36;font-weight:
 <tr>
 <td>F17</td>
 <td>Partially charged sales</td>
-<td>Publisher help distinguishes consumables/equipment; remake summary generalizes</td>
-<td>Measure charge chunks, stock, and recharge by item category</td>
+<td>Static eight-subtype bundle set, remainder handling and stock guards recovered</td>
+<td>Verify charge boundaries, nine-unit stock limit and repurchase by subtype</td>
 </tr>
 <tr>
 <td>F18</td>
@@ -1050,6 +1154,18 @@ h2{font-size:28px;line-height:1.25;margin:55px 0 20px;color:#173f36;font-weight:
 <td>Charge debit on alignment failure</td>
 <td>Later help generalizes; static item paths differ in debit/exit order</td>
 <td>Compare spell-casting and general items across alignment pairs</td>
+</tr>
+<tr>
+<td>F22</td>
+<td>Inventory slot zero</td>
+<td>Forty slots documented; Store purchase scans only indexes 1–39</td>
+<td>Trace index-zero purpose and compare all acquisition/transfer paths</td>
+</tr>
+<tr>
+<td>F23</td>
+<td>Suspicious legacy branches</td>
+<td>Disease reads poison severity; age check takes ln(0) at exactly 98%; rescue healing message lacks local HP update; raise paths differ in CON floors</td>
+<td>Establish executable behavior and document any intentional correction before implementation</td>
 </tr>
 </tbody></table></div>
 <p>The Scavenger alignment row was rechecked visually during this document’s review: the printed card marks Good, Neutral, and Evil. It is <strong>not</strong> an unresolved conflict; the supporting CSV reflects the corrected transcription.</p>
@@ -2567,6 +2683,45 @@ h2{font-size:28px;line-height:1.25;margin:55px 0 20px;color:#173f36;font-weight:
 </tbody></table></div>
 <p><a href="research/local-original/dungeon-cells-local.csv">Cell records</a>, <a href="research/local-original/dungeon-areas-local.csv">room records</a>, <a href="research/local-original/dungeon-teleporters-local.csv">teleporters</a>, and <a href="research/local-original/dungeon-chutes-local.csv">chutes</a> retain unused slots. The parser reads 201 area slots per floor rather than trusting the area count as a physical record count. Terrain flags are stored as VB Currency scaled by 10,000.</p>
 <p>Source executable SHA256: <code>bd1332c37eb9d6a024d95ba1b70daf03c1a6c64c622964fb3d8bcc6297d06309</code>. Matching installed copies and installer members establish local consistency; they do not independently establish the distribution license or link every decompiled statement to an executable address.</p>
+<h3>26.13 Follow-up original-source findings — October 9, 2026</h3>
+<p>Revision 1.3 adds <strong>twelve finding groups (O01–O12)</strong> and <strong>twelve runtime case families (V17–V28)</strong>. These supplement the unchanged revision-1.2 data exports. The findings are static interpretations; runtime comparison remains outstanding.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>Source area</th>
+<th>Recovered candidate or explicit uncertainty</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Store</td>
+<td>Eight bundle subtypes; alignment-stock cap nine in sale path; full-identification combining; separation versus inherent curse; indexed quote formulas</td>
+</tr>
+<tr>
+<td>Inventory</td>
+<td>Purchase searches 1–39; index-zero purpose unresolved</td>
+</tr>
+<tr>
+<td>Companion services</td>
+<td>Four purchase slots; initial binding capped at ten; paid increments four/cap twelve; separate paid raise with permanent failure loss</td>
+</tr>
+<tr>
+<td>Rescue</td>
+<td>Depth-based paid search and per-axis coordinate tolerance; distinct simulated-day waiting algorithm</td>
+</tr>
+<tr>
+<td>Character raises</td>
+<td>Pending saved offer; method-dependent threshold and HP; novice subsidy; complications and cumulative age</td>
+</tr>
+<tr>
+<td>Town and age</td>
+<td>Missing-HP rest-day calculation; living-companion-only healing; separate party/world-time questions</td>
+</tr>
+<tr>
+<td>Timers and ailments</td>
+<td>1,000 ms combat initialization versus documented two seconds; shared minimize guard; poison/disease and exact-98%-age anomalies</td>
+</tr>
+</tbody></table></div>
+<p>Read the <a href="research/original-followup-review.md">full follow-up review</a>, <a href="research/original-followup/source-manifest.json">fingerprinted source anchors</a> and <a href="research/original-followup/source-preservation-check.json">whole-tree preservation check</a>. Reproduce provenance checks with <a href="research/original-followup-audit.py">original-followup-audit.py</a>. No runtime parity, complete formula recovery or executable/decompiler linkage is claimed.</p>
 <h2 id="section-27">27 Sources and supporting files</h2>
 <h3>27.1 Primary and technical sources</h3>
 <div class="table-wrap" tabindex="0"><table>
@@ -2634,6 +2789,7 @@ h2{font-size:28px;line-height:1.25;margin:55px 0 20px;color:#173f36;font-weight:
 <p>The <a href="https://github.com/matteo-prosperi/DungeonsOfDejremake">Dungeons of Dej’remake project</a> is used to identify changes that this remaster must avoid inheriting. Its public implementation source is not available for inspection; its documentation is not the original rules baseline. The second pass is pinned to commit <code>c932f12ec163693e120a4dc236610619f6af96ab</code> (October 1, 2026).</p>
 <h3>27.3 Supporting research files</h3>
 <ul>
+<li><a href="research/original-followup-review.md">Follow-up original-source review</a>, <a href="research/original-followup/source-manifest.json">source manifest</a>, and <a href="research/original-followup/source-preservation-check.json">revision-1.3 preservation check</a></li>
 <li><a href="research/local-original-review.md">Original-file review and source anchors</a>, <a href="research/local-original/extraction-summary.json">extraction summary</a>, and <a href="research/local-original/source-preservation-check.json">source preservation report</a></li>
 <li><a href="research/local-original/races-local.csv">Local races</a>, <a href="research/local-original/guilds-local.csv">guilds</a>, <a href="research/local-original/items-local.csv">items</a>, <a href="research/local-original/monsters-local.csv">monsters</a>, and <a href="research/local-original/spell-reference.md">spell reference</a></li>
 <li><a href="research/README.md">Research index and limitations</a></li>

@@ -2,7 +2,9 @@
 
 ## Game design and preservation specification
 
-**Document version:** 1.2 · **Research date:** October 9, 2026 · **Scope:** a faithful remaster of David Allen’s 1995 game.
+**Document version:** 1.3 · **Research date:** October 9, 2026 · **Scope:** a faithful remaster of David Allen’s 1995 game.
+
+**Revision 1.3:** a further pass through the supplied original decompilation traces shop charge bundles, combining and uncurse behavior, companion services, hired and waiting rescue, pending raises, recovery penalties, town healing and timer guards. It adds source-linked algorithms and runtime fixtures, and records new discrepancies in inventory indexing, timing and suspicious recovery/ailment branches. These are static interpretations, not passed original-game tests. See the [follow-up review and source anchors](research/original-followup-review.md) and section 26.13. Original files and prior numerical exports remain unchanged.
 
 **Revision 1.2:** the supplied original files add a fingerprinted local baseline, 105 spell records, complete fifteen-floor cell data, race creation pools, and static evidence for HP growth, healing, spell access, item use and payment rules. Original-file exports remain separate from earlier printed/help tables. See the [original-file review and source anchors](research/local-original-review.md) and section 26.12. The supplied `Mordor` folder is read-only; all new work is in `Mordor Remastered`.
 
@@ -248,6 +250,12 @@ Keep monster companions as a separate system from player-character slots. Import
 
 Test solo, two-, three-, and four-character parties; every party slot as leader; an incapacitated leader; mixed living and dead members; full companion capacity; a charm attempt at capacity; companion escape mid-encounter; ownership transfers; and party dissolution after a total defeat. Verify how XP and treasure are allocated in each case.
 
+### 7.4 Companion purchase, binding and revival
+
+**Static decompiler evidence:** Holding and Confinement purchases scan four slots, reject a full roster before payment, start the creature at its base HP and full identification, and set binding to `min(10, 5 + monster first-level field)`. Paid binding raises the current value by four to a maximum of twelve. Negative binding identifies a voluntary companion that the UI refuses to bind; retain the sign in storage. These purchase/service rules do not define obedience or the binding produced by spells.
+
+Companion raising is a separate Morgue transaction. Its source-derived fee is `max HP × 1244.34 × monster first-level field`, assigned to a VB Long. After payment, failure occurs when `Int(Rnd × 100) > min(98, 75 + monster CON)`: failure removes the companion identity, success restores maximum HP. Preserve the strict comparison and loss outcome; a threshold of 98 accepts 99 of the 100 possible integer roll values, so it must not be simplified to a nominal 98% roll. Verify conversion and RNG behavior before certification. [Companion source paths and binding-price caveat](research/original-followup-review.md).
+
 ## 8 Combat and simulation time
 
 ### 8.1 Combat model
@@ -286,7 +294,13 @@ Build a timing matrix for exploration, combat, inventory, spellbook, town, dialo
 
 Compare miss, nonlethal hit, lethal hit, immunity, critical kill, last target in a group, and last hostile group. Determine whether excess swings can cross groups and how guild and weapon contributions combine. The candidate item's `extra_swings` column is a parser label; validate whether the stored quantity is a total, an increment, or another parameter before adding it to anything.
 
-Do not adopt the comparison project's approximately one-second combat interval or its fixed player-first description. Its own changelog describes a hostile opening-strike exception. Measure original surprise, peaceful-to-hostile transitions, and withdrawal independently; preserve the two-second default as the later-help comparison target until confirmed. No new Tank action or aggro redirection enters the faithful rules. [Comparison dungeon guide](https://github.com/matteo-prosperi/DungeonsOfDejremake/blob/c932f12ec163693e120a4dc236610619f6af96ab/docs/help/dungeon.md), [changelog](https://github.com/matteo-prosperi/DungeonsOfDejremake/blob/c932f12ec163693e120a4dc236610619f6af96ab/docs/help/changelog.md).
+The comparison project's approximately one-second combat interval and fixed player-first description cannot establish original behavior. Its own changelog describes a hostile opening-strike exception. Measure original surprise, peaceful-to-hostile transitions, and withdrawal independently. Section 8.7 now supplies independent original-source timer evidence to compare with the later-help two-second target. No new Tank action or aggro redirection enters the faithful rules. [Comparison dungeon guide](https://github.com/matteo-prosperi/DungeonsOfDejremake/blob/c932f12ec163693e120a4dc236610619f6af96ab/docs/help/dungeon.md), [changelog](https://github.com/matteo-prosperi/DungeonsOfDejremake/blob/c932f12ec163693e120a4dc236610619f6af96ab/docs/help/changelog.md).
+
+### 8.7 Source timer initialization and minimized-window guards
+
+**Static decompiler evidence:** dungeon initialization calls a routine assigning **1,000 ms** to the combat timer; its callback invokes the combat-round dispatcher. This creates a concrete discrepancy with the later-help two-second default, but does not alone establish the interval between successful attacks. Recover cooldowns, other dispatcher callers, state guards and original UI timer behavior before freezing the scheduler. F09 remains open.
+
+Combat and ailment callbacks are separate and both skip work while a shared flag is set. The main-window resize handler sets that flag when minimized and clears it in the maximized branch. Treat minimize, restore-to-normal, restore-to-maximized, focus loss and modal dialogs as separate experiments. Do not infer universal focus-loss pause or the ailment cadence from the combat interval. [Timer call chain and source anchors](research/original-followup-review.md).
 
 ## 9 Magic and status effects
 
@@ -350,6 +364,10 @@ The help lists the other spells in this table as NON-COMBAT. Its spell rules per
 The local guild/category matrix derives 205 guild/spell relations across 101 physical spells. Fate, She'tal, Life Domination and Shock Lance have base level 50 and no ordinary access in that matrix; retain them without inventing unlocks. Access involves category permission/cap, base level times category multiplier, spell level `floor(guild level / 2 + 0.5)`, and effective stat requirements. The resulting guild-level thresholds remain source-derived candidates until verified.
 
 Local base levels and requirements disagree with later help in nine compared fields, including Firebolt level 1 rather than 2 and Blue Flame 3 rather than 4. Preserve edition-specific values and explicit aliases. Stored cost parameters are not final SP prices; the detail display adds one to the stored power modifier, whereas runtime equations can use the raw coefficient. [Complete original spell table](research/local-original/spell-reference.md), [guild access](research/local-original/guild-spell-access-local.csv), [help comparison](research/local-original/spell-help-comparison.json).
+
+### 9.9 Source ailment-tick candidates
+
+**Static decompiler evidence:** the ailment callback rolls separately for poison and disease. Poison computes `Int(Rnd × 200) + 2 × (effective CON − 10) − 2 × poison severity`; a result above 185 clears it, otherwise it removes two HP. Disease uses a threshold above 195 and otherwise removes one HP, but the displayed disease expression also reads **poison severity**. Preserve this as a suspected source/decompiler defect (F23); do not silently substitute disease severity. Test poison alone, disease alone, both, and stat modifiers, including RNG ordering with identification and environmental work in the same callback. Tick duration remains unresolved. [Ailment evidence](research/original-followup-review.md).
 
 ## 10 Dungeon and exploration
 
@@ -443,6 +461,8 @@ Exercise every item definition’s eligibility and effect. Test known versus unk
 
 Implement `Equip`, `Unequip`, `Use`, `Give`, `Drop`, and town services as separate commands with their own eligibility and consequences. A split equipment/pack view must still use the original occupancy accounting. Verify whether equipped items consume the forty slots, how charges occupy slots, and where a failed transfer leaves the item. Do not infer extra carrying space from a redesigned screen. The source's category examples do not establish a complete slot enumeration; derive that from the approved item-class data.
 
+**New static boundary evidence:** Store purchase searches indexes **1 through 39**, excluding index zero. This does not establish a universal 39-item limit. F22 requires comparing purchase, loot, transfer, equipment and index-zero occupancy before settling capacity and display numbering. [Purchase handler](research/original-followup-review.md).
+
 ### 12.6 Class restriction and alignment decision table
 
 The later help supplies the following behavioral targets. Exact thresholds, affected bonuses, rounding, and exceptions remain original-build checks. [Official help](https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm), `5hmud3.htm` and `9dns9..htm`.
@@ -479,6 +499,10 @@ The supplied MDATA3 matches the public item bytes exactly, corroborating all 366
 
 The Crest of Thief's spell index 1 / spell ID 0 resolves to Charm of Opening in MDATA2. Preserve both one-based record references and embedded IDs. The charged spell-item branch of `sub1577` rejects mismatched alignment before charge debit; a later general-item path debits first. Test both with charged and depleted instances rather than implementing the help summary indiscriminately. [Local item records](research/local-original/items-local.csv), [item spell links](research/local-original/item-spell-links-local.csv), [source interpretation](research/local-original-review.md).
 
+### 12.10 Uncurse as separation and identification
+
+**Static decompiler evidence:** the Store rejects uncurse for an uncursed or unequipped instance. After payment it forces separation, fully identifies the instance and updates knowledge; it clears the instance curse only if the item definition is not intrinsically cursed. Thus removal can leave an inherently cursed object dangerous to equip again. The fee routine returns `(.8 × base price) / .5` through a VB Long. Keep separation, identification and curse removal as distinct state changes, with numeric conversion and re-equipping checked in the original. [Uncurse handlers and fee](research/original-followup-review.md).
+
 ## 13 Treasure and economy
 
 ### 13.1 Containers and traps
@@ -505,11 +529,21 @@ Preserve carried gold, banked gold, personal ownership, party sharing and poolin
 
 Use category-specific charge rules. Later official help distinguishes rechargeable spell-casting equipment from consumables: depleted swords/artifacts can reappear charged after sale, whereas an insufficient remainder of a potion need not generate a stock unit. It also documents selling charge chunks and combining compatible items into the first selected instance. [Official help](https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm), `irl356.htm`.
 
-The comparison store guide's broad statement that original partially charged goods disappeared is therefore not safe to apply across all item types. **F17 remains open** for the selected original build. Neither discard all partial-charge objects nor recharge all consumables. [Comparison store guide](https://github.com/matteo-prosperi/DungeonsOfDejremake/blob/c932f12ec163693e120a4dc236610619f6af96ab/docs/help/general-store.md).
+The comparison store guide's broad statement that original partially charged goods disappeared is therefore not safe to apply across all item types. **F17 now has subtype-specific static evidence in section 13.5, but remains open for runtime verification** in the selected original build. Neither discard all partial-charge objects nor recharge all consumables. [Comparison store guide](https://github.com/matteo-prosperi/DungeonsOfDejremake/blob/c932f12ec163693e120a4dc236610619f6af96ab/docs/help/general-store.md).
 
 For each supported service define a transaction record containing source instances, type and alignment, knowledge, charges before/after, quote, payment accounts, stock change and surviving instance. Test charges at zero, one, one below a stock unit, exactly a unit, and above a unit. Check charge overflow and restrictions on combining alignment variants; do not assume equal names are sufficient. Cancellation leaves all fields unchanged; a completed original action applies all its consequences together.
 
 Town payment fallback is distinct from automatic banking. **Static decompiler evidence:** `Module6.fn114E` spends carried gold first; if that is insufficient but combined funds cover the charge, it zeros carried gold and deducts only the remainder from the bank. Insufficient combined funds reject payment. Validate callers and numeric boundaries per service. Do not deposit carried funds as an implementation shortcut. [Original payment routine](research/local-original-review.md).
+
+### 13.5 Original Store charge and stock transitions
+
+**Static decompiler evidence:** the bundle/combining set is exactly subtype codes **23–28, 30 and 31**: Potion, Scroll, Tome, Dust, Crystal, Rod, Sphere and Cube. Stone, Artifact and Guild Crest are outside this list. Do not confuse these subtypes with equipment classes.
+
+For a bundle subtype with positive base charges B, selling C<B removes the instance without creating stock; C=B removes it and permits one stock unit; C>B retains C−B charges and permits one stock unit. Other subtypes, or definitions without positive base charges, remove the instance and permit stock. Additional guards can suppress stocking: the first-level-zero/default-alignment case, an inherently cursed definition, or a selected-alignment stock bucket already at nine. Purchased instances receive base charges. A completed sale and increased stock are therefore separate outcomes.
+
+Combining requires full identification (raw field zero), at least two selections, an allowed subtype, the same item definition and matching alignment. The first selection receives accepted donors' charges; donor identities are cleared. Mismatched donors are handled within the loop after the initial identification precheck, so preserve partial acceptance if runtime behavior confirms it. Transaction atomicity must prevent interrupted writes without changing which donors the original accepts. Overflow and duplicate selections remain tests, not permission to add a new cap.
+
+Sell quotes depend on alignment stock, identification, definition curse and charge differences. The [follow-up review](research/original-followup-review.md) records the candidate equation and intermediate VB types. The purchase-price function contains an unassigned local index in a charge adjustment; its intended behavior is unresolved. Preserve this blocker in F12 rather than replacing prices with a fixed fraction of base value. [Subtype export](research/local-original/item-subtypes-local.csv).
 
 ## 14 Town services and guild quests
 
@@ -518,6 +552,8 @@ Town payment fallback is distinct from automatic banking. **Static decompiler ev
 Use an illustrated, menu-accessible town hub with direct access to Store, Bank, Guilds, Library, Morgue, Seer, and Holding and Confinement. It should be quicker to read, but it must not add a travel-time simulation between shops or a free-healing inn with new rules. Retain the original service boundaries and shared world state.
 
 **Later official help documents:** returning to town restores HP and SP, treats poison and disease, and heals companions, while recovery advances age. Town is therefore a recovery location with a time consequence. [Official help](https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm), `swkvkg.htm`, The City.
+
+**Static decompiler evidence refines this:** town loading processes party members individually, refills SP from the natural-stat capacity routine, clears poison, disease and paralysis, and heals only companions whose current HP is positive. Dead companions require revival. HP recovery adds age according to missing-HP percentage; section 15.7 records the candidate calculation and world-time caveat. Town entry also updates and releases a carried character's saved location. [Town source path](research/original-followup-review.md).
 
 ### 14.2 Bank
 
@@ -538,6 +574,8 @@ Keep paid inquiries and uncertain results. The Seer must not become a guaranteed
 ### 14.5 Holding and Confinement
 
 Keep creature purchase, sale, identification, binding, and realignment as separate actions. Preserve alignment-specific stock, original binding on purchase, failed realignment outcomes, and restrictions on rebinding voluntary companions. Selling a dangerous companion must retain its original distinction from dismissing one in the dungeon. [Official help](https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm), `6m9o_0i.htm`, Holding and Confinement.
+
+Section 7.4 adds original-source purchase and binding limits. The binding-price function uses a different factor near its cap than below it; verify binding levels 7–12 and voluntary-companion rejection before adopting a uniform price per point. [Binding source evidence](research/original-followup-review.md).
 
 ### 14.6 Service acceptance
 
@@ -572,6 +610,30 @@ Keep permanent stat loss and failed revival outcomes. Preserve body access restr
 ### 15.4 Acceptance
 
 Test ordinary death, party wipe, stoning, rock entombment, absent rescuers, failed rescue, successful rescue, failed raise, repeated raises, low Constitution, advanced relative racial age, inventory retrieval, and loading during every intermediate state. Verify that a body cannot be carried twice, duplicated by load, or raised while a stale copy remains in the dungeon.
+
+### 15.5 Hired rescue versus waiting
+
+**Static decompiler evidence:** hiring rescuers quotes `372567.52 × ln(F + 1) × F`, assigned to a VB Long, using the **supplied** floor F. Payment precedes the outcome. Search proceeds only if `Rnd × 100 > 4F`, then requires the correct floor and differences strictly below eight on **both** X and Y. The tolerance is per-axis, not a radius. Keep failed expedition and inaccurate-location outcomes separate; the shown handler refunds neither.
+
+A living target at ≤20% maximum HP is moved to town; a healthier target is left in place. Rock is reported without retrieval; other fatal states are moved to the Morgue. The injured-target message claims healing, but this handler visibly changes location rather than HP. Verify when healing actually occurs before implementing it at search completion.
+
+Waiting for rescue uses a separate simulated-day loop. Its draw denominator changes from 10,000 to 1,000 after a depth-dependent counter threshold; floor 1/area≤18 and a raw automap flag supply other branches. It increments elapsed days before the success draw, moves the casualty to town on success, adds those days to age and invokes recovery processing. Preserve this algorithm separately from paid search; the [review](research/original-followup-review.md) gives the expressions, branch order and unresolved flag meaning. Neither service grants free resurrection.
+
+### 15.6 Pending raises, fees and failure consequences
+
+**Static decompiler evidence:** raising another character writes a pending threshold, initiator name, method and location to the target's saved record. The target later accepts the offer and rolls for recovery. Preserve the pending state across saves; do not clear death or grant HP at payment time. Successful recovery processing restores 1 HP for source methods 20/21 and maximum HP for 22/23. Rock retains additional restrictions and special handling requiring validation.
+
+The source quotes a character raise from `2912.32 × (max HP / 1.5)`. Saved-target quotation uses Long conversion while the immediate self-service path explicitly uses `Int`; verify the difference. Threshold calculation uses natural CON and method, clamped to 10–98, but saved-target Morgue and self-service paths supply different method inputs. Both use a strict `Int(Rnd × 100) > threshold` failure check. Do not replace these paths with one percentage formula. A subsidy applies only when the highest guild level is ≤5 and combined carried/banked funds cannot cover the fee.
+
+A failed raise can enter a **complications recovery** branch: lose five from each natural stat with racial-minimum floors, age 5,475 days, reduce maximum HP to `Int(max HP / 1.2)`, and recheck equipment eligibility. Its age/racial-lifespan roll and Rock override are in the [source review](research/original-followup-review.md). Returning true lets the caller continue recovery; failure is not invariably a terminal rejection. The alternate failure branch adds 54 days and clears pending fields.
+
+Ordinary recovery in these callers adds 54 days; stoning selects 84 and loses one CON. Morgue recovery has an additional `Rnd × 100 < 50 − 2 × CON` loss check. Some branches apply complications and normal recovery time cumulatively; the immediate and pending paths also differ in visible CON-floor handling. Preserve call order and record discrepancies in F10/F23 until original tests establish the result.
+
+### 15.7 Recovery age and natural-death boundaries
+
+**Static decompiler evidence:** the town rest helper assigns `(100 − current HP / maximum HP × 100) / 3.25` to an Integer day count, fills HP and adds that count to age. Explicit-day callers instead add their supplied duration. Party-index-zero rest invokes world-update helpers, which does not establish sum-of-party or maximum-party recovery time. Test unequal injuries, party order, rounding, and full HP with depleted SP.
+
+The ailment callback starts an age check at relative racial age ≥98%, with `Int(Rnd × 100) < 5 + ln(relative age percent − 98)`. The displayed expression is undefined exactly at 98%; do not invent an epsilon or guaranteed birthday death. F23 requires checking the original error/control flow and adjacent ages. [Age helper, town caller and ailment callback](research/original-followup-review.md).
 
 ## 16 Discovery and information design
 
@@ -701,6 +763,8 @@ Store simulation time separately from wall-clock timestamps. Suspending, minimiz
 **Proposed feature, conditional on format verification:** import a copy of a supported legacy world. Fingerprint the source edition, parse all records, preserve unresolved fields, and show a migration report. Never overwrite the original files. Import characters, map/library knowledge, guild histories, quests, holdings, companions, deaths, and world stock together. Unsupported or modified data must receive a clear report, not silent repair.
 
 Export back to the original binary format is outside launch scope because lossy conversion and undocumented fields can corrupt a legacy world. If parity cannot be established, release new campaigns first and label legacy import as unavailable rather than presenting an approximate transfer as faithful.
+
+Pending resurrection is part of compatibility, not transient UI state: preserve initiator, threshold, method, location and fatal condition until original-equivalent acceptance/processing. A body location update or paid raise must not be mistaken for completed revival. Test importing before payment, after a pending offer is stored, and after acceptance or complications. [Saved-state evidence](research/original-followup-review.md).
 
 ### 21.4 Cloud and local profiles
 
@@ -842,6 +906,27 @@ Completed static checks compare installed and packaged inputs, parse declared re
 
 Add original/remaster fixtures for all nine creation pools; natural versus modified SP and A/D; every HP breakpoint and the 999 cap; both duplicate spell-ID pairs; ID-zero item casting; active-guild versus fixed-item healing; alignment failures before/after charge debit; quest levels 4/5 and 15/16; split cash/bank payments; and every floor's first/last cell, area boundary and transition. Check the Dark Shape field against the chosen source and original library/loot behavior. Required runtime fixtures remain outstanding; do not label the static audit as passing those tests.
 
+### 23.8 Follow-up source comparison cases
+
+These are **unexecuted original/remaster test specifications**. Revision 1.3's completed checks cover source hashes, anchor validity, unchanged inputs and document structure; they do not pass these behavioral cases.
+
+| Case | Controlled setup | Required observations |
+| --- | --- | --- |
+| V17 Charge bundles | Each of eight subtypes; charges 0/B−1/B/B+1/2B; compare Stone/Artifact/Crest | Quote, remaining instance, charge debit, stock and repurchase charges |
+| V18 Stock and knowledge | Alignment bucket 0/1/8/9; another alignment stocked; each identification state; cursed definition | Sell/identify/buy quotes, conversion, no-stock sale outcomes |
+| V19 Combining and uncurse | Mixed donors, unknown item, mismatched alignment, duplicate index, near-overflow charges; inherent/instance curse | Precheck versus partial acceptance, surviving identity, separation and retained curse |
+| V20 Inventory index zero | Only index zero empty, then only index 39 empty; repeat purchase/loot/give | Actual usable slots, rejection before payment, no lost item |
+| V21 Companion services | Four occupied slots; binding 7–12 and negative; dead companion | Purchase rejection, binding increments/fees, revival fee, success HP and failure removal |
+| V22 Hired search | Floors 1/15; coordinate differences 7/8 on each axis; wrong floor; HP around 20%; Rock | Fee/debit before result, search branches, returned location and actual HP before/after load |
+| V23 Wait for rescue | Floor/area boundary, raw flag 23, draws around threshold and denominator change | Elapsed-day order, aging, location and separate raise requirement |
+| V24 Pending raise | Paid saved-target versus self-service; methods 20–23; accept/decline/reload | Stored fields, quote rounding, threshold path, charge once, HP 1 versus max |
+| V25 Complications | Highest guild 5/6, insufficient/sufficient funds, young/old, racial stat minima, stoning/Rock | Subsidy, failure branch, stacked age, HP reduction, CON floors and equipment loss |
+| V26 Town recovery | Different injury per party member, swap leader, full HP/empty SP, living/dead companions | Per-character age rounding, world updates, status clearing and body release |
+| V27 Timer/pause | Idle hostile/peaceful room; minimize and both restore states; focus/modal changes | Callback and attack cadence, guard behavior, command interaction and no frame-rate dependence |
+| V28 Ailment/age anomalies | Poison/disease separately/together, effective CON changes, relative age below/exactly/above 98% | Severity source, draws, HP loss, original error path and any interrupted tick work |
+
+The [follow-up evidence review](research/original-followup-review.md) supplies source anchors and caveats for each family. Preserve suspected defects as questions until executable comparison and an explicit change decision.
+
 ## 24 Production scope and milestones
 
 ### 24.1 Deliverables
@@ -898,19 +983,21 @@ For this document, all major design areas are specified. The remaining work is *
 | F06 | Mage quest chance | Local parameter 15; decompiled assignment has additional gates | Verify conversion, draw order and final assignment distribution |
 | F07 | Spell names and access | 105 local records, 103 IDs, 205 derived guild relations; help discrepancies documented | Verify duplicate-ID selection, aliases and access thresholds |
 | F08 | Spell power and SP formulas | Static healing equation and cost/access routines located | Verify VB arithmetic and complete multi-guild arbitration |
-| F09 | Combat math and clock | Documented 2-second default and +50% Defend | Verify scheduling, hit/damage, specials, XP and rounding |
-| F10 | Death, age and rescue | Distinct systems documented; exact probabilities unknown | Measure formulas, time units and permanent losses |
-| F11 | Companions | Four per character documented; caster-limit scope unclear | Verify obedience, friendly fire, capacity and caster arbitration |
-| F12 | Economy and world timers | Services and shared stock documented; formulas incomplete | Recover fees, charges, refresh and simulated explorers |
+| F09 | Combat math and clock | Later-help 2-second default versus static 1,000 ms timer initialization; minimize guards located | Measure effective cadence and pause behavior; recover hit/damage, specials, XP and rounding |
+| F10 | Death, age and rescue | Static hired/waiting rescue, pending raises, method-specific recovery and complications traced | Verify threshold domains, path-specific fees/chances, time accumulation and losses |
+| F11 | Companions | Four-slot purchase, binding 4-point increments/cap 12 and separate revival traced | Verify service boundaries, obedience, friendly fire and caster arbitration |
+| F12 | Economy and world timers | Static sale/stock/fee paths; buy-price routine references an unassigned local index | Verify quote conversions and suspicious index, refresh and party world-time updates |
 | F13 | Help version mixing | Official CHM includes modern M1 and legacy content | Compare against original shipped help and executable |
 | F14 | Legacy save migration | Format research available, full conversion unproven | Validate all world fields and lossless import |
 | F15 | Public release permissions | No project license established by this research | Resolve title, content and asset arrangements |
 | F16 | Healing power source | Static healing/cure branch uses active guild unless positive cast-level override | Verify spellbook/item callers and effect-family boundaries at runtime |
-| F17 | Partially charged sales | Publisher help distinguishes consumables/equipment; remake summary generalizes | Measure charge chunks, stock, and recharge by item category |
+| F17 | Partially charged sales | Static eight-subtype bundle set, remainder handling and stock guards recovered | Verify charge boundaries, nine-unit stock limit and repurchase by subtype |
 | F18 | Special item lifecycle | Crests and involuntary curses have candidate records and remake test leads | Recover award, charge, attachment, removal and replacement rules |
 | F19 | Creation, derived stats and HP | Local pools plus static initialization, SP/A-D bands, random HP growth and 999 cap | Verify stat sources, boundaries and RNG with original characters |
 | F20 | Decompiled-code identity | Substantial generated VB output; damaged syntax and no certified binary-address mapping | Connect critical routines to the fingerprinted executable |
 | F21 | Charge debit on alignment failure | Later help generalizes; static item paths differ in debit/exit order | Compare spell-casting and general items across alignment pairs |
+| F22 | Inventory slot zero | Forty slots documented; Store purchase scans only indexes 1–39 | Trace index-zero purpose and compare all acquisition/transfer paths |
+| F23 | Suspicious legacy branches | Disease reads poison severity; age check takes ln(0) at exactly 98%; rescue healing message lacks local HP update; raise paths differ in CON floors | Establish executable behavior and document any intentional correction before implementation |
 
 The Scavenger alignment row was rechecked visually during this document’s review: the printed card marks Good, Neutral, and Evil. It is **not** an unresolved conflict; the supporting CSV reflects the corrected transcription.
 
@@ -1239,6 +1326,22 @@ Character alignment bits are Good=1, Neutral=2, Evil=4. The local Troll mask is 
 
 Source executable SHA256: `bd1332c37eb9d6a024d95ba1b70daf03c1a6c64c622964fb3d8bcc6297d06309`. Matching installed copies and installer members establish local consistency; they do not independently establish the distribution license or link every decompiled statement to an executable address.
 
+### 26.13 Follow-up original-source findings — October 9, 2026
+
+Revision 1.3 adds **twelve finding groups (O01–O12)** and **twelve runtime case families (V17–V28)**. These supplement the unchanged revision-1.2 data exports. The findings are static interpretations; runtime comparison remains outstanding.
+
+| Source area | Recovered candidate or explicit uncertainty |
+| --- | --- |
+| Store | Eight bundle subtypes; alignment-stock cap nine in sale path; full-identification combining; separation versus inherent curse; indexed quote formulas |
+| Inventory | Purchase searches 1–39; index-zero purpose unresolved |
+| Companion services | Four purchase slots; initial binding capped at ten; paid increments four/cap twelve; separate paid raise with permanent failure loss |
+| Rescue | Depth-based paid search and per-axis coordinate tolerance; distinct simulated-day waiting algorithm |
+| Character raises | Pending saved offer; method-dependent threshold and HP; novice subsidy; complications and cumulative age |
+| Town and age | Missing-HP rest-day calculation; living-companion-only healing; separate party/world-time questions |
+| Timers and ailments | 1,000 ms combat initialization versus documented two seconds; shared minimize guard; poison/disease and exact-98%-age anomalies |
+
+Read the [full follow-up review](research/original-followup-review.md), [fingerprinted source anchors](research/original-followup/source-manifest.json) and [whole-tree preservation check](research/original-followup/source-preservation-check.json). Reproduce provenance checks with [original-followup-audit.py](research/original-followup-audit.py). No runtime parity, complete formula recovery or executable/decompiler linkage is claimed.
+
 ## 27 Sources and supporting files
 
 ### 27.1 Primary and technical sources
@@ -1266,6 +1369,7 @@ The [Dungeons of Dej’remake project](https://github.com/matteo-prosperi/Dungeo
 
 ### 27.3 Supporting research files
 
+- [Follow-up original-source review](research/original-followup-review.md), [source manifest](research/original-followup/source-manifest.json), and [revision-1.3 preservation check](research/original-followup/source-preservation-check.json)
 - [Original-file review and source anchors](research/local-original-review.md), [extraction summary](research/local-original/extraction-summary.json), and [source preservation report](research/local-original/source-preservation-check.json)
 - [Local races](research/local-original/races-local.csv), [guilds](research/local-original/guilds-local.csv), [items](research/local-original/items-local.csv), [monsters](research/local-original/monsters-local.csv), and [spell reference](research/local-original/spell-reference.md)
 - [Research index and limitations](research/README.md)

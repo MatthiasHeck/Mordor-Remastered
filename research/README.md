@@ -2,6 +2,14 @@
 
 Research assembled October 8–9, 2026 for the original 1995 Mordor game. Read the main [design document](../Mordor%20Remastered%20Design%20Document.md) for the full specification and evidence policy.
 
+## Original-source follow-up — revision 1.3
+
+The [follow-up review](original-followup-review.md) traces Store transactions, companion services, hired and waiting rescue, pending raises, complications, town recovery and timer guards. It adds twelve finding groups (O01–O12), with source anchors and unresolved branches, and twelve planned original/remaster comparison families (V17–V28) in the design. It remains static decompiler interpretation, not runtime verification.
+
+The [source manifest](original-followup/source-manifest.json) fingerprints cited files and anchor lines. The [preservation report](original-followup/source-preservation-check.json) checks the complete original tree against the preceding immutable inventory. The [document validation](original-followup/document-validation.json) checks local links, tables, section/case counts and HTML headings. After document edits, rebuild HTML with `build-preview.mjs`, then run `original-followup-audit.py` to reproduce the reports. The audit only reads original files and writes its reports under `research/original-followup`; it neither executes original code nor regenerates the numerical tables.
+
+New discrepancies include a 1,000 ms combat timer versus the documented two-second round, Store purchase skipping item index zero, a disease check reading poison severity, and the natural-age check's exact-98% logarithm boundary. These remain explicit tests and decision points, not silently repaired rules.
+
 ## Original-file review — revision 1.2
 
 The [local original-file review](local-original-review.md) documents inspection of the user-supplied `D:\Programming Projects\Mordor` tree, which is read-only. New output is confined to this remaster project. The review separates directly extracted values, static decompiler interpretations and still-required runtime checks.

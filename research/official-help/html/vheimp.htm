@@ -1,0 +1,87 @@
+<HTML><HEAD>
+	
+	<TITLE>Trouble Shooting</TITLE>
+	
+	<META NAME="AUTHOR" CONTENT="1994 to 2026 Decklin's Domain Ltd. All Rights Reserved">
+	<META NAME="GENERATOR" CONTENT="HelpScribble 7.8.8">
+	<STYLE> span { display: inline-block; }</STYLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000FF" VLINK="#800080" ALINK="#FF0000">
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" SIZE="4"><B>General Troubleshooting &amp; Technical Support</B></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" COLOR="#0000FF" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" COLOR="#0000FF" SIZE="2"><I>NOTES: The legacy 16-bit Mordor - The Depths of Dejenol v1.1 game from 1994/1995 does not support long directory names under Windows NT or Windows 95.</I></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" COLOR="#0000FF" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" COLOR="#0000FF" SIZE="2"><B>General Troubleshooting</B></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" COLOR="#0000FF" SIZE="2"><I>Edited January 2, 2015 ~ The following is the original text:</I></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2"><B>Messed up Numbers/Currency</B></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2">If you are in another country that uses a currency other than dollars (Germany, for example), Mordor should work just fine.&nbsp; However, there have been some reports of problem with some German and Swiss versions of windows where some of the numbers are displayed improperly.&nbsp; If you experience this problem, you will need to switch the currency format to US while playing Mordor.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2"><B>Program Managers other than Windows Program Manager</B></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2">I cannot guarantee complete functionality with other program managers for Windows (i.e. Norton Desktop).&nbsp; If you are experiencing problems playing Mordor and are using a manager other than the one that comes with Windows, I would recommend switching back to the Windows Program Manager and seeing if the problem(s) disappear.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2"><B>Microsoft Office</B></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2">It has been reported that the Microsoft Office toolbar can greatly interfere with MORDOR.&nbsp; If you have this up, be sure to unload it if you are having any problems running MORDOR.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2"><B>Windows NT/Win95</B></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2">If you are playing MORDOR under Windows NT or Win95 and are having problems, make sure that MORDOR is running in a separate VDM.&nbsp; You can change this setting by selecting the icon in the Program manager, hitting Alt-Enter and clicking on the Separate VDM check box.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2">If you are using Windows NT 3.5 with Full Drag on, it's recommended that you turn it off to play the game (this is the feature that instantly drags and updates windows as you move/size them).&nbsp; You can do this in the Control Panel/Desktop section.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2">Also, if you are using Sound FX under Win95 and are experiencing 'skipping' when the files are played, be sure to enter the following line in your WAVEMIX.INI file:</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Courier New" SIZE="2">WaveBlockLen=4096</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2"><B>(about) Error</B></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2">If you encounter an error similar to "(about) property cannot be set at runtime" when you start Mordor, you probably have an old VBX file lying around somewhere other than the one in your WINDOWS\SYSTEM directory that the game is accessing (i.e. the WINDOWS directory).&nbsp; The .VBX file that usually causes this problem is VBCTL3D.VBX.&nbsp; The solution is to make sure the VBCTL3D.VBX file in your WINDOWS\SYSTEM directory is the latest one and that another doesn't exist on your system someplace else!</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2"><B>GPFs &amp; Video Problems</B></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2">90% of all GPFs in MORDOR are caused by old MUSIC or DISPLAY drivers.&nbsp; To get the latest drivers, please contact the manufacturer of your Sound/Video card either by phone or on Compuserve.&nbsp; A good technique for testing Video Driver incompatibilities is to install the 800x600x16 (or 256) color driver that comes with windows.&nbsp; If the errors do not persist while using this driver, the problems are more than likely the drivers you have for your display card.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2"><B>Fonts</B></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2">If, for some reason, you have removed the <I>Courier New </I>font from your system (which comes with Windows 3.1), some text may not appear correctly or not at all (especially in the information box).&nbsp; To correct this, simply reinstall the <I>Courier New</I> font or select another Proportional font in the Options section from the Main Menu.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2"><B>64K Colors</B></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2">Some players running in 64K colors will see no maze or monster pictures while playing (which, of course, means that the game is not playable).&nbsp; Because there has been no standard set for 64K colors, quite a few drivers will not work with Mordor at this color level.&nbsp; There isn't much that one can do except for switch to either 16 Million (TrueColor) Colors, or 256 Colors.&nbsp; I apologize for this, but it's out of my hands.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2"><B>Black/No Pictures</B></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2">Not all Video Drivers are completely compatible with the Windows <I>StretchBlt</I> API call, which takes a bitmap and stretches it to a certain size.&nbsp; If you run into the problem of blank or black pictures, you need to set the <B>No StretchBlt</B> option in the Options panel from the Main Menu to <B>True</B>.&nbsp; This will cause the graphics to be displayed at default size and not resize themselves to the screen.&nbsp; <I>This option will not help 64K Color problems</I>.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2"><B>No Music</B></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2">If the MIDI player that came with your sound card works, but MORDOR doesn't, you probably need to create a new MIDI MAP that uses a different PORT NAME for every port (all 16).&nbsp; See the <A HREF="midi_mapper___troubleshooting.htm">MIDI Mapper &amp; TroubleShooting</A> section for more information.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2"><B>Bad Music</B></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2">If the Music played by Mordor doesn't sound good, you probably need to either get the latest drivers for your sound card, or re-map your Extended MIDI map.&nbsp; Please consult the manual that came with your sound card and/or the <A HREF="midi_mapper___troubleshooting.htm">MIDI Mapper &amp; TroubleShooting</A> section for more information.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2"><B>Bad Sound FX</B></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2">Be sure to check the date of your WAVMIX16.DLL and make sure it's as recent as the .DLL that comes with MORDOR.&nbsp; If not, manually copy it over.&nbsp; If problems persist, try changing the ShowDevices option in the [general] section of WAVEMIX.INI (located in the WINDOWS directory) to 1.&nbsp; This will cause WAVMIX16.DLL to display message windows when errors are encountered with more information on the problem.&nbsp; From here, it's up to you!</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="3">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" COLOR="#0000FF" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" COLOR="#0000FF" SIZE="2"><B>Technical Support <I>(Edited May 12th, 2026)</I></B></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" COLOR="#0000FF" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" COLOR="#0000FF" SIZE="2">If you encounter a problem that you cannot resolve by reading the manual or the On-Line Help lessons, then contact our Technical Support representatives directly. You may email us at support@decklinsdemise.com or contct us via the forums https://decklinsdomain.info/forum</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" COLOR="#0000FF" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" COLOR="#0000FF" SIZE="2">If you choose to email us with your problem, please include detailed information about your computer system, the version of M1: The Depths of Dejenol you are running (displyed during start-up), and a detailed explanation of your problem. We will respond via email or directly on the forum.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" COLOR="#0000FF" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" COLOR="#0000FF" SIZE="2"><B>This is the basic information we will need when you contact us:</B></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" COLOR="#0000FF" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:17pt;"><FONT FACE="Arial" COLOR="#0000FF" SIZE="2"><I>Name</I></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:17pt;"><FONT FACE="Arial" COLOR="#0000FF" SIZE="2"><I>eMail Address</I></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:17pt;"><FONT FACE="Arial" COLOR="#0000FF" SIZE="2"><I>Version of Windows Operating System</I></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:17pt;"><FONT FACE="Arial" COLOR="#0000FF" SIZE="2"><I>Version and Date of M1: The Depths of Dejenol.</I></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:17pt;"><FONT FACE="Arial" COLOR="#0000FF" SIZE="2"><I>CPU</I></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:17pt;"><FONT FACE="Arial" COLOR="#0000FF" SIZE="2"><I>RAM memory</I></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:17pt;"><FONT FACE="Arial" COLOR="#0000FF" SIZE="2"><I>Hard Disk Space</I></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:17pt;"><FONT FACE="Arial" COLOR="#0000FF" SIZE="2"><I>Video Board - make and model</I></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:17pt;"><FONT FACE="Arial" COLOR="#0000FF" SIZE="2"><I>Screen Resolution</I></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:17pt;"><FONT FACE="Arial" COLOR="#0000FF" SIZE="2"><I>Number of Screen Colors</I></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:17pt;"><FONT FACE="Arial" COLOR="#0000FF" SIZE="2"><I>Sound Card</I></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:17pt;"><FONT FACE="Arial" COLOR="#0000FF" SIZE="2"><I>A detailed description of the problem and what preceeded the problem.</I></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:17pt;"><FONT FACE="Arial" COLOR="#0000FF" SIZE="2"><I>Does the problem occur every time?</I></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:17pt;"><FONT FACE="Arial" SIZE="1">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:17pt;"><FONT FACE="Arial" SIZE="1"><B>M1: "The Depths of Dejenol" is a Trademark of Decklin's Domain Ltd and is © Copyright 1994-2026 All Rights Reserved</B></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:17pt;"><FONT FACE="Arial" SIZE="3">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:17pt;"><FONT FACE="Arial" SIZE="3">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="3">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;">
+</P>
+</BODY></HTML>

@@ -1,0 +1,37 @@
+{
+  "archive": "Mordor/setup/MORDOR.WIP",
+  "sha256": "f6395cd84b1e2788fb9eb50c3b39f0413559ab6690067309dab20edd11eacff0",
+  "members": [
+    {
+      "name": "MORDOR.EXE",
+      "sha256": "bd1332c37eb9d6a024d95ba1b70daf03c1a6c64c622964fb3d8bcc6297d06309",
+      "matches_installed": true
+    },
+    {
+      "name": "MORDOR.HLP",
+      "sha256": "88ee3d1288aa1651a6670bb8be1ab99d5ea07f9c1cb2a80db61178caef142b84",
+      "matches_installed": true
+    },
+    {
+      "name": "MDATA1.MDR",
+      "sha256": "b8086bf87fb71c86a6bf8c4654b6437160bacf6e3f318be4c0e63e96bc2d032f",
+      "matches_installed": true
+    },
+    {
+      "name": "MDATA2.MDR",
+      "sha256": "cd811db2c9067a392835e740c6a94a587bb0235cb173eb91682e8f69001908dd",
+      "matches_installed": true
+    },
+    {
+      "name": "MDATA3.MDR",
+      "sha256": "babf9ede941bc2f3dab073283a304d80fd59ed34d9fcd7099cde1e0f7988d7c7",
+      "matches_installed": true
+    },
+    {
+      "name": "MDATA5.MDR",
+      "sha256": "dc95efef50ef62eb6063a11b3fa9a116a06a4dab7d0000804e39324324a6c124",
+      "matches_installed": true
+    }
+  ],
+  "map_note": "MDATA11.MDR is not a member; installed maps audited separately."
+}

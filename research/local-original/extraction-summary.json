@@ -1,0 +1,256 @@
+{
+  "counts": {
+    "races": 9,
+    "guilds": 12,
+    "item_subtypes": 35,
+    "item_classes": 24,
+    "monster_types": 18,
+    "monster_subtypes": 15
+  },
+  "spells": 105,
+  "unique_spell_ids": 103,
+  "monsters": 401,
+  "items": 366,
+  "public_difference_count": 1,
+  "differences": [
+    {
+      "kind": "monster",
+      "record_index": 266,
+      "field": "item_1",
+      "public_value": "34",
+      "local_value": 33
+    }
+  ],
+  "monster_changed": "Dark Shape",
+  "item_spell_links": 132,
+  "item_spell_link_mismatches": [],
+  "floors": [
+    {
+      "table_floor": 1,
+      "start_record": 17,
+      "width": 30,
+      "height": 30,
+      "stored_floor": 1,
+      "area_count": 157,
+      "chute_count": 10,
+      "teleporter_count": 20,
+      "rock_flag_cells": 69,
+      "nonrock_flag_cells": 831,
+      "parsed_end_record": 1151
+    },
+    {
+      "table_floor": 2,
+      "start_record": 1152,
+      "width": 30,
+      "height": 30,
+      "stored_floor": 2,
+      "area_count": 162,
+      "chute_count": 10,
+      "teleporter_count": 20,
+      "rock_flag_cells": 60,
+      "nonrock_flag_cells": 840,
+      "parsed_end_record": 2286
+    },
+    {
+      "table_floor": 3,
+      "start_record": 2287,
+      "width": 30,
+      "height": 30,
+      "stored_floor": 3,
+      "area_count": 146,
+      "chute_count": 10,
+      "teleporter_count": 20,
+      "rock_flag_cells": 70,
+      "nonrock_flag_cells": 830,
+      "parsed_end_record": 3421
+    },
+    {
+      "table_floor": 4,
+      "start_record": 3422,
+      "width": 30,
+      "height": 30,
+      "stored_floor": 4,
+      "area_count": 183,
+      "chute_count": 10,
+      "teleporter_count": 20,
+      "rock_flag_cells": 57,
+      "nonrock_flag_cells": 843,
+      "parsed_end_record": 4556
+    },
+    {
+      "table_floor": 5,
+      "start_record": 4557,
+      "width": 30,
+      "height": 30,
+      "stored_floor": 5,
+      "area_count": 183,
+      "chute_count": 10,
+      "teleporter_count": 20,
+      "rock_flag_cells": 41,
+      "nonrock_flag_cells": 859,
+      "parsed_end_record": 5691
+    },
+    {
+      "table_floor": 6,
+      "start_record": 5692,
+      "width": 30,
+      "height": 30,
+      "stored_floor": 6,
+      "area_count": 172,
+      "chute_count": 10,
+      "teleporter_count": 20,
+      "rock_flag_cells": 66,
+      "nonrock_flag_cells": 834,
+      "parsed_end_record": 6826
+    },
+    {
+      "table_floor": 7,
+      "start_record": 6827,
+      "width": 30,
+      "height": 30,
+      "stored_floor": 7,
+      "area_count": 184,
+      "chute_count": 10,
+      "teleporter_count": 20,
+      "rock_flag_cells": 56,
+      "nonrock_flag_cells": 844,
+      "parsed_end_record": 7961
+    },
+    {
+      "table_floor": 8,
+      "start_record": 7962,
+      "width": 30,
+      "height": 30,
+      "stored_floor": 8,
+      "area_count": 183,
+      "chute_count": 10,
+      "teleporter_count": 20,
+      "rock_flag_cells": 47,
+      "nonrock_flag_cells": 853,
+      "parsed_end_record": 9096
+    },
+    {
+      "table_floor": 9,
+      "start_record": 9097,
+      "width": 30,
+      "height": 30,
+      "stored_floor": 9,
+      "area_count": 110,
+      "chute_count": 10,
+      "teleporter_count": 20,
+      "rock_flag_cells": 91,
+      "nonrock_flag_cells": 809,
+      "parsed_end_record": 10231
+    },
+    {
+      "table_floor": 10,
+      "start_record": 10232,
+      "width": 30,
+      "height": 30,
+      "stored_floor": 10,
+      "area_count": 185,
+      "chute_count": 10,
+      "teleporter_count": 10,
+      "rock_flag_cells": 52,
+      "nonrock_flag_cells": 848,
+      "parsed_end_record": 11356
+    },
+    {
+      "table_floor": 11,
+      "start_record": 11357,
+      "width": 30,
+      "height": 30,
+      "stored_floor": 11,
+      "area_count": 131,
+      "chute_count": 10,
+      "teleporter_count": 10,
+      "rock_flag_cells": 150,
+      "nonrock_flag_cells": 750,
+      "parsed_end_record": 12481
+    },
+    {
+      "table_floor": 12,
+      "start_record": 12482,
+      "width": 30,
+      "height": 30,
+      "stored_floor": 12,
+      "area_count": 140,
+      "chute_count": 10,
+      "teleporter_count": 10,
+      "rock_flag_cells": 55,
+      "nonrock_flag_cells": 845,
+      "parsed_end_record": 13606
+    },
+    {
+      "table_floor": 13,
+      "start_record": 13607,
+      "width": 30,
+      "height": 30,
+      "stored_floor": 13,
+      "area_count": 154,
+      "chute_count": 10,
+      "teleporter_count": 10,
+      "rock_flag_cells": 89,
+      "nonrock_flag_cells": 811,
+      "parsed_end_record": 14731
+    },
+    {
+      "table_floor": 14,
+      "start_record": 14732,
+      "width": 30,
+      "height": 30,
+      "stored_floor": 14,
+      "area_count": 193,
+      "chute_count": 10,
+      "teleporter_count": 10,
+      "rock_flag_cells": 70,
+      "nonrock_flag_cells": 830,
+      "parsed_end_record": 15856
+    },
+    {
+      "table_floor": 15,
+      "start_record": 15857,
+      "width": 30,
+      "height": 30,
+      "stored_floor": 15,
+      "area_count": 140,
+      "chute_count": 10,
+      "teleporter_count": 10,
+      "rock_flag_cells": 80,
+      "nonrock_flag_cells": 820,
+      "parsed_end_record": 16981
+    }
+  ],
+  "cells": 13500,
+  "source_root_untouched_by_this_script": true,
+  "guild_spell_relations": 205,
+  "guild_access_physical_spells": 101,
+  "duplicate_spell_ids": {
+    "93": [
+      {
+        "record_index": 99,
+        "name": "Mass Sight Veil"
+      },
+      {
+        "record_index": 101,
+        "name": "Mass Protection"
+      }
+    ],
+    "94": [
+      {
+        "record_index": 100,
+        "name": "Fate"
+      },
+      {
+        "record_index": 102,
+        "name": "She'tal"
+      }
+    ]
+  },
+  "no_ordinary_guild_access": [
+    "Fate",
+    "She'tal",
+    "Life Domination",
+    "Shock Lance"
+  ]
+}

@@ -1,0 +1,301 @@
+{
+  "MORDOR.EXE": [
+    {
+      "path": "Mordor\\MORDOR.EXE",
+      "size": 1199633,
+      "sha256": "bd1332c37eb9d6a024d95ba1b70daf03c1a6c64c622964fb3d8bcc6297d06309"
+    },
+    {
+      "path": "_Original Game Files\\MORDOR.EXE",
+      "size": 1199633,
+      "sha256": "bd1332c37eb9d6a024d95ba1b70daf03c1a6c64c622964fb3d8bcc6297d06309"
+    }
+  ],
+  "MORDOR.HLP": [
+    {
+      "path": "Mordor\\MORDOR.HLP",
+      "size": 863677,
+      "sha256": "88ee3d1288aa1651a6670bb8be1ab99d5ea07f9c1cb2a80db61178caef142b84"
+    },
+    {
+      "path": "_Original Game Files\\MORDOR.HLP",
+      "size": 863677,
+      "sha256": "88ee3d1288aa1651a6670bb8be1ab99d5ea07f9c1cb2a80db61178caef142b84"
+    }
+  ],
+  "MDATA1.MDR": [
+    {
+      "path": "ORIGINAL_DATA\\MDATA1.MDR",
+      "size": 30952,
+      "sha256": "b8086bf87fb71c86a6bf8c4654b6437160bacf6e3f318be4c0e63e96bc2d032f"
+    },
+    {
+      "path": "Mordor\\DATA\\MDATA1.MDR",
+      "size": 30952,
+      "sha256": "b8086bf87fb71c86a6bf8c4654b6437160bacf6e3f318be4c0e63e96bc2d032f"
+    },
+    {
+      "path": "_Original Game Files\\DATA\\MDATA1.MDR",
+      "size": 30952,
+      "sha256": "b8086bf87fb71c86a6bf8c4654b6437160bacf6e3f318be4c0e63e96bc2d032f"
+    }
+  ],
+  "MDATA2.MDR": [
+    {
+      "path": "MDATA2.MDR",
+      "size": 10934,
+      "sha256": "cd811db2c9067a392835e740c6a94a587bb0235cb173eb91682e8f69001908dd"
+    },
+    {
+      "path": "ORIGINAL_DATA\\MDATA2.MDR",
+      "size": 10934,
+      "sha256": "cd811db2c9067a392835e740c6a94a587bb0235cb173eb91682e8f69001908dd"
+    },
+    {
+      "path": "Mordor\\DATA\\MDATA2.MDR",
+      "size": 10934,
+      "sha256": "cd811db2c9067a392835e740c6a94a587bb0235cb173eb91682e8f69001908dd"
+    },
+    {
+      "path": "_Mordor Decompiler\\x64\\Debug\\MDATA2.MDR",
+      "size": 10934,
+      "sha256": "cd811db2c9067a392835e740c6a94a587bb0235cb173eb91682e8f69001908dd"
+    },
+    {
+      "path": "_Original Game Files\\DATA\\MDATA2.MDR",
+      "size": 10934,
+      "sha256": "cd811db2c9067a392835e740c6a94a587bb0235cb173eb91682e8f69001908dd"
+    }
+  ],
+  "MDATA3.MDR": [
+    {
+      "path": "ORIGINAL_DATA\\MDATA3.MDR",
+      "size": 46103,
+      "sha256": "babf9ede941bc2f3dab073283a304d80fd59ed34d9fcd7099cde1e0f7988d7c7"
+    },
+    {
+      "path": "Mordor\\DATA\\MDATA3.MDR",
+      "size": 46103,
+      "sha256": "babf9ede941bc2f3dab073283a304d80fd59ed34d9fcd7099cde1e0f7988d7c7"
+    },
+    {
+      "path": "_Mordor Decompiler\\x64\\Debug\\MDATA3.MDR",
+      "size": 46103,
+      "sha256": "babf9ede941bc2f3dab073283a304d80fd59ed34d9fcd7099cde1e0f7988d7c7"
+    },
+    {
+      "path": "_Original Game Files\\DATA\\MDATA3.MDR",
+      "size": 46103,
+      "sha256": "babf9ede941bc2f3dab073283a304d80fd59ed34d9fcd7099cde1e0f7988d7c7"
+    }
+  ],
+  "MDATA4.MDR": [
+    {
+      "path": "ORIGINAL_DATA\\MDATA4.MDR",
+      "size": 8687,
+      "sha256": "7820b57eaff8fd34b813a968527154df7b010f4d9962fe05057e7bf4a8b23ba4"
+    },
+    {
+      "path": "Mordor\\DATA\\MDATA4.MDR",
+      "size": 8687,
+      "sha256": "7820b57eaff8fd34b813a968527154df7b010f4d9962fe05057e7bf4a8b23ba4"
+    },
+    {
+      "path": "_Original Game Files\\DATA\\MDATA4.MDR",
+      "size": 8687,
+      "sha256": "527c1f0f6087ac4f7f41ebb424e77813863f4fddbd9a60245eff04e2dec4ac43"
+    }
+  ],
+  "MDATA5.MDR": [
+    {
+      "path": "ORIGINAL_DATA\\MDATA5.MDR",
+      "size": 64623,
+      "sha256": "dc95efef50ef62eb6063a11b3fa9a116a06a4dab7d0000804e39324324a6c124"
+    },
+    {
+      "path": "Mordor\\DATA\\MDATA5.MDR",
+      "size": 64623,
+      "sha256": "dc95efef50ef62eb6063a11b3fa9a116a06a4dab7d0000804e39324324a6c124"
+    },
+    {
+      "path": "_Mordor Decompiler\\x64\\Debug\\MDATA5.MDR",
+      "size": 64623,
+      "sha256": "dc95efef50ef62eb6063a11b3fa9a116a06a4dab7d0000804e39324324a6c124"
+    },
+    {
+      "path": "_Original Game Files\\DATA\\MDATA5.MDR",
+      "size": 64623,
+      "sha256": "dc95efef50ef62eb6063a11b3fa9a116a06a4dab7d0000804e39324324a6c124"
+    }
+  ],
+  "MDATA6.MDR": [
+    {
+      "path": "ORIGINAL_DATA\\MDATA6.MDR",
+      "size": 5902,
+      "sha256": "602ecae510281831be6a366053d2faca30540892566c224e534b42e9dc98853a"
+    },
+    {
+      "path": "Mordor\\DATA\\MDATA6.MDR",
+      "size": 5902,
+      "sha256": "602ecae510281831be6a366053d2faca30540892566c224e534b42e9dc98853a"
+    },
+    {
+      "path": "_Original Game Files\\DATA\\MDATA6.MDR",
+      "size": 5902,
+      "sha256": "1d840b72be9f6b79916b10b7d7f5d6b5d385004f7bc62014a82ee5bd946498fb"
+    }
+  ],
+  "MDATA7.MDR": [
+    {
+      "path": "ORIGINAL_DATA\\MDATA7.MDR",
+      "size": 1554,
+      "sha256": "5b146ca23868c6cb6671de942a18de39929d8d2a60d8347ea7562f1eda9555b7"
+    },
+    {
+      "path": "Mordor\\DATA\\MDATA7.MDR",
+      "size": 1554,
+      "sha256": "5b146ca23868c6cb6671de942a18de39929d8d2a60d8347ea7562f1eda9555b7"
+    },
+    {
+      "path": "_Original Game Files\\DATA\\MDATA7.MDR",
+      "size": 1554,
+      "sha256": "5b146ca23868c6cb6671de942a18de39929d8d2a60d8347ea7562f1eda9555b7"
+    }
+  ],
+  "MDATA8.MDR": [
+    {
+      "path": "ORIGINAL_DATA\\MDATA8.MDR",
+      "size": 135164,
+      "sha256": "4fd16c55bf49b4e57616056bee08bdad93d138d2e5ef1490a618b5b66a3fed92"
+    },
+    {
+      "path": "Mordor\\DATA\\MDATA8.MDR",
+      "size": 135164,
+      "sha256": "4fd16c55bf49b4e57616056bee08bdad93d138d2e5ef1490a618b5b66a3fed92"
+    },
+    {
+      "path": "_Original Game Files\\DATA\\MDATA8.MDR",
+      "size": 135164,
+      "sha256": "4a7a224385c12a0cd351f439e73bcc9340fa3e9f79ac79d0434364c15c8ce54e"
+    }
+  ],
+  "MDATA9.MDR": [
+    {
+      "path": "ORIGINAL_DATA\\MDATA9.MDR",
+      "size": 698,
+      "sha256": "262e8c97db38177595837b7de5160dba9a62bccebbcfd82ae8f290f0aeafb98a"
+    },
+    {
+      "path": "Mordor\\DATA\\MDATA9.MDR",
+      "size": 698,
+      "sha256": "262e8c97db38177595837b7de5160dba9a62bccebbcfd82ae8f290f0aeafb98a"
+    },
+    {
+      "path": "_Original Game Files\\DATA\\MDATA9.MDR",
+      "size": 1978,
+      "sha256": "39b56a12b0d33583c6244f6ca48abd14692cd8476a4da85a55a8e3156438c9a2"
+    }
+  ],
+  "MDATA10.MDR": [
+    {
+      "path": "ORIGINAL_DATA\\MDATA10.MDR",
+      "size": 420436,
+      "sha256": "1c21b91ad10b685e104a0539ab1038122df7c2659f96d408d85f452ae630d650"
+    },
+    {
+      "path": "Mordor\\DATA\\MDATA10.MDR",
+      "size": 420436,
+      "sha256": "1c21b91ad10b685e104a0539ab1038122df7c2659f96d408d85f452ae630d650"
+    },
+    {
+      "path": "_Original Game Files\\DATA\\MDATA10.MDR",
+      "size": 420436,
+      "sha256": "e8c505d57a9c383e9542ac2e88dfa3916cb4fa22f4b305b4db811f1809c23926"
+    }
+  ],
+  "MDATA11.MDR": [
+    {
+      "path": "ORIGINAL_DATA\\MDATA11.MDR",
+      "size": 339606,
+      "sha256": "0cfc52dc554f9a3362a222ad19f87a13cb829b50a3818574fa8fcbccd2d757a1"
+    },
+    {
+      "path": "Mordor\\DATA\\MDATA11.MDR",
+      "size": 339606,
+      "sha256": "0cfc52dc554f9a3362a222ad19f87a13cb829b50a3818574fa8fcbccd2d757a1"
+    },
+    {
+      "path": "_Original Game Files\\DATA\\MDATA11.MDR",
+      "size": 339606,
+      "sha256": "0cfc52dc554f9a3362a222ad19f87a13cb829b50a3818574fa8fcbccd2d757a1"
+    }
+  ],
+  "MDATA12.MDR": [
+    {
+      "path": "ORIGINAL_DATA\\MDATA12.MDR",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "Mordor\\DATA\\MDATA12.MDR",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "_Original Game Files\\DATA\\MDATA12.MDR",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "MDATA13.MDR": [
+    {
+      "path": "ORIGINAL_DATA\\MDATA13.MDR",
+      "size": 77158,
+      "sha256": "2121353e3cc12d4ab22c79f1555d25d095508f7ab690662cb9dc200f847a16c9"
+    },
+    {
+      "path": "Mordor\\DATA\\MDATA13.MDR",
+      "size": 77158,
+      "sha256": "2121353e3cc12d4ab22c79f1555d25d095508f7ab690662cb9dc200f847a16c9"
+    },
+    {
+      "path": "_Original Game Files\\DATA\\MDATA13.MDR",
+      "size": 77158,
+      "sha256": "4c092e8424b65e2defc04da67775c91bf6dbdbd3c2835fa861c5669209c9fd96"
+    }
+  ],
+  "MDATA14.MDR": [
+    {
+      "path": "ORIGINAL_DATA\\MDATA14.MDR",
+      "size": 582,
+      "sha256": "42a3df614a722e613e7d7b0202124dea8c6833c08f3b13ed2ac72cb9c3f16868"
+    },
+    {
+      "path": "Mordor\\DATA\\MDATA14.MDR",
+      "size": 582,
+      "sha256": "42a3df614a722e613e7d7b0202124dea8c6833c08f3b13ed2ac72cb9c3f16868"
+    },
+    {
+      "path": "_Original Game Files\\DATA\\MDATA14.MDR",
+      "size": 582,
+      "sha256": "9ba056a5153440da06b1341e311e71381dc23e98ef627443e67dc00943a68230"
+    }
+  ],
+  "MDATA15.MDR": [
+    {
+      "path": "ORIGINAL_DATA\\MDATA15.MDR",
+      "size": 6462,
+      "sha256": "bf6a1f108aab7e3ecc74051eefcaee7c84846b20e4a87faa6835f6e9f68fc049"
+    },
+    {
+      "path": "Mordor\\DATA\\MDATA15.MDR",
+      "size": 6462,
+      "sha256": "bf6a1f108aab7e3ecc74051eefcaee7c84846b20e4a87faa6835f6e9f68fc049"
+    },
+    {
+      "path": "_Original Game Files\\DATA\\MDATA15.MDR",
+      "size": 6462,
+      "sha256": "bf6a1f108aab7e3ecc74051eefcaee7c84846b20e4a87faa6835f6e9f68fc049"
+    }
+  ]
+}

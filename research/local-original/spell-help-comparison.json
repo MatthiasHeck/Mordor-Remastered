@@ -1,0 +1,84 @@
+{
+  "exact_name_matches": 92,
+  "differences": [
+    {
+      "name": "Cause Wounds",
+      "field": "base_level",
+      "later_help": "2",
+      "local": 1
+    },
+    {
+      "name": "Firebolt",
+      "field": "base_level",
+      "later_help": "2",
+      "local": 1
+    },
+    {
+      "name": "Blue Flame",
+      "field": "base_level",
+      "later_help": "4",
+      "local": 3
+    },
+    {
+      "name": "Cause Heavy Wounds",
+      "field": "base_level",
+      "later_help": "4",
+      "local": 3
+    },
+    {
+      "name": "Charm Humanoid",
+      "field": "required_intelligence",
+      "later_help": "16",
+      "local": 14
+    },
+    {
+      "name": "Charm Humanoid",
+      "field": "required_wisdom",
+      "later_help": "16",
+      "local": 14
+    },
+    {
+      "name": "Charm Humanoid",
+      "field": "required_charisma",
+      "later_help": "18",
+      "local": 14
+    },
+    {
+      "name": "Charm Undead",
+      "field": "required_wisdom",
+      "later_help": "17",
+      "local": 15
+    },
+    {
+      "name": "Piercing Darkness",
+      "field": "required_intelligence",
+      "later_help": "17",
+      "local": 19
+    }
+  ],
+  "local_names_without_exact_help_match": [
+    "Feather Essense",
+    "Dispell Undead",
+    "Dispell Elemental",
+    "Control Animal",
+    "Thunder Bolt",
+    "Control Elemental",
+    "Restrain",
+    "Precognative Death",
+    "Dominate Undead",
+    "Fate",
+    "She'tal",
+    "Life Domination",
+    "Shock Lance"
+  ],
+  "help_names_without_exact_local_match": [
+    "Bind Animal",
+    "Bind Elemental",
+    "Bind",
+    "Precognitive Death",
+    "Dispel Undead",
+    "Dispel Elemental",
+    "ThunderBolt",
+    "Feather Essence"
+  ]
+}

@@ -1,0 +1,2651 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mordor Remastered Design Document</title>
+<style>
+:root{--ink:#242b2b;--muted:#52615e;--paper:#fcfbf7;--line:#d9dfd9;--accent:#20594c;--aside:#edf1ec}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:2rem}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.65 "Segoe UI",system-ui,sans-serif}
+a{color:var(--accent);text-underline-offset:.18em;overflow-wrap:anywhere}a:hover{color:#103a30}a:focus-visible,button:focus-visible,.table-wrap:focus-visible{outline:3px solid #bb7626;outline-offset:3px}
+aside{position:fixed;width:292px;inset:0 auto 0 0;padding:25px 24px;background:var(--aside);border-right:1px solid var(--line);overflow-y:auto;font-size:13px;line-height:1.4}
+aside strong{display:block;color:var(--accent);font-size:18px;line-height:1.3;margin-bottom:8px}aside p{color:var(--muted);margin:0 0 16px}nav a{display:block;padding:6px 0;text-decoration:none}nav a:hover{text-decoration:underline}
+main{margin-left:292px;padding:54px clamp(24px,5vw,84px) 80px;max-width:1430px}article{max-width:1010px;margin:auto}h1{font-family:Georgia,serif;font-weight:500;font-size:clamp(34px,3.5vw,52px);line-height:1.12;letter-spacing:-.025em;margin:0 0 22px;color:#173f36}
+h2{font-size:28px;line-height:1.25;margin:55px 0 20px;color:#173f36;font-weight:650}h3{font-size:21px;line-height:1.35;margin:30px 0 12px;font-weight:650}p{margin:0 0 17px}li{margin:.4em 0}strong{font-weight:650}code{font-size:.9em;background:#edf0e9;padding:.1em .3em;border-radius:3px;overflow-wrap:anywhere}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:4px;margin:22px 0 30px}table{border-collapse:collapse;min-width:100%;font-size:14px;line-height:1.45}th{background:#e3ebe3;color:#1d3c32;text-align:left;font-weight:650}td,th{padding:11px 13px;border-bottom:1px solid var(--line);vertical-align:top}tbody tr:nth-child(even){background:#f2f4ee}tr:last-child td{border-bottom:0}td{min-width:65px}td:first-child{font-weight:500}thead{display:table-header-group}
+.tools{display:flex;gap:14px;align-items:center;border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:35px;font-size:13px;color:var(--muted)}button{font:inherit;color:var(--accent);background:transparent;border:1px solid #abbcb0;border-radius:4px;padding:6px 12px;cursor:pointer}.skip{position:absolute;left:-9999px}.skip:focus{left:10px;top:10px;z-index:9;background:white;padding:10px}
+@media(max-width:1000px){aside{position:relative;width:auto;max-height:270px;border-right:0;border-bottom:1px solid var(--line)}nav{columns:2}main{margin-left:0;padding:35px 22px}h2{font-size:25px}body{font-size:16px}}
+@media(max-width:550px){nav{columns:1}aside{max-height:220px}.tools{flex-wrap:wrap}td,th{padding:9px}h1{font-size:35px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{aside,.tools,.skip{display:none}main{margin:0;max-width:none;padding:0}body{font:10pt/1.4 "Segoe UI",sans-serif;background:white;color:black}h1{font-size:26pt}h2{font-size:17pt;break-after:avoid;margin-top:25pt}h3{font-size:12pt;break-after:avoid}a{color:inherit;text-decoration:none}.table-wrap{overflow:visible;border-radius:0;break-inside:auto}table{font-size:8pt}tr{break-inside:avoid}td,th{padding:5pt}p{orphans:3;widows:3}@page{size:A4;margin:17mm}}
+</style></head><body>
+<a class="skip" href="#document">Skip to document</a>
+<aside aria-label="Document contents"><strong>Mordor Remastered</strong><p>Design and preservation specification<br>Research edition · October 9, 2026</p><nav><a href="#section-1">1 Product identity and historical baseline</a>
+<a href="#section-2">2 Fidelity contract and change policy</a>
+<a href="#section-3">3 Player experience and game loop</a>
+<a href="#section-4">4 Characters and statistics</a>
+<a href="#section-5">5 Races and alignment</a>
+<a href="#section-6">6 Guilds and progression</a>
+<a href="#section-7">7 Parties and companions</a>
+<a href="#section-8">8 Combat and simulation time</a>
+<a href="#section-9">9 Magic and status effects</a>
+<a href="#section-10">10 Dungeon and exploration</a>
+<a href="#section-11">11 Monsters and encounters</a>
+<a href="#section-12">12 Items and equipment</a>
+<a href="#section-13">13 Treasure and economy</a>
+<a href="#section-14">14 Town services and guild quests</a>
+<a href="#section-15">15 Death recovery and aging</a>
+<a href="#section-16">16 Discovery and information design</a>
+<a href="#section-17">17 Interface and controls</a>
+<a href="#section-18">18 Art direction and animation</a>
+<a href="#section-19">19 Audio direction</a>
+<a href="#section-20">20 Accessibility and onboarding</a>
+<a href="#section-21">21 Saves and compatibility</a>
+<a href="#section-22">22 Software and data architecture</a>
+<a href="#section-23">23 Fidelity verification</a>
+<a href="#section-24">24 Production scope and milestones</a>
+<a href="#section-25">25 Release criteria and open decisions</a>
+<a href="#section-26">26 Numerical reference appendices</a>
+<a href="#section-27">27 Sources and supporting files</a></nav></aside>
+<main id="document"><article><div class="tools"><span>27 sections · numerical appendices · linked evidence</span><button type="button" onclick="window.print()">Print</button><a href="Mordor%20Remastered%20Design%20Document.md">Markdown source</a></div><h1>Mordor The Depths of Dejenol Remastered</h1>
+<h2>Game design and preservation specification</h2>
+<p><strong>Document version:</strong> 1.2 · <strong>Research date:</strong> October 9, 2026 · <strong>Scope:</strong> a faithful remaster of David Allen’s 1995 game.</p>
+<p><strong>Revision 1.2:</strong> the supplied original files add a fingerprinted local baseline, 105 spell records, complete fifteen-floor cell data, race creation pools, and static evidence for HP growth, healing, spell access, item use and payment rules. Original-file exports remain separate from earlier printed/help tables. See the <a href="research/local-original-review.md">original-file review and source anchors</a> and section 26.12. The supplied <code>Mordor</code> folder is read-only; all new work is in <code>Mordor Remastered</code>.</p>
+<p><strong>Revision 1.1:</strong> a second internet research pass expands character growth, spell arbitration, item rules, shop transactions, and fidelity tests. The supplied DungeonsOfDejremake project is pinned to a specific revision and evaluated as a comparison source. Its intentional rules changes are excluded. See the <a href="research/second-pass-review.md">review and evidence record</a>.</p>
+<p>The remaster should reproduce the original game’s character development, dungeon, enemies, equipment, spells, economy, discoveries, and consequences, while rebuilding its presentation and software for modern computers. A familiar strategy must work for the same reasons, an original danger must remain dangerous, and a numerical advantage must not appear merely because the renderer or interface changed.</p>
+<p>This is a comprehensive design specification, accompanied by research notes and numerical reference tables. It is <strong>not yet a certified, exhaustive dump of a particular retail executable’s data</strong>. Printed documentation, later official help, and community references contain disagreements. Exact behavioral parity requires a fingerprinted original build and the validation work defined here. Unresolved values are explicitly marked; they are not permission to invent replacements.</p>
+<h3>Reading the specification</h3>
+<ul>
+<li><strong>Preserve</strong> identifies a required property of the remaster. Where exact original behavior is unresolved, the requirement is to establish and reproduce it.</li>
+<li><strong>Documented</strong> means supported by original documentation. It does not imply an executable comparison has been performed.</li>
+<li><strong>Extracted file fact</strong> means read from a fingerprinted original data file. It establishes a stored value, not its complete runtime interpretation.</li>
+<li><strong>Static decompiler evidence</strong> means inferred from the supplied decompilation attempts. Generated symbols and damaged statements remain; this is not certified authored source or executed behavior.</li>
+<li><strong>Community evidence</strong> identifies a useful secondary reference that needs checking against the selected build.</li>
+<li><strong>Proposed</strong> identifies a new presentation, tooling, or engineering decision, not a claim about the 1995 implementation.</li>
+<li><strong>Validation required</strong> identifies an unresolved rule, number, source conflict, or implementation detail that blocks a claim of exact fidelity.</li>
+</ul>
+<p>The numeric appendices and research files form part of this specification. Sample records illustrate the required fidelity; they must never be mistaken for the complete production database.</p>
+<h3>Contents</h3>
+<ol>
+<li>Product identity and historical baseline</li>
+<li>Fidelity contract and change policy</li>
+<li>Player experience and game loop</li>
+<li>Characters and statistics</li>
+<li>Races and alignment</li>
+<li>Guilds and progression</li>
+<li>Parties and companions</li>
+<li>Combat and simulation time</li>
+<li>Magic and status effects</li>
+<li>Dungeon and exploration</li>
+<li>Monsters and encounters</li>
+<li>Items and equipment</li>
+<li>Treasure and economy</li>
+<li>Town services and guild quests</li>
+<li>Death recovery and aging</li>
+<li>Discovery and information design</li>
+<li>Interface and controls</li>
+<li>Art direction and animation</li>
+<li>Audio direction</li>
+<li>Accessibility and onboarding</li>
+<li>Saves and compatibility</li>
+<li>Software and data architecture</li>
+<li>Fidelity verification</li>
+<li>Production scope and milestones</li>
+<li>Release criteria and open decisions</li>
+<li>Numerical reference appendices</li>
+<li>Sources and supporting files</li>
+</ol>
+<h2 id="section-1">1 Product identity and historical baseline</h2>
+<p><strong>Working title:</strong> Mordor The Depths of Dejenol Remastered. The original title is <em>Mordor</em>. The project folder is now <strong>Mordor Remastered</strong>; document and research links are relative so the package remains portable.</p>
+<p><strong>Genre and audience:</strong> a single-player, first-person, grid-based dungeon role-playing game built around repeat expeditions and long-term character development. Returning players should recognize their builds, routes, risks, and discoveries. New players should be able to understand those systems without fighting a Windows 3.x interface.</p>
+<p>David Allen identifies the original as his 1995 release. The current official product page describes Mordor 1.1 and confirms nine character races, twelve guilds, real-time combat, and automapping. This remaster targets <strong>the original Mordor 1 rules</strong>, not Mordor II, Demise, or the rule changes of later fan remakes. <a href="https://requnix.com/development/mordor/">Creator’s history</a>, <a href="https://www.decklinsdemise.com/mordor.htm">official product page</a>.</p>
+<p><strong>Proposed reference edition:</strong> the full registered English Mordor 1.1 release, with its executable and data files hashed before implementation. “1995” identifies the game; it does not establish that every surviving 1.1 distribution is byte-identical to the first retail release. Preserve a version manifest and compare release notes before freezing the baseline. An original 1995 retail copy supplied later may supersede this proposed reference through an explicit documented decision.</p>
+<p><strong>Local baseline candidate now available:</strong> the supplied installed copies have identical executables, version-1.1 data headers and all fifteen map floors. Their executable, help and key static data also match members of the local installer archive. EXE SHA256 is <code>bd1332c37eb9d6a024d95ba1b70daf03c1a6c64c622964fb3d8bcc6297d06309</code>. The <a href="research/local-original-review.md">local review</a> records all hashes and comparisons. This establishes consistent local inputs; registered-distribution identity, linkage of the supplied decompiler output to the executable, and runtime parity remain verification gates.</p>
+<p><strong>World premise:</strong> Marlith stands above the ancient mines of Dejenol. Adventurers descend into a dangerous underground world, accumulate knowledge and wealth, and confront the threat associated with the Prince of Devils. Keep that setting and its original names; present the story through concise town text, the library, and discoveries rather than a new cinematic campaign. <a href="https://www.mocagh.org/miscgame/dejenol-manual.pdf">Original newcomer’s manual</a>.</p>
+<p><strong>Content envelope:</strong> preserve the fifteen-level full dungeon. Public references report 400 monster types and 366 items, but those counts are reconciliation targets until the selected retail files establish usable records, reserved entries, and variants. The production inventory must also enumerate all spells, guild spell assignments, maps, rooms, quests, portraits, audio cues, and text. <a href="https://www.mobygames.com/game/31910/mordor-the-depths-of-dejenol/">MobyGames overview</a>.</p>
+<p><strong>Proposed platform scope:</strong> desktop Windows first, entirely playable offline. Keep the simulation portable for subsequent macOS and Linux builds. Keyboard and mouse are the primary controls; controller support is a second complete interaction path. Mobile, multiplayer, a browser edition, and a console port are separate projects, not assumptions that may reshape the base game.</p>
+<h2 id="section-2">2 Fidelity contract and change policy</h2>
+<h3>2.1 What must remain identical</h3>
+<p>Preserve all original numerical inputs and their interpretation: race minima and maxima, starting resources, resistance scales, guild restrictions and growth, spell costs and effects, monster records, equipment restrictions, item powers, shop calculations, encounter distributions, map topology, and loss and recovery rules. Preserve integer rounding, bounds, overflow-sensitive behavior, and random draw ordering wherever they affect outcomes.</p>
+<p>Preserve the relationships between systems. A character’s active guild cannot become interchangeable with its highest guild. An identified item cannot become equivalent to an unidentified one. A lost party cannot gain accurate coordinates through a redesigned minimap. A companion cannot become a permanent, perfectly obedient pet because that is easier to explain.</p>
+<p>Fidelity includes effort and information. Faster window drawing is desirable; an automatic best-action system that removes a risky decision changes play. A higher-resolution corridor is desirable; lighting that reveals a secret door does not preserve the same dungeon.</p>
+<h3>2.2 What may change</h3>
+<p><strong>Proposed presentation changes:</strong> high-resolution artwork, scalable text, clearer hierarchy, accessible input bindings, tooltips explaining already-available information, resizable panels, coherent sound mixing, better installation, and reliable saving. All feed the same underlying rule implementation.</p>
+<p>Use one authoritative ruleset for the release. Optional original-style and remastered presentation profiles may share saves because they do not change simulation. A later rebalance or convenience mode must use a separate ruleset identifier and an explicit description of its differences; it is outside this design’s launch scope.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>Change</th>
+<th>Launch decision</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Scale fonts and reorganize panels</td>
+<td>Include</td>
+<td>Makes existing information readable</td>
+</tr>
+<tr>
+<td>Remap a single original action</td>
+<td>Include</td>
+<td>Improves access without combining decisions</td>
+</tr>
+<tr>
+<td>Replace artwork and record new audio</td>
+<td>Include subject to asset rights</td>
+<td>Presentation can change while content identity remains</td>
+</tr>
+<tr>
+<td>Reduce grind or increase drop rates</td>
+<td>Exclude</td>
+<td>Changes progression and scarcity</td>
+</tr>
+<tr>
+<td>Remove aging or permanent losses</td>
+<td>Exclude</td>
+<td>Changes expedition and recovery decisions</td>
+</tr>
+<tr>
+<td>Automatically bank gold</td>
+<td>Exclude</td>
+<td>Changes carried wealth and theft exposure</td>
+</tr>
+<tr>
+<td>Reveal full maps or hidden monster statistics</td>
+<td>Exclude from normal play</td>
+<td>Changes discovery and risk</td>
+</tr>
+<tr>
+<td>Add fast travel or guaranteed safe teleportation</td>
+<td>Exclude</td>
+<td>Changes dungeon traversal</td>
+</tr>
+<tr>
+<td>Add automatic party tactics</td>
+<td>Exclude unless original behavior supports the exact action</td>
+<td>Changes player control and resource use</td>
+</tr>
+<tr>
+<td>Fix a crash without changing the resulting valid game state</td>
+<td>Include</td>
+<td>Improves reliability</td>
+</tr>
+<tr>
+<td>Fix a balance-affecting legacy defect</td>
+<td>Decision record required</td>
+<td>A correction may break a known original strategy</td>
+</tr>
+</tbody></table></div>
+<h3>2.3 Resolving disagreements</h3>
+<p>Use a controlled evidence order: behavior in the fingerprinted reference build; that build’s data files; documentation shipped with that build; other original printed material; later official help; independently corroborated community analysis; other remakes. The first two answer different questions: a stored value establishes a parameter, while executable observation establishes how it is used. Record both when they disagree.</p>
+<p>Every disputed rule gets an issue with the competing values, source editions, an original-game reproduction procedure, the result, and a decision. Do not silently select a wiki’s convenient number or normalize an apparently inconsistent table. The research already identifies conflicting alignment permissions and quest probabilities; these are explicit validation tasks in section 25.</p>
+<h3>2.4 Using another remake as research</h3>
+<p>The user-supplied <a href="https://github.com/matteo-prosperi/DungeonsOfDejremake/tree/c932f12ec163693e120a4dc236610619f6af96ab">DungeonsOfDejremake project</a> was reviewed at commit <code>c932f12ec163693e120a4dc236610619f6af96ab</code>. Its public repository supplies documentation and distribution material; its README states that the game implementation source is unpublished. This document therefore makes no claim to have audited that engine&#39;s equations or tests.</p>
+<p>Treat technical details as leads with three possible outcomes: corroborated documentation, an unresolved hypothesis, or a known departure. Do not port a rule merely because a remake describes itself as faithful. This review specifically excludes deterministic HP reconstruction, universal best-guild healing, automated buff maintenance, Tank stance, guaranteed revival, and a Seer-linked encounter escalation. The source comparisons and qualifications are in the <a href="research/second-pass-review.md">second-pass review</a>.</p>
+<h2 id="section-3">3 Player experience and game loop</h2>
+<h3>3.1 Core loop</h3>
+<p>Create and develop a roster; assemble a party; choose equipment, guilds, spells, companions, and carried resources in town; enter the dungeon; navigate and fight; identify opportunities and hazards; acquire treasure and knowledge; decide when to return; use town services; advance; prepare a deeper or more specialized expedition.</p>
+<p>The repeated question is whether one more room is worth the exposure. Preserve the tension between potential rewards and depleted resources, uncertain encounters, inventory pressure, curses, status effects, and the prospect of recovering a fallen party.</p>
+<h3>3.2 Short and long objectives</h3>
+<p>A short session might map a passage, complete a guild requirement, earn training money, replace lost equipment, or rescue a character. Longer goals include building complementary guild histories, learning safe routes, improving the shared knowledge base, collecting rare equipment, and reaching the deepest encounters. Do not impose a new main-quest checklist that makes these player-selected goals subordinate to a scripted campaign.</p>
+<p><strong>Proposed opening experience:</strong> show the roster and character creation, then the town. Offer a skippable explanation of guilds, buying equipment, selecting the party, and entering the dungeon. The first real expedition uses the original starting state, encounter tables, and map. Any practice tutorial runs in a separate disposable scenario and transfers no rewards or information into the campaign.</p>
+<h3>3.3 Experience targets</h3>
+<p>The remaster should feel deliberate, tense, readable, and worth mastering. It must allow inefficient builds and ambitious expeditions. Present consequences clearly when the original makes them knowable, but avoid recommending an objectively optimal party or disclosing probabilities that were hidden. A guide can explain a mechanic without solving the game for the player.</p>
+<h2 id="section-4">4 Characters and statistics</h2>
+<h3>4.1 Character record</h3>
+<p>Persist identity, name, race, original sex field and any validated mechanical effect, alignment, age, status, location and facing, current and maximum hit points, current and maximum spell points, carried gold, bank holdings, inventory, equipment, companions, all guild memberships, active guild, per-guild level and experience, quests, and relevant discoveries. Preserve any additional original fields discovered during format analysis; do not drop fields simply because the new interface does not display them.</p>
+<p>The six core statistics are <strong>Strength, Intelligence, Wisdom, Constitution, Charisma, and Dexterity</strong>. Keep separate natural values, equipment or temporary modifiers, and effective values. The character sheet should expose those distinctions with the original units. Requirements must read the correct value layer for each action. <a href="https://www.mocagh.org/miscgame/dejenol-refcard.pdf">Original reference card</a>, <a href="https://dejenol.fandom.com/wiki/Guild">community guild reference</a>.</p>
+<h3>4.2 Statistic behavior</h3>
+<p><strong>Preserve:</strong> every dependency of the six statistics, including equipment eligibility, guild entry, spell use, attack and defense contributions, identification, companion control, hit-point growth, and resource limits wherever the selected build applies them. These relationships must be recovered individually; do not replace them with a modern RPG’s conventional attribute meanings.</p>
+<p><strong>Proposed UI:</strong> each statistic has a short explanatory tooltip listing verified effects. The tooltip may explain that a statistic contributes to a calculation without publishing a hidden equation. A requirements comparison highlights which currently known conditions fail. A player may inspect a natural value and an effective value without having to infer the difference from color.</p>
+<p>Stat increases and decreases are explicit transactions. Store their cause, before/after value, cap behavior, and any follow-on recalculation. Test permanent gains, temporary gains, cursed or opposed-alignment effects, draining, resurrection-related loss, and removal of the equipment that supplied a requirement. No town visit automatically restores permanent losses.</p>
+<h3>4.3 Derived values</h3>
+<p>Attack and defense are calculated outputs, not replacement character attributes. Preserve all component calculations and the way they combine. Track maximum HP separately from current HP; likewise spell-point capacity versus remaining points. Regeneration, healing, maximum-resource changes, and leveling must not share a generic “restore all” helper unless their original behavior is identical.</p>
+<p>The stat sheet may show verified component breakdowns to the extent the original exposed them. Keep internal debug formulas in development tools. The public interface must not infer or display a monster’s hidden counterpart values from the player’s combat log.</p>
+<h3>4.4 Character creation and roster</h3>
+<p>Preserve race and alignment choices, starting age, initial stat procedure and allocation constraints, starting money and equipment, starting guild membership, and naming restrictions that affect saved data. <strong>Static decompiler evidence:</strong> each stat initializes at racial minimum + 5, with an additional race-specific pool; subtracting down to the minimum refunds points. The pools are in section 26.12. Creation sets age to 5,840 days, carried gold to 1,500, bank balance to zero, current/maximum HP to 15, Nomad level to 1 and active guild to Nomad. It stores town floor 0 and coordinates 9,11; raw A/D starts at 10 each before stat adjustment. Names reject duplicates and <code>|</code>; unused allocation points require confirmation. These are source-derived targets for original-build comparison. Starter equipment, roster limits and any sex-dependent behavior still require tracing. <a href="research/local-original-review.md">Creation evidence</a>.</p>
+<p><strong>Proposed presentation:</strong> a single creation screen with identity on the left, six statistics in the center, and eligible guilds on the right. Invalid combinations explain the failed requirement. Confirmation shows the complete proposed record before creation. Roster selection displays living, dead, stoned, and otherwise unavailable characters distinctly, without moving them or restoring them.</p>
+<h3>4.5 Derived statistics supported by static code</h3>
+<p>The supplied decompiled <code>Module6.fn1338</code> supports maximum SP of <code>5 × (natural INT + natural WIS)</code>. <code>sub047C</code> supports STR/DEX contributions to both attack and defense outside an inclusive neutral band of 8–12 at two points per stat point, and INT/WIS contributions outside 8–14 at one point per stat point. Below the band the contribution is negative; above it positive. This adjustment uses natural plus modified stats and has no CON/CHA contribution. It removes the old contribution before adding the new one. These rules now have <strong>static decompiler support</strong>, rather than only the comparison remake&#39;s account; the complete A/D total still includes other routines. <a href="research/local-original-review.md">Original-file evidence and function anchors</a>.</p>
+<p>For SP, measure natural INT/WIS changes separately from equipment bonuses, temporary effects, and permanent drain. For A/D, test each statistic independently at 7, 8, 12, 13, 14, and 15 where legally reachable, then vary guild and equipment contributions. Record attack and defense separately. For creation, capture the initial allocation, remaining pool, adjustment bounds, starting HP/SP, age, gold, and inventory for every race. A match at one ordinary character does not establish either formula or boundary behavior.</p>
+<p>Store extracted inputs, static interpretations, observations and approved rules separately. The earlier printed race/guild tables remain source transcriptions; the new local tables record binary values independently. Do not import the comparison remake&#39;s starter equipment or assume sex is cosmetic without original evidence.</p>
+<h2 id="section-5">5 Races and alignment</h2>
+<p>Preserve all nine races: Human, Elf, Giant, Gnome, Dwarf, Ogre, Morloch, Osiri, and Troll. Keep the original race names rather than replacing unfamiliar names with generic fantasy equivalents. The numerical race appendix records the printed minima, natural maxima, age parameters, experience parameters, and resistance entries with provenance.</p>
+<p>Race influences allowed development and endurance; it is not merely a portrait choice. Do not equalize total stat budgets, progression speed, longevity, or resistance profiles. The differences and the constraints they impose are part of party planning.</p>
+<p>Keep Good, Neutral, and Evil as rule-bearing alignments. Preserve their effects on creation, guild access, item use and alignment, companions, and any party restrictions established by the build. Do not turn alignment into a dialogue reputation meter. <strong>Validation required:</strong> whether and how an existing character can change alignment, and all consequences of such a change.</p>
+<p>The printed and community tables disagree on some allowed alignments. The appendix therefore records what each source says rather than presenting one merged table as executable truth. Selection widgets must be generated from the approved rules dataset only after those conflicts are resolved.</p>
+<p><strong>Acceptance:</strong> enumerate every race, alignment, and guild combination; compare acceptance and rejection against the original. Repeat with statistics just below and at each requirement and with a temporary modifier crossing that requirement. Test racial caps through ordinary gains, special items, and removals of equipment.</p>
+<h2 id="section-6">6 Guilds and progression</h2>
+<h3>6.1 Complete guild set</h3>
+<p>Preserve Nomad, Warrior, Paladin, Ninja, Villain, Seeker, Thief, Scavenger, Mage, Sorcerer, Wizard, and Healer. None becomes a cosmetic subclass, and no new class replaces the need to combine guild histories. Their numeric entry requirements and documented growth parameters appear in the appendices.</p>
+<p><strong>Community evidence:</strong> guilds maintain separate progression; only the active guild earns experience, while learned capabilities can carry across memberships. Guild entry begins at level 1; the documented community cap is 999. Advancement can be blocked by a guild quest, and experience can become pinned before earning another full level. Treat these as explicit executable comparison cases. <a href="https://dejenol.fandom.com/wiki/Guild">Guild reference</a>.</p>
+<h3>6.2 Guild identity</h3>
+<p>Use the following as production emphasis, not as permission to alter numeric balance. Warriors emphasize physical combat; Ninjas combine weapon and unarmed options with specialized restrictions; Thieves specialize in treasure access; Scavengers combine fighting and thieving; Seekers provide exploration capabilities; Mages center companion control; Sorcerers emphasize destructive magic; Healers center recovery; Wizards provide a broad magical toolkit; Paladins and Villains have distinct restricted hybrid paths; Nomad supplies the starting path. The exact abilities and their growth remain data-driven. Individual guild references are listed in section 27.</p>
+<h3>6.3 Growth and cross-guild interactions</h3>
+<p>Store one membership record per guild: current level, experience, training state, quest state, and all original membership-specific fields. Resolve inherited capabilities per ability; do not sum every guild’s attack, defense, or skill rating. Keep spell access, spell power, equipment permissions, and HP growth as separate decisions.</p>
+<p><strong>Community evidence:</strong> HP gains depend on whether the new guild level exceeds the character’s other guild levels, with guild-specific breakpoints. <a href="https://dejenol.fandom.com/wiki/Nomad">Nomad</a>, <a href="https://dejenol.fandom.com/wiki/Warrior">Warrior</a>, <a href="https://dejenol.fandom.com/wiki/Wizard">Wizard</a>. <strong>Static code now narrows this:</strong> AH is not a guaranteed fixed total gain. The supplied advancement routine includes a random AH increment and a strict CON boundary, detailed in section 6.6. Implementing a fixed five-point Nomad gain before level 30 would omit that increment.</p>
+<p><strong>Preserve:</strong> XP calculation, party sharing, race and guild modifiers, training costs, experience pinning, quest assignment and completion, titles, maximum levels, HP breakpoints, Constitution bonus distributions, and the treatment of drained levels if supported. Keep raw parameters separate from percentages shown to players; a source’s “experience factor” is not necessarily a literal multiplier.</p>
+<p><strong>Proposed guild screen:</strong> show membership, level, XP progress, training eligibility, active quest, known abilities, and the consequences of making that guild active. Switching must apply the original equipment and eligibility rules atomically. A progress bar must distinguish “needs experience,” “needs quest,” and “ready to train” rather than implying XP is the only requirement.</p>
+<h3>6.4 Acceptance</h3>
+<p>Compare the original and remaster at every HP-growth breakpoint, at tied guild levels, at one level above the previous highest guild, at the XP pin threshold, and at the maximum level. Test free versus paid membership, quest-blocked training, equipment invalidated by a guild switch, and the same spell learned through multiple guilds. Verify that a heavily developed character changing to a new guild neither loses inherited abilities nor receives them twice.</p>
+<h3>6.5 Preserve earned HP and advancement history</h3>
+<p>The comparison remake explicitly replaces progression history with a deterministic HP total computed from current guild levels and CON. That changes development strategy and is excluded. <a href="https://github.com/matteo-prosperi/DungeonsOfDejremake/blob/c932f12ec163693e120a4dc236610619f6af96ab/docs/help/guild-hall.md">Comparison Guild Hall documentation</a>.</p>
+<p><strong>Later official help documents:</strong> HP advancement is gated by the new level exceeding other guild levels, with AH/ML/MH parameters and a CON bonus above 16 before the applicable breakpoint. Its Healer/Thief example withholds HP until Healer overtakes Thief. It does not fully specify distributions or every boundary. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>d7eivm.htm</code> and <code>81ywhd.htm</code>.</p>
+<p><strong>Proposed persistence:</strong> retain accumulated maximum HP and the original-supported effects that changed it. Development traces record guild, old/new level, CON used, random draws where observable, awarded HP, and resulting maximum. Do not recompute historical HP when loading, switching guilds, changing CON, forfeiting a quest, or importing a character unless that particular operation is proven to do so in the reference build. The trace is a verification aid, not a new gameplay statistic or a requirement that legacy saves contain history.</p>
+<p>Compare two legal advancement sequences reaching the same final guild levels, plus early versus late permanent CON increases. Separately test equipment CON, ties, overtaking, demotion and regaining a level. Preserve differences the original produces; do not equalize the characters as a migration convenience.</p>
+<h3>6.6 Source-derived HP advancement algorithm</h3>
+<p>The supplied <code>FRMCTYG.cmdMake_Click</code> supports the following sequence. Treat each random draw as distinct and retain the original numerical conversions. Let N be the new guild level; AH, ML and MH are the exported guild parameters.</p>
+<ol>
+<li>Award maximum-HP growth only when N strictly exceeds every other guild level.</li>
+<li>When N &gt; ML, add MH.</li>
+<li>Otherwise add AH, and draw <code>floor(U × 3) + 1</code>. Results 1 or 2 add <code>floor(U × AH / 5) + 1</code> with a further draw; result 3 adds no random increment.</li>
+<li>In that latter branch, natural CON above 16 adds <code>floor(U × (CON − 16)) + 1</code> only if <strong>N &lt; ML</strong>. The random AH increment still applies at N = ML; the CON increment does not.</li>
+<li>Cap maximum HP at <strong>999</strong> and set current HP to maximum after training, including advancement without maximum-HP growth.</li>
+</ol>
+<p>This is a static interpretation awaiting executable checks, not a statistical test result. Verify ties, overtaking, ML−1/ML/ML+1, CON 16/17, equipment-only CON and HP 998/999. Preserve the random draw count and historical gains. <a href="research/local-original-review.md">Code locations and interpretation</a>.</p>
+<h2 id="section-7">7 Parties and companions</h2>
+<h3>7.1 Player characters</h3>
+<p>Preserve parties of up to four controlled adventurers, together with each character’s independent identity and progression. A party is not one hero plus three AI followers. Preserve formation, leader selection, joining and leaving, regrouping, separated characters, transfers, target selection, and the distinction between a party location and each persistent character’s state. The original manual’s party guidance and the later remake’s explicit departure from the four-slot model corroborate this structure. <a href="https://www.mocagh.org/miscgame/dejenol-manual.pdf">Original manual</a>, <a href="https://github.com/matteo-prosperi/DungeonsOfDejremake">comparison project describing its changes</a>.</p>
+<p><strong>Later official help documents:</strong> Good and Evil characters cannot join the same party; members have individual default commands, including fighting, defending, and a spell buffer. Contributions affect XP, larger parties reduce it, and surviving members share gold. Preserve those action defaults instead of replacing them with a new tactics AI. <strong>Validation required:</strong> exact formation effects, XP division, initiative, and targeting. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>14i_7ja.htm</code>, Parties.</p>
+<h3>7.2 Monster companions</h3>
+<p>Keep monster companions as a separate system from player-character slots. Import their original capacity, ownership, stacking or group behavior, binding values, obedience checks, combat participation, healing, transfer rules, dismissal, death, escape, and sale eligibility. A charmed monster must remain the original monster, including the ways its companion behavior differs from its hostile behavior.</p>
+<p><strong>Later official help documents:</strong> four companions per character, binding that can expire, betrayal and accidental attacks on other party members, owner-only healing, and no direct companion trading. Voluntary joiners differ from bound creatures. It also describes one spellcasting companion casting per round; whether that limit is per owner or party needs testing. Preserve these constraints and the town’s companion economy. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>1n4gm2b.htm</code>, Companions.</p>
+<p><strong>Proposed display:</strong> a compact companion panel under its owner, showing information that character legitimately knows. Show binding or loyalty using the original numeric scale where exposed. Make warnings persistent and readable without introducing advance knowledge of the next obedience roll.</p>
+<h3>7.3 Acceptance</h3>
+<p>Test solo, two-, three-, and four-character parties; every party slot as leader; an incapacitated leader; mixed living and dead members; full companion capacity; a charm attempt at capacity; companion escape mid-encounter; ownership transfers; and party dissolution after a total defeat. Verify how XP and treasure are allocated in each case.</p>
+<h2 id="section-8">8 Combat and simulation time</h2>
+<h3>8.1 Combat model</h3>
+<p>Preserve the original real-time combat model. Do not redesign it into turn-based initiative, action combat, or a timer that advances only on player input. The official product description explicitly calls out real-time action and combat. <a href="https://www.decklinsdemise.com/mordor.htm">Official product page</a>.</p>
+<p><strong>Later official help documents:</strong> a default combat round every two seconds, continued hostile action while the player is idle, and a Defend command that adds 50% to defense. Use these as documented comparison targets, with rounding and event order still unverified. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>1wxgb3.htm</code>, Encounters Combat.</p>
+<p>The complete clock model remains a <strong>validation requirement</strong>: movement cadence, automatic attacks, manual commands, spell execution, enemy actions, status ticking, resource recovery, pause commands, modal windows, focus loss, and speed options must be measured. The original may mix action-triggered and timer-triggered work; do not force every subsystem into one assumed cadence.</p>
+<p><strong>Proposed engineering:</strong> use a simulation scheduler independent of display frame rate. Higher refresh rates, skipped animation, a resized window, or faster storage must not grant additional attacks. Rendering consumes state and events; it never decides damage or rolls for an encounter.</p>
+<h3>8.2 Encounter behavior</h3>
+<p>Preserve enemy groups, group sizes and placement, initial hostility, attack initiation, evasion, pursuit or disengagement rules, target selection, and the interaction of friendly encounters with alignment and companions. Preserve automatic physical attacks and manual actions exactly where the original supports them. An input buffer must not queue extra actions beyond the original’s accepted behavior.</p>
+<h3>8.3 Resolution requirements</h3>
+<p>The implementation must recover and test hit chance, physical damage, equipment penetration requirements, critical hits, backstabbing, multiple swings, resistances, special attacks, spell resistance, instant-kill handling, XP awards, and loot triggers. Do not substitute a generic dice model or approximate DPS curve. Two enemies with the same displayed attack and defense may differ through flags, spells, level, group behavior, or resistances.</p>
+<p>Resolve effects in the original order. A thief stealing and fleeing, a monster destroying an item, a character dying before a scheduled spell, or an enemy being charmed rather than killed can produce different subsequent state. Keep per-event logs in the test harness so a matching final HP total cannot conceal an incorrect event sequence.</p>
+<h3>8.4 Player feedback</h3>
+<p><strong>Proposed:</strong> legible enemy group cards, clear active character and selected target, accessible HP/SP indicators, restrained hit flashes, and a scrollable combat log. New animation length is cosmetic. A shortened or disabled animation must produce the same commands and simulation events.</p>
+<p>The log should report original-observable outcomes in plain language: misses, damage, status changes, failed spells, theft, destruction, companion actions, and deaths. It must not print hidden rolls, undiscovered monster resistances, or an enemy’s exact remaining health when the original would conceal them.</p>
+<h3>8.5 Timing and pause acceptance</h3>
+<p>Build a timing matrix for exploration, combat, inventory, spellbook, town, dialogs, minimization, focus loss, and suspend/resume. Record which clocks advance in the original. Match those results in the faithful profile. Accessibility features that require additional decision time must be labeled as separate assistance settings if they cannot reproduce an existing pause behavior. Do not claim they are mechanically identical.</p>
+<h3>8.6 Physical swing chaining and opening attacks</h3>
+<p><strong>Later official help documents:</strong> an additional weapon or guild swing requires the preceding swing to kill its target. In its three-swing example, killing the first creature and only wounding the second prevents a third swing. A multiple-swing field must therefore not become a fixed number of attacks against a surviving enemy. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>5hmud3.htm</code> and <code>d7eivm.htm</code>.</p>
+<p>Compare miss, nonlethal hit, lethal hit, immunity, critical kill, last target in a group, and last hostile group. Determine whether excess swings can cross groups and how guild and weapon contributions combine. The candidate item&#39;s <code>extra_swings</code> column is a parser label; validate whether the stored quantity is a total, an increment, or another parameter before adding it to anything.</p>
+<p>Do not adopt the comparison project&#39;s approximately one-second combat interval or its fixed player-first description. Its own changelog describes a hostile opening-strike exception. Measure original surprise, peaceful-to-hostile transitions, and withdrawal independently; preserve the two-second default as the later-help comparison target until confirmed. No new Tank action or aggro redirection enters the faithful rules. <a href="https://github.com/matteo-prosperi/DungeonsOfDejremake/blob/c932f12ec163693e120a4dc236610619f6af96ab/docs/help/dungeon.md">Comparison dungeon guide</a>, <a href="https://github.com/matteo-prosperi/DungeonsOfDejremake/blob/c932f12ec163693e120a4dc236610619f6af96ab/docs/help/changelog.md">changelog</a>.</p>
+<h2 id="section-9">9 Magic and status effects</h2>
+<h3>9.1 Spell model</h3>
+<p>Preserve each original spell’s identity, category, guild access, required spell level, stat requirements, SP cost calculation, power, targets, effect limits, resistances, duration, failure behavior, and experience or side effects. Preserve whether it acts on a character, companion, enemy, group, multiple groups, the party, a location, or an item.</p>
+<p>Use a full spell-by-guild association table. The same named spell may be available at different levels or efficiencies through different guilds. A character’s spellbook is a view of learned access; the chosen casting capability must follow the original arbitration rule. Keep spell level distinct from guild level.</p>
+<h3>9.2 Spell families</h3>
+<p>Inventory every original category, including damage-producing magic, instant-kill effects, charm and binding, healing and condition cures, movement, banishment, dispelling, resistance and protection, visual effects, location, and magical utilities. Preserve original naming even where it would be counterintuitive in another RPG. Verify effects rather than inferring them from names such as Sleep or Poison. Community spell tables, for example, describe some apparently familiar status spells as kill effects. <a href="https://dejenol.fandom.com/wiki/Mage">Mage spellbook reference</a>, <a href="https://dejenol.fandom.com/wiki/Villain">Villain spellbook reference</a>.</p>
+<h3>9.3 Movement magic</h3>
+<p>Movement spells must respect original coordinate systems, facing, depth limits, destination constraints, random displacement, sanctuary state, and unsafe outcomes. Never clamp an invalid destination to a safe floor tile. If the original permits materializing in rock, retain the event and its recovery system. Preview only information the character could know; do not reveal hidden geometry through destination highlighting.</p>
+<h3>9.4 Conditions</h3>
+<p>Represent poison, disease, paralysis, stoning, aging, draining, invisibility, levitation, resistances, death, and other discovered states distinctly. Their stacks, potency, duration, cures, persistence, and interactions are independent rule definitions. An ordinary heal must not clear unrelated conditions. A revived character must not automatically receive a full cleanse or restored equipment.</p>
+<p>For every condition specify entry triggers, eligibility and resistance checks, mutation, periodic work, expiry, removal actions, save representation, and display. Record whether a status is a counter, accumulated severity, absolute expiry, boolean, or a combination. Rendering an icon must not simplify a multi-valued condition to a boolean.</p>
+<h3>9.5 Spellbook and acceptance</h3>
+<p><strong>Proposed spellbook:</strong> filter by category, known spell, target type, and current castability; retain the original ten spell/item buffers and per-character shortcuts. Show why a spell cannot be cast using known requirements. Preserve original default-command repetition, including supported spell-buffer behavior; add no intelligent fallback, extra automatic recasting, or resource-saving tactics.</p>
+<p>Test minimum requirements and one below them, SP exactly equal to cost, zero eligible targets, empty groups, partial resistance, immunity, multiple-guild access, spell cancellation, overlapping buffs, saving during a timed effect, and casts immediately before death or movement. Verify costs on failures as well as successes.</p>
+<h3>9.6 Spell power, cost, and healing exceptions</h3>
+<p>Resolve spell eligibility, power, cost, context, target and resource consumption as separate decisions. The later official help describes the highest applicable learned <strong>spell level</strong> for power, the lowest available guild cost independently, and a separate rule for item casts. Raw guild level and spell level are not interchangeable. Fixed-level items must retain their fixed level; character-scaled item casts follow the verified item rule. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>14n5mvy.htm</code>.</p>
+<p><strong>F16 now has static-code support:</strong> the positive-power healing/cure branch in the supplied <code>Module6.fn1173</code> uses <code>floor(active guild level / 2 + 0.5)</code> when the explicit cast-level argument is non-positive; a positive argument overrides it. The spellbook supplies zero and direct item use supplies the item&#39;s level. This supports active-guild healing with a fixed-level item override, while leaving other effect families distinct. The <a href="research/local-original-review.md">original-file review</a> records the branch, callers and healing equation. Runtime comparison is still required; the comparison remake&#39;s universal best-guild policy remains excluded.</p>
+<p>Prepare one character with different levels in two healing-capable guilds. Keep stats, target injury, item, location and conditions fixed; change only the active guild. Compare SP cost and healing distributions separately, ensuring the recipient has enough missing HP to avoid clipping the result. Repeat with a fixed-level healing item and a character-scaled item. A full heal on a lightly injured target cannot distinguish competing power formulas.</p>
+<p>Buff maintenance remains player-directed except for established original default commands. Automatic casting on dungeon entry or after Extinguish/Blackout would spend resources and remove decisions; it is excluded. Preserve Anti-Magic, Extinguish, and Blackout as distinct checks and mutations, including whether equipment-derived effects survive.</p>
+<h3>9.7 Healing and recovery effect contracts</h3>
+<p>Later publisher help distinguishes ordinary healing, ailment removal, and resurrection. These are separate effect types, not aliases of a universal restore command. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>60.eu..htm</code>.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>Spell family or named spell</th>
+<th>Documented effect to preserve</th>
+<th>Verification focus</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Minor Heal, Heal, Restoration</td>
+<td>Recover HP without automatically curing other conditions</td>
+<td>Power, missing-HP cap, active-guild conflict</td>
+</tr>
+<tr>
+<td>Cure Poison / Cure Disease</td>
+<td>Remove the named ailment</td>
+<td>Severity handling, cost, other conditions unchanged</td>
+</tr>
+<tr>
+<td>Cure Paralysis</td>
+<td>Remove paralysis; listed as COMBAT</td>
+<td>Context legality and allowed recipient</td>
+</tr>
+<tr>
+<td>Cure</td>
+<td>Heal and remove poison and disease</td>
+<td>Effect order and precise condition scope</td>
+</tr>
+<tr>
+<td>Mass Heal</td>
+<td>Heal party members</td>
+<td>Eligible members, separation, companion treatment</td>
+</tr>
+<tr>
+<td>Raise Dead</td>
+<td>Attempt revival without full healing</td>
+<td>Success, resulting HP, complications</td>
+</tr>
+<tr>
+<td>Restore Flesh</td>
+<td>Recover a stoned character</td>
+<td>Constitution loss and eligibility</td>
+</tr>
+<tr>
+<td>Resurrect</td>
+<td>Revive and restore HP</td>
+<td>Failure, complications, rock exclusion</td>
+</tr>
+</tbody></table></div>
+<p>The help lists the other spells in this table as NON-COMBAT. Its spell rules permit non-combat casts with peaced monsters present; a UI must not infer hostility from a nonempty monster panel. Confirm each spell&#39;s restriction in the baseline. Revival does not imply curing every ailment, recovering a missing body, repairing gear, or reversing previous permanent losses.</p>
+<h3>9.8 Original spell records and access matrix</h3>
+<p><strong>Extracted file facts:</strong> MDATA2 contains <strong>105 physical spell records and 103 distinct embedded IDs</strong>, compared with the earlier later-help transcription&#39;s 100 category entries. ID 93 is shared by Mass Sight Veil and Mass Protection; ID 94 by Fate and She&#39;tal. Preserve physical identity and names rather than deduplicating by ID. All 132 positive item-to-spell references match the embedded ID at their one-based target record. ID 0 is Charm of Opening and must not become a universal null value.</p>
+<p>The local guild/category matrix derives 205 guild/spell relations across 101 physical spells. Fate, She&#39;tal, Life Domination and Shock Lance have base level 50 and no ordinary access in that matrix; retain them without inventing unlocks. Access involves category permission/cap, base level times category multiplier, spell level <code>floor(guild level / 2 + 0.5)</code>, and effective stat requirements. The resulting guild-level thresholds remain source-derived candidates until verified.</p>
+<p>Local base levels and requirements disagree with later help in nine compared fields, including Firebolt level 1 rather than 2 and Blue Flame 3 rather than 4. Preserve edition-specific values and explicit aliases. Stored cost parameters are not final SP prices; the detail display adds one to the stored power modifier, whereas runtime equations can use the raw coefficient. <a href="research/local-original/spell-reference.md">Complete original spell table</a>, <a href="research/local-original/guild-spell-access-local.csv">guild access</a>, <a href="research/local-original/spell-help-comparison.json">help comparison</a>.</p>
+<h2 id="section-10">10 Dungeon and exploration</h2>
+<h3>10.1 Geometry</h3>
+<p>Preserve fifteen floors with their original layouts. A historical retrospective describes each floor as 30 by 30 cells, giving 13,500 coordinate positions across the full dungeon; that includes solid rock and is not a count of walkable spaces. <a href="https://crpgbook.wordpress.com/review-index/1995-mordor-depths-of-dejenol/">CRPG Book retrospective</a>. The supplied original MDATA11 now provides those complete cell records; section 10.5 defines the remaining behavioral checks.</p>
+<p>Every cell must retain coordinates, room membership, walls, doors, secret doors, traversability, hazards, lair associations, and transitions. Keep facing and the original coordinate convention. Draw the remastered corridor from those records. Hand-building a similar-looking maze is insufficient because even one moved wall can change a route, teleport, rescue, or lair strategy.</p>
+<p>Use discrete movement and facing. Smooth transitions may interpolate between accepted positions but cannot let the party stop between cells, peek around corners, or avoid a hazard through animation timing. No free-look camera may reveal information beyond the original view.</p>
+<h3>10.2 Environmental systems</h3>
+<p><strong>Later official help documents:</strong> fixed and random teleporters, pits, chutes, fog, water, quicksand, rotators, forced-facing cells, secret doors, Anti-Magic, Extinguish, and stronger-encounter “Stud” cells. Random teleporters can split parties. Levitation does not simply neutralize every terrain danger. Anti-Magic blocks new casting, while Extinguish also removes existing spell effects. Multiple cell properties may coexist. These details need retail-build confirmation. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help archive</a>, topic <code>dki1c1.htm</code>, The Dungeon.</p>
+<p><strong>Preserve:</strong> all trigger conditions and precedence, including entering, remaining in, or turning on a cell; forced movement chains; levitation failure; burden-related drowning; item loss; party separation; and destination selection. A path must be simulated one original action at a time. Do not introduce safe auto-walking or pathfinding into normal play.</p>
+<h3>10.3 Mapping and orientation</h3>
+<p><strong>Later official help documents:</strong> shared automapping, perception-dependent details, no erasure of a better map by a less perceptive character, access limited to visited floors, and suppression of current location when lost. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>ewtej8.htm</code>, AutoMap.</p>
+<p><strong>Proposed map:</strong> zoomable, high-contrast symbols with a legend and player-written notes. The view is generated from world knowledge, not the raw dungeon. While lost, omit the live position marker and any breadcrumb that would reconstruct the hidden position. Notes represent what the player entered, even if mistaken. A full-map inspector belongs in developer tools or a separately opened spoiler reference.</p>
+<h3>10.4 Encounters and time</h3>
+<p>Preserve room populations, repopulation timing, lairs, special-room modifiers, spawn eligibility, encounter composition, and persistence after leaving. Do not replace the fixed dungeon with procedural layouts or scale inhabitants to the current party. Deeper risk comes from original content and distributions.</p>
+<p><strong>Acceptance:</strong> compare all cell fields and all directed connections; walk every stair, chute, and fixed teleporter; test random transitions statistically; cover every combined hazard flag; traverse the same route with different perception and levitation states; and save a separated, lost party before reloading it.</p>
+<h3>10.5 Full original cell manifest</h3>
+<p>The supplied MDATA11 contains fifteen 30×30 floors: <strong>13,500 cells</strong>, with raw terrain masks, area references, 201 allocated area records per floor and the transition slots. Preserve all entries, including unused/zero slots. The area-count header is not the physical number of area records to skip. Floors 1–9 allocate twenty teleporter slots; floors 10–15 ten; every floor allocates ten chute slots. Slot counts do not equal active hazards, and non-rock cells are not automatically reachable. Coordinates have static support for one-based indexing; orientation and transitions require original automap checks. <a href="research/local-original/extraction-summary.json">Cell manifest and floor summary</a>, <a href="research/local-original/dungeon-cells-local.csv">cell export</a>, <a href="research/local-original-review.md">format evidence</a>.</p>
+<h2 id="section-11">11 Monsters and encounters</h2>
+<h3>11.1 Complete record preservation</h3>
+<p>Every monster must retain its original record identity and behavior. Preserve at least name, class and subtype, picture reference, attack, defense, HP parameter and distribution, guild or combat level, six statistics where present, size, alignment, group parameters, depth and encounter eligibility, resistance values, property flags, special attacks, spell capabilities, companion associations, treasure probabilities, traps, item-drop references, and gold parameters. Preserve unused and unknown fields until their semantics are established.</p>
+<p>The community file-format library identifies a broad original monster structure and a CSV exporter. It is a useful parser reference, not proof of combat formulas. <a href="https://github.com/JKaniarz/libDejenol">libDejenol</a>.</p>
+<p><strong>Do not collapse</strong> monster classes, replace elemental immunities with one defense stat, scale enemy HP, equalize loot, or make rare encounters common. Preserve monsters that share a picture as distinct records. A graphical variant must not imply a mechanical variant that did not exist.</p>
+<h3>11.2 Content verification</h3>
+<p>The supporting bestiary files retain all parsed candidate records and their provenance. Their status is stated in the appendix. A row count alone cannot certify completeness: disabled entries, duplicate IDs, inaccessible depth values, and unused records must be reconciled. Preserve record position independently from embedded ID until reference semantics are known.</p>
+<p>The production data importer must reject unexpected changes and produce a field-level comparison report. Each monster receives a verification status: extracted, structurally checked, library-checked, behavior-checked, and approved. Validate ordinary melee enemies, casters, thieves, breath users, draining enemies, item destroyers, charmable creatures, lair inhabitants, and the final encounter separately.</p>
+<p><strong>Local original comparison:</strong> the supplied data retains 401 physical monster records, 400 distinct IDs, GOBLIE, duplicate ID 307 and first-level values above 15. Every parsed field matches the public candidate except Dark Shape&#39;s first item field: physical record 266 stores <code>item_1 = 33</code> locally versus <code>34</code> in the public archive. Keep both source versions and use the selected baseline&#39;s value; do not silently merge them or infer a drop probability from this difference. <a href="research/local-original/monsters-local.csv">Local monster fields</a>, <a href="research/local-original/public-local-field-differences.json">comparison</a>.</p>
+<h3>11.3 Specials and behavior</h3>
+<p><strong>Later official help documents:</strong> damaging breath, poison, disease, paralysis, stoning, aging, draining, theft, item destruction, critical hits, backstabs, and spellcasting. Carried items and equipped items have different exposure to theft and destruction. No generic “negative status” routine can stand in for these effects. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>24fcus.htm</code>, Monster Attacks.</p>
+<p>Preserve hostility and peaced encounters. A remastered enemy animation must not declare hostility before the original decision. Retain monster knowledge and identification rules; a nameplate, portrait, tooltip, sound cue, or accessibility label must not disclose an unidentified creature’s true type.</p>
+<h3>11.4 Endgame</h3>
+<p>Preserve the original deepest encounters, their appearance conditions, rewards, records, and repeatability. Do not add phases, invulnerability windows, cinematic quick-time actions, or a mandatory ending that clears the world. Exact final-adversary identity, record mapping, and recognition must be checked in the registered build. The story’s Prince of Devils reference does not independently establish its complete enemy stat block.</p>
+<h2 id="section-12">12 Items and equipment</h2>
+<h3>12.1 Item definitions and instances</h3>
+<p>Separate an item definition from an owned instance. Definitions hold original identity, category, price, attack and defense, damage modifiers, hands or equipment slot requirements, guild masks, stat requirements, level requirements, resistance or ability flags, spell associations, use behavior, and all original parameters. Instances hold ownership, alignment, charges, curse state, identification, and any other mutable properties supported by the original.</p>
+<p>Preserve all item categories: weapons and unarmed representations, armor and accessories, magical casting items, potions, tomes, and special or quest-related objects. The final category and slot inventories must be generated from the approved data. Do not assume a modern equipment arrangement, stack size, or weight system.</p>
+<h3>12.2 Eligibility and effects</h3>
+<p>Use natural statistics where the original requires them and effective statistics where it allows them. Preserve guild restrictions, active-guild restrictions, level gates, alignment conflicts, curses, two-handed interactions, equip and unequip legality, and the recalculation order of derived stats. An item that is unusable today still has inventory and economic significance.</p>
+<p><strong>Later official help documents:</strong> character item eligibility uses natural statistics, while spell stat requirements may use modified statistics. This distinction must survive the redesigned character sheet. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>81ywhd.htm</code>, Character Information, and <code>14n5mvy.htm</code>, Spells.</p>
+<p>Retain charges and depletion behavior. An item-cast spell must use its original power-selection rule; it is not automatically equivalent to casting that spell from the character’s own spellbook. Preserve destruction, draining, consumption, charge combination, special stat effects, and opposed-alignment outcomes.</p>
+<h3>12.3 Inventory presentation</h3>
+<p><strong>Proposed:</strong> inventory and equipment appear together, with known requirements and effects in a detail panel. Sort and filter are visual operations unless the original inventory order affects a rule; if order matters, preserve canonical slot order and treat visual sorting as a view only. Display unidentified instances using their current known description. Never reveal identity through icon choice, sort order, hidden search terms, or comparison totals.</p>
+<p>A protected-from-accidental-sale UI marker may require confirmation before a player sells an item, but it must not prevent theft, destruction, curse effects, or compulsory quest turn-in. Do not add stack merging, mass selling, auto-equipping, salvage, crafting, durability, loot rarity colors, or vendor buyback unless the baseline supports the mechanic.</p>
+<h3>12.4 Acceptance</h3>
+<p>Exercise every item definition’s eligibility and effect. Test known versus unknown items, last charge, full inventory, full bank, two-hand conflicts, guild changes while cursed, opposed alignments, stat modifications at caps, death ownership, and theft/destruction target eligibility. Compare the same character before equipping, after equipping, and after removing an item to catch persistent stat drift.</p>
+<h3>12.5 Capacity, equipment classes, and action distinctions</h3>
+<p><strong>Later official help documents:</strong> forty character item slots, plus the separately documented forty bank slots. Equipment is constrained by item class: only one equipped member of a class, including rings or stones, rather than a modern assumption of two ring slots. Subclasses such as swords and daggers belong to broader equipment classes. Some consumables and casting objects can be Used without being Equipped. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>5hmud3.htm</code>.</p>
+<p>Implement <code>Equip</code>, <code>Unequip</code>, <code>Use</code>, <code>Give</code>, <code>Drop</code>, and town services as separate commands with their own eligibility and consequences. A split equipment/pack view must still use the original occupancy accounting. Verify whether equipped items consume the forty slots, how charges occupy slots, and where a failed transfer leaves the item. Do not infer extra carrying space from a redesigned screen. The source&#39;s category examples do not establish a complete slot enumeration; derive that from the approved item-class data.</p>
+<h3>12.6 Class restriction and alignment decision table</h3>
+<p>The later help supplies the following behavioral targets. Exact thresholds, affected bonuses, rounding, and exceptions remain original-build checks. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>5hmud3.htm</code> and <code>9dns9..htm</code>.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>Condition</th>
+<th>Documented decision or consequence</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Class-restricted equipment</td>
+<td>Active guild must permit the item and meet its required level</td>
+</tr>
+<tr>
+<td>Non-class-restricted equipment</td>
+<td>An eligible sufficiently leveled membership can qualify even if inactive</td>
+</tr>
+<tr>
+<td>Natural stat below requirement, equipment bonus above it</td>
+<td>Modified value does not satisfy item eligibility</td>
+</tr>
+<tr>
+<td>Unaligned item</td>
+<td>No alignment mismatch penalty</td>
+</tr>
+<tr>
+<td>Neutral character equips Good item</td>
+<td>Half benefit in the help&#39;s example; determine each affected field and rounding</td>
+</tr>
+<tr>
+<td>Good character equips Evil item, or reverse</td>
+<td>Attachment and curse consequences</td>
+</tr>
+<tr>
+<td>Direct Use of differently aligned item</td>
+<td>Later help says a charge is consumed; static code has a spell-item early exit before debit and a different general-item path. Resolve by effect path (F21), not a universal rule</td>
+</tr>
+</tbody></table></div>
+<p>The source contrasts a level-30 Nomad/level-1 Mage using an Iron Dagger with trying Padded Leather Armor while Mage is active. Use that as a concrete comparison setup, checking race, natural stats and both guild permissions. In the candidate data, the dagger&#39;s class-restricted field is <code>0</code> and the armor&#39;s is <code>-1</code>; this supports the distinction without independently proving eligibility formulas. <a href="research/item-candidate-shareware.csv">Candidate item data</a>.</p>
+<p>Keep <strong>Unaligned</strong> distinct from <strong>Neutral</strong>. Test every character/item alignment pair for both Equip and Use. Never use an interface compatibility warning to preempt an originally legal action that has adverse consequences; expose the consequence only to the extent legitimately known, then execute the original rule.</p>
+<h3>12.7 Identification and information boundaries</h3>
+<p>An item&#39;s identification level controls which fields are visible. The help ties spell identity, fixed-versus-character casting level, and special abilities to complete identification. Its store service advances knowledge and its uncurse service identifies before removal. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>9dns9..htm</code> and <code>irl356.htm</code>.</p>
+<p>Maintain separate predicates for information visibility, equip eligibility, and use eligibility. Do not invent a universal rule that only completely identified items can be equipped. Establish each original restriction and cursed-item exception experimentally. Unknown items must not disclose spell names through buffer labels, glyphs, screen readers, or disabled-button explanations. Store the original instance identity even when the player knows only a generic description.</p>
+<h3>12.8 Crests, special items, and involuntary attachment</h3>
+<p>Enumerate guild crests independently of ordinary purchasable equipment. Recover award conditions, quantity limits, guild restrictions, starting charges, charging triggers, destruction/replacement behavior, and whether an effect requires equipping. Candidate crest rows include zero price, nonzero spell charges, and negative spell-level values; none should be normalized to an ordinary shop item or a zero-level cast. The latest comparison changelog identifies crest charge handling as a recent fix; use it as a test lead, not original proof. <a href="research/item-candidate-shareware.csv">Candidate data</a>, <a href="https://github.com/matteo-prosperi/DungeonsOfDejremake/blob/c932f12ec163693e120a4dc236610619f6af96ab/docs/help/changelog.md">comparison changelog</a>.</p>
+<p>Likewise test cursed acquisition separately from voluntary equipping. Ball and Chain is a concrete candidate for involuntary attachment, identified in that changelog; verify when the original attaches it, slot conflicts, movement consequences, and removal. A generic inventory confirmation or “never equip cursed gear” option must not suppress an automatic original consequence.</p>
+<h3>12.9 Local item structure and spell references</h3>
+<p>The supplied MDATA3 matches the public item bytes exactly, corroborating all 366 candidate records for this local input. MDATA1 adds 35 item subtypes and 24 classes, including a special −1 equippable value for Miscellaneous Object; preserve raw values until their predicates are traced. The decompiled item structure separates charges and the next field into 16-bit values, but the latter&#39;s purpose is not established by a third-party label.</p>
+<p>The Crest of Thief&#39;s spell index 1 / spell ID 0 resolves to Charm of Opening in MDATA2. Preserve both one-based record references and embedded IDs. The charged spell-item branch of <code>sub1577</code> rejects mismatched alignment before charge debit; a later general-item path debits first. Test both with charged and depleted instances rather than implementing the help summary indiscriminately. <a href="research/local-original/items-local.csv">Local item records</a>, <a href="research/local-original/item-spell-links-local.csv">item spell links</a>, <a href="research/local-original-review.md">source interpretation</a>.</p>
+<h2 id="section-13">13 Treasure and economy</h2>
+<h3>13.1 Containers and traps</h3>
+<p><strong>Later official help documents:</strong> boxes and chests have distinct rewards; recognizing a trap and disarming it are different checks; magically locked containers require appropriate magic; opening during combat consumes rounds. Listed traps include Disease Spores, Poison Gas, Exploding Box, Fire Trap, Slime, Fate, Teleporter, Fear, Withering, and Blackout. Withering adds four weeks of age; a Teleporter trap moves the opener rather than the entire party. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>36mud0.htm</code>, Encounters Treasure.</p>
+<p>Preserve each trap’s trigger, targets, magnitude, resistance interactions, persistence after activation, and effect on companions and buffs. Do not replace trap handling with one percentage roll. The displayed confidence that a chest has a trap is not necessarily the probability of successfully opening it.</p>
+<h3>13.2 Loot generation</h3>
+<p>Use original creature and room data to generate gold, items, containers, locks, and traps. Record whether a roll occurs when an encounter spawns, a monster dies, a container appears, or a container opens. Saving or changing UI panels cannot reroll unopened treasure. Preserve whether and how companions participate in treasure distribution.</p>
+<p>No pity timer, guaranteed quest drop, universal boss chest, smart loot, level-scaled equipment, or daily bonus enters the faithful game. These would change scarcity and expedition planning even if enemy numbers remained the same.</p>
+<h3>13.3 Money and stock</h3>
+<p>Preserve carried gold, banked gold, personal ownership, party sharing and pooling, fees, training costs, prices, identification costs, resurrection costs, and the inventory consequences of each transaction. Use sufficiently wide internal numeric types while explicitly reproducing any externally visible original bounds and rounding. Do not introduce floating-point currency rounding.</p>
+<p><strong>Later official help documents:</strong> store stock changes through player and simulated explorer activity; alignment variants matter; combining charges, uncurse, identification, and realignment are separate services. Selling and repurchasing can recharge some items, with different treatment for consumables. All exact formulas remain validation tasks. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>irl356.htm</code>, The City Store.</p>
+<p><strong>Proposed transaction behavior:</strong> show a quote based on current legitimate knowledge; commit the original action atomically; show its actual outcome. A player cannot undo a failed risky service. Preventing a duplicate click is appropriate; refunding an unfavorable result is a rules change.</p>
+<h3>13.4 Charge transactions and shop stock</h3>
+<p>Use category-specific charge rules. Later official help distinguishes rechargeable spell-casting equipment from consumables: depleted swords/artifacts can reappear charged after sale, whereas an insufficient remainder of a potion need not generate a stock unit. It also documents selling charge chunks and combining compatible items into the first selected instance. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>irl356.htm</code>.</p>
+<p>The comparison store guide&#39;s broad statement that original partially charged goods disappeared is therefore not safe to apply across all item types. <strong>F17 remains open</strong> for the selected original build. Neither discard all partial-charge objects nor recharge all consumables. <a href="https://github.com/matteo-prosperi/DungeonsOfDejremake/blob/c932f12ec163693e120a4dc236610619f6af96ab/docs/help/general-store.md">Comparison store guide</a>.</p>
+<p>For each supported service define a transaction record containing source instances, type and alignment, knowledge, charges before/after, quote, payment accounts, stock change and surviving instance. Test charges at zero, one, one below a stock unit, exactly a unit, and above a unit. Check charge overflow and restrictions on combining alignment variants; do not assume equal names are sufficient. Cancellation leaves all fields unchanged; a completed original action applies all its consequences together.</p>
+<p>Town payment fallback is distinct from automatic banking. <strong>Static decompiler evidence:</strong> <code>Module6.fn114E</code> spends carried gold first; if that is insufficient but combined funds cover the charge, it zeros carried gold and deducts only the remainder from the bank. Insufficient combined funds reject payment. Validate callers and numeric boundaries per service. Do not deposit carried funds as an implementation shortcut. <a href="research/local-original-review.md">Original payment routine</a>.</p>
+<h2 id="section-14">14 Town services and guild quests</h2>
+<h3>14.1 Town structure</h3>
+<p>Use an illustrated, menu-accessible town hub with direct access to Store, Bank, Guilds, Library, Morgue, Seer, and Holding and Confinement. It should be quicker to read, but it must not add a travel-time simulation between shops or a free-healing inn with new rules. Retain the original service boundaries and shared world state.</p>
+<p><strong>Later official help documents:</strong> returning to town restores HP and SP, treats poison and disease, and heals companions, while recovery advances age. Town is therefore a recovery location with a time consequence. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>swkvkg.htm</code>, The City.</p>
+<h3>14.2 Bank</h3>
+<p><strong>Later official help documents:</strong> forty stored items, protected banked possessions, access limited to town, and distinct party operations for pooling or depositing carried and banked gold. Preserve account ownership and exactly which funds each service may draw from. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>swjne9.htm</code>, The City Bank.</p>
+<p><strong>Proposed UI:</strong> label source and destination accounts explicitly. A preview explains which balances will change before a pooling command executes. A full bank must reject an extra item without deleting or duplicating it. Carried gold stays carried until the player performs an original-equivalent deposit.</p>
+<h3>14.3 Guilds and quests</h3>
+<p>Preserve assignment probabilities, allowed targets, target depth eligibility, progress tracking, active-guild conditions, training gates, quest completion rewards or recognition, item surrender, and forfeiture consequences. Guild quests remain development constraints, not a new global quest board.</p>
+<p><strong>Later official help documents:</strong> town-only guild changes, cursed or opposed equipment blocking changes, quest requirements for advancement, item surrender at advancement, and a pinned-experience condition for quest forfeiture with demotion. Preserve the original treatment of party and companion kills toward monster quests. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>3.id7m5.htm</code>, The City Guilds, and <code>14i_7ja.htm</code>, Parties.</p>
+<h3>14.4 Seer</h3>
+<p>Keep paid inquiries and uncertain results. The Seer must not become a guaranteed waypoint service. Preserve required target names, repeated attempts, depth-dependent difficulty, answer precision, and the distinction between locating a character and seeking a monster or an item. Show the actual answer with a transcript so the player need not memorize a disappearing dialog. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>1f6.qsp.htm</code>, The City Seer.</p>
+<h3>14.5 Holding and Confinement</h3>
+<p>Keep creature purchase, sale, identification, binding, and realignment as separate actions. Preserve alignment-specific stock, original binding on purchase, failed realignment outcomes, and restrictions on rebinding voluntary companions. Selling a dangerous companion must retain its original distinction from dismissing one in the dungeon. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>6m9o_0i.htm</code>, Holding and Confinement.</p>
+<h3>14.6 Service acceptance</h3>
+<p>For every service compare eligibility, quote, payment source, success or failure, age change, inventory change, stock mutation, knowledge gained, and saved result. Test insufficient carried gold with sufficient bank funds, insufficient combined funds, a full container, a dead character, changed prices between selection and commitment, and crash recovery immediately after payment.</p>
+<h3>14.7 Quest parameters and assignment gates</h3>
+<p>The local Mage quest parameter is <strong>15</strong>, matching the printed number rather than the community value of 20. It is not a complete final percentage. Decompiled guild advancement forces a rejecting roll below level five, compares an integer-converted <code>Rnd × 100</code> against the guild parameter, and then performs another random exemption check. Item-quest selection also requires level above 15 and another selection condition. Preserve VB implicit conversion, comparison boundaries and draw order rather than replacing this with one <code>random &lt; QP / 100</code> test. Verify levels 4/5 and 15/16, quest reset, completion and forfeiture separately. <a href="research/local-original/guilds-local.csv">Guild data</a>, <a href="research/local-original-review.md">assignment code interpretation</a>.</p>
+<h2 id="section-15">15 Death recovery and aging</h2>
+<h3>15.1 Consequence model</h3>
+<p>Death must remain a persistent event in the world. Keep the casualty’s location, inventory, money, companion outcomes, party changes, and recovery eligibility. Preserve other roster characters so the player can organize an actual rescue. A defeat screen may explain options; it cannot teleport the body to town or restore losses.</p>
+<p><strong>Later official help documents:</strong> spell resurrection, carrying a body to the Morgue, hired recovery, rescue delays that advance age, resurrection complications, and separate handling of stoning and rock entombment. Rock extraction precedes resurrection. The Morgue cannot itself extract a character from rock. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>1.hflff.htm</code>, Dying, and <code>18q40y4.htm</code>, The City Morgue.</p>
+<h3>15.2 State transitions</h3>
+<p><strong>Proposed implementation model:</strong> represent each original-supported casualty condition explicitly. Normal death, stoning, and entombment in rock have distinct transition guards. A rescue transaction moves or carries a body only if its original rules allow it; a resurrection transaction applies success, complications, HP, statistics, age, and fees together. Preserve the distinction between body retrieval and restoring life.</p>
+<p>Do not classify approximate racial lifespan as a guaranteed death birthday. Recover the actual age checks and rounding. Age-reduction items, town healing time, rescue waiting time, monster aging attacks, and resurrection consequences must all share the correct unit conversions. The Withering trap’s weeks must not accidentally become years.</p>
+<p>The decompiled label table distinguishes <strong>Dead, Stoned, Destroyed, Immolated, Frozen, Annihalated, Melted and Rock</strong> (source spelling). Keep these as distinct condition identities while tracing each recovery branch; do not flatten them into a generic dead flag. <a href="research/local-original/enum-labels-decompiled.csv">Extracted labels</a>.</p>
+<h3>15.3 Recovery interface</h3>
+<p>Display who is dead or otherwise incapacitated, what is known about their location, which recovery methods are currently available, and known prices or requirements. A lost casualty’s exact coordinates must not appear merely because the save file contains them. Warn clearly when the character lacks a required recovery option without inventing a free substitute.</p>
+<p>Keep permanent stat loss and failed revival outcomes. Preserve body access restrictions, including the original Hide option if supported by the chosen baseline. Store any local character password as a modern protected credential rather than reproducing insecure historical storage; passwords do not become an online-account requirement.</p>
+<h3>15.4 Acceptance</h3>
+<p>Test ordinary death, party wipe, stoning, rock entombment, absent rescuers, failed rescue, successful rescue, failed raise, repeated raises, low Constitution, advanced relative racial age, inventory retrieval, and loading during every intermediate state. Verify that a body cannot be carried twice, duplicated by load, or raised while a stale copy remains in the dungeon.</p>
+<h2 id="section-16">16 Discovery and information design</h2>
+<p>Knowledge is part of progression. The remaster must maintain separate facts for encountered, partially identified, fully identified, currently observed, and remembered information. Map discovery, item knowledge, monster knowledge, and last-known locations must follow their original sharing scope.</p>
+<p><strong>Later official help documents:</strong> a shared library that grows through identification, historical location and discovery information, and fuller monster identification through companion study or services. Simulated other explorers can affect knowledge and stock. Preserve those systems rather than replacing them with a complete encyclopedia at first launch. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>zhdvci.htm</code>, The Library.</p>
+<p><strong>Proposed library:</strong> searchable known entries, consistent labels, readable stat tables, and dated last-known information. Unknown fields are visibly unknown. Search matches only information currently available; sorting cannot place an unidentified object under its secret true name. Tooltips and screen-reader text use the same filtered model as the visible UI.</p>
+<p>An optional out-of-game reference manual can contain spoilers, clearly separated from campaign knowledge. Opening such a reference must not mutate the library or automap. Developer inspectors and testing overlays must be absent from normal release navigation.</p>
+<p><strong>Acceptance:</strong> start a fresh world and compare every screen’s visible information; discover a monster with low and high perception; identify an item by different routes; query an old location after an encounter has changed; and inspect unknown content through search, sorting, controller focus, audio, and accessibility output.</p>
+<h2 id="section-17">17 Interface and controls</h2>
+<h3>17.1 Main play screen</h3>
+<p><strong>Proposed desktop layout:</strong> retain a simultaneous view of the corridor, party condition, encounters, and action controls. Avoid a cinematic full-screen viewport that hides the statistics required to manage four characters. At a standard widescreen size, use a central dungeon view with encounter groups below it, party cards along the bottom, a selected-character panel on one side, and the known map on the other. The combat log and ten buffers stay accessible without opening a new screen.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>Region</th>
+<th>Always available information</th>
+<th>Interaction</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Dungeon view</td>
+<td>Original-visible corridor and encounter imagery</td>
+<td>Cell movement and facing</td>
+</tr>
+<tr>
+<td>Party strip</td>
+<td>Name, HP, SP, condition, active command, selected member</td>
+<td>Select character and inspect status</td>
+</tr>
+<tr>
+<td>Encounter groups</td>
+<td>Known identity, known count, target and hostility</td>
+<td>Select the original-equivalent target group</td>
+</tr>
+<tr>
+<td>Selected character</td>
+<td>Active guild, exposed statistics, resources</td>
+<td>Open equipment, inventory, spells, companions</td>
+</tr>
+<tr>
+<td>Map</td>
+<td>Discovered geometry and permitted orientation</td>
+<td>Zoom, floor selection, notes</td>
+</tr>
+<tr>
+<td>Action area</td>
+<td>Fight, defend, stop, cast, use, open, original movement actions</td>
+<td>Issue or change one command</td>
+</tr>
+<tr>
+<td>Ten buffers</td>
+<td>Spell/item binding and known availability</td>
+<td>Execute the corresponding original action</td>
+</tr>
+<tr>
+<td>Log</td>
+<td>Time-ordered observable outcomes</td>
+<td>Review without altering simulation</td>
+</tr>
+</tbody></table></div>
+<p>At narrow sizes, reduce decorative margins and collapse secondary details into reachable panels; keep party status and active target visible. Never silently pause a real-time encounter merely because a responsive panel opened. Every window’s pause behavior follows the timing matrix.</p>
+<h3>17.2 Screen flow</h3>
+<p>The front end provides Continue, World/Roster, Create Character, Settings, Help, and Credits. Continue restores a consistent world, then the selected character or valid party. Town exposes its services directly. Entering the dungeon restores the original entry placement and rules. Casualty management remains part of the roster and Morgue flows rather than a “reload checkpoint” menu.</p>
+<p>Selecting a party member changes whose inventory, spell resources, companions, and actions are shown. Their identity remains visible throughout an action. A targeted spell makes caster and recipient explicit. Trading similarly shows giver, recipient, item instance, and quantity or charges before commitment.</p>
+<h3>17.3 Controls</h3>
+<p>Preserve an original keyboard preset where documented: Fight on F, Defend on D, opening on O, next party member on N, direct party selection through Ctrl plus number, and spell/item buffer activation through Shift plus number. Complete exact movement and modifier bindings from the approved help/executable. Offer a modern remappable preset without changing action semantics. <a href="https://www.mocagh.org/miscgame/dejenol-refcard.pdf">Original PlayGuide</a>, combat controls.</p>
+<p><strong>Proposed controller scheme:</strong> directional movement/facing, shoulder buttons to select a character or target according to context, a focusable action bar, and a radial view of the same ten buffers. Every operation must also work without drag-and-drop or a mouse. The radial menu may pause only to the extent an explicitly selected pause feature permits; it must not create a hidden tactical advantage.</p>
+<p>Debounce one-shot actions, distinguish held movement from discrete commands, and clear held inputs after focus loss. Do not carry a held key from a closed dialog into a destructive action. The input layer emits named commands with explicit character and target IDs; widgets never directly mutate game state.</p>
+<h3>17.4 Feedback and error handling</h3>
+<p>Explain failed eligibility with the relevant known requirement. Distinguish an invalid command from a valid spell that failed its roll. Show service costs before payment and rolled outcomes afterward. Make important condition changes readable in the party strip and log. Retain a clear stopped/defending/fighting indicator so a player cannot mistake idle selection for protection.</p>
+<p>No new confirmation should extend decision time during combat unless the simulation continues or the original would pause. Put accidental-action protection primarily in town and roster management. Confirm deletion of a character or world; ordinary attacks should not require modal confirmation.</p>
+<h2 id="section-18">18 Art direction and animation</h2>
+<h3>18.1 Visual objective</h3>
+<p><strong>Proposed style:</strong> illustrated dark fantasy with readable silhouettes, weathered stone, restrained metal and parchment interfaces, and warm town lighting against cooler dungeon interiors. Preserve the original’s compact encounter presentation and unusual creature identities. The result should look like a carefully restored version of this game, rather than a generic modern dungeon crawler wearing its name.</p>
+<p>The dungeon remains first person and grid based. Use a lightweight 3D corridor renderer or layered perspective art generated from the original map. The prototype must prove identical visibility and camera constraints before the rendering method is fixed. Remastered monster illustrations can use subtle idle motion and short attack, impact, and defeat effects; free-roaming 3D monster positions are unnecessary and could imply tactical geometry the rules do not contain.</p>
+<h3>18.2 Asset inventory</h3>
+<p>Create a manifest mapping every original asset reference to its remastered replacement, author, source, resolution, animation set, and approval status. Derive actual quantities from the game rather than commissioning one picture for every monster record: the original reuses imagery, and those associations are part of its visual vocabulary.</p>
+<p>Required groups include race and character portraits; monster portraits and encounter art; item icons by known appearance; town service scenes; dungeon wall, floor, ceiling and door materials; stairs and visible hazards; spell effects; map symbols; condition icons; interface controls; and title/credits art. Cover unidentified appearances and missing-information states explicitly.</p>
+<h3>18.3 Preservation constraints</h3>
+<p>Keep recognizable creature proportions, equipment material distinctions, racial identity, and original naming. Preserve depiction-to-identification relationships. If several unknown creatures originally share one portrait, giving each a unique silhouette can leak identity; either retain a shared pre-identification appearance or document and validate an equivalent information boundary.</p>
+<p>Decorative cracks, light shafts, ambient movement, and material variation cannot indicate secret doors, lairs, danger, or loot unless the original exposed that cue. Do not theme each floor with a new biome that implies undocumented changes to content. Aesthetic depth variation may occur only without revealing hidden rules.</p>
+<h3>18.4 Animation requirements</h3>
+<p>Effects never own the combat clock. Their duration may shorten to fit repeated events without changing resolution. Provide instant movement transitions, reduced flashes, disabled screen shake, and reduced motion. Important events have persistent text or symbols. Avoid visual clutter when several groups, companions, and party members act in one round.</p>
+<p><strong>Art acceptance:</strong> compare original and remastered scenes at the same cell, facing, visibility, knowledge state, and encounter. Confirm no extra geometry or identity is revealed. Review all assets at minimum UI size and at high-DPI scaling, including color-vision alternatives.</p>
+<h2 id="section-19">19 Audio direction</h2>
+<p>The original used MIDI music and wave sound effects. Preserve the recognizable musical and event structure when the necessary assets and permissions are available. The installation guide specifically describes its MIDI setup, which makes instrument rendering part of any original-audio restoration decision. <a href="https://www.mocagh.org/miscgame/dejenol-install.pdf">Original installation guide</a>.</p>
+<p><strong>Proposed audio modes:</strong> an original-audio presentation where licensed and technically supported, and a remastered arrangement with the same musical identity. A remaster arrangement should retain melody, pacing, and atmosphere rather than replacing everything with a new orchestral score. If original arrangements cannot be used, record that as an explicit production decision.</p>
+<p>Map each original sound event to a cue: movement, doors, combat impact, casting, conditions, treasure, transactions, failure, death, and town transitions. New ambience may establish mood but must not identify an unseen enemy, nearby treasure, or secret door. Spatial audio must not supply navigation data unavailable to the original player.</p>
+<p>Provide independent music, effects, ambience, and interface volume; mono compatibility; visual equivalents for meaningful cues; optional haptics; and restrained peak levels. A rapid combat round should remain comprehensible without playing every sound at equal volume. Audio scheduling follows simulation events and never delays them.</p>
+<p><strong>Acceptance:</strong> disabling audio yields identical outcomes; repeated cues do not leak resources; pause and resume do not replay old attacks; the same unknown monster does not expose a unique identifying call before discovery; and every critical audible event has a non-audio representation.</p>
+<h2 id="section-20">20 Accessibility and onboarding</h2>
+<h3>20.1 Equal information and accessible operation</h3>
+<p>Include scalable text and interface elements, color-independent status symbols, visible keyboard focus, full keyboard navigation, remappable commands, controller navigation, persistent log messages, optional high contrast, and reduced motion. Tooltips must be reachable through focus, not only hover. Do not encode Good/Neutral/Evil, curses, poison, or eligibility by color alone.</p>
+<p>Expose labels and changing resources through an accessibility layer. Test actual screen-reader support in the selected engine during the prototype; do not assume that native-looking controls automatically provide it. Announce the same knowledge as the visible interface, including uncertainty and lost orientation. Announcements should prioritize deaths and dangerous conditions without flooding the user with every decorative event.</p>
+<p>Original-equivalent pause should be available through a visible control. Later official help says minimizing the main window pauses all events, including poison; the remaster can surface that operation explicitly once confirmed against the baseline. Pause stops the entire simulation, not only enemy attacks. <strong>Validation required:</strong> which commands can be changed while paused and how they apply on resume. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>zkj5q5.htm</code>, Game Overview.</p>
+<h3>20.2 Learning without altering the campaign</h3>
+<p>Offer short contextual explanations for natural versus modified stats, active versus learned guilds, carried versus banked gold, spell/item buffers, mapping uncertainty, companions, and corpse recovery. A player can dismiss them permanently or reread them in Help. Do not award extra equipment, stats, gold, or discoveries for completing a tutorial.</p>
+<p>Keep an original-style terminology glossary. Explain “hits,” “spell level,” “binding,” “pinned experience,” “stoned,” and “rocked” in context. Avoid quietly renaming mechanically distinct concepts into the same modern term. Tutorials describe risks without revealing the full map or optimal character-growth order.</p>
+<h3>20.3 Localization</h3>
+<p>English is the reference release. Externalize display strings and allow longer translations without truncating numbers or action labels. Preserve stable IDs beneath translated monster, item, and spell names. Search and command parsing use localized aliases while legacy import and source references retain original names. Test accented character names, pluralization, decimal display, and input-method interactions without changing save identity or formulas.</p>
+<h2 id="section-21">21 Saves and compatibility</h2>
+<h3>21.1 Persistent world</h3>
+<p>Save the complete world: roster, party relationships, corpses, carried and banked possessions, companions, quests, map knowledge, library, merchant and creature stock, relevant encounter state, timers, and any simulated explorer state. Saving each character independently can duplicate an item or split a party transaction; use a consistent world snapshot and journal.</p>
+<p>Later official help describes persistent automatic saving and a legacy option that still saves in town and on death. Preserve the campaign’s consequential persistence rather than adding checkpoints and rewind. Technical recovery copies restore integrity after corruption; they are not a new game mechanic. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>xp.y1d.htm</code>, Game Options.</p>
+<h3>21.2 Proposed save implementation</h3>
+<p>Use a versioned schema, ruleset fingerprint, monotonic transaction sequence, integrity checks, and atomic replacement. Keep a last-valid recovery copy and recover interrupted writes deterministically. Flush irreversible gameplay transactions at their original logical commitment point. A crash after paying for resurrection cannot restore both the gold and the revived character.</p>
+<p>Store simulation time separately from wall-clock timestamps. Suspending, minimizing, quitting, or waiting between sessions must not generate offline deaths, recovery, stock turnover, or combat catch-up unless the baseline explicitly does so. Random state must persist wherever the original prevents rerolling by save/load.</p>
+<h3>21.3 Original save import</h3>
+<p><strong>Proposed feature, conditional on format verification:</strong> import a copy of a supported legacy world. Fingerprint the source edition, parse all records, preserve unresolved fields, and show a migration report. Never overwrite the original files. Import characters, map/library knowledge, guild histories, quests, holdings, companions, deaths, and world stock together. Unsupported or modified data must receive a clear report, not silent repair.</p>
+<p>Export back to the original binary format is outside launch scope because lossy conversion and undocumented fields can corrupt a legacy world. If parity cannot be established, release new campaigns first and label legacy import as unavailable rather than presenting an approximate transfer as faithful.</p>
+<h3>21.4 Cloud and local profiles</h3>
+<p>Offline local play requires no account. Optional cloud synchronization is a later convenience, and must synchronize a whole consistent world. A conflict preserves both versions and asks which world to continue; it never merges gold or inventories independently. Allow separate worlds with separate progression and discoveries, subject to reference roster rules within each world.</p>
+<h2 id="section-22">22 Software and data architecture</h2>
+<h3>22.1 Proposed implementation stack</h3>
+<p>Use a standalone C# rules library with no rendering dependency, with a Godot .NET desktop client for presentation. The reason is practical: the rules can be tested and replayed independently, while the client handles scenes, input, audio, and scalable UI. Pin exact supported engine and .NET versions after the prototype. Godot’s official documentation supports C# desktop exports; its current C# web-export limitation reinforces the decision to keep a browser version out of launch scope. <a href="https://docs.godotengine.org/en/stable/tutorials/scripting/c_sharp/index.html">Godot C# documentation</a>.</p>
+<p>This is a proposal, not a requirement to rewrite existing project code or install an engine now. Validate accessible UI, controller input, deterministic execution, and export behavior before production commitment. A failed accessibility prototype is a reason to change the client technology while retaining the independent rules library.</p>
+<h3>22.2 Boundaries</h3>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Owns</th>
+<th>Must not own</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Reference importer</td>
+<td>Original bytes, format validation, provenance</td>
+<td>Gameplay rebalance</td>
+</tr>
+<tr>
+<td>Approved rules catalogue</td>
+<td>Versioned immutable content and parameters</td>
+<td>Character mutations</td>
+</tr>
+<tr>
+<td>Simulation core</td>
+<td>Commands, scheduling, RNG, rule resolution</td>
+<td>Frame rate or UI layout</td>
+</tr>
+<tr>
+<td>World state</td>
+<td>Characters, encounters, economy, knowledge, timers</td>
+<td>Asset loading</td>
+</tr>
+<tr>
+<td>Knowledge view</td>
+<td>What this player may currently observe</td>
+<td>New discoveries caused by inspection</td>
+</tr>
+<tr>
+<td>Client presentation</td>
+<td>Visuals, audio, focus, input mapping</td>
+<td>Damage, prices, loot rolls</td>
+</tr>
+<tr>
+<td>Persistence</td>
+<td>Consistent snapshots, migrations, recovery</td>
+<td>Selective gameplay undo</td>
+</tr>
+<tr>
+<td>Verification tools</td>
+<td>Diffs, traces, fixtures, source comparisons</td>
+<td>Hidden access in ordinary play</td>
+</tr>
+</tbody></table></div>
+<p>A command identifies actor, action, targets, parameters, and simulation timestamp. The core validates it, applies original ordering and random draws, mutates state, and emits observable events. The client receives a knowledge-filtered state projection and event stream. Invalid commands do not consume resources or RNG unless the original does so.</p>
+<h3>22.3 Data model</h3>
+<p>Every content record requires source edition, source file hash, physical record index, embedded original ID, normalized stable ID, field values, unknown raw fields, interpretation notes, verification status, and reviewer. Record index and embedded ID are distinct: the candidate bestiary already demonstrates why assuming uniqueness is unsafe.</p>
+<p>Use separate tables for races, racial resistances, guilds, race/guild eligibility, guild abilities, guild growth, spells, guild/spell access, monster definitions, item definitions, encounter rules, map cells, transitions, services, and original text/asset references. Keep definition data separate from mutable instances. Preserve original numerical precision and record both a raw parameter and its interpreted unit.</p>
+<p><strong>Unknown is not zero.</strong> A missing spell-cost formula must remain unresolved, and prevent approval of that rule. A zero resistance read from a trusted record is a real value. A blank printed cell interpreted as zero carries an explicit transcription note. Importers never fill missing behavior with a default modern RPG rule.</p>
+<h3>22.4 Randomness and numerical fidelity</h3>
+<p>Determine the original RNG algorithm, seeding, call order, range endpoints, and state persistence where possible. Centralize randomness behind a traceable interface. Do not split cosmetic and gameplay randomness by accidentally consuming gameplay draws for particles. The presentation uses a completely separate RNG that cannot change the simulation.</p>
+<p>Use exact integer or compatible numeric behavior for formulas, including truncation, ties, caps, signed fields, and percentage interpretation. The original file format’s floating values do not prove that every runtime calculation uses the same precision. Preserve observed edge behavior deliberately and document platform-dependent cases.</p>
+<h3>22.5 Tools</h3>
+<p>Build a read-only content browser, raw-to-normalized diff tool, map inspector, record validator, formula probe runner, combat trace comparator, and save-state comparator. Provide controlled test-state construction for researchers. Tools can expose complete data; ordinary game screens cannot.</p>
+<p>Changes to approved data require a source citation and validation result. An asset replacement changes only the asset map. A balance-changing edit changes the ruleset fingerprint, invalidates relevant comparison tests, and requires an explicit design decision.</p>
+<h3>22.6 Performance and reliability targets</h3>
+<p><strong>Proposed targets, to be measured on a declared minimum test machine:</strong> 60 FPS at 1080p, responsive keyboard/controller feedback within 100 ms, town and roster interactions without visible stalls, and no simulation drift at 30, 60, 120, or 144 display FPS. These are engineering targets, not original game statistics or guaranteed hardware specifications.</p>
+<p>Keep assets asynchronously loaded while the simulation follows a defined safe scheduling policy. Test long sessions, large guild histories, many discovered records, repeated town visits, high gold values, and maximum supported roster state. Memory and save size should stabilize rather than grow per expedition.</p>
+<h3>22.7 Field semantics and data promotion</h3>
+<p>Maintain a raw source layer and a separately reviewed semantic layer. Preserve signed values, little-endian field widths, variable-length names within fixed-size records, original numeric representation, record positions, embedded IDs, and unknown bits. Do not rename a field to a gameplay probability until its scale and use are proven.</p>
+<p>In the current item candidates, <code>spell_index</code> and <code>spell_id</code> differ, including a charged crest with spell ID zero. A zero ID cannot universally mean absence. The <code>class_restricted_raw</code> field includes <code>-1</code>; preserve it rather than requiring the serialized true value to equal <code>1</code>. Retain the combined charge/deletion word alongside its candidate halves. Float parameters such as a value close to 1.1 must not be rounded in the canonical import merely because a tooltip displays fewer decimals. <a href="research/bestiary-data.md">Parser and schema notes</a>, <a href="research/item-candidate-shareware.csv">candidate fields</a>.</p>
+<p>Promotion to approved rules requires a field definition, source revision, units, signedness, range, valid references, sentinel interpretation, and comparison evidence. The <a href="research/second-pass-appendix.md">technical appendix</a> identifies concrete values for this audit. No second-pass candidate value has been promoted to certified retail truth.</p>
+<h3>22.8 Original-file importer requirements</h3>
+<p>MDATA2 uses 75-byte physical records, with version and count before the first spell, a length-prefixed variable name and nineteen signed 16-bit fields. The supplied Python exporter assumes a fixed name width; a supplied C++ reader skips the first record and omits a field. Neither output is authoritative. Use the independently written <a href="research/local-original-audit.py">local audit parser</a>, retaining unknown values and record positions. Do not parse trailing record padding or stale embedded text as extra content.</p>
+<p>MDATA11 uses 20-byte records, a floor-offset directory, fixed area-slot allocation and VB Currency terrain masks scaled by 10,000. Preserve signed integers, Single/Double intermediates, Currency, <code>Int</code>, implicit VB conversion and RNG order wherever the rules depend on them. The supplied <code>VBRUN300.reko</code> describes the VB runtime; it is not Mordor gameplay source. Decompiler output must pass semantic and executable checks before becoming engine logic. <a href="research/local-original-review.md">Format review</a>.</p>
+<h2 id="section-23">23 Fidelity verification</h2>
+<h3>23.1 Proof levels</h3>
+<p>Record four separate achievements: source transcription accuracy, parser correctness, mathematical/behavioral parity, and player-experience review. Passing one does not establish the others. A CSV may be byte-faithful to an edited archive; an accurate equation may still run at the wrong time; a visually familiar game may have incorrect drops.</p>
+<p>The test reference must be identified by executable and data hashes, edition, locale, configuration, initial save, and input sequence. Record observations in an isolated research environment. All validation cases below are requirements; this document does not claim they have already passed.</p>
+<h3>23.2 Required suites</h3>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>Suite</th>
+<th>Required coverage</th>
+<th>Pass condition</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Content</td>
+<td>Every approved record and field; all map cells</td>
+<td>Exact values and references, no unexplained missing entries</td>
+</tr>
+<tr>
+<td>Character creation</td>
+<td>Every race/alignment and stat boundary</td>
+<td>Same accepted choices and resulting record</td>
+</tr>
+<tr>
+<td>Progression</td>
+<td>Guild requirements, fees, XP thresholds, HP breakpoints, level cap</td>
+<td>Same growth and restrictions</td>
+</tr>
+<tr>
+<td>Spell access</td>
+<td>Every guild/spell pair and stat requirement</td>
+<td>Same availability, power source and cost source</td>
+</tr>
+<tr>
+<td>Combat</td>
+<td>Representative monsters for every behavior and flag</td>
+<td>Matching deterministic traces or justified statistical parity</td>
+</tr>
+<tr>
+<td>Exploration</td>
+<td>All transitions, hazard types, lost states and perception</td>
+<td>Same position, consequences and revealed knowledge</td>
+</tr>
+<tr>
+<td>Items</td>
+<td>Every type, curse, alignment, charge and eligibility path</td>
+<td>Same stat, ownership and consumption results</td>
+</tr>
+<tr>
+<td>Economy</td>
+<td>Every service, stock change, pooling and payment route</td>
+<td>Same balances, inventories, fees and outcome</td>
+</tr>
+<tr>
+<td>Companions</td>
+<td>Every control state and special capability</td>
+<td>Same ownership, obedience and combat participation</td>
+</tr>
+<tr>
+<td>Death</td>
+<td>Ordinary, stoned, rocked, rescue and resurrection</td>
+<td>Same state transitions and permanent consequences</td>
+</tr>
+<tr>
+<td>Persistence</td>
+<td>Save/load, crashes, upgrades, suspend and resume</td>
+<td>No loss, duplication, time catch-up or reroll exploit</td>
+</tr>
+<tr>
+<td>Information</td>
+<td>All unknown/partial/known states and accessibility outputs</td>
+<td>No leaked identity, location or probabilities</td>
+</tr>
+<tr>
+<td>Presentation</td>
+<td>Original and remastered visual/audio profiles</td>
+<td>Identical simulation state after the same inputs</td>
+</tr>
+</tbody></table></div>
+<h3>23.3 Deterministic and statistical testing</h3>
+<p>Where RNG can be controlled, compare event-by-event traces and final state exactly. Where it cannot, first isolate deterministic invariants, then compare predefined stochastic experiments. Select sample sizes from the rarity of the outcome and desired detection sensitivity; report confidence intervals. “Looks close after ten fights” is not evidence for a one-percent event.</p>
+<p>Do not choose tolerance after seeing results. Any tolerated discrepancy must be explained as measurement uncertainty or an approved version difference. Ordinary game rules have a target of zero intentional numerical deviation. Unexplained mismatches block the affected feature’s fidelity signoff.</p>
+<h3>23.4 High-risk combined scenarios</h3>
+<p>Run a poisoned, low-HP party through a random teleporter; load a lost character after party separation; charm an enemy while a spell is queued; let a companion revolt during a chest attempt; change guilds while equipment affects displayed stats; pay for resurrection from mixed carried/banked funds; lose an item that granted a protection; and pause on the same scheduler boundary as death.</p>
+<p>Test known legacy strategies rather than only isolated formulas: staged guild leveling, selling and repurchasing rechargeable equipment where supported, chest opening during combat, companion trading through town, and rescuing another roster character. The remaster must preserve why those strategies succeed or fail.</p>
+<h3>23.5 Human review</h3>
+<p>Ask experienced original players to repeat familiar expeditions and builds, then investigate each reported difference with source evidence. Ask new players to identify their active character, current guild, dangerous conditions, and available recovery options without coaching. Familiarity review cannot override an executable trace, but it is valuable for catching timing, feedback, and workflow regressions.</p>
+<h3>23.6 Second-pass comparison scenarios</h3>
+<p>These are <strong>test specifications</strong>, not passed tests. Capture original build hashes, initial save, clock settings, actions, observations and unresolved variance for each. Run deterministic checks before stochastic distribution comparisons.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>Case</th>
+<th>Controlled setup</th>
+<th>Required observations</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>V01 HP history</td>
+<td>Two legal guild orders with the same final levels and stats</td>
+<td>HP awards, randomness, breakpoint and tie handling</td>
+</tr>
+<tr>
+<td>V02 CON timing</td>
+<td>Same level path, permanent CON increase at different points</td>
+<td>Historical versus future HP changes; no assumed retroactivity</td>
+</tr>
+<tr>
+<td>V03 Natural stats</td>
+<td>Gear crosses an INT/WIS or item-stat boundary</td>
+<td>Max SP, casting availability, item use and guild eligibility separately</td>
+</tr>
+<tr>
+<td>V04 Healing source</td>
+<td>Unequal healing guild levels, active guild switched</td>
+<td>SP and healing distributions; repeat for item casts</td>
+</tr>
+<tr>
+<td>V05 Swing chain</td>
+<td>First hit kills; second hit leaves a survivor</td>
+<td>Whether a third swing occurs; compare misses and group exhaustion</td>
+</tr>
+<tr>
+<td>V06 Alignment</td>
+<td>Every character/item alignment pair</td>
+<td>Equip effects, curses, direct-use effect and charge loss</td>
+</tr>
+<tr>
+<td>V07 Item capacity</td>
+<td>Full pack and bank; equip, transfer, find, and combine</td>
+<td>Slot occupancy, overflow behavior, ownership and charges</td>
+</tr>
+<tr>
+<td>V08 Shop recharge</td>
+<td>Consumable and rechargeable item at boundary charges</td>
+<td>Quote, remaining instance, stock units and repurchase charges</td>
+</tr>
+<tr>
+<td>V09 Restricted item</td>
+<td>Nomad 30/Mage 1, then switch active guild</td>
+<td>Iron Dagger versus Padded Leather Armor eligibility</td>
+</tr>
+<tr>
+<td>V10 Crest lifecycle</td>
+<td>Award, drain, carry/equip, town return, guild change</td>
+<td>Charges, power source, restrictions and replacement behavior</td>
+</tr>
+<tr>
+<td>V11 Automatic curse</td>
+<td>Acquire attachment-type cursed loot at full capacity</td>
+<td>Attachment, stat mutation, displaced items and removal</td>
+</tr>
+<tr>
+<td>V12 Cast context</td>
+<td>Same spell with absent, peaceful, and hostile monsters</td>
+<td>Legal action, SP/charge use, target and effect</td>
+</tr>
+<tr>
+<td>V13 Opening strike</td>
+<td>Peaceful encounter becomes hostile near round boundary</td>
+<td>First actor, reaction timing, withdrawal and companion order</td>
+</tr>
+<tr>
+<td>V14 Knowledge</td>
+<td>Unknown item and lost map through all UI paths</td>
+<td>No hidden identity, geometry, or destination leakage</td>
+</tr>
+<tr>
+<td>V15 Relocation</td>
+<td>Spell/terrain move into a flagged occupied room</td>
+<td>Encounter and hazard ordering; no stale source-room action</td>
+</tr>
+<tr>
+<td>V16 No new automation</td>
+<td>Enter dungeon; lose buffs; obtain Seer advice</td>
+<td>Only original-supported actions and encounter rules execute</td>
+</tr>
+</tbody></table></div>
+<p>Cases V10, V11, V13 and V15 use comparison-project reports as discovery leads. An entry called a “fix” in another game is not itself an expected original outcome.</p>
+<h3>23.7 Original-file audit and new comparison cases</h3>
+<p>Completed static checks compare installed and packaged inputs, parse declared record counts, preserve duplicate IDs, compare public/local item and monster fields, compare selected printed race/guild fields, resolve every positive item-spell reference and extract all fifteen floors. These checks establish data consistency, not gameplay equivalence. The whole source tree has a before/after path, size and SHA256 comparison; see the <a href="research/local-original/source-preservation-check.json">preservation report</a>.</p>
+<p>Add original/remaster fixtures for all nine creation pools; natural versus modified SP and A/D; every HP breakpoint and the 999 cap; both duplicate spell-ID pairs; ID-zero item casting; active-guild versus fixed-item healing; alignment failures before/after charge debit; quest levels 4/5 and 15/16; split cash/bank payments; and every floor&#39;s first/last cell, area boundary and transition. Check the Dark Shape field against the chosen source and original library/loot behavior. Required runtime fixtures remain outstanding; do not label the static audit as passing those tests.</p>
+<h2 id="section-24">24 Production scope and milestones</h2>
+<h3>24.1 Deliverables</h3>
+<p>Launch scope includes the complete approved original rules and content; remastered desktop presentation; full keyboard/mouse control; accessible navigation and scalable UI; tested controller support; offline persistent worlds; documentation; and a fidelity report. Original-style assets and legacy-save import are conditional features requiring successful rights and compatibility work.</p>
+<p>Exclude new classes, races, dungeon floors, multiplayer, crafting, procedural generation, new narrative campaigns, seasonal progression, battle passes, and balance changes. Do not spend production effort adding systems while unresolved original mechanics remain.</p>
+<h3>24.2 Sequenced milestones</h3>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>Milestone</th>
+<th>Concrete output</th>
+<th>Exit gate</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>M0 Reference freeze</td>
+<td>Fingerprinted registered build, source register, conflicts, rights/asset plan</td>
+<td>Reference edition and permitted asset use established</td>
+</tr>
+<tr>
+<td>M1 Data preservation</td>
+<td>Complete approved catalogues and all fifteen maps; independent parser checks</td>
+<td>Every record accounted for; suspicious candidates excluded</td>
+</tr>
+<tr>
+<td>M2 Rules prototype</td>
+<td>Headless creation, guilds, combat, spells, items, encounters and deterministic saves</td>
+<td>First comparison suites pass without art dependencies</td>
+</tr>
+<tr>
+<td>M3 Vertical slice</td>
+<td>Town plus a representative original dungeon route, party, chest, companion and death/recovery</td>
+<td>End-to-end parity and usable desktop interaction</td>
+</tr>
+<tr>
+<td>M4 Content complete</td>
+<td>All floors, records, services, effects, quests, and endgame</td>
+<td>Full feature/record coverage, no guessed mechanics</td>
+</tr>
+<tr>
+<td>M5 Presentation complete</td>
+<td>Approved art/audio, settings, controller flow, accessibility and tutorial</td>
+<td>No information leaks or timing changes</td>
+</tr>
+<tr>
+<td>M6 Release candidate</td>
+<td>Migration policy, installers, recovery, long-session and compatibility tests</td>
+<td>Release criteria in section 25 met</td>
+</tr>
+</tbody></table></div>
+<p>Build M2 and asset prototypes in parallel only after their reference requirements are understood. Do not lock a release date until M0 and M1 resolve data access and formula recovery. A polished first floor cannot establish that deep-dungeon special attacks or the full economy are complete.</p>
+<h3>24.3 Staffing and estimating</h3>
+<p>Assign explicit ownership for rules research, simulation, interface/accessibility, data tools, art, audio, and QA. One person may cover several roles, but each fidelity decision needs an independent review where feasible. Estimate after the content census and formula backlog exist; report effort by rule family and asset family, with uncertainty, rather than promising an unsupported calendar date.</p>
+<p>Prioritize data and behavior before extensive artwork. A remastered monster portrait has little preservation value if its stats or attack flags are wrong. Scope reductions should reduce optional presentation features first, not remove original content.</p>
+<h3>24.4 Distribution and support</h3>
+<p><strong>Proposed product model:</strong> a complete offline game without gameplay microtransactions or recurring progression resets. Final pricing and distribution channels depend on the project’s rights and production arrangements. The official site states that Decklin’s Domain acquired the IP; this document does not imply an existing license or endorsement. Confirm permission for the title, content, and retained assets before public release. <a href="https://www.decklinsdemise.com/mordor.htm">Official product page</a>.</p>
+<p>Maintain source and third-party credits. Godot’s engine licensing does not grant rights to original game content, and a community parser’s software license does not license the data it reads. <a href="https://godotengine.org/license/">Godot license</a>, <a href="https://github.com/JKaniarz/libDejenol">libDejenol repository</a>.</p>
+<p>Support patches should publish whether they affect presentation, reliability, or rules. Save migrations require recovery copies and regression tests. Crash reporting is optional and should avoid uploading character names or full saves without the player’s choice. A bug report can include ruleset hash, build, action trace, and an explicitly selected save attachment.</p>
+<h2 id="section-25">25 Release criteria and open decisions</h2>
+<h3>25.1 Completion standard</h3>
+<p>The remaster is ready to be called faithful only when every original content record and map is accounted for, all rule families have evidence-backed implementations, the required comparison suites pass, and any intentional differences are disclosed. A remaster design can be complete in scope while the exact executable rules remain a research deliverable.</p>
+<p>For this document, all major design areas are specified. The remaining work is <strong>implementation evidence</strong>, not an invitation to invent missing statistics. The supporting tables distinguish printed reference data, later official help, community interpretation, and candidate binary data awaiting retail validation.</p>
+<h3>25.2 Evidence gaps and conflicts</h3>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Issue</th>
+<th>Current evidence</th>
+<th>Resolution required</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>F01</td>
+<td>Exact reference edition</td>
+<td>Local 1.1 candidate fingerprinted; installed/installer consistency checked</td>
+<td>Establish registered-distribution and first-retail provenance</td>
+</tr>
+<tr>
+<td>F02</td>
+<td>Full dungeon data</td>
+<td>All 13,500 cells and transition slots now exported</td>
+<td>Verify orientation, activation and traversal against original maps</td>
+</tr>
+<tr>
+<td>F03</td>
+<td>Monster archive differences</td>
+<td>Local/public differ only in compared Dark Shape item_1; shared record anomalies persist</td>
+<td>Select baseline explicitly; verify library and loot semantics</td>
+</tr>
+<tr>
+<td>F04</td>
+<td>Item completeness and semantics</td>
+<td>All 366 local records byte-match public data; semantics partly unresolved</td>
+<td>Verify behavior and remaining raw fields</td>
+</tr>
+<tr>
+<td>F05</td>
+<td>Troll alignment</td>
+<td>Local mask 7 includes Good; printed card mask 6 omits it</td>
+<td>Confirm local creation permits the stored mask</td>
+</tr>
+<tr>
+<td>F06</td>
+<td>Mage quest chance</td>
+<td>Local parameter 15; decompiled assignment has additional gates</td>
+<td>Verify conversion, draw order and final assignment distribution</td>
+</tr>
+<tr>
+<td>F07</td>
+<td>Spell names and access</td>
+<td>105 local records, 103 IDs, 205 derived guild relations; help discrepancies documented</td>
+<td>Verify duplicate-ID selection, aliases and access thresholds</td>
+</tr>
+<tr>
+<td>F08</td>
+<td>Spell power and SP formulas</td>
+<td>Static healing equation and cost/access routines located</td>
+<td>Verify VB arithmetic and complete multi-guild arbitration</td>
+</tr>
+<tr>
+<td>F09</td>
+<td>Combat math and clock</td>
+<td>Documented 2-second default and +50% Defend</td>
+<td>Verify scheduling, hit/damage, specials, XP and rounding</td>
+</tr>
+<tr>
+<td>F10</td>
+<td>Death, age and rescue</td>
+<td>Distinct systems documented; exact probabilities unknown</td>
+<td>Measure formulas, time units and permanent losses</td>
+</tr>
+<tr>
+<td>F11</td>
+<td>Companions</td>
+<td>Four per character documented; caster-limit scope unclear</td>
+<td>Verify obedience, friendly fire, capacity and caster arbitration</td>
+</tr>
+<tr>
+<td>F12</td>
+<td>Economy and world timers</td>
+<td>Services and shared stock documented; formulas incomplete</td>
+<td>Recover fees, charges, refresh and simulated explorers</td>
+</tr>
+<tr>
+<td>F13</td>
+<td>Help version mixing</td>
+<td>Official CHM includes modern M1 and legacy content</td>
+<td>Compare against original shipped help and executable</td>
+</tr>
+<tr>
+<td>F14</td>
+<td>Legacy save migration</td>
+<td>Format research available, full conversion unproven</td>
+<td>Validate all world fields and lossless import</td>
+</tr>
+<tr>
+<td>F15</td>
+<td>Public release permissions</td>
+<td>No project license established by this research</td>
+<td>Resolve title, content and asset arrangements</td>
+</tr>
+<tr>
+<td>F16</td>
+<td>Healing power source</td>
+<td>Static healing/cure branch uses active guild unless positive cast-level override</td>
+<td>Verify spellbook/item callers and effect-family boundaries at runtime</td>
+</tr>
+<tr>
+<td>F17</td>
+<td>Partially charged sales</td>
+<td>Publisher help distinguishes consumables/equipment; remake summary generalizes</td>
+<td>Measure charge chunks, stock, and recharge by item category</td>
+</tr>
+<tr>
+<td>F18</td>
+<td>Special item lifecycle</td>
+<td>Crests and involuntary curses have candidate records and remake test leads</td>
+<td>Recover award, charge, attachment, removal and replacement rules</td>
+</tr>
+<tr>
+<td>F19</td>
+<td>Creation, derived stats and HP</td>
+<td>Local pools plus static initialization, SP/A-D bands, random HP growth and 999 cap</td>
+<td>Verify stat sources, boundaries and RNG with original characters</td>
+</tr>
+<tr>
+<td>F20</td>
+<td>Decompiled-code identity</td>
+<td>Substantial generated VB output; damaged syntax and no certified binary-address mapping</td>
+<td>Connect critical routines to the fingerprinted executable</td>
+</tr>
+<tr>
+<td>F21</td>
+<td>Charge debit on alignment failure</td>
+<td>Later help generalizes; static item paths differ in debit/exit order</td>
+<td>Compare spell-casting and general items across alignment pairs</td>
+</tr>
+</tbody></table></div>
+<p>The Scavenger alignment row was rechecked visually during this document’s review: the printed card marks Good, Neutral, and Evil. It is <strong>not</strong> an unresolved conflict; the supporting CSV reflects the corrected transcription.</p>
+<h3>25.3 Formula recovery register</h3>
+<p>Keep an explicit entry for each of these: creation point budget and starting resources; race/guild XP; attack/defense aggregation; hit chance; damage; critical, backstab and swing checks; spell-level growth; spell cost/power and resistances; HP bonuses; identification and perception; encounter and treasure weighting; trap difficulty and effects; companion control; training/service prices; charge handling; aging and healing time; rescue/raise success; and all timer/RNG behavior. Each entry needs inputs, units, formula or lookup table, bounds, operation order, rounding, source, and comparison fixtures.</p>
+<h3>25.4 Decision ownership</h3>
+<p>The reference-build selection, treatment of behavior-changing bugs, original-asset availability, legacy import commitment, and minimum platform specification are production decisions. Until resolved, the design defaults to preserving the selected original behavior, using remastered presentation, and withholding claims of verified numerical equivalence. New features cannot be used to conceal an unresolved original rule.</p>
+<h2 id="section-26">26 Numerical reference appendices</h2>
+<h3>26.1 Evidence coverage</h3>
+<p>These are reference inputs for a faithful implementation, with their provenance attached. <strong>None has been certified by running a fingerprinted registered 1.1 executable.</strong> Printed data, later help, and binary candidates must remain separate until their differences are resolved. Tables preserve factual numbers and names; accompanying interpretation is newly written.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>Dataset</th>
+<th>Research coverage</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Races</td>
+<td>9 stat/age/experience rows, 9 resistance rows, 9 guild-eligibility rows</td>
+<td>Original printed PlayGuide, visually checked</td>
+</tr>
+<tr>
+<td>Guilds</td>
+<td>12 requirements/growth rows and 12 ability rows</td>
+<td>Original printed PlayGuide, visually checked</td>
+</tr>
+<tr>
+<td>Spell catalogue</td>
+<td>100 category records across 18 named categories</td>
+<td>Later official help; formulas incomplete</td>
+</tr>
+<tr>
+<td>Guild spellbooks</td>
+<td>205 assignments, 103 distinct literal names</td>
+<td>Later official help; aliases and unmatched names unresolved</td>
+</tr>
+<tr>
+<td>Monster data</td>
+<td>401 physical records, 400 unique embedded IDs</td>
+<td>Two matching shareware distributions; retail parity unverified</td>
+</tr>
+<tr>
+<td>Item data</td>
+<td>366 records</td>
+<td>Same matching shareware distributions; some field meanings unresolved</td>
+</tr>
+<tr>
+<td>Supplied local original files</td>
+<td>105 spells; complete fifteen-floor cell export; static rule interpretations</td>
+<td>See section 26.12; runtime parity remains unverified</td>
+</tr>
+</tbody></table></div>
+<p>The supporting CSV files contain provenance and additional fields. Blank spell fields mean unknown or absent in the source extraction, not zero cost, zero power, or immunity. A monster&#39;s stored average-hits value is not a verified fixed HP assignment.</p>
+<h3>26.2 Race statistics</h3>
+<p>Each stat cell is <strong>minimum / printed natural maximum</strong>. Age is an approximate lifespan parameter in years, not an exact death threshold. EXP is the printed experience parameter, not a percentage. G/N/E mean Good/Neutral/Evil. The Troll row below remains the printed transcription. The local original data stores mask 7 (G/N/E); see section 26.12 rather than silently merging the two sources. Source: <a href="https://www.mocagh.org/miscgame/dejenol-refcard.pdf">original PlayGuide page 1</a>.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>Race</th>
+<th>Age</th>
+<th>EXP</th>
+<th>STR</th>
+<th>INT</th>
+<th>WIS</th>
+<th>CON</th>
+<th>CHA</th>
+<th>DEX</th>
+<th>Alignment</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Human</td>
+<td>100</td>
+<td>3</td>
+<td>4 / 17</td>
+<td>4 / 18</td>
+<td>4 / 18</td>
+<td>6 / 17</td>
+<td>5 / 18</td>
+<td>6 / 18</td>
+<td>G/N/E</td>
+</tr>
+<tr>
+<td>Elf</td>
+<td>400</td>
+<td>7</td>
+<td>3 / 15</td>
+<td>7 / 20</td>
+<td>7 / 20</td>
+<td>3 / 16</td>
+<td>3 / 18</td>
+<td>3 / 18</td>
+<td>G/N/E</td>
+</tr>
+<tr>
+<td>Giant</td>
+<td>225</td>
+<td>7</td>
+<td>12 / 25</td>
+<td>4 / 17</td>
+<td>3 / 17</td>
+<td>9 / 19</td>
+<td>2 / 16</td>
+<td>3 / 18</td>
+<td>N</td>
+</tr>
+<tr>
+<td>Gnome</td>
+<td>300</td>
+<td>7</td>
+<td>4 / 17</td>
+<td>7 / 19</td>
+<td>5 / 19</td>
+<td>3 / 17</td>
+<td>9 / 22</td>
+<td>6 / 18</td>
+<td>G/N/E</td>
+</tr>
+<tr>
+<td>Dwarf</td>
+<td>275</td>
+<td>5</td>
+<td>3 / 18</td>
+<td>3 / 18</td>
+<td>7 / 19</td>
+<td>3 / 19</td>
+<td>3 / 17</td>
+<td>5 / 18</td>
+<td>N</td>
+</tr>
+<tr>
+<td>Ogre</td>
+<td>265</td>
+<td>6</td>
+<td>9 / 20</td>
+<td>3 / 16</td>
+<td>3 / 16</td>
+<td>9 / 21</td>
+<td>3 / 18</td>
+<td>5 / 17</td>
+<td>G/N/E</td>
+</tr>
+<tr>
+<td>Morloch</td>
+<td>175</td>
+<td>4</td>
+<td>6 / 20</td>
+<td>3 / 17</td>
+<td>5 / 19</td>
+<td>3 / 15</td>
+<td>2 / 14</td>
+<td>5 / 20</td>
+<td>G/E</td>
+</tr>
+<tr>
+<td>Osiri</td>
+<td>325</td>
+<td>8</td>
+<td>5 / 17</td>
+<td>3 / 18</td>
+<td>3 / 17</td>
+<td>7 / 19</td>
+<td>3 / 18</td>
+<td>10 / 22</td>
+<td>N</td>
+</tr>
+<tr>
+<td>Troll</td>
+<td>285</td>
+<td>9</td>
+<td>6 / 20</td>
+<td>3 / 18</td>
+<td>3 / 18</td>
+<td>6 / 19</td>
+<td>3 / 17</td>
+<td>6 / 20</td>
+<td>N/E</td>
+</tr>
+</tbody></table></div>
+<h3>26.3 Racial resistance values</h3>
+<p>Values are printed percentages. Dashes in the printed table are represented as 0, with that normalization recorded in the CSV. These are natural race values, not the final formula for combining equipment, spells, and other protection. Source: PlayGuide page 2.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>Race</th>
+<th>Size</th>
+<th>Fire</th>
+<th>Cold</th>
+<th>Elec</th>
+<th>Mind</th>
+<th>Disease</th>
+<th>Poison</th>
+<th>Magic</th>
+<th>Stone</th>
+<th>Paralysis</th>
+<th>Drain</th>
+<th>Acid</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Human</td>
+<td>Normal</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Elf</td>
+<td>Small</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>50</td>
+<td>0</td>
+<td>0</td>
+<td>80</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Giant</td>
+<td>Very Big</td>
+<td>50</td>
+<td>50</td>
+<td>50</td>
+<td>0</td>
+<td>50</td>
+<td>50</td>
+<td>0</td>
+<td>25</td>
+<td>50</td>
+<td>50</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Gnome</td>
+<td>Normal</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>40</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Dwarf</td>
+<td>Small</td>
+<td>45</td>
+<td>80</td>
+<td>0</td>
+<td>0</td>
+<td>50</td>
+<td>50</td>
+<td>0</td>
+<td>40</td>
+<td>50</td>
+<td>90</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Ogre</td>
+<td>Big</td>
+<td>75</td>
+<td>75</td>
+<td>0</td>
+<td>0</td>
+<td>50</td>
+<td>0</td>
+<td>0</td>
+<td>50</td>
+<td>75</td>
+<td>75</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Morloch</td>
+<td>Normal</td>
+<td>35</td>
+<td>35</td>
+<td>35</td>
+<td>50</td>
+<td>0</td>
+<td>0</td>
+<td>40</td>
+<td>0</td>
+<td>95</td>
+<td>65</td>
+<td>50</td>
+</tr>
+<tr>
+<td>Osiri</td>
+<td>Normal</td>
+<td>0</td>
+<td>0</td>
+<td>90</td>
+<td>90</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>90</td>
+<td>0</td>
+<td>0</td>
+<td>90</td>
+</tr>
+<tr>
+<td>Troll</td>
+<td>Normal</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>45</td>
+<td>45</td>
+<td>0</td>
+<td>0</td>
+<td>45</td>
+<td>65</td>
+<td>25</td>
+</tr>
+</tbody></table></div>
+<h3>26.4 Guild entry requirements</h3>
+<p>Requirements refer to natural statistics. Race eligibility is an additional condition, shown next. Scavenger permits G/N/E in the printed table; this was visually rechecked. Source: PlayGuide page 2.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>Guild</th>
+<th>STR</th>
+<th>INT</th>
+<th>WIS</th>
+<th>CON</th>
+<th>CHA</th>
+<th>DEX</th>
+<th>Alignment</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Nomad</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>G/N/E</td>
+</tr>
+<tr>
+<td>Warrior</td>
+<td>14</td>
+<td>7</td>
+<td>5</td>
+<td>10</td>
+<td>3</td>
+<td>8</td>
+<td>G/N/E</td>
+</tr>
+<tr>
+<td>Paladin</td>
+<td>14</td>
+<td>9</td>
+<td>9</td>
+<td>10</td>
+<td>16</td>
+<td>15</td>
+<td>G</td>
+</tr>
+<tr>
+<td>Ninja</td>
+<td>13</td>
+<td>11</td>
+<td>7</td>
+<td>9</td>
+<td>3</td>
+<td>15</td>
+<td>G/E</td>
+</tr>
+<tr>
+<td>Villain</td>
+<td>15</td>
+<td>14</td>
+<td>14</td>
+<td>11</td>
+<td>6</td>
+<td>16</td>
+<td>E</td>
+</tr>
+<tr>
+<td>Seeker</td>
+<td>10</td>
+<td>13</td>
+<td>13</td>
+<td>11</td>
+<td>5</td>
+<td>13</td>
+<td>G/N/E</td>
+</tr>
+<tr>
+<td>Thief</td>
+<td>8</td>
+<td>12</td>
+<td>8</td>
+<td>6</td>
+<td>5</td>
+<td>17</td>
+<td>N</td>
+</tr>
+<tr>
+<td>Scavenger</td>
+<td>11</td>
+<td>8</td>
+<td>8</td>
+<td>9</td>
+<td>4</td>
+<td>14</td>
+<td>G/N/E</td>
+</tr>
+<tr>
+<td>Mage</td>
+<td>6</td>
+<td>11</td>
+<td>13</td>
+<td>8</td>
+<td>10</td>
+<td>14</td>
+<td>G/E</td>
+</tr>
+<tr>
+<td>Sorcerer</td>
+<td>6</td>
+<td>14</td>
+<td>13</td>
+<td>11</td>
+<td>5</td>
+<td>8</td>
+<td>G/N/E</td>
+</tr>
+<tr>
+<td>Wizard</td>
+<td>8</td>
+<td>18</td>
+<td>18</td>
+<td>13</td>
+<td>6</td>
+<td>14</td>
+<td>G/N/E</td>
+</tr>
+<tr>
+<td>Healer</td>
+<td>8</td>
+<td>14</td>
+<td>14</td>
+<td>8</td>
+<td>7</td>
+<td>14</td>
+<td>N</td>
+</tr>
+</tbody></table></div>
+<h3>26.5 Guild eligibility by race</h3>
+<p>This is the race permission layer only. A listed guild still requires the proper alignment and natural stats. Source: PlayGuide page 1.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>Race</th>
+<th>Permitted guilds before alignment and stat checks</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Human</td>
+<td>Nomad, Warrior, Paladin, Ninja, Villain, Seeker, Thief, Scavenger, Mage, Sorcerer, Wizard, Healer</td>
+</tr>
+<tr>
+<td>Elf</td>
+<td>Nomad, Paladin, Seeker, Thief, Scavenger, Mage, Sorcerer, Wizard, Healer</td>
+</tr>
+<tr>
+<td>Giant</td>
+<td>Nomad, Warrior, Seeker</td>
+</tr>
+<tr>
+<td>Gnome</td>
+<td>Nomad, Paladin, Villain, Seeker, Thief, Scavenger, Mage, Sorcerer, Healer</td>
+</tr>
+<tr>
+<td>Dwarf</td>
+<td>Nomad, Warrior, Seeker, Thief, Scavenger, Sorcerer, Wizard, Healer</td>
+</tr>
+<tr>
+<td>Ogre</td>
+<td>Nomad, Warrior, Scavenger</td>
+</tr>
+<tr>
+<td>Morloch</td>
+<td>Nomad, Warrior, Villain, Seeker, Scavenger, Mage, Sorcerer</td>
+</tr>
+<tr>
+<td>Osiri</td>
+<td>Nomad, Seeker, Thief, Scavenger, Sorcerer, Wizard, Healer</td>
+</tr>
+<tr>
+<td>Troll</td>
+<td>Nomad, Ninja, Villain, Thief, Scavenger</td>
+</tr>
+</tbody></table></div>
+<h3>26.6 Guild growth parameters</h3>
+<p>AH is the printed average/base HP-growth parameter, ML its level breakpoint, MH the subsequent HP parameter, EP the experience parameter, and QP the quest-assignment percentage. These entries do not replace the highest-guild-level rule, Constitution bonus, boundary test, or full XP formula. Mage QP is 15% in the printed card; the community Mage page says 20%. Source: PlayGuide page 2.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>Guild</th>
+<th>AH</th>
+<th>ML</th>
+<th>MH</th>
+<th>EP</th>
+<th>QP percent</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Nomad</td>
+<td>5</td>
+<td>30</td>
+<td>1</td>
+<td>8</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Warrior</td>
+<td>6</td>
+<td>28</td>
+<td>2</td>
+<td>16</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Paladin</td>
+<td>5</td>
+<td>29</td>
+<td>2</td>
+<td>19</td>
+<td>25</td>
+</tr>
+<tr>
+<td>Ninja</td>
+<td>4</td>
+<td>25</td>
+<td>2</td>
+<td>21</td>
+<td>35</td>
+</tr>
+<tr>
+<td>Villain</td>
+<td>4</td>
+<td>26</td>
+<td>2</td>
+<td>21</td>
+<td>25</td>
+</tr>
+<tr>
+<td>Seeker</td>
+<td>4</td>
+<td>27</td>
+<td>2</td>
+<td>18</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Thief</td>
+<td>3</td>
+<td>21</td>
+<td>2</td>
+<td>15</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Scavenger</td>
+<td>4</td>
+<td>24</td>
+<td>2</td>
+<td>18</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Mage</td>
+<td>3</td>
+<td>27</td>
+<td>2</td>
+<td>27</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Sorcerer</td>
+<td>2</td>
+<td>29</td>
+<td>2</td>
+<td>27</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Wizard</td>
+<td>2</td>
+<td>41</td>
+<td>2</td>
+<td>30</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Healer</td>
+<td>2</td>
+<td>28</td>
+<td>2</td>
+<td>32</td>
+<td>15</td>
+</tr>
+</tbody></table></div>
+<h3>26.7 Guild ability parameters</h3>
+<p>These are ability parameters, <strong>not direct success percentages, attack counts, or damage values</strong>. Printed blank cells are represented as zero with a normalization note. Source: PlayGuide page 2.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>Guild</th>
+<th>Thieving</th>
+<th>Backstab</th>
+<th>Critical</th>
+<th>Multiple swings</th>
+<th>Fighting</th>
+<th>Perception</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Nomad</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>7</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Warrior</td>
+<td>2</td>
+<td>0</td>
+<td>9</td>
+<td>5</td>
+<td>12</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Paladin</td>
+<td>2</td>
+<td>0</td>
+<td>5</td>
+<td>2</td>
+<td>10</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Ninja</td>
+<td>7</td>
+<td>2</td>
+<td>5</td>
+<td>8</td>
+<td>10</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Villain</td>
+<td>6</td>
+<td>4</td>
+<td>1</td>
+<td>3</td>
+<td>8</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Seeker</td>
+<td>3.5</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>9</td>
+<td>9</td>
+</tr>
+<tr>
+<td>Thief</td>
+<td>9</td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+<td>6</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Scavenger</td>
+<td>7.5</td>
+<td>5</td>
+<td>0</td>
+<td>1</td>
+<td>7</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Mage</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Sorcerer</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Wizard</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Healer</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+<td>2</td>
+</tr>
+</tbody></table></div>
+<h3>26.8 Later-help spell catalogue and access</h3>
+<p>This table preserves the earlier help transcription. The supplied original MDATA2 now provides 105 records, including duplicate IDs and different values; section 26.12 and the local spell table take precedence as evidence of the local stored inputs.</p>
+<p>The extracted <a href="research/spell-statistics-updated-help.csv">spell statistics</a> retain category, base spell level, listed guild access, six requirements, combat context, targeting parameters, and source topic. The <a href="research/spell-guild-levels-updated-help.csv">guild spellbook table</a> retains each listed guild-specific level. Neither supplies a certified damage or SP-cost formula.</p>
+<p>The following counts describe the later-help extraction, <strong>not a certified count of original executable spells</strong>.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>Guild</th>
+<th>Extracted spellbook assignments</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Nomad</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Warrior</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Paladin</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Ninja</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Villain</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Seeker</td>
+<td>22</td>
+</tr>
+<tr>
+<td>Thief</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Scavenger</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Mage</td>
+<td>44</td>
+</tr>
+<tr>
+<td>Sorcerer</td>
+<td>37</td>
+</tr>
+<tr>
+<td>Wizard</td>
+<td>46</td>
+</tr>
+<tr>
+<td>Healer</td>
+<td>34</td>
+</tr>
+</tbody></table></div>
+<p>The category catalogue and guild spellbooks disagree in literal naming: eight Charm names appear as Control names; Feather Essence/Essense and Precognitive/Precognative differ; the spellbook also lists Dominate Undead, Dispell Elemental, and Dispell Undead without exact matching category names in this extraction. Retain both source spellings. Resolve aliases through original IDs; do not merge records by an approximate string match.</p>
+<p>Selected category records below demonstrate exact extracted requirements. A dash means no requirement stated in that field. “Targets” retains the printed monster/group parameter pair; its total-versus-per-group interpretation requires validation.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>Spell</th>
+<th>Class</th>
+<th>Base level</th>
+<th>STR</th>
+<th>INT</th>
+<th>WIS</th>
+<th>CON</th>
+<th>CHA</th>
+<th>DEX</th>
+<th>Targets M/G</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Firebolt</td>
+<td>Fire</td>
+<td>2</td>
+<td>—</td>
+<td>12</td>
+<td>9</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>4/2</td>
+</tr>
+<tr>
+<td>Blue Flame</td>
+<td>Fire</td>
+<td>4</td>
+<td>—</td>
+<td>14</td>
+<td>10</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>2/1</td>
+</tr>
+<tr>
+<td>Charm Insect</td>
+<td>Charm</td>
+<td>1</td>
+<td>—</td>
+<td>12</td>
+<td>12</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>4/1</td>
+</tr>
+<tr>
+<td>Soul Entrapment</td>
+<td>Charm</td>
+<td>12</td>
+<td>—</td>
+<td>18</td>
+<td>21</td>
+<td>18</td>
+<td>22</td>
+<td>—</td>
+<td>4/1</td>
+</tr>
+<tr>
+<td>Field of Death</td>
+<td>Kill</td>
+<td>14</td>
+<td>—</td>
+<td>22</td>
+<td>22</td>
+<td>18</td>
+<td>—</td>
+<td>21</td>
+<td>20/4</td>
+</tr>
+<tr>
+<td>Teleport</td>
+<td>Movement</td>
+<td>12</td>
+<td>—</td>
+<td>17</td>
+<td>14</td>
+<td>11</td>
+<td>—</td>
+<td>17</td>
+<td>4/4</td>
+</tr>
+<tr>
+<td>Retrieve Soul</td>
+<td>Location</td>
+<td>14</td>
+<td>—</td>
+<td>18</td>
+<td>18</td>
+<td>16</td>
+<td>—</td>
+<td>18</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Charm of Opening</td>
+<td>Magical</td>
+<td>1</td>
+<td>12</td>
+<td>13</td>
+<td>13</td>
+<td>—</td>
+<td>—</td>
+<td>13</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Resurrect</td>
+<td>Heal</td>
+<td>12</td>
+<td>—</td>
+<td>21</td>
+<td>21</td>
+<td>14</td>
+<td>—</td>
+<td>18</td>
+<td>—</td>
+</tr>
+</tbody></table></div>
+<p>Later official help describes choosing the highest applicable learned spell power and the lowest available guild cost separately. Item casting may use the highest guild spell level unless the item specifies a level. This must not be simplified into selecting one “best guild” for both outcomes. The supplied decompiled healing branch supports an active-guild exception and positive cast-level override; see section 9.6 and F16. Runtime verification remains outstanding. <a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Official help</a>, <code>14n5mvy.htm</code>, Spells.</p>
+<h3>26.9 Full candidate bestiary and item records</h3>
+<p>These remain public-archive tables. Local item bytes match; local Dark Shape item_1 differs (33 versus public 34). Local exports and the field comparison are in section 26.12.</p>
+<p>The <a href="research/monster-candidate-shareware.csv">monster CSV</a> contains all 401 parsed records with 64 columns, including resistance values and raw flags. The <a href="research/item-candidate-shareware.csv">item CSV</a> contains all 366 parsed records with 41 columns. See the <a href="research/monster-reference.md">readable bestiary table</a>, <a href="research/item-reference.md">readable item table</a>, and <a href="research/bestiary-provenance.json">data provenance</a>.</p>
+<p>The distribution mirrored by a modern remake and the independent <a href="https://archive.org/details/MordorTheDepthsofDejenol_1020">Internet Archive package</a> have identical monster and item bytes. This corroborates the public shareware data, but does not prove registered-retail equivalence or all parser semantics. <strong>Do not silently correct GOBLIE, deduplicate ID 307, or remove records with level values above 15.</strong> Establish their original meaning first.</p>
+<p>These selected rows are extracted candidate values. They illustrate the data available, not approved balance changes. Full resistance and attack/spell flag fields remain in the CSV.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>Monster</th>
+<th>Record</th>
+<th>ID</th>
+<th>Attack</th>
+<th>Defense</th>
+<th>Average hits</th>
+<th>First level parameter</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Kobold</td>
+<td>2</td>
+<td>1</td>
+<td>23</td>
+<td>6</td>
+<td>5</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Orc</td>
+<td>3</td>
+<td>2</td>
+<td>40</td>
+<td>25</td>
+<td>14</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Black Bear</td>
+<td>154</td>
+<td>79</td>
+<td>25</td>
+<td>6</td>
+<td>10</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Giant Centipede</td>
+<td>197</td>
+<td>103</td>
+<td>12</td>
+<td>6</td>
+<td>5</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Morgul</td>
+<td>279</td>
+<td>307</td>
+<td>187</td>
+<td>56</td>
+<td>75</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Shadow Ninja</td>
+<td>390</td>
+<td>307</td>
+<td>1500</td>
+<td>625</td>
+<td>999</td>
+<td>16</td>
+</tr>
+<tr>
+<td>T&#39;Lanea</td>
+<td>401</td>
+<td>323</td>
+<td>450</td>
+<td>333</td>
+<td>425</td>
+<td>16</td>
+</tr>
+</tbody></table></div>
+<p>The community Kobold, Orc, and Black Bear pages provide secondary stat checks, but explicitly include some Mordor II material. They are not authorities for importing an entire monster definition. The Orc page describes level 2 while the candidate&#39;s stored first-level parameter is 1; this could reflect field interpretation or source differences and remains unresolved. <a href="https://dejenol.fandom.com/wiki/Kobold">Kobold</a>, <a href="https://dejenol.fandom.com/wiki/Orc">Orc</a>, <a href="https://dejenol.fandom.com/wiki/Black_Bear">Black Bear</a>.</p>
+<h3>26.10 Source fingerprints</h3>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>Input</th>
+<th>SHA256</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>MORDOR11.ZIP</td>
+<td>915fa9bc26359698b2b29a04980f7b6c433bc18dd006766aa8146e2c22cb5cb7</td>
+</tr>
+<tr>
+<td>MORDOR.WIP</td>
+<td>df0c8fd668a02067b476cb1a65e5622c9d5cd8d5a653e627bdf446c607fb9622</td>
+</tr>
+<tr>
+<td>MDATA5.MDR</td>
+<td>c26ebd920c94d75dc66f1ee3b664c69393770541e68b860bd55f93095b1c8739</td>
+</tr>
+<tr>
+<td>MDATA3.MDR</td>
+<td>babf9ede941bc2f3dab073283a304d80fd59ed34d9fcd7099cde1e0f7988d7c7</td>
+</tr>
+</tbody></table></div>
+<p>Matching hashes establish identical inputs, not correct historical semantics. Keep these fingerprints with all subsequent field and formula comparison results.</p>
+<h3>26.11 Second-pass item and importer audit</h3>
+<p>These are selected factual fields from the existing 366-row candidate item table, not new balance values or approved retail rules. The second pass left all nine numerical CSV files unchanged. A machine-readable audit records their hashes, dimensions and structural checks. Record position, item ID, spell index and spell ID are intentionally separate columns.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Record</th>
+<th>ID</th>
+<th>A</th>
+<th>D</th>
+<th>Class flag</th>
+<th>Spell index</th>
+<th>Spell ID</th>
+<th>Charges*</th>
+<th>Spell level*</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Bronze Sword</td>
+<td>27</td>
+<td>8</td>
+<td>3</td>
+<td>0</td>
+<td>-1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Iron Dagger</td>
+<td>12</td>
+<td>33</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Padded Leather Armor</td>
+<td>84</td>
+<td>50</td>
+<td>0</td>
+<td>6</td>
+<td>-1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Potion of Healing</td>
+<td>249</td>
+<td>184</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>14</td>
+<td>12</td>
+<td>3</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Crystal of Healing</td>
+<td>290</td>
+<td>253</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>14</td>
+<td>12</td>
+<td>12</td>
+<td>15</td>
+</tr>
+<tr>
+<td>Crest of the Thief</td>
+<td>354</td>
+<td>305</td>
+<td>3</td>
+<td>6</td>
+<td>-1</td>
+<td>1</td>
+<td>0</td>
+<td>12</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>Crest of the Paladin</td>
+<td>350</td>
+<td>301</td>
+<td>6</td>
+<td>12</td>
+<td>-1</td>
+<td>14</td>
+<td>12</td>
+<td>12</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>Ball and Chain</td>
+<td>361</td>
+<td>344</td>
+<td>0</td>
+<td>-3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+</tbody></table></div>
+<p>Charges and spell-level semantics (marked with an asterisk) remain provisional. A negative spell level is retained as a possible sentinel, not treated as a negative gameplay level. The charge column is the candidate 16-bit interpretation; the CSV also retains the competing combined 32-bit representation.</p>
+<p><strong>Concrete implementation traps:</strong> Crest of the Thief has spell ID zero with a nonzero spell index and charges, so a blanket zero-means-no-spell check loses information. Class-restricted <code>-1</code> and unrestricted <code>0</code> are distinct raw encodings. Iron Dagger and Padded Leather Armor illustrate that identical guild masks do not imply identical active-guild requirements. A crest&#39;s zero base price does not establish that it is freely sold. Ball and Chain&#39;s negative defense must not be clamped to zero.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>Raw field family</th>
+<th>Interpretation gate before production use</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Monster <code>average_hits</code>, <code>damage_modifier</code>, <code>size_raw</code></td>
+<td>Establish HP distribution, damage equation, size effects and numeric precision</td>
+</tr>
+<tr>
+<td>Monster spawn, chest and item parameters</td>
+<td>Establish weights versus percentages, allowed depth, room context and roll order</td>
+</tr>
+<tr>
+<td>Monster attack, spell and property flags</td>
+<td>Decode each bit and combinations; identify companion-specific behavior</td>
+</tr>
+<tr>
+<td>Item <code>guild_flags_raw</code>, <code>level_scale_raw</code>, <code>class_restricted_raw</code></td>
+<td>Establish bit ordering and exact per-guild level derivation</td>
+</tr>
+<tr>
+<td>Item <code>type_raw</code>, <code>hands</code>, <code>extra_swings</code></td>
+<td>Establish class hierarchy, equipment conflicts and swing count semantics</td>
+</tr>
+<tr>
+<td>Item <code>spell_index</code>, <code>spell_id</code>, <code>spell_level</code></td>
+<td>Establish index base, ID mapping, absence representation and fixed/scaled casts</td>
+</tr>
+<tr>
+<td>Item charge/deletion word</td>
+<td>Resolve competing 16-bit/32-bit field layouts against original behavior</td>
+</tr>
+<tr>
+<td>Ability, alignment and resistance masks</td>
+<td>Keep masks separate from numeric resistances and identify every bit</td>
+</tr>
+<tr>
+<td>Unused fields, unknown bits and float parameters</td>
+<td>Preserve bytes and precision until demonstrated unused or decoded</td>
+</tr>
+</tbody></table></div>
+<p>The structural audit checks 401 monster rows, 400 unique embedded monster IDs, 366 unique item IDs, CSV shape, and parsed record-size bounds. It does not test combat, prices, probabilities, original gameplay, or full retail completeness. No unknown field was discarded and no candidate name or number was corrected.</p>
+<h3>26.12 Supplied original-file findings — October 9, 2026</h3>
+<p>The new local evidence is independent of the earlier help transcription. All outputs are under <code>research/local-original</code>; the supplied <code>Mordor</code> tree is read-only. See the <a href="research/local-original-review.md">local review</a>, <a href="research/local-original/source-inventory.json">source fingerprints</a>, and <a href="research/local-original/extraction-summary.json">data summary</a>. File facts and static decompiler interpretations do not certify runtime parity.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>Dataset</th>
+<th>Local extraction</th>
+<th>Qualification</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Race and guild definitions</td>
+<td>9 races; 12 guilds</td>
+<td>Includes starting allocation pools and raw spell-category matrices</td>
+</tr>
+<tr>
+<td>Spell definitions</td>
+<td>105 records; 103 distinct embedded IDs</td>
+<td>IDs 93 and 94 are duplicated; retain record identity</td>
+</tr>
+<tr>
+<td>Item definitions</td>
+<td>366 records</td>
+<td>MDATA3 bytes match the earlier public archive</td>
+</tr>
+<tr>
+<td>Monster definitions</td>
+<td>401 physical records</td>
+<td>Dark Shape item field differs; duplicate ID 307 remains</td>
+</tr>
+<tr>
+<td>Item taxonomy</td>
+<td>35 subtypes; 24 classes</td>
+<td>Equippable values include a special -1 case</td>
+</tr>
+<tr>
+<td>Monster taxonomy</td>
+<td>18 types; 15 subtypes</td>
+<td>Preserve raw type/flag interpretation</td>
+</tr>
+<tr>
+<td>Dungeon</td>
+<td>15 floors × 30 × 30; 13,500 cells</td>
+<td>Full cells, room records and transition slots exported</td>
+</tr>
+</tbody></table></div>
+<p><strong>Creation pools:</strong> each stat initially receives racial minimum + 5 in the decompiled creation screen; these additional points remain available for allocation. Subtracting a stat down to its minimum refunds points. The table does not equate pool size with total points above racial minima.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>Race</th>
+<th>Additional pool</th>
+<th>Alignment mask</th>
+<th>Experience parameter</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Human</td>
+<td>5</td>
+<td>7</td>
+<td>3.0</td>
+</tr>
+<tr>
+<td>Elf</td>
+<td>7</td>
+<td>7</td>
+<td>7.0</td>
+</tr>
+<tr>
+<td>Giant</td>
+<td>6</td>
+<td>2</td>
+<td>7.0</td>
+</tr>
+<tr>
+<td>Gnome</td>
+<td>2</td>
+<td>7</td>
+<td>7.0</td>
+</tr>
+<tr>
+<td>Dwarf</td>
+<td>10</td>
+<td>2</td>
+<td>5.0</td>
+</tr>
+<tr>
+<td>Ogre</td>
+<td>5</td>
+<td>7</td>
+<td>6.0</td>
+</tr>
+<tr>
+<td>Morloch</td>
+<td>8</td>
+<td>5</td>
+<td>4.0</td>
+</tr>
+<tr>
+<td>Osiri</td>
+<td>5</td>
+<td>2</td>
+<td>8.0</td>
+</tr>
+<tr>
+<td>Troll</td>
+<td>6</td>
+<td>7</td>
+<td>9.0</td>
+</tr>
+</tbody></table></div>
+<p>Character alignment bits are Good=1, Neutral=2, Evil=4. The local Troll mask is 7; the printed N/E restriction is not the local data rule. Local Mage quest parameter is 15, but actual assignment includes additional gates described in section 14.7.</p>
+<p><strong>Spell samples:</strong> cost and power fields are raw inputs, not final resource costs or guaranteed effects.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>Spell</th>
+<th>ID</th>
+<th>Base level</th>
+<th>Cost parameter</th>
+<th>Power base</th>
+<th>Raw modifier</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Charm of Opening</td>
+<td>0</td>
+<td>1</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Minor Heal</td>
+<td>12</td>
+<td>2</td>
+<td>13</td>
+<td>5</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Firebolt</td>
+<td>76</td>
+<td>1</td>
+<td>14</td>
+<td>10</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Blue Flame</td>
+<td>27</td>
+<td>3</td>
+<td>12</td>
+<td>15</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Heal</td>
+<td>29</td>
+<td>4</td>
+<td>26</td>
+<td>15</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Dominate Undead</td>
+<td>98</td>
+<td>9</td>
+<td>76</td>
+<td>15</td>
+<td>20</td>
+</tr>
+</tbody></table></div>
+<p><a href="research/local-original/spell-reference.md">All spell records</a>, <a href="research/local-original/spells-local.csv">full spell fields</a>, <a href="research/local-original/guild-spell-access-local.csv">derived guild access</a>, <a href="research/local-original/item-spell-links-local.csv">item-to-spell references</a>, and <a href="research/local-original/spell-help-comparison.json">help differences</a> preserve the evidence separately.</p>
+<p><strong>Dungeon manifest:</strong> transition counts are allocated records, including zero/unused entries; they are not counts of active hazards. Non-rock does not imply reachable.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>Floor</th>
+<th>Width</th>
+<th>Height</th>
+<th>Rock-flag cells</th>
+<th>Teleporter slots</th>
+<th>Chute slots</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>30</td>
+<td>30</td>
+<td>69</td>
+<td>20</td>
+<td>10</td>
+</tr>
+<tr>
+<td>2</td>
+<td>30</td>
+<td>30</td>
+<td>60</td>
+<td>20</td>
+<td>10</td>
+</tr>
+<tr>
+<td>3</td>
+<td>30</td>
+<td>30</td>
+<td>70</td>
+<td>20</td>
+<td>10</td>
+</tr>
+<tr>
+<td>4</td>
+<td>30</td>
+<td>30</td>
+<td>57</td>
+<td>20</td>
+<td>10</td>
+</tr>
+<tr>
+<td>5</td>
+<td>30</td>
+<td>30</td>
+<td>41</td>
+<td>20</td>
+<td>10</td>
+</tr>
+<tr>
+<td>6</td>
+<td>30</td>
+<td>30</td>
+<td>66</td>
+<td>20</td>
+<td>10</td>
+</tr>
+<tr>
+<td>7</td>
+<td>30</td>
+<td>30</td>
+<td>56</td>
+<td>20</td>
+<td>10</td>
+</tr>
+<tr>
+<td>8</td>
+<td>30</td>
+<td>30</td>
+<td>47</td>
+<td>20</td>
+<td>10</td>
+</tr>
+<tr>
+<td>9</td>
+<td>30</td>
+<td>30</td>
+<td>91</td>
+<td>20</td>
+<td>10</td>
+</tr>
+<tr>
+<td>10</td>
+<td>30</td>
+<td>30</td>
+<td>52</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<tr>
+<td>11</td>
+<td>30</td>
+<td>30</td>
+<td>150</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<tr>
+<td>12</td>
+<td>30</td>
+<td>30</td>
+<td>55</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<tr>
+<td>13</td>
+<td>30</td>
+<td>30</td>
+<td>89</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<tr>
+<td>14</td>
+<td>30</td>
+<td>30</td>
+<td>70</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<tr>
+<td>15</td>
+<td>30</td>
+<td>30</td>
+<td>80</td>
+<td>10</td>
+<td>10</td>
+</tr>
+</tbody></table></div>
+<p><a href="research/local-original/dungeon-cells-local.csv">Cell records</a>, <a href="research/local-original/dungeon-areas-local.csv">room records</a>, <a href="research/local-original/dungeon-teleporters-local.csv">teleporters</a>, and <a href="research/local-original/dungeon-chutes-local.csv">chutes</a> retain unused slots. The parser reads 201 area slots per floor rather than trusting the area count as a physical record count. Terrain flags are stored as VB Currency scaled by 10,000.</p>
+<p>Source executable SHA256: <code>bd1332c37eb9d6a024d95ba1b70daf03c1a6c64c622964fb3d8bcc6297d06309</code>. Matching installed copies and installer members establish local consistency; they do not independently establish the distribution license or link every decompiled statement to an executable address.</p>
+<h2 id="section-27">27 Sources and supporting files</h2>
+<h3>27.1 Primary and technical sources</h3>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>Source</th>
+<th>What it supports</th>
+<th>Limitation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://requnix.com/development/mordor/">David Allen’s Mordor history</a></td>
+<td>Creator and 1995 origin</td>
+<td>Short retrospective</td>
+</tr>
+<tr>
+<td><a href="https://www.decklinsdemise.com/mordor.htm">Official Mordor product page</a></td>
+<td>Mordor 1.1, races/guilds, combat identity, distribution and ownership statement</td>
+<td>Current page, not a build manifest</td>
+</tr>
+<tr>
+<td><a href="https://www.mocagh.org/miscgame/dejenol-manual.pdf">Original newcomer’s manual</a></td>
+<td>Setting and original system descriptions</td>
+<td>Introductory; some inconsistent prose</td>
+</tr>
+<tr>
+<td><a href="https://www.mocagh.org/miscgame/dejenol-refcard.pdf">Original PlayGuide</a></td>
+<td>Race/guild numerical tables and spellbook reference</td>
+<td>Printed tables need executable checks</td>
+</tr>
+<tr>
+<td><a href="https://www.mocagh.org/miscgame/dejenol-install.pdf">Original installation guide</a></td>
+<td>Windows-era operation and MIDI/audio</td>
+<td>Not a modern implementation requirement</td>
+</tr>
+<tr>
+<td><a href="https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm">Later official help archive</a></td>
+<td>Detailed system topics cited by filename</td>
+<td>Maintained for M1 and legacy; version mixing possible</td>
+</tr>
+<tr>
+<td><a href="https://archive.org/details/MordorTheDepthsofDejenol_1020">Internet Archive shareware package</a></td>
+<td>Independently hosted binary research input</td>
+<td>Shareware, not registered retail certification</td>
+</tr>
+<tr>
+<td><a href="https://github.com/matteo-prosperi/DungeonsOfDejremake/tree/main/tests/fixtures">Mirror fixture</a></td>
+<td>Second distribution of the same binary input</td>
+<td>Modern project’s provenance claims require corroboration</td>
+</tr>
+<tr>
+<td><a href="https://github.com/JKaniarz/libDejenol">libDejenol</a></td>
+<td>Community-authored original-file structure research</td>
+<td>Incomplete field semantics; not the original engine</td>
+</tr>
+<tr>
+<td><a href="https://docs.godotengine.org/en/stable/tutorials/scripting/c_sharp/index.html">Godot C# documentation</a></td>
+<td>Proposed desktop implementation feasibility</td>
+<td>Engine versions must be pinned during development</td>
+</tr>
+</tbody></table></div>
+<h3>27.2 Secondary checks</h3>
+<p>The <a href="https://crpgbook.wordpress.com/review-index/1995-mordor-depths-of-dejenol/">CRPG Book retrospective</a> supplies historical experience and dungeon dimensions. The <a href="https://www.mobygames.com/game/31910/mordor-the-depths-of-dejenol/">MobyGames overview</a> supplies the commonly reported content counts. Community references are useful cross-checks, never silent replacements for the chosen original build.</p>
+<p>Guild references: <a href="https://dejenol.fandom.com/wiki/Guild">Guild rules</a>, <a href="https://dejenol.fandom.com/wiki/Nomad">Nomad</a>, <a href="https://dejenol.fandom.com/wiki/Warrior">Warrior</a>, <a href="https://dejenol.fandom.com/wiki/Paladin">Paladin</a>, <a href="https://dejenol.fandom.com/wiki/Ninja">Ninja</a>, <a href="https://dejenol.fandom.com/wiki/Villain">Villain</a>, <a href="https://dejenol.fandom.com/wiki/Seeker">Seeker</a>, <a href="https://dejenol.fandom.com/wiki/Thief">Thief</a>, <a href="https://dejenol.fandom.com/wiki/Scavenger">Scavenger</a>, <a href="https://dejenol.fandom.com/wiki/Mage">Mage</a>, <a href="https://dejenol.fandom.com/wiki/Sorcerer">Sorcerer</a>, <a href="https://dejenol.fandom.com/wiki/Wizard">Wizard</a>, and <a href="https://dejenol.fandom.com/wiki/Healer">Healer</a>. Community content is attributed to the named pages; no community narrative descriptions are republished as game text.</p>
+<p>The <a href="https://github.com/matteo-prosperi/DungeonsOfDejremake">Dungeons of Dej’remake project</a> is used to identify changes that this remaster must avoid inheriting. Its public implementation source is not available for inspection; its documentation is not the original rules baseline. The second pass is pinned to commit <code>c932f12ec163693e120a4dc236610619f6af96ab</code> (October 1, 2026).</p>
+<h3>27.3 Supporting research files</h3>
+<ul>
+<li><a href="research/local-original-review.md">Original-file review and source anchors</a>, <a href="research/local-original/extraction-summary.json">extraction summary</a>, and <a href="research/local-original/source-preservation-check.json">source preservation report</a></li>
+<li><a href="research/local-original/races-local.csv">Local races</a>, <a href="research/local-original/guilds-local.csv">guilds</a>, <a href="research/local-original/items-local.csv">items</a>, <a href="research/local-original/monsters-local.csv">monsters</a>, and <a href="research/local-original/spell-reference.md">spell reference</a></li>
+<li><a href="research/README.md">Research index and limitations</a></li>
+<li><a href="research/second-pass-review.md">Second-pass review and decisions</a>, <a href="research/second-pass-sources.json">pinned source manifest</a>, and <a href="research/second-pass-data-audit.json">structural data audit</a></li>
+<li><a href="research/world-rules.md">World rules and source topic register</a></li>
+<li><a href="research/character-rules.md">Character and spell evidence notes</a></li>
+<li><a href="research/race-statistics.csv">Race statistics</a>, <a href="research/race-resistances.csv">resistances</a>, and <a href="research/race-guild-eligibility.csv">guild eligibility</a></li>
+<li><a href="research/guild-statistics.csv">Guild requirements and growth</a> and <a href="research/guild-abilities.csv">ability parameters</a></li>
+<li><a href="research/spell-statistics-updated-help.csv">Spell statistics</a> and <a href="research/spell-guild-levels-updated-help.csv">guild spell access</a></li>
+<li><a href="research/bestiary-data.md">Bestiary research and schema notes</a>, <a href="research/monster-candidate-shareware.csv">all monster fields</a>, and <a href="research/item-candidate-shareware.csv">all item fields</a></li>
+<li><a href="research/bestiary-provenance.json">Binary provenance and comparison</a></li>
+</ul>
+<p>Research artifacts are development references. They do not establish permission to redistribute original art, audio, help text, or software as part of a remaster. No original installer or game executable was run during this research.</p>
+</article></main>
+</body></html>

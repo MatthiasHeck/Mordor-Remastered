@@ -1,0 +1,10 @@
+race,Nomad,Warrior,Paladin,Ninja,Villain,Seeker,Thief,Scavenger,Mage,Sorcerer,Wizard,Healer,source,source_page
+Human,true,true,true,true,true,true,true,true,true,true,true,true,https://www.mocagh.org/miscgame/dejenol-refcard.pdf,1
+Elf,true,false,true,false,false,true,true,true,true,true,true,true,https://www.mocagh.org/miscgame/dejenol-refcard.pdf,1
+Giant,true,true,false,false,false,true,false,false,false,false,false,false,https://www.mocagh.org/miscgame/dejenol-refcard.pdf,1
+Gnome,true,false,true,false,true,true,true,true,true,true,false,true,https://www.mocagh.org/miscgame/dejenol-refcard.pdf,1
+Dwarf,true,true,false,false,false,true,true,true,false,true,true,true,https://www.mocagh.org/miscgame/dejenol-refcard.pdf,1
+Ogre,true,true,false,false,false,false,false,true,false,false,false,false,https://www.mocagh.org/miscgame/dejenol-refcard.pdf,1
+Morloch,true,true,false,false,true,true,false,true,true,true,false,false,https://www.mocagh.org/miscgame/dejenol-refcard.pdf,1
+Osiri,true,false,false,false,false,true,true,true,false,true,true,true,https://www.mocagh.org/miscgame/dejenol-refcard.pdf,1
+Troll,true,false,false,true,true,false,true,true,false,false,false,false,https://www.mocagh.org/miscgame/dejenol-refcard.pdf,1

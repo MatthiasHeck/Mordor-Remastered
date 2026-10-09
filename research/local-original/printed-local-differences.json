@@ -1,0 +1,9 @@
+[
+  {
+    "kind": "race",
+    "name": "Troll",
+    "field": "alignment_mask",
+    "printed": 6,
+    "local": 7
+  }
+]

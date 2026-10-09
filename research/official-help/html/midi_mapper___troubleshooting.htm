@@ -1,0 +1,82 @@
+<HTML><HEAD>
+	
+	<TITLE>MIDI Mapper &amp; Troubleshooting</TITLE>
+	
+	<META NAME="AUTHOR" CONTENT="1994 to 2026 Decklin's Domain Ltd. All Rights Reserved">
+	<META NAME="GENERATOR" CONTENT="HelpScribble 7.8.8">
+	<STYLE> span { display: inline-block; }</STYLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#0000FF" VLINK="#800080" ALINK="#FF0000">
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" SIZE="4"><B>MIDI Mapper &amp; Troubleshooting</B></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" COLOR="#0000FF" SIZE="3">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" COLOR="#0000FF" SIZE="3"><B><I>Edited January 2, 2015 ~ the following is the original text:</I></B></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" SIZE="3"><B><I>Windows MIDI Mapper, an Overview</I></B></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" SIZE="2">Mordor comes with a rich MIDI (Musical Instrument Digital Interface) Musical score.&nbsp; However, some systems may require the modification of the computers MIDI setup before the music for Mordor will play properly.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;text-indent:8pt;"><FONT FACE="Arial" SIZE="2">To understand how the MIDI Mapper works, one must understand how MIDI data is transferred from one place to another.&nbsp; This information will help in troubleshooting problems such as no sound from your sound card.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;text-indent:8pt;"><FONT FACE="Arial" SIZE="2">MIDI data is carried on 16 discreet channels.&nbsp; MIDI used in computer applications usually uses channels 1-9 and 11-16 for melodic instruments, like flute, piano, etc. Channel 10 is usually reserved for percussion instruments, i.e. drums, cymbals, etc. Windows' MIDI Mapper divides the channels into two setups, Extended and Basic.&nbsp;&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;text-indent:8pt;"><FONT FACE="Arial" SIZE="2">An Extended Setup uses MIDI channels 2-9 for melodic instruments and channel 10 for percussion.&nbsp; A Basic Setup uses channels 13-15 for melodic instruments and channel 16 for percussion. Both setups use only the channels mentioned and will not transfer data on any other channels.&nbsp; The MIDI data in Mordor has been authored for Extended Setups only.&nbsp; A troubleshooting chart is included here for help in getting Mordor to use your sound card.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;text-indent:8pt;"><FONT FACE="Arial" SIZE="2">Before attempting to make changes to your MIDI Mapper, please read and understand the information in your Windows documentation regarding MIDI and the MIDI Mapper.&nbsp; It is highly recommended that copies of all files in your Windows directories, including SYSTEM.INI and WIN.INI files be made on a blank floppy disc. These files can be copied back to their original directories should changing your MIDI Mapper cause problems.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;text-indent:8pt;"><FONT FACE="Arial" SIZE="2">If you have any problems with hearing the MIDI music, or it doesn't sound right, please see the following troubleshooting section.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;text-indent:8pt;"><FONT FACE="Arial" SIZE="3">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" SIZE="3"><B><I>MIDI/Sound Troubleshooting</I></B></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" SIZE="2"><B><I>Problem</I></B></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2">No Sound</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" SIZE="2"><I>Solutions</I></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;text-indent:-17pt;margin-left:26pt;"><SPAN STYLE="margin-left:-17pt;text-indent:0pt;width: 63pt"><FONT FACE="Arial" SIZE="2">1.  </span>Make sure your speakers or headphones are plugged in and working.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;text-indent:-26pt;margin-left:35pt;"><SPAN STYLE="margin-left:-26pt;text-indent:0pt;width: 63pt"><FONT FACE="Arial" SIZE="2">2.  </span>Make sure you have drivers for your sound card installed in Windows. If you have not done this, please refer to your Windows manual and the documentation for your sound card.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;text-indent:-17pt;margin-left:26pt;"><SPAN STYLE="margin-left:-17pt;text-indent:0pt;width: 63pt"><FONT FACE="Arial" SIZE="2">3.  </span>Your MIDI Mapper is setup for Basic. Edit the MIDI Mapper. See below.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" SIZE="2"><B><I>Problem</I></B></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2">Beeps when WAVE files should be playing</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" SIZE="2"><I>Solutions</I></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;text-indent:-17pt;margin-left:26pt;"><SPAN STYLE="margin-left:-17pt;text-indent:0pt;width: 63pt"><FONT FACE="Arial" SIZE="2">1.  </span>Set the ShowDevices property in the [general] section of WINDOWS\WAVEMIX.INI to 1.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;text-indent:-17pt;margin-left:26pt;"><SPAN STYLE="margin-left:-17pt;text-indent:0pt;width: 63pt"><FONT FACE="Arial" SIZE="2">2.  </span>WAVMIX16.DLL is out of date, or was not installed properly</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" SIZE="2"><B><I>Problem</I></B></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2">The instruments don't sound right, i.e. there are no drum sounds.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" SIZE="2"><I>Solution</I></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;text-indent:-26pt;margin-left:35pt;"><SPAN STYLE="margin-left:-26pt;text-indent:0pt;width: 63pt"><FONT FACE="Arial" SIZE="2">1.  </span>Make sure the sound card driver you are using is a General MIDI driver. If it is not, you will need to contact your sound card vendor or manufacturer for an updated driver. Many drivers are available on Compuserve, America on-line, and local BBS's. Drivers are device specific, which means that a driver for a Sound Blaster Pro will probably not work on any other card.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;text-indent:-26pt;margin-left:35pt;"><SPAN STYLE="margin-left:-26pt;text-indent:0pt;width: 63pt"><FONT FACE="Arial" SIZE="2"> &nbsp;</FONT></span></P>
+<P STYLE="margin-top:0;margin-bottom:0;text-indent:-17pt;margin-left:26pt;"><SPAN STYLE="margin-left:-17pt;text-indent:0pt;width: 63pt"><FONT FACE="Arial" SIZE="2">2.  </span>Your MIDI Mapper is setup for Basic. Edit the MIDI Mapper. See below.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" SIZE="2"><B><I>Problem</I></B></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2">The volume is very low.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" SIZE="2">Solution</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;text-indent:-17pt;margin-left:26pt;"><SPAN STYLE="margin-left:-17pt;text-indent:0pt;width: 63pt"><FONT FACE="Arial" SIZE="2">1.  </span>Many sound cards include software mixer applications. Find this and open it. If the volume for MIDI is low, turn it up.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" SIZE="2"><B><I>Problem</I></B></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;margin-left:8pt;"><FONT FACE="Arial" SIZE="2">Sound is distorted</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" SIZE="2"><I>Solution</I></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;text-indent:-26pt;margin-left:35pt;"><SPAN STYLE="margin-left:-26pt;text-indent:0pt;width: -5pt"><FONT FACE="Arial" SIZE="2">1.  </span>You are probably running the speakers or sound card amplifier beyond its capacity.&nbsp; Try connecting the sound card output to an external amplifier, like a stereo system. Always turn off the stereo when connecting or disconnecting devices from its inputs. After powering the stereo back up, bring up the volume slowly to avoid damaging the stereo speakers and your ears.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;text-indent:-26pt;margin-left:35pt;"><FONT FACE="Arial" SIZE="3">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" SIZE="3"><B>Editing the Windows MIDI Mapper</B></FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" SIZE="2">Do not try to edit the MIDI Mapper unless you feel completely comfortable making these changes.&nbsp; If you are new to Windows, please seek the assistance of someone experienced with Windows. Also, do not make changes until you have backed up the files listed in item 1.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" SIZE="2">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;text-indent:-35pt;margin-left:35pt;"><SPAN STYLE="margin-left:-35pt;text-indent:0pt;width: 72pt"><FONT FACE="Arial" SIZE="2">1)  </span>Always make a copy of existing files. Include WIN.INI and SYSTEM.INI in the WINDOW directory.&nbsp; Also include MIDIMAP.CFG and MIDIMAP.DRV in the WINDOWS\SYSTEM directory.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;text-indent:-35pt;margin-left:35pt;"><SPAN STYLE="margin-left:-35pt;text-indent:0pt;width: 72pt"><FONT FACE="Arial" SIZE="2">2)  </span>Open Control Panel and open MIDI Mapper.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;text-indent:-17pt;margin-left:17pt;"><SPAN STYLE="margin-left:-17pt;text-indent:0pt;width: 72pt"><FONT FACE="Arial" SIZE="2">3)  </span>In the MIDI Mapper dialog box, "Setups" should be selected. Press "New".</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;text-indent:-17pt;margin-left:17pt;"><SPAN STYLE="margin-left:-17pt;text-indent:0pt;width: 72pt"><FONT FACE="Arial" SIZE="2">4)  </span>Enter Name and Description and press "OK".</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;text-indent:-17pt;margin-left:17pt;"><SPAN STYLE="margin-left:-17pt;text-indent:0pt;width: 72pt"><FONT FACE="Arial" SIZE="2">5)  </span>All "SRC" (Source) channels should be the same as all "DEST"</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;text-indent:-17pt;margin-left:17pt;"><SPAN STYLE="margin-left:-17pt;text-indent:0pt;width: 72pt"><FONT FACE="Arial" SIZE="2">6)  </span>(Destination) channels, i.e. SRC 1-DEST 1, SRC 2-DEST 2, etc.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;text-indent:-17pt;margin-left:17pt;"><SPAN STYLE="margin-left:-17pt;text-indent:0pt;width: 72pt"><FONT FACE="Arial" SIZE="2">7)  </span>The third column is "Port Name". Press the down arrow to open the menu of installed drivers.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;text-indent:-35pt;margin-left:35pt;"><SPAN STYLE="margin-left:-35pt;text-indent:0pt;width: 72pt"><FONT FACE="Arial" SIZE="2">8)  </span>Select the General MIDI driver installed on your system. If you have a separate MIDI port, such as the Roland MPU-IPC, and wish to use it to drive an external device, select it.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;text-indent:-35pt;margin-left:35pt;"><SPAN STYLE="margin-left:-35pt;text-indent:0pt;width: 72pt"><FONT FACE="Arial" SIZE="2">9)  </span>Repeat number 7 for all 16 channels.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;text-indent:-17pt;margin-left:17pt;"><SPAN STYLE="margin-left:-17pt;text-indent:0pt;width: 72pt"><FONT FACE="Arial" SIZE="2">10)  </span>Press "OK".</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;text-indent:-17pt;margin-left:17pt;"><SPAN STYLE="margin-left:-17pt;text-indent:0pt;width: 72pt"><FONT FACE="Arial" SIZE="2">11)  </span>When asked to save, answer "Yes".</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;text-indent:-17pt;margin-left:17pt;"><SPAN STYLE="margin-left:-17pt;text-indent:0pt;width: 72pt"><FONT FACE="Arial" SIZE="2">12)  </span>The name of your new MIDI Map should appear in the Name box. It is now active. Press ALT and F4 to close MIDI Mapper.</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" SIZE="1">&nbsp;</FONT></P>
+<P STYLE="margin-top:0;margin-bottom:0;"><FONT FACE="Arial" SIZE="1"><B>M1: "The Depths of Dejenol" is a Trademark of Decklin's Domain Ltd and is © Copyright 1994-2026 All Rights Reserved
+</B></FONT>
+</P>
+</BODY></HTML>

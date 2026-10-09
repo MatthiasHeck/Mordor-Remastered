@@ -1,0 +1,43 @@
+{
+  "research_date_local": "2026-10-08",
+  "distribution": "MORDOR11.ZIP / PUBLIC shareware / data header 1.1",
+  "source_url": "https://raw.githubusercontent.com/matteo-prosperi/DungeonsOfDejremake/main/tests/fixtures/MORDOR11.ZIP",
+  "schema_sources": [
+    "https://github.com/JKaniarz/libDejenol/blob/master/libDejenol/MTypes.h",
+    "https://github.com/JKaniarz/libDejenol/blob/master/libDejenol/MLoader.cpp",
+    "https://github.com/JKaniarz/libDejenol/blob/master/libDejenol/RecordReader.h"
+  ],
+  "sha256": {
+    "MORDOR11.ZIP": "915fa9bc26359698b2b29a04980f7b6c433bc18dd006766aa8146e2c22cb5cb7",
+    "MORDOR.WIP": "df0c8fd668a02067b476cb1a65e5622c9d5cd8d5a653e627bdf446c607fb9622",
+    "MDATA5.MDR": "c26ebd920c94d75dc66f1ee3b664c69393770541e68b860bd55f93095b1c8739",
+    "MDATA3.MDR": "babf9ede941bc2f3dab073283a304d80fd59ed34d9fcd7099cde1e0f7988d7c7"
+  },
+  "monster_record_count": 401,
+  "status": "CORROBORATED_SHAREWARE_CANDIDATE_RETAIL_PARITY_UNVERIFIED",
+  "duplicate_monster_ids": {
+    "307": [
+      "Morgul",
+      "Shadow Ninja"
+    ]
+  },
+  "unexpected_first_monster_name": "GOBLIE",
+  "item_record_count": 366,
+  "raw_assets_written": false,
+  "original_programs_executed": false,
+  "limitations": [
+    "Both independently hosted packages contain identical data; shared origin is possible and retail equivalence is unproven.",
+    "401 monster records, 400 unique monster IDs, duplicate ID 307 and first name GOBLIE are preserved exactly; their historical meaning is unresolved.",
+    "Record indices are not interchangeable with embedded IDs; no deduplication or name repair has been applied.",
+    "Community field-layout interpretations are not executable-verified semantics.",
+    "Item charges/deleted interpretation is unresolved; halves and combined raw value are retained.",
+    "No original program or installer was executed; no full registered maps or behavior traces were obtained."
+  ],
+  "independent_distribution": {
+    "source_url": "https://archive.org/download/MordorTheDepthsofDejenol_1020/MORDOR11.ZIP",
+    "catalogue_url": "https://archive.org/details/MordorTheDepthsofDejenol_1020",
+    "sha256": "915fa9bc26359698b2b29a04980f7b6c433bc18dd006766aa8146e2c22cb5cb7",
+    "monster_data_identical": true,
+    "item_data_identical": true
+  }
+}

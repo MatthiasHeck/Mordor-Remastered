@@ -1,0 +1,101 @@
+spell,spell_class,base_spell_level,guild_access_raw,str_req,int_req,wis_req,con_req,cha_req,dex_req,context,monsters_parameter,groups_parameter,power_base,power_level_modifier,source,source_topic,status
+Charm Insect,Charm,1,Mag,,12,12,,,,combat,4,1,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,1dljxk3.htm,official_updated_help_not_executable_verified
+Charm Animal,Charm,2,Mag,,12,12,,14,,combat,4,1,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,1dljxk3.htm,official_updated_help_not_executable_verified
+Charm Elemental,Charm,3,Mag,,13,13,,15,,combat,4,1,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,1dljxk3.htm,official_updated_help_not_executable_verified
+Charm Humanoid,Charm,4,Mag,,16,16,,18,,combat,4,1,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,1dljxk3.htm,official_updated_help_not_executable_verified
+Charm Undead,Charm,5,Mag,,15,17,,10,,combat,4,1,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,1dljxk3.htm,official_updated_help_not_executable_verified
+Charm Giant,Charm,5,Mag,,15,15,,16,,combat,4,1,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,1dljxk3.htm,official_updated_help_not_executable_verified
+Bind Animal,Charm,5,Mag,,13,17,,10,,combat,4,1,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,1dljxk3.htm,official_updated_help_not_executable_verified
+Charm Monster,Charm,6,Mag,,12,17,,10,,combat,4,1,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,1dljxk3.htm,official_updated_help_not_executable_verified
+Bind Elemental,Charm,6,Mag,,15,15,,12,,combat,4,1,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,1dljxk3.htm,official_updated_help_not_executable_verified
+Charm Dragon,Charm,7,Mag,,18,18,,18,,combat,4,1,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,1dljxk3.htm,official_updated_help_not_executable_verified
+Dominate Demon,Charm,8,Mag,,15,17,12,17,,combat,4,1,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,1dljxk3.htm,official_updated_help_not_executable_verified
+Dominate Devil,Charm,8,Mag,,15,18,12,18,,combat,4,1,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,1dljxk3.htm,official_updated_help_not_executable_verified
+Dominate Humanoid,Charm,8,Mag,,16,16,,16,,combat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,1dljxk3.htm,official_updated_help_not_executable_verified
+Dominate Giant,Charm,10,Mag,,18,18,,18,,combat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,1dljxk3.htm,official_updated_help_not_executable_verified
+Soul Entrapment,Charm,12,Mag,,18,21,18,22,,combat,4,1,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,1dljxk3.htm,official_updated_help_not_executable_verified
+Sight Veil,Visual,2,"See (6), Mag (4), Sor, Wiz (8)",,12,12,,12,,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,1irnlrb.htm,official_updated_help_not_executable_verified
+See Invisible,Visual,2,"See (6), Mag (4), Sor, Wiz (8)",,12,12,,12,,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,1irnlrb.htm,official_updated_help_not_executable_verified
+Mass Sight Veil,Visual,8,Sor,10,12,16,,10,10,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,1irnlrb.htm,official_updated_help_not_executable_verified
+Cause Wounds,Damage,2,"Wiz, Hea",,11,11,8,,11,combat,4,2,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,1tst8dk.htm,official_updated_help_not_executable_verified
+Cause Heavy Wounds,Damage,4,"Wiz, Hea",,12,13,10,,12,combat,6,4,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,1tst8dk.htm,official_updated_help_not_executable_verified
+Power,Damage,5,"Wiz (6), Hea",,15,15,12,,15,combat,6,4,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,1tst8dk.htm,official_updated_help_not_executable_verified
+Harm,Damage,6,"Wiz (7), Hea",,17,16,13,,16,combat,7,4,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,1tst8dk.htm,official_updated_help_not_executable_verified
+Draining Touch,Damage,6,"Wiz (7), Hea",,17,17,12,,14,combat,1,1,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,1tst8dk.htm,official_updated_help_not_executable_verified
+Cause Fatal Wounds,Damage,7,"Wiz (8), Hea",,17,17,14,,16,combat,9,4,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,1tst8dk.htm,official_updated_help_not_executable_verified
+Word of Death,Damage,12,"Wiz (15), Hea",,21,21,18,,21,combat,14,4,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,1tst8dk.htm,official_updated_help_not_executable_verified
+Protection,Protection,3,"Sor, Wiz (15)",,11,11,,11,,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,2lzb01.htm,official_updated_help_not_executable_verified
+Mass Protection,Protection,8,Sor,14,18,18,12,12,,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,2lzb01.htm,official_updated_help_not_executable_verified
+Resist Fire,Resistant,3,"See (9), Sor, Wiz (9), Hea (6)",,13,13,,13,,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,3ssvu7.htm,official_updated_help_not_executable_verified
+Resist Draining,Resistant,3,"See (9), Sor, Wiz (9), Hea (6)",,13,13,10,13,,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,3ssvu7.htm,official_updated_help_not_executable_verified
+Resist Cold,Resistant,3,"See (9), Sor, Wiz (9), Hea (6)",,14,14,10,12,,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,3ssvu7.htm,official_updated_help_not_executable_verified
+Resist Poison,Resistant,4,"See (12), Sor, Wiz (12), Hea (8)",,10,12,10,10,,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,3ssvu7.htm,official_updated_help_not_executable_verified
+Resist Disease,Resistant,4,"See (12), Sor, Wiz (12), Hea (8)",,12,12,10,12,,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,3ssvu7.htm,official_updated_help_not_executable_verified
+Resist Paralysis,Resistant,4,"See (12), Sor, Wiz (12), Hea (8)",,14,16,8,,12,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,3ssvu7.htm,official_updated_help_not_executable_verified
+Resist Stoning,Resistant,4,"See (12), Sor, Wiz (12), Hea (8)",,12,13,12,10,,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,3ssvu7.htm,official_updated_help_not_executable_verified
+Resist Magic,Resistant,5,"See (15), Sor, Wiz (15), Hea (10)",,14,12,12,12,,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,3ssvu7.htm,official_updated_help_not_executable_verified
+Mental Resistance,Resistant,6,"Sor, Wiz (18)",,18,14,12,10,,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,3ssvu7.htm,official_updated_help_not_executable_verified
+Electrical Resistance,Resistant,6,"Sor, Wiz (18)",12,12,16,12,,,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,3ssvu7.htm,official_updated_help_not_executable_verified
+Resist Acidity,Resistant,6,"Sor, Wiz (18)",10,13,10,15,,,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,3ssvu7.htm,official_updated_help_not_executable_verified
+Minor Heal,Heal,2,"Pal (6), Vil (6), Mag(4), Hea",,13,13,,,,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,60.eu..htm,official_updated_help_not_executable_verified
+Cure Poison,Heal,3,"Pal (9), Vil (9), Mag (6), Hea",,13,13,,13,,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,60.eu..htm,official_updated_help_not_executable_verified
+Heal,Heal,4,"Pal (12), Vil (12), Mag (8), Hea",,15,15,,,,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,60.eu..htm,official_updated_help_not_executable_verified
+Cure Paralysis,Heal,4,"Pal (12), Vil (12), Mag (8), Hea",6,11,11,10,,6,combat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,60.eu..htm,official_updated_help_not_executable_verified
+Cure Disease,Heal,5,"Pal (15), Mag (10), Hea",,15,15,,12,,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,60.eu..htm,official_updated_help_not_executable_verified
+Raise Dead,Heal,7,Hea,13,16,16,13,,,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,60.eu..htm,official_updated_help_not_executable_verified
+Restoration,Heal,7,Hea,,17,17,,12,,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,60.eu..htm,official_updated_help_not_executable_verified
+Cure,Heal,8,Hea,12,18,18,12,,,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,60.eu..htm,official_updated_help_not_executable_verified
+Restore Flesh,Heal,8,Hea,,18,18,16,,15,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,60.eu..htm,official_updated_help_not_executable_verified
+Mass Heal,Heal,8,Hea,,16,16,,,,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,60.eu..htm,official_updated_help_not_executable_verified
+Resurrect,Heal,12,Hea,,21,21,14,,18,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,60.eu..htm,official_updated_help_not_executable_verified
+Control,Bind,3,Mag,,12,12,,10,,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,606j74.htm,official_updated_help_not_executable_verified
+Bind,Bind,6,Mag,,14,14,,16,,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,606j74.htm,official_updated_help_not_executable_verified
+Domination,Bind,12,Mag,,18,18,18,18,,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,606j74.htm,official_updated_help_not_executable_verified
+Cold Blast,Cold,2,Sor,,12,9,,,9,combat,4,2,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,607p54.htm,official_updated_help_not_executable_verified
+Ice Spray,Cold,5,Sor,,16,8,,,9,combat,6,3,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,607p54.htm,official_updated_help_not_executable_verified
+Hail Storm,Cold,8,Sor,,19,18,,,12,combat,8,4,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,607p54.htm,official_updated_help_not_executable_verified
+Arctic Storm,Cold,12,Sor,,21,20,,,18,combat,12,4,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,607p54.htm,official_updated_help_not_executable_verified
+Sleep,Mind,1,"Mag, Wiz",,12,11,,,8,combat,2,2,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,60aj74.htm,official_updated_help_not_executable_verified
+Light Spray,Mind,4,"Mag, Wiz",,15,9,,,9,combat,6,4,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,60aj74.htm,official_updated_help_not_executable_verified
+Summon Shade,Mind,6,"Mag, Wiz",,14,12,,10,8,combat,7,4,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,60aj74.htm,official_updated_help_not_executable_verified
+Precognitive Death,Mind,12,"Mag, Wiz",,18,15,10,,14,combat,14,4,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,60aj74.htm,official_updated_help_not_executable_verified
+Poison,Element,2,"Vil (6), Sor, Hea",,10,10,9,,14,combat,4,2,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,9z.n7h.htm,official_updated_help_not_executable_verified
+Leprosy,Element,4,"Vil (12), Sor, Hea",,12,12,12,,12,combat,4,3,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,9z.n7h.htm,official_updated_help_not_executable_verified
+Acidic Spray,Element,6,Sor,10,10,12,10,,15,combat,6,3,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,9z.n7h.htm,official_updated_help_not_executable_verified
+Flesh to Stone,Element,8,Sor,15,16,18,16,,14,combat,1,1,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,9z.n7h.htm,official_updated_help_not_executable_verified
+Paralyzing Death,Element,10,Sor,18,20,18,16,,14,combat,8,4,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,9z.n7h.htm,official_updated_help_not_executable_verified
+Banish Devil,Banish,5,"Wiz (10), Hea",,13,15,10,,,combat,8,4,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,ca_aly.htm,official_updated_help_not_executable_verified
+Banish Demon,Banish,6,"Wiz (12), Hea",,12,14,10,,,combat,8,4,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,ca_aly.htm,official_updated_help_not_executable_verified
+Charm of Opening,Magical,1,"Nom (12), Nin (9), Thi(3), Sca (6)",12,13,13,,,13,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,el5pv..htm,official_updated_help_not_executable_verified
+Dispel Undead,Dispell,3,"Wiz, Hea",,9,12,6,,,combat,8,4,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,fowm95.htm,official_updated_help_not_executable_verified
+Dispel Elemental,Dispell,4,"Wiz, Hea",,15,15,15,17,,combat,8,4,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,fowm95.htm,official_updated_help_not_executable_verified
+Abolish Undead,Dispell,8,"Wiz, Hea",,16,18,18,,12,combat,4,2,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,fowm95.htm,official_updated_help_not_executable_verified
+Shock,Electrical,1,Sor,,12,,,,9,combat,2,2,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,jr6n8t.htm,official_updated_help_not_executable_verified
+Lightning Bolt,Electrical,3,Sor,,14,9,,,9,combat,4,2,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,jr6n8t.htm,official_updated_help_not_executable_verified
+ThunderBolt,Electrical,6,Sor,,16,10,,,12,combat,6,3,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,jr6n8t.htm,official_updated_help_not_executable_verified
+Static Mesh,Electrical,7,Sor,,18,10,,,12,combat,7,4,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,jr6n8t.htm,official_updated_help_not_executable_verified
+Electric Field,Electrical,11,Sor,,17,12,,,12,combat,12,4,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,jr6n8t.htm,official_updated_help_not_executable_verified
+Detect Rock,Movement,1,"See, Mag, Wiz",,14,14,12,,,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,lseg3e.htm,official_updated_help_not_executable_verified
+Feather Essence,Movement,3,"See, Mag, Wiz",,14,14,14,,,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,lseg3e.htm,official_updated_help_not_executable_verified
+Ethereal Portal,Movement,5,"See, Mag, Wiz",14,18,18,,,18,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,lseg3e.htm,official_updated_help_not_executable_verified
+Displacement,Movement,8,"See, Wiz",,14,10,,,14,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,lseg3e.htm,official_updated_help_not_executable_verified
+Mass Levitate,Movement,8,"See, Wiz",12,16,16,14,,12,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,lseg3e.htm,official_updated_help_not_executable_verified
+Teleport,Movement,12,"See, Wiz",,17,14,11,,17,both,4,4,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,lseg3e.htm,official_updated_help_not_executable_verified
+Sanctuary,Movement,12,"See, Wiz",,16,20,15,,,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,lseg3e.htm,official_updated_help_not_executable_verified
+Set Sanctuary,Location,1,"Nom, War, Pal, Nin, Vil, See, Thi, Sca, Mag, Sor, Wiz, Hea",,,,,,,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,ngexv7.htm,official_updated_help_not_executable_verified
+Depth Perception,Location,3,"See, Mag, Wiz",,13,13,13,,,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,ngexv7.htm,official_updated_help_not_executable_verified
+Soul Search,Location,6,"See, Mag, Wiz",,15,14,,,12,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,ngexv7.htm,official_updated_help_not_executable_verified
+Find Direction,Location,6,"See, Mag, Wiz",,14,14,14,,,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,ngexv7.htm,official_updated_help_not_executable_verified
+Retrieve Soul,Location,14,"See, Mag",,18,18,16,,18,noncombat,,,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,ngexv7.htm,official_updated_help_not_executable_verified
+Firebolt,Fire,2,Sor,,12,9,,,,combat,4,2,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,scfire.htm,official_updated_help_not_executable_verified
+Blue Flame,Fire,4,Sor,,14,10,,,,combat,2,1,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,scfire.htm,official_updated_help_not_executable_verified
+Flamesheet,Fire,5,Sor,,15,14,,,,combat,6,3,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,scfire.htm,official_updated_help_not_executable_verified
+Pillar of Fire,Fire,7,Sor,,18,18,,,16,combat,7,4,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,scfire.htm,official_updated_help_not_executable_verified
+Sphere of Flames,Fire,10,Sor,,20,21,,,18,combat,10,4,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,scfire.htm,official_updated_help_not_executable_verified
+Burning Air,Fire,12,Sor,,21,21,,,18,combat,14,4,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,scfire.htm,official_updated_help_not_executable_verified
+Nerve Blank,Kill,1,"Mag, Wiz",,11,7,,,,combat,2,2,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,sckill.htm,official_updated_help_not_executable_verified
+Dazzle,Kill,3,"Mag, Wiz",,13,8,,,8,combat,6,4,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,sckill.htm,official_updated_help_not_executable_verified
+Flickering Doom,Kill,5,"Mag, Wiz",,16,13,,,12,combat,7,4,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,sckill.htm,official_updated_help_not_executable_verified
+Cause Death,Kill,8,"Mag, Wiz",,18,16,14,,12,combat,8,4,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,sckill.htm,official_updated_help_not_executable_verified
+Piercing Darkness,Kill,10,"Mag, Wiz",,17,18,,10,12,combat,10,4,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,sckill.htm,official_updated_help_not_executable_verified
+Field of Death,Kill,14,Mag,,22,22,18,,21,combat,20,4,,,https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm,sckill.htm,official_updated_help_not_executable_verified

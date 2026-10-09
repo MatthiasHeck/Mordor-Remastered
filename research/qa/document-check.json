@@ -1,0 +1,13 @@
+{
+  "desktop": {
+    "sections": 27,
+    "tables": 27,
+    "horizontalOverflow": false,
+    "title": "Mordor Remastered Design Document"
+  },
+  "narrow": {
+    "horizontalOverflow": false
+  },
+  "pageErrors": [],
+  "missingLocalLinks": []
+}

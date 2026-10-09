@@ -1,0 +1,64 @@
+{
+  "review_date_local": "2026-10-08",
+  "repository_revision": "c932f12ec163693e120a4dc236610619f6af96ab",
+  "revision_committed_at": "2026-10-01T04:09:24Z",
+  "implementation_source_inspected": false,
+  "original_program_executed": false,
+  "sources": [
+    {
+      "path": "docs/help/index.md",
+      "url": "https://github.com/matteo-prosperi/DungeonsOfDejremake/blob/c932f12ec163693e120a4dc236610619f6af96ab/docs/help/index.md",
+      "sha256": "560a51838ecab860a577d73beabd3a897f1cb0d67a43bc42f909c5f7f0c29d90"
+    },
+    {
+      "path": "docs/help/character-creation.md",
+      "url": "https://github.com/matteo-prosperi/DungeonsOfDejremake/blob/c932f12ec163693e120a4dc236610619f6af96ab/docs/help/character-creation.md",
+      "sha256": "0f8fd38b7370ada3804d0c6aa2cda2517c9b1a6ec8c2f1996f29747919b0ad5e"
+    },
+    {
+      "path": "docs/help/character-sheet.md",
+      "url": "https://github.com/matteo-prosperi/DungeonsOfDejremake/blob/c932f12ec163693e120a4dc236610619f6af96ab/docs/help/character-sheet.md",
+      "sha256": "3169748cbc9217a08b1dc0da990ed77e75c1271dd15de6e1a4ae8f62e062d916"
+    },
+    {
+      "path": "docs/help/guild-hall.md",
+      "url": "https://github.com/matteo-prosperi/DungeonsOfDejremake/blob/c932f12ec163693e120a4dc236610619f6af96ab/docs/help/guild-hall.md",
+      "sha256": "1f599d816f9b517afccee16653c3139476a1b70fe50f7d3a18e42c1197dea3f9"
+    },
+    {
+      "path": "docs/help/general-store.md",
+      "url": "https://github.com/matteo-prosperi/DungeonsOfDejremake/blob/c932f12ec163693e120a4dc236610619f6af96ab/docs/help/general-store.md",
+      "sha256": "1e4074809295eabce16be6eb27fef60c02f29f3f7eab4b964ea0c6f6d0609f0b"
+    },
+    {
+      "path": "docs/help/dungeon.md",
+      "url": "https://github.com/matteo-prosperi/DungeonsOfDejremake/blob/c932f12ec163693e120a4dc236610619f6af96ab/docs/help/dungeon.md",
+      "sha256": "264b812296288dd5cff9c52cd197067ae3f4f024d802a330a8931382d0f5c872"
+    },
+    {
+      "path": "docs/help/changelog.md",
+      "url": "https://github.com/matteo-prosperi/DungeonsOfDejremake/blob/c932f12ec163693e120a4dc236610619f6af96ab/docs/help/changelog.md",
+      "sha256": "5d771d9f6e300f7a6f3d0e73c6b85f39a1a2d45a781c93b93f3925355d7388cf"
+    },
+    {
+      "path": "docs/help/companion-store.md",
+      "url": "https://github.com/matteo-prosperi/DungeonsOfDejremake/blob/c932f12ec163693e120a4dc236610619f6af96ab/docs/help/companion-store.md",
+      "sha256": "ffdfe1f419aec9fceb1f41618705ae0f95859000007c1c712faa8d052f9c8b09"
+    },
+    {
+      "path": "docs/help/library.md",
+      "url": "https://github.com/matteo-prosperi/DungeonsOfDejremake/blob/c932f12ec163693e120a4dc236610619f6af96ab/docs/help/library.md",
+      "sha256": "f62d9cb222574a389a69115bfb4df3d42dfee0fbcad7565edfc62fcc7aad2736"
+    },
+    {
+      "path": "docs/help/bank.md",
+      "url": "https://github.com/matteo-prosperi/DungeonsOfDejremake/blob/c932f12ec163693e120a4dc236610619f6af96ab/docs/help/bank.md",
+      "sha256": "87b3ae96bdbff051471eac5314594752cc498d4e6d403d763aaa4268e469d7f0"
+    }
+  ],
+  "publisher_help": {
+    "url": "https://www.decklinsdomain.info/DsD/mordor1/M1B040b.chm",
+    "sha256": "ca39ac7e20d282d68185caabd2827f1ae7422c42dd03d91290313eb57e19d397",
+    "status": "LATER_OFFICIAL_HELP_ORIGINAL_EDITION_PARITY_UNVERIFIED"
+  }
+}

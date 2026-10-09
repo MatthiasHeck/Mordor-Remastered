@@ -1,0 +1,13 @@
+guild,thieving,backstabbing,critical_hit,multiple_swings,fighting,perception,source,source_page,verification_note
+Nomad,5,0,0,0,7,5,https://www.mocagh.org/miscgame/dejenol-refcard.pdf,2,Empty cells normalized to zero; coefficients are not direct probabilities
+Warrior,2,0,9,5,12,2,https://www.mocagh.org/miscgame/dejenol-refcard.pdf,2,Empty cells normalized to zero; coefficients are not direct probabilities
+Paladin,2,0,5,2,10,3,https://www.mocagh.org/miscgame/dejenol-refcard.pdf,2,Empty cells normalized to zero; coefficients are not direct probabilities
+Ninja,7,2,5,8,10,6,https://www.mocagh.org/miscgame/dejenol-refcard.pdf,2,Empty cells normalized to zero; coefficients are not direct probabilities
+Villain,6,4,1,3,8,4,https://www.mocagh.org/miscgame/dejenol-refcard.pdf,2,Empty cells normalized to zero; coefficients are not direct probabilities
+Seeker,3.5,0,3,0,9,9,https://www.mocagh.org/miscgame/dejenol-refcard.pdf,2,Empty cells normalized to zero; coefficients are not direct probabilities
+Thief,9,9,0,0,6,3,https://www.mocagh.org/miscgame/dejenol-refcard.pdf,2,Empty cells normalized to zero; coefficients are not direct probabilities
+Scavenger,7.5,5,0,1,7,3,https://www.mocagh.org/miscgame/dejenol-refcard.pdf,2,Empty cells normalized to zero; coefficients are not direct probabilities
+Mage,2,0,0,0,5,3,https://www.mocagh.org/miscgame/dejenol-refcard.pdf,2,Empty cells normalized to zero; coefficients are not direct probabilities
+Sorcerer,2,0,0,0,5,2,https://www.mocagh.org/miscgame/dejenol-refcard.pdf,2,Empty cells normalized to zero; coefficients are not direct probabilities
+Wizard,2,0,0,0,5,2,https://www.mocagh.org/miscgame/dejenol-refcard.pdf,2,Empty cells normalized to zero; coefficients are not direct probabilities
+Healer,2,0,0,0,5,2,https://www.mocagh.org/miscgame/dejenol-refcard.pdf,2,Empty cells normalized to zero; coefficients are not direct probabilities

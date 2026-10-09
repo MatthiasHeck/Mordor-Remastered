@@ -1,0 +1,106 @@
+kind,index,label,source,line
+spell_category,0,Fire,POOP/Module1.bas,455
+spell_category,1,Cold,POOP/Module1.bas,456
+spell_category,2,Electrical,POOP/Module1.bas,457
+spell_category,3,Mind,POOP/Module1.bas,458
+spell_category,4,Damage,POOP/Module1.bas,459
+spell_category,5,Element,POOP/Module1.bas,460
+spell_category,6,Kill,POOP/Module1.bas,461
+spell_category,7,Charm,POOP/Module1.bas,462
+spell_category,8,Bind,POOP/Module1.bas,463
+spell_category,9,Heal,POOP/Module1.bas,464
+spell_category,10,Movement,POOP/Module1.bas,465
+spell_category,11,Banish,POOP/Module1.bas,466
+spell_category,12,Dispell,POOP/Module1.bas,467
+spell_category,13,Resistant,POOP/Module1.bas,468
+spell_category,14,Visual,POOP/Module1.bas,469
+spell_category,15,Magical,POOP/Module1.bas,470
+spell_category,16,Location,POOP/Module1.bas,471
+spell_category,17,Protection,POOP/Module1.bas,472
+stat,0,Strength,POOP/Module1.bas,481
+stat,1,Intelligence,POOP/Module1.bas,482
+stat,2,Wisdom,POOP/Module1.bas,483
+stat,3,Constitution,POOP/Module1.bas,484
+stat,4,Charisma,POOP/Module1.bas,485
+stat,5,Dexterity,POOP/Module1.bas,486
+resistance,0,Fire,POOP/Module1.bas,488
+resistance,1,Cold,POOP/Module1.bas,489
+resistance,2,Electrical,POOP/Module1.bas,490
+resistance,3,Mind,POOP/Module1.bas,491
+resistance,4,Disease,POOP/Module1.bas,492
+resistance,5,Poison,POOP/Module1.bas,493
+resistance,6,Magic,POOP/Module1.bas,494
+resistance,7,Stone,POOP/Module1.bas,495
+resistance,8,Paralysis,POOP/Module1.bas,496
+resistance,9,Drain,POOP/Module1.bas,497
+resistance,10,Acid,POOP/Module1.bas,498
+guild_ability,0,Thieving,POOP/Module1.bas,500
+guild_ability,1,Backstabbing,POOP/Module1.bas,501
+guild_ability,2,Critical Hit,POOP/Module1.bas,502
+guild_ability,3,Multiple Swings,POOP/Module1.bas,503
+guild_ability,4,Fighting,POOP/Module1.bas,504
+guild_ability,5,Perception,POOP/Module1.bas,505
+monster_property,0,See Invisible,POOP/Module1.bas,507
+monster_property,1,Invisible,POOP/Module1.bas,508
+monster_property,2,Resistant to All Magic,POOP/Module1.bas,509
+monster_property,3,Charm Resistant,POOP/Module1.bas,510
+monster_property,4,Weapon Resistance,POOP/Module1.bas,511
+monster_property,5,Complete Weapon Resistance,POOP/Module1.bas,512
+item_ability,0,Levitate,POOP/Module1.bas,514
+item_ability,1,Invisible,POOP/Module1.bas,515
+item_ability,2,Protect,POOP/Module1.bas,516
+item_ability,3,See Invisible,POOP/Module1.bas,517
+item_ability,4,Critical Hit,POOP/Module1.bas,518
+item_ability,5,Backstab,POOP/Module1.bas,519
+monster_attack,0,Poison,POOP/Module1.bas,521
+monster_attack,1,Disease,POOP/Module1.bas,522
+monster_attack,2,Paralyze,POOP/Module1.bas,523
+monster_attack,3,Breathe Fire,POOP/Module1.bas,524
+monster_attack,4,Breathe Cold,POOP/Module1.bas,525
+monster_attack,5,Acid,POOP/Module1.bas,526
+monster_attack,6,Electrocute,POOP/Module1.bas,527
+monster_attack,7,Drain,POOP/Module1.bas,528
+monster_attack,8,Stone,POOP/Module1.bas,529
+monster_attack,9,Age,POOP/Module1.bas,530
+monster_attack,10,Critical Hit,POOP/Module1.bas,531
+monster_attack,11,Backstab,POOP/Module1.bas,532
+monster_attack,12,Destroy Item,POOP/Module1.bas,533
+monster_attack,13,Steal,POOP/Module1.bas,534
+terrain_flag,0,Right Wall,POOP/Module1.bas,553
+terrain_flag,1,Upper Wall,POOP/Module1.bas,554
+terrain_flag,2,Right Door,POOP/Module1.bas,555
+terrain_flag,3,Upper Door,POOP/Module1.bas,556
+terrain_flag,4,Right SDoor,POOP/Module1.bas,557
+terrain_flag,5,Upper SDoor,POOP/Module1.bas,558
+terrain_flag,6,Face North,POOP/Module1.bas,559
+terrain_flag,7,Face East,POOP/Module1.bas,560
+terrain_flag,8,Face South,POOP/Module1.bas,561
+terrain_flag,9,Face West,POOP/Module1.bas,562
+terrain_flag,10,Extinguish,POOP/Module1.bas,563
+terrain_flag,11,Pit,POOP/Module1.bas,564
+terrain_flag,12,Stairs Up,POOP/Module1.bas,565
+terrain_flag,13,Stairs Down,POOP/Module1.bas,566
+terrain_flag,14,Teleporter,POOP/Module1.bas,567
+terrain_flag,15,Water,POOP/Module1.bas,568
+terrain_flag,16,Quicksand,POOP/Module1.bas,569
+terrain_flag,17,Rotator,POOP/Module1.bas,570
+terrain_flag,18,Anti-Magic,POOP/Module1.bas,571
+terrain_flag,19,Rock,POOP/Module1.bas,572
+terrain_flag,20,Fog,POOP/Module1.bas,573
+terrain_flag,21,Chute,POOP/Module1.bas,574
+terrain_flag,22,Stud,POOP/Module1.bas,575
+character_alignment,0,Good,POOP/Module1.bas,544
+character_alignment,1,Neutral,POOP/Module1.bas,545
+character_alignment,2,Evil,POOP/Module1.bas,546
+item_alignment,0,(u),POOP/Module1.bas,548
+item_alignment,1,(g),POOP/Module1.bas,549
+item_alignment,2,(n),POOP/Module1.bas,550
+item_alignment,3,(e),POOP/Module1.bas,551
+death_state,0,Dead,POOP/Module1.bas,446
+death_state,1,Stoned,POOP/Module1.bas,447
+death_state,2,Destroyed,POOP/Module1.bas,448
+death_state,3,Immolated,POOP/Module1.bas,449
+death_state,4,Frozen,POOP/Module1.bas,450
+death_state,5,Annihalated,POOP/Module1.bas,451
+death_state,6,Melted,POOP/Module1.bas,452
+death_state,7,Rock,POOP/Module1.bas,453

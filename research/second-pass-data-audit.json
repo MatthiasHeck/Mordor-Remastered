@@ -1,0 +1,85 @@
+{
+  "status": "STRUCTURAL_CHECKS_ONLY_NOT_RUNTIME_PARITY",
+  "datasets": {
+    "race-statistics.csv": {
+      "rows": 9,
+      "columns": 21,
+      "sha256": "121db4dcf94b9380d4b4ac98f43e16f0d2b11dbf539fc8b54cb251dacc2b596d"
+    },
+    "race-resistances.csv": {
+      "rows": 9,
+      "columns": 16,
+      "sha256": "f8098f24874b32396526d117605f30124d94bac2221c0f33392dd5bf4de72d45"
+    },
+    "race-guild-eligibility.csv": {
+      "rows": 9,
+      "columns": 15,
+      "sha256": "9c92a904e6950558588a1522cf52065bfdb32f402393babd60342b7c0d0e83d0"
+    },
+    "guild-statistics.csv": {
+      "rows": 12,
+      "columns": 18,
+      "sha256": "bcc81b4c79217a7f7ddc05ef23c34fb237725b2a930756305f950304c272ae50"
+    },
+    "guild-abilities.csv": {
+      "rows": 12,
+      "columns": 10,
+      "sha256": "b21bf6a1b5e041241b1239ef0f43421e6ecad728424d8e648e4ce79754a9f1bf"
+    },
+    "spell-statistics-updated-help.csv": {
+      "rows": 100,
+      "columns": 18,
+      "sha256": "0f03144656830f4996a96345d0641499044e0f072e2408574cc3fcf11946d241"
+    },
+    "spell-guild-levels-updated-help.csv": {
+      "rows": 205,
+      "columns": 6,
+      "sha256": "e731b96982996aca367325afad74dde7efffdcc6b3c7a77049debfc1ba53ae2c"
+    },
+    "monster-candidate-shareware.csv": {
+      "rows": 401,
+      "columns": 64,
+      "sha256": "e4a664e8815425c3c8ea9f697fc191e2c118f8922e958b8c054fe4e006b1280a"
+    },
+    "item-candidate-shareware.csv": {
+      "rows": 366,
+      "columns": 41,
+      "sha256": "12577ac78c4568c9005c800c4343f0a3da7d0f2441139c1fd0da63ae98a5858e"
+    }
+  },
+  "monster_unique_ids": 400,
+  "item_unique_ids": 366,
+  "item_class_restricted_values": [
+    -1,
+    0
+  ],
+  "item_negative_spell_levels": 23,
+  "charged_items_with_zero_spell_id": [
+    "Thief's Cap",
+    "Ring of Opening",
+    "Potion of Intelligence",
+    "Potion of Leadership",
+    "Potion of Insight",
+    "Potion of Might",
+    "Potion of Fitness",
+    "Potion of Agility",
+    "Potion of Youth",
+    "Aard of Being",
+    "Dragon's Blood",
+    "Elven Wine",
+    "Scroll of Spells",
+    "Tome of Insight",
+    "Tome of Endurance",
+    "Tome of Might",
+    "Tome of Learning",
+    "Tome of Agility",
+    "Tome of Leadership",
+    "Tome of Lies",
+    "Tome of Spells",
+    "Dust of Opening",
+    "Key of Opening",
+    "Skeleton Key",
+    "Crest of the Thief",
+    "Crest of the Scavenger"
+  ]
+}

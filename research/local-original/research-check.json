@@ -1,0 +1,17 @@
+{
+  "status": "STATIC_EVIDENCE_CHECKS_NOT_RUNTIME_PARITY",
+  "checks": {
+    "earlier_csv_files_unchanged": true,
+    "spell_count_and_ids": true,
+    "guild_access": true,
+    "item_spell_references": true,
+    "complete_floor_cells": true,
+    "adjacent_floor_offsets": true,
+    "area_slot_counts": true,
+    "transition_slot_counts": true,
+    "unchanged_original_tree": true,
+    "source_anchors_exist": true
+  },
+  "earlier_csv_files_checked": 9,
+  "source_code_anchors_checked": 18
+}

@@ -1,0 +1,193 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "Godot.SourceGenerators/4.6.0": {
+        "type": "package",
+        "build": {
+          "build/Godot.SourceGenerators.props": {}
+        }
+      },
+      "GodotSharp/4.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/GodotSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/GodotSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "GodotSharpEditor/4.6.0": {
+        "type": "package",
+        "dependencies": {
+          "GodotSharp": "4.6.0"
+        },
+        "compile": {
+          "lib/net8.0/GodotSharpEditor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/GodotSharpEditor.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Mordor.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Mordor.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Mordor.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Godot.SourceGenerators/4.6.0": {
+      "sha512": "56FZE4O4qe9bKz/8GN9u0p9jhp94zScKT3uUXV5BQCrnFBKQaL3tJTwOmECmzBdP5gMY1d9BuvbWo1w6XHAIHg==",
+      "type": "package",
+      "path": "godot.sourcegenerators/4.6.0",
+      "files": [
+        ".nupkg.metadata",
+        "analyzers/dotnet/cs/Godot.SourceGenerators.dll",
+        "build/Godot.SourceGenerators.props",
+        "godot.sourcegenerators.4.6.0.nupkg.sha512",
+        "godot.sourcegenerators.nuspec"
+      ]
+    },
+    "GodotSharp/4.6.0": {
+      "sha512": "o6qWtcVnJzmAZ6fC5SvSG8rWWXMOejp2xYZDAbDQXgUonZfaKmjpVGBvJD0/yXovTbQ8SOYV2biWelZLnQZ97w==",
+      "type": "package",
+      "path": "godotsharp/4.6.0",
+      "files": [
+        ".nupkg.metadata",
+        "godotsharp.4.6.0.nupkg.sha512",
+        "godotsharp.nuspec",
+        "lib/net8.0/GodotSharp.dll",
+        "lib/net8.0/GodotSharp.xml"
+      ]
+    },
+    "GodotSharpEditor/4.6.0": {
+      "sha512": "k8dETrQW8AwLrtlWUoM3norQSmPjsjwriqGWjGbdXiyviWs9QP3Aox0qkR4xnNpu2eeLGEJp/pRPMK6lOwBFdg==",
+      "type": "package",
+      "path": "godotsharpeditor/4.6.0",
+      "files": [
+        ".nupkg.metadata",
+        "godotsharpeditor.4.6.0.nupkg.sha512",
+        "godotsharpeditor.nuspec",
+        "lib/net8.0/GodotSharpEditor.dll",
+        "lib/net8.0/GodotSharpEditor.xml"
+      ]
+    },
+    "Mordor.Core/1.0.0": {
+      "type": "project",
+      "path": "Core/Mordor.Core.csproj",
+      "msbuildProject": "Core/Mordor.Core.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Godot.SourceGenerators >= 4.6.0",
+      "GodotSharp >= 4.6.0",
+      "GodotSharpEditor >= 4.6.0",
+      "Mordor.Core >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "D:\\Programming Projects\\Mordor Remastered\\Source\\.nuget": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Programming Projects\\Mordor Remastered\\Source\\MordorRemastered.csproj",
+      "projectName": "MordorRemastered",
+      "projectPath": "D:\\Programming Projects\\Mordor Remastered\\Source\\MordorRemastered.csproj",
+      "packagesPath": "D:\\Programming Projects\\Mordor Remastered\\Source\\.nuget",
+      "outputPath": "D:\\Programming Projects\\Mordor Remastered\\Source\\.godot\\mono\\temp\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "D:\\Programming Projects\\Mordor Remastered\\Source\\NuGet.Config",
+        "C:\\Users\\Matt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "D:\\Programming Projects\\Mordor Remastered\\Source\\Core\\Mordor.Core.csproj": {
+              "projectPath": "D:\\Programming Projects\\Mordor Remastered\\Source\\Core\\Mordor.Core.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "false",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "dependencies": {
+          "Godot.SourceGenerators": {
+            "target": "Package",
+            "version": "[4.6.0, )",
+            "autoReferenced": true
+          },
+          "GodotSharp": {
+            "target": "Package",
+            "version": "[4.6.0, )",
+            "autoReferenced": true
+          },
+          "GodotSharpEditor": {
+            "target": "Package",
+            "version": "[4.6.0, )",
+            "autoReferenced": true
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.318/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

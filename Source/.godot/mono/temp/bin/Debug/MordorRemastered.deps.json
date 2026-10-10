@@ -1,0 +1,83 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "MordorRemastered/1.0.0": {
+        "dependencies": {
+          "Godot.SourceGenerators": "4.6.0",
+          "GodotSharp": "4.6.0",
+          "GodotSharpEditor": "4.6.0",
+          "Mordor.Core": "1.0.0"
+        },
+        "runtime": {
+          "MordorRemastered.dll": {}
+        }
+      },
+      "Godot.SourceGenerators/4.6.0": {},
+      "GodotSharp/4.6.0": {
+        "runtime": {
+          "lib/net8.0/GodotSharp.dll": {
+            "assemblyVersion": "4.6.0.0",
+            "fileVersion": "4.6.0.0"
+          }
+        }
+      },
+      "GodotSharpEditor/4.6.0": {
+        "dependencies": {
+          "GodotSharp": "4.6.0"
+        },
+        "runtime": {
+          "lib/net8.0/GodotSharpEditor.dll": {
+            "assemblyVersion": "4.6.0.0",
+            "fileVersion": "4.6.0.0"
+          }
+        }
+      },
+      "Mordor.Core/1.0.0": {
+        "runtime": {
+          "Mordor.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MordorRemastered/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Godot.SourceGenerators/4.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-56FZE4O4qe9bKz/8GN9u0p9jhp94zScKT3uUXV5BQCrnFBKQaL3tJTwOmECmzBdP5gMY1d9BuvbWo1w6XHAIHg==",
+      "path": "godot.sourcegenerators/4.6.0",
+      "hashPath": "godot.sourcegenerators.4.6.0.nupkg.sha512"
+    },
+    "GodotSharp/4.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-o6qWtcVnJzmAZ6fC5SvSG8rWWXMOejp2xYZDAbDQXgUonZfaKmjpVGBvJD0/yXovTbQ8SOYV2biWelZLnQZ97w==",
+      "path": "godotsharp/4.6.0",
+      "hashPath": "godotsharp.4.6.0.nupkg.sha512"
+    },
+    "GodotSharpEditor/4.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-k8dETrQW8AwLrtlWUoM3norQSmPjsjwriqGWjGbdXiyviWs9QP3Aox0qkR4xnNpu2eeLGEJp/pRPMK6lOwBFdg==",
+      "path": "godotsharpeditor/4.6.0",
+      "hashPath": "godotsharpeditor.4.6.0.nupkg.sha512"
+    },
+    "Mordor.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

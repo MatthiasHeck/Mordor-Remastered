@@ -1,0 +1,12 @@
+D:\Programming Projects\Mordor Remastered\Source\Core\bin\Debug\net8.0\Mordor.Core.deps.json
+D:\Programming Projects\Mordor Remastered\Source\Core\bin\Debug\net8.0\Mordor.Core.dll
+D:\Programming Projects\Mordor Remastered\Source\Core\bin\Debug\net8.0\Mordor.Core.pdb
+D:\Programming Projects\Mordor Remastered\Source\Core\obj\Debug\net8.0\Mordor.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming Projects\Mordor Remastered\Source\Core\obj\Debug\net8.0\Mordor.Core.AssemblyInfoInputs.cache
+D:\Programming Projects\Mordor Remastered\Source\Core\obj\Debug\net8.0\Mordor.Core.AssemblyInfo.cs
+D:\Programming Projects\Mordor Remastered\Source\Core\obj\Debug\net8.0\Mordor.Core.csproj.CoreCompileInputs.cache
+D:\Programming Projects\Mordor Remastered\Source\Core\obj\Debug\net8.0\Mordor.Core.sourcelink.json
+D:\Programming Projects\Mordor Remastered\Source\Core\obj\Debug\net8.0\Mordor.Core.dll
+D:\Programming Projects\Mordor Remastered\Source\Core\obj\Debug\net8.0\refint\Mordor.Core.dll
+D:\Programming Projects\Mordor Remastered\Source\Core\obj\Debug\net8.0\Mordor.Core.pdb
+D:\Programming Projects\Mordor Remastered\Source\Core\obj\Debug\net8.0\ref\Mordor.Core.dll

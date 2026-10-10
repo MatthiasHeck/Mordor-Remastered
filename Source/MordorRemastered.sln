@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MordorRemastered", "MordorRemastered.csproj", "{3605933D-45ED-45B2-ADBF-E94FD9168105}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mordor.Core", "Core\Mordor.Core.csproj", "{4CDCAEF1-A908-4D8B-80E3-D03623634460}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mordor.Tests", "Tests\Mordor.Tests.csproj", "{7BA4AF23-BEB0-4299-8C70-AB596CFD3859}"
+EndProject
+Global
+    GlobalSection(SolutionConfigurationPlatforms) = preSolution
+        Debug|Any CPU = Debug|Any CPU
+        ExportDebug|Any CPU = ExportDebug|Any CPU
+        ExportRelease|Any CPU = ExportRelease|Any CPU
+    EndGlobalSection
+    GlobalSection(ProjectConfigurationPlatforms) = postSolution
+        {3605933D-45ED-45B2-ADBF-E94FD9168105}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {3605933D-45ED-45B2-ADBF-E94FD9168105}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {3605933D-45ED-45B2-ADBF-E94FD9168105}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+        {3605933D-45ED-45B2-ADBF-E94FD9168105}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+        {3605933D-45ED-45B2-ADBF-E94FD9168105}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+        {3605933D-45ED-45B2-ADBF-E94FD9168105}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+        {4CDCAEF1-A908-4D8B-80E3-D03623634460}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {4CDCAEF1-A908-4D8B-80E3-D03623634460}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {4CDCAEF1-A908-4D8B-80E3-D03623634460}.ExportDebug|Any CPU.ActiveCfg = Debug|Any CPU
+        {4CDCAEF1-A908-4D8B-80E3-D03623634460}.ExportDebug|Any CPU.Build.0 = Debug|Any CPU
+        {4CDCAEF1-A908-4D8B-80E3-D03623634460}.ExportRelease|Any CPU.ActiveCfg = Release|Any CPU
+        {4CDCAEF1-A908-4D8B-80E3-D03623634460}.ExportRelease|Any CPU.Build.0 = Release|Any CPU
+        {7BA4AF23-BEB0-4299-8C70-AB596CFD3859}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {7BA4AF23-BEB0-4299-8C70-AB596CFD3859}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {7BA4AF23-BEB0-4299-8C70-AB596CFD3859}.ExportDebug|Any CPU.ActiveCfg = Debug|Any CPU
+        {7BA4AF23-BEB0-4299-8C70-AB596CFD3859}.ExportRelease|Any CPU.ActiveCfg = Release|Any CPU
+    EndGlobalSection
+EndGlobal

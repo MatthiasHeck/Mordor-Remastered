@@ -1,0 +1,9 @@
+.tools/
+Source/.godot/
+Source/**/bin/
+Source/**/obj/
+Source/.nuget/
+Source/.dotnet/
+Source/Artifacts/
+Source/build/
+Source/*.csproj.user

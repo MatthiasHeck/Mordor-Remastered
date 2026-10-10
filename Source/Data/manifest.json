@@ -1,0 +1,111 @@
+{
+  "schema": 1,
+  "design_version": "1.3",
+  "ruleset": "reference-prototype-v1",
+  "evidence": "Extracted file facts and static decompiler candidates. Runtime parity is unverified.",
+  "executable_sha256": "bd1332c37eb9d6a024d95ba1b70daf03c1a6c64c622964fb3d8bcc6297d06309",
+  "files": [
+    {
+      "file": "races-local.csv",
+      "source": "research/local-original/races-local.csv",
+      "sha256": "fba7a7dbb76bb8d59e25a70101b5c35a765f8978343d5fac02a21e9708a65622",
+      "records": 9
+    },
+    {
+      "file": "guilds-local.csv",
+      "source": "research/local-original/guilds-local.csv",
+      "sha256": "b6ed9ced7897d75e973f133563d081c32247ec9b13983ab6dcccd11ad7fde9db",
+      "records": 12
+    },
+    {
+      "file": "spells-local.csv",
+      "source": "research/local-original/spells-local.csv",
+      "sha256": "1a388ce63caf33ae4688357a5e3c9dc547a47622f479673400ae33725fafb23d",
+      "records": 105
+    },
+    {
+      "file": "guild-spell-access-local.csv",
+      "source": "research/local-original/guild-spell-access-local.csv",
+      "sha256": "81c6adacf8b9949cdcf520c97a383631aa51bc899b4de4cf7aed383cfd188ad3",
+      "records": 205
+    },
+    {
+      "file": "items-local.csv",
+      "source": "research/local-original/items-local.csv",
+      "sha256": "12577ac78c4568c9005c800c4343f0a3da7d0f2441139c1fd0da63ae98a5858e",
+      "records": 366
+    },
+    {
+      "file": "monsters-local.csv",
+      "source": "research/local-original/monsters-local.csv",
+      "sha256": "e051eb3b6303d6d5839e1be363742af04ff3c7a9568c0e86ad98c6a04df79711",
+      "records": 401
+    },
+    {
+      "file": "item-subtypes-local.csv",
+      "source": "research/local-original/item-subtypes-local.csv",
+      "sha256": "6205d3897cc7e9cf9e1a6e81587181929cc161857e31f1c7efe4447de3aaf28b",
+      "records": 35
+    },
+    {
+      "file": "item-classes-local.csv",
+      "source": "research/local-original/item-classes-local.csv",
+      "sha256": "b165902da2e3584dd8880feda656f9fc019924cdfd9dc722e144d679ecb847d1",
+      "records": 24
+    },
+    {
+      "file": "monster-types-local.csv",
+      "source": "research/local-original/monster-types-local.csv",
+      "sha256": "c4f8a3e0fcaa85d760894ea6192c33c5f042415f90c857fbd25d481e70515d65",
+      "records": 18
+    },
+    {
+      "file": "monster-subtypes-local.csv",
+      "source": "research/local-original/monster-subtypes-local.csv",
+      "sha256": "89e973a581dcffabf85a4d4484e013c4b215845a4ce9985590b07a9c7a9d0877",
+      "records": 15
+    },
+    {
+      "file": "item-spell-links-local.csv",
+      "source": "research/local-original/item-spell-links-local.csv",
+      "sha256": "7c4cfbd490a5e10a93efae44c108d7ffdb1caac8f1657d3ec7343c7cfb4aeb99",
+      "records": 132
+    },
+    {
+      "file": "dungeon-cells-local.csv",
+      "source": "research/local-original/dungeon-cells-local.csv",
+      "sha256": "1e71071c56c7be6a92abb5b7359e3de0224fa6ca559947913e152405687700a0",
+      "records": 13500
+    },
+    {
+      "file": "dungeon-floors-local.csv",
+      "source": "research/local-original/dungeon-floors-local.csv",
+      "sha256": "d32718a2f66a6a6bd0eaf8664724851ab05505dd8f84ea1c867d2a76be3441f7",
+      "records": 15
+    },
+    {
+      "file": "dungeon-areas-local.csv",
+      "source": "research/local-original/dungeon-areas-local.csv",
+      "sha256": "bee63a0189e1d3b1748e706b4fdec4cdf4708ca51c66c4adf96f35da52a8ebda",
+      "records": 3015
+    },
+    {
+      "file": "dungeon-teleporters-local.csv",
+      "source": "research/local-original/dungeon-teleporters-local.csv",
+      "sha256": "4f4878cbb9d0c393e099a44979c3d758583eb78b04feca9d9a3c6afec972ce29",
+      "records": 240
+    },
+    {
+      "file": "dungeon-chutes-local.csv",
+      "source": "research/local-original/dungeon-chutes-local.csv",
+      "sha256": "968463b8a5c93167adb7b8e46ed5c46eb497b7419c2e08aa67ea3f43b86031b4",
+      "records": 150
+    },
+    {
+      "file": "enum-labels-decompiled.csv",
+      "source": "research/local-original/enum-labels-decompiled.csv",
+      "sha256": "ed91daec6dd6acbe95428a554833563c4d476d831866b1f670453aa2a7284b53",
+      "records": 105
+    }
+  ]
+}

@@ -1,0 +1,686 @@
+file,line,procedure,literal,exe_offset,status
+CHARCREA.bas,129,cmdSave_Click,The character '|' is not allowed in a Character name.,371168,literal_match_only
+CHARCREA.bas,149,cmdSave_Click,You still have points left.  Save Anyway?,371776,literal_match_only
+CHARCREA.bas,158,cmdSave_Click,Please re-enter Password,372058,literal_match_only
+CHARCREA.bas,167,cmdSave_Click,You have chosen no password.,372306,literal_match_only
+CHARCREA.bas,175,cmdSave_Click,Error saving character to ,372502,literal_match_only
+CHARCREA.bas,298,sub1F5B,Are you using Large Fonts?,374280,literal_match_only
+CHARCREA.bas,298,sub1F5B,Adjust Windows to Display,374332,literal_match_only
+FRMAUTOM.bas,101,Form_Load,Error opening Maze File!,502120,literal_match_only
+FRMAUTOM.bas,281,lblCall_Change,' occurred in FRMAUTOM:lblCall_Change,505862,literal_match_only
+FRMAUTOM.bas,343,sub2E6E,' occurred in FRMAUTOM:medDrawCursor,507202,literal_match_only
+FRMAUTOM.bas,385,sub2E7F,' occurred in FRMAUTOM:medDrawSquare,508358,literal_match_only
+FRMAUTOM.bas,408,sub2E29,AutoMap:Error opening AutoMap file!,508698,literal_match_only
+FRMAUTOM.bas,446,sub2E29,' occurred in FRMAUTOM:medPlotMaze,509470,literal_match_only
+FRMAUTOM.bas,494,sub2E38,' occurred in FRMAUTOM:modAdjustMap,510816,literal_match_only
+FRMAUTOM.bas,532,fn2EB5,' occurred in FRMAUTOM:modReadAutoMap,511480,literal_match_only
+FRMAUTOM.bas,552,sub1EBA,You are completely lost.,512104,literal_match_only
+FRMAUTOM.bas,559,sub1EBA,' occurred in FRMAUTOM:modUpdateInfo,512200,literal_match_only
+FRMAUTOM.bas,625,timBlinker_Timer,' occurred in FRMAUTOM:timBlinker_Timer,513436,literal_match_only
+FRMCHAR1.bas,312,picTabPicture_Paint,' has occurred in FRMCHAR1:picTabPicture_Paint (,386348,literal_match_only
+FRMCHAR1.bas,389,tabStatTab_event000D,' occurred in FRMCHAR1:tabStatTab_TabChange,387494,literal_match_only
+FRMCHAR3.bas,142,cmbClass_Click,' occurred in FRMCHAR3:cmbClass_Click.,389124,literal_match_only
+FRMCHAR3.bas,157,cmdCast_Click,Cannot cast spells while in the city!,389240,literal_match_only
+FRMCHAR3.bas,221,cmdCommand_Click,Must be in Dungeon to Use items.,390262,literal_match_only
+FRMCHAR3.bas,227,cmdCommand_Click,Cannot drop Guild-Issued Items!,390448,literal_match_only
+FRMCHAR3.bas,256,cmdCompanion_Click,You must drop a dead companion you're carrying - not kick them out!,391054,literal_match_only
+FRMCHAR3.bas,260,cmdCompanion_Click,You cannot kick out companions in the city!,391182,literal_match_only
+FRMCHAR3.bas,265,cmdCompanion_Click,"WARNING: Since the companion is bound, you will risk them turning on you!",391376,literal_match_only
+FRMCHAR3.bas,531,lblItem_DragDrop,Cannot put equipped items in the bank!,395714,literal_match_only
+FRMCHAR3.bas,545,lblItem_DragDrop,You have re-identified the retrieved item as: ,396244,literal_match_only
+FRMCHAR3.bas,764,picCompanion_DragDrop,No use re-arranging a dead companion!,399930,literal_match_only
+FRMCHAR3.bas,768,picCompanion_DragDrop,No use re-arranging a dead companion!,399930,literal_match_only
+FRMCHAR3.bas,784,picCompanion_MouseDown,It is against your ways to attack a Good companion.,400374,literal_match_only
+FRMCHARL.bas,62,Form_Load,' occurred in FRMCHARL:Form_Load!,480802,literal_match_only
+FRMCITYB.bas,179,lstItems_DragDrop,Cannot put equipped items in the bank!,395714,literal_match_only
+FRMCITYB.bas,190,lstItems_DragDrop,There is no more room left for another item!,427860,literal_match_only
+FRMCITYB.bas,258,sub2897,BANK ITEM SORTER: Remapping Item #,429028,literal_match_only
+FRMCITYB.bas,279,sub2884, free Bank slots available.,429464,literal_match_only
+FRMCITYC.bas,65,cmdBind_Click,Companion is already bound to or beyond our abilities!,553084,literal_match_only
+FRMCITYC.bas,74,cmdBind_Click,Cost to bind companion to a binding level of ,553280,literal_match_only
+FRMCITYC.bas,114,cmdBuy_Click,No more room for companions!,553970,literal_match_only
+FRMCITYC.bas,363,elaComp_event0000,' in FRMCITYC:elaComp_Click!,558782,literal_match_only
+FRMCITYC.bas,440,Form_Unload,Error saving companion store file!,559762,literal_match_only
+FRMCITYC.bas,634,fn33CC,' occurred in FRMCTYS:modItemCost.,417236,literal_match_only
+FRMCITYC.bas,746,txtBind_DragDrop,You may only drag and drop companions to the companion store.,564660,literal_match_only
+FRMCITYC.bas,766,txtBind_KeyPress,You cannot bind a companion that has joined you free of will.,564904,literal_match_only
+FRMCITYC.bas,771,txtBind_KeyPress,Companion is already bound to or beyond our abilities!,553084,literal_match_only
+FRMCITYC.bas,790,txtID_DragDrop,You may only drag and drop companions to the companion store.,564660,literal_match_only
+FRMCITYC.bas,814,txtID_KeyPress,We don't have any interest in dead companions!,565720,literal_match_only
+FRMCITYC.bas,938,vsbComps_Change,' occurred in FRMCITYC:vsbComps!,567934,literal_match_only
+FRMCONTR.bas,76,cmdCommand_Click,Are you using Large Fonts?,374280,literal_match_only
+FRMCONTR.bas,76,cmdCommand_Click,Adjust Windows to Display,374332,literal_match_only
+FRMCONTR.bas,196,cmdCommand_Click,' occurred in FRMCONTR:cmdCommand_Click.,516074,literal_match_only
+FRMCREDI.bas,62,Form_Load,...and especially Paul Morash and Meg Ross for helping make the game what it is!,544164,literal_match_only
+FRMCTYG.bas,49,cmdInfo_Click, experience to make the next level.,430484,literal_match_only
+FRMCTYG.bas,54,cmdInfo_Click,You have also been assigned a Quest to complete.,430964,literal_match_only
+FRMCTYG.bas,71,cmdInfo_Click,You must return with one ,293246,literal_match_only
+FRMCTYG.bas,71,cmdInfo_Click, and present it when making level.,431478,literal_match_only
+FRMCTYG.bas,74,cmdInfo_Click,Your quest has been completed.,293352,literal_match_only
+FRMCTYG.bas,77,cmdInfo_Click,Current Experience Information,431660,literal_match_only
+FRMCTYG.bas,108,cmdJoin_Click,Your combined experience is below that which is recommended.,432048,literal_match_only
+FRMCTYG.bas,109,cmdJoin_Click,Our requirements for advancement may be too difficult for you at this point.,432138,literal_match_only
+FRMCTYG.bas,134,cmdJoin_Click,Your Aura is Tainted with one or more cursed items!,432938,literal_match_only
+FRMCTYG.bas,156,cmdJoin_Click,GUILD: One or more items were unequipped when you joined...,433712,literal_match_only
+FRMCTYG.bas,221,cmdMake_Click,You cannot learn any more from this Guild.,434088,literal_match_only
+FRMCTYG.bas,225,cmdMake_Click,You do not currently have enough experience to make a level.,434210,literal_match_only
+FRMCTYG.bas,231,cmdMake_Click,Quest has not been completed!,434396,literal_match_only
+FRMCTYG.bas,234,cmdMake_Click,You must have defeated one ,434520,literal_match_only
+FRMCTYG.bas,239,cmdMake_Click,"Since you are pinned and have not yet completed your quest, ",434678,literal_match_only
+FRMCTYG.bas,240,cmdMake_Click,you are given the opportunity of filing for forfeit.  Do you wish to do so?,434764,literal_match_only
+FRMCTYG.bas,266,cmdMake_Click,Quest has not been completed!,434396,literal_match_only
+FRMCTYG.bas,267,cmdMake_Click,You must return with one ,293246,literal_match_only
+FRMCTYG.bas,272,cmdMake_Click,"Since you are pinned and have not yet completed your quest,",434678,literal_match_only
+FRMCTYG.bas,273,cmdMake_Click, you are given the opportunity of filing for forfeit.  Do you wish to do so?,435600,literal_match_only
+FRMCTYG.bas,287,cmdMake_Click,"If you forfeit this quest, you will be reduced to level ",435892,literal_match_only
+FRMCTYG.bas,288,cmdMake_Click,"you will lose any attack, defense, abilities and other guild bonuses given to you within ",436032,literal_match_only
+FRMCTYG.bas,289,cmdMake_Click,the levels you have made since you were level ,436142,literal_match_only
+FRMCTYG.bas,290,cmdMake_Click,"Once you forfeit, it is done.",436280,literal_match_only
+FRMCTYG.bas,291,cmdMake_Click,Do you wish to forfeit your quest?,436354,literal_match_only
+FRMCTYG.bas,298,cmdMake_Click,You currently do not have enough gold to make a level.,436534,literal_match_only
+FRMCTYG.bas,322,cmdMake_Click, appointed the title of ,437256,literal_match_only
+FRMCTYG.bas,323,cmdMake_Click, was appointed the title of ,437458,literal_match_only
+FRMCTYG.bas,337,cmdMake_Click,Your spell knowledge has increased!,437978,literal_match_only
+FRMCTYG.bas,428,cmdMake_Click,"With your increased Perception, you have identified Item #",440412,literal_match_only
+FRMCTYG.bas,438,cmdMake_Click,You are now the new Guildmaster!,440834,literal_match_only
+FRMCTYG.bas,439,cmdMake_Click, became the new GuildMaster.,440962,literal_match_only
+FRMCTYG.bas,466,cmdMake_Click,Questmaster is going through his books...,441602,literal_match_only
+FRMCTYG.bas,475,cmdMake_Click,Questmaster lets you off the hook.,441798,literal_match_only
+FRMCTYG.bas,563,cmdMake_Click, was assigned a quest to return with ,443566,literal_match_only
+FRMCTYG.bas,565,cmdMake_Click, was assigned a quest to kill one ,443738,literal_match_only
+FRMCTYG.bas,571,cmdMake_Click,' occurred in FRMCTYG:cmdMake_Click.,443892,literal_match_only
+FRMCTYG.bas,702,sub29DF,BANK ITEM SORTER: Remapping Item #,429028,literal_match_only
+FRMCTYG.bas,726,sub29DF,' for achieving the rank of new Guildmaster.,446444,literal_match_only
+FRMCTYG.bas,735,sub29DF,"', but you had no room on your character for it!",446684,literal_match_only
+FRMCTYG.bas,746,sub29DF,"Congratulations!  For achieving the title of Guildmaster, you have been awarded the '",447066,literal_match_only
+FRMCTYG.bas,746,sub29DF,"May the Crest help you with survival, exploration and bring you luck.",447212,literal_match_only
+FRMCTYG.bas,751,sub29DF,' occurred in FRMCTYG:modAwardCrest,447388,literal_match_only
+FRMCTYG.bas,795,sub2962,Your natural stats are too low to join!,448322,literal_match_only
+FRMCTYG.bas,833,sub294F, You are the GuildMaster,448980,literal_match_only
+FRMCTYG.bas,836,sub294F, There is no GuildMaster,449060,literal_match_only
+FRMCTYG.bas,856,sub29BD,Cnanot forfeit quest until cursed items are removed.,449338,literal_match_only
+FRMCTYG.bas,940,sub29BD,One or more items were unequipped when you were demoted...,451148,literal_match_only
+FRMCTYG.bas,955,sub29BD, levels for not completing his quest.,451684,literal_match_only
+FRMCTYG.bas,957,sub29BD, levels for not completing her quest.,451852,literal_match_only
+FRMCTYG.bas,959,sub29BD,You have been demoted to level ,451926,literal_match_only
+FRMCTYG.bas,1026,sub29D0,Error 'Invalid A/D Raise!' occurred in FRMCTYG:modSetNewAD!,453282,literal_match_only
+FRMCTYG.bas,1027,sub29D0,Please note the following and Report ASAP!,453368,literal_match_only
+FRMCTYM.bas,122,Form_Load,You are no longer carrying ,405930,literal_match_only
+FRMCTYM.bas,127,Form_Load,Error saving character in FRMCTYM:Form_Load!,406110,literal_match_only
+FRMCTYS.bas,197,cmdRealign_Click,Cannot realign Equipped item!,410254,literal_match_only
+FRMCTYS.bas,230,cmdSell_Click,Item is Equipped and Cursed!,410948,literal_match_only
+FRMCTYS.bas,315,cmdUncurse_Click,Item has been separated from you.,412932,literal_match_only
+FRMCTYS.bas,385,elaItem_event0000,' in FRMCTYS:lblItem_Click!,414074,literal_match_only
+FRMCTYS.bas,466,Form_Unload,Error saving store file!,415088,literal_match_only
+FRMCTYS.bas,607,fn272C,' occurred in FRMCTYS:modItemCost.,417236,literal_match_only
+FRMCTYS.bas,645,sub2621, Not Completely Identified!,417752,literal_match_only
+FRMCTYS.bas,661,sub2621,Item Class cannot be Combined!,418154,literal_match_only
+FRMCTYS.bas,678,sub2621, is not compatible Alignment.,418864,literal_match_only
+FRMCTYS.bas,681,sub2621, is not of the same type.,418974,literal_match_only
+FRMCTYS.bas,684,sub2621, is not compatible class.,419080,literal_match_only
+FRMCTYS.bas,687,sub2621, is not completely identified.,419186,literal_match_only
+FRMCTYS.bas,774,txtCombine_DragDrop,You may only drag and drop items on your character to the store.,420588,literal_match_only
+FRMCTYS.bas,813,txtID_DragDrop,You may only drag and drop items on your character to the store.,420588,literal_match_only
+FRMCTYS.bas,836,txtID_KeyPress,Cannot sell Guild-Issued Items!,421416,literal_match_only
+FRMCTYS.bas,946,txtUncurse_DragDrop,You may only drag and drop items on your character to the store.,420588,literal_match_only
+FRMDIREC.bas,37,drvDrive_Change,.  Resetting to default.,570380,literal_match_only
+FRMDIREC.bas,61,sub34AE,BACKUP FILES FOUND IN THIS DIRECTORY,570730,literal_match_only
+FRMDIREC.bas,64,sub34AE,BACKUP FILES NOT FOUND IN THIS DIRECTORY,570812,literal_match_only
+FRMDUNM.bas,179,cmdWait_Click,You have been found after ,455234,literal_match_only
+FRMDUNM.bas,467,timAilment_Timer,You properly identified the monster(s) in group ,459198,literal_match_only
+FRMDUNM.bas,469,timAilment_Timer, properly identified the monster(s) in group ,459201,literal_match_only
+FRMDUNM.bas,488,timAilment_Timer,You properly identified the monster(s) in group ,459198,literal_match_only
+FRMDUNM.bas,490,timAilment_Timer, properly identified the monster(s) in group ,459201,literal_match_only
+FRMDUNM.bas,568,timAilment_Timer,You have died of natural causes.,462854,literal_match_only
+FRMDUNM.bas,570,timAilment_Timer, has died of natural causes.,462958,literal_match_only
+FRMDUNM.bas,608,timAilment_Timer,' occurred in FRMDUNM:timAilment_Timer.,463840,literal_match_only
+FRMEDITC.bas,77,cmdCommand_Click,This option will automatically select and add the best items for your character.,528158,literal_match_only
+FRMEDITC.bas,82,cmdCommand_Click,Enter coords as follows:,528418,literal_match_only
+FRMEDITC.bas,132,cmdCommand_Click,You have no room for another item.,529496,literal_match_only
+FRMEDITC.bas,176,cmdCommand_Click,' carrying out selection!,530486,literal_match_only
+FRMEXCHA.bas,43,Form_Load,"To exchange Items, Drag and Drop an item label from one character to another.",497606,literal_match_only
+FRMEXCHA.bas,44,Form_Load," To exchange gold, Drag and Drop from the gold label to the other character's gold label and enter the amount.",497702,literal_match_only
+FRMEXCHA.bas,45,Form_Load," When exchange is complete, click on Save Exchange to save.",497834,literal_match_only
+FRMEXCHA.bas,180,pnlItem_DragDrop,Destination Item is a Guild-Issued Item!,500118,literal_match_only
+FRMEXCHA.bas,184,pnlItem_DragDrop,Source Item is a Guild-Issued Item!,500244,literal_match_only
+FRMEXCHA.bas,188,pnlItem_DragDrop,Destination Item is either Equipped or in the Bank!,500368,literal_match_only
+FRMEXCHA.bas,192,pnlItem_DragDrop,Source Item is either Equipped or in the Bank!,500508,literal_match_only
+FRMGLDL.bas,15,cmdClean_Click,Cleaning the Guild Log will remove all but ,525068,literal_match_only
+FRMGLDL.bas,15,cmdClean_Click, entries from the entire guild log with the option of writing old entries to a text file.  Do you wish to Proceed?,525128,literal_match_only
+FRMGLDL.bas,65,sub316B,Do you want the erased log entries to be written to ,525642,literal_match_only
+FRMGROUP.bas,37,cmdCommand_Click,Cannot set default options while in Combat!,517262,literal_match_only
+FRMGROUP.bas,193,lblName_DragDrop,You cannot give items or gold during combat!,519426,literal_match_only
+FRMGROUP.bas,212,lblName_DragDrop,You cannot rearrange the party during combat!,519834,literal_match_only
+FRMGROUP.bas,395,sub2F40,' occurred in FRMGROUP:modUpdateCharacterList.,522448,literal_match_only
+FRMGROUP.bas,476,sub2F5A,' occurred in FRMGROUP:modUpdateStats.,523858,literal_match_only
+FRMHALL.bas,124,sub32F6,Set by Original RecordHolder ,548010,literal_match_only
+FRMHALL.bas,135,sub32F6,Set by Original RecordHolder ,548010,literal_match_only
+FRMHALL.bas,146,sub32F6,Set by Original RecordHolder ,548010,literal_match_only
+FRMHALL.bas,157,sub32F6,Set by Original RecordHolder ,548010,literal_match_only
+FRMHALL.bas,168,sub32F6,Set by Original RecordHolder ,548010,literal_match_only
+FRMHALL.bas,179,sub32F6,Set by Original RecordHolder ,548010,literal_match_only
+FRMHALL.bas,197,sub32F6,Deadliest Creature Defeated,550256,literal_match_only
+FRMHALL.bas,210,sub32F6,Set by Original RecordHolder ,548010,literal_match_only
+FRMHALL.bas,216,sub32F6,Most Experienced Explorer,550774,literal_match_only
+FRMHALL.bas,221,sub32F6,Set by Original RecordHolder ,548010,literal_match_only
+FRMHALL.bas,232,sub32F6,Set by Original RecordHolder ,548010,literal_match_only
+FRMHALL.bas,243,sub32F6,Set by Original RecordHolder ,548010,literal_match_only
+FRMHALL.bas,246,sub32F6,Having a combined fighting skill of ,551830,literal_match_only
+FRMHALL.bas,254,sub32F6,Set by Original RecordHolder ,548010,literal_match_only
+FRMHALL.bas,257,sub32F6,Having a spell knowledge && power of ,552196,literal_match_only
+FRMHALL.bas,265,sub32F6,Set by Original RecordHolder ,548010,literal_match_only
+FRMHALL.bas,268,sub32F6,Having a total thieving skill of ,552566,literal_match_only
+FRMINTER.bas,176,cmdOK_Click,Character is not on this level!,467380,literal_match_only
+FRMINTER.bas,182,cmdOK_Click,Character is not in ROCK!,467506,literal_match_only
+FRMINTER.bas,213,cmdOK_Click,Character is already in Party!,468254,literal_match_only
+FRMINTER.bas,230,cmdOK_Click,Character already tended to!,468622,literal_match_only
+FRMINTER.bas,239,cmdOK_Click, is already in the party!,468874,literal_match_only
+FRMINTER.bas,421,Form_Resize,No bound companions to select!,472318,literal_match_only
+FRMINTER.bas,436,Form_Resize,No other characters in the area!,472796,literal_match_only
+FRMINTER.bas,438,Form_Resize,No characters in the party!,472908,literal_match_only
+FRMINTER.bas,440,Form_Resize,No characters to resurrect!,472992,literal_match_only
+FRMINTER.bas,447,Form_Resize,No characters available for this selection!,473128,literal_match_only
+FRMMAIN.bas,168,MDIForm_QueryUnload,Please use the Mordor EXIT buttons to leave the game.,378996,literal_match_only
+FRMMAIN.bas,184,MDIForm_QueryUnload,Cannot exit while monsters are in the area!,255660,literal_match_only
+FRMMAIN.bas,194,MDIForm_QueryUnload,' occurred in FRMMAIN:MDIForm_QueryUnload,379440,literal_match_only
+FRMMAIN.bas,237,MDIForm_Unload,THANK YOU FOR PLAYING MORDOR!,380008,literal_match_only
+FRMMAIN.bas,238,MDIForm_Unload,"If you know someone who would enjoy playing Mordor, please feel free to give them a copy of ",380080,literal_match_only
+FRMMAIN.bas,239,MDIForm_Unload,"the shareware release of Mordor, which is included on the Mordor CD-ROM.",380194,literal_match_only
+FRMMAIN.bas,240,MDIForm_Unload,"You can also find the shareware version of Mordor on many FTP sites, Compuserve, the Microsoft Network, and many other locations (see MORDOR.WRI for more information on distributing the Shareware version).",380302,literal_match_only
+FRMMAIN.bas,242,MDIForm_Unload,Please report any illegal distribution of the commercial version to the SPA at (800) 388-PIR8 or TDA at (800) 624-2101.,380616,literal_match_only
+FRMMENU.bas,50,cmdCommand_Click,Please re-enter Password,372058,literal_match_only
+FRMMENU.bas,63,cmdCommand_Click,Password has been Changed.,492620,literal_match_only
+FRMMENU.bas,71,cmdCommand_Click,One or both characters still owe money to the Bank and cannot Exchange Items or Gold until it is paid!,492808,literal_match_only
+FRMMENU.bas,77,cmdCommand_Click,Characters are not at the same location!,493080,literal_match_only
+FRMMENU.bas,145,Form_Load,"We just wanted to remind you that Mordor is a very large game, and can sometimes be complex to the beginner.  ",494354,literal_match_only
+FRMMENU.bas,146,Form_Load,It is for this reason that we have put a great deal of effort into the on-line Mordor HelpLesson.,494486,literal_match_only
+FRMMENU.bas,148,Form_Load,"Even if you've read the manual, it's recommended that a player becomes familiar with the HelpLesson, which contains ",494642,literal_match_only
+FRMMENU.bas,149,Form_Load,"valuable game information, game statistics, hints & tips on playing, and more!",494780,literal_match_only
+FRMMENU.bas,151,Form_Load,"If you ever have a question about game play, troubleshooting or even an individual spell, simply press ",494912,literal_match_only
+FRMMENU.bas,152,Form_Load,F1 anytime in the game and do a search for whatever you're looking for!,495036,literal_match_only
+FRMMENU.bas,154,Form_Load,Enjoy the Game & Happy Adventuring!,495166,literal_match_only
+FRMMENU.bas,195,sub2D18,Character has been deleted!,495998,literal_match_only
+FRMMENU.bas,211,sub2D04,Exchange Items with who?,496300,literal_match_only
+FRMMORG.bas,67,cmdCommand_Click,We are unable to help a rocked character.  You'll need to find somebody who can cast 'resurrect'.  Sorry!,474778,literal_match_only
+FRMMORG.bas,74,cmdCommand_Click,Raise already cast on Character!,474994,literal_match_only
+FRMMORG.bas,83,cmdCommand_Click,Character taken care of!,475408,literal_match_only
+FRMMORG.bas,133,cmdCommand_Click,"We require proper coordinates (X,Y,Level) before we can dispatch rescuers!",476704,literal_match_only
+FRMMORG.bas,153,cmdCommand_Click," was found alive, and in pretty bad shape, so we healed them and brought them back!",477568,literal_match_only
+FRMMORG.bas,159,cmdCommand_Click," was found, but was alive and well!",477796,literal_match_only
+FRMMORG.bas,162,cmdCommand_Click,The only thing they saw were feet sticking out of rock.,477892,literal_match_only
+FRMMORG.bas,164,cmdCommand_Click, and brought to the morgue!,478098,literal_match_only
+FRMMORG.bas,171,cmdCommand_Click, was not found at or around the specified location.,478278,literal_match_only
+FRMMORG.bas,174,cmdCommand_Click,Rescuers never returned...  Don't you feel guilty now?,478372,literal_match_only
+FRMMORG.bas,183,cmdCommand_Click,' Occurred in FRMMORG:cmdCommand.,478524,literal_match_only
+FRMOPTIO.bas,79,chkCheck_Click,Error Initializing Music!,188054,literal_match_only
+FRMOPTIO.bas,79,chkCheck_Click,Do you have a MIDI compatible Sound Card installed?  Are the drivers current?,481372,literal_match_only
+FRMOPTIO.bas,93,chkCheck_Click,Error initializing Sound FX!,481698,literal_match_only
+FRMOPTIO.bas,93,chkCheck_Click,Do you have a WAVE compatible Sound Card Installed?  Are the drivers current?,481758,literal_match_only
+FRMOPTIO.bas,256,cmdCommand_Click,You must restart Mordor after Backing up or Restoring.  Do you still wish to proceed?,488334,literal_match_only
+FRMOPTIO.bas,271,cmdCommand_Click,Restart Mordor to have restored data take affect!,488728,literal_match_only
+FRMOPTIO.bas,273,cmdCommand_Click,Mordor will now be shut down.  ,488796,literal_match_only
+FRMOPTIO.bas,293,cmdCommand_Click,Set Non-Proportional Font,489170,literal_match_only
+FRMORDER.bas,12,Form_Load,"Whether you’re ordering MORDOR for yourself or as a gift, this first of a kind Windows FRP game designed to be played for months and even longer is guaranteed to put a smile on most any avid FRPer’s face!!  ",568096,literal_match_only
+FRMORDER.bas,13,Form_Load,"The full commercial version of MORDOR has so many more Monsters, Items and Dungeon Levels than the PUBLIC version that we can’t even begin to get into detail.  Find out for yourself!",568322,literal_match_only
+FRMORDER.bas,14,Form_Load,"  You can now pre-order the full version of MORDOR at any time for only $39.99 + S&&H!  Feel free to use your VISA, MASTERCARD, Check, or Money Order to have MORDOR: the Depths of Dejenol, sent directly to your doorstep!",568550,literal_match_only
+FRMORDER.bas,16,Form_Load,"To order, call TDA! at (800) 624-2101 between 9AM and 4PM PST Monday through Friday and ask to order MORDOR!  Be sure to specify either 3.5",568828,literal_match_only
+FRMORDER.bas,17,Form_Load,You can also contact the company at the following EMail addresses:,569050,literal_match_only
+FRMORDER.bas,18,Form_Load,Internet: 102033.242@compuserve.com,569152,literal_match_only
+FRMORDER.bas,20,Form_Load,(Remember to include the proper Address && Credit Card information if you order via EMail!!),569280,literal_match_only
+FRMORDER.bas,26,Form_Load,Order the full version of MORDOR now && see just how far you can take adventure!,569676,literal_match_only
+FRMPRINT.bas,48,sub3502,Unable to print the form,571574,literal_match_only
+FRMPRINT.bas,58,sub3502,' occurred in FRMPRINT:modPrint!,571716,literal_match_only
+FRMSEEK.bas,84,cmdCommand_Click,I am unable to locate a creature called ',532792,literal_match_only
+FRMSEEK.bas,87,cmdCommand_Click,The name you provided is shared by more than one creature.,532910,literal_match_only
+FRMSEEK.bas,91,cmdCommand_Click,"Unfortunately, this creature dwells beyond the reach of my powers.",533038,literal_match_only
+FRMSEEK.bas,96,cmdCommand_Click,I can sense the general presense of a creature known as ',533246,literal_match_only
+FRMSEEK.bas,96,cmdCommand_Click,' somewhere in the depths below.  A small fee of ,533328,literal_match_only
+FRMSEEK.bas,97,cmdCommand_Click, will be required to do the search.,533426,literal_match_only
+FRMSEEK.bas,107,cmdCommand_Click,I can detect the presense of this creature starting somewhere on level ,533776,literal_match_only
+FRMSEEK.bas,108,cmdCommand_Click,Another try may reveal more information.,533930,literal_match_only
+FRMSEEK.bas,110,cmdCommand_Click,"I cannot locate a general place for this creature.  Another try may work, though.",533996,literal_match_only
+FRMSEEK.bas,165,cmdCommand_Click,I am unable to detect the creature in the depths below. ,535120,literal_match_only
+FRMSEEK.bas,173,cmdCommand_Click,I detect the possible presense of the creature known as ',535322,literal_match_only
+FRMSEEK.bas,190,cmdCommand_Click,I also sense that creatures of this general type are ,535836,literal_match_only
+FRMSEEK.bas,206,cmdCommand_Click,I can also detect that this creature is ,536296,literal_match_only
+FRMSEEK.bas,231,cmdCommand_Click,I am unable to locate an item by the name of ',536842,literal_match_only
+FRMSEEK.bas,234,cmdCommand_Click,The name you provided is shared by more than one item.,536966,literal_match_only
+FRMSEEK.bas,238,cmdCommand_Click,"Unfortunately, this item is found on a level beyond the reach of my powers.",537090,literal_match_only
+FRMSEEK.bas,243,cmdCommand_Click,I can sense the general presense of a creature who may carry the item known as ',537306,literal_match_only
+FRMSEEK.bas,243,cmdCommand_Click,' somewhere in the depths below.  A small fee of ,533328,literal_match_only
+FRMSEEK.bas,244,cmdCommand_Click, will be required to do the search.,533426,literal_match_only
+FRMSEEK.bas,254,cmdCommand_Click,I can detect this item starting to be found somewhere on level ,537852,literal_match_only
+FRMSEEK.bas,255,cmdCommand_Click,Another try may reveal more information.,533930,literal_match_only
+FRMSEEK.bas,257,cmdCommand_Click,"I cannot locate a creature who may have this item.  Another try may work, though.",538064,literal_match_only
+FRMSEEK.bas,291,cmdCommand_Click,I was unable to sense the presense of a creature who specifically carries such an item.,538818,literal_match_only
+FRMSEEK.bas,300,cmdCommand_Click,The creature(s) known as ,539062,literal_match_only
+FRMSEEK.bas,313,cmdCommand_Click, come to me as possible carriers for the item you seek.,539420,literal_match_only
+FRMSEEK.bas,331,cmdCommand_Click,Do you mock my abilities?!,539858,literal_match_only
+FRMSEEK.bas,331,cmdCommand_Click,They are here in the city!,539906,literal_match_only
+FRMSEEK.bas,335,cmdCommand_Click,I can feel their presense.  I will need ,540030,literal_match_only
+FRMSEEK.bas,344,cmdCommand_Click,I can detect them somewhere on level ,540440,literal_match_only
+FRMSEEK.bas,344,cmdCommand_Click,", but I've lost connection.",540498,literal_match_only
+FRMSEEK.bas,346,cmdCommand_Click,".  Another try may work, though.",534045,literal_match_only
+FRMSEEK.bas,351,cmdCommand_Click,I also feel that they are among the dead.,540880,literal_match_only
+FRMSEEK.bas,365,cmdCommand_Click,' Occurred in FRMSEEK:CMDCOMMAND_CLICK.  Please report.,541096,literal_match_only
+FRMWELCO.bas,17,Form_Load,"© Copyright 1995, MakeItSo Software",464298,literal_match_only
+Module1.bas,39,declarations,WritePrivateProfileString,637439,literal_match_only
+Module1.bas,512,sub038D,Complete Weapon Resistance,10538,literal_match_only
+Module1.bas,679,fn03D0,FILE_DATA versions are different!,14104,literal_match_only
+Module1.bas,719,fn03D0,FILE_ITEMS versions are different!,14928,literal_match_only
+Module1.bas,739,fn03D0,FILE_SPELLS versions are different!,15332,literal_match_only
+Module1.bas,758,fn03D0,FILE_STORE versions are different!,15716,literal_match_only
+Module1.bas,804,fn03D0,Error saving re-mapped store file!,16560,literal_match_only
+Module1.bas,813,fn03D0,FILE_CSTORE versions are different!,16764,literal_match_only
+Module1.bas,860,fn03D0,Error saving re-mapped companion store file!,17630,literal_match_only
+Module1.bas,869,fn03D0,FILE_MONSTERS versions are different!,17844,literal_match_only
+Module1.bas,888,fn03D0,FILE_GUILDMASTERS versions are different!,18238,literal_match_only
+Module1.bas,931,sub03E3,"Because this is a PUBLIC BETA version of MORDOR, only ",18978,literal_match_only
+Module1.bas,931,sub03E3, dungeon levels are currently available.,19052,literal_match_only
+Module1.bas,933,sub03E3,This message will not appear again.,19152,literal_match_only
+Module1.bas,1041,fn0425,FILE_STORE versions are different!,15716,literal_match_only
+Module1.bas,1061,fn0425,FILE_CSTORE versions are different!,16764,literal_match_only
+Module11.bas,50,sub0578, writing a guild log entry!,348964,literal_match_only
+Module11.bas,117,fn1BBE,All that is known about ,349642,literal_match_only
+Module11.bas,119,fn1BBE,All that is known about ,349642,literal_match_only
+Module11.bas,132,fn1BBE,it is not yet known if or what special abilities this creature has.,350578,literal_match_only
+Module11.bas,134,fn1BBE,it is also known that these creatures,350684,literal_match_only
+Module11.bas,154,fn1BBE, have no special attacks or abilities.,351160,literal_match_only
+Module11.bas,159,fn1BBE, abilities and attacks include: ,351336,literal_match_only
+Module11.bas,172,fn1BBE,not resistant to anything.,351706,literal_match_only
+Module11.bas,183,fn1BBE,It is estimated that all is known about this creature.,351940,literal_match_only
+Module11.bas,185,fn1BBE,It is estimated that almost everything is known about this creature.,352034,literal_match_only
+Module11.bas,187,fn1BBE,It is estimated that there is a good amount more to learn about this creature.,352142,literal_match_only
+Module11.bas,189,fn1BBE,It is estimated that very little is known about this creature.,352260,literal_match_only
+Module11.bas,194,fn1BBE,There are no known deaths associated with this monster.,352434,literal_match_only
+Module11.bas,196,fn1BBE,Records have it that Explorers have been killed by this creature ,352516,literal_match_only
+Module11.bas,205,fn1BBE, of these creatures have been seen.,352788,literal_match_only
+Module11.bas,209,fn1BBE,It is not known who first recorded this Creature.,352912,literal_match_only
+Module11.bas,211,fn1BBE, was the first to record this Creature.,353024,literal_match_only
+Module11.bas,215,fn1BBE,"This creature was last seen by a lost character, ",353156,literal_match_only
+Module11.bas,217,fn1BBE,This creature was last seen at ,353232,literal_match_only
+Module11.bas,220,fn1BBE,it is not known how many days ago.,353338,literal_match_only
+Module11.bas,246,fn1BBE,This item is a member of the ,353882,literal_match_only
+Module11.bas,251,fn1BBE, and a damage modifier of ,354172,literal_match_only
+Module11.bas,254,fn1BBE," to a properly aligned character, this item ",354246,literal_match_only
+Module11.bas,296,fn1BBE,also offers the following when equipped: ,355336,literal_match_only
+Module11.bas,298,fn1BBE,offers no special abilities or resistances.,355422,literal_match_only
+Module11.bas,313,fn1BBE,"no stats to equip or use,",355810,literal_match_only
+Module11.bas,331,fn1BBE," and adding 50 Spell Points when used,",356236,literal_match_only
+Module11.bas,333,fn1BBE," and adding 200 Spell Points when used,",356314,literal_match_only
+Module11.bas,335,fn1BBE," and subtracting 1 year of age when used,",356392,literal_match_only
+Module11.bas,337,fn1BBE," and subtracting 10 years of age when used,",356472,literal_match_only
+Module11.bas,346,fn1BBE, this is a Class Restricted Item ,356688,literal_match_only
+Module11.bas,348,fn1BBE, this is a non-Class Restricted Item ,356748,literal_match_only
+Module11.bas,350,fn1BBE,that is usable by the following Guilds: ,356810,literal_match_only
+Module11.bas,352,fn1BBE, this item is usable by the following Guilds: ,356878,literal_match_only
+Module11.bas,369,fn1BBE,It is estimated that all is known about this Item.,357302,literal_match_only
+Module11.bas,371,fn1BBE,It is estimated that almost everything is known about this Item.,357382,literal_match_only
+Module11.bas,376,fn1BBE," of these items have been found, the last one from a ",357604,literal_match_only
+Module11.bas,380,fn1BBE,unknown monster on level ,357780,literal_match_only
+Module11.bas,383,fn1BBE,it is not known how many days ago.,353338,literal_match_only
+Module11.bas,398,fn1BBE,It is not known who first recorded this Item.,358208,literal_match_only
+Module11.bas,400,fn1BBE, was the first to record this Item.,358316,literal_match_only
+Module11.bas,477,sub1043,most Intelligent Character,359238,literal_match_only
+Module11.bas,483,sub1043,most Attractive Character,359402,literal_match_only
+Module11.bas,487,sub1043,most powerful creature defeated,359512,literal_match_only
+Module11.bas,494,sub1043,highest fighting ability,359686,literal_match_only
+Module11.bas,496,sub1043,highest spell knowledge & power level,359744,literal_match_only
+Module11.bas,498,sub1043,highest thieving ability,359814,literal_match_only
+Module11.bas,506,sub1043,You have just set the record for ,359928,literal_match_only
+Module11.bas,508,sub1043, just set the record for ,359936,literal_match_only
+Module11.bas,516,sub1043,' occurred in HALL:mdrhalCheckRecord.,360372,literal_match_only
+Module11.bas,599,fn1BF0,' occurred in HALL:mdrhalGetIndexValue.,362006,literal_match_only
+Module11.bas,662,fn1C2E,' error was returned trying to open the Library file.  This probably means that another user is currently playing Mordor.  Only one person can play this version of Mordor at a time.,362614,literal_match_only
+Module11.bas,662,fn1C2E,Possible Sharing Violation,362864,literal_match_only
+Module11.bas,723,sub1C40,Updating/Re-indexing Library File...,363324,literal_match_only
+Module11.bas,783,sub1C40,' occurred in MAINMOD:mdrUpdateLibraryFile!,364434,literal_match_only
+Module12.bas,73,sub1725,Error!  Cannot locate graphics file ,365342,literal_match_only
+Module12.bas,110,sub1725,Graphic Read Successful...,366622,literal_match_only
+Module12.bas,116,sub1725,' occurred in MAZEMOD:mdrmazConfigureDCs.,366764,literal_match_only
+Module12.bas,138,sub1D3C,' occurred in MAZEMOD:mdrmazSetClipboard,367160,literal_match_only
+Module12.bas,182,sub0607,' occurred in GRAPHICS:mdrReleaseDCs,368074,literal_match_only
+Module13.bas,20,fn1E6F,An invalid channel (i.e. > 7) was specified.,368934,literal_match_only
+Module13.bas,22,fn1E6F,Specified device ID is out of range.,369012,literal_match_only
+Module13.bas,24,fn1E6F,Specified resource is already allocated or the channel has already been opened.,369082,literal_match_only
+Module13.bas,26,fn1E6F,Unable to allocate or lock memory.,369194,literal_match_only
+Module13.bas,28,fn1E6F,Attempted to open with an unsupported wave format.,369262,literal_match_only
+Module13.bas,30,fn1E6F,Attempted to open a synchronous driver without specifying the WAVE_ALLOWSYNC flag.,369346,literal_match_only
+Module13.bas,32,fn1E6F,An internal error has occured.,369462,literal_match_only
+Module13.bas,34,fn1E6F,An unidentified error has occured.,369516,literal_match_only
+Module2.bas,151,sub046B,All characters will be returned to the city and have their items unequipped because of possible ,23946,literal_match_only
+Module2.bas,153,sub046B,Remember to re-equip all of your characters items!,24114,literal_match_only
+Module2.bas,154,sub046B,"Also be sure to check your spell buffers, for they may have changed as well.",24208,literal_match_only
+Module2.bas,156,sub046B,Updating Character File...,24334,literal_match_only
+Module2.bas,227,sub046B,' occurred in MAINMOD:mdrBetaUpdate!,25834,literal_match_only
+Module2.bas,245,fn04B9,The character file is stamped with Version ',26048,literal_match_only
+Module2.bas,245,fn04B9,'.  You will need to convert it before continuing.,26108,literal_match_only
+Module2.bas,419,sub04DC,Error Saving Character in MAINMOD:mdrcharUnload!,28428,literal_match_only
+Module2.bas,459,sub04DC,' occurred in MAINMOD:mdrcharUnload!,29076,literal_match_only
+Module2.bas,471,sub050F,Your current system resources are at ,29218,literal_match_only
+Module2.bas,472,sub050F,It's recommended that you close down any other applications that may be ,29320,literal_match_only
+Module2.bas,473,sub050F,running to free up more resources.,29418,literal_match_only
+Module2.bas,474,sub050F,"If your resources drop below 5%, you may experience system failure.",29496,literal_match_only
+Module2.bas,475,sub050F,You will not be notified of this error again.,29610,literal_match_only
+Module2.bas,499,sub0536,Creating AutoMap File...,29822,literal_match_only
+Module2.bas,518,sub0536,' occurred creating AutoMap File!,30130,literal_match_only
+Module2.bas,526,sub054E,Creating Companion Store File...,30214,literal_match_only
+Module2.bas,638,sub0565, was appointed GuildMaster.,32620,literal_match_only
+Module2.bas,729,sub05AA,Creating Library File...,33864,literal_match_only
+Module2.bas,793,sub05AA,' Creating Library File.  Is Path in MORDOR.INI correct?,35162,literal_match_only
+Module2.bas,807,sub04A3,Creating Maze Reference File...,35294,literal_match_only
+Module2.bas,840,sub04A3,' Creating Maze Files.  Is Path in MORDOR.INI correct?,35852,literal_match_only
+Module2.bas,945,sub05F6,' occurred in MAINMOD:mdrEndProgram!,37508,literal_match_only
+Module2.bas,963,fn0662,You cannot backup or restore from the Base Mordor directory or the Mordor Data directory!,37680,literal_match_only
+Module2.bas,982,fn0662,There is not enough free space on ,38412,literal_match_only
+Module2.bas,982,fn0662, to backup the current data files.,38472,literal_match_only
+Module2.bas,982,fn0662,Select another drive or make room for more files.,38530,literal_match_only
+Module2.bas,986,fn0662,Backup files already exist in ,38648,literal_match_only
+Module2.bas,1004,fn0662,Backup files not found in ,39420,literal_match_only
+Module2.bas,1007,fn0662,Restoring these backup files from ',39588,literal_match_only
+Module2.bas,1007,fn0662,' will overwrite your current game files.  Are you sure you wish to proceed?,39670,literal_match_only
+Module2.bas,1028,fn0662, of Game files successful!,40452,literal_match_only
+Module2.bas,1038,fn0662,' occurred while attempting to Backup/Restore Game Files.,40598,literal_match_only
+Module2.bas,1189,sub06B4,Is BasePath in MORDOR.INI correct?,42510,literal_match_only
+Module2.bas,1196,sub06B4,Is BasePath in MORDOR.INI correct?,42510,literal_match_only
+Module2.bas,1238,sub06B4,Maze File (MDATA11.MDR) not found.  Please re-install.,43806,literal_match_only
+Module2.bas,1245,sub06B4,Error opening Library File.,43980,literal_match_only
+Module2.bas,1271,sub06B4,' occurred in MAINMOD:mdrReadAllData,45530,literal_match_only
+Module2.bas,1469,sub06E8,Error saving store file in MAINMOD:mdrReplenishCStore!,48270,literal_match_only
+Module2.bas,1474,sub06E8,' occurred in MAINMOD:mdrReplenishCStore.,48444,literal_match_only
+Module2.bas,1670,sub071B,Error saving store file in MAINMOD:mdrReplenishStore!,51272,literal_match_only
+Module2.bas,1675,sub071B,' occurred in MAINMOD:mdrReplenishStore.,51444,literal_match_only
+Module3.bas,54,sub08E1,You realize that you're completely lost...,58962,literal_match_only
+Module3.bas,56,sub08E1,You realize that you're lost...,59038,literal_match_only
+Module3.bas,126,sub08F5,You have fallen into a chute for,59986,literal_match_only
+Module3.bas,129,sub08F5, has fallen into a chute for,60152,literal_match_only
+Module3.bas,225,sub096E,' occurred in MAZEMOD:mdrmazGetChars.,61700,literal_match_only
+Module3.bas,338,fn09A4,' occurred in MAZEMOD:mdrmazLookAround.,64140,literal_match_only
+Module3.bas,358,sub09CC,There is a dead body here!,64380,literal_match_only
+Module3.bas,360,sub09CC,There are dead bodies here!,64440,literal_match_only
+Module3.bas,371,sub09CC,Somebody else is in the room!,64670,literal_match_only
+Module3.bas,373,sub09CC,Other characters are in the room!,64742,literal_match_only
+Module3.bas,391,fn09F6,AutoMap file Version not current!  Will attempt to update...,64948,literal_match_only
+Module3.bas,414,fn0A0B,LIMITED VERSION: Request to go to Level ,65206,literal_match_only
+Module3.bas,520,sub0A1D,You detect Quicksand ahead of you.,67006,literal_match_only
+Module3.bas,522,sub0A1D, detects Quicksand ahead of the party.,67112,literal_match_only
+Module3.bas,530,sub0A1D,You detect Stairs Up ahead of you.,67300,literal_match_only
+Module3.bas,532,sub0A1D, detects Stairs Up ahead of the party.,67406,literal_match_only
+Module3.bas,539,sub0A1D,You detect Stairs Down ahead of you.,67590,literal_match_only
+Module3.bas,541,sub0A1D, detects Stairs Down ahead of the party.,67698,literal_match_only
+Module3.bas,548,sub0A1D,You detect a Teleporter ahead of you.,67884,literal_match_only
+Module3.bas,550,sub0A1D, detects a Teleporter ahead of the party.,67992,literal_match_only
+Module3.bas,557,sub0A1D,You detect a Chute ahead of you.,68178,literal_match_only
+Module3.bas,559,sub0A1D, detects a Chute ahead of the party.,68282,literal_match_only
+Module3.bas,566,sub0A1D,You detect a Pit ahead of you.,68464,literal_match_only
+Module3.bas,568,sub0A1D, detects a Pit ahead of the party.,68566,literal_match_only
+Module3.bas,575,sub0A1D,You detect a rotator ahead of you.,68746,literal_match_only
+Module3.bas,577,sub0A1D, detects a Rotator ahead of the party.,68852,literal_match_only
+Module3.bas,584,sub0A1D,You detect an Extinguish square ahead of you.,69036,literal_match_only
+Module3.bas,586,sub0A1D, detects an Extinguish Square ahead of the party.,69152,literal_match_only
+Module3.bas,600,sub0A1D,' occurred in MAZEMOD:mdrmazPerceiveAhead.,69442,literal_match_only
+Module3.bas,661,sub087C,You just hit a teleporter!,70530,literal_match_only
+Module3.bas,663,sub087C,The party just hit a teleporter!,70590,literal_match_only
+Module3.bas,691,sub087C,You sense something different here...,71142,literal_match_only
+Module3.bas,693,sub087C, senses something different here...,71250,literal_match_only
+Module3.bas,698,sub087C, certain you just hit a ,71402,literal_match_only
+Module3.bas,700,sub087C, certain the party just hit a ,71550,literal_match_only
+Module3.bas,704,sub087C, certain you're standing on a ,71696,literal_match_only
+Module3.bas,706,sub087C, certain the party is standing on a ,71858,literal_match_only
+Module3.bas,714,sub087C,' occurred in MAZEMOD:mdrmazPerceiveSquare,72022,literal_match_only
+Module3.bas,1490,sub0980,' occurred in MAZEMOD:mdrmazShowMaze.,90246,literal_match_only
+Module3.bas,1546,sub0835,You've figured out what level you're on...,90894,literal_match_only
+Module3.bas,1553,sub0835,You've figured out what direction you're facing...,91130,literal_match_only
+Module3.bas,1560,sub0835,You've figured out where you are!,91378,literal_match_only
+Module3.bas,1631,sub0835, was the first to go to level ,93084,literal_match_only
+Module3.bas,1732,sub0835,The party leader lost their sense of direction!,95436,literal_match_only
+Module3.bas,1734,sub0835,You've lost your sense of direction!,95516,literal_match_only
+Module3.bas,1761,sub0835,You have fallen into a pit for,96064,literal_match_only
+Module3.bas,1763,sub0835, has fallen into a pit for,96190,literal_match_only
+Module3.bas,1769,sub0835,You are hovering over a pit.,96350,literal_match_only
+Module3.bas,1775,sub0835,There are Stairs Up here.,96452,literal_match_only
+Module3.bas,1778,sub0835,There are Stairs Down here.,96526,literal_match_only
+Module3.bas,1790,sub0835,..but it doesn't go anywhere in the limited version...,96838,literal_match_only
+Module3.bas,1836,sub0835,"There is a chute here, but it doesn't do anything in the Limited Version.",97812,literal_match_only
+Module3.bas,1849,sub0835,Your party leader has fallen down a chute.  Do you wish the party to follow them?,98120,literal_match_only
+Module3.bas,1858,sub0835,There is a chute here.  Select TAKE to use.,98338,literal_match_only
+Module4.bas,543,fn0B6C,Your companion refuses to join the current monsters!,106466,literal_match_only
+Module4.bas,545,fn0B6C, - Your companion refuses to join the current monsters!,106590,literal_match_only
+Module4.bas,579,fn0B6C, has turned on the party!,107416,literal_match_only
+Module4.bas,599,fn0B6C,' occurred in MONSMOD:monCheckCompAttack.,107692,literal_match_only
+Module4.bas,633,sub0C00, has broken a level of binding!,108582,literal_match_only
+Module4.bas,707,sub0A91,Error generating monsters!,110050,literal_match_only
+Module4.bas,890,sub0C8A,You were accidently Breathed on for,112318,literal_match_only
+Module4.bas,918,sub0C8A, accidently breathed on ,113136,literal_match_only
+Module4.bas,974,sub0C8A,You were accidently Spit on for,114542,literal_match_only
+Module4.bas,1045,sub0C8A,You were accidently damaged for,116320,literal_match_only
+Module4.bas,1181,sub0C8A,You were accidently hit for,120146,literal_match_only
+Module4.bas,1295,sub0C8A,You were accidently electrocuted for,123844,literal_match_only
+Module4.bas,1304,sub0C8A, accidently electrocuted ,123852,literal_match_only
+Module4.bas,1307,sub0C8A, accidently electrocuted ,123852,literal_match_only
+Module4.bas,1351,sub0C8A,' occurred in MONSMOD:monCompanionAttack.  Please report.,125214,literal_match_only
+Module4.bas,1846,fn0D4D,Error finding like-types for ',131754,literal_match_only
+Module4.bas,2159,fn0DBF,You didn't find any Gold!,137712,literal_match_only
+Module4.bas,2165,fn0DBF,"You didn't find any gold, but ",137942,literal_match_only
+Module4.bas,2180,fn0DBF,' occurred in MONSMOD:monGetGold.,138252,literal_match_only
+Module4.bas,2454,fn0E4A, occurred in MONSMOD:monGetSpecialHits,143560,literal_match_only
+Module4.bas,2580,fn0E5F,' occurred in MONSMOD:monGetSpellHits,145776,literal_match_only
+Module4.bas,2739,sub0E85,You were Breathed on for,148142,literal_match_only
+Module4.bas,2747,sub0E85,You were killed by the breath attack of a ,148370,literal_match_only
+Module4.bas,2749,sub0E85, was killed by the breath attack of a ,148530,literal_match_only
+Module4.bas,2816,sub0E85,You were killed by the acidic attack of a ,150328,literal_match_only
+Module4.bas,2818,sub0E85, was killed by the acidic attack of a ,150488,literal_match_only
+Module4.bas,2994,sub0E85,Monster's attempt to cast ,154600,literal_match_only
+Module4.bas,3076,sub0E85,You were Electrocuted for,156596,literal_match_only
+Module4.bas,3086,sub0E85,You were electrocuted to death by a ,156814,literal_match_only
+Module4.bas,3088,sub0E85, was electrocuted to death by a ,156968,literal_match_only
+Module4.bas,3218,sub0E85,You were turned to stone by a ,160338,literal_match_only
+Module4.bas,3220,sub0E85, was turned to stone by a ,160486,literal_match_only
+Module4.bas,3286,sub0E85,You have been Paralyzed!,162218,literal_match_only
+Module4.bas,3410,sub0E85,' occured in MONSMOD:monMonsterAttack.,165814,literal_match_only
+Module4.bas,3624,sub0F01,Your companions were scared away!,169208,literal_match_only
+Module4.bas,3672,sub0F01,Going through Treasure...,170164,literal_match_only
+Module4.bas,3798,sub0F01,"An item was found, but nobody had room to carry it.",172034,literal_match_only
+Module4.bas,3848,sub0F01,An item you found has attached itself to you!!,173722,literal_match_only
+Module4.bas,3850,sub0F01,A found item has attached itself to ,173802,literal_match_only
+Module4.bas,3871,sub0F01,' occurred in MONSMOD:monOpenChest (,174176,literal_match_only
+Module4.bas,4188,sub0BAA,' occurred in MONSMOD:monShowChest.,179822,literal_match_only
+Module4.bas,4229,sub0BCD,' occurred in MONSMOD:monShowCursor.  Please Report.,180700,literal_match_only
+Module4.bas,4241,sub0C61,"As the dust settles from the ferocious battle, ",180850,literal_match_only
+Module4.bas,4243,sub0C61,the party suddenly realizes ,180936,literal_match_only
+Module4.bas,4247,sub0C61,that the Prince of the Underworld was just defeated!,181038,literal_match_only
+Module4.bas,4249,sub0C61,"As everybody regains their composure and gives thanks for their life, ",181156,literal_match_only
+Module4.bas,4250,sub0C61,a member of the party notices that the body of Asmodeus has disappeared!,181248,literal_match_only
+Module4.bas,4252,sub0C61,It is then that the party looks around at each other with wide eyes and the ,181376,literal_match_only
+Module4.bas,4254,sub0C61,"As you regain your composure and give thanks for your life, ",181480,literal_match_only
+Module4.bas,4255,sub0C61,you notice that the body of Asmodeus has disappeared!,181562,literal_match_only
+Module4.bas,4257,sub0C61,It is then that you look around with wide eyes and the ,181670,literal_match_only
+Module4.bas,4259,sub0C61,realization of only one thing...,181750,literal_match_only
+Module4.bas,4260,sub0C61,Something - or Someone - has magically taken the body!,181828,literal_match_only
+Module4.bas,4261,sub0C61,"Even though today has been victorious and will be recorded in the history books, ",181928,literal_match_only
+Module4.bas,4263,sub0C61,"the party continues on with uneasiness, wondering if there's some darker force at work...",182050,literal_match_only
+Module4.bas,4265,sub0C61,"you continue on with uneasiness, wondering if there's some darker force at work...",182166,literal_match_only
+Module4.bas,4268,sub0C61,...is this really the last of Asmodeus?,182308,literal_match_only
+Module4.bas,4271,sub0C61, was part of the party that defeated Asmodeus.,182460,literal_match_only
+Module4.bas,4274,sub0C61, single handedly defeated Asmodeus.,182610,literal_match_only
+Module4.bas,4424,sub0BBA,' occurred in MONSMOD:monShowMonsters.  Please Report.,185760,literal_match_only
+Module4.bas,4498,fn0B4E,' occurred in MONSMOD:monCanMonsterSeeInvisible,187184,literal_match_only
+Module6.bas,283,Main,"Sorry, only one instance of Mordor can be run at a time.",187496,literal_match_only
+Module6.bas,289,Main,Mordor is a 256 color application and has detected that you are running in a mode that does not support 256 colors.,187700,literal_match_only
+Module6.bas,289,Main,It's recommended that you switch to a mode that supports at least 256 colors before playing.,187836,literal_match_only
+Module6.bas,297,Main,Error Initializing Music!,188054,literal_match_only
+Module6.bas,315,Main,' occurred.  Continue anyway?,188320,literal_match_only
+Module6.bas,388,sub0EAE,' occurred in MAINMOD2:mdrcharAddAge,189590,literal_match_only
+Module6.bas,552,fn1173,Your item has run out of charges!,190456,literal_match_only
+Module6.bas,554,fn1173, was using ran out of charges!,190582,literal_match_only
+Module6.bas,577,fn1173,Cast on Which Companion?,191010,literal_match_only
+Module6.bas,584,fn1173, is now bound to you for life!,191198,literal_match_only
+Module6.bas,594,fn1173,Cast on Which Companion?,191010,literal_match_only
+Module6.bas,605,fn1173, raised the Bind Level of companion #,191862,literal_match_only
+Module6.bas,758,fn1173,There is no locked chest here!,195598,literal_match_only
+Module6.bas,769,fn1173,", drop who you're carrying to raise the dead.",195850,literal_match_only
+Module6.bas,826,fn1173,Enter coords as follows (using +/-):,197176,literal_match_only
+Module6.bas,826,fn1173,"Right, Forwards (ie +3,-2)",197230,literal_match_only
+Module6.bas,844,fn1173,Enter coords as follows (using +/-):,197176,literal_match_only
+Module6.bas,844,fn1173,"Right,Fwds,Down(max 3)(ie -3,+2,-1)",197712,literal_match_only
+Module6.bas,899,fn1173,You walked into solid rock!,198928,literal_match_only
+Module6.bas,943,fn1173,The square ahead is Rock.,199932,literal_match_only
+Module6.bas,963,fn1173,The ahead square is not Rock.,200480,literal_match_only
+Module6.bas,995,fn1173, is too far away to locate.,201310,literal_match_only
+Module6.bas,1034,fn1173, is not within reach from here!,203130,literal_match_only
+Module6.bas,1118,fn1173, - No room for more Companions!,205520,literal_match_only
+Module6.bas,1321,fn1173,' occurred in MAINMOD2:mdrcharCastSpell.  Please Report.,208874,literal_match_only
+Module6.bas,1416,fn10E5,", your Spell Level is too low to cast ",210586,literal_match_only
+Module6.bas,1418,fn10E5,Spell Level too low to cast ,210716,literal_match_only
+Module6.bas,1445,fn10E5, doesn't have enough spell points to cast ,211434,literal_match_only
+Module6.bas,1447,fn10E5,Not enough spell points to cast ,211568,literal_match_only
+Module6.bas,1454,fn10E5," is a Non-Combat Spell, ",211816,literal_match_only
+Module6.bas,1479,fn10E5," Takes too long to throw when peaced, ",212590,literal_match_only
+Module6.bas,1496,fn10E5,' occurred in MAINMOD2:mdrcharCheckCast.,212892,literal_match_only
+Module6.bas,1541,fn110D,Your current guild cannot use this item!,213642,literal_match_only
+Module6.bas,1550,fn110D,Your currently joined guilds cannot use this item!,213770,literal_match_only
+Module6.bas,1558,fn110D,Your guild level is too low to use item!,213976,literal_match_only
+Module6.bas,1578,fn110D,All guild levels too low to use item!,214290,literal_match_only
+Module6.bas,1591,fn110D,One or more stats are too low!,214504,literal_match_only
+Module6.bas,1617,fn1139, can no longer use their ,214890,literal_match_only
+Module6.bas,1619,fn1139,You can no longer use your ,215076,literal_match_only
+Module6.bas,1629,fn1139,' occurred in MAINMOD2:mdrcharCheckItems,215330,literal_match_only
+Module6.bas,1644,sub0CF3,You have completed your quest!,215660,literal_match_only
+Module6.bas,1667,fn11A1,There are complications...,216050,literal_match_only
+Module6.bas,1690,fn11A1,One or more items were unequipped due to lack of stats...,216704,literal_match_only
+Module6.bas,1748,sub0F74,Cannot unequip!  Item is cursed!,217442,literal_match_only
+Module6.bas,1830,sub0F74,Your stats are too low for the item to properly attach!,220012,literal_match_only
+Module6.bas,1832,sub0F74,You are too weak to equip this item!,220100,literal_match_only
+Module6.bas,2095,sub0CCC,' occurred in MAINMOD2:mdrcharGetCarry.,226372,literal_match_only
+Module6.bas,2532,fn12AF,' occurred in MAINMOD2:mdrcharGetIDSkill.,234878,literal_match_only
+Module6.bas,2767,fn13D7,Character is stoned!  This Spell will not work!,238716,literal_match_only
+Module6.bas,2772,fn13D7,The morgue cannot help characters pulled from Rock.,238850,literal_match_only
+Module6.bas,2776,fn13D7,Character is Rock!  This spell will not work!,238968,literal_match_only
+Module6.bas,2955,sub145F,Cannot give Guild-Issued Items!,242284,literal_match_only
+Module6.bas,2959,sub145F,Cannot give equipped items!,242386,literal_match_only
+Module6.bas,2977,sub145F, identified the given item as: ,243024,literal_match_only
+Module6.bas,2991,sub145F,Cannot give Guild-Issued Items!,242284,literal_match_only
+Module6.bas,3009,sub145F, identified the given item as: ,243024,literal_match_only
+Module6.bas,3070,sub0930,"You are Dead.  You may be resurrected by the morgue or a character, wait for rescue, or run another character.",245000,literal_match_only
+Module6.bas,3072,sub0930,You are Dead.  You must be summoned out of the Rock before you can be resurrected.,245142,literal_match_only
+Module6.bas,3088,sub0930,"You are in the morgue.  However, since you were pulled from Rock, they can't help you.",245518,literal_match_only
+Module6.bas,3094,sub0930, is required for your Resurrection.,245766,literal_match_only
+Module6.bas,3098,sub0930,"However, since you are just starting out, the guild offers to pay for your resurrection.",245908,literal_match_only
+Module6.bas,3128,sub0930, was resurrected in the morgue.,246808,literal_match_only
+Module6.bas,3132,sub0930,MORGUE: You lost a point of Constitution during the raise.,246974,literal_match_only
+Module6.bas,3147,sub0930,' Occurred in MAINMOD2:mdrcharIsDead,247336,literal_match_only
+Module6.bas,3436,fn14CB,Enter the Item Slots to Swap,250990,literal_match_only
+Module6.bas,3488,fn14CB, is oppositely aligned to one or more members of the party!,252368,literal_match_only
+Module6.bas,3496,fn14CB,Cannot raise character in Combat!,252574,literal_match_only
+Module6.bas,3502,fn14CB,Drop the character before you raise them!,252766,literal_match_only
+Module6.bas,3513,fn14CB, is Dead!  Cast a Resurrect spell on the character to have them re-join!,253022,literal_match_only
+Module6.bas,3530,fn14CB,An error occurred while trying,253488,literal_match_only
+Module6.bas,3642,fn14CB,Cannot exit while monsters are in the area!,255660,literal_match_only
+Module6.bas,3650,fn14CB,Cannot pool gold while in combat!,255836,literal_match_only
+Module6.bas,3661,fn14CB,Pool of party's on-hand gold to ,256086,literal_match_only
+Module6.bas,3663,fn14CB,Nobody else in party to Pool to!,256222,literal_match_only
+Module6.bas,3721,fn14CB,Nobody in party to give to!,258064,literal_match_only
+Module6.bas,3756,fn14CB,Printing Current Automap Level...,258910,literal_match_only
+Module6.bas,3760,fn14CB,Must have Automap open to print!,259018,literal_match_only
+Module6.bas,3763,fn14CB,Cannot print the Automap while in Combat!,259088,literal_match_only
+Module6.bas,3795,fn14CB,mdrcharProcessKey:Error updating AutoMap!,259830,literal_match_only
+Module6.bas,3815,fn14CB,mdrcharProcessKey:Error updating AutoMap!,259830,literal_match_only
+Module6.bas,3835,fn14CB,mdrcharProcessKey:Error updating AutoMap!,259830,literal_match_only
+Module6.bas,3855,fn14CB,mdrcharProcessKey:Error updating AutoMap!,259830,literal_match_only
+Module6.bas,3902,fn14CB,mdrcharProcessKey:Error updating AutoMap!,259830,literal_match_only
+Module6.bas,4010,fn14CB,You cannot take this Chute in the Limited Version.,264478,literal_match_only
+Module6.bas,4073,fn14CB,Cannot set default options while monsters are in the area!,265448,literal_match_only
+Module6.bas,4134,fn14CB,Join - No room for more Companions!,266670,literal_match_only
+Module6.bas,4182,fn14CB,' Occurred in MAINMOD2:mdrcharProcessKey.  Please Report.,267638,literal_match_only
+Module6.bas,4257,fn1589,' Occurred in MAINMOD2:mdrcharProcessTabKey.  Please Report.,268570,literal_match_only
+Module6.bas,4278,sub15A1,Your Guild Item(s) were recharged when you entered the city.,269052,literal_match_only
+Module6.bas,4280,sub15A1, had their Guild Item(s) recharged when they entered the city.,269184,literal_match_only
+Module6.bas,4366,sub0EDA,"' occurred in MAINMOD2:mdrcharRemoveItem giCurrentChar,.",270390,literal_match_only
+Module6.bas,4415,sub15BE,' occurred in MAINMOD2:mdrcharSaveWindowPos.,271166,literal_match_only
+Module6.bas,4473,sub047C,Error 'Attempted re-setting of AD while processing' occurred in MAINMOD2:mdrcharSetAD,272478,literal_match_only
+Module6.bas,4594,sub091E, died somewhere in the dungeon.,276594,literal_match_only
+Module6.bas,4600,sub091E,' occurred in MAINMOD2:mdrcharSetDead.,276704,literal_match_only
+Module6.bas,4641,sub150A,' occurred in MAINMOD2:mdrcharSetInfo,277448,literal_match_only
+Module6.bas,4679,sub0F4C,' occurred in MAINMOD2:mdcharShowBuffer,278284,literal_match_only
+Module6.bas,4717,sub0F38,' occurred in MAINMOD2:mdrcharShowCharry.,279016,literal_match_only
+Module6.bas,4733,sub0B82,COMPANION SORTER: Remapping Companion #,279290,literal_match_only
+Module6.bas,4775,sub0B82,' occurred in MAINMOD2:mdrcharShowCompanions.,280432,literal_match_only
+Module6.bas,4857,sub151C,This spell affects the entire party,282010,literal_match_only
+Module6.bas,4866,sub151C,Attempts to Bind/Charm Target(s),282248,literal_match_only
+Module6.bas,4869,sub151C,Kills target(s) or has no effect,282330,literal_match_only
+Module6.bas,4871,sub151C,Damages or Kills Target(s),282386,literal_match_only
+Module6.bas,4881,sub151C,Turns character Invisible,282604,literal_match_only
+Module6.bas,4883,sub151C,Allows character to see Invisible,282662,literal_match_only
+Module6.bas,4903,sub151C,Pulls Character from Rock,283190,literal_match_only
+Module6.bas,4907,sub151C,Teleports to Sanctuary Coords,283302,literal_match_only
+Module6.bas,4909,sub151C,Removes Poison and Disease,283364,literal_match_only
+Module6.bas,4917,sub151C,Unlocks any locked object,283572,literal_match_only
+Module6.bas,4921,sub151C,Kills target(s) or has no effect,282330,literal_match_only
+Module6.bas,4923,sub151C,Increases the Bind Level of a Companion,283788,literal_match_only
+Module6.bas,4925,sub151C,Binds a companion to the caster for life,283860,literal_match_only
+Module6.bas,4939,sub151C, monsters max in each group.,284426,literal_match_only
+Module6.bas,4942,sub151C,This spell is currently cast at a spell,284524,literal_match_only
+Module6.bas,5141,sub151C,at the casters Spell Level,290946,literal_match_only
+Module6.bas,5179,sub151C,This is a Guild-Issued Item,292028,literal_match_only
+Module6.bas,5188,sub151C,You are Pinned and need ,292460,literal_match_only
+Module6.bas,5190,sub151C, more experience to pin and ,292672,literal_match_only
+Module6.bas,5212,sub151C,You must return with one ,293246,literal_match_only
+Module6.bas,5215,sub151C,Your quest has been completed.,293352,literal_match_only
+Module6.bas,5243,sub151C,BETA: Writing Character Statistics to File...,294020,literal_match_only
+Module6.bas,5342,sub151C,***** END OF CHARACTER *****,299742,literal_match_only
+Module6.bas,5344,sub151C,BETA: Finished writing Character Statistics...,299876,literal_match_only
+Module6.bas,5377,sub151C,' occurred in MAINMOD2:mdrcharShowInfo.,301212,literal_match_only
+Module6.bas,5408,sub0F61,ITEM SORTER: Remapping Item #,301590,literal_match_only
+Module6.bas,5517,sub0F61,' occurred in MAINMOD2:mdrcharShowItem.  Please Report.,303596,literal_match_only
+Module6.bas,5578,sub0EBF,' occurred in MAINMOD2:mdrcharStatRaiseMessage.,304888,literal_match_only
+Module6.bas,5668,sub08A9,' occurred in MAINMOD2:mdrcharStats,306998,literal_match_only
+Module6.bas,5725,sub1187,' occurred in MAINMOD2:mdrcharSubtractItemUse,308200,literal_match_only
+Module6.bas,5853,fn164C,You have teleported hundreds of feet above the city and fallen to your death!,310398,literal_match_only
+Module6.bas,5855,fn164C,The party has teleported hundreds of feet above the city and fallen to their deaths!,310496,literal_match_only
+Module6.bas,5874,fn164C,You teleported into solid rock!,310910,literal_match_only
+Module6.bas,5876,fn164C, teleported into solid rock!,310913,literal_match_only
+Module6.bas,5920,fn164C,' occurred in MAINMOD2:mdrcharTeleport,311806,literal_match_only
+Module6.bas,5940,fn10A3, has initiated a raise on your character.,312038,literal_match_only
+Module6.bas,5942,fn10A3, has initiated a raise on ,312038,literal_match_only
+Module6.bas,5961,fn10A3, lost a point of Constution during the raise.,313030,literal_match_only
+Module6.bas,5998,sub165F,Do you wish to Reload this Party when ,313774,literal_match_only
+Module6.bas,6069,sub0A7C,' updating Character Carried!,315324,literal_match_only
+Module6.bas,6070,sub0A7C,Drop and pick up again. Err=,315382,literal_match_only
+Module6.bas,6138,sub1617, more experience for level ,316882,literal_match_only
+Module6.bas,6143,sub1617, more experience to pin.,317134,literal_match_only
+Module6.bas,6169,sub1577,", the Item doesn't appear to do much of anything.",317506,literal_match_only
+Module6.bas,6173,sub1577,", the Item is out of charges!",317670,literal_match_only
+Module6.bas,6192,sub1577,Item must be Equipped to use!,318204,literal_match_only
+Module6.bas,6250,sub1577,You cannot get any younger.,319476,literal_match_only
+Module6.bas,6252,sub1577,You are now one year younger.,319536,literal_match_only
+Module6.bas,6262,sub1577,You cannot get any younger.,319476,literal_match_only
+Module6.bas,6264,sub1577,You are now ten years younger.,319830,literal_match_only
+Module6.bas,6307,sub1577,' Occurred in MAINMOD2:mdrcharUseItem.  Please Report.,320916,literal_match_only
+Module6.bas,6359,fn16B8,Spell name is ambiguous!,321660,literal_match_only
+Module6.bas,6402,sub16CB,' has occurred at location,322180,literal_match_only
+Module6.bas,6411,sub16EB,This is the PUBLIC version of Mordor ,322352,literal_match_only
+Module6.bas,6411,sub16EB,", so please feel free to give it to your friends and distribute it as you wish!",322404,literal_match_only
+Module6.bas,6412,sub16EB,"Order the full commercial release now for hundreds of additional monsters, items and over a dozen more levels to explore!",322528,literal_match_only
+Module6.bas,6413,sub16EB,"For information on Ordering, see the About/Ordering Information section from the Main Menu!",322694,literal_match_only
+Module6.bas,6442,sub0F11,You now have enough experience to make a level.,323378,literal_match_only
+Module6.bas,6444,sub0F11, now has enough experience to make a level.,323496,literal_match_only
+Module7.bas,51,sub0908, has disappeared from view!,324054,literal_match_only
+Module7.bas,102,sub0908,' in MULTIMOD:mdrmulBreakUpParty,324696,literal_match_only
+Module7.bas,123,fn17AE,' occurred in MULTIMOD:mdrmulIsPartyInvisible,324930,literal_match_only
+Module7.bas,190,sub0BDE, occured in MULTIMOD:mdrmulLoadFight,325966,literal_match_only
+Module7.bas,253,sub16D8, is oppositely aligned to one or more members of the party!,252368,literal_match_only
+Module7.bas,260,sub16D8, is now a member of your party.,327352,literal_match_only
+Module7.bas,264,sub16D8,An error occurred auto-loading ,327434,literal_match_only
+Module7.bas,264,sub16D8,.  Has the character been deleted?,327504,literal_match_only
+Module7.bas,273,sub16D8,' occurred in MULTIMOD:mdrmulLoadParty,327654,literal_match_only
+Module7.bas,368,sub0A64,' in MULTIMOD:mdrmulMonsterAttack,329208,literal_match_only
+Module7.bas,435,fn179B,' in MULTIMOD:mdrmulSaveParty,330098,literal_match_only
+Module7.bas,590,sub155A,' occurred in MULTIMOD:mdrmulInitiateCombatRound,332522,literal_match_only
+Module7.bas,644,sub178B,' occurred in MULTIMOD:mdrmulSwitch,333576,literal_match_only
+Module7.bas,691,sub14E0,' occurred in mdrmulSwitchChar.,334294,literal_match_only
+Module7.bas,740,sub1547, cannot leave while monsters are in the area!,335078,literal_match_only
+Module7.bas,745,sub1547,Leader cannot leave Party!,335186,literal_match_only
+Module9.bas,34,sub1A31,Error 'file not found' playing ,338564,literal_match_only
+Module9.bas,282,sub0618,' occurred in MUSIC:mdrDeInitializeFX,341846,literal_match_only
+Module9.bas,337,sub062D,' occurred in MUSIC:mdrFadeOutMIDI.,342594,literal_match_only
+Module9.bas,377,fn1A08,Initializing Sound FX...,343024,literal_match_only

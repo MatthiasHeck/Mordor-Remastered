@@ -1,0 +1,1855 @@
+{
+  "T3751": [
+    {
+      "name": "M375F",
+      "type": "Integer"
+    },
+    {
+      "name": "M376B",
+      "type": "Integer"
+    },
+    {
+      "name": "M3777",
+      "type": "Integer"
+    },
+    {
+      "name": "M3784",
+      "type": "Integer"
+    },
+    {
+      "name": "M3799",
+      "type": "Integer"
+    },
+    {
+      "name": "M37AE",
+      "type": "Integer"
+    },
+    {
+      "name": "M37C0",
+      "type": "Integer"
+    },
+    {
+      "name": "M37D2",
+      "type": "Integer"
+    },
+    {
+      "name": "M37DE",
+      "type": "String",
+      "length": 1
+    },
+    {
+      "name": "M37EA",
+      "type": "String",
+      "length": 1
+    },
+    {
+      "name": "M37FA",
+      "type": "String",
+      "length": 1
+    },
+    {
+      "name": "M3809",
+      "type": "String",
+      "length": 1
+    },
+    {
+      "name": "M3818",
+      "type": "String",
+      "length": 1
+    },
+    {
+      "name": "M3826",
+      "type": "String",
+      "length": 1
+    },
+    {
+      "name": "M3837",
+      "type": "String",
+      "length": 1
+    },
+    {
+      "name": "M3846",
+      "type": "String",
+      "length": 1
+    },
+    {
+      "name": "M385A",
+      "type": "String",
+      "length": 1
+    },
+    {
+      "name": "M3867",
+      "type": "Integer"
+    },
+    {
+      "name": "M3875",
+      "type": "Integer"
+    },
+    {
+      "name": "M388B",
+      "type": "Integer"
+    }
+  ],
+  "T41C8": [
+    {
+      "name": "M41D4",
+      "type": "String"
+    },
+    {
+      "name": "M41DB",
+      "type": "String"
+    },
+    {
+      "name": "M41E5",
+      "type": "Single"
+    },
+    {
+      "name": "M41F0",
+      "type": "Single"
+    }
+  ],
+  "T41FE": [
+    {
+      "name": "M420C",
+      "type": "Single"
+    },
+    {
+      "name": "M4216",
+      "type": "Single"
+    }
+  ],
+  "T424C": [
+    {
+      "name": "M4216",
+      "type": "Integer"
+    },
+    {
+      "name": "M420C",
+      "type": "Integer"
+    },
+    {
+      "name": "M4258",
+      "type": "Integer"
+    },
+    {
+      "name": "M425F",
+      "type": "Integer"
+    }
+  ],
+  "T4E6B": [
+    {
+      "name": "M4E78",
+      "type": "Integer"
+    },
+    {
+      "name": "M4E7D",
+      "type": "Integer"
+    },
+    {
+      "name": "M4E82",
+      "type": "Integer"
+    }
+  ],
+  "T4E8B": [
+    {
+      "name": "M4E97",
+      "type": "Integer"
+    },
+    {
+      "name": "M4EA1",
+      "type": "Integer"
+    },
+    {
+      "name": "M4EAC",
+      "type": "Integer"
+    },
+    {
+      "name": "M4EB4",
+      "type": "Integer"
+    },
+    {
+      "name": "M4EBF",
+      "type": "Integer"
+    },
+    {
+      "name": "M4ECC",
+      "type": "Integer"
+    },
+    {
+      "name": "M4ED4",
+      "type": "Integer"
+    },
+    {
+      "name": "M4EDC",
+      "type": "Integer"
+    },
+    {
+      "name": "M4EE6",
+      "type": "Single"
+    },
+    {
+      "name": "M4EEE",
+      "type": "Integer"
+    },
+    {
+      "name": "M4EF9",
+      "type": "Integer"
+    },
+    {
+      "name": "M4F01",
+      "type": "Integer"
+    }
+  ],
+  "T4F0B": [
+    {
+      "name": "M4F1B",
+      "type": "Integer"
+    },
+    {
+      "name": "M4F24",
+      "type": "Integer"
+    },
+    {
+      "name": "M4F2D",
+      "type": "Currency"
+    },
+    {
+      "name": "M4F35",
+      "type": "Integer"
+    },
+    {
+      "name": "M4F3D",
+      "type": "Integer"
+    }
+  ],
+  "T544D": [
+    {
+      "name": "M545D",
+      "type": "Integer"
+    },
+    {
+      "name": "M5467",
+      "type": "Integer"
+    },
+    {
+      "name": "M5470",
+      "type": "Integer"
+    },
+    {
+      "name": "M547A",
+      "type": "Integer"
+    },
+    {
+      "name": "M5483",
+      "type": "Integer"
+    },
+    {
+      "name": "M548B",
+      "type": "String"
+    },
+    {
+      "name": "M4E82",
+      "type": "Integer"
+    },
+    {
+      "name": "M5493",
+      "type": "Integer"
+    },
+    {
+      "name": "M4EAC",
+      "type": "Integer"
+    },
+    {
+      "name": "M549C",
+      "type": "Integer"
+    }
+  ],
+  "T54A5": [
+    {
+      "name": "M54B1",
+      "type": "Integer"
+    },
+    {
+      "name": "M54BD",
+      "type": "Integer"
+    }
+  ],
+  "T54C8": [
+    {
+      "name": "M548B",
+      "type": "String"
+    },
+    {
+      "name": "M54D5",
+      "type": "Integer"
+    }
+  ],
+  "T54E1": [
+    {
+      "name": "M548B",
+      "type": "String"
+    },
+    {
+      "name": "M54F1",
+      "type": "Integer"
+    }
+  ],
+  "T54FE": [
+    {
+      "name": "M548B",
+      "type": "String"
+    },
+    {
+      "name": "M550A",
+      "type": "Integer"
+    }
+  ],
+  "T5515": [
+    {
+      "name": "M548B",
+      "type": "String"
+    },
+    {
+      "name": "M4E78",
+      "type": "Integer"
+    }
+  ],
+  "T5524": [
+    {
+      "name": "M548B",
+      "type": "String"
+    },
+    {
+      "name": "M5530",
+      "type": "Integer",
+      "dimensions": [
+        7
+      ]
+    },
+    {
+      "name": "M553C",
+      "type": "Integer",
+      "dimensions": [
+        7
+      ]
+    },
+    {
+      "name": "M5548",
+      "type": "Integer",
+      "dimensions": [
+        12
+      ]
+    },
+    {
+      "name": "M5557",
+      "type": "Long"
+    },
+    {
+      "name": "M5565",
+      "type": "Integer"
+    },
+    {
+      "name": "M556D",
+      "type": "Integer"
+    },
+    {
+      "name": "M5577",
+      "type": "Integer"
+    },
+    {
+      "name": "M557E",
+      "type": "Single"
+    }
+  ],
+  "T5584": [
+    {
+      "name": "M548B",
+      "type": "String"
+    },
+    {
+      "name": "M5591",
+      "type": "Integer"
+    },
+    {
+      "name": "M559A",
+      "type": "Integer"
+    },
+    {
+      "name": "M55A4",
+      "type": "Integer"
+    },
+    {
+      "name": "M557E",
+      "type": "Single"
+    },
+    {
+      "name": "M55AD",
+      "type": "Integer"
+    },
+    {
+      "name": "M55B5",
+      "type": "Integer",
+      "dimensions": [
+        7
+      ]
+    },
+    {
+      "name": "M5557",
+      "type": "Long"
+    },
+    {
+      "name": "M55BE",
+      "type": "Single",
+      "dimensions": [
+        7
+      ]
+    },
+    {
+      "name": "M55CB",
+      "type": "Integer"
+    },
+    {
+      "name": "M55D8",
+      "type": "Single"
+    },
+    {
+      "name": "M55E6",
+      "type": "Integer"
+    },
+    {
+      "name": "M55F6",
+      "type": "Single",
+      "dimensions": [
+        19,
+        2
+      ]
+    },
+    {
+      "name": "M5604",
+      "type": "Long"
+    },
+    {
+      "name": "M4F2D",
+      "type": "Integer"
+    },
+    {
+      "name": "M560D",
+      "type": "Single"
+    },
+    {
+      "name": "M4E97",
+      "type": "Single"
+    },
+    {
+      "name": "M4EA1",
+      "type": "Single"
+    },
+    {
+      "name": "M561A",
+      "type": "Integer"
+    },
+    {
+      "name": "M5626",
+      "type": "Single"
+    },
+    {
+      "name": "M5631",
+      "type": "Integer"
+    },
+    {
+      "name": "M563F",
+      "type": "Integer"
+    }
+  ],
+  "T564C": [
+    {
+      "name": "M548B",
+      "type": "String"
+    },
+    {
+      "name": "M4E82",
+      "type": "Integer"
+    }
+  ],
+  "T565F": [
+    {
+      "name": "M5671",
+      "type": "String"
+    },
+    {
+      "name": "M4E82",
+      "type": "Integer"
+    }
+  ],
+  "T567A": [
+    {
+      "name": "M548B",
+      "type": "String"
+    },
+    {
+      "name": "M5467",
+      "type": "Integer"
+    },
+    {
+      "name": "M4E97",
+      "type": "Integer"
+    },
+    {
+      "name": "M4EA1",
+      "type": "Integer"
+    },
+    {
+      "name": "M5686",
+      "type": "Long"
+    },
+    {
+      "name": "M5693",
+      "type": "Integer"
+    },
+    {
+      "name": "M56A0",
+      "type": "Integer"
+    },
+    {
+      "name": "M55BE",
+      "type": "Long"
+    },
+    {
+      "name": "M56AF",
+      "type": "Integer"
+    },
+    {
+      "name": "M56B9",
+      "type": "Integer"
+    },
+    {
+      "name": "M56C4",
+      "type": "Integer"
+    },
+    {
+      "name": "M56CD",
+      "type": "Integer"
+    },
+    {
+      "name": "M56DB",
+      "type": "Integer"
+    },
+    {
+      "name": "M4ED4",
+      "type": "Integer"
+    },
+    {
+      "name": "M56E6",
+      "type": "Long"
+    },
+    {
+      "name": "M560D",
+      "type": "Integer"
+    },
+    {
+      "name": "M56F7",
+      "type": "Single"
+    },
+    {
+      "name": "M5557",
+      "type": "Long"
+    },
+    {
+      "name": "M5700",
+      "type": "Integer"
+    },
+    {
+      "name": "M5709",
+      "type": "Integer"
+    },
+    {
+      "name": "M5548",
+      "type": "Long"
+    },
+    {
+      "name": "M5712",
+      "type": "Integer",
+      "dimensions": [
+        7
+      ]
+    },
+    {
+      "name": "M571E",
+      "type": "Integer",
+      "dimensions": [
+        7
+      ]
+    },
+    {
+      "name": "M572A",
+      "type": "Integer"
+    },
+    {
+      "name": "M5734",
+      "type": "Integer"
+    },
+    {
+      "name": "M5742",
+      "type": "Integer"
+    }
+  ],
+  "T5755": [
+    {
+      "name": "M5766",
+      "type": "Integer"
+    },
+    {
+      "name": "M5467",
+      "type": "Integer"
+    },
+    {
+      "name": "M5557",
+      "type": "Integer",
+      "dimensions": [
+        5
+      ]
+    }
+  ],
+  "T576E": [
+    {
+      "name": "M4E97",
+      "type": "Integer"
+    },
+    {
+      "name": "M4EA1",
+      "type": "Integer"
+    },
+    {
+      "name": "M4ED4",
+      "type": "Integer"
+    },
+    {
+      "name": "M5467",
+      "type": "Integer"
+    },
+    {
+      "name": "M4EBF",
+      "type": "Integer"
+    },
+    {
+      "name": "M56DB",
+      "type": "Integer"
+    },
+    {
+      "name": "M577E",
+      "type": "Integer"
+    },
+    {
+      "name": "M4EEE",
+      "type": "Integer"
+    },
+    {
+      "name": "M572A",
+      "type": "Integer"
+    }
+  ],
+  "T578A": [
+    {
+      "name": "M4E82",
+      "type": "Integer"
+    },
+    {
+      "name": "M579B",
+      "type": "Currency"
+    },
+    {
+      "name": "M55CB",
+      "type": "Integer"
+    },
+    {
+      "name": "M57A9",
+      "type": "Integer"
+    },
+    {
+      "name": "M57B2",
+      "type": "Integer"
+    },
+    {
+      "name": "M4E97",
+      "type": "Single"
+    },
+    {
+      "name": "M4EA1",
+      "type": "Single"
+    }
+  ],
+  "T57BF": [
+    {
+      "name": "M548B",
+      "type": "String",
+      "length": 15
+    },
+    {
+      "name": "M4ED4",
+      "type": "Integer"
+    },
+    {
+      "name": "M57D4",
+      "type": "Integer"
+    },
+    {
+      "name": "M4EAC",
+      "type": "Integer"
+    },
+    {
+      "name": "M4EB4",
+      "type": "Integer"
+    },
+    {
+      "name": "M4EBF",
+      "type": "Integer"
+    },
+    {
+      "name": "M4E97",
+      "type": "Integer"
+    },
+    {
+      "name": "M4EA1",
+      "type": "Integer"
+    },
+    {
+      "name": "M57E1",
+      "type": "Integer"
+    },
+    {
+      "name": "M4EEE",
+      "type": "Integer"
+    }
+  ],
+  "T57EF": [
+    {
+      "name": "M425F",
+      "type": "Long"
+    },
+    {
+      "name": "M4258",
+      "type": "Long"
+    },
+    {
+      "name": "M4216",
+      "type": "Long"
+    },
+    {
+      "name": "M420C",
+      "type": "Long"
+    },
+    {
+      "name": "M5801",
+      "type": "Integer"
+    }
+  ],
+  "T5810": [
+    {
+      "name": "M548B",
+      "type": "String",
+      "length": 30
+    },
+    {
+      "name": "M5821",
+      "type": "Integer"
+    },
+    {
+      "name": "M4EBF",
+      "type": "Integer"
+    },
+    {
+      "name": "M5829",
+      "type": "Integer"
+    },
+    {
+      "name": "M5577",
+      "type": "Single"
+    },
+    {
+      "name": "M5830",
+      "type": "Integer"
+    },
+    {
+      "name": "M5470",
+      "type": "Integer"
+    },
+    {
+      "name": "M583F",
+      "type": "Integer"
+    },
+    {
+      "name": "M5845",
+      "type": "Integer"
+    },
+    {
+      "name": "M4E97",
+      "type": "Single"
+    },
+    {
+      "name": "M4EA1",
+      "type": "Single"
+    },
+    {
+      "name": "M55B5",
+      "type": "Integer",
+      "dimensions": [
+        7
+      ]
+    },
+    {
+      "name": "M584B",
+      "type": "Integer",
+      "dimensions": [
+        7
+      ]
+    },
+    {
+      "name": "M5857",
+      "type": "T576E",
+      "dimensions": [
+        41
+      ]
+    },
+    {
+      "name": "M5860",
+      "type": "T576E",
+      "dimensions": [
+        41
+      ]
+    },
+    {
+      "name": "M586D",
+      "type": "Integer",
+      "dimensions": [
+        36
+      ]
+    },
+    {
+      "name": "M56F7",
+      "type": "Integer"
+    },
+    {
+      "name": "M587C",
+      "type": "Single"
+    },
+    {
+      "name": "M588A",
+      "type": "Single"
+    },
+    {
+      "name": "M5899",
+      "type": "Integer"
+    },
+    {
+      "name": "M58A6",
+      "type": "Integer"
+    },
+    {
+      "name": "M579B",
+      "type": "Currency"
+    },
+    {
+      "name": "M4F2D",
+      "type": "Currency"
+    },
+    {
+      "name": "M4EAC",
+      "type": "Integer"
+    },
+    {
+      "name": "M4EB4",
+      "type": "Integer"
+    },
+    {
+      "name": "M58AF",
+      "type": "Currency"
+    },
+    {
+      "name": "M56AF",
+      "type": "Integer"
+    },
+    {
+      "name": "M58BB",
+      "type": "Integer"
+    },
+    {
+      "name": "M5584",
+      "type": "T578A",
+      "dimensions": [
+        16
+      ]
+    },
+    {
+      "name": "M58CB",
+      "type": "T57BF",
+      "dimensions": [
+        5
+      ]
+    },
+    {
+      "name": "M5700",
+      "type": "Integer"
+    },
+    {
+      "name": "M58DC",
+      "type": "Integer"
+    },
+    {
+      "name": "M58E9",
+      "type": "Integer"
+    },
+    {
+      "name": "M58F9",
+      "type": "String",
+      "length": 30
+    },
+    {
+      "name": "M5906",
+      "type": "Currency",
+      "dimensions": [
+        9
+      ]
+    },
+    {
+      "name": "M5914",
+      "type": "Integer",
+      "dimensions": [
+        6
+      ]
+    },
+    {
+      "name": "M56B9",
+      "type": "Integer",
+      "dimensions": [
+        8
+      ]
+    },
+    {
+      "name": "M5548",
+      "type": "Integer",
+      "dimensions": [
+        12
+      ]
+    },
+    {
+      "name": "M591F",
+      "type": "Long"
+    },
+    {
+      "name": "M592F",
+      "type": "Integer",
+      "dimensions": [
+        12
+      ]
+    },
+    {
+      "name": "M5483",
+      "type": "Integer"
+    },
+    {
+      "name": "M5943",
+      "type": "Integer"
+    },
+    {
+      "name": "M594C",
+      "type": "String",
+      "length": 10
+    },
+    {
+      "name": "M5958",
+      "type": "T57EF",
+      "dimensions": [
+        21
+      ]
+    },
+    {
+      "name": "M5962",
+      "type": "Integer"
+    },
+    {
+      "name": "M5970",
+      "type": "Long"
+    },
+    {
+      "name": "M5977",
+      "type": "Long"
+    },
+    {
+      "name": "M5985",
+      "type": "Integer",
+      "dimensions": [
+        12
+      ]
+    },
+    {
+      "name": "M5997",
+      "type": "Integer",
+      "dimensions": [
+        2
+      ]
+    },
+    {
+      "name": "M59A1",
+      "type": "Integer"
+    },
+    {
+      "name": "M59B0",
+      "type": "Integer",
+      "dimensions": [
+        11
+      ]
+    },
+    {
+      "name": "M59BB",
+      "type": "Integer"
+    },
+    {
+      "name": "M59CB",
+      "type": "Integer"
+    },
+    {
+      "name": "M59D9",
+      "type": "Integer"
+    },
+    {
+      "name": "M59E7",
+      "type": "T4E6B"
+    },
+    {
+      "name": "M59F4",
+      "type": "Integer",
+      "dimensions": [
+        3
+      ]
+    }
+  ],
+  "T59FF": [
+    {
+      "name": "M548B",
+      "type": "String"
+    },
+    {
+      "name": "M4E97",
+      "type": "Integer"
+    },
+    {
+      "name": "M4EA1",
+      "type": "Integer"
+    },
+    {
+      "name": "M5467",
+      "type": "Integer"
+    },
+    {
+      "name": "M4EAC",
+      "type": "Integer"
+    },
+    {
+      "name": "M5A0E",
+      "type": "Integer"
+    },
+    {
+      "name": "M5A1B",
+      "type": "Integer"
+    },
+    {
+      "name": "M5A26",
+      "type": "Integer"
+    },
+    {
+      "name": "M5693",
+      "type": "Integer"
+    },
+    {
+      "name": "M5548",
+      "type": "Integer",
+      "dimensions": [
+        12
+      ]
+    },
+    {
+      "name": "M55BE",
+      "type": "Long"
+    },
+    {
+      "name": "M5A35",
+      "type": "Long"
+    },
+    {
+      "name": "M5A40",
+      "type": "Long"
+    },
+    {
+      "name": "M56A0",
+      "type": "Integer"
+    },
+    {
+      "name": "M5A4A",
+      "type": "Integer",
+      "dimensions": [
+        4
+      ]
+    },
+    {
+      "name": "M4EBF",
+      "type": "Integer"
+    },
+    {
+      "name": "M5A57",
+      "type": "Integer"
+    },
+    {
+      "name": "M5A64",
+      "type": "Long"
+    },
+    {
+      "name": "M5A70",
+      "type": "Long"
+    },
+    {
+      "name": "M5A7C",
+      "type": "Integer"
+    },
+    {
+      "name": "M55B5",
+      "type": "Integer",
+      "dimensions": [
+        7
+      ]
+    },
+    {
+      "name": "M4ED4",
+      "type": "Integer"
+    },
+    {
+      "name": "M56F7",
+      "type": "Single"
+    },
+    {
+      "name": "M5A89",
+      "type": "Integer"
+    },
+    {
+      "name": "M5A96",
+      "type": "Integer"
+    },
+    {
+      "name": "M5AAA",
+      "type": "Integer"
+    },
+    {
+      "name": "M5AC3",
+      "type": "Integer",
+      "dimensions": [
+        11
+      ]
+    },
+    {
+      "name": "M5ACF",
+      "type": "Integer"
+    },
+    {
+      "name": "M5ADA",
+      "type": "Integer"
+    },
+    {
+      "name": "M5565",
+      "type": "Integer"
+    },
+    {
+      "name": "M560D",
+      "type": "Integer"
+    },
+    {
+      "name": "M5AEE",
+      "type": "Integer"
+    }
+  ],
+  "T5AFD": [
+    {
+      "name": "M548B",
+      "type": "String"
+    },
+    {
+      "name": "M5467",
+      "type": "Integer"
+    },
+    {
+      "name": "M5709",
+      "type": "Integer"
+    },
+    {
+      "name": "M4E82",
+      "type": "Integer"
+    },
+    {
+      "name": "M556D",
+      "type": "Integer"
+    },
+    {
+      "name": "M5B0A",
+      "type": "Integer"
+    },
+    {
+      "name": "M5B12",
+      "type": "Integer"
+    },
+    {
+      "name": "M5B1D",
+      "type": "Integer"
+    },
+    {
+      "name": "M5B28",
+      "type": "Integer"
+    },
+    {
+      "name": "M5B33",
+      "type": "Integer"
+    },
+    {
+      "name": "M5B41",
+      "type": "Integer"
+    },
+    {
+      "name": "M56B9",
+      "type": "Integer"
+    },
+    {
+      "name": "M5B4F",
+      "type": "Integer",
+      "dimensions": [
+        7
+      ]
+    },
+    {
+      "name": "M5B5B",
+      "type": "Integer"
+    }
+  ],
+  "T5B69": [
+    {
+      "name": "M56C4",
+      "type": "Integer"
+    },
+    {
+      "name": "M5493",
+      "type": "Integer"
+    },
+    {
+      "name": "M4E82",
+      "type": "Integer"
+    },
+    {
+      "name": "M556D",
+      "type": "Integer"
+    },
+    {
+      "name": "M5B7A",
+      "type": "Integer"
+    }
+  ],
+  "T5B86": [
+    {
+      "name": "M5493",
+      "type": "Integer"
+    },
+    {
+      "name": "M5B95",
+      "type": "Single"
+    },
+    {
+      "name": "M5B9F",
+      "type": "Integer"
+    }
+  ],
+  "T5BF1": [
+    {
+      "name": "M5467",
+      "type": "Integer"
+    },
+    {
+      "name": "M4EEE",
+      "type": "Integer"
+    },
+    {
+      "name": "M5C00",
+      "type": "Currency"
+    },
+    {
+      "name": "M5C09",
+      "type": "String",
+      "length": 30
+    },
+    {
+      "name": "M5C14",
+      "type": "Integer"
+    },
+    {
+      "name": "M5C21",
+      "type": "Long"
+    },
+    {
+      "name": "M5C2F",
+      "type": "String",
+      "length": 8
+    },
+    {
+      "name": "M5C3D",
+      "type": "Integer"
+    }
+  ],
+  "T5CE8": [
+    {
+      "name": "M420C",
+      "type": "Integer"
+    },
+    {
+      "name": "M4216",
+      "type": "Integer"
+    },
+    {
+      "name": "M4E82",
+      "type": "Integer"
+    },
+    {
+      "name": "M5CF4",
+      "type": "Integer"
+    },
+    {
+      "name": "M5D01",
+      "type": "Integer"
+    },
+    {
+      "name": "M5D0E",
+      "type": "Integer"
+    }
+  ],
+  "T5D20": [
+    {
+      "name": "M547A",
+      "type": "Integer"
+    },
+    {
+      "name": "M5D2C",
+      "type": "Currency"
+    },
+    {
+      "name": "M56B9",
+      "type": "Integer"
+    }
+  ],
+  "T5D38": [
+    {
+      "name": "M5D45",
+      "type": "Long"
+    },
+    {
+      "name": "M5D55",
+      "type": "Integer"
+    }
+  ],
+  "T5D64": [
+    {
+      "name": "M5D74",
+      "type": "Integer"
+    },
+    {
+      "name": "M5D7E",
+      "type": "Integer"
+    },
+    {
+      "name": "M5D88",
+      "type": "Integer"
+    },
+    {
+      "name": "M5D90",
+      "type": "Integer"
+    },
+    {
+      "name": "M5D98",
+      "type": "Integer"
+    }
+  ],
+  "T5DA4": [
+    {
+      "name": "M5D74",
+      "type": "Integer"
+    },
+    {
+      "name": "M5D7E",
+      "type": "Integer"
+    },
+    {
+      "name": "M5DB1",
+      "type": "Integer"
+    }
+  ],
+  "T5DBB": [
+    {
+      "name": "M5DC7",
+      "type": "String"
+    },
+    {
+      "name": "M4E78",
+      "type": "Integer"
+    },
+    {
+      "name": "M4E7D",
+      "type": "Integer"
+    },
+    {
+      "name": "M4E82",
+      "type": "Integer"
+    },
+    {
+      "name": "M5DD3",
+      "type": "Integer"
+    }
+  ],
+  "T5E14": [
+    {
+      "name": "M5E20",
+      "type": "Integer"
+    },
+    {
+      "name": "M5E2D",
+      "type": "Integer"
+    },
+    {
+      "name": "M420C",
+      "type": "Integer"
+    },
+    {
+      "name": "M4216",
+      "type": "Integer"
+    },
+    {
+      "name": "M5E3B",
+      "type": "Single"
+    },
+    {
+      "name": "M5E47",
+      "type": "Integer"
+    },
+    {
+      "name": "M5E4F",
+      "type": "Integer"
+    }
+  ],
+  "T5EDA": [
+    {
+      "name": "M5EE9",
+      "type": "Integer"
+    },
+    {
+      "name": "M5EF1",
+      "type": "Integer"
+    },
+    {
+      "name": "M5EFC",
+      "type": "Integer"
+    },
+    {
+      "name": "M5F04",
+      "type": "Integer"
+    },
+    {
+      "name": "M5F11",
+      "type": "Integer"
+    },
+    {
+      "name": "M5F1B",
+      "type": "Integer"
+    },
+    {
+      "name": "M5F2C",
+      "type": "Integer"
+    },
+    {
+      "name": "M5F39",
+      "type": "Integer"
+    },
+    {
+      "name": "M5F48",
+      "type": "Integer"
+    },
+    {
+      "name": "M5F55",
+      "type": "Integer"
+    },
+    {
+      "name": "M5F63",
+      "type": "Integer"
+    },
+    {
+      "name": "M5F71",
+      "type": "Integer"
+    },
+    {
+      "name": "M5F80",
+      "type": "Integer"
+    },
+    {
+      "name": "M5F8E",
+      "type": "Integer"
+    }
+  ],
+  "T5FE6": [
+    {
+      "name": "M5FF2",
+      "type": "Integer"
+    },
+    {
+      "name": "M6008",
+      "type": "Integer"
+    },
+    {
+      "name": "M6014",
+      "type": "Integer"
+    },
+    {
+      "name": "M6023",
+      "type": "Integer"
+    },
+    {
+      "name": "M602F",
+      "type": "Integer"
+    },
+    {
+      "name": "M6039",
+      "type": "Integer"
+    },
+    {
+      "name": "M6049",
+      "type": "Integer"
+    }
+  ],
+  "T6536": [
+    {
+      "name": "M6541",
+      "type": "Integer"
+    },
+    {
+      "name": "M654C",
+      "type": "Integer"
+    }
+  ],
+  "T68BA": [
+    {
+      "name": "M4E97",
+      "type": "Integer"
+    },
+    {
+      "name": "M56C4",
+      "type": "Integer"
+    },
+    {
+      "name": "M547A",
+      "type": "Integer"
+    },
+    {
+      "name": "M5766",
+      "type": "Integer"
+    },
+    {
+      "name": "M68C8",
+      "type": "Currency"
+    }
+  ],
+  "T6B05": [
+    {
+      "name": "M6B0F",
+      "type": "Integer"
+    },
+    {
+      "name": "M6B19",
+      "type": "Integer"
+    },
+    {
+      "name": "M6B24",
+      "type": "Integer"
+    },
+    {
+      "name": "M6B30",
+      "type": "Integer"
+    },
+    {
+      "name": "M6B40",
+      "type": "String",
+      "length": 1
+    },
+    {
+      "name": "M6B4C",
+      "type": "String",
+      "length": 1
+    },
+    {
+      "name": "M6B5B",
+      "type": "Long"
+    }
+  ],
+  "T6B65": [
+    {
+      "name": "M6B7E",
+      "type": "Long"
+    },
+    {
+      "name": "M6B88",
+      "type": "Long"
+    },
+    {
+      "name": "M6B93",
+      "type": "Long"
+    },
+    {
+      "name": "M6B9F",
+      "type": "Integer"
+    },
+    {
+      "name": "M6BAB",
+      "type": "Integer"
+    },
+    {
+      "name": "M6BB9",
+      "type": "Long"
+    },
+    {
+      "name": "M6BCA",
+      "type": "Long"
+    },
+    {
+      "name": "M6BD9",
+      "type": "Long"
+    },
+    {
+      "name": "M6BEC",
+      "type": "Long"
+    },
+    {
+      "name": "M6BFF",
+      "type": "Long"
+    },
+    {
+      "name": "M6C0C",
+      "type": "Long"
+    }
+  ],
+  "T6C1E": [
+    {
+      "name": "M6C31",
+      "type": "T6B65"
+    },
+    {
+      "name": "M6C45",
+      "type": "String",
+      "length": 1024
+    }
+  ],
+  "T6C52": [
+    {
+      "name": "M425F",
+      "type": "Integer"
+    },
+    {
+      "name": "M4258",
+      "type": "Integer"
+    },
+    {
+      "name": "M6C5E",
+      "type": "Integer"
+    },
+    {
+      "name": "M6C67",
+      "type": "Integer"
+    }
+  ],
+  "T6C71": [
+    {
+      "name": "M4E78",
+      "type": "Integer"
+    },
+    {
+      "name": "M4E7D",
+      "type": "Integer"
+    }
+  ],
+  "T71F8": [
+    {
+      "name": "M7208",
+      "type": "Long"
+    },
+    {
+      "name": "M5467",
+      "type": "Integer"
+    },
+    {
+      "name": "M4EE6",
+      "type": "Single"
+    }
+  ],
+  "T729E": [
+    {
+      "name": "M72AE",
+      "type": "String",
+      "length": 1
+    },
+    {
+      "name": "M72B7",
+      "type": "String",
+      "length": 1
+    },
+    {
+      "name": "M72C2",
+      "type": "String",
+      "length": 1
+    },
+    {
+      "name": "M72CC",
+      "type": "String",
+      "length": 1
+    }
+  ],
+  "T72D7": [
+    {
+      "name": "M72E5",
+      "type": "Integer"
+    },
+    {
+      "name": "M72F3",
+      "type": "Integer"
+    },
+    {
+      "name": "M7304",
+      "type": "T729E",
+      "dimensions": [
+        256
+      ]
+    }
+  ],
+  "T73E9": [
+    {
+      "name": "M73F5",
+      "type": "Currency"
+    },
+    {
+      "name": "M73FE",
+      "type": "String",
+      "length": 30
+    },
+    {
+      "name": "M7406",
+      "type": "Long"
+    }
+  ],
+  "T74B3": [
+    {
+      "name": "M4E78",
+      "type": "Integer"
+    },
+    {
+      "name": "M4E7D",
+      "type": "Integer"
+    }
+  ],
+  "T74BF": [
+    {
+      "name": "M74CB",
+      "type": "Integer"
+    },
+    {
+      "name": "M74D6",
+      "type": "Long"
+    },
+    {
+      "name": "M74E1",
+      "type": "Integer"
+    }
+  ],
+  "T74EC": [
+    {
+      "name": "M74F6",
+      "type": "Integer"
+    },
+    {
+      "name": "M7503",
+      "type": "T74B3"
+    },
+    {
+      "name": "M7510",
+      "type": "Long"
+    }
+  ],
+  "T7DD6": [
+    {
+      "name": "M7DE7",
+      "type": "Integer"
+    },
+    {
+      "name": "M7DF0",
+      "type": "Integer"
+    },
+    {
+      "name": "M7DFF",
+      "type": "Integer"
+    },
+    {
+      "name": "M7E0B",
+      "type": "Long"
+    },
+    {
+      "name": "M7E18",
+      "type": "Integer"
+    },
+    {
+      "name": "M7E26",
+      "type": "Long"
+    },
+    {
+      "name": "M7E31",
+      "type": "Integer"
+    }
+  ],
+  "T7E3B": [
+    {
+      "name": "M7DE7",
+      "type": "Integer"
+    },
+    {
+      "name": "M7E4A",
+      "type": "String",
+      "length": 1
+    },
+    {
+      "name": "M7E5B",
+      "type": "String",
+      "length": 1
+    },
+    {
+      "name": "M7E6C",
+      "type": "String",
+      "length": 12
+    },
+    {
+      "name": "M7E76",
+      "type": "Long"
+    }
+  ],
+  "T7EB7": [
+    {
+      "name": "M7DE7",
+      "type": "Integer"
+    },
+    {
+      "name": "M7E26",
+      "type": "Long"
+    },
+    {
+      "name": "M7EC4",
+      "type": "Integer"
+    },
+    {
+      "name": "M7ED1",
+      "type": "Integer"
+    }
+  ]
+}

@@ -1,0 +1,477 @@
+[
+  {
+    "kind": "spell_category",
+    "index": 0,
+    "label": "Fire"
+  },
+  {
+    "kind": "spell_category",
+    "index": 1,
+    "label": "Cold"
+  },
+  {
+    "kind": "spell_category",
+    "index": 2,
+    "label": "Electrical"
+  },
+  {
+    "kind": "spell_category",
+    "index": 3,
+    "label": "Mind"
+  },
+  {
+    "kind": "spell_category",
+    "index": 4,
+    "label": "Damage"
+  },
+  {
+    "kind": "spell_category",
+    "index": 5,
+    "label": "Element"
+  },
+  {
+    "kind": "spell_category",
+    "index": 6,
+    "label": "Kill"
+  },
+  {
+    "kind": "spell_category",
+    "index": 7,
+    "label": "Charm"
+  },
+  {
+    "kind": "spell_category",
+    "index": 8,
+    "label": "Bind"
+  },
+  {
+    "kind": "spell_category",
+    "index": 9,
+    "label": "Heal"
+  },
+  {
+    "kind": "spell_category",
+    "index": 10,
+    "label": "Movement"
+  },
+  {
+    "kind": "spell_category",
+    "index": 11,
+    "label": "Banish"
+  },
+  {
+    "kind": "spell_category",
+    "index": 12,
+    "label": "Dispell"
+  },
+  {
+    "kind": "spell_category",
+    "index": 13,
+    "label": "Resistant"
+  },
+  {
+    "kind": "spell_category",
+    "index": 14,
+    "label": "Visual"
+  },
+  {
+    "kind": "spell_category",
+    "index": 15,
+    "label": "Magical"
+  },
+  {
+    "kind": "spell_category",
+    "index": 16,
+    "label": "Location"
+  },
+  {
+    "kind": "spell_category",
+    "index": 17,
+    "label": "Protection"
+  },
+  {
+    "kind": "stat",
+    "index": 0,
+    "label": "Strength"
+  },
+  {
+    "kind": "stat",
+    "index": 1,
+    "label": "Intelligence"
+  },
+  {
+    "kind": "stat",
+    "index": 2,
+    "label": "Wisdom"
+  },
+  {
+    "kind": "stat",
+    "index": 3,
+    "label": "Constitution"
+  },
+  {
+    "kind": "stat",
+    "index": 4,
+    "label": "Charisma"
+  },
+  {
+    "kind": "stat",
+    "index": 5,
+    "label": "Dexterity"
+  },
+  {
+    "kind": "resistance",
+    "index": 0,
+    "label": "Fire"
+  },
+  {
+    "kind": "resistance",
+    "index": 1,
+    "label": "Cold"
+  },
+  {
+    "kind": "resistance",
+    "index": 2,
+    "label": "Electrical"
+  },
+  {
+    "kind": "resistance",
+    "index": 3,
+    "label": "Mind"
+  },
+  {
+    "kind": "resistance",
+    "index": 4,
+    "label": "Disease"
+  },
+  {
+    "kind": "resistance",
+    "index": 5,
+    "label": "Poison"
+  },
+  {
+    "kind": "resistance",
+    "index": 6,
+    "label": "Magic"
+  },
+  {
+    "kind": "resistance",
+    "index": 7,
+    "label": "Stone"
+  },
+  {
+    "kind": "resistance",
+    "index": 8,
+    "label": "Paralysis"
+  },
+  {
+    "kind": "resistance",
+    "index": 9,
+    "label": "Drain"
+  },
+  {
+    "kind": "resistance",
+    "index": 10,
+    "label": "Acid"
+  },
+  {
+    "kind": "guild_ability",
+    "index": 0,
+    "label": "Thieving"
+  },
+  {
+    "kind": "guild_ability",
+    "index": 1,
+    "label": "Backstabbing"
+  },
+  {
+    "kind": "guild_ability",
+    "index": 2,
+    "label": "Critical Hit"
+  },
+  {
+    "kind": "guild_ability",
+    "index": 3,
+    "label": "Multiple Swings"
+  },
+  {
+    "kind": "guild_ability",
+    "index": 4,
+    "label": "Fighting"
+  },
+  {
+    "kind": "guild_ability",
+    "index": 5,
+    "label": "Perception"
+  },
+  {
+    "kind": "monster_property",
+    "index": 0,
+    "label": "See Invisible"
+  },
+  {
+    "kind": "monster_property",
+    "index": 1,
+    "label": "Invisible"
+  },
+  {
+    "kind": "monster_property",
+    "index": 2,
+    "label": "Resistant to All Magic"
+  },
+  {
+    "kind": "monster_property",
+    "index": 3,
+    "label": "Charm Resistant"
+  },
+  {
+    "kind": "monster_property",
+    "index": 4,
+    "label": "Weapon Resistance"
+  },
+  {
+    "kind": "monster_property",
+    "index": 5,
+    "label": "Complete Weapon Resistance"
+  },
+  {
+    "kind": "item_ability",
+    "index": 0,
+    "label": "Levitate"
+  },
+  {
+    "kind": "item_ability",
+    "index": 1,
+    "label": "Invisible"
+  },
+  {
+    "kind": "item_ability",
+    "index": 2,
+    "label": "Protect"
+  },
+  {
+    "kind": "item_ability",
+    "index": 3,
+    "label": "See Invisible"
+  },
+  {
+    "kind": "item_ability",
+    "index": 4,
+    "label": "Critical Hit"
+  },
+  {
+    "kind": "item_ability",
+    "index": 5,
+    "label": "Backstab"
+  },
+  {
+    "kind": "monster_attack",
+    "index": 0,
+    "label": "Poison"
+  },
+  {
+    "kind": "monster_attack",
+    "index": 1,
+    "label": "Disease"
+  },
+  {
+    "kind": "monster_attack",
+    "index": 2,
+    "label": "Paralyze"
+  },
+  {
+    "kind": "monster_attack",
+    "index": 3,
+    "label": "Breathe Fire"
+  },
+  {
+    "kind": "monster_attack",
+    "index": 4,
+    "label": "Breathe Cold"
+  },
+  {
+    "kind": "monster_attack",
+    "index": 5,
+    "label": "Acid"
+  },
+  {
+    "kind": "monster_attack",
+    "index": 6,
+    "label": "Electrocute"
+  },
+  {
+    "kind": "monster_attack",
+    "index": 7,
+    "label": "Drain"
+  },
+  {
+    "kind": "monster_attack",
+    "index": 8,
+    "label": "Stone"
+  },
+  {
+    "kind": "monster_attack",
+    "index": 9,
+    "label": "Age"
+  },
+  {
+    "kind": "monster_attack",
+    "index": 10,
+    "label": "Critical Hit"
+  },
+  {
+    "kind": "monster_attack",
+    "index": 11,
+    "label": "Backstab"
+  },
+  {
+    "kind": "monster_attack",
+    "index": 12,
+    "label": "Destroy Item"
+  },
+  {
+    "kind": "monster_attack",
+    "index": 13,
+    "label": "Steal"
+  },
+  {
+    "kind": "terrain_flag",
+    "index": 0,
+    "label": "Right Wall"
+  },
+  {
+    "kind": "terrain_flag",
+    "index": 1,
+    "label": "Upper Wall"
+  },
+  {
+    "kind": "terrain_flag",
+    "index": 2,
+    "label": "Right Door"
+  },
+  {
+    "kind": "terrain_flag",
+    "index": 3,
+    "label": "Upper Door"
+  },
+  {
+    "kind": "terrain_flag",
+    "index": 4,
+    "label": "Right SDoor"
+  },
+  {
+    "kind": "terrain_flag",
+    "index": 5,
+    "label": "Upper SDoor"
+  },
+  {
+    "kind": "terrain_flag",
+    "index": 6,
+    "label": "Face North"
+  },
+  {
+    "kind": "terrain_flag",
+    "index": 7,
+    "label": "Face East"
+  },
+  {
+    "kind": "terrain_flag",
+    "index": 8,
+    "label": "Face South"
+  },
+  {
+    "kind": "terrain_flag",
+    "index": 9,
+    "label": "Face West"
+  },
+  {
+    "kind": "terrain_flag",
+    "index": 10,
+    "label": "Extinguish"
+  },
+  {
+    "kind": "terrain_flag",
+    "index": 11,
+    "label": "Pit"
+  },
+  {
+    "kind": "terrain_flag",
+    "index": 12,
+    "label": "Stairs Up"
+  },
+  {
+    "kind": "terrain_flag",
+    "index": 13,
+    "label": "Stairs Down"
+  },
+  {
+    "kind": "terrain_flag",
+    "index": 14,
+    "label": "Teleporter"
+  },
+  {
+    "kind": "terrain_flag",
+    "index": 15,
+    "label": "Water"
+  },
+  {
+    "kind": "terrain_flag",
+    "index": 16,
+    "label": "Quicksand"
+  },
+  {
+    "kind": "terrain_flag",
+    "index": 17,
+    "label": "Rotator"
+  },
+  {
+    "kind": "terrain_flag",
+    "index": 18,
+    "label": "Anti-Magic"
+  },
+  {
+    "kind": "terrain_flag",
+    "index": 19,
+    "label": "Rock"
+  },
+  {
+    "kind": "terrain_flag",
+    "index": 20,
+    "label": "Fog"
+  },
+  {
+    "kind": "terrain_flag",
+    "index": 21,
+    "label": "Chute"
+  },
+  {
+    "kind": "terrain_flag",
+    "index": 22,
+    "label": "Stud"
+  },
+  {
+    "kind": "alignment",
+    "index": 0,
+    "label": "Good"
+  },
+  {
+    "kind": "alignment",
+    "index": 1,
+    "label": "Neutral"
+  },
+  {
+    "kind": "alignment",
+    "index": 2,
+    "label": "Evil"
+  },
+  {
+    "kind": "sex",
+    "index": 0,
+    "label": "Male"
+  },
+  {
+    "kind": "sex",
+    "index": 1,
+    "label": "Female"
+  }
+]

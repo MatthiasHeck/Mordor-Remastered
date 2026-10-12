@@ -1,2 +1,12 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Preserve the exact imported input bytes checked by Godot/data/manifest.json.
+Godot/reference/** -text
+Godot/tests/reference/** -text
+Godot/data/original/** -text
+Godot/assets/** -text
+
+# Preserve the original CP1252 bytes and line endings of research code exports.
+research/original-export/code/**/*.bas -text
+research/original-export/code/source/main.txt -text

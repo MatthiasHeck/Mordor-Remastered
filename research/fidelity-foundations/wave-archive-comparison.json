@@ -1,0 +1,357 @@
+[
+  {
+    "name": "FALL.WAV",
+    "sha256": "3f51bad6b35f335374021b2942382f690044b045c14b3eaa8c336181ffccff3a",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "DIE.WAV",
+    "sha256": "ffcb3043ef9f3ae9a2d7f0ee7e3ea032d15837ef05e1f27e2ef9f379495318db",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "HIT.WAV",
+    "sha256": "cc241b3f1069adf45dc45983169fb99bf7117413801ea7d8f44a67c36e4e3faf",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "KILL.WAV",
+    "sha256": "f3d53c2e280bdea3fafd53d3d5dd2ed57cdef0f3fbe8cbc1794dded8feb7f330",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "DRAIN.WAV",
+    "sha256": "3610e1c125f02cf51ca0535b8fb898a4effe637a44b6b5eb4d157edff0674209",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "FIRE.WAV",
+    "sha256": "f23cf91c1bfe186c158dc881e40d5065fa117d97ff5ab3abb2e82cccb4ba05c3",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "WATER.WAV",
+    "sha256": "209a5e5ea87248ae152bcaf7aaadd0b710ca8d51b313edfa6acc15257d03a25e",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "FEAR.WAV",
+    "sha256": "51d0de8fd6dbac93660735c6e68fc261629282fbcc9b0599d7c0eb074a8ab338",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "GOBLIN.WAV",
+    "sha256": "ab268d149138324305d9d0912f038bd25a21bfb73a986fad05607a3e9bcd63ee",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "SCURRY.WAV",
+    "sha256": "b89575b6f2661736edbf23a8ebe996a32f4175f961274f52ec699788fb826c0b",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "MOAN.WAV",
+    "sha256": "b09ac44c5f1ab7e09aa7d8badb0cdeea029262469cf6d6e600e963402d7d5cd9",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "RAISE.WAV",
+    "sha256": "5f3d82d7ebcc36c388c2c3ea4250e49a4c563169b18616695a665d284c574f75",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "BUG.WAV",
+    "sha256": "b2258df7e633d2b7008d321620f098a3340b4d4f3298d292b915589197c1071f",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "SLIME.WAV",
+    "sha256": "b31976a80acbbb22d18e644f445e5faf1c0c0469e2ff8049b38d9f3109e6efe2",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "EXTING.WAV",
+    "sha256": "1d7eb54d9f44fda3218c45db72d564df17bc37759baf724426a90dcc6eea31ca",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "STEAL.WAV",
+    "sha256": "45c6322a9e1fc42bad21fa3c112b1aed2f298752a9a748273cd798fbb1d17275",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "DOG.WAV",
+    "sha256": "b40eefd75d0d17206696027d764887085fa28b17d8424b964a02cc197ab27f24",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "MAGIC.WAV",
+    "sha256": "6ce22eed24423486a039281ab258f9ec7d085f8b5c51e1cf755c507359069e96",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "SHOCK.WAV",
+    "sha256": "c7026bd8ee4658ef8cc70fe245a2119fc430d8e7470efda7e5fd72c682e908c2",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "WATER1.WAV",
+    "sha256": "99f14db664a19c75ef7f1e7d21a0c99b286f604811d6d0d7cab99be0a349cc51",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "OPEN.WAV",
+    "sha256": "313b33df0f588aeb1f2cb0ecb4db8bedfd43773dea1e59940c54c1ee2364b714",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "DEVIL.WAV",
+    "sha256": "fa7cce8b1d7d4f788cea438bf58ed890ade5aae5c55d45961b2af36960e72634",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "SNAKE.WAV",
+    "sha256": "8c972e76c2e2af780818c67950c978abd279dc26606f94d42a9a003a78b2aca2",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "UNDEAD.WAV",
+    "sha256": "98b8e6652160645964a04a28783b4b4b0140dc352b9a99e7959c0b94bbc9de89",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "WATERD.WAV",
+    "sha256": "de0b13c02955d1281cfdb0e6eb39e16d37b8f60d33d4c367da7eecee482b44ba",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "GIANT.WAV",
+    "sha256": "682cd224aafd0d6058efa415d7f3d36e9e26f224f55676fb1196f0498e0d49b3",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "MYTHIC.WAV",
+    "sha256": "dc98b36998a0c64e710f832bd45b0fcc9fa4794b2e66283dcad47fd877fb84c6",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "LYCAN.WAV",
+    "sha256": "a297527a663ce9a6ca04be748e4e78359367519c02a8ac865ea8fd644d692cde",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "MAGE.WAV",
+    "sha256": "dbb1eaac70a6aff6df0c0abe927a36b0bb63c3a0cae09633ea061362ebbb6247",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "WARRIOR.WAV",
+    "sha256": "bbb5234fcea7c379889dbf2839104aa7bdb9724b5d11f0bb11dbccaa7e638399",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "TELEPORT.WAV",
+    "sha256": "fda00c3afe852d51c9b2b8b2e8f921c7cd0699a545400d8d46a6238a2cd9038a",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "DI-HUMAN.WAV",
+    "sha256": "e1aa664774f7748b51625d41059ddae38f437891146bfb89df3fe0076fac9042",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "DI-ANIM.WAV",
+    "sha256": "c787f7fd9acbba7e83cdc696fefb2d0ca1ebd50b27e7fbcf21f4a66a674c1200",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "SWING.WAV",
+    "sha256": "7ae1af2df5396af1fd73c9d81441813671ceed0d0a299733c831579411809784",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "DSTSLAM.WAV",
+    "sha256": "c6f9205c26ce8468c2d6d60cdd788f174c5d4bf24c6a436c1efd2755716e5c10",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "COLD.WAV",
+    "sha256": "1bf05a7036dad1a37871800540d2a12fdd820a276a7b3dcb78f140d0e1812392",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "OUCH.WAV",
+    "sha256": "788289689f96220c049f3cfae3570c18bd14e5680c79c376a3a7c0955a9d875f",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "BYE.WAV",
+    "sha256": "938bc94f776e8450bce1e1b6a697c97011ac41fef2e07e5a65402df8192b77cf",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "PARAL.WAV",
+    "sha256": "273c1579b345acae89385c7371e17681dbcec8431d1863483bcade73606d640b",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "POISON.WAV",
+    "sha256": "067209eff4a2ff9eaf5a0bb79ee7fc756416f8f38009ae689d6a0ff5740f91fd",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "DISEASE.WAV",
+    "sha256": "45efc336e45de1134a61464dddd5a83e886b2df30fb6e2ddef15a1a9ab8437e2",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "BETTER.WAV",
+    "sha256": "df0ba4a7d6b837a29d2c82374fbbd2a310b7d9296d67ebeebcae83808c60f295",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "FOUND.WAV",
+    "sha256": "3580532031dfa39ff61f478f95e4d0d9d9332be8f97c126abb441a9e672c22a0",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "DI-DEMON.WAV",
+    "sha256": "72768469a174515550bf14e72ea97be231fd9c79312409caa7ebc801f88661fc",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "BIRD.WAV",
+    "sha256": "ecf779c07c4f1f43b7fa08588cb18aab1a12d579b406e996953f55ea86c40823",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "EXPLOS.WAV",
+    "sha256": "35e6b61bd4b27c7bc04beaca51a2b0d1be1e6111936a2bacb5e3416fc19e4e85",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "MAGIC2.WAV",
+    "sha256": "810c8bcfad859bd24b661c8b9aa6ce08ec2b1f1f6a314d8c68c86c28fd93c33a",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "WADE.WAV",
+    "sha256": "8feca38986109579b002601f23f914f5c0723b34d8eea5114cc1064e7e7e3866",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "DEMON.WAV",
+    "sha256": "f15bb0d91b128ed6d4c23c663c586ff3b2b22c6c800d45742708b11619ddacb5",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "SLIMETR.WAV",
+    "sha256": "5b5b103e8c49e7a491b7f7fc379789504e39e354eb4ff935d2c67c9ba6e59cb3",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "SPIT.WAV",
+    "sha256": "119e6ad0cb5a9ca5014765a171627a62c098dcd32c6483c310953c319d8506ef",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "STONE.WAV",
+    "sha256": "7f5b590c2eeb911b4ef8b2ca1044f5023b3cb1733e58ae77bc1043f292c2fdfa",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "WITHER.WAV",
+    "sha256": "d491338197e0c1a9ec13ffe5a46133034cf033d682743550640b6cc851c07daf",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "SLICE.WAV",
+    "sha256": "5c3e8d85aa22ad37a8e81d3eb6b5f986c73a02186236f3887779d460023764eb",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "BLACKOUT.WAV",
+    "sha256": "3ef189ef50dd611faed3106eef3320f121b615d7060db63e1753a811a03836ce",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "HELP.WAV",
+    "sha256": "fadac66d737b748627e0442612c545769e0793c1b17e99456e439fb5df652208",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "RIP.WAV",
+    "sha256": "3c5aa982eac0e5271bdefe0e972ca2e4f82e632ba641fc0dd2db8fc19b036e1c",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "BUGDIE.WAV",
+    "sha256": "da40cc79e9b8bc63097faca371737d88b5dc31990e5e6d551c72a62b58529023",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "MAKELEV.WAV",
+    "sha256": "02d953917379574017527e85bca1cab9c615aa7b33cc366cdc17f4338d9cbe27",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "BIRDDIE.WAV",
+    "sha256": "c0907255dc899b5f2a27a37b5e240afe3b1b585b03a31480d366210049358b27",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "DRAGON.WAV",
+    "sha256": "41a117511e09f6fe11b28401e764dd430197eb8bdd3e2862b9d8e929af747091",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "HELLO.WAV",
+    "sha256": "7b8a4c88eeaf95ce89431200ddd78b0d10fec27c125651680d9001525b5eed47",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "YEECH.WAV",
+    "sha256": "737365b3397e86e01efcf16163f1763f45abf045256f615a25996e30c9a47db6",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "DI-UNDEA.WAV",
+    "sha256": "191e2855e242e7a5e161fd956a6527bd73e544f06581fc8617039ae2db6d20b3",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "FOG.WAV",
+    "sha256": "94693e94f0f51073049352277682b86fac30b290d4d25261b34344dce09fefd5",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "MESSAGE.WAV",
+    "sha256": "5cc575673e49eab48e4df3c7b1dcd182472b91be4319f4126d9250365f35fbbe",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "DROWN.WAV",
+    "sha256": "2aa7c6da23dba8d2ab444a78de0766b1daab9c7b9f389e4be1b87caa7719183c",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "ASMO.WAV",
+    "sha256": "423fc630488865c6048f385efec0f42c57afbe393d8fb538e101df829b1c9dae",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "PLANTATT.WAV",
+    "sha256": "3951f376a92eabc962f3f776613455e492f28620f6d8c649171689cab5437fc4",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "BSTAB.WAV",
+    "sha256": "0d67d2f13566b871d90d9f2716147f208023dc16e63860398fe60365af0e2b61",
+    "matches_installed_audio": true
+  },
+  {
+    "name": "CHIT.WAV",
+    "sha256": "1ba1aa38cc8833c08b106d31a9e7fb0e96cc94394794136f8630fd02f0d6f209",
+    "matches_installed_audio": true
+  }
+]

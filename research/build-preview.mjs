@@ -7,6 +7,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const input = path.join(root, 'Mordor Remastered Design Document.md');
 const output = path.join(root, 'Mordor Remastered Design Document.html');
 const md = fs.readFileSync(input, 'utf8');
+const researchDate = md.match(/\*\*Research date:\*\* ([^·\n]+)/)?.[1].trim() ?? 'Date not recorded';
 let html = await marked.parse(md, { gfm: true });
 const toc = [];
 html = html.replace(/<h2>(\d+\s+[^<]+)<\/h2>/g, (_, title) => {
@@ -34,7 +35,7 @@ h2{font-size:28px;line-height:1.25;margin:55px 0 20px;color:#173f36;font-weight:
 @media print{aside,.tools,.skip{display:none}main{margin:0;max-width:none;padding:0}body{font:10pt/1.4 "Segoe UI",sans-serif;background:white;color:black}h1{font-size:26pt}h2{font-size:17pt;break-after:avoid;margin-top:25pt}h3{font-size:12pt;break-after:avoid}a{color:inherit;text-decoration:none}.table-wrap{overflow:visible;border-radius:0;break-inside:auto}table{font-size:8pt}tr{break-inside:avoid}td,th{padding:5pt}p{orphans:3;widows:3}@page{size:A4;margin:17mm}}
 </style></head><body>
 <a class="skip" href="#document">Skip to document</a>
-<aside aria-label="Document contents"><strong>Mordor Remastered</strong><p>Design and preservation specification<br>Research edition · October 9, 2026</p><nav>${toc.join('\n')}</nav></aside>
+<aside aria-label="Document contents"><strong>Mordor Remastered</strong><p>Design and preservation specification<br>Research edition · ${researchDate}</p><nav>${toc.join('\n')}</nav></aside>
 <main id="document"><article><div class="tools"><span>27 sections · numerical appendices · linked evidence</span><button type="button" onclick="window.print()">Print</button><a href="Mordor%20Remastered%20Design%20Document.md">Markdown source</a></div>${html}</article></main>
 </body></html>`;
 fs.writeFileSync(output,page);

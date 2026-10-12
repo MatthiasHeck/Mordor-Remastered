@@ -1,0 +1,350 @@
+{
+  "status": "STATIC_DUNGEON_TRACE_BUILT_RUNTIME_PENDING",
+  "data": {
+    "cell_count": 13500,
+    "special_square_count": 3965,
+    "door_edge_count": 2328,
+    "active_chute_count": 17,
+    "active_teleporter_count": 86,
+    "teleporter_transition_check": {
+      "active_slots": 86,
+      "flagged_cells": 88,
+      "slots_without_cell_flag": [],
+      "flagged_cells_without_slot": [
+        [
+          8,
+          5,
+          6
+        ],
+        [
+          8,
+          6,
+          6
+        ]
+      ],
+      "exact_match": false
+    },
+    "chute_transition_check": {
+      "active_slots": 17,
+      "flagged_cells": 17,
+      "slots_without_cell_flag": [],
+      "flagged_cells_without_slot": [],
+      "exact_match": true
+    },
+    "unmatched_teleporter_cells": [
+      [
+        8,
+        5,
+        6
+      ],
+      [
+        8,
+        6,
+        6
+      ]
+    ],
+    "source_status": "local fifteen-floor dungeon export and static decompiler paths",
+    "interpretation": "Coordinate, flag and slot relationships are preserved; traversal order, screen orientation, effect timing and unmatched transition behavior remain unobserved."
+  },
+  "source_procedures": [
+    {
+      "file": "Module3.bas",
+      "procedure": "sub0835",
+      "role": "square_handler",
+      "start_line": 1506,
+      "end_line": 1897,
+      "signature": "Sub sub0835 (p026E As Integer ' 41)",
+      "summary": "applies facing, extinguish, pit, stairs, teleporter, water, quicksand, rotator, anti-magic, fog and chute branches",
+      "evidence": "original-export/code/source/Module3.bas:1506"
+    },
+    {
+      "file": "Module3.bas",
+      "procedure": "sub087C",
+      "role": "square_perception",
+      "start_line": 605,
+      "end_line": 717,
+      "signature": "Sub sub087C (p0188 As Integer ' 41, p018A As Integer ' 41)",
+      "summary": "processes square-level perception and hazard visibility",
+      "evidence": "original-export/code/source/Module3.bas:605"
+    },
+    {
+      "file": "Module3.bas",
+      "procedure": "sub08F5",
+      "role": "chute_traversal",
+      "start_line": 93,
+      "end_line": 134,
+      "signature": "Sub sub08F5 (ByVal pv00A4 As Integer ' 81)",
+      "summary": "moves a character through a matched chute and applies levitation/damage branches",
+      "evidence": "original-export/code/source/Module3.bas:93"
+    },
+    {
+      "file": "Module3.bas",
+      "procedure": "sub0A1D",
+      "role": "ahead_perception",
+      "start_line": 445,
+      "end_line": 603,
+      "signature": "Sub sub0A1D ()",
+      "summary": "checks the square ahead for walls, doors, secret edges and hazards",
+      "evidence": "original-export/code/source/Module3.bas:445"
+    },
+    {
+      "file": "Module3.bas",
+      "procedure": "sub0A49",
+      "role": "combat_timer_setup",
+      "start_line": 732,
+      "end_line": 736,
+      "signature": "Sub sub0A49 ()",
+      "summary": "sets the dungeon combat timer and its shared guard state",
+      "evidence": "original-export/code/source/Module3.bas:732"
+    },
+    {
+      "file": "Module4.bas",
+      "procedure": "sub0F01",
+      "role": "trap_and_chest",
+      "start_line": 3430,
+      "end_line": 3877,
+      "signature": "Sub sub0F01 (ByVal pv04F2 As Integer ' 81)",
+      "summary": "resolves trap/chest outcomes and their item/gold effects",
+      "evidence": "original-export/code/source/Module4.bas:3430"
+    },
+    {
+      "file": "Module4.bas",
+      "procedure": "sub0D1D",
+      "role": "area_transition",
+      "start_line": 3879,
+      "end_line": 3901,
+      "signature": "Sub sub0D1D (ByVal pv05AE As Integer ' 81, p05B0 As Integer ' 41, p05B2 As Integer ' 41)",
+      "summary": "updates area/encounter state around dungeon transitions",
+      "evidence": "original-export/code/source/Module4.bas:3879"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "fn14CB",
+      "role": "take_movement_dispatch",
+      "start_line": 3301,
+      "end_line": 4185,
+      "signature": "Function fn14CB (p054E ' 40, p0550 ' 40) As Integer ' 1",
+      "summary": "dispatches Take/movement actions including stairs and chutes",
+      "evidence": "original-export/code/source/Module6.bas:3301"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "fn164C",
+      "role": "teleport_validation",
+      "start_line": 5750,
+      "end_line": 5924,
+      "signature": "Function fn164C (ByVal p0800 As String ' 47, p0802 As String ' 47) As Variant ' 6",
+      "summary": "validates teleport destinations and rejects solid-rock results",
+      "evidence": "original-export/code/source/Module6.bas:5750"
+    }
+  ],
+  "source_events": [
+    {
+      "file": "Module3.bas",
+      "line": 1506,
+      "procedure": "sub0835",
+      "event": "square_entry",
+      "expression": "special-square processing begins at the current coordinate",
+      "source_text": "Sub sub0835 (p026E As Integer ' 41)"
+    },
+    {
+      "file": "Module3.bas",
+      "line": 1528,
+      "procedure": "sub0835",
+      "event": "facing_flags",
+      "expression": "stored facing bits are applied in the displayed order",
+      "source_text": "' Const mc02A0 = 29 ' &H1D%"
+    },
+    {
+      "file": "Module3.bas",
+      "line": 1568,
+      "procedure": "sub0835",
+      "event": "stairs_branch",
+      "expression": "stairs up is tested before stairs down and first-floor up returns to town",
+      "source_text": "sub085B \"You've found yourself!\""
+    },
+    {
+      "file": "Module3.bas",
+      "line": 1615,
+      "procedure": "sub0835",
+      "event": "teleporter_branch",
+      "expression": "teleporter coordinates are matched against the allocated slot table",
+      "source_text": "End Select"
+    },
+    {
+      "file": "Module3.bas",
+      "line": 1704,
+      "procedure": "sub0835",
+      "event": "water_quicksand",
+      "expression": "timed water and quicksand branches apply HP/item effects",
+      "source_text": "If  l028E(gc1D42) Then sub087C gc1D42, False"
+    },
+    {
+      "file": "Module3.bas",
+      "line": 1786,
+      "procedure": "sub0835",
+      "event": "anti_magic_fog",
+      "expression": "anti-magic and fog terrain bits enter distinct effect/visibility paths",
+      "source_text": "For l0276 = 0 To gv1864.M5D0E - 1"
+    },
+    {
+      "file": "Module3.bas",
+      "line": 93,
+      "procedure": "sub08F5",
+      "event": "chute_entry",
+      "expression": "chute traversal searches the active depth entries",
+      "source_text": "Sub sub08F5 (ByVal pv00A4 As Integer ' 81)"
+    },
+    {
+      "file": "Module3.bas",
+      "line": 130,
+      "procedure": "sub08F5",
+      "event": "chute_damage",
+      "expression": "levitation state gates the fall damage branch",
+      "source_text": "End If"
+    },
+    {
+      "file": "Module3.bas",
+      "line": 445,
+      "procedure": "sub0A1D",
+      "event": "ahead_edge_check",
+      "expression": "right/upper wall and door edges are checked before movement",
+      "source_text": "Sub sub0A1D ()"
+    },
+    {
+      "file": "Module3.bas",
+      "line": 605,
+      "procedure": "sub087C",
+      "event": "square_perception_entry",
+      "expression": "perception on the current square processes visibility/hazard bits",
+      "source_text": "Sub sub087C (p0188 As Integer ' 41, p018A As Integer ' 41)"
+    },
+    {
+      "file": "Module3.bas",
+      "line": 732,
+      "procedure": "sub0A49",
+      "event": "combat_timer_interval",
+      "expression": "dungeon combat timer setup uses the static interval candidate",
+      "source_text": "Sub sub0A49 ()"
+    },
+    {
+      "file": "Module4.bas",
+      "line": 3430,
+      "procedure": "sub0F01",
+      "event": "trap_chest_entry",
+      "expression": "trap/chest resolution enters before reward mutation",
+      "source_text": "Sub sub0F01 (ByVal pv04F2 As Integer ' 81)"
+    },
+    {
+      "file": "Module4.bas",
+      "line": 3879,
+      "procedure": "sub0D1D",
+      "event": "area_transition_entry",
+      "expression": "area state is updated around transition processing",
+      "source_text": "Sub sub0D1D (ByVal pv05AE As Integer ' 81, p05B0 As Integer ' 41, p05B2 As Integer ' 41)"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 3301,
+      "procedure": "fn14CB",
+      "event": "take_dispatch_entry",
+      "expression": "Take dispatches stairs, chutes and contextual actions",
+      "source_text": "Function fn14CB (p054E ' 40, p0550 ' 40) As Integer ' 1"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 5750,
+      "procedure": "fn164C",
+      "event": "teleport_validation_entry",
+      "expression": "teleport target validation begins from coordinate strings",
+      "source_text": "Function fn164C (ByVal p0800 As String ' 47, p0802 As String ' 47) As Variant ' 6"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 5805,
+      "procedure": "fn164C",
+      "event": "teleport_random_target",
+      "expression": "zero destination coordinates select random non-rock targets",
+      "source_text": "gv14C2(m00DC).M5845 = gv14C2(m00DC).M5845 - l0806(1)"
+    }
+  ],
+  "source_event_count": 16,
+  "runtime_cases": [
+    {
+      "id": "TELEPORT-MATCH",
+      "setup": "matched active teleporter at each source/destination type",
+      "trace_focus": "destination floor, coordinates, facing and chained triggers",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "TELEPORT-UNMATCHED",
+      "setup": "floor 8 cells (5,6) and (6,6) with teleporter flags but no table slot",
+      "trace_focus": "message, no-op, random destination or other transition",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "TELEPORT-ROCK",
+      "setup": "random and fixed teleporter results landing on rock",
+      "trace_focus": "rejection loop, death/failure state and RNG order",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "STAIRS",
+      "setup": "up/down stairs on floors 1, 2 and 15",
+      "trace_focus": "Take ordering, town return and boundary behavior",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "CHUTE",
+      "setup": "active chute with levitation on/off and destination floor bounds",
+      "trace_focus": "floor movement, damage, party follow and persistence",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "DOORS",
+      "setup": "ordinary and secret edges with eligible/ineligible opening state",
+      "trace_focus": "auto-open, discovery, facing and one-step input behavior",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "COMBINED-HAZARD",
+      "setup": "cells containing multiple special flags",
+      "trace_focus": "processing order and cumulative effects",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "PIT-WATER",
+      "setup": "pit and water with race/levitation/perception variants",
+      "trace_focus": "damage, status and timer cadence",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "QUICKSAND",
+      "setup": "quicksand with burden, retention and item candidates",
+      "trace_focus": "selected item loss, HP loss and repeated ticks",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "ANTI-MAGIC-FOG",
+      "setup": "anti-magic/fog cells with spell and perception states",
+      "trace_focus": "eligibility, messages, identification and visibility",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    }
+  ],
+  "runtime_case_count": 10,
+  "runtime_requirements": [
+    "run the exact original executable with copied fifteen-floor dungeon data",
+    "capture transition destinations, facing, party separation, hazard order and persistence",
+    "capture unmatched floor-8 teleporter behavior and distinguish original behavior from any compatibility-layer artifact"
+  ]
+}

@@ -1,0 +1,5 @@
+file,control,name_offset,value_offset,raw_u32,bytes,status
+FRMCREDI.FRM,timAnimate,109,122,2000,0a 74 69 6d 41 6e 69 6d 61 74 65 0b ff 03 d0 07 00 00 07 aa 0a 00 00 08 60 18 00 00 ff 03,candidate_interval_property_not_runtime_measurement
+FRMDUNM.FRM,timCombat,888,900,1500,09 74 69 6d 43 6f 6d 62 61 74 0b ff 03 dc 05 00 00 07 86 10 00 00 08 ca 08 00 00 ff 03,candidate_interval_property_not_runtime_measurement
+FRMDUNM.FRM,timAilment,922,935,4000,0a 74 69 6d 41 69 6c 6d 65 6e 74 0b ff 03 a0 0f 00 00 07 66 12 00 00 08 ca 08 00 00 ff 03,candidate_interval_property_not_runtime_measurement
+FRMMAIN.FRM,timMusic,2137,2148,10000,08 74 69 6d 4d 75 73 69 63 0b ff 03 10 27 00 00 07 3b 1f 00 00 08 2d 00 00 00 ff 03,candidate_interval_property_not_runtime_measurement

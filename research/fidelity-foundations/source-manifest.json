@@ -1,0 +1,1301 @@
+{
+  "source_root": "D:\\Programming Projects\\Mordor",
+  "files": {
+    "_Original Game Files/MORDOR.EXE": {
+      "size": 1199633,
+      "sha256": "bd1332c37eb9d6a024d95ba1b70daf03c1a6c64c622964fb3d8bcc6297d06309"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_0017.asm": {
+      "size": 209,
+      "sha256": "c700867dd21b2690b29d81397c484c8ee04b1b18fc082fb115e5397ad6ae6d02"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_001D.asm": {
+      "size": 106,
+      "sha256": "ed1fdd349e61d238c9060dca6bc9edc1b1c014ab9bb22acadcea7cba97f70e40"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_0027.asm": {
+      "size": 223470,
+      "sha256": "b2b5f1b8319c1b6c7fbcfe9dc3ee21baa60b23f749d711513d77be09056bd5d1"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_0087.asm": {
+      "size": 93966,
+      "sha256": "e83d02503b9b5c86f4aab8b84396159a8e9eb0694cecaa46dcfccc43dd79762a"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_00AF.asm": {
+      "size": 168370,
+      "sha256": "d450f1a0800e16800e19afaa689eb592e029c293655f5a5e15a1c65ecfcbebec"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_00F7.asm": {
+      "size": 189878,
+      "sha256": "5d8fe4964c544e6f3f4f21eeeb21b9eff1968ba735d7b13abf757781fdf6e6e0"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_0147.asm": {
+      "size": 222330,
+      "sha256": "6732c19c6346b689452a35534e8aa62eb107cd3a185e903c81ca4149afd489ec"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_01A7.asm": {
+      "size": 196490,
+      "sha256": "f3832c42e27f09ba73bc1dd86b3976a6ead074dbcf8dc4d6f44fdd65e40e87a9"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_01FF.asm": {
+      "size": 298938,
+      "sha256": "6df999d8db9caa00552816b59cfa54a407570fc121db755dd1d938b12b83bd77"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_027F.asm": {
+      "size": 310566,
+      "sha256": "7a679edac90b1fe13e38700a5538d987bf52d38ec5b8f197bf05654035215978"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_02FF.asm": {
+      "size": 36662,
+      "sha256": "f55084fc16a7ba32bb0dc6e6fda81f9305e52d8a785c7f813a6aeb09e59809a9"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_030F.asm": {
+      "size": 55358,
+      "sha256": "6543e3e2c7d2897c1633af4446c3aa813186b110fb555c405a575db9a9aa456f"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_0327.asm": {
+      "size": 12646,
+      "sha256": "fdc97f98a396bf8d749aa477a86a8b3f5f46adad507db9d03af0136aacd754fa"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_032F.asm": {
+      "size": 32786,
+      "sha256": "3fd0565b5f9b124a4e270a7cc685117e942f84773fddea73a2b7625126c23665"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_033F.asm": {
+      "size": 14850,
+      "sha256": "e76c3cfeba3fb49877271d0d4a7739c126f1b144633e4c86ed15c813de93c703"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_0347.asm": {
+      "size": 75346,
+      "sha256": "34ff42880e1fd454e08be601e0ba0d14fe335d798d0d6a42d739fde31338e7db"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_0367.asm": {
+      "size": 20474,
+      "sha256": "0eafcac987c944c24e67b3eb7a072cc70096432c4ba6b343f59fd2ac0db583b7"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_0377.asm": {
+      "size": 3298,
+      "sha256": "1347a27ad06ae4ddddfcb671a28929792f7e4e883d1921e1f2fb8f42984add9e"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_037F.asm": {
+      "size": 36054,
+      "sha256": "bb1cdd344af7a2878ddaef2c75fd6954bf2da71b0e38bb20eb531c86ee24f923"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_038F.asm": {
+      "size": 19410,
+      "sha256": "e1e2baa27148ce65b166870ef657eb6aa5c39f7ab9280d443d8a7712658e5337"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_0397.asm": {
+      "size": 29214,
+      "sha256": "3441995e59b370af43c1c8b708c397f74f83adf306cd636aadd3a5efff7bbf2a"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_03A7.asm": {
+      "size": 72306,
+      "sha256": "b5807b595d8f252b1ad7e206bf45591d86556f3200a9a673e0232f8561fc10e6"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_03C7.asm": {
+      "size": 6338,
+      "sha256": "4ffb741ccfb1a3356ff7c3cfbd13a3b6c252f011a8059a96997b40c23ce5b984"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_03CF.asm": {
+      "size": 15002,
+      "sha256": "71eea33a018929998dae870e0672156859367f1e9b7a3968b9cab1fd257fb14b"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_03D7.asm": {
+      "size": 82110,
+      "sha256": "dd7460eec313f7e7374206eb62e5503f73aaef0376f3541765293c89b981a4ac"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_03FF.asm": {
+      "size": 23818,
+      "sha256": "d491bbc5e47201452d926da4dee1ffaa968a9886ed9f00694979d241b80d1432"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_040F.asm": {
+      "size": 111218,
+      "sha256": "31d1cdf76bb3f2ec4374d5adb81f054d74441d0a05b3e8a3e15f8a07b6a63933"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_043F.asm": {
+      "size": 48442,
+      "sha256": "a0addc83797314c05bde745d08ba2ba6aa40429d14bf470e3be33fbd05f1bee7"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_0457.asm": {
+      "size": 1702,
+      "sha256": "49ae5a39191a0f8546498c6862ed7ec7ef44df923b20cfe650885e0a090e1d39"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_045F.asm": {
+      "size": 45098,
+      "sha256": "cb61cc0110316f793095e7bb2fdbbe2b14bbcb376f00de5632fbb4bb379ea0cc"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_0477.asm": {
+      "size": 25794,
+      "sha256": "a1d61d9e0398039b6d702adb733fefd1ab36f3a230d018f61b997f099a28f5ad"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_0487.asm": {
+      "size": 4590,
+      "sha256": "7c1a3379cbaf98fc120179f994eef2a09b9a6565969997853c94f584a2d05914"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_048F.asm": {
+      "size": 48974,
+      "sha256": "f8d42e4f36edb2a822f2d3ce3b49c679bc516fd1bf9cb70767e6bb242f68c482"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_04A7.asm": {
+      "size": 1170,
+      "sha256": "fad554efdb5426c9464e82eb9723985a6c9815dcde2f80a328219e6c3400a564"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_04AF.asm": {
+      "size": 26706,
+      "sha256": "b32dd11738b3714f0bae148c0df0dd60e2ab945db735282f477a5a0f9eff7fe8"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_04BF.asm": {
+      "size": 19030,
+      "sha256": "46dccc07d62ef6178dc760aeabadd81ac550d0acfa0e9b0066b6382dd9412bcf"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_04C7.asm": {
+      "size": 57106,
+      "sha256": "fa953b701355194598ffaea9ee8c53fc15fd67c0db3e81c18c217cbcf11e37c0"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_04DF.asm": {
+      "size": 16446,
+      "sha256": "b07bb2313a9acc0d018d863cf843dd6b18ff01c9ca50d767f6a2189dc13b242b"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_04E7.asm": {
+      "size": 33014,
+      "sha256": "ce3cf5805058b951673f886017be6c426a4a0a191aedede9d1456ac0c72d2e63"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_04F7.asm": {
+      "size": 3602,
+      "sha256": "4ed27d2f8c1f83c1253606c4b8857ef786c174df0b1b448973e2f3761f9dc896"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_04FF.asm": {
+      "size": 12950,
+      "sha256": "5c891a8ee23a25d265a22c90f6d9548713019104eb88b624a59256c760fc1b81"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_0507.asm": {
+      "size": 20094,
+      "sha256": "76ce77ec8d4ac7f5da0b95d935ec4f2eb3c6cfa4560af26cd63473b95a4833df"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_0517.asm": {
+      "size": 46770,
+      "sha256": "3c9dade9a8bd846a194887935b41d7746d9813e10b3d48f3dbd5928a0a2cb3e3"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_052F.asm": {
+      "size": 11810,
+      "sha256": "3db8e684c522bfad62e2eedc8706d0031e9e3f91be8650a8ebc87c02d4fc7505"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_0537.asm": {
+      "size": 10594,
+      "sha256": "ed452c52339c4e89f49e1955bf078ebdd9f9d656efd8dfb65b643231d27745bc"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_053F.asm": {
+      "size": 26934,
+      "sha256": "66561efcb9eeb5c370424f7e206545e4c58803089bf1361d7117e4d33cbb53b4"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_054F.asm": {
+      "size": 71546,
+      "sha256": "f40c4a16bce1547351fb06c2aeccf02471782ead977f0f573c19acc319728dcb"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_056F.asm": {
+      "size": 8846,
+      "sha256": "f5553695e6f535418511874555cfad18db0ac6248bc867f657f98820b121d071"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_0577.asm": {
+      "size": 3678,
+      "sha256": "576837da7906a96ebf322444df01bebb0b7a4f9836c8dd93f7cddc4df1de512a"
+    },
+    "_Original Game Files/MORDOR.reko/MORDOR_057F.asm": {
+      "size": 6642,
+      "sha256": "7dd6bfb9b33b6fb32d601458105c35c41e29cfe12160b79d4882cb348ba0ad3a"
+    },
+    "_Original Game Files/VBRUN300.DLL": {
+      "size": 398416,
+      "sha256": "eb66f71dd14b01eb3df7409b0ad73e41589046ad5bf16152f06617093f63087e"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_0017.asm": {
+      "size": 1170,
+      "sha256": "72b977a9311386adc374fc52a72106ae5c1cbddb44d3e8815e0185cd213b24e0"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_001F.asm": {
+      "size": 20456,
+      "sha256": "0046d73fbe3da19a11613265ad6e55cd6ad7dd6cd7645eedc9725f3f77ef79ff"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_0027.asm": {
+      "size": 5360,
+      "sha256": "f1ebb4bcf0250d4607d3a414256bc00bb1863e87ccd2bb61592cdb118561f41f"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_002F.asm": {
+      "size": 7683,
+      "sha256": "6b57ba73888fbe77d0e33fd2740256384b46201fe0f2209c686046cd9c4d30b1"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_0037.asm": {
+      "size": 30086,
+      "sha256": "5ada20ba30e15ae050025b476fad9e994329b943d37f7d0c1976c2f72d54d4be"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_003F.asm": {
+      "size": 43651,
+      "sha256": "9e7e684c64e6e3cd4930016e01cdc6affea7634f27bdf0473932601e4cb40481"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_004F.asm": {
+      "size": 3376,
+      "sha256": "dfc51bf228a826a959a2cf1c34cbfcb136fc98b80fb98d8911ddf34937e4fb0f"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_0057.asm": {
+      "size": 2296,
+      "sha256": "206d5aa62362aa53f1a376ace738d30e773a647d7f8ec0cf6f0b132f817fc742"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_005F.asm": {
+      "size": 72964,
+      "sha256": "78c0fb2705b33e33e12efba1899895975d69ac5bdbc2030e1f17df9272abbe24"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_007F.asm": {
+      "size": 57408,
+      "sha256": "6797390b812a8da2e9d2ef10d301de8dac6453b2a54f7a9da036dd52706e0dcd"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_0097.asm": {
+      "size": 5730,
+      "sha256": "45e5cb11dfbdc45a0261c199241df5de1361873ca1c0df28220d95b3fcfebde2"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_009F.asm": {
+      "size": 7706,
+      "sha256": "3dad4c12f7a1f9da3df9d56637cef87e2d77ffd358df26e71fee9aa0dcc7dc5b"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_00A7.asm": {
+      "size": 7161,
+      "sha256": "4298bba1eaf4c5584a66d1e46c77b7bcde23e2578bcd641118734a2d702f3799"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_00AF.asm": {
+      "size": 4590,
+      "sha256": "0d0294db57544bb690b7a3c1f8cdf8d016c780c7947df4afc5cbd984fd6f1e1d"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_00B7.asm": {
+      "size": 2614,
+      "sha256": "89b927a711b7f904709503ba50abd2f63640a8fe075b991233385c25651def3e"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_00BF.asm": {
+      "size": 7706,
+      "sha256": "ac8df238ef40aa3876e223b0396c8d865f5032a10712b3b54cc080448b273eee"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_00C7.asm": {
+      "size": 58113,
+      "sha256": "68e317721a2e7455fd94daad5a8c7258f154f9d619aa878b9bdbdf064447e1f3"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_00D7.asm": {
+      "size": 42683,
+      "sha256": "0bbd663584bf908cfb5a478713c85ffc3268f6571abefa5148c7a7dba01d8056"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_00EF.asm": {
+      "size": 8966,
+      "sha256": "546a49a2f6a5e9d4163ef718342b9f05230f7785194bc0153263a38534e74ae4"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_00F7.asm": {
+      "size": 22551,
+      "sha256": "f67f132f6a6235c63fc647410f2b8d68f3c2366952628e0f93c059f83b683874"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_00FF.asm": {
+      "size": 6512,
+      "sha256": "839588963e5d4a815bbdf83e7a1429e6ff763b2b57fe762a3daba9f4cea04782"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_0107.asm": {
+      "size": 5322,
+      "sha256": "1779df6c4f5173ab1b0c84183552ace3ae3942af491378d4afbda1b09d891000"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_010F.asm": {
+      "size": 182,
+      "sha256": "65194f0a4fcca4ba2b51845942f590a15d85d3ead708941afcdce1d47ae4d1e3"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_0117.asm": {
+      "size": 8803,
+      "sha256": "1670142c6145a9b9bb1001f43028e89fc7369c4990dffe99957136c22d8c70a1"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_011F.asm": {
+      "size": 188682,
+      "sha256": "c816166a3af8996ed59c7b76a62234348857a3753c0fd9648252211fbe09df81"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_0167.asm": {
+      "size": 3510,
+      "sha256": "9c5127712fddd40da28589e4600dc49fed8729d961e7c7e7b437f9b747cd714c"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_016F.asm": {
+      "size": 8868,
+      "sha256": "68e7a57301fb9daa6476a21a48e919e9b828017e7de16a2f74899303a5e6baa7"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_0177.asm": {
+      "size": 18386,
+      "sha256": "dead951504e8270a5b3fa01fa4e553b23477be0ad7d0219a3eeb0fd28a36faef"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_017F.asm": {
+      "size": 26553,
+      "sha256": "69478850f7f4ba6c3add044b33ef7caca94faa099dea81581c3dcfe94a855011"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_0187.asm": {
+      "size": 39312,
+      "sha256": "3c7aa4ea5de66f3fe9bc16686b3c5656314f9f7f4dd656dae20e2186edd5c77c"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_0197.asm": {
+      "size": 2653,
+      "sha256": "966560932ae9f861e8d77af23536668822b3c97cfcbffaf38110bdf5fa16f67a"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_019F.asm": {
+      "size": 85639,
+      "sha256": "97c59a9aaed15e7b99458d806fd9b629c46243d4e690ce3f4737685622dc953a"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_01BF.asm": {
+      "size": 34071,
+      "sha256": "fb228e3cdfb68a3949b68526166bf3b6ae432c2485ee086f1d56257f04aca29d"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_01CF.asm": {
+      "size": 9499,
+      "sha256": "04b1557a9a28fc4fc91c4c355c460ab19fbefd5c30c5552f8cea0e92f792a3c1"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_01D7.asm": {
+      "size": 20632,
+      "sha256": "fb90c7fd86c4779926131b5f265833c5aa98b3733630ccced397eacf123b4d7e"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_01DF.asm": {
+      "size": 10007,
+      "sha256": "7bc81352bb77665fab0612749fb0383c1f059da39172313d8171bfe1b0732d7c"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_01E7.asm": {
+      "size": 10170,
+      "sha256": "b8643240b42c547e3ba25b14ba8ffcc3a28583cf47fe7a3d46f7d390e28800e1"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_01EF.asm": {
+      "size": 2804,
+      "sha256": "717c8e2c9d1dfcbcde1fe730209623e7eed3422d75466526101631db2f6e9773"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_01F7.asm": {
+      "size": 6794,
+      "sha256": "102701dceb58a1b13f0de03b5a13a7b789ad624577d9a93aa129f598605d963e"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_01FF.asm": {
+      "size": 6501,
+      "sha256": "54d6683ad32c190f0e7b6801f9c09fe14f2a4844f92e24a958936f0a3c262109"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_0207.asm": {
+      "size": 70238,
+      "sha256": "2ef407e8a925b9a1ac10e4ffdb7c9f7652291ea73786a34dbdf1cd19a72d0986"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_021F.asm": {
+      "size": 19577,
+      "sha256": "1d044987026a620fedbb2b5956f22ab9ae9e971c0d30ee40662ab007a1f884a0"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_0227.asm": {
+      "size": 10092,
+      "sha256": "1d24e943bec3c9cdd70499e3aad63810e99ec5785fae3d0ef3d827f9fbbd9238"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_022F.asm": {
+      "size": 42915,
+      "sha256": "04a6ea26fcb801ff8e445be94d2041b33d82c3195bf6347c8dfd28c11515770f"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_023F.asm": {
+      "size": 4699,
+      "sha256": "4aa6a28114eebe9d5c842a6aea60fa0fcaa0e28347445254cb8d97c4d7fd8b42"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_0247.asm": {
+      "size": 883,
+      "sha256": "f1dd8a9c3c96da043039c9d86eb53baa3caa6baeb0b99dd86b52ca12c53f497d"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_024F.asm": {
+      "size": 4289,
+      "sha256": "24ce47ba1a4b87c513f69a7066faea1c35477d9e70f93bda17843874609377f8"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_0257.asm": {
+      "size": 43801,
+      "sha256": "a18a8aa8050b1d436923a265cdd2f4c5967543c719a9a8b3db958e4cb6fe454c"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_0267.asm": {
+      "size": 235115,
+      "sha256": "15935cc854efddd14dcc69e210710d55959d7498853a498e8b269557bfe19160"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_02B7.asm": {
+      "size": 638,
+      "sha256": "2028340d235ce6a1c25612b82419f301a8b5438f4cfb6dd7f63a3f5a070d7718"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_02BF.asm": {
+      "size": 50476,
+      "sha256": "efb5c25f051faec8261bae9e0a361254bb637d217fc4bb175a342e9ebcc2cb6d"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_02D7.asm": {
+      "size": 6388,
+      "sha256": "4e3c30fa373d424592151c5d2ff5aae59904516b4b797c064b2bf686632c4116"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_02DF.asm": {
+      "size": 7111,
+      "sha256": "b7246b9022c4173d6f0fa0a4e8c38bddcb5b76af7623d687abda5c5ff3177e8f"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_02E7.asm": {
+      "size": 4221,
+      "sha256": "f8c651151644a9fdf6d17ebf4bc64ed8551eb20673b753ca4d33e92bf50c0df8"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_02EF.asm": {
+      "size": 4695,
+      "sha256": "d057f45e4a09987a446d938ac20b495ad0b583b203cd987389cd58078dd56030"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_02F7.asm": {
+      "size": 5814,
+      "sha256": "eb5798583050e6c041cf2528aaa070843891f142ccb46e43aa510b649f2a4ff7"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_02FF.asm": {
+      "size": 18584,
+      "sha256": "62d990145af5c1f7e5f4fe8a0fc507590814a52d09193ab2c12ce353324ca661"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_0307.asm": {
+      "size": 96068,
+      "sha256": "946c7cc340816085c131dfcbde987936c3e816e38b52e6aed7a358c77476bb9c"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_032F.asm": {
+      "size": 5916,
+      "sha256": "5aa96fa27344890d9e414cc2b6483edaa5c6397fe9723a81be5b2a1388cf6ffd"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_0337.asm": {
+      "size": 4057,
+      "sha256": "cfe37184979dc8b27758dd5ae42fe54dd3e16553023c38b190017c758c2c94a4"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_033D.asm": {
+      "size": 24132,
+      "sha256": "dd3bcb7974a73e8747d24f07d54d176eae4865c5edfccb9ea9ff2d4a6d0617e6"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_0347.asm": {
+      "size": 5083,
+      "sha256": "a8e1efc2407ce3437f464e587f14129c285699e9c052748ad2383bacc0f47f80"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_034F.asm": {
+      "size": 3298,
+      "sha256": "d38ee63c59f8ad455b8c4d55c0d3cbedbc2f006edba69b53e2bfbbe6b547eafa"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_0357.asm": {
+      "size": 3602,
+      "sha256": "a10243a222629c3a422bc20a4072cae255b976403e45389ccec84acf20cdac36"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_035F.asm": {
+      "size": 4818,
+      "sha256": "ed1314eaf4626daaad0bd940c4155774e7d80a577910499595bd25bef225199f"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_0367.asm": {
+      "size": 2654,
+      "sha256": "37f64d6dcaed2f527abc95e096a5d8383dbe56292ad6eea084564494e01f6b10"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_036F.asm": {
+      "size": 1329,
+      "sha256": "f8398f1bb91d07ac030b9ca3d42e44b0d38157aed234751c0973a84e6347c4c2"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_0377.asm": {
+      "size": 1716,
+      "sha256": "ff07bac55666e363e40a0a55d1f9cd016d2e94164cd0ff973baaa9b01dda6733"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_037F.asm": {
+      "size": 1640,
+      "sha256": "362db76f136467e97a77d65d03d5a3f39d9df9e5b8b5d148bf848e258db1820c"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_0387.asm": {
+      "size": 1944,
+      "sha256": "51c10c6114e06fb5a5e8e3e240beaeb101ab7784fa498a94f3e3923e790cec5a"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_038F.asm": {
+      "size": 1799,
+      "sha256": "93bda1338b329dbfdb18edc4e1e4adf3faea84cdb6e844e4e4aa883865cb69a2"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_0397.asm": {
+      "size": 1640,
+      "sha256": "cbe41d91034e2e3a11bc29acb13ec7494bbea971afd481326980b3ec842356cf"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_039F.asm": {
+      "size": 1640,
+      "sha256": "6ddef2c2f131004c8dba86caf6b18e12c04495a0f788433bfa35cdf4e145c62b"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_03A7.asm": {
+      "size": 57109,
+      "sha256": "7f2b91c22e51bb61af470a10da57b0984863a4c59d1cba432a4bcd459d6c8cfb"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_03BF.asm": {
+      "size": 13678,
+      "sha256": "8a77d35a00847ff9eea1c6152691b6f493a8ec18bca42d8b69fe6931bfc555d0"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_03C7.asm": {
+      "size": 1197,
+      "sha256": "6c44c3a43df25e9f04570165871b030c586b47c0507670ce4e868a4522107861"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_03CF.asm": {
+      "size": 8010,
+      "sha256": "396b0e124d702a6b4ba7b4d6aab25ea6268a586ccadb219fa7c36b1215aff2c6"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_03D7.asm": {
+      "size": 14712,
+      "sha256": "a18fae280700f5d5153cf3e7d86bccea6d4e01ed3c10db2fa88dd22e8251b316"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_03DF.asm": {
+      "size": 4438,
+      "sha256": "39d737dbdab66cbc477c5e3d1c64fb446b1a2a6c95b34c1336d14d229f9ac511"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_03E7.asm": {
+      "size": 7098,
+      "sha256": "9a79831b979a83d46cb614a8827d4dfc09b30e4d0ac35b96c78170a0eabb9a54"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_03EF.asm": {
+      "size": 562,
+      "sha256": "64362b58ba208b4905d383e2a2e3ac6c8b3b4c47578490224a3691f81932a631"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_03F7.asm": {
+      "size": 26706,
+      "sha256": "1ba91ba7621b11e4af3d2368216bfe727f982401a6b53cf1c6d74eb5f9e6ba0e"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_0407.asm": {
+      "size": 17206,
+      "sha256": "ebb8183c1b158fbb6eee62af79875e605ee98c016b7a89df8eb74f060b4b7ce7"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_040F.asm": {
+      "size": 16370,
+      "sha256": "837193560738cb4208bda22003ee1f4997c0ac06b06d2c2ba83d6638855723ee"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_0417.asm": {
+      "size": 15914,
+      "sha256": "9a0073c461e2ed0e019636e582334258bee33e41c3266d25e7f1b7f8961bbea7"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_041F.asm": {
+      "size": 22298,
+      "sha256": "180f3991f4013fc099a79766d5111451f2fdb909c86f359a26ef57c9fc08d3a2"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_042F.asm": {
+      "size": 2082,
+      "sha256": "0bdf86c221a36cdec5cd8ecd9ee04856f4b885d7d779636b0945ff2eaf517bc7"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_0437.asm": {
+      "size": 15382,
+      "sha256": "4d26f13d660f3533989ac7a15e7d38b9f6705f97876f498aea23b553a3a36a7c"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_043F.asm": {
+      "size": 10594,
+      "sha256": "efa0c7cf5e8a54e2681dce5d23ce08140423b89cc97d221013c70530a726ccd4"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_0447.asm": {
+      "size": 18650,
+      "sha256": "7a8650c8320e5cad566be33531cd4901cfdfc95b16f816dc20937cfdd1b00857"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_044F.asm": {
+      "size": 8314,
+      "sha256": "be27fc1176ac705e467361b1ac803527caed1d112cca8d90c0417a7e58c156cb"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_0457.asm": {
+      "size": 11434,
+      "sha256": "ead01ef364b262940be6c594ec5d156e8472b441564fea133c5d6a257ed3bf3e"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_045F.asm": {
+      "size": 72295,
+      "sha256": "641e13a1456804bdfbdda5f610473e00e8191951762bce725682bfca22d5d20d"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_047F.asm": {
+      "size": 6870,
+      "sha256": "5ac16855e0542e67e646e39aea3b71ce03746ad6f11ddfe78f7f17313e540583"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_0487.asm": {
+      "size": 2918,
+      "sha256": "97b151db56b36c5066bdf135a11543ba2824122bbbd2d3b19fdb2c59084b3b01"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_048F.asm": {
+      "size": 2220,
+      "sha256": "b96ebc0dbb032e7887bb37129ba89759804d75f498817e892942a393543f7836"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_0497.asm": {
+      "size": 12442,
+      "sha256": "cebd9bbe876cfed64baabc600345e58ab6511ed77134fc7a79a3738313129594"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_049F.asm": {
+      "size": 3766,
+      "sha256": "afef3ef0d94956f79242aba82b1adfcd1da7627ecdd9f7c0fa55e6176a31cc74"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_04A7.asm": {
+      "size": 4853,
+      "sha256": "01b51e774754c1586d4da342ffa4a3f17787fb4d8a90f01d7a4d0b693a87966e"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_04AD.asm": {
+      "size": 55434,
+      "sha256": "43477efc7a0d21df8cd7a8cb67af3158f7c857d7e4fcd48bdefa4eb87fcdc5fa"
+    },
+    "_Original Game Files/VBRUN300.reko/VBRUN300_04C5.asm": {
+      "size": 21926,
+      "sha256": "a50a53c2fc14780f42149232ebe8459716e9b3d95f5a16ad65835d3bf34150a4"
+    },
+    "POOP/CHARCREA.bas": {
+      "size": 14213,
+      "sha256": "a6a7b5641b5fda5a5d0a4600bf63f249f49b1ad3f3879716a1fe8dd60aad2958"
+    },
+    "POOP/FRMABOUT.bas": {
+      "size": 439,
+      "sha256": "8c327f94b5bd358d4baef83ea906713a57d63594485611b120cc249e59d17825"
+    },
+    "POOP/FRMAUTOM.bas": {
+      "size": 23541,
+      "sha256": "cf8dc26cefd5606840f14ccb388163a4cd2eab13e1f86b7f9710717a34871d29"
+    },
+    "POOP/FRMCHAR1.bas": {
+      "size": 12701,
+      "sha256": "d4b2070a23adc05c827ddb4f31ec6d96883d8cb49a70fd42c172bd2479c8cb06"
+    },
+    "POOP/FRMCHAR3.bas": {
+      "size": 32726,
+      "sha256": "c40cc5ba278b56c8c70d6969bc043f67b0e9748b0f879f165e244b991fe16a89"
+    },
+    "POOP/FRMCHAR4.bas": {
+      "size": 3118,
+      "sha256": "76d5dd99c40c693bfee40f10ce4c2a44d33afb335e10d59ba2dd4ce1f700409a"
+    },
+    "POOP/FRMCHARL.bas": {
+      "size": 1994,
+      "sha256": "2a8f8d79dfa8ed55963e46de1deb709b5c7cd0a840ed1c19af7509df810ff2f9"
+    },
+    "POOP/FRMCITYB.bas": {
+      "size": 10965,
+      "sha256": "577da099ad61004027af6504d4315f1f46611ddbc273638050c0ac70f99c2d70"
+    },
+    "POOP/FRMCITYC.bas": {
+      "size": 30379,
+      "sha256": "c4be92507b07c57e4972dfe00340b55b25fb9899b2b235c90120e9a7d064539b"
+    },
+    "POOP/FRMCONTR.bas": {
+      "size": 9103,
+      "sha256": "b94302ece10c523f63acdd582df48d7fc9649678038a03089aecd3be4c852c73"
+    },
+    "POOP/FRMCREDI.bas": {
+      "size": 3356,
+      "sha256": "e9d14c91bd5a1bd0b61aef914bc810ee41460c5f0b275222772e5f0353877694"
+    },
+    "POOP/FRMCTYG.bas": {
+      "size": 41609,
+      "sha256": "936513525da8750b3fdd3509bf9771ed89eb2d13fc8ad4ecd0ae8c6c0174584d"
+    },
+    "POOP/FRMCTYM.bas": {
+      "size": 6396,
+      "sha256": "5eb5f334a48150c51a90553291719413907b365f9e7efc428a045c923da26ed2"
+    },
+    "POOP/FRMCTYS.bas": {
+      "size": 34463,
+      "sha256": "7ecd21a04584bce074efae10af05c90a52b781f1bde1c09fc908b60fbb71853b"
+    },
+    "POOP/FRMDIREC.bas": {
+      "size": 1580,
+      "sha256": "f1040d69f3a578c86777d5961cad497eece99e1fbea80bd9a3993a943abb23b8"
+    },
+    "POOP/FRMDUNM.bas": {
+      "size": 22853,
+      "sha256": "bb21f09a475ffbc19fc8007108819b69d413fdf6aa5bb3ed846cd10cb8407d93"
+    },
+    "POOP/FRMEDITC.bas": {
+      "size": 9207,
+      "sha256": "a87cb0833993a91bb54c3e2ed4166d98d2f809bcdf10f6feaa5784db0dca51de"
+    },
+    "POOP/FRMEXCHA.bas": {
+      "size": 7805,
+      "sha256": "de00919f22700c5bd63f315c1c12411f44b3fcb6c96e775877a09123c2e26e54"
+    },
+    "POOP/FRMGLDL.bas": {
+      "size": 5411,
+      "sha256": "7b38b29b93901786a89a693ec167c9547da611d98212ecdee7cde4cbfebce2d4"
+    },
+    "POOP/FRMGROUP.bas": {
+      "size": 15211,
+      "sha256": "fd7b5a511d150918d7792e33aef257e82d25aa21f23550b881c2a84e8a30a141"
+    },
+    "POOP/FRMHALL.bas": {
+      "size": 11255,
+      "sha256": "c9ef5600f748c5950f732fafeca8ecd2c83727d09f3cd8860b41e27b685bbd58"
+    },
+    "POOP/FRMINTER.bas": {
+      "size": 19528,
+      "sha256": "e7ad05b4824055f9f976943a103ee95f534dee3978efee2b3df0fe7e19898eb9"
+    },
+    "POOP/FRMLIBRA.bas": {
+      "size": 4771,
+      "sha256": "d77b1517387f56abb14d2c7e6d373588298e8ca1fa997be171dcf9a37b1bef3c"
+    },
+    "POOP/FRMMAIN.bas": {
+      "size": 9042,
+      "sha256": "74abb7ad2604cc68c42ecc6435cd6d28a534484c48969503dac19ce8b6d47331"
+    },
+    "POOP/FRMMENU.bas": {
+      "size": 9046,
+      "sha256": "a0094a077698d8aaa0311696059517d547da3c2033fe31ee592dc90f8121371b"
+    },
+    "POOP/FRMMORG.bas": {
+      "size": 10295,
+      "sha256": "aafb6881ecbc051a6ec67368719aec31333de6a94605d699e405f049c1a9d0c8"
+    },
+    "POOP/FRMOPTIO.bas": {
+      "size": 16318,
+      "sha256": "236c4910567ea96fb3747a4f9b3dbaa3a1833c73baa00cbda9db9ba687438ef0"
+    },
+    "POOP/FRMORDER.bas": {
+      "size": 2098,
+      "sha256": "cc8019950c031caaa4f62b1e8e750c8554afc04a2adad42d549468f6e33c03d2"
+    },
+    "POOP/FRMPINFO.bas": {
+      "size": 1751,
+      "sha256": "374d5672b290735534f4b06320b8dcc912fa6ddcc86265db9ab62766fba4ab31"
+    },
+    "POOP/FRMPRINT.bas": {
+      "size": 2608,
+      "sha256": "69f46f6161e7b74e2397faa65b9d8002c61a6fd161fe0ecac6e8b2d800c6bed3"
+    },
+    "POOP/FRMSEEK.bas": {
+      "size": 20710,
+      "sha256": "3ec4819d1b45a52fa8686f077c99cebcb40b984b12d4d30d9ed9d1a657e34d4e"
+    },
+    "POOP/FRMWELCO.bas": {
+      "size": 659,
+      "sha256": "774c0a946d420f17c9addc448c0da91521ce86ff5e524132ec3ba4c3259e24f1"
+    },
+    "POOP/Module1.bas": {
+      "size": 38323,
+      "sha256": "5bc7b670d9c0aec451f6dc2cd5c3e582cc5c39850280e12d0feedba31f2ff445"
+    },
+    "POOP/Module10.bas": {
+      "size": 6880,
+      "sha256": "f915b2b79f31d39071e31dd2082e69b5a650bf6d0e35e0138ed586e88a9627e8"
+    },
+    "POOP/Module11.bas": {
+      "size": 29637,
+      "sha256": "ba316e0680e94d668c6c0463e7b063d6283349417aebc6dece08a4f57186fd59"
+    },
+    "POOP/Module12.bas": {
+      "size": 8805,
+      "sha256": "dd9412a12871780dd3668bc970783d714b7c168a277e2043ebd70e79e33cac49"
+    },
+    "POOP/Module13.bas": {
+      "size": 2104,
+      "sha256": "39a278e083c47dc75461247606569a845063297fc29cf325a6552805d954ec28"
+    },
+    "POOP/Module2.bas": {
+      "size": 73482,
+      "sha256": "08aa42b9a376dc57f81157d469c888b9a78983afc75d48028dcd981cc8dd3276"
+    },
+    "POOP/Module3.bas": {
+      "size": 76132,
+      "sha256": "794fe7d4a65f78c5472b5ef864449379fc1f25966cac99935154486bd07ebfe8"
+    },
+    "POOP/Module4.bas": {
+      "size": 193313,
+      "sha256": "ba21ed7f6fc036281450dd99b2036468c96d6030c4f04c05fa8b8d1a7b88851e"
+    },
+    "POOP/Module5.bas": {
+      "size": 105,
+      "sha256": "391f5a29605c7ee9e5f2dc265456150d52acf14778ab96935a0254c58361915e"
+    },
+    "POOP/Module6.bas": {
+      "size": 269759,
+      "sha256": "ae7bb58596c41ea12fda68ecfa2e719e40cfe1af5175d096fb95a35aaa435f41"
+    },
+    "POOP/Module7.bas": {
+      "size": 25235,
+      "sha256": "3c7e9656ce944973ff1fcc1a968a5c0de3a6cb1793c9afef708e6196106940da"
+    },
+    "POOP/Module8.bas": {
+      "size": 8690,
+      "sha256": "b990f244ef6236ac7a23f22c06507e2ec5b4fac04cb24387e408b2ba70bbe823"
+    },
+    "POOP/Module9.bas": {
+      "size": 14462,
+      "sha256": "4ca2749f8c814026f18681f7710cc80aa64d0866963e5a4c4521d329605b9a93"
+    },
+    "POOP/main.txt": {
+      "size": 23041,
+      "sha256": "438f82b6b305ff527e4687f1dfffaea36de03889aab19c587b8ad5a9aa5715b9"
+    },
+    "POOP/CHARCREA.FRM": {
+      "size": 4725,
+      "sha256": "5c2a37d33031bbc1799e2f46d9512c7549740a799cfa0d22409035249c2ab565"
+    },
+    "POOP/FRMABOUT.FRM": {
+      "size": 1575,
+      "sha256": "76eed6b13202a682d27a77372b2b1f5acdc4c9c0940f2e979a86759d7cc0ba50"
+    },
+    "POOP/FRMAUTOM.FRM": {
+      "size": 2595,
+      "sha256": "1e8bf5efbb74076c840f4393c8a65fc031932a72e71018d35d1ea327a0afaa0c"
+    },
+    "POOP/FRMCHAR1.FRM": {
+      "size": 4128,
+      "sha256": "1cf1eca3832f8e85191fe421830f58137de25cdf9fa2bbcfab0f76b63019bf9d"
+    },
+    "POOP/FRMCHAR3.FRM": {
+      "size": 9836,
+      "sha256": "1fd0814012bb27bd3567de3f5d4c9147916a7f70f1516facc62fa7dde372491d"
+    },
+    "POOP/FRMCHAR4.FRM": {
+      "size": 2279,
+      "sha256": "5418d23aeea8a48f5433924493fb9f5ea4e6507cdeb324c35c567736cab79816"
+    },
+    "POOP/FRMCHARL.FRM": {
+      "size": 521,
+      "sha256": "68dd2c3ecce0be55ca24279dbc5de615d735b9149a4a3a68458654c8818e8d1b"
+    },
+    "POOP/FRMCITYB.FRM": {
+      "size": 3320,
+      "sha256": "a5199f7f7e9b1e1a9375c0945468f5d374dfe1ae49bc3f22b8a30346e7e142d0"
+    },
+    "POOP/FRMCITYC.FRM": {
+      "size": 3098,
+      "sha256": "e978efffcb142a6be8562963a5972a5aab0d53b1eaf330f314be5a1039afb020"
+    },
+    "POOP/FRMCONTR.FRM": {
+      "size": 1228,
+      "sha256": "7cbcdfbe4629cce6a023bfd47cfb759eef889739c76e1f970f867c0ff35207dc"
+    },
+    "POOP/FRMCREDI.FRM": {
+      "size": 25250,
+      "sha256": "2bd893f1ae02d2cb07c95f75ebff769acd8a960d4193a95a5eea5eca4b2a9214"
+    },
+    "POOP/FRMCTYG.FRM": {
+      "size": 2279,
+      "sha256": "b4c2b05f1f1aebd59a6c38c1c7a5801dda29f236e9abc6062751e7f38bb848f9"
+    },
+    "POOP/FRMCTYM.FRM": {
+      "size": 88322,
+      "sha256": "3196bb688117aceffe907fe6125e4cebafae945f8cf5b643ba3ca552f2d01587"
+    },
+    "POOP/FRMCTYS.FRM": {
+      "size": 4357,
+      "sha256": "64068b1b4dd59adaa611b8c278723781e494e20871249cafe2d2d906565e0c25"
+    },
+    "POOP/FRMDIREC.FRM": {
+      "size": 644,
+      "sha256": "d9a25ffbeb06421cb905c63038f6495e3f7f73f0a8a0bd292ed5fdb100eb7eef"
+    },
+    "POOP/FRMDUNM.FRM": {
+      "size": 3023,
+      "sha256": "dd4482da316ad1b52d43d0f96199f7213a30872afd6059898ccb7efcc0648a8b"
+    },
+    "POOP/FRMEDITC.FRM": {
+      "size": 1349,
+      "sha256": "e6b22a1a69a8f536083f00c80b533f2b5d14cb4a42dc2d75db4ade2f605d2846"
+    },
+    "POOP/FRMEXCHA.FRM": {
+      "size": 4428,
+      "sha256": "05916999f5abc4013ac49d77f0773a94a30448d0752b9ec2a8ffc70b010811a8"
+    },
+    "POOP/FRMGLDL.FRM": {
+      "size": 499,
+      "sha256": "1ba0e916623f05400c1c6488c2c299c4e907f8afb07de355743cb04870d1a2f6"
+    },
+    "POOP/FRMGROUP.FRM": {
+      "size": 4077,
+      "sha256": "ec3dedabbd16a326332e90bf05434aa6a0d60d385657eb5fc74eb06f1ae54519"
+    },
+    "POOP/FRMHALL.FRM": {
+      "size": 929,
+      "sha256": "88db79b5f7a3a4a5605c6bb077107b23ed82c261f28dcfbf3baf79cf158fd8d2"
+    },
+    "POOP/FRMINTER.FRM": {
+      "size": 742,
+      "sha256": "854902f4f9084b4236c6876b25580d697cbbdc8414d71c76a40e1a7ee6398e82"
+    },
+    "POOP/FRMLIBRA.FRM": {
+      "size": 869,
+      "sha256": "51f458ae980b837e1bbd8931a90787a90308e4c021feb3753c8bae3c7069cee8"
+    },
+    "POOP/FRMMAIN.FRM": {
+      "size": 18603,
+      "sha256": "c150f4ebd479d2b6adc208a26861473ccfcabfc6c2a2a49d808b4a8262839293"
+    },
+    "POOP/FRMMENU.FRM": {
+      "size": 242553,
+      "sha256": "df5d7b885071b4c7d79132207340e6dce0e591edf2ec74d7cf8cd597e8250e21"
+    },
+    "POOP/FRMMORG.FRM": {
+      "size": 1638,
+      "sha256": "63d9c2c20df457feede6b0486bd38f3226c3bfc5bffe70b906c2b2325190d09d"
+    },
+    "POOP/FRMOPTIO.FRM": {
+      "size": 2576,
+      "sha256": "0a877c2aa0bd8d3c6b0593fb1a141ffb0fba377ce04fc551878eb870576da699"
+    },
+    "POOP/FRMORDER.FRM": {
+      "size": 495,
+      "sha256": "a0c5348b9ea98aa7fee15b2517504ea2f29c6ad4b9b8f7116070d8b257fd2062"
+    },
+    "POOP/FRMPINFO.FRM": {
+      "size": 642,
+      "sha256": "dc8508e92b261bc16b846fcdb5d87d0dac6022ae3b526519f99bb351eca81069"
+    },
+    "POOP/FRMPRINT.FRM": {
+      "size": 310,
+      "sha256": "c6f46e8317de7111d38db1ecc29a262d4a7658bb4892246d69805b3721d6271d"
+    },
+    "POOP/FRMSEEK.FRM": {
+      "size": 752,
+      "sha256": "80acda67002a84e0fb72626cdf17f0922c7d6f06b34fcb2d462b896d9a96d678"
+    },
+    "POOP/FRMWELCO.FRM": {
+      "size": 93005,
+      "sha256": "dc737b2c5d2a1164b7889267c47336d3cb79ae5e5e235f210485710621420fd8"
+    },
+    "_Original Game Files/MUSIC/ASMO.WAV": {
+      "size": 27629,
+      "sha256": "423fc630488865c6048f385efec0f42c57afbe393d8fb538e101df829b1c9dae"
+    },
+    "_Original Game Files/MUSIC/BETTER.WAV": {
+      "size": 13108,
+      "sha256": "df0ba4a7d6b837a29d2c82374fbbd2a310b7d9296d67ebeebcae83808c60f295"
+    },
+    "_Original Game Files/MUSIC/BIRD.WAV": {
+      "size": 10936,
+      "sha256": "ecf779c07c4f1f43b7fa08588cb18aab1a12d579b406e996953f55ea86c40823"
+    },
+    "_Original Game Files/MUSIC/BIRDDIE.WAV": {
+      "size": 7915,
+      "sha256": "c0907255dc899b5f2a27a37b5e240afe3b1b585b03a31480d366210049358b27"
+    },
+    "_Original Game Files/MUSIC/BLACKOUT.WAV": {
+      "size": 12188,
+      "sha256": "3ef189ef50dd611faed3106eef3320f121b615d7060db63e1753a811a03836ce"
+    },
+    "_Original Game Files/MUSIC/BSTAB.WAV": {
+      "size": 6644,
+      "sha256": "0d67d2f13566b871d90d9f2716147f208023dc16e63860398fe60365af0e2b61"
+    },
+    "_Original Game Files/MUSIC/BUG.WAV": {
+      "size": 4844,
+      "sha256": "b2258df7e633d2b7008d321620f098a3340b4d4f3298d292b915589197c1071f"
+    },
+    "_Original Game Files/MUSIC/BUGDIE.WAV": {
+      "size": 9962,
+      "sha256": "da40cc79e9b8bc63097faca371737d88b5dc31990e5e6d551c72a62b58529023"
+    },
+    "_Original Game Files/MUSIC/BYE.WAV": {
+      "size": 8951,
+      "sha256": "938bc94f776e8450bce1e1b6a697c97011ac41fef2e07e5a65402df8192b77cf"
+    },
+    "_Original Game Files/MUSIC/CHIT.WAV": {
+      "size": 8264,
+      "sha256": "1ba1aa38cc8833c08b106d31a9e7fb0e96cc94394794136f8630fd02f0d6f209"
+    },
+    "_Original Game Files/MUSIC/CITY.MID": {
+      "size": 5312,
+      "sha256": "dc471a329ff481c42ca25147fddf0fcf26c48a05e5d32f19e4f74dacd3d28bc5"
+    },
+    "_Original Game Files/MUSIC/CITYSC.MID": {
+      "size": 6814,
+      "sha256": "79db6e639016789208c14a8ad4a4d1f5871a1b0f02603e942e48b0f2026ffe5f"
+    },
+    "_Original Game Files/MUSIC/COLD.WAV": {
+      "size": 21744,
+      "sha256": "1bf05a7036dad1a37871800540d2a12fdd820a276a7b3dcb78f140d0e1812392"
+    },
+    "_Original Game Files/MUSIC/DEMON.WAV": {
+      "size": 8389,
+      "sha256": "f15bb0d91b128ed6d4c23c663c586ff3b2b22c6c800d45742708b11619ddacb5"
+    },
+    "_Original Game Files/MUSIC/DEVIL.WAV": {
+      "size": 22388,
+      "sha256": "fa7cce8b1d7d4f788cea438bf58ed890ade5aae5c55d45961b2af36960e72634"
+    },
+    "_Original Game Files/MUSIC/DI-ANIM.WAV": {
+      "size": 34121,
+      "sha256": "c787f7fd9acbba7e83cdc696fefb2d0ca1ebd50b27e7fbcf21f4a66a674c1200"
+    },
+    "_Original Game Files/MUSIC/DI-DEMON.WAV": {
+      "size": 39336,
+      "sha256": "72768469a174515550bf14e72ea97be231fd9c79312409caa7ebc801f88661fc"
+    },
+    "_Original Game Files/MUSIC/DI-HUMAN.WAV": {
+      "size": 10613,
+      "sha256": "e1aa664774f7748b51625d41059ddae38f437891146bfb89df3fe0076fac9042"
+    },
+    "_Original Game Files/MUSIC/DI-UNDEA.WAV": {
+      "size": 22029,
+      "sha256": "191e2855e242e7a5e161fd956a6527bd73e544f06581fc8617039ae2db6d20b3"
+    },
+    "_Original Game Files/MUSIC/DIE.WAV": {
+      "size": 22456,
+      "sha256": "ffcb3043ef9f3ae9a2d7f0ee7e3ea032d15837ef05e1f27e2ef9f379495318db"
+    },
+    "_Original Game Files/MUSIC/DISEASE.WAV": {
+      "size": 13768,
+      "sha256": "45efc336e45de1134a61464dddd5a83e886b2df30fb6e2ddef15a1a9ab8437e2"
+    },
+    "_Original Game Files/MUSIC/DOG.WAV": {
+      "size": 15758,
+      "sha256": "b40eefd75d0d17206696027d764887085fa28b17d8424b964a02cc197ab27f24"
+    },
+    "_Original Game Files/MUSIC/DRAGON.WAV": {
+      "size": 19811,
+      "sha256": "41a117511e09f6fe11b28401e764dd430197eb8bdd3e2862b9d8e929af747091"
+    },
+    "_Original Game Files/MUSIC/DRAIN.WAV": {
+      "size": 24172,
+      "sha256": "3610e1c125f02cf51ca0535b8fb898a4effe637a44b6b5eb4d157edff0674209"
+    },
+    "_Original Game Files/MUSIC/DROWN.WAV": {
+      "size": 15094,
+      "sha256": "2aa7c6da23dba8d2ab444a78de0766b1daab9c7b9f389e4be1b87caa7719183c"
+    },
+    "_Original Game Files/MUSIC/DSTSLAM.WAV": {
+      "size": 29591,
+      "sha256": "c6f9205c26ce8468c2d6d60cdd788f174c5d4bf24c6a436c1efd2755716e5c10"
+    },
+    "_Original Game Files/MUSIC/DUNGEON.MID": {
+      "size": 7050,
+      "sha256": "466a5cb451eea748d5030d7f2912108fa83fab32f1f9b8ae9d9862ae0d66ec71"
+    },
+    "_Original Game Files/MUSIC/DUNGEOSC.MID": {
+      "size": 7395,
+      "sha256": "670724ba3ca59073e76024a8aebb4c9db50921a3c640d62641f9fbe7d2cc6541"
+    },
+    "_Original Game Files/MUSIC/EXPLOS.WAV": {
+      "size": 37511,
+      "sha256": "35e6b61bd4b27c7bc04beaca51a2b0d1be1e6111936a2bacb5e3416fc19e4e85"
+    },
+    "_Original Game Files/MUSIC/EXTING.WAV": {
+      "size": 14494,
+      "sha256": "1d7eb54d9f44fda3218c45db72d564df17bc37759baf724426a90dcc6eea31ca"
+    },
+    "_Original Game Files/MUSIC/FALL.WAV": {
+      "size": 19229,
+      "sha256": "3f51bad6b35f335374021b2942382f690044b045c14b3eaa8c336181ffccff3a"
+    },
+    "_Original Game Files/MUSIC/FEAR.WAV": {
+      "size": 17831,
+      "sha256": "51d0de8fd6dbac93660735c6e68fc261629282fbcc9b0599d7c0eb074a8ab338"
+    },
+    "_Original Game Files/MUSIC/FIRE.WAV": {
+      "size": 21109,
+      "sha256": "f23cf91c1bfe186c158dc881e40d5065fa117d97ff5ab3abb2e82cccb4ba05c3"
+    },
+    "_Original Game Files/MUSIC/FOG.WAV": {
+      "size": 50130,
+      "sha256": "94693e94f0f51073049352277682b86fac30b290d4d25261b34344dce09fefd5"
+    },
+    "_Original Game Files/MUSIC/FOUND.WAV": {
+      "size": 14272,
+      "sha256": "3580532031dfa39ff61f478f95e4d0d9d9332be8f97c126abb441a9e672c22a0"
+    },
+    "_Original Game Files/MUSIC/GEN2.MID": {
+      "size": 6302,
+      "sha256": "8c9f17875ced274808022ed7838c05c98c99a872df6eaad72c51f508ef595821"
+    },
+    "_Original Game Files/MUSIC/GEN2SC.MID": {
+      "size": 6348,
+      "sha256": "3debeb27c3c520a21123a71c155e30e85025ff8a4a126ca8f4b91ddfd17baee1"
+    },
+    "_Original Game Files/MUSIC/GEN3.MID": {
+      "size": 11862,
+      "sha256": "13c35cb9b1621fb5ea6f59bb55f9227ace98e7b12bb895d760b8afbf0d43715f"
+    },
+    "_Original Game Files/MUSIC/GEN3SC.MID": {
+      "size": 13362,
+      "sha256": "62320e26cca140e744661a9fa80d36e4dee2bc3c17aeae4f2fef2788ed326755"
+    },
+    "_Original Game Files/MUSIC/GENERAL.MID": {
+      "size": 5221,
+      "sha256": "7fd31139a27e5d0c52b51576dd62fd5d1e5e30a2e4aee7812f89ecb689e7300d"
+    },
+    "_Original Game Files/MUSIC/GENERASC.MID": {
+      "size": 5295,
+      "sha256": "d3bac2ad4ac2dc1c04efdf74b310967d8eeb95218a0082474698439d97df98dd"
+    },
+    "_Original Game Files/MUSIC/GIANT.WAV": {
+      "size": 15062,
+      "sha256": "682cd224aafd0d6058efa415d7f3d36e9e26f224f55676fb1196f0498e0d49b3"
+    },
+    "_Original Game Files/MUSIC/GOBLIN.WAV": {
+      "size": 8969,
+      "sha256": "ab268d149138324305d9d0912f038bd25a21bfb73a986fad05607a3e9bcd63ee"
+    },
+    "_Original Game Files/MUSIC/HELLO.WAV": {
+      "size": 10107,
+      "sha256": "7b8a4c88eeaf95ce89431200ddd78b0d10fec27c125651680d9001525b5eed47"
+    },
+    "_Original Game Files/MUSIC/HELP.WAV": {
+      "size": 5609,
+      "sha256": "fadac66d737b748627e0442612c545769e0793c1b17e99456e439fb5df652208"
+    },
+    "_Original Game Files/MUSIC/HIT.WAV": {
+      "size": 1324,
+      "sha256": "cc241b3f1069adf45dc45983169fb99bf7117413801ea7d8f44a67c36e4e3faf"
+    },
+    "_Original Game Files/MUSIC/INTRO.MID": {
+      "size": 4952,
+      "sha256": "b0df6438e1c028b3ee3de5f15831a9bdc0b475cea87be3862fad921cd4dac99c"
+    },
+    "_Original Game Files/MUSIC/INTROSC.MID": {
+      "size": 5123,
+      "sha256": "db05a8affa7b5d2af7c990e903a4af0020e88e363d8eb4bfb88536083ea0f824"
+    },
+    "_Original Game Files/MUSIC/KILL.WAV": {
+      "size": 15510,
+      "sha256": "f3d53c2e280bdea3fafd53d3d5dd2ed57cdef0f3fbe8cbc1794dded8feb7f330"
+    },
+    "_Original Game Files/MUSIC/LYCAN.WAV": {
+      "size": 19654,
+      "sha256": "a297527a663ce9a6ca04be748e4e78359367519c02a8ac865ea8fd644d692cde"
+    },
+    "_Original Game Files/MUSIC/MAGE.WAV": {
+      "size": 13068,
+      "sha256": "dbb1eaac70a6aff6df0c0abe927a36b0bb63c3a0cae09633ea061362ebbb6247"
+    },
+    "_Original Game Files/MUSIC/MAGIC.WAV": {
+      "size": 30128,
+      "sha256": "6ce22eed24423486a039281ab258f9ec7d085f8b5c51e1cf755c507359069e96"
+    },
+    "_Original Game Files/MUSIC/MAGIC2.WAV": {
+      "size": 28372,
+      "sha256": "810c8bcfad859bd24b661c8b9aa6ce08ec2b1f1f6a314d8c68c86c28fd93c33a"
+    },
+    "_Original Game Files/MUSIC/MAIN.MID": {
+      "size": 9860,
+      "sha256": "4ddc4db524c301715d585c4d5c56ff57758c4cce76fb375902dfddeaf9afe02d"
+    },
+    "_Original Game Files/MUSIC/MAINSC.MID": {
+      "size": 10010,
+      "sha256": "52ef8d39571f8a6b71201c151ddada917b9666433c8caa38e633ae5ffa9cacb8"
+    },
+    "_Original Game Files/MUSIC/MAKELEV.WAV": {
+      "size": 32414,
+      "sha256": "02d953917379574017527e85bca1cab9c615aa7b33cc366cdc17f4338d9cbe27"
+    },
+    "_Original Game Files/MUSIC/MESSAGE.WAV": {
+      "size": 2814,
+      "sha256": "5cc575673e49eab48e4df3c7b1dcd182472b91be4319f4126d9250365f35fbbe"
+    },
+    "_Original Game Files/MUSIC/MOAN.WAV": {
+      "size": 43904,
+      "sha256": "b09ac44c5f1ab7e09aa7d8badb0cdeea029262469cf6d6e600e963402d7d5cd9"
+    },
+    "_Original Game Files/MUSIC/MYTHIC.WAV": {
+      "size": 15426,
+      "sha256": "dc98b36998a0c64e710f832bd45b0fcc9fa4794b2e66283dcad47fd877fb84c6"
+    },
+    "_Original Game Files/MUSIC/OPEN.WAV": {
+      "size": 15812,
+      "sha256": "313b33df0f588aeb1f2cb0ecb4db8bedfd43773dea1e59940c54c1ee2364b714"
+    },
+    "_Original Game Files/MUSIC/OUCH.WAV": {
+      "size": 8628,
+      "sha256": "788289689f96220c049f3cfae3570c18bd14e5680c79c376a3a7c0955a9d875f"
+    },
+    "_Original Game Files/MUSIC/PARAL.WAV": {
+      "size": 14488,
+      "sha256": "273c1579b345acae89385c7371e17681dbcec8431d1863483bcade73606d640b"
+    },
+    "_Original Game Files/MUSIC/PLANTATT.WAV": {
+      "size": 16038,
+      "sha256": "3951f376a92eabc962f3f776613455e492f28620f6d8c649171689cab5437fc4"
+    },
+    "_Original Game Files/MUSIC/POISON.WAV": {
+      "size": 9282,
+      "sha256": "067209eff4a2ff9eaf5a0bb79ee7fc756416f8f38009ae689d6a0ff5740f91fd"
+    },
+    "_Original Game Files/MUSIC/RAISE.WAV": {
+      "size": 49377,
+      "sha256": "5f3d82d7ebcc36c388c2c3ea4250e49a4c563169b18616695a665d284c574f75"
+    },
+    "_Original Game Files/MUSIC/RIP.WAV": {
+      "size": 13978,
+      "sha256": "3c5aa982eac0e5271bdefe0e972ca2e4f82e632ba641fc0dd2db8fc19b036e1c"
+    },
+    "_Original Game Files/MUSIC/SCURRY.WAV": {
+      "size": 41391,
+      "sha256": "b89575b6f2661736edbf23a8ebe996a32f4175f961274f52ec699788fb826c0b"
+    },
+    "_Original Game Files/MUSIC/SHOCK.WAV": {
+      "size": 8576,
+      "sha256": "c7026bd8ee4658ef8cc70fe245a2119fc430d8e7470efda7e5fd72c682e908c2"
+    },
+    "_Original Game Files/MUSIC/SLICE.WAV": {
+      "size": 8344,
+      "sha256": "5c3e8d85aa22ad37a8e81d3eb6b5f986c73a02186236f3887779d460023764eb"
+    },
+    "_Original Game Files/MUSIC/SLIME.WAV": {
+      "size": 23794,
+      "sha256": "b31976a80acbbb22d18e644f445e5faf1c0c0469e2ff8049b38d9f3109e6efe2"
+    },
+    "_Original Game Files/MUSIC/SLIMETR.WAV": {
+      "size": 19104,
+      "sha256": "5b5b103e8c49e7a491b7f7fc379789504e39e354eb4ff935d2c67c9ba6e59cb3"
+    },
+    "_Original Game Files/MUSIC/SNAKE.WAV": {
+      "size": 11744,
+      "sha256": "8c972e76c2e2af780818c67950c978abd279dc26606f94d42a9a003a78b2aca2"
+    },
+    "_Original Game Files/MUSIC/SPIT.WAV": {
+      "size": 13320,
+      "sha256": "119e6ad0cb5a9ca5014765a171627a62c098dcd32c6483c310953c319d8506ef"
+    },
+    "_Original Game Files/MUSIC/STEAL.WAV": {
+      "size": 16124,
+      "sha256": "45c6322a9e1fc42bad21fa3c112b1aed2f298752a9a748273cd798fbb1d17275"
+    },
+    "_Original Game Files/MUSIC/STONE.WAV": {
+      "size": 32178,
+      "sha256": "7f5b590c2eeb911b4ef8b2ca1044f5023b3cb1733e58ae77bc1043f292c2fdfa"
+    },
+    "_Original Game Files/MUSIC/SWING.WAV": {
+      "size": 5146,
+      "sha256": "7ae1af2df5396af1fd73c9d81441813671ceed0d0a299733c831579411809784"
+    },
+    "_Original Game Files/MUSIC/TELEPORT.WAV": {
+      "size": 29322,
+      "sha256": "fda00c3afe852d51c9b2b8b2e8f921c7cd0699a545400d8d46a6238a2cd9038a"
+    },
+    "_Original Game Files/MUSIC/THEME.MID": {
+      "size": 14730,
+      "sha256": "d91dc31f0a3feebe5c54de5e926cef02b8427e7ee0a826fb0938b3890cf39578"
+    },
+    "_Original Game Files/MUSIC/THEMESC.MID": {
+      "size": 15409,
+      "sha256": "1a16aec901ff7eb1c33bb23f8dc98330eef50995fab30769303ef4a26b80f841"
+    },
+    "_Original Game Files/MUSIC/UNDEAD.WAV": {
+      "size": 22416,
+      "sha256": "98b8e6652160645964a04a28783b4b4b0140dc352b9a99e7959c0b94bbc9de89"
+    },
+    "_Original Game Files/MUSIC/WADE.WAV": {
+      "size": 25968,
+      "sha256": "8feca38986109579b002601f23f914f5c0723b34d8eea5114cc1064e7e7e3866"
+    },
+    "_Original Game Files/MUSIC/WARRIOR.WAV": {
+      "size": 8264,
+      "sha256": "bbb5234fcea7c379889dbf2839104aa7bdb9724b5d11f0bb11dbccaa7e638399"
+    },
+    "_Original Game Files/MUSIC/WATER.WAV": {
+      "size": 27968,
+      "sha256": "209a5e5ea87248ae152bcaf7aaadd0b710ca8d51b313edfa6acc15257d03a25e"
+    },
+    "_Original Game Files/MUSIC/WATER1.WAV": {
+      "size": 44681,
+      "sha256": "99f14db664a19c75ef7f1e7d21a0c99b286f604811d6d0d7cab99be0a349cc51"
+    },
+    "_Original Game Files/MUSIC/WATERD.WAV": {
+      "size": 10138,
+      "sha256": "de0b13c02955d1281cfdb0e6eb39e16d37b8f60d33d4c367da7eecee482b44ba"
+    },
+    "_Original Game Files/MUSIC/WITHER.WAV": {
+      "size": 28389,
+      "sha256": "d491338197e0c1a9ec13ffe5a46133034cf033d682743550640b6cc851c07daf"
+    },
+    "_Original Game Files/MUSIC/YEECH.WAV": {
+      "size": 15025,
+      "sha256": "737365b3397e86e01efcf16163f1763f45abf045256f615a25996e30c9a47db6"
+    },
+    "Mordor/setup/MORDOR.WIP": {
+      "size": 1308706,
+      "sha256": "f6395cd84b1e2788fb9eb50c3b39f0413559ab6690067309dab20edd11eacff0"
+    },
+    "POOP/MORDOR.MAK": {
+      "size": 760,
+      "sha256": "12db38bf9bb0f9693582435ffcfa44665a66a6deb75127f854f946100b9b8ce7"
+    },
+    "Mordor/setup/SETUPKIT.DL_": {
+      "size": 3657,
+      "sha256": "7450fcc10220a52f80e58631ab435b0641f6f8bc618a5faffbc7bead8f0a70d6"
+    },
+    "Mordor/setup/VBCTL3D.VB_": {
+      "size": 32324,
+      "sha256": "a7cf6023e0c13dc546fb49a5f2bde3245678bb3d2fa0f39bcd9a5f122a0e88e8"
+    },
+    "Mordor/setup/VBRUN300.DL_": {
+      "size": 276684,
+      "sha256": "4430dd0fa6f08fe839b5d2bfa021f022cbc8d05feeb02304362f480603f6ca7c"
+    },
+    "Mordor/setup/WAVES.WIP": {
+      "size": 823459,
+      "sha256": "3a92984f7d8a39a3ed2ccbc7e39185c556adc65a5af5e3c1b0e51048c34b5bbe"
+    }
+  }
+}

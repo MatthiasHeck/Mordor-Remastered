@@ -1,0 +1,1087 @@
+{
+  "MORDOR.EXE": {
+    "sha256": "bd1332c37eb9d6a024d95ba1b70daf03c1a6c64c622964fb3d8bcc6297d06309",
+    "size": 1199633,
+    "ne_offset": 1536,
+    "target_os": 2,
+    "alignment_shift": 8,
+    "imported_modules": [
+      "VBRUN300"
+    ],
+    "segments": [
+      {
+        "index": 1,
+        "file_offset": 3072,
+        "file_bytes": 25,
+        "flags": 7504,
+        "minimum_allocation": 25
+      },
+      {
+        "index": 2,
+        "file_offset": 0,
+        "file_bytes": 0,
+        "flags": 3089,
+        "minimum_allocation": 2
+      },
+      {
+        "index": 3,
+        "file_offset": 572416,
+        "file_bytes": 47032,
+        "flags": 7440,
+        "minimum_allocation": 47032
+      },
+      {
+        "index": 4,
+        "file_offset": 3328,
+        "file_bytes": 19764,
+        "flags": 7184,
+        "minimum_allocation": 19764
+      },
+      {
+        "index": 5,
+        "file_offset": 23296,
+        "file_bytes": 35438,
+        "flags": 7184,
+        "minimum_allocation": 35438
+      },
+      {
+        "index": 6,
+        "file_offset": 58880,
+        "file_bytes": 39954,
+        "flags": 7184,
+        "minimum_allocation": 39954
+      },
+      {
+        "index": 7,
+        "file_offset": 99072,
+        "file_bytes": 46792,
+        "flags": 7184,
+        "minimum_allocation": 46792
+      },
+      {
+        "index": 8,
+        "file_offset": 145920,
+        "file_bytes": 41348,
+        "flags": 7184,
+        "minimum_allocation": 41348
+      },
+      {
+        "index": 9,
+        "file_offset": 187392,
+        "file_bytes": 62928,
+        "flags": 7184,
+        "minimum_allocation": 62928
+      },
+      {
+        "index": 10,
+        "file_offset": 250368,
+        "file_bytes": 65376,
+        "flags": 7184,
+        "minimum_allocation": 65376
+      },
+      {
+        "index": 11,
+        "file_offset": 315904,
+        "file_bytes": 7698,
+        "flags": 7184,
+        "minimum_allocation": 7698
+      },
+      {
+        "index": 12,
+        "file_offset": 323840,
+        "file_bytes": 11636,
+        "flags": 7184,
+        "minimum_allocation": 11636
+      },
+      {
+        "index": 13,
+        "file_offset": 335616,
+        "file_bytes": 2656,
+        "flags": 7184,
+        "minimum_allocation": 2656
+      },
+      {
+        "index": 14,
+        "file_offset": 338432,
+        "file_bytes": 6884,
+        "flags": 7184,
+        "minimum_allocation": 6884
+      },
+      {
+        "index": 15,
+        "file_offset": 345344,
+        "file_bytes": 3110,
+        "flags": 7184,
+        "minimum_allocation": 3110
+      },
+      {
+        "index": 16,
+        "file_offset": 348672,
+        "file_bytes": 15854,
+        "flags": 7184,
+        "minimum_allocation": 15854
+      },
+      {
+        "index": 17,
+        "file_offset": 364544,
+        "file_bytes": 4290,
+        "flags": 7184,
+        "minimum_allocation": 4290
+      },
+      {
+        "index": 18,
+        "file_offset": 368896,
+        "file_bytes": 688,
+        "flags": 7184,
+        "minimum_allocation": 688
+      },
+      {
+        "index": 19,
+        "file_offset": 369664,
+        "file_bytes": 7570,
+        "flags": 7184,
+        "minimum_allocation": 7570
+      },
+      {
+        "index": 20,
+        "file_offset": 377344,
+        "file_bytes": 4068,
+        "flags": 7184,
+        "minimum_allocation": 4068
+      },
+      {
+        "index": 21,
+        "file_offset": 381440,
+        "file_bytes": 6140,
+        "flags": 7184,
+        "minimum_allocation": 6140
+      },
+      {
+        "index": 22,
+        "file_offset": 387584,
+        "file_bytes": 15214,
+        "flags": 7184,
+        "minimum_allocation": 15214
+      },
+      {
+        "index": 23,
+        "file_offset": 402944,
+        "file_bytes": 1328,
+        "flags": 7184,
+        "minimum_allocation": 1328
+      },
+      {
+        "index": 24,
+        "file_offset": 404480,
+        "file_bytes": 3140,
+        "flags": 7184,
+        "minimum_allocation": 3140
+      },
+      {
+        "index": 25,
+        "file_offset": 407808,
+        "file_bytes": 17278,
+        "flags": 7184,
+        "minimum_allocation": 17278
+      },
+      {
+        "index": 26,
+        "file_offset": 425216,
+        "file_bytes": 5006,
+        "flags": 7184,
+        "minimum_allocation": 5006
+      },
+      {
+        "index": 27,
+        "file_offset": 430336,
+        "file_bytes": 23406,
+        "flags": 7184,
+        "minimum_allocation": 23406
+      },
+      {
+        "index": 28,
+        "file_offset": 453888,
+        "file_bytes": 10180,
+        "flags": 7184,
+        "minimum_allocation": 10180
+      },
+      {
+        "index": 29,
+        "file_offset": 464128,
+        "file_bytes": 350,
+        "flags": 7184,
+        "minimum_allocation": 350
+      },
+      {
+        "index": 30,
+        "file_offset": 464640,
+        "file_bytes": 9480,
+        "flags": 7184,
+        "minimum_allocation": 9480
+      },
+      {
+        "index": 31,
+        "file_offset": 474368,
+        "file_bytes": 5420,
+        "flags": 7184,
+        "minimum_allocation": 5420
+      },
+      {
+        "index": 32,
+        "file_offset": 480000,
+        "file_bytes": 948,
+        "flags": 7184,
+        "minimum_allocation": 948
+      },
+      {
+        "index": 33,
+        "file_offset": 481024,
+        "file_bytes": 10304,
+        "flags": 7184,
+        "minimum_allocation": 10304
+      },
+      {
+        "index": 34,
+        "file_offset": 491520,
+        "file_bytes": 230,
+        "flags": 7184,
+        "minimum_allocation": 230
+      },
+      {
+        "index": 35,
+        "file_offset": 491776,
+        "file_bytes": 5614,
+        "flags": 7184,
+        "minimum_allocation": 5614
+      },
+      {
+        "index": 36,
+        "file_offset": 497408,
+        "file_bytes": 3986,
+        "flags": 7184,
+        "minimum_allocation": 3986
+      },
+      {
+        "index": 37,
+        "file_offset": 501504,
+        "file_bytes": 12014,
+        "flags": 7184,
+        "minimum_allocation": 12014
+      },
+      {
+        "index": 38,
+        "file_offset": 513536,
+        "file_bytes": 3452,
+        "flags": 7184,
+        "minimum_allocation": 3452
+      },
+      {
+        "index": 39,
+        "file_offset": 517120,
+        "file_bytes": 6940,
+        "flags": 7184,
+        "minimum_allocation": 6940
+      },
+      {
+        "index": 40,
+        "file_offset": 524288,
+        "file_bytes": 750,
+        "flags": 7184,
+        "minimum_allocation": 750
+      },
+      {
+        "index": 41,
+        "file_offset": 525056,
+        "file_bytes": 2714,
+        "flags": 7184,
+        "minimum_allocation": 2714
+      },
+      {
+        "index": 42,
+        "file_offset": 527872,
+        "file_bytes": 4214,
+        "flags": 7184,
+        "minimum_allocation": 4214
+      },
+      {
+        "index": 43,
+        "file_offset": 532224,
+        "file_bytes": 9836,
+        "flags": 7184,
+        "minimum_allocation": 9836
+      },
+      {
+        "index": 44,
+        "file_offset": 542208,
+        "file_bytes": 2470,
+        "flags": 7184,
+        "minimum_allocation": 2470
+      },
+      {
+        "index": 45,
+        "file_offset": 544768,
+        "file_bytes": 2214,
+        "flags": 7184,
+        "minimum_allocation": 2214
+      },
+      {
+        "index": 46,
+        "file_offset": 547072,
+        "file_bytes": 5658,
+        "flags": 7184,
+        "minimum_allocation": 5658
+      },
+      {
+        "index": 47,
+        "file_offset": 552960,
+        "file_bytes": 15050,
+        "flags": 7184,
+        "minimum_allocation": 15050
+      },
+      {
+        "index": 48,
+        "file_offset": 568064,
+        "file_bytes": 1856,
+        "flags": 7184,
+        "minimum_allocation": 1856
+      },
+      {
+        "index": 49,
+        "file_offset": 570112,
+        "file_bytes": 764,
+        "flags": 7184,
+        "minimum_allocation": 764
+      },
+      {
+        "index": 50,
+        "file_offset": 570880,
+        "file_bytes": 1388,
+        "flags": 7184,
+        "minimum_allocation": 1388
+      }
+    ]
+  },
+  "VBRUN300.DLL": {
+    "sha256": "eb66f71dd14b01eb3df7409b0ad73e41589046ad5bf16152f06617093f63087e",
+    "size": 398416,
+    "ne_offset": 128,
+    "target_os": 2,
+    "alignment_shift": 4,
+    "imported_modules": [
+      "USER",
+      "KERNEL",
+      "GDI",
+      "KEYBOARD",
+      "WIN87EM"
+    ],
+    "segments": [
+      {
+        "index": 1,
+        "file_offset": 300032,
+        "file_bytes": 238,
+        "flags": 7472,
+        "minimum_allocation": 239
+      },
+      {
+        "index": 2,
+        "file_offset": 1792,
+        "file_bytes": 2736,
+        "flags": 7536,
+        "minimum_allocation": 2736
+      },
+      {
+        "index": 3,
+        "file_offset": 4640,
+        "file_bytes": 1020,
+        "flags": 7536,
+        "minimum_allocation": 1020
+      },
+      {
+        "index": 4,
+        "file_offset": 5760,
+        "file_bytes": 1274,
+        "flags": 7536,
+        "minimum_allocation": 1274
+      },
+      {
+        "index": 5,
+        "file_offset": 7072,
+        "file_bytes": 3988,
+        "flags": 7536,
+        "minimum_allocation": 3988
+      },
+      {
+        "index": 6,
+        "file_offset": 11296,
+        "file_bytes": 4668,
+        "flags": 7536,
+        "minimum_allocation": 4668
+      },
+      {
+        "index": 7,
+        "file_offset": 16064,
+        "file_bytes": 656,
+        "flags": 7536,
+        "minimum_allocation": 656
+      },
+      {
+        "index": 8,
+        "file_offset": 16832,
+        "file_bytes": 238,
+        "flags": 7536,
+        "minimum_allocation": 238
+      },
+      {
+        "index": 9,
+        "file_offset": 17120,
+        "file_bytes": 13686,
+        "flags": 7536,
+        "minimum_allocation": 13686
+      },
+      {
+        "index": 10,
+        "file_offset": 31360,
+        "file_bytes": 9916,
+        "flags": 7536,
+        "minimum_allocation": 9916
+      },
+      {
+        "index": 11,
+        "file_offset": 41696,
+        "file_bytes": 1200,
+        "flags": 7536,
+        "minimum_allocation": 1200
+      },
+      {
+        "index": 12,
+        "file_offset": 43008,
+        "file_bytes": 1606,
+        "flags": 7536,
+        "minimum_allocation": 1606
+      },
+      {
+        "index": 13,
+        "file_offset": 44768,
+        "file_bytes": 1200,
+        "flags": 7536,
+        "minimum_allocation": 1200
+      },
+      {
+        "index": 14,
+        "file_offset": 46144,
+        "file_bytes": 954,
+        "flags": 7536,
+        "minimum_allocation": 954
+      },
+      {
+        "index": 15,
+        "file_offset": 47200,
+        "file_bytes": 538,
+        "flags": 7536,
+        "minimum_allocation": 538
+      },
+      {
+        "index": 16,
+        "file_offset": 47872,
+        "file_bytes": 1606,
+        "flags": 7536,
+        "minimum_allocation": 1606
+      },
+      {
+        "index": 17,
+        "file_offset": 49568,
+        "file_bytes": 7392,
+        "flags": 7536,
+        "minimum_allocation": 7392
+      },
+      {
+        "index": 18,
+        "file_offset": 57376,
+        "file_bytes": 8836,
+        "flags": 7536,
+        "minimum_allocation": 8836
+      },
+      {
+        "index": 19,
+        "file_offset": 66528,
+        "file_bytes": 1182,
+        "flags": 7536,
+        "minimum_allocation": 1182
+      },
+      {
+        "index": 20,
+        "file_offset": 67776,
+        "file_bytes": 3110,
+        "flags": 7536,
+        "minimum_allocation": 3110
+      },
+      {
+        "index": 21,
+        "file_offset": 71104,
+        "file_bytes": 794,
+        "flags": 7536,
+        "minimum_allocation": 794
+      },
+      {
+        "index": 22,
+        "file_offset": 72096,
+        "file_bytes": 716,
+        "flags": 7536,
+        "minimum_allocation": 716
+      },
+      {
+        "index": 23,
+        "file_offset": 72992,
+        "file_bytes": 31,
+        "flags": 7280,
+        "minimum_allocation": 31
+      },
+      {
+        "index": 24,
+        "file_offset": 73056,
+        "file_bytes": 1086,
+        "flags": 7536,
+        "minimum_allocation": 1086
+      },
+      {
+        "index": 25,
+        "file_offset": 74240,
+        "file_bytes": 35428,
+        "flags": 7536,
+        "minimum_allocation": 35428
+      },
+      {
+        "index": 26,
+        "file_offset": 113760,
+        "file_bytes": 420,
+        "flags": 7536,
+        "minimum_allocation": 420
+      },
+      {
+        "index": 27,
+        "file_offset": 114240,
+        "file_bytes": 672,
+        "flags": 7536,
+        "minimum_allocation": 672
+      },
+      {
+        "index": 28,
+        "file_offset": 115040,
+        "file_bytes": 3260,
+        "flags": 7536,
+        "minimum_allocation": 3260
+      },
+      {
+        "index": 29,
+        "file_offset": 118720,
+        "file_bytes": 3390,
+        "flags": 7536,
+        "minimum_allocation": 3390
+      },
+      {
+        "index": 30,
+        "file_offset": 122336,
+        "file_bytes": 5748,
+        "flags": 7536,
+        "minimum_allocation": 5748
+      },
+      {
+        "index": 31,
+        "file_offset": 128416,
+        "file_bytes": 224,
+        "flags": 7536,
+        "minimum_allocation": 224
+      },
+      {
+        "index": 32,
+        "file_offset": 128736,
+        "file_bytes": 15708,
+        "flags": 7536,
+        "minimum_allocation": 15708
+      },
+      {
+        "index": 33,
+        "file_offset": 145248,
+        "file_bytes": 5836,
+        "flags": 7536,
+        "minimum_allocation": 5836
+      },
+      {
+        "index": 34,
+        "file_offset": 152224,
+        "file_bytes": 1412,
+        "flags": 7536,
+        "minimum_allocation": 1412
+      },
+      {
+        "index": 35,
+        "file_offset": 153824,
+        "file_bytes": 2099,
+        "flags": 7536,
+        "minimum_allocation": 2099
+      },
+      {
+        "index": 36,
+        "file_offset": 155968,
+        "file_bytes": 1002,
+        "flags": 7536,
+        "minimum_allocation": 1002
+      },
+      {
+        "index": 37,
+        "file_offset": 157056,
+        "file_bytes": 1522,
+        "flags": 7536,
+        "minimum_allocation": 1522
+      },
+      {
+        "index": 38,
+        "file_offset": 158720,
+        "file_bytes": 404,
+        "flags": 7536,
+        "minimum_allocation": 404
+      },
+      {
+        "index": 39,
+        "file_offset": 159168,
+        "file_bytes": 1422,
+        "flags": 7536,
+        "minimum_allocation": 1422
+      },
+      {
+        "index": 40,
+        "file_offset": 160704,
+        "file_bytes": 700,
+        "flags": 7536,
+        "minimum_allocation": 700
+      },
+      {
+        "index": 41,
+        "file_offset": 161568,
+        "file_bytes": 11170,
+        "flags": 7536,
+        "minimum_allocation": 11170
+      },
+      {
+        "index": 42,
+        "file_offset": 173312,
+        "file_bytes": 4074,
+        "flags": 7536,
+        "minimum_allocation": 4074
+      },
+      {
+        "index": 43,
+        "file_offset": 177504,
+        "file_bytes": 1244,
+        "flags": 7536,
+        "minimum_allocation": 1244
+      },
+      {
+        "index": 44,
+        "file_offset": 178848,
+        "file_bytes": 4996,
+        "flags": 7536,
+        "minimum_allocation": 4996
+      },
+      {
+        "index": 45,
+        "file_offset": 184000,
+        "file_bytes": 578,
+        "flags": 7536,
+        "minimum_allocation": 578
+      },
+      {
+        "index": 46,
+        "file_offset": 184704,
+        "file_bytes": 118,
+        "flags": 7536,
+        "minimum_allocation": 118
+      },
+      {
+        "index": 47,
+        "file_offset": 184864,
+        "file_bytes": 470,
+        "flags": 7536,
+        "minimum_allocation": 470
+      },
+      {
+        "index": 48,
+        "file_offset": 185440,
+        "file_bytes": 8075,
+        "flags": 7536,
+        "minimum_allocation": 8075
+      },
+      {
+        "index": 49,
+        "file_offset": 193792,
+        "file_bytes": 40282,
+        "flags": 7536,
+        "minimum_allocation": 40282
+      },
+      {
+        "index": 50,
+        "file_offset": 236032,
+        "file_bytes": 121,
+        "flags": 7536,
+        "minimum_allocation": 121
+      },
+      {
+        "index": 51,
+        "file_offset": 236192,
+        "file_bytes": 9287,
+        "flags": 7536,
+        "minimum_allocation": 9287
+      },
+      {
+        "index": 52,
+        "file_offset": 245792,
+        "file_bytes": 1240,
+        "flags": 7536,
+        "minimum_allocation": 1240
+      },
+      {
+        "index": 53,
+        "file_offset": 247328,
+        "file_bytes": 1008,
+        "flags": 7536,
+        "minimum_allocation": 1008
+      },
+      {
+        "index": 54,
+        "file_offset": 248512,
+        "file_bytes": 634,
+        "flags": 7536,
+        "minimum_allocation": 634
+      },
+      {
+        "index": 55,
+        "file_offset": 249216,
+        "file_bytes": 428,
+        "flags": 7536,
+        "minimum_allocation": 428
+      },
+      {
+        "index": 56,
+        "file_offset": 249728,
+        "file_bytes": 1150,
+        "flags": 7536,
+        "minimum_allocation": 1150
+      },
+      {
+        "index": 57,
+        "file_offset": 250976,
+        "file_bytes": 2636,
+        "flags": 7536,
+        "minimum_allocation": 2636
+      },
+      {
+        "index": 58,
+        "file_offset": 253728,
+        "file_bytes": 17560,
+        "flags": 7536,
+        "minimum_allocation": 17560
+      },
+      {
+        "index": 59,
+        "file_offset": 273248,
+        "file_bytes": 1176,
+        "flags": 7536,
+        "minimum_allocation": 1176
+      },
+      {
+        "index": 60,
+        "file_offset": 274560,
+        "file_bytes": 520,
+        "flags": 7536,
+        "minimum_allocation": 520
+      },
+      {
+        "index": 61,
+        "file_offset": 275168,
+        "file_bytes": 3476,
+        "flags": 3424,
+        "minimum_allocation": 3476
+      },
+      {
+        "index": 62,
+        "file_offset": 300320,
+        "file_bytes": 632,
+        "flags": 7472,
+        "minimum_allocation": 632
+      },
+      {
+        "index": 63,
+        "file_offset": 300976,
+        "file_bytes": 683,
+        "flags": 7472,
+        "minimum_allocation": 683
+      },
+      {
+        "index": 64,
+        "file_offset": 301888,
+        "file_bytes": 740,
+        "flags": 7216,
+        "minimum_allocation": 740
+      },
+      {
+        "index": 65,
+        "file_offset": 302640,
+        "file_bytes": 1004,
+        "flags": 7472,
+        "minimum_allocation": 1004
+      },
+      {
+        "index": 66,
+        "file_offset": 303664,
+        "file_bytes": 417,
+        "flags": 7472,
+        "minimum_allocation": 418
+      },
+      {
+        "index": 67,
+        "file_offset": 304112,
+        "file_bytes": 256,
+        "flags": 7216,
+        "minimum_allocation": 512
+      },
+      {
+        "index": 68,
+        "file_offset": 304368,
+        "file_bytes": 516,
+        "flags": 7216,
+        "minimum_allocation": 516
+      },
+      {
+        "index": 69,
+        "file_offset": 304896,
+        "file_bytes": 514,
+        "flags": 7216,
+        "minimum_allocation": 514
+      },
+      {
+        "index": 70,
+        "file_offset": 305424,
+        "file_bytes": 516,
+        "flags": 7216,
+        "minimum_allocation": 516
+      },
+      {
+        "index": 71,
+        "file_offset": 305952,
+        "file_bytes": 516,
+        "flags": 7216,
+        "minimum_allocation": 516
+      },
+      {
+        "index": 72,
+        "file_offset": 306480,
+        "file_bytes": 514,
+        "flags": 7216,
+        "minimum_allocation": 514
+      },
+      {
+        "index": 73,
+        "file_offset": 307008,
+        "file_bytes": 514,
+        "flags": 7216,
+        "minimum_allocation": 514
+      },
+      {
+        "index": 74,
+        "file_offset": 307536,
+        "file_bytes": 11640,
+        "flags": 7472,
+        "minimum_allocation": 11640
+      },
+      {
+        "index": 75,
+        "file_offset": 319200,
+        "file_bytes": 1797,
+        "flags": 7472,
+        "minimum_allocation": 1798
+      },
+      {
+        "index": 76,
+        "file_offset": 321104,
+        "file_bytes": 96,
+        "flags": 7472,
+        "minimum_allocation": 96
+      },
+      {
+        "index": 77,
+        "file_offset": 321232,
+        "file_bytes": 1671,
+        "flags": 7472,
+        "minimum_allocation": 1672
+      },
+      {
+        "index": 78,
+        "file_offset": 323040,
+        "file_bytes": 2948,
+        "flags": 7472,
+        "minimum_allocation": 2948
+      },
+      {
+        "index": 79,
+        "file_offset": 326064,
+        "file_bytes": 917,
+        "flags": 7472,
+        "minimum_allocation": 918
+      },
+      {
+        "index": 80,
+        "file_offset": 327104,
+        "file_bytes": 1485,
+        "flags": 7472,
+        "minimum_allocation": 1486
+      },
+      {
+        "index": 81,
+        "file_offset": 328672,
+        "file_bytes": 102,
+        "flags": 7472,
+        "minimum_allocation": 102
+      },
+      {
+        "index": 82,
+        "file_offset": 328816,
+        "file_bytes": 5601,
+        "flags": 7472,
+        "minimum_allocation": 5602
+      },
+      {
+        "index": 83,
+        "file_offset": 334720,
+        "file_bytes": 3616,
+        "flags": 7472,
+        "minimum_allocation": 3616
+      },
+      {
+        "index": 84,
+        "file_offset": 338624,
+        "file_bytes": 3434,
+        "flags": 7472,
+        "minimum_allocation": 3434
+      },
+      {
+        "index": 85,
+        "file_offset": 342400,
+        "file_bytes": 3330,
+        "flags": 7472,
+        "minimum_allocation": 3330
+      },
+      {
+        "index": 86,
+        "file_offset": 346000,
+        "file_bytes": 4674,
+        "flags": 7472,
+        "minimum_allocation": 4674
+      },
+      {
+        "index": 87,
+        "file_offset": 350896,
+        "file_bytes": 422,
+        "flags": 7472,
+        "minimum_allocation": 422
+      },
+      {
+        "index": 88,
+        "file_offset": 351360,
+        "file_bytes": 3229,
+        "flags": 7472,
+        "minimum_allocation": 3230
+      },
+      {
+        "index": 89,
+        "file_offset": 354800,
+        "file_bytes": 2216,
+        "flags": 7472,
+        "minimum_allocation": 2216
+      },
+      {
+        "index": 90,
+        "file_offset": 357232,
+        "file_bytes": 3909,
+        "flags": 7472,
+        "minimum_allocation": 3910
+      },
+      {
+        "index": 91,
+        "file_offset": 361312,
+        "file_bytes": 1739,
+        "flags": 7472,
+        "minimum_allocation": 1740
+      },
+      {
+        "index": 92,
+        "file_offset": 363136,
+        "file_bytes": 2257,
+        "flags": 7472,
+        "minimum_allocation": 2258
+      },
+      {
+        "index": 93,
+        "file_offset": 365632,
+        "file_bytes": 14132,
+        "flags": 7472,
+        "minimum_allocation": 14132
+      },
+      {
+        "index": 94,
+        "file_offset": 380064,
+        "file_bytes": 1439,
+        "flags": 7472,
+        "minimum_allocation": 1440
+      },
+      {
+        "index": 95,
+        "file_offset": 381616,
+        "file_bytes": 595,
+        "flags": 7472,
+        "minimum_allocation": 596
+      },
+      {
+        "index": 96,
+        "file_offset": 382256,
+        "file_bytes": 356,
+        "flags": 7472,
+        "minimum_allocation": 356
+      },
+      {
+        "index": 97,
+        "file_offset": 382704,
+        "file_bytes": 2432,
+        "flags": 7472,
+        "minimum_allocation": 2432
+      },
+      {
+        "index": 98,
+        "file_offset": 385616,
+        "file_bytes": 594,
+        "flags": 7472,
+        "minimum_allocation": 594
+      },
+      {
+        "index": 99,
+        "file_offset": 386256,
+        "file_bytes": 792,
+        "flags": 7472,
+        "minimum_allocation": 792
+      },
+      {
+        "index": 100,
+        "file_offset": 279136,
+        "file_bytes": 11654,
+        "flags": 3441,
+        "minimum_allocation": 11654
+      },
+      {
+        "index": 101,
+        "file_offset": 291040,
+        "file_bytes": 8856,
+        "flags": 3441,
+        "minimum_allocation": 8856
+      }
+    ]
+  }
+}

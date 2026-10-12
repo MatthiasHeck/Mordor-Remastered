@@ -1,0 +1,136 @@
+{
+  "dependencies": [
+    {
+      "name": "CMDIALOG.VBX",
+      "loose_paths": [],
+      "installer_members": [
+        {
+          "name": "CMDIALOG.VBX",
+          "size": 18688,
+          "sha256": "e16247d7c0a2d157c3d52f81cb8c93b84698903c8e06100346c2802f7cf1b3ab"
+        }
+      ],
+      "compressed_member": null,
+      "available": true,
+      "staged_sha256": "e16247d7c0a2d157c3d52f81cb8c93b84698903c8e06100346c2802f7cf1b3ab"
+    },
+    {
+      "name": "MCI.VBX",
+      "loose_paths": [],
+      "installer_members": [
+        {
+          "name": "MCI.VBX",
+          "size": 30112,
+          "sha256": "5ddfe8dccea577264feb8acf27761aaf757bb538ebec78fe5ff48fbb04e8dbb1"
+        }
+      ],
+      "compressed_member": null,
+      "available": true,
+      "staged_sha256": "5ddfe8dccea577264feb8acf27761aaf757bb538ebec78fe5ff48fbb04e8dbb1"
+    },
+    {
+      "name": "MSGBLAST.VBX",
+      "loose_paths": [],
+      "installer_members": [
+        {
+          "name": "MSGBLAST.VBX",
+          "size": 29376,
+          "sha256": "5b6db3f8c49867d101f38781ce2d3a43d44eebfe83913b5a279b5d9e319ac60b"
+        }
+      ],
+      "compressed_member": null,
+      "available": true,
+      "staged_sha256": "5b6db3f8c49867d101f38781ce2d3a43d44eebfe83913b5a279b5d9e319ac60b"
+    },
+    {
+      "name": "SETUPKIT.DLL",
+      "loose_paths": [],
+      "installer_members": [],
+      "compressed_member": {
+        "source": "Mordor/setup/SETUPKIT.DL_",
+        "size": 7008,
+        "sha256": "42c12ec4613324fb6fc4d0ae34b4e121d1b02a91d793b9f0c4e17594507eb344"
+      },
+      "available": true,
+      "staged_sha256": "42c12ec4613324fb6fc4d0ae34b4e121d1b02a91d793b9f0c4e17594507eb344"
+    },
+    {
+      "name": "THREED.VBX",
+      "loose_paths": [],
+      "installer_members": [
+        {
+          "name": "THREED.VBX",
+          "size": 64432,
+          "sha256": "825fccdc01f2119c9584378eed46825791d5fd416d366b390122e508b85f65c4"
+        }
+      ],
+      "compressed_member": null,
+      "available": true,
+      "staged_sha256": "825fccdc01f2119c9584378eed46825791d5fd416d366b390122e508b85f65c4"
+    },
+    {
+      "name": "VBCTL3D.VBX",
+      "loose_paths": [],
+      "installer_members": [],
+      "compressed_member": {
+        "source": "Mordor/setup/VBCTL3D.VB_",
+        "size": 81876,
+        "sha256": "6c64a1ea8b5a6bb0e6847a5f2cbfb21e4d5dadf6920472802cf883a866809fc4"
+      },
+      "available": true,
+      "staged_sha256": "6c64a1ea8b5a6bb0e6847a5f2cbfb21e4d5dadf6920472802cf883a866809fc4"
+    },
+    {
+      "name": "VBRUN300.DLL",
+      "loose_paths": [
+        "_Original Game Files\\VBRUN300.DLL"
+      ],
+      "installer_members": [],
+      "compressed_member": {
+        "source": "Mordor/setup/VBRUN300.DL_",
+        "size": 398416,
+        "sha256": "eb66f71dd14b01eb3df7409b0ad73e41589046ad5bf16152f06617093f63087e",
+        "matches_separately_supplied_file": true
+      },
+      "available": true,
+      "staged_sha256": "eb66f71dd14b01eb3df7409b0ad73e41589046ad5bf16152f06617093f63087e"
+    },
+    {
+      "name": "VSVBX.VBX",
+      "loose_paths": [],
+      "installer_members": [
+        {
+          "name": "VSVBX.VBX",
+          "size": 92176,
+          "sha256": "3ee78b0fa3b0c7b44dd38d50670f7e7ba584fac58c50397044526c025f8665b4"
+        }
+      ],
+      "compressed_member": null,
+      "available": true,
+      "staged_sha256": "3ee78b0fa3b0c7b44dd38d50670f7e7ba584fac58c50397044526c025f8665b4"
+    },
+    {
+      "name": "WAVMIX16.DLL",
+      "loose_paths": [],
+      "installer_members": [
+        {
+          "name": "WAVMIX16.DLL",
+          "size": 27136,
+          "sha256": "1e40eee4846f65343bcfd18ba1b0644b7828666829fbcbeecbc8db8622b63985"
+        }
+      ],
+      "compressed_member": null,
+      "available": true,
+      "staged_sha256": "1e40eee4846f65343bcfd18ba1b0644b7828666829fbcbeecbc8db8622b63985"
+    }
+  ],
+  "path_runners": {
+    "otvdm": null,
+    "otvdmw": null,
+    "dosbox": null,
+    "dosbox-x": null,
+    "qemu-system-i386": null
+  },
+  "execution_status": "not_executed",
+  "runtime_compatibility": "not_validated"
+}

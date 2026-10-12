@@ -1,1 +1,11 @@
 .tools/
+Godot/.godot/
+Godot/Saves/
+Godot/tests/tmp/
+Godot/tests/screenshots/
+Godot/export/
+Godot/*.log
+Godot/export_templates/
+Godot/feature_profiles/
+Godot/script_templates/
+Godot/text_editor_themes/

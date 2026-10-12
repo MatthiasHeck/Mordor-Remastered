@@ -1,0 +1,337 @@
+{
+  "source_root": "D:\\Programming Projects\\Mordor",
+  "files": {
+    "ORIGINAL_DATA/MG11.DLL": {
+      "size": 646640,
+      "sha256": "b0a9dbd55dd8b7f6189cefdc2c16c8eda1b10a4a95a2318225f75e5a6c661680"
+    },
+    "Mordor/MORDOR.EXE": {
+      "size": 1199633,
+      "sha256": "bd1332c37eb9d6a024d95ba1b70daf03c1a6c64c622964fb3d8bcc6297d06309"
+    },
+    "POOP/CHARCREA.FRM": {
+      "size": 4725,
+      "sha256": "5c2a37d33031bbc1799e2f46d9512c7549740a799cfa0d22409035249c2ab565"
+    },
+    "POOP/FRMABOUT.FRM": {
+      "size": 1575,
+      "sha256": "76eed6b13202a682d27a77372b2b1f5acdc4c9c0940f2e979a86759d7cc0ba50"
+    },
+    "POOP/FRMAUTOM.FRM": {
+      "size": 2595,
+      "sha256": "1e8bf5efbb74076c840f4393c8a65fc031932a72e71018d35d1ea327a0afaa0c"
+    },
+    "POOP/FRMCHAR1.FRM": {
+      "size": 4128,
+      "sha256": "1cf1eca3832f8e85191fe421830f58137de25cdf9fa2bbcfab0f76b63019bf9d"
+    },
+    "POOP/FRMCHAR3.FRM": {
+      "size": 9836,
+      "sha256": "1fd0814012bb27bd3567de3f5d4c9147916a7f70f1516facc62fa7dde372491d"
+    },
+    "POOP/FRMCHAR4.FRM": {
+      "size": 2279,
+      "sha256": "5418d23aeea8a48f5433924493fb9f5ea4e6507cdeb324c35c567736cab79816"
+    },
+    "POOP/FRMCHARL.FRM": {
+      "size": 521,
+      "sha256": "68dd2c3ecce0be55ca24279dbc5de615d735b9149a4a3a68458654c8818e8d1b"
+    },
+    "POOP/FRMCITYB.FRM": {
+      "size": 3320,
+      "sha256": "a5199f7f7e9b1e1a9375c0945468f5d374dfe1ae49bc3f22b8a30346e7e142d0"
+    },
+    "POOP/FRMCITYC.FRM": {
+      "size": 3098,
+      "sha256": "e978efffcb142a6be8562963a5972a5aab0d53b1eaf330f314be5a1039afb020"
+    },
+    "POOP/FRMCONTR.FRM": {
+      "size": 1228,
+      "sha256": "7cbcdfbe4629cce6a023bfd47cfb759eef889739c76e1f970f867c0ff35207dc"
+    },
+    "POOP/FRMCREDI.FRM": {
+      "size": 25250,
+      "sha256": "2bd893f1ae02d2cb07c95f75ebff769acd8a960d4193a95a5eea5eca4b2a9214"
+    },
+    "POOP/FRMCTYG.FRM": {
+      "size": 2279,
+      "sha256": "b4c2b05f1f1aebd59a6c38c1c7a5801dda29f236e9abc6062751e7f38bb848f9"
+    },
+    "POOP/FRMCTYM.FRM": {
+      "size": 88322,
+      "sha256": "3196bb688117aceffe907fe6125e4cebafae945f8cf5b643ba3ca552f2d01587"
+    },
+    "POOP/FRMCTYS.FRM": {
+      "size": 4357,
+      "sha256": "64068b1b4dd59adaa611b8c278723781e494e20871249cafe2d2d906565e0c25"
+    },
+    "POOP/FRMDIREC.FRM": {
+      "size": 644,
+      "sha256": "d9a25ffbeb06421cb905c63038f6495e3f7f73f0a8a0bd292ed5fdb100eb7eef"
+    },
+    "POOP/FRMDUNM.FRM": {
+      "size": 3023,
+      "sha256": "dd4482da316ad1b52d43d0f96199f7213a30872afd6059898ccb7efcc0648a8b"
+    },
+    "POOP/FRMEDITC.FRM": {
+      "size": 1349,
+      "sha256": "e6b22a1a69a8f536083f00c80b533f2b5d14cb4a42dc2d75db4ade2f605d2846"
+    },
+    "POOP/FRMEXCHA.FRM": {
+      "size": 4428,
+      "sha256": "05916999f5abc4013ac49d77f0773a94a30448d0752b9ec2a8ffc70b010811a8"
+    },
+    "POOP/FRMGLDL.FRM": {
+      "size": 499,
+      "sha256": "1ba0e916623f05400c1c6488c2c299c4e907f8afb07de355743cb04870d1a2f6"
+    },
+    "POOP/FRMGROUP.FRM": {
+      "size": 4077,
+      "sha256": "ec3dedabbd16a326332e90bf05434aa6a0d60d385657eb5fc74eb06f1ae54519"
+    },
+    "POOP/FRMHALL.FRM": {
+      "size": 929,
+      "sha256": "88db79b5f7a3a4a5605c6bb077107b23ed82c261f28dcfbf3baf79cf158fd8d2"
+    },
+    "POOP/FRMINTER.FRM": {
+      "size": 742,
+      "sha256": "854902f4f9084b4236c6876b25580d697cbbdc8414d71c76a40e1a7ee6398e82"
+    },
+    "POOP/FRMLIBRA.FRM": {
+      "size": 869,
+      "sha256": "51f458ae980b837e1bbd8931a90787a90308e4c021feb3753c8bae3c7069cee8"
+    },
+    "POOP/FRMMAIN.FRM": {
+      "size": 18603,
+      "sha256": "c150f4ebd479d2b6adc208a26861473ccfcabfc6c2a2a49d808b4a8262839293"
+    },
+    "POOP/FRMMENU.FRM": {
+      "size": 242553,
+      "sha256": "df5d7b885071b4c7d79132207340e6dce0e591edf2ec74d7cf8cd597e8250e21"
+    },
+    "POOP/FRMMORG.FRM": {
+      "size": 1638,
+      "sha256": "63d9c2c20df457feede6b0486bd38f3226c3bfc5bffe70b906c2b2325190d09d"
+    },
+    "POOP/FRMOPTIO.FRM": {
+      "size": 2576,
+      "sha256": "0a877c2aa0bd8d3c6b0593fb1a141ffb0fba377ce04fc551878eb870576da699"
+    },
+    "POOP/FRMORDER.FRM": {
+      "size": 495,
+      "sha256": "a0c5348b9ea98aa7fee15b2517504ea2f29c6ad4b9b8f7116070d8b257fd2062"
+    },
+    "POOP/FRMPINFO.FRM": {
+      "size": 642,
+      "sha256": "dc8508e92b261bc16b846fcdb5d87d0dac6022ae3b526519f99bb351eca81069"
+    },
+    "POOP/FRMPRINT.FRM": {
+      "size": 310,
+      "sha256": "c6f46e8317de7111d38db1ecc29a262d4a7658bb4892246d69805b3721d6271d"
+    },
+    "POOP/FRMSEEK.FRM": {
+      "size": 752,
+      "sha256": "80acda67002a84e0fb72626cdf17f0922c7d6f06b34fcb2d462b896d9a96d678"
+    },
+    "POOP/FRMWELCO.FRM": {
+      "size": 93005,
+      "sha256": "dc737b2c5d2a1164b7889267c47336d3cb79ae5e5e235f210485710621420fd8"
+    },
+    "ORIGINAL_DATA/MDATA3.MDR": {
+      "size": 46103,
+      "sha256": "babf9ede941bc2f3dab073283a304d80fd59ed34d9fcd7099cde1e0f7988d7c7"
+    },
+    "ORIGINAL_DATA/MDATA5.MDR": {
+      "size": 64623,
+      "sha256": "dc95efef50ef62eb6063a11b3fa9a116a06a4dab7d0000804e39324324a6c124"
+    },
+    "POOP/CHARCREA.bas": {
+      "size": 14213,
+      "sha256": "a6a7b5641b5fda5a5d0a4600bf63f249f49b1ad3f3879716a1fe8dd60aad2958"
+    },
+    "POOP/FRMABOUT.bas": {
+      "size": 439,
+      "sha256": "8c327f94b5bd358d4baef83ea906713a57d63594485611b120cc249e59d17825"
+    },
+    "POOP/FRMAUTOM.bas": {
+      "size": 23541,
+      "sha256": "cf8dc26cefd5606840f14ccb388163a4cd2eab13e1f86b7f9710717a34871d29"
+    },
+    "POOP/FRMCHAR1.bas": {
+      "size": 12701,
+      "sha256": "d4b2070a23adc05c827ddb4f31ec6d96883d8cb49a70fd42c172bd2479c8cb06"
+    },
+    "POOP/FRMCHAR3.bas": {
+      "size": 32726,
+      "sha256": "c40cc5ba278b56c8c70d6969bc043f67b0e9748b0f879f165e244b991fe16a89"
+    },
+    "POOP/FRMCHAR4.bas": {
+      "size": 3118,
+      "sha256": "76d5dd99c40c693bfee40f10ce4c2a44d33afb335e10d59ba2dd4ce1f700409a"
+    },
+    "POOP/FRMCHARL.bas": {
+      "size": 1994,
+      "sha256": "2a8f8d79dfa8ed55963e46de1deb709b5c7cd0a840ed1c19af7509df810ff2f9"
+    },
+    "POOP/FRMCITYB.bas": {
+      "size": 10965,
+      "sha256": "577da099ad61004027af6504d4315f1f46611ddbc273638050c0ac70f99c2d70"
+    },
+    "POOP/FRMCITYC.bas": {
+      "size": 30379,
+      "sha256": "c4be92507b07c57e4972dfe00340b55b25fb9899b2b235c90120e9a7d064539b"
+    },
+    "POOP/FRMCONTR.bas": {
+      "size": 9103,
+      "sha256": "b94302ece10c523f63acdd582df48d7fc9649678038a03089aecd3be4c852c73"
+    },
+    "POOP/FRMCREDI.bas": {
+      "size": 3356,
+      "sha256": "e9d14c91bd5a1bd0b61aef914bc810ee41460c5f0b275222772e5f0353877694"
+    },
+    "POOP/FRMCTYG.bas": {
+      "size": 41609,
+      "sha256": "936513525da8750b3fdd3509bf9771ed89eb2d13fc8ad4ecd0ae8c6c0174584d"
+    },
+    "POOP/FRMCTYM.bas": {
+      "size": 6396,
+      "sha256": "5eb5f334a48150c51a90553291719413907b365f9e7efc428a045c923da26ed2"
+    },
+    "POOP/FRMCTYS.bas": {
+      "size": 34463,
+      "sha256": "7ecd21a04584bce074efae10af05c90a52b781f1bde1c09fc908b60fbb71853b"
+    },
+    "POOP/FRMDIREC.bas": {
+      "size": 1580,
+      "sha256": "f1040d69f3a578c86777d5961cad497eece99e1fbea80bd9a3993a943abb23b8"
+    },
+    "POOP/FRMDUNM.bas": {
+      "size": 22853,
+      "sha256": "bb21f09a475ffbc19fc8007108819b69d413fdf6aa5bb3ed846cd10cb8407d93"
+    },
+    "POOP/FRMEDITC.bas": {
+      "size": 9207,
+      "sha256": "a87cb0833993a91bb54c3e2ed4166d98d2f809bcdf10f6feaa5784db0dca51de"
+    },
+    "POOP/FRMEXCHA.bas": {
+      "size": 7805,
+      "sha256": "de00919f22700c5bd63f315c1c12411f44b3fcb6c96e775877a09123c2e26e54"
+    },
+    "POOP/FRMGLDL.bas": {
+      "size": 5411,
+      "sha256": "7b38b29b93901786a89a693ec167c9547da611d98212ecdee7cde4cbfebce2d4"
+    },
+    "POOP/FRMGROUP.bas": {
+      "size": 15211,
+      "sha256": "fd7b5a511d150918d7792e33aef257e82d25aa21f23550b881c2a84e8a30a141"
+    },
+    "POOP/FRMHALL.bas": {
+      "size": 11255,
+      "sha256": "c9ef5600f748c5950f732fafeca8ecd2c83727d09f3cd8860b41e27b685bbd58"
+    },
+    "POOP/FRMINTER.bas": {
+      "size": 19528,
+      "sha256": "e7ad05b4824055f9f976943a103ee95f534dee3978efee2b3df0fe7e19898eb9"
+    },
+    "POOP/FRMLIBRA.bas": {
+      "size": 4771,
+      "sha256": "d77b1517387f56abb14d2c7e6d373588298e8ca1fa997be171dcf9a37b1bef3c"
+    },
+    "POOP/FRMMAIN.bas": {
+      "size": 9042,
+      "sha256": "74abb7ad2604cc68c42ecc6435cd6d28a534484c48969503dac19ce8b6d47331"
+    },
+    "POOP/FRMMENU.bas": {
+      "size": 9046,
+      "sha256": "a0094a077698d8aaa0311696059517d547da3c2033fe31ee592dc90f8121371b"
+    },
+    "POOP/FRMMORG.bas": {
+      "size": 10295,
+      "sha256": "aafb6881ecbc051a6ec67368719aec31333de6a94605d699e405f049c1a9d0c8"
+    },
+    "POOP/FRMOPTIO.bas": {
+      "size": 16318,
+      "sha256": "236c4910567ea96fb3747a4f9b3dbaa3a1833c73baa00cbda9db9ba687438ef0"
+    },
+    "POOP/FRMORDER.bas": {
+      "size": 2098,
+      "sha256": "cc8019950c031caaa4f62b1e8e750c8554afc04a2adad42d549468f6e33c03d2"
+    },
+    "POOP/FRMPINFO.bas": {
+      "size": 1751,
+      "sha256": "374d5672b290735534f4b06320b8dcc912fa6ddcc86265db9ab62766fba4ab31"
+    },
+    "POOP/FRMPRINT.bas": {
+      "size": 2608,
+      "sha256": "69f46f6161e7b74e2397faa65b9d8002c61a6fd161fe0ecac6e8b2d800c6bed3"
+    },
+    "POOP/FRMSEEK.bas": {
+      "size": 20710,
+      "sha256": "3ec4819d1b45a52fa8686f077c99cebcb40b984b12d4d30d9ed9d1a657e34d4e"
+    },
+    "POOP/FRMWELCO.bas": {
+      "size": 659,
+      "sha256": "774c0a946d420f17c9addc448c0da91521ce86ff5e524132ec3ba4c3259e24f1"
+    },
+    "POOP/main.txt": {
+      "size": 23041,
+      "sha256": "438f82b6b305ff527e4687f1dfffaea36de03889aab19c587b8ad5a9aa5715b9"
+    },
+    "POOP/Module1.bas": {
+      "size": 38323,
+      "sha256": "5bc7b670d9c0aec451f6dc2cd5c3e582cc5c39850280e12d0feedba31f2ff445"
+    },
+    "POOP/Module10.bas": {
+      "size": 6880,
+      "sha256": "f915b2b79f31d39071e31dd2082e69b5a650bf6d0e35e0138ed586e88a9627e8"
+    },
+    "POOP/Module11.bas": {
+      "size": 29637,
+      "sha256": "ba316e0680e94d668c6c0463e7b063d6283349417aebc6dece08a4f57186fd59"
+    },
+    "POOP/Module12.bas": {
+      "size": 8805,
+      "sha256": "dd9412a12871780dd3668bc970783d714b7c168a277e2043ebd70e79e33cac49"
+    },
+    "POOP/Module13.bas": {
+      "size": 2104,
+      "sha256": "39a278e083c47dc75461247606569a845063297fc29cf325a6552805d954ec28"
+    },
+    "POOP/Module2.bas": {
+      "size": 73482,
+      "sha256": "08aa42b9a376dc57f81157d469c888b9a78983afc75d48028dcd981cc8dd3276"
+    },
+    "POOP/Module3.bas": {
+      "size": 76132,
+      "sha256": "794fe7d4a65f78c5472b5ef864449379fc1f25966cac99935154486bd07ebfe8"
+    },
+    "POOP/Module4.bas": {
+      "size": 193313,
+      "sha256": "ba21ed7f6fc036281450dd99b2036468c96d6030c4f04c05fa8b8d1a7b88851e"
+    },
+    "POOP/Module5.bas": {
+      "size": 105,
+      "sha256": "391f5a29605c7ee9e5f2dc265456150d52acf14778ab96935a0254c58361915e"
+    },
+    "POOP/Module6.bas": {
+      "size": 269759,
+      "sha256": "ae7bb58596c41ea12fda68ecfa2e719e40cfe1af5175d096fb95a35aaa435f41"
+    },
+    "POOP/Module7.bas": {
+      "size": 25235,
+      "sha256": "3c7e9656ce944973ff1fcc1a968a5c0de3a6cb1793c9afef708e6196106940da"
+    },
+    "POOP/Module8.bas": {
+      "size": 8690,
+      "sha256": "b990f244ef6236ac7a23f22c06507e2ec5b4fac04cb24387e408b2ba70bbe823"
+    },
+    "POOP/Module9.bas": {
+      "size": 14462,
+      "sha256": "4ca2749f8c814026f18681f7710cc80aa64d0866963e5a4c4521d329605b9a93"
+    },
+    "ORIGINAL_DATA/MDATA11.MDR": {
+      "size": 339606,
+      "sha256": "0cfc52dc554f9a3362a222ad19f87a13cb829b50a3818574fa8fcbccd2d757a1"
+    }
+  }
+}

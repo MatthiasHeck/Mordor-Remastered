@@ -1,0 +1,229 @@
+file,line,procedure,ordinal_in_procedure,expression,expected_value
+FRMCREDI.bas,88,timAnimate_Timer,1,sub086D Int(Rnd * (mc004A - 1)),unmeasured
+FRMCTYG.bas,361,cmdMake_Click,1,l009A = Int(Rnd * 3) + 1,unmeasured
+FRMCTYG.bas,364,cmdMake_Click,2,gv14C2(gv1A86).M4EB4 = gv14C2(gv1A86).M4EB4 + Int(Rnd * gv145A(l0094).M5591 / 5) + 1,unmeasured
+FRMCTYG.bas,366,cmdMake_Click,3,gv14C2(gv1A86).M4EB4 = gv14C2(gv1A86).M4EB4 + Int(Rnd * gv145A(l0094).M5591 / 5) + 1,unmeasured
+FRMCTYG.bas,370,cmdMake_Click,4,gv14C2(gv1A86).M4EB4 = gv14C2(gv1A86).M4EB4 + Int(Rnd * (gv14C2(gv1A86).M55B5(mc00D8) - 16)) + 1,unmeasured
+FRMCTYG.bas,456,cmdMake_Click,5,l010E = Rnd * 100,unmeasured
+FRMCTYG.bas,473,cmdMake_Click,6,l010E = Rnd * 100,unmeasured
+FRMCTYG.bas,478,cmdMake_Click,7,l010E = Rnd * 100,unmeasured
+FRMCTYG.bas,487,cmdMake_Click,8,l0116 = Int(Rnd * gv1BF2),unmeasured
+FRMCTYG.bas,488,cmdMake_Click,9,If  Int(Rnd * 100) < 40 Then,unmeasured
+FRMCTYG.bas,511,cmdMake_Click,10,l0118 = CInt(Rnd * (l0114 - l0112)),unmeasured
+FRMCTYG.bas,513,cmdMake_Click,11,If  gv14F6(l0118).M56A0 < 10 And ((Rnd * 100) > 25) Then,unmeasured
+FRMCTYG.bas,525,cmdMake_Click,12,l0126 = Int(Rnd * gv1BEE),unmeasured
+FRMCTYG.bas,546,cmdMake_Click,13,l0128 = Int(Rnd * (l0124 - l0122) + 1),unmeasured
+FRMCTYG.bas,554,cmdMake_Click,14,ElseIf gv1426(l0128).M56A0 < 5 And (Rnd * 100) > 25 Then,unmeasured
+FRMCTYG.bas,878,sub29BD,1,l01CE = Int(Rnd * 3) + 1,unmeasured
+FRMCTYG.bas,881,sub29BD,2,gv14C2(gv1A86).M4EB4 = gv14C2(gv1A86).M4EB4 - Int(Rnd * gv145A(p01BE).M5591 / 5) + 1,unmeasured
+FRMCTYG.bas,883,sub29BD,3,gv14C2(gv1A86).M4EB4 = gv14C2(gv1A86).M4EB4 - Int(Rnd * gv145A(p01BE).M5591 / 5) + 1,unmeasured
+FRMDUNM.bas,177,cmdWait_Click,1,If  Rnd * l007C <= l007A Then,unmeasured
+FRMDUNM.bas,442,timAilment_Timer,1,If  (Rnd * 100) < 10 Then,unmeasured
+FRMDUNM.bas,443,timAilment_Timer,2,sub086D mc014C + Int(Rnd * 3),unmeasured
+FRMDUNM.bas,463,timAilment_Timer,3,If  Rnd * 100 < l0142 Then,unmeasured
+FRMDUNM.bas,477,timAilment_Timer,4,l013C = Int(Rnd * 100) + 1,unmeasured
+FRMDUNM.bas,507,timAilment_Timer,5,If  Int(Rnd * 100) < ((gv14C2(l0144).M5470 / 25) * 100) Then,unmeasured
+FRMDUNM.bas,508,timAilment_Timer,6,l013C = Int(Rnd * (mc0178 - 1)) + 1,unmeasured
+FRMDUNM.bas,531,timAilment_Timer,7,l013C = Int(Rnd * 200) + ((gv14C2(l0144).M55B5(mc018A) + (gv14C2(l0144).M584B(mc018A)) - 10) * 2) - (gv14C2(l0144).M56B9(m0188) * 2),unmeasured
+FRMDUNM.bas,541,timAilment_Timer,8,l013C = Int(Rnd * 200) + ((gv14C2(l0144).M55B5(mc018A) + (gv14C2(l0144).M584B(mc018A)) - 10) * 2) - (gv14C2(l0144).M56B9(m0188) * 2),unmeasured
+FRMDUNM.bas,557,timAilment_Timer,9,If  (Int(Rnd * 100) + 1) > l0196 Or fn0EEF() = False Then,unmeasured
+FRMDUNM.bas,565,timAilment_Timer,10,If  Int(Rnd * 100) < 5 + Log(((((gv14C2(l0144).M5577 / mc019E) / gv148E(gv14C2(l0144).M5821).M5577) * 100) - 98)) Then,unmeasured
+FRMDUNM.bas,585,timAilment_Timer,11,"If  (fn0380(mc0164, fn0AD3(fn0AE8(gv14C2(m00A4))))) <> False And (Rnd * 100) < 25 Then",unmeasured
+FRMDUNM.bas,589,timAilment_Timer,12,sub086D mc01AA + Int(Rnd * 2),unmeasured
+FRMMORG.bas,91,cmdCommand_Click,1,If  Int(Rnd * 100) > l005C Then,unmeasured
+FRMMORG.bas,148,cmdCommand_Click,2,If  Rnd * 100 > (l0076(2) * 4) Then,unmeasured
+FRMSEEK.bas,95,cmdCommand_Click,1,l002A = (l002A + (Rnd * l002A / 4)) / 2,unmeasured
+FRMSEEK.bas,104,cmdCommand_Click,2,l0032 = Int(Rnd * 100) + 1,unmeasured
+FRMSEEK.bas,106,cmdCommand_Click,3,If  (Rnd * 100) >= gv14F6(l0038).M5693 * 5 Then,unmeasured
+FRMSEEK.bas,129,cmdCommand_Click,4,If  Rnd * 100 < 75 Then,unmeasured
+FRMSEEK.bas,168,cmdCommand_Click,5,l0070 = Int(Rnd * UBound(l007E)) + 1,unmeasured
+FRMSEEK.bas,191,cmdCommand_Click,6,If  Rnd * 100 < 75 Then,unmeasured
+FRMSEEK.bas,242,cmdCommand_Click,7,l002A = (l002A + (Rnd * l002A / 4)) / 2,unmeasured
+FRMSEEK.bas,251,cmdCommand_Click,8,l0032 = Int(Rnd * 100) + 1,unmeasured
+FRMSEEK.bas,253,cmdCommand_Click,9,If  (Rnd * 100) >= gv1426(l0038).M5693 * 5 Then,unmeasured
+FRMSEEK.bas,265,cmdCommand_Click,10,l00C0 = Int(Rnd * 3),unmeasured
+FRMSEEK.bas,294,cmdCommand_Click,11,l0070 = l0070 - (Rnd * l0070),unmeasured
+FRMSEEK.bas,302,cmdCommand_Click,12,l003A = Int(Rnd * UBound(l00B8) + 1),unmeasured
+FRMSEEK.bas,341,cmdCommand_Click,13,l0032 = Int(Rnd * 100) + 1,unmeasured
+FRMSEEK.bas,410,sub321C,1,If  Int(Rnd * 2) Then,unmeasured
+FRMSEEK.bas,411,sub321C,2,p00F4 = p00F4 - Int(Rnd * p00F8),unmeasured
+FRMSEEK.bas,413,sub321C,3,p00F4 = p00F4 + Int(Rnd * p00F8),unmeasured
+FRMSEEK.bas,415,sub321C,4,If  Int(Rnd * 2) Then,unmeasured
+FRMSEEK.bas,416,sub321C,5,p00F6 = p00F6 - Int(Rnd * p00F8),unmeasured
+FRMSEEK.bas,418,sub321C,6,p00F6 = p00F6 + Int(Rnd * p00F8),unmeasured
+Module2.bas,752,sub05AA,1,l018C.M5C00 = Int(Rnd * 5) + 1,unmeasured
+Module2.bas,753,sub05AA,2,l018C.M5C21 = CLng(Date) - (Int(Rnd * 5) + 2),unmeasured
+Module2.bas,772,sub05AA,3,l018C.M5C21 = CLng(Date) - (Int(Rnd * 5) + 2),unmeasured
+Module2.bas,1310,sub06E8,1,If  (Rnd * 100) > l0284 Then,unmeasured
+Module2.bas,1314,sub06E8,2,If  (Rnd * 100) < 60 Then,unmeasured
+Module2.bas,1320,sub06E8,3,l0274 = Int(Rnd * 100) + 1,unmeasured
+Module2.bas,1332,sub06E8,4,l027E = (Rnd * gv1BF2),unmeasured
+Module2.bas,1362,sub06E8,5,l0276 = Rnd * 100,unmeasured
+Module2.bas,1392,sub06E8,6,l027E = (Rnd * gv1BF2),unmeasured
+Module2.bas,1422,sub06E8,7,l0276 = Rnd * 100,unmeasured
+Module2.bas,1443,sub06E8,8,l0288 = Int(Rnd * (mc02A0 + 1)),unmeasured
+Module2.bas,1508,sub071B,1,If  (Rnd * 100) > l02BE Then,unmeasured
+Module2.bas,1512,sub071B,2,If  (Rnd * 100) < 60 Then,unmeasured
+Module2.bas,1518,sub071B,3,l02AE = Int(Rnd * 100) + 1,unmeasured
+Module2.bas,1530,sub071B,4,l02B8 = (Rnd * gv1BEE),unmeasured
+Module2.bas,1560,sub071B,5,l02B0 = Rnd * 100,unmeasured
+Module2.bas,1574,sub071B,6,l02C2 = Int(Rnd * (mc02A0 + 1)),unmeasured
+Module2.bas,1593,sub071B,7,l02B8 = (Rnd * gv1BEE),unmeasured
+Module2.bas,1623,sub071B,8,l02B0 = Rnd * 100,unmeasured
+Module2.bas,1644,sub071B,9,l02C2 = Int(Rnd * (mc02A0 + 1)),unmeasured
+Module3.bas,124,sub08F5,1,l00B6 = Int(Rnd * (gv14C2(pv00A4).M5470 * 10.5#)) * Log(gv148E(gv14C2(pv00A4).M5821).M5565 + 2) + 5,unmeasured
+Module3.bas,515,sub0A1D,1,"If  fn0380(gc1D36, l016E) And (Rnd * 100) < (l016A) Then",unmeasured
+Module3.bas,526,sub0A1D,2,"If  fn0380(gc1D2E, l016E) And (Rnd * 100) < (l016A) Then",unmeasured
+Module3.bas,535,sub0A1D,3,"If  fn0380(gc1D30, l016E) And (Rnd * 100) < (l016A) Then",unmeasured
+Module3.bas,544,sub0A1D,4,"If  fn0380(gc1D32, l016E) And (Rnd * 100) < (l016A) Then",unmeasured
+Module3.bas,553,sub0A1D,5,"If  fn0380(gc1D40, l016E) And (Rnd * 100) < (l016A) Then",unmeasured
+Module3.bas,562,sub0A1D,6,"If  fn0380(gc1D2C, l016E) And (Rnd * 100) < (l016A) Then",unmeasured
+Module3.bas,571,sub0A1D,7,"If  fn0380(gc1D38, l016E) And (Rnd * 100) < (l016A) Then",unmeasured
+Module3.bas,580,sub0A1D,8,"If  fn0380(gc1D2A, l016E) And (Rnd * 100) < (l016A) Then",unmeasured
+Module3.bas,623,sub087C,1,If  (Int(Rnd * 100) + 1) > l0190 And p0188 <> gc1D32 Then,unmeasured
+Module3.bas,631,sub087C,2,If  (Int(Rnd * 100) + 1) <= (l0190 / 2) Or p0188 = gc1D32 Or p018A = True Then,unmeasured
+Module3.bas,650,sub087C,3,l018C = Int(Rnd * mc019A),unmeasured
+Module3.bas,1543,sub0835,1,"If  (Log(fn11D4(m00C0, mc0180, False)) * Log(fn11D4(m00C0, mc0180, False)) / 15) > Rnd * 100 Then",unmeasured
+Module3.bas,1550,sub0835,2,"If  (Log(fn11D4(m00C0, mc0180, False)) * Log(fn11D4(m00C0, mc0180, False)) / 20) > Rnd * 100 Then",unmeasured
+Module3.bas,1556,sub0835,3,"If  (Log(fn11D4(m00C0, mc0180, False)) * Log(fn11D4(m00C0, mc0180, False)) / 25) > Rnd * 100 Then",unmeasured
+Module3.bas,1593,sub0835,4,"If  Int(Rnd * 100) < (fn11D4(m00C0, mc0180, False) / 5) Then",unmeasured
+Module3.bas,1650,sub0835,5,"If  Int(Rnd * 100) < (fn11D4(m00C0, mc0180, False) / 5) Then",unmeasured
+Module3.bas,1675,sub0835,6,"If  Int(Rnd * 100) < (fn11D4(m00C0, mc0180, False) / 5) Then",unmeasured
+Module3.bas,1727,sub0835,7,gv14C2(m00C0).M5899 = Int(Rnd * mc00D8) + 1,unmeasured
+Module3.bas,1728,sub0835,8,"If  fn11D4(m00C0, mc0180, False) < (Rnd * 70) + (gv14C2(m00C0).M5470 * 2) Then",unmeasured
+Module3.bas,1751,sub0835,9,If  5 + (gv14C2(gv1A84).M5470 / 4) < (Rnd * 100) Then,unmeasured
+Module3.bas,1759,sub0835,10,l0270 = Int(Rnd * (((gv14C2(gv1A84).M5470 + 1) / 2) * 15.5#)) * Log(gv148E(gv14C2(gv1A84).M5821).M5565 + 2) + 1,unmeasured
+Module3.bas,1796,sub0835,11,gv14C2(gv1A84).M583F = Int(Rnd * gv1864.M4216) + 1,unmeasured
+Module3.bas,1797,sub0835,12,gv14C2(gv1A84).M5845 = Int(Rnd * gv1864.M420C) + 1,unmeasured
+Module3.bas,1843,sub0835,13,If  5 + (gv14C2(l0276).M5470 / 4) < (Rnd * 100) Then,unmeasured
+Module4.bas,195,fn0FF5,1,l00CE = Int(Rnd * mc00DC),unmeasured
+Module4.bas,227,fn0FF5,2,If  Int(Rnd * 100) < 10 Then,unmeasured
+Module4.bas,232,fn0FF5,3,If  Rnd * 100 < 50 Then,unmeasured
+Module4.bas,237,fn0FF5,4,l00CC = Int(Rnd * l00DA),unmeasured
+Module4.bas,396,sub1019,1,If  Int(Rnd * 100) < l010C Then,unmeasured
+Module4.bas,418,sub1019,2,If  Int(Rnd * 100) < l010C Then,unmeasured
+Module4.bas,536,fn0B6C,1,If  gv14F6(l0178).M4EBF = mc0180 And (Rnd * 100) < 75 Then l017A = True,unmeasured
+Module4.bas,537,fn0B6C,2,If  gv14F6(l0178).M4EBF = mc0182 And (Rnd * 100) < 15 Then l017A = True,unmeasured
+Module4.bas,626,sub0C00,1,If  Rnd * 200 < l019E Then,unmeasured
+Module4.bas,646,sub0C00,2,"If  Rnd * 200 < fn0D78(pv0190, l0192) Or gv14C2(pv0190).M58CB(l0192).M57E1 = 0 Then",unmeasured
+Module4.bas,879,sub0C8A,1,If  Int(Rnd * 100) < l01FE Then,unmeasured
+Module4.bas,1113,sub0C8A,2,l01FC = Int(Rnd * 100) + 1,unmeasured
+Module4.bas,1131,sub0C8A,3,l01FC = Int(Rnd * 100) + 1,unmeasured
+Module4.bas,1219,sub0C8A,4,If  (Int(Rnd * 100) + 1) > l0210 Then,unmeasured
+Module4.bas,1230,sub0C8A,5,If  Rnd * 100 > l0210 Then,unmeasured
+Module4.bas,1450,fn0D4D,1,If  (Rnd * 100) <= gc1DC8 Then,unmeasured
+Module4.bas,1465,fn0D4D,2,If  (Int(Rnd * 100) + 1) < 2 And m0264 = False Then,unmeasured
+Module4.bas,1466,fn0D4D,3,m025E = Int(Rnd * gv1BF2),unmeasured
+Module4.bas,1478,fn0D4D,4,m025E = Int(Rnd * gv1BF2),unmeasured
+Module4.bas,1482,fn0D4D,5,m026A = Int(Rnd * 100) + 1,unmeasured
+Module4.bas,1492,fn0D4D,6,If  Rnd * 75 < 50 Then,unmeasured
+Module4.bas,1535,fn0D4D,7,m025E = m02EE(CInt(Rnd * (UBound(m02EE) - 1))),unmeasured
+Module4.bas,1537,fn0D4D,8,m026A = Rnd * 101,unmeasured
+Module4.bas,1619,fn0D4D,9,m026A = Rnd * 100,unmeasured
+Module4.bas,1651,fn0D4D,10,m026A = Rnd * 99,unmeasured
+Module4.bas,1653,fn0D4D,11,m026A = Rnd * 99,unmeasured
+Module4.bas,1678,fn0D4D,12,m026A = Int(Rnd * 100) + 1,unmeasured
+Module4.bas,1682,fn0D4D,13,m026A = Int(Rnd * (mc0338 + 1)),unmeasured
+Module4.bas,1693,fn0D4D,14,m026A = Int(Rnd * 100) + 1,unmeasured
+Module4.bas,1700,fn0D4D,15,If  Int(Rnd * 100) < ((m0262 / (mc0186 * 2)) * 100) Then,unmeasured
+Module4.bas,1701,fn0D4D,16,m0262 = m0262 - Int(Rnd * ((gv14F6(m0294).M5A0E / 2) + 1)),unmeasured
+Module4.bas,1713,fn0D4D,17,If  Int(Rnd * 100) < 40 Then,unmeasured
+Module4.bas,1803,fn0D4D,18,m026A = Rnd * 99,unmeasured
+Module4.bas,1850,fn0D4D,19,gv1E38(m0286).M4EDC = gv1E38(m0286).M4EDC - CInt(Rnd * (gv14F6(m0284).M5A57 / 2)),unmeasured
+Module4.bas,1859,fn0D4D,20,m02A4 = ((m02A4 / 4) + (Rnd * (m02A4 / 2)) + (Rnd * (m02A4 / 2))) * (Log((gv14F6(m0284).M5693 + 1) / Log(2))),unmeasured
+Module4.bas,1859,fn0D4D,21,m02A4 = ((m02A4 / 4) + (Rnd * (m02A4 / 2)) + (Rnd * (m02A4 / 2))) * (Log((gv14F6(m0284).M5693 + 1) / Log(2))),unmeasured
+Module4.bas,1861,fn0D4D,22,m02A4 = Int(Rnd * 500) + 2,unmeasured
+Module4.bas,1867,fn0D4D,23,m026A = Int(Rnd * 2),unmeasured
+Module4.bas,1868,fn0D4D,24,m026E = Int(Rnd * (gv14F6(m0284).M4EAC * .5#) / 2) + 1,unmeasured
+Module4.bas,1892,fn0D4D,25,m026A = Int(Rnd * 100) + 1,unmeasured
+Module4.bas,1908,fn0D4D,26,m02AE = Rnd * (Log(gv14F6(gv1E38(m0286).M4ED4).M5693) + 2.5#),unmeasured
+Module4.bas,1911,fn0D4D,27,If  Int(Rnd * 100) + 1 < m027E Then,unmeasured
+Module4.bas,1916,fn0D4D,28,m02AC = Int(Rnd * (m02AE + 1.5#)),unmeasured
+Module4.bas,1947,fn0D4D,29,m026A = Int(Rnd * 3000) + 1,unmeasured
+Module4.bas,1958,fn0D4D,30,gv1E38(m0286).M4EF9 = Int(Rnd * m026A) + 1,unmeasured
+Module4.bas,1995,sub0D08,1,l0358 = Int(Rnd * 2),unmeasured
+Module4.bas,1996,sub0D08,2,l035A = Int(Rnd * (gv14F6(l0354).M4EAC * .5#) / 2) + 1,unmeasured
+Module4.bas,2024,fn0D64,1,If  (Rnd * 100) < l036C Then,unmeasured
+Module4.bas,2025,fn0D64,2,l0368 = CInt(Rnd * UBound(gv14C2)) + 1,unmeasured
+Module4.bas,2032,fn0D64,3,If  (Rnd * 100) < l036C Then,unmeasured
+Module4.bas,2033,fn0D64,4,l0368 = CInt(Rnd * UBound(gv14C2)) + 1,unmeasured
+Module4.bas,2040,fn0D64,5,If  (Rnd * 100) < l036C Then,unmeasured
+Module4.bas,2041,fn0D64,6,l0368 = CInt(Rnd * UBound(gv14C2)) + 1,unmeasured
+Module4.bas,2112,fn0DAB,1,If  (Rnd * 100) < (l0390 / (l0390 + 1) * 100) Then,unmeasured
+Module4.bas,2114,fn0DAB,2,l0394 = Int(Rnd * mc01A0),unmeasured
+Module4.bas,2248,fn0DEE,1,l03C8 = Int((Rnd * ((pv03BC + 10) / 2)) + ((pv03BC + 10) / 4)) / 10,unmeasured
+Module4.bas,2251,fn0DEE,2,l03CA = l03CA - (Int(Rnd * (l03CA + 1)) / 1) + 1,unmeasured
+Module4.bas,2252,fn0DEE,3,l03CC = Int(Rnd * 1000) + 1,unmeasured
+Module4.bas,2255,fn0DEE,4,l03CC = Int(Rnd * 100) + 1,unmeasured
+Module4.bas,2408,fn0E4A,1,l0410 = (Int(((Rnd * l040E) + 1) / 2) + (l040E / 4)) * .7#,unmeasured
+Module4.bas,2425,fn0E4A,2,l0410 = (Int(((Rnd * l040E) + 1) / 2) + (l040E / 2)) * .7#,unmeasured
+Module4.bas,2438,fn0E4A,3,l0410 = (Int(((Rnd * l040E) + 1) / 2) + (l040E / 2)) * .7#,unmeasured
+Module4.bas,2508,fn0E5F,1,l042E = Int(Rnd * (l0430 - ((l042A - 1) / l042A ^ 2)) / 2) + 1,unmeasured
+Module4.bas,2701,sub0E85,1,If  Int(Rnd * 100) < l046A Then,unmeasured
+Module4.bas,2704,sub0E85,2,l0460 = ((Int(((Rnd * l0468) + 1) / 2) + (l0468 / 4)) * .7#) / 2,unmeasured
+Module4.bas,2771,sub0E85,3,l0474 = Int(Rnd * (mc01A0 + 1)),unmeasured
+Module4.bas,2779,sub0E85,4,If  Int(Rnd * 100) < l046A Then,unmeasured
+Module4.bas,2782,sub0E85,5,l0460 = (Int(((Rnd * l0468) + 1) / 2) + (l0468 / 2)) * .7#,unmeasured
+Module4.bas,2878,sub0E85,6,If  (Int(Rnd * 100) + 1) < (100 / (l0472 + 1)) Then,unmeasured
+Module4.bas,2882,sub0E85,7,l0474 = Int(Rnd * mc01A0) + 1,unmeasured
+Module4.bas,2917,sub0E85,8,l0468 = Int(Rnd * 100) + 1,unmeasured
+Module4.bas,2928,sub0E85,9,l0468 = Int(Rnd * 100) + 1,unmeasured
+Module4.bas,3058,sub0E85,10,If  Int(Rnd * 100) < l046A Then,unmeasured
+Module4.bas,3061,sub0E85,11,l0460 = (Int(((Rnd * l0468) + 1) / 2) + (l0468 / 2)) * .7#,unmeasured
+Module4.bas,3112,sub0E85,12,If  (Int(Rnd * 100) + 1) > ((gv14C2(pv0442).M55B5(mc0248) + gv14C2(pv0442).M584B(mc0248)) * 2.5#) - ((gv14F6(gv1E38(l0456).M4ED4).M5693) * 2) Then,unmeasured
+Module4.bas,3120,sub0E85,13,l049E = Int(Rnd * (mc04A2 * 5)) + 1,unmeasured
+Module4.bas,3138,sub0E85,14,l0480 = Int(Rnd * CInt((gv14F6(gv1E38(l0456).M4ED4).M5693 / 2) + .5#)) + 1,unmeasured
+Module4.bas,3140,sub0E85,15,If  (Int(Rnd * 100) + 1) > gv14C2(pv0442).M5548(mc04A6) Then,unmeasured
+Module4.bas,3141,sub0E85,16,If  (Int(Rnd * 100) + 1) > ((gv14C2(pv0442).M55B5(mc0248) + gv14C2(pv0442).M584B(mc0248)) * 2.5#) - ((gv14F6(gv1E38(l0456).M4ED4).M5693) * 2) Then,unmeasured
+Module4.bas,3142,sub0E85,17,l04A8 = Int(Rnd * mc04AC + 1),unmeasured
+Module4.bas,3196,sub0E85,18,If  (Int(Rnd * 100) + 1) > l0480 Then,unmeasured
+Module4.bas,3203,sub0E85,19,l046E = Int(Rnd * 100) + 1,unmeasured
+Module4.bas,3241,sub0E85,20,l0468 = Int(Rnd * 100) + 1,unmeasured
+Module4.bas,3258,sub0E85,21,l0468 = Int(Rnd * 100) + 1,unmeasured
+Module4.bas,3280,sub0E85,22,If  (Int(Rnd * 100) + 1) > l0468 And gv14C2(pv0442).M56B9(mc0122) = 0 Then,unmeasured
+Module4.bas,3295,sub0E85,23,l0494 = Int(Rnd * (mc04D0 - 1)) + 1,unmeasured
+Module4.bas,3305,sub0E85,24,If  (Int(Rnd * 100) + 1) > l044C% Then,unmeasured
+Module4.bas,3324,sub0E85,25,l0468 = Int(Rnd * 100),unmeasured
+Module4.bas,3328,sub0E85,26,l0468 = l0468 + Int((Rnd * (gv141C.M5B9F * gv141C.M5B95)) + (gv141C.M5B9F / 2) * 1.5#),unmeasured
+Module4.bas,3332,sub0E85,27,l04DE = Int(Rnd * (((gv14C2(pv0442).M5470 + gv1E38(l0456).M4E97) * (3353.452# * l04DC)) / gv14C2(pv0442).M5584(gv14C2(pv0442).M58BB).M4E82)),unmeasured
+Module4.bas,3351,sub0E85,28,l0494 = Int(Rnd * (mc04D0 - 1)) + 2,unmeasured
+Module4.bas,3371,sub0E85,29,If  ((Int(Rnd * 100) + 1) > 30 And l04DE > 0) Or l0494 > -1 Then,unmeasured
+Module4.bas,3499,sub0F01,1,l0502 = Int(Rnd * 100) + 1,unmeasured
+Module4.bas,3515,sub0F01,2,If  (Rnd * 100) < (gv14C2(l0500).M5548(mc04BA) / 2) Then,unmeasured
+Module4.bas,3522,sub0F01,3,If  (Rnd * 100) < (gv14C2(l0500).M5548(mc04C2) / 2) Then,unmeasured
+Module4.bas,3529,sub0F01,4,l0502 = Int(Rnd * (gv14C2(l0500).M5470 * 4 * Log(gv14C2(l0500).M5470 + 2))) + 1,unmeasured
+Module4.bas,3535,sub0F01,5,l0502 = Int(Rnd * (gv14C2(l0500).M5470 * 6 * Log(gv14C2(l0500).M5470 + 2))) + 1,unmeasured
+Module4.bas,3541,sub0F01,6,l0502 = Int(Rnd * 100) + 1,unmeasured
+Module4.bas,3543,sub0F01,7,l0502 = Int(Rnd * (mc04D0 - 1)) + 1,unmeasured
+Module4.bas,3568,sub0F01,8,gv14C2(pv04F2).M583F = Int(Rnd * 30) + 1,unmeasured
+Module4.bas,3569,sub0F01,9,gv14C2(pv04F2).M5845 = Int(Rnd * 30) + 1,unmeasured
+Module4.bas,3657,sub0F01,10,l0502 = Int(Rnd * 100) + 1,unmeasured
+Module4.bas,3678,sub0F01,11,If  Rnd * 100 < gv14F6(l04FC).M5A4A(mc0330) Then,unmeasured
+Module4.bas,3703,sub0F01,12,l0504 = Int(Rnd * (mc058A)),unmeasured
+Module4.bas,3706,sub0F01,13,l0514 = Int(Rnd * gv1BEE),unmeasured
+Module4.bas,3765,sub0F01,14,l0502 = Rnd * 100,unmeasured
+Module4.bas,3783,sub0F01,15,l0526 = CInt(Rnd * UBound(gv14C2)),unmeasured
+Module4.bas,3804,sub0F01,16,l04FE = Int(Rnd * (mc0596 + 1)),unmeasured
+Module4.bas,3814,sub0F01,17,If  Int(Rnd * 2) = False Then,unmeasured
+Module4.bas,3815,sub0F01,18,gv14C2(l0526).M5857(l051A).M56DB = gv14C2(l0526).M5857(l051A).M56DB + Int(((Rnd * gv1426(l04FA).M56DB / 2))),unmeasured
+Module4.bas,3817,sub0F01,19,gv14C2(l0526).M5857(l051A).M56DB = gv14C2(l0526).M5857(l051A).M56DB - Int(((Rnd * gv1426(l04FA).M56DB / 2))),unmeasured
+Module4.bas,3858,sub0F01,20,l0502 = Int(Rnd * 100) + 1,unmeasured
+Module4.bas,4141,sub0BAA,1,l0638 = Int(Rnd * 100) + 1,unmeasured
+Module4.bas,4143,sub0BAA,2,l063A = Int(Rnd * (mc0338)),unmeasured
+Module6.bas,546,fn1173,1,l0124 = Int(Rnd * 100),unmeasured
+Module6.bas,667,fn1173,2,l015A = Int(Rnd * (l015E - ((l0160 - 1) / l0160 ^ 2)) / 2) + 1,unmeasured
+Module6.bas,781,fn1173,3,If  Int(Rnd * 100) > l018C Then,unmeasured
+Module6.bas,1665,fn11A1,1,If  (Int(Rnd * 100) < ((gv14C2(pv02E4).M5577 / mc0204) / (gv148E(gv14C2(pv02E4).M5821).M5577 / 2)) * 100) Or gv14C2(pv02E4).M5483 = mc01C8 Then,unmeasured
+Module6.bas,1927,sub0F29,1,l0332 = Int(Rnd * 3),unmeasured
+Module6.bas,1928,sub0F29,2,gv14C2(pv0330).M4EAC = Int(Rnd * gv14C2(pv0330).M4EB4) + 1,unmeasured
+Module6.bas,1929,sub0F29,3,gv14C2(pv0330).M5830 = Int(Rnd * fn1338(pv0330)) + 1,unmeasured
+Module6.bas,3112,sub0930,1,"If  Int(Rnd * 100) > fn13D7(-1, -1) Then",unmeasured
+Module6.bas,3131,sub0930,2,If  Rnd * 100 < (50 - gv14C2(pv04CC).M55B5(mc018E) * 2) Then,unmeasured
+Module6.bas,5945,fn10A3,1,If  Int(Rnd * 100) > gv14C2(pv0822).M58E9 Then,unmeasured
+Module6.bas,5960,fn10A3,2,If  Rnd * 100 < (50 - gv14C2(pv0822).M55B5(mc018E) * 2) Then,unmeasured
+Module7.bas,310,sub0A64,1,l0092 = Int(Rnd * 100) + 1,unmeasured
+Module7.bas,334,sub0A64,2,If  (Int(Rnd * 100) + 1) < l009E Then,unmeasured
+Module7.bas,347,sub0A64,3,l0092 = Int(Rnd * 100) + 1,unmeasured
+Module7.bas,577,sub155A,1,If  Int(Rnd * 100) + 1 < (l00EE - l00F0) Then,unmeasured
+Module9.bas,82,sub1A50,1,If  Int(Rnd * 100) <= 25 Then,unmeasured
+Module9.bas,88,sub1A50,2,sub063F Int(Rnd * (gc2094 - 1)) + 1,unmeasured

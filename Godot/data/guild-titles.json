@@ -1,0 +1,574 @@
+{
+  "0": [
+    {
+      "below": 10,
+      "title": "Vagrant"
+    },
+    {
+      "below": 20,
+      "title": "Drifter"
+    },
+    {
+      "below": 30,
+      "title": "Vagabond"
+    },
+    {
+      "below": 40,
+      "title": "Wanderer"
+    },
+    {
+      "below": 50,
+      "title": "Traveller"
+    },
+    {
+      "below": 60,
+      "title": "Wayfarer"
+    },
+    {
+      "below": 80,
+      "title": "Rover"
+    },
+    {
+      "below": 100,
+      "title": "Pioneer"
+    },
+    {
+      "below": 130,
+      "title": "Pilgrim"
+    },
+    {
+      "below": 150,
+      "title": "Journeyor"
+    },
+    {
+      "below": 190,
+      "title": "Voyager"
+    },
+    {
+      "below": 220,
+      "title": "Nomad"
+    },
+    {
+      "below": null,
+      "title": "Master Nomad"
+    }
+  ],
+  "1": [
+    {
+      "below": 10,
+      "title": "Bravo"
+    },
+    {
+      "below": 20,
+      "title": "Soldier"
+    },
+    {
+      "below": 30,
+      "title": "Fighter"
+    },
+    {
+      "below": 50,
+      "title": "Mercenary"
+    },
+    {
+      "below": 70,
+      "title": "Swordsman"
+    },
+    {
+      "below": 90,
+      "title": "Duelist"
+    },
+    {
+      "below": 120,
+      "title": "Gladiator"
+    },
+    {
+      "below": 140,
+      "title": "Combatant"
+    },
+    {
+      "below": 160,
+      "title": "Hero"
+    },
+    {
+      "below": 180,
+      "title": "Swashbuckler"
+    },
+    {
+      "below": 200,
+      "title": "Master Hero"
+    },
+    {
+      "below": 230,
+      "title": "Master Swordsman"
+    },
+    {
+      "below": null,
+      "title": "Warlord"
+    }
+  ],
+  "2": [
+    {
+      "below": 10,
+      "title": "Guard"
+    },
+    {
+      "below": 20,
+      "title": "Sentry"
+    },
+    {
+      "below": 50,
+      "title": "Defender"
+    },
+    {
+      "below": 80,
+      "title": "Protector"
+    },
+    {
+      "below": 100,
+      "title": "Sentinel"
+    },
+    {
+      "below": 120,
+      "title": "Guardian"
+    },
+    {
+      "below": 150,
+      "title": "Knight"
+    },
+    {
+      "below": 180,
+      "title": "Champion"
+    },
+    {
+      "below": 210,
+      "title": "Paladin"
+    },
+    {
+      "below": null,
+      "title": "Master of the Guard"
+    }
+  ],
+  "3": [
+    {
+      "below": 10,
+      "title": "Apprentice"
+    },
+    {
+      "below": 20,
+      "title": "Student"
+    },
+    {
+      "below": 40,
+      "title": "Mentor"
+    },
+    {
+      "below": 70,
+      "title": "Teacher"
+    },
+    {
+      "below": 90,
+      "title": "Instructor"
+    },
+    {
+      "below": 120,
+      "title": "Assassin"
+    },
+    {
+      "below": 120,
+      "title": "Ninja"
+    },
+    {
+      "below": 120,
+      "title": "Master Ninja"
+    },
+    {
+      "below": 150,
+      "title": "Shogun"
+    },
+    {
+      "below": 220,
+      "title": "Weapons Master"
+    },
+    {
+      "below": null,
+      "title": "Death Master"
+    }
+  ],
+  "4": [
+    {
+      "below": 10,
+      "title": "Rascal"
+    },
+    {
+      "below": 20,
+      "title": "Knave"
+    },
+    {
+      "below": 30,
+      "title": "Trickster"
+    },
+    {
+      "below": 40,
+      "title": "Scoundrel"
+    },
+    {
+      "below": 50,
+      "title": "Miscreant"
+    },
+    {
+      "below": 70,
+      "title": "Criminal"
+    },
+    {
+      "below": 90,
+      "title": "Ruffian"
+    },
+    {
+      "below": 120,
+      "title": "Convict"
+    },
+    {
+      "below": 150,
+      "title": "Murderer"
+    },
+    {
+      "below": 180,
+      "title": "Villain"
+    },
+    {
+      "below": 210,
+      "title": "Evil Being"
+    },
+    {
+      "below": null,
+      "title": "Master Villain"
+    }
+  ],
+  "5": [
+    {
+      "below": 10,
+      "title": "Apprentice"
+    },
+    {
+      "below": 20,
+      "title": "Journeyman"
+    },
+    {
+      "below": 30,
+      "title": "Guide"
+    },
+    {
+      "below": 40,
+      "title": "Searcher"
+    },
+    {
+      "below": 60,
+      "title": "Tracer"
+    },
+    {
+      "below": 80,
+      "title": "Hunter"
+    },
+    {
+      "below": 100,
+      "title": "Navigator"
+    },
+    {
+      "below": 120,
+      "title": "Explorer"
+    },
+    {
+      "below": 140,
+      "title": "Infiltrator"
+    },
+    {
+      "below": 160,
+      "title": "Adventurer"
+    },
+    {
+      "below": 180,
+      "title": "Delver"
+    },
+    {
+      "below": 200,
+      "title": "Questor"
+    },
+    {
+      "below": 230,
+      "title": "Seeker"
+    },
+    {
+      "below": null,
+      "title": "Master Seeker"
+    }
+  ],
+  "6": [
+    {
+      "below": 10,
+      "title": "Footpad"
+    },
+    {
+      "below": 20,
+      "title": "Sneak"
+    },
+    {
+      "below": 30,
+      "title": "Pickpocket"
+    },
+    {
+      "below": 40,
+      "title": "Trickster"
+    },
+    {
+      "below": 50,
+      "title": "Cutpurse"
+    },
+    {
+      "below": 60,
+      "title": "Robber"
+    },
+    {
+      "below": 80,
+      "title": "Swindler"
+    },
+    {
+      "below": 100,
+      "title": "Shyster"
+    },
+    {
+      "below": 120,
+      "title": "Convict"
+    },
+    {
+      "below": 140,
+      "title": "Criminal"
+    },
+    {
+      "below": 160,
+      "title": "Thief"
+    },
+    {
+      "below": 180,
+      "title": "Racketeer"
+    },
+    {
+      "below": 200,
+      "title": "Kingpin"
+    },
+    {
+      "below": 240,
+      "title": "Master Thief"
+    },
+    {
+      "below": null,
+      "title": "Master of Shadows"
+    }
+  ],
+  "7": [
+    {
+      "below": 10,
+      "title": "Rogue"
+    },
+    {
+      "below": 20,
+      "title": "Scrounger"
+    },
+    {
+      "below": 30,
+      "title": "Forager"
+    },
+    {
+      "below": 40,
+      "title": "Acquirer"
+    },
+    {
+      "below": 70,
+      "title": "Plunderer"
+    },
+    {
+      "below": 100,
+      "title": "Pillager"
+    },
+    {
+      "below": 140,
+      "title": "Ransacker"
+    },
+    {
+      "below": 180,
+      "title": "Marauder"
+    },
+    {
+      "below": 220,
+      "title": "Mugger"
+    },
+    {
+      "below": 285,
+      "title": "Scavenger"
+    },
+    {
+      "below": null,
+      "title": "Master Scavenger"
+    }
+  ],
+  "8": [
+    {
+      "below": 10,
+      "title": "Apprentice"
+    },
+    {
+      "below": 30,
+      "title": "Enchanter"
+    },
+    {
+      "below": 50,
+      "title": "Charmer"
+    },
+    {
+      "below": 80,
+      "title": "Conjuror"
+    },
+    {
+      "below": 120,
+      "title": "Illusionist"
+    },
+    {
+      "below": 150,
+      "title": "Magician"
+    },
+    {
+      "below": 180,
+      "title": "Mage"
+    },
+    {
+      "below": 230,
+      "title": "Spellbinder"
+    },
+    {
+      "below": 260,
+      "title": "Arch-Mage"
+    },
+    {
+      "below": null,
+      "title": "Master of Magic"
+    }
+  ],
+  "9": [
+    {
+      "below": 10,
+      "title": "Alchemist"
+    },
+    {
+      "below": 30,
+      "title": "Warlock"
+    },
+    {
+      "below": 50,
+      "title": "Sorcerer"
+    },
+    {
+      "below": 70,
+      "title": "Necromancer"
+    },
+    {
+      "below": 90,
+      "title": "Element Mage"
+    },
+    {
+      "below": 120,
+      "title": "Fire Master"
+    },
+    {
+      "below": 150,
+      "title": "Master of Electricity"
+    },
+    {
+      "below": 170,
+      "title": "Earth Shaker"
+    },
+    {
+      "below": 240,
+      "title": "Master Sorcerer"
+    },
+    {
+      "below": null,
+      "title": "Master of Elements"
+    }
+  ],
+  "10": [
+    {
+      "below": 10,
+      "title": "Prophet"
+    },
+    {
+      "below": 40,
+      "title": "Diviner"
+    },
+    {
+      "below": 70,
+      "title": "SoothSayer"
+    },
+    {
+      "below": 100,
+      "title": "Theurgist"
+    },
+    {
+      "below": 130,
+      "title": "Thaumaturgist"
+    },
+    {
+      "below": 160,
+      "title": "Wizard"
+    },
+    {
+      "below": 190,
+      "title": "Adept"
+    },
+    {
+      "below": 230,
+      "title": "Master Wizard"
+    },
+    {
+      "below": null,
+      "title": "Master Adept"
+    }
+  ],
+  "11": [
+    {
+      "below": 10,
+      "title": "Apprentice"
+    },
+    {
+      "below": 30,
+      "title": "Medic"
+    },
+    {
+      "below": 60,
+      "title": "Benefactor"
+    },
+    {
+      "below": 90,
+      "title": "Altruist"
+    },
+    {
+      "below": 120,
+      "title": "Healer"
+    },
+    {
+      "below": 150,
+      "title": "Shaman"
+    },
+    {
+      "below": 200,
+      "title": "Magus"
+    },
+    {
+      "below": 250,
+      "title": "Raiser of the Dead"
+    },
+    {
+      "below": null,
+      "title": "Master Healer"
+    }
+  ]
+}

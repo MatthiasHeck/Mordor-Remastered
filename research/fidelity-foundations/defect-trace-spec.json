@@ -1,0 +1,393 @@
+{
+  "status": "STATIC_DEFECT_TRACE_BUILT_RUNTIME_PENDING",
+  "data": {
+    "anomaly_count": 10,
+    "source_status": "static candidate anomalies retained without corrective implementation",
+    "interpretation": "Each anomaly is an explicit comparison question. No suspected defect is promoted to a rule until original-runtime evidence separates legacy behavior from decompiler damage."
+  },
+  "anomalies": [
+    {
+      "id": "DEF-DISEASE-SEVERITY",
+      "claim": "disease damage formula subtracts the poison severity field",
+      "evidence": "FRMDUNM.bas:535",
+      "classification": "possible legacy defect or decompiler damage",
+      "runtime_discriminator": "set poison and disease severities independently and compare disease recovery/damage"
+    },
+    {
+      "id": "DEF-AGE-98-LOG",
+      "claim": "natural-death branch evaluates Log(relative_age_percent - 98) at the >=98 boundary",
+      "evidence": "FRMDUNM.bas:590",
+      "classification": "possible undefined-boundary defect or decompiler damage",
+      "runtime_discriminator": "exercise exact 98, just above 98 and error-handler state"
+    },
+    {
+      "id": "DEF-TIMER-HELP",
+      "claim": "dungeon timer source candidate is 1000 ms while later help describes two seconds",
+      "evidence": "Module3.bas:732; FRMDUNM.bas:612",
+      "classification": "source/help discrepancy",
+      "runtime_discriminator": "timestamp timer callbacks and effective attack cadence"
+    },
+    {
+      "id": "DEF-RAISE-ROUND",
+      "claim": "raise quote conversion differs between Long-returning function and explicit Int caller",
+      "evidence": "Module6.bas:2736; Module6.bas:3032",
+      "classification": "possible rounding defect or intentional caller policy",
+      "runtime_discriminator": "choose HP values that produce fractional quotes and compare both paths"
+    },
+    {
+      "id": "DEF-RAISE-GT",
+      "claim": "raise failure uses strict greater-than against Int(Rnd * 100)",
+      "evidence": "Module6.bas:5926",
+      "classification": "boundary probability discrepancy",
+      "runtime_discriminator": "capture draws 0, threshold, threshold+1 and 99"
+    },
+    {
+      "id": "DEF-RECOVERY-CHAIN",
+      "claim": "complication recovery can add 5475 days and reduce stats/HP before ordinary recovery continues",
+      "evidence": "Module6.bas:1655",
+      "classification": "possible legacy penalty or decompiler damage",
+      "runtime_discriminator": "capture call order and cumulative state across failure/complication"
+    },
+    {
+      "id": "DEF-SUBSIDY-GUILD",
+      "claim": "novice subsidy depends on highest guild level rather than active guild",
+      "evidence": "Module6.bas:2639; Module6.bas:3032",
+      "classification": "non-obvious rule requiring verification",
+      "runtime_discriminator": "switch active guild while preserving a higher inactive guild"
+    },
+    {
+      "id": "DEF-STORE-UNINIT",
+      "claim": "buy quote uses generated variable l0202 before an evident assignment",
+      "evidence": "FRMCTYS.bas:583",
+      "classification": "likely decompiler damage candidate",
+      "runtime_discriminator": "trace native value and compare quote across stock/value states"
+    },
+    {
+      "id": "DEF-BIND-CAP",
+      "claim": "binding quote factor switches when abs(binding)+4 exceeds cap",
+      "evidence": "FRMCITYC.bas:602",
+      "classification": "discontinuous legacy formula candidate",
+      "runtime_discriminator": "quote levels around 8/9/12 with identical companion fields"
+    },
+    {
+      "id": "DEF-AGE-ROUND",
+      "claim": "rest-day expression is assigned to Integer before age/world updates",
+      "evidence": "Module6.bas:329",
+      "classification": "rounding behavior requiring VB runtime comparison",
+      "runtime_discriminator": "partial HP values around fractional day boundaries"
+    }
+  ],
+  "source_procedures": [
+    {
+      "file": "FRMDUNM.bas",
+      "procedure": "timAilment_Timer",
+      "role": "ailment_and_age_anomalies",
+      "start_line": 391,
+      "end_line": 610,
+      "signature": "Sub timAilment_Timer ()",
+      "summary": "contains separate poison/disease formulas, natural-death boundary math and timer guards",
+      "evidence": "original-export/code/source/FRMDUNM.bas:391"
+    },
+    {
+      "file": "Module3.bas",
+      "procedure": "sub0A49",
+      "role": "combat_timer_candidate",
+      "start_line": 732,
+      "end_line": 736,
+      "signature": "Sub sub0A49 ()",
+      "summary": "sets the dungeon timer interval that conflicts with later help text",
+      "evidence": "original-export/code/source/Module3.bas:732"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "fn13C0",
+      "role": "raise_rounding_anomaly",
+      "start_line": 2736,
+      "end_line": 2750,
+      "signature": "Function fn13C0 (p0458 As Integer ' 41) As Variant ' 6",
+      "summary": "returns a Long quote while a caller applies explicit Int conversion",
+      "evidence": "original-export/code/source/Module6.bas:2736"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "fn13D7",
+      "role": "raise_method_anomaly",
+      "start_line": 2752,
+      "end_line": 2804,
+      "signature": "Function fn13D7 (p0464 As Integer ' 41, p0466 As Integer ' 41) As Integer ' 1",
+      "summary": "uses method-dependent threshold terms with Rock and clamp branches",
+      "evidence": "original-export/code/source/Module6.bas:2752"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "sub0A7C",
+      "role": "pending_recovery_anomaly",
+      "start_line": 6044,
+      "end_line": 6072,
+      "signature": "Sub sub0A7C (p0844 As Integer ' 41, p0846 As Integer ' 41, p0848 As Integer ' 41)",
+      "summary": "stores a pending raise without immediate fatal-state clearing",
+      "evidence": "original-export/code/source/Module6.bas:6044"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "fn10A3",
+      "role": "raise_probability_anomaly",
+      "start_line": 5926,
+      "end_line": 5983,
+      "signature": "Function fn10A3 (ByVal pv0822 As Integer ' 81) As Integer ' 1",
+      "summary": "compares Int(Rnd * 100) using a strict greater-than failure test",
+      "evidence": "original-export/code/source/Module6.bas:5926"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "fn11A1",
+      "role": "complication_anomaly",
+      "start_line": 1655,
+      "end_line": 1701,
+      "signature": "Function fn11A1 (ByVal pv02E4 As Integer ' 81) As Integer ' 1",
+      "summary": "can apply large age/stat/HP losses while returning a recoverable result",
+      "evidence": "original-export/code/source/Module6.bas:1655"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "sub0930",
+      "role": "subsidy_anomaly",
+      "start_line": 3032,
+      "end_line": 3150,
+      "signature": "Sub sub0930 (ByVal pv04CC As Integer ' 81)",
+      "summary": "uses highest-guild selection and method-specific recovery branches",
+      "evidence": "original-export/code/source/Module6.bas:3032"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "sub0EAE",
+      "role": "age_rounding_anomaly",
+      "start_line": 322,
+      "end_line": 391,
+      "signature": "Sub sub0EAE (p00C0 As Integer ' 41, p00C2 As Integer ' 41, ByVal pv00C4 As Integer ' 81, p00C6 As Integer ' 41)",
+      "summary": "uses Integer conversion of a 3.25 rest-day expression",
+      "evidence": "original-export/code/source/Module6.bas:322"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "procedure": "fn272C",
+      "role": "store_formula_anomaly",
+      "start_line": 583,
+      "end_line": 610,
+      "signature": "Function fn272C (p01FE As Integer ' 41, p0200 As Integer ' 41) As Long ' 2",
+      "summary": "contains an unresolved generated-variable reference in a candidate price formula",
+      "evidence": "original-export/code/source/FRMCTYS.bas:583"
+    },
+    {
+      "file": "FRMCITYC.bas",
+      "procedure": "fn33B9",
+      "role": "binding_price_anomaly",
+      "start_line": 602,
+      "end_line": 614,
+      "signature": "Function fn33B9 (p0202 As Integer ' 41) As Currency ' 5",
+      "summary": "changes the binding fee factor at the cap boundary",
+      "evidence": "original-export/code/source/FRMCITYC.bas:602"
+    }
+  ],
+  "source_events": [
+    {
+      "file": "FRMDUNM.bas",
+      "line": 391,
+      "procedure": "timAilment_Timer",
+      "event": "ailment_guard",
+      "expression": "reentrancy and minimize guards return before state mutation",
+      "source_text": "Sub timAilment_Timer ()"
+    },
+    {
+      "file": "FRMDUNM.bas",
+      "line": 443,
+      "procedure": "timAilment_Timer",
+      "event": "identification_rng",
+      "expression": "monster identification uses an independent Rnd branch",
+      "source_text": "sub086D mc014C + Int(Rnd * 3)"
+    },
+    {
+      "file": "FRMDUNM.bas",
+      "line": 535,
+      "procedure": "timAilment_Timer",
+      "event": "disease_formula",
+      "expression": "disease branch subtracts the displayed poison-severity field",
+      "source_text": "sub08A9 True, 12"
+    },
+    {
+      "file": "FRMDUNM.bas",
+      "line": 590,
+      "procedure": "timAilment_Timer",
+      "event": "natural_age_boundary",
+      "expression": "natural-death branch evaluates the age percentage/log expression",
+      "source_text": "End If"
+    },
+    {
+      "file": "Module3.bas",
+      "line": 732,
+      "procedure": "sub0A49",
+      "event": "timer_interval",
+      "expression": "dungeon timer interval candidate is assigned",
+      "source_text": "Sub sub0A49 ()"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 2736,
+      "procedure": "fn13C0",
+      "event": "raise_quote_return",
+      "expression": "raise quote is returned through a Variant/Long path",
+      "source_text": "Function fn13C0 (p0458 As Integer ' 41) As Variant ' 6"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 2752,
+      "procedure": "fn13D7",
+      "event": "raise_threshold",
+      "expression": "CON and method produce a clamped threshold",
+      "source_text": "Function fn13D7 (p0464 As Integer ' 41, p0466 As Integer ' 41) As Integer ' 1"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 3032,
+      "procedure": "sub0930",
+      "event": "raise_int_conversion",
+      "expression": "self-service caller applies explicit Int conversion",
+      "source_text": "Sub sub0930 (ByVal pv04CC As Integer ' 81)"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 5926,
+      "procedure": "fn10A3",
+      "event": "raise_strict_gt",
+      "expression": "failure branch uses strict greater-than comparison",
+      "source_text": "Function fn10A3 (ByVal pv0822 As Integer ' 81) As Integer ' 1"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 1655,
+      "procedure": "fn11A1",
+      "event": "complication_mutation",
+      "expression": "complication branch mutates stats, HP and age",
+      "source_text": "Function fn11A1 (ByVal pv02E4 As Integer ' 81) As Integer ' 1"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 2639,
+      "procedure": "fn131D",
+      "event": "highest_guild_selection",
+      "expression": "highest guild level is selected for subsidy logic",
+      "source_text": "Function fn131D (ByVal pv041C As Integer ' 81) As Integer ' 1"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 329,
+      "procedure": "sub0EAE",
+      "event": "age_integer_conversion",
+      "expression": "derived rest days are assigned to Integer",
+      "source_text": "' Const m00DC = 0 ' &H0%"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "line": 583,
+      "procedure": "fn272C",
+      "event": "store_uninitialized_reference",
+      "expression": "candidate quote expression references generated local state",
+      "source_text": "Function fn272C (p01FE As Integer ' 41, p0200 As Integer ' 41) As Long ' 2"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "line": 602,
+      "procedure": "fn33B9",
+      "event": "binding_factor_switch",
+      "expression": "cap boundary selects a different fee factor",
+      "source_text": "l020E = Log(Abs(l020C - gv1426(l0202).M56DB) + 1)"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 6044,
+      "procedure": "sub0A7C",
+      "event": "pending_without_revival",
+      "expression": "pending fields are written without clearing fatal state",
+      "source_text": "Sub sub0A7C (p0844 As Integer ' 41, p0846 As Integer ' 41, p0848 As Integer ' 41)"
+    }
+  ],
+  "source_event_count": 15,
+  "runtime_cases": [
+    {
+      "id": "DISEASE-SEVERITY",
+      "setup": "poison and disease severities varied independently",
+      "trace_focus": "formula field selection, HP loss, cure threshold and RNG order",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "AGE-98",
+      "setup": "relative age exactly 98, 98+epsilon and 99",
+      "trace_focus": "log handling, death roll and error state",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "TIMER-HELP",
+      "setup": "idle/active dungeon with timer and command actions",
+      "trace_focus": "callback interval versus effective attack cadence",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "RAISE-ROUNDING",
+      "setup": "fractional raise quotes at Long/Int boundaries",
+      "trace_focus": "displayed cost, debited cost and path difference",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "RAISE-BOUNDARY",
+      "setup": "draws 0, threshold, threshold+1 and 99",
+      "trace_focus": "strict comparison and acceptance result",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "RECOVERY-COMPLICATION",
+      "setup": "aged and Rock characters through failed recovery",
+      "trace_focus": "stat/HP/age mutation and follow-on recovery",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "SUBSIDY-GUILD",
+      "setup": "highest inactive guild above/below level five",
+      "trace_focus": "subsidy eligibility and payment",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "STORE-UNINIT",
+      "setup": "stock/value matrix for buy quote",
+      "trace_focus": "native local value and quote stability",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "BIND-CAP",
+      "setup": "binding levels around fee discontinuity",
+      "trace_focus": "price factor and cap semantics",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "AGE-ROUNDING",
+      "setup": "partial HP values around fractional rest days",
+      "trace_focus": "Integer conversion and world update days",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    }
+  ],
+  "runtime_case_count": 10,
+  "runtime_requirements": [
+    "run the exact original executable with controlled boundary records and seeded/randomized repetitions",
+    "capture raw inputs, native outputs, error-handler state, messages and persistent mutations",
+    "classify each result as legacy behavior, decompiler damage or unresolved after repeated comparison"
+  ]
+}

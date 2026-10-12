@@ -1,0 +1,281 @@
+{
+  "status": "STATIC_COMBAT_TRACE_BUILT_RUNTIME_PENDING",
+  "helper": {
+    "file": "Module4.bas",
+    "procedure": "fn0DEE",
+    "source_start": 2212,
+    "source_end": 2258,
+    "random_draw_count": 4,
+    "events": [
+      {
+        "line": 2222,
+        "expression": "l03C0 = .5#"
+      },
+      {
+        "line": 2225,
+        "expression": "l03C0 = .5# + .5# * (p03B6 - p03B8) / p03B6"
+      },
+      {
+        "line": 2228,
+        "expression": "l03C0 = .5# + .5# * p03B6"
+      },
+      {
+        "line": 2230,
+        "expression": "l03C0 = .5# - .5# * (p03B8 - p03B6) / p03B8"
+      },
+      {
+        "line": 2234,
+        "expression": "l03C0 = l03C0 * 100"
+      },
+      {
+        "line": 2235,
+        "expression": "If  l03C0 > 98 Then l03C0 = 98"
+      },
+      {
+        "line": 2236,
+        "expression": "If  l03C0 < 2 Then l03C0 = 2"
+      },
+      {
+        "line": 2238,
+        "expression": "pv03BE = .1#"
+      },
+      {
+        "line": 2240,
+        "expression": "If  pv03BC < 1 Then pv03BC = 1"
+      },
+      {
+        "line": 2241,
+        "expression": "pv03BC = CInt(pv03BC - (Log(pv03BC) * ((Log(pv03BC) - 2.4#) * 2.25#))) + 1"
+      },
+      {
+        "line": 2243,
+        "expression": "pv03BE = pv03BE - (Log(pv03BE) * Log(pv03BE))"
+      },
+      {
+        "line": 2246,
+        "expression": "l03C4 = (Log(p03BA + 5) + 1) / Log(1.2#)"
+      },
+      {
+        "line": 2248,
+        "expression": "l03C8 = Int((Rnd * ((pv03BC + 10) / 2)) + ((pv03BC + 10) / 4)) / 10"
+      },
+      {
+        "line": 2249,
+        "expression": "l03CE = Int((l03C4 * l03C6 * l03C8) * pv03BE)"
+      },
+      {
+        "line": 2250,
+        "expression": "l03CA = Int(((p03B8 - p03B6) / 2) / 4)"
+      },
+      {
+        "line": 2251,
+        "expression": "l03CA = l03CA - (Int(Rnd * (l03CA + 1)) / 1) + 1"
+      },
+      {
+        "line": 2252,
+        "expression": "l03CC = Int(Rnd * 1000) + 1"
+      },
+      {
+        "line": 2253,
+        "expression": "If  l03CC > 1 Then l03CE = l03CE - l03CA"
+      },
+      {
+        "line": 2254,
+        "expression": "If  l03CE < 1 Then l03CE = 0"
+      },
+      {
+        "line": 2255,
+        "expression": "l03CC = Int(Rnd * 100) + 1"
+      },
+      {
+        "line": 2256,
+        "expression": "If  l03CC >= l03C0 Then l03CE = 0"
+      }
+    ]
+  },
+  "fn0DEE_callers": [
+    {
+      "file": "Module4.bas",
+      "line": 433,
+      "procedure": "sub1019",
+      "arguments": [
+        "l0116",
+        "l011C",
+        "l011E",
+        "l011A",
+        "l0120"
+      ],
+      "argument_count": 5,
+      "post_call_markers": [
+        "miss_gate",
+        "damage_debit",
+        "hp_or_damage_state"
+      ],
+      "post_call_source_window": "                    l010A = gv1E38(gv1E66(pv00F4).M547A).M4EAC\n                    If  l0102 < 1 Then\n                        l0108 = \"You missed!\"\n                        l0104 = l0100\n                    Else\n                        If  (gv1A66.M5F48 = True And pv00F4 = gv1A86) Or gv1A66.M5F48 = False Then\n                            If  fn0380(mc0150, l0112) = True And fn0380(mc014A, l0112) = True Then\n                                sub09DE mc0160\n                                ElseIf fn0380(mc0150, l0112) = True Then\n                                sub09DE mc0162\n                                ElseIf fn0380(mc014A, l0112) = True Then\n                                sub09DE mc0164\n                            End If\n                            sub09DE mc0166\n                        End If\n                        gv1E38(gv1E66(pv00F4).M547A).M4EAC = gv1E38(gv1E66(pv00F4).M547A).M4EAC - l0102\n                        If  gv1E38(gv1E66(pv00F4).M547A).M4EAC < False Then\n                            gv1E38(gv1E66(pv00F4).M547A).M4EAC = False",
+      "expected_result": "unmeasured",
+      "status": "static_caller_trace_runtime_pending"
+    },
+    {
+      "file": "Module4.bas",
+      "line": 1152,
+      "procedure": "sub0C8A",
+      "arguments": [
+        "l0218",
+        "l021A",
+        "l0220",
+        "l021C",
+        "l0222"
+      ],
+      "argument_count": 5,
+      "post_call_markers": [
+        "miss_gate",
+        "hp_or_damage_state"
+      ],
+      "post_call_source_window": "                    If  l0214 = -1 Then\n                        l01FA = gv1E38(gv1E66(pv01E4).M547A).M4EAC\n                    Else\n                        If  l0216 = -1 Then\n                            l01FA = gv14C2(l0214).M4EAC\n                        Else\n                            l01FA = gv14C2(l0214).M58CB(l0216).M4EAC\n                        End If\n                    End If\n                    If  l01F0 < 1 Then\n                        l01F2 = l01EE\n                    Else\n                        If  l0214 = -1 Then\n                            gv1E38(gv1E66(pv01E4).M547A).M4EAC = gv1E38(gv1E66(pv01E4).M547A).M4EAC - l01F0\n                            If  gv1E38(gv1E66(pv01E4).M547A).M4EAC < False Then gv1E38(gv1E66(pv01E4).M547A).M4EAC = False\n                            sub0CDF pv01E4, l01FA - gv1E38(gv1E66(pv01E4).M547A).M4EAC, gv1E38(gv1E66(pv01E4).M547A).M4ED4, gc1D70\n                            If  gv1E38(gv1E66(pv01E4).M547A).M4EAC <= 0 Then\n                                If  (gv1A66.M5F48 = True And pv01E4 = gv1A86) Or gv1A66.M5F48 = False Then",
+      "expected_result": "unmeasured",
+      "status": "static_caller_trace_runtime_pending"
+    },
+    {
+      "file": "Module4.bas",
+      "line": 2946,
+      "procedure": "sub0E85",
+      "arguments": [
+        "l048A",
+        "l048C",
+        "l0490",
+        "l048E",
+        "l0492"
+      ],
+      "argument_count": 5,
+      "post_call_markers": [
+        "miss_gate",
+        "damage_debit",
+        "hit_or_swing_gate",
+        "hp_or_damage_state"
+      ],
+      "post_call_source_window": "                l0462 = False\n                If  l0474 = m044E Then\n                    l0470 = True\n                    If  l0460 > False Then\n                        l045E = l045E + 1\n                    End If\n                End If\n                If  l0460 > 0 Then\n                    l0462 = True\n                    l0450(l0474) = l0450(l0474) + l0460\n                    If  l0474 = m044E Then\n                    Else\n                        gv14C2(pv0442).M58CB(l0474 - 1).M4EAC = gv14C2(pv0442).M58CB(l0474 - 1).M4EAC - l0460\n                        If  gv14C2(pv0442).M58CB(l0474 - 1).M4EAC < 1 Then\n                            If  (gv1A66.M5F48 = True And pv0442 = gv1A86) Or gv1A66.M5F48 = False Then\n                                extsub05E7\n                                sub0CB7 gv14C2(pv0442).M58CB(l0474 - 1).M4ED4\n                            End If",
+      "expected_result": "unmeasured",
+      "status": "static_caller_trace_runtime_pending"
+    }
+  ],
+  "fixtures": [
+    {
+      "id": "COMBAT-ZERO-EQUAL",
+      "arguments": [
+        0,
+        0,
+        0,
+        1,
+        1.0
+      ],
+      "purpose": "Exercise equal-zero hit chance branch and minimum clamps.",
+      "expected_result": null,
+      "status": "planned_not_executed",
+      "random_draw_count": 4
+    },
+    {
+      "id": "COMBAT-ATTACK-GREATER",
+      "arguments": [
+        100,
+        50,
+        1,
+        20,
+        1.0
+      ],
+      "purpose": "Exercise attacker advantage branch.",
+      "expected_result": null,
+      "status": "planned_not_executed",
+      "random_draw_count": 4
+    },
+    {
+      "id": "COMBAT-DEFENSE-GREATER",
+      "arguments": [
+        50,
+        100,
+        1,
+        20,
+        1.0
+      ],
+      "purpose": "Exercise defender advantage branch.",
+      "expected_result": null,
+      "status": "planned_not_executed",
+      "random_draw_count": 4
+    },
+    {
+      "id": "COMBAT-ZERO-DEFENSE",
+      "arguments": [
+        50,
+        0,
+        1,
+        20,
+        1.0
+      ],
+      "purpose": "Exercise the zero-defense sub-branch.",
+      "expected_result": null,
+      "status": "planned_not_executed",
+      "random_draw_count": 4
+    },
+    {
+      "id": "COMBAT-LOW-MULTIPLIER",
+      "arguments": [
+        50,
+        50,
+        1,
+        20,
+        0.0
+      ],
+      "purpose": "Verify pv03BE <= 0 is replaced by .1# before damage.",
+      "expected_result": null,
+      "status": "planned_not_executed",
+      "random_draw_count": 4
+    },
+    {
+      "id": "COMBAT-LOW-POWER",
+      "arguments": [
+        50,
+        50,
+        1,
+        0,
+        1.0
+      ],
+      "purpose": "Verify pv03BC < 1 is replaced by 1 before CInt.",
+      "expected_result": null,
+      "status": "planned_not_executed",
+      "random_draw_count": 4
+    },
+    {
+      "id": "COMBAT-HIT-CLAMP-LOW",
+      "arguments": [
+        -100,
+        100,
+        1,
+        20,
+        1.0
+      ],
+      "purpose": "Verify the lower 2-percent hit-probability clamp.",
+      "expected_result": null,
+      "status": "planned_not_executed",
+      "random_draw_count": 4
+    },
+    {
+      "id": "COMBAT-HIT-CLAMP-HIGH",
+      "arguments": [
+        100,
+        -100,
+        1,
+        20,
+        1.0
+      ],
+      "purpose": "Verify the upper 98-percent hit-probability clamp.",
+      "expected_result": null,
+      "status": "planned_not_executed",
+      "random_draw_count": 4
+    }
+  ],
+  "runtime_requirements": [
+    "capture all five typed arguments at each caller",
+    "capture the four Rnd outputs in fn0DEE order",
+    "capture CInt and Int intermediates and any error path",
+    "capture hit/miss, damage debit, swing and special-effect branches"
+  ]
+}

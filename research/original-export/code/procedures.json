@@ -1,0 +1,8217 @@
+[
+  {
+    "file": "CHARCREA.bas",
+    "name": "cmbAlignment_Click",
+    "kind": "Sub",
+    "start_line": 42,
+    "signature": "Sub cmbAlignment_Click ()",
+    "end_line": 45,
+    "referenced_generated_symbols": [
+      "sub1EBA"
+    ]
+  },
+  {
+    "file": "CHARCREA.bas",
+    "name": "cmbRace_Click",
+    "kind": "Sub",
+    "start_line": 47,
+    "signature": "Sub cmbRace_Click ()",
+    "end_line": 83,
+    "referenced_generated_symbols": [
+      "fn0380",
+      "sub1EBA"
+    ]
+  },
+  {
+    "file": "CHARCREA.bas",
+    "name": "cmdAdd_Click",
+    "kind": "Sub",
+    "start_line": 85,
+    "signature": "Sub cmdAdd_Click (Index%)",
+    "end_line": 94,
+    "referenced_generated_symbols": [
+      "sub1EBA"
+    ]
+  },
+  {
+    "file": "CHARCREA.bas",
+    "name": "cmdExit_Click",
+    "kind": "Sub",
+    "start_line": 96,
+    "signature": "Sub cmdExit_Click ()",
+    "end_line": 99,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "CHARCREA.bas",
+    "name": "cmdHelp_Click",
+    "kind": "Sub",
+    "start_line": 101,
+    "signature": "Sub cmdHelp_Click (Index%)",
+    "end_line": 116,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "CHARCREA.bas",
+    "name": "cmdSave_Click",
+    "kind": "Sub",
+    "start_line": 118,
+    "signature": "Sub cmdSave_Click ()",
+    "end_line": 183,
+    "referenced_generated_symbols": [
+      "fn04B9",
+      "fn04ED",
+      "fn16A0",
+      "sub096E",
+      "sub1043",
+      "sub1F1F"
+    ]
+  },
+  {
+    "file": "CHARCREA.bas",
+    "name": "cmdSubtract_Click",
+    "kind": "Sub",
+    "start_line": 185,
+    "signature": "Sub cmdSubtract_Click (Index%)",
+    "end_line": 192,
+    "referenced_generated_symbols": [
+      "sub1EBA"
+    ]
+  },
+  {
+    "file": "CHARCREA.bas",
+    "name": "cmdTutorial_Click",
+    "kind": "Sub",
+    "start_line": 194,
+    "signature": "Sub cmdTutorial_Click ()",
+    "end_line": 202,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "CHARCREA.bas",
+    "name": "sub1F1F",
+    "kind": "Sub",
+    "start_line": 204,
+    "signature": "Sub sub1F1F ()",
+    "end_line": 259,
+    "referenced_generated_symbols": [
+      "fn1338",
+      "fn1397",
+      "sub047C",
+      "sub0578",
+      "sub1F5B"
+    ]
+  },
+  {
+    "file": "CHARCREA.bas",
+    "name": "Form_Load",
+    "kind": "Sub",
+    "start_line": 261,
+    "signature": "Sub Form_Load ()",
+    "end_line": 272,
+    "referenced_generated_symbols": [
+      "sub02FE",
+      "sub07ED",
+      "sub1F7D"
+    ]
+  },
+  {
+    "file": "CHARCREA.bas",
+    "name": "Form_Paint",
+    "kind": "Sub",
+    "start_line": 274,
+    "signature": "Sub Form_Paint ()",
+    "end_line": 275,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "CHARCREA.bas",
+    "name": "sub1F5B",
+    "kind": "Sub",
+    "start_line": 277,
+    "signature": "Sub sub1F5B ()",
+    "end_line": 340,
+    "referenced_generated_symbols": [
+      "sub14B4"
+    ]
+  },
+  {
+    "file": "CHARCREA.bas",
+    "name": "sub1EBA",
+    "kind": "Sub",
+    "start_line": 342,
+    "signature": "Sub sub1EBA ()",
+    "end_line": 379,
+    "referenced_generated_symbols": [
+      "fn0380",
+      "fn115C"
+    ]
+  },
+  {
+    "file": "CHARCREA.bas",
+    "name": "sub1F7D",
+    "kind": "Sub",
+    "start_line": 381,
+    "signature": "Sub sub1F7D ()",
+    "end_line": 405,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "CHARCREA.bas",
+    "name": "txtName_KeyDown",
+    "kind": "Sub",
+    "start_line": 407,
+    "signature": "Sub txtName_KeyDown (KeyCode As Integer, Shift As Integer)",
+    "end_line": 414,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "CHARCREA.bas",
+    "name": "txtName_KeyPress",
+    "kind": "Sub",
+    "start_line": 416,
+    "signature": "Sub txtName_KeyPress (KeyAscii As Integer)",
+    "end_line": 423,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMABOUT.bas",
+    "name": "cmdCredits_Click",
+    "kind": "Sub",
+    "start_line": 6,
+    "signature": "Sub cmdCredits_Click ()",
+    "end_line": 8,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMABOUT.bas",
+    "name": "cmdInfo_Click",
+    "kind": "Sub",
+    "start_line": 10,
+    "signature": "Sub cmdInfo_Click ()",
+    "end_line": 12,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMABOUT.bas",
+    "name": "cmdOK_Click",
+    "kind": "Sub",
+    "start_line": 14,
+    "signature": "Sub cmdOK_Click ()",
+    "end_line": 16,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMABOUT.bas",
+    "name": "Form_Load",
+    "kind": "Sub",
+    "start_line": 18,
+    "signature": "Sub Form_Load ()",
+    "end_line": 22,
+    "referenced_generated_symbols": [
+      "sub07ED"
+    ]
+  },
+  {
+    "file": "FRMAUTOM.bas",
+    "name": "Form_Activate",
+    "kind": "Sub",
+    "start_line": 43,
+    "signature": "Sub Form_Activate ()",
+    "end_line": 45,
+    "referenced_generated_symbols": [
+      "sub1EBA"
+    ]
+  },
+  {
+    "file": "FRMAUTOM.bas",
+    "name": "Form_DblClick",
+    "kind": "Sub",
+    "start_line": 47,
+    "signature": "Sub Form_DblClick ()",
+    "end_line": 49,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMAUTOM.bas",
+    "name": "Form_KeyDown",
+    "kind": "Sub",
+    "start_line": 51,
+    "signature": "Sub Form_KeyDown (KeyCode As Integer, Shift As Integer)",
+    "end_line": 68,
+    "referenced_generated_symbols": [
+      "fn14CB",
+      "sub0456"
+    ]
+  },
+  {
+    "file": "FRMAUTOM.bas",
+    "name": "Form_Load",
+    "kind": "Sub",
+    "start_line": 70,
+    "signature": "Sub Form_Load ()",
+    "end_line": 145,
+    "referenced_generated_symbols": [
+      "fn0A0B",
+      "sub050F",
+      "sub0524",
+      "sub0784",
+      "sub1EBA",
+      "sub2E18",
+      "sub2E29"
+    ]
+  },
+  {
+    "file": "FRMAUTOM.bas",
+    "name": "Form_Resize",
+    "kind": "Sub",
+    "start_line": 147,
+    "signature": "Sub Form_Resize ()",
+    "end_line": 166,
+    "referenced_generated_symbols": [
+      "sub2E18",
+      "sub2E38"
+    ]
+  },
+  {
+    "file": "FRMAUTOM.bas",
+    "name": "Form_Unload",
+    "kind": "Sub",
+    "start_line": 168,
+    "signature": "Sub Form_Unload (Cancel As Integer)",
+    "end_line": 188,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMAUTOM.bas",
+    "name": "hsbLevel_Change",
+    "kind": "Sub",
+    "start_line": 190,
+    "signature": "Sub hsbLevel_Change ()",
+    "end_line": 197,
+    "referenced_generated_symbols": [
+      "sub2E29"
+    ]
+  },
+  {
+    "file": "FRMAUTOM.bas",
+    "name": "hsbLevel_Scroll",
+    "kind": "Sub",
+    "start_line": 199,
+    "signature": "Sub hsbLevel_Scroll ()",
+    "end_line": 201,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMAUTOM.bas",
+    "name": "lblCall_Change",
+    "kind": "Sub",
+    "start_line": 203,
+    "signature": "Sub lblCall_Change ()",
+    "end_line": 284,
+    "referenced_generated_symbols": [
+      "fn0380",
+      "fn0418",
+      "fn2EB5",
+      "sub04FC",
+      "sub1EBA",
+      "sub2E6E",
+      "sub2E7F"
+    ]
+  },
+  {
+    "file": "FRMAUTOM.bas",
+    "name": "lblInfo_Change",
+    "kind": "Sub",
+    "start_line": 286,
+    "signature": "Sub lblInfo_Change ()",
+    "end_line": 288,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMAUTOM.bas",
+    "name": "lblLevel_Change",
+    "kind": "Sub",
+    "start_line": 290,
+    "signature": "Sub lblLevel_Change ()",
+    "end_line": 292,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMAUTOM.bas",
+    "name": "sub2E6E",
+    "kind": "Sub",
+    "start_line": 294,
+    "signature": "Sub sub2E6E ()",
+    "end_line": 346,
+    "referenced_generated_symbols": [
+      "sub04FC",
+      "sub2E29",
+      "sub2E38"
+    ]
+  },
+  {
+    "file": "FRMAUTOM.bas",
+    "name": "sub2E7F",
+    "kind": "Sub",
+    "start_line": 348,
+    "signature": "Sub sub2E7F (ByVal pv00FA As Integer ' 81, ByVal pv00FC As Integer ' 81, ByVal pv00FE As Integer ' 81, p0100 As Long ' 42)",
+    "end_line": 388,
+    "referenced_generated_symbols": [
+      "fn0380",
+      "sub04FC"
+    ]
+  },
+  {
+    "file": "FRMAUTOM.bas",
+    "name": "sub2E29",
+    "kind": "Sub",
+    "start_line": 390,
+    "signature": "Sub sub2E29 ()",
+    "end_line": 449,
+    "referenced_generated_symbols": [
+      "fn0380",
+      "fn0418",
+      "fn09F6",
+      "fn2EB5",
+      "sub04FC",
+      "sub1EBA",
+      "sub2E6E",
+      "sub2E7F"
+    ]
+  },
+  {
+    "file": "FRMAUTOM.bas",
+    "name": "sub2E38",
+    "kind": "Sub",
+    "start_line": 451,
+    "signature": "Sub sub2E38 ()",
+    "end_line": 497,
+    "referenced_generated_symbols": [
+      "sub04FC"
+    ]
+  },
+  {
+    "file": "FRMAUTOM.bas",
+    "name": "sub2E18",
+    "kind": "Sub",
+    "start_line": 499,
+    "signature": "Sub sub2E18 ()",
+    "end_line": 518,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMAUTOM.bas",
+    "name": "fn2EB5",
+    "kind": "Function",
+    "start_line": 520,
+    "signature": "Function fn2EB5 (p0134 ' 40, p0136 ' 40) As Long ' 2",
+    "end_line": 535,
+    "referenced_generated_symbols": [
+      "fn0B01",
+      "sub04FC"
+    ]
+  },
+  {
+    "file": "FRMAUTOM.bas",
+    "name": "sub1EBA",
+    "kind": "Sub",
+    "start_line": 537,
+    "signature": "Sub sub1EBA ()",
+    "end_line": 562,
+    "referenced_generated_symbols": [
+      "sub04FC"
+    ]
+  },
+  {
+    "file": "FRMAUTOM.bas",
+    "name": "msgBlast_event0000",
+    "kind": "Sub",
+    "start_line": 564,
+    "signature": "Sub msgBlast_event0000 (p0148 As Integer ' 41, p014A As Integer ' 41)",
+    "end_line": 579,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMAUTOM.bas",
+    "name": "picMaze_DblClick",
+    "kind": "Sub",
+    "start_line": 581,
+    "signature": "Sub picMaze_DblClick ()",
+    "end_line": 594,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMAUTOM.bas",
+    "name": "picMaze_MouseDown",
+    "kind": "Sub",
+    "start_line": 596,
+    "signature": "Sub picMaze_MouseDown (Button As Integer, Shift As Integer, X As Single, Y As Single)",
+    "end_line": 598,
+    "referenced_generated_symbols": [
+      "sub2E29"
+    ]
+  },
+  {
+    "file": "FRMAUTOM.bas",
+    "name": "picPicture_Click",
+    "kind": "Sub",
+    "start_line": 600,
+    "signature": "Sub picPicture_Click ()",
+    "end_line": 602,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMAUTOM.bas",
+    "name": "timBlinker_Timer",
+    "kind": "Sub",
+    "start_line": 604,
+    "signature": "Sub timBlinker_Timer ()",
+    "end_line": 628,
+    "referenced_generated_symbols": [
+      "sub04FC",
+      "sub2E6E"
+    ]
+  },
+  {
+    "file": "FRMCHAR1.bas",
+    "name": "Form_Activate",
+    "kind": "Sub",
+    "start_line": 29,
+    "signature": "Sub Form_Activate ()",
+    "end_line": 33,
+    "referenced_generated_symbols": [
+      "sub14E0"
+    ]
+  },
+  {
+    "file": "FRMCHAR1.bas",
+    "name": "Form_KeyDown",
+    "kind": "Sub",
+    "start_line": 35,
+    "signature": "Sub Form_KeyDown (KeyCode As Integer, Shift As Integer)",
+    "end_line": 49,
+    "referenced_generated_symbols": [
+      "fn14CB",
+      "sub0456"
+    ]
+  },
+  {
+    "file": "FRMCHAR1.bas",
+    "name": "Form_Load",
+    "kind": "Sub",
+    "start_line": 51,
+    "signature": "Sub Form_Load ()",
+    "end_line": 90,
+    "referenced_generated_symbols": [
+      "sub0524",
+      "sub0784",
+      "sub08A9",
+      "sub0F4C"
+    ]
+  },
+  {
+    "file": "FRMCHAR1.bas",
+    "name": "Form_Paint",
+    "kind": "Sub",
+    "start_line": 92,
+    "signature": "Sub Form_Paint ()",
+    "end_line": 93,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHAR1.bas",
+    "name": "Form_Resize",
+    "kind": "Sub",
+    "start_line": 95,
+    "signature": "Sub Form_Resize ()",
+    "end_line": 194,
+    "referenced_generated_symbols": [
+      "sub07C5",
+      "sub07D4",
+      "sub08A9"
+    ]
+  },
+  {
+    "file": "FRMCHAR1.bas",
+    "name": "Form_Unload",
+    "kind": "Sub",
+    "start_line": 196,
+    "signature": "Sub Form_Unload (Cancel As Integer)",
+    "end_line": 200,
+    "referenced_generated_symbols": [
+      "sub15BE"
+    ]
+  },
+  {
+    "file": "FRMCHAR1.bas",
+    "name": "lblBuffer_Click",
+    "kind": "Sub",
+    "start_line": 202,
+    "signature": "Sub lblBuffer_Click (Index%)",
+    "end_line": 213,
+    "referenced_generated_symbols": [
+      "sub0456"
+    ]
+  },
+  {
+    "file": "FRMCHAR1.bas",
+    "name": "lblBuffer_DragDrop",
+    "kind": "Sub",
+    "start_line": 215,
+    "signature": "Sub lblBuffer_DragDrop (Index%, Source As Control, X As Single, Y As Single)",
+    "end_line": 229,
+    "referenced_generated_symbols": [
+      "sub0F4C"
+    ]
+  },
+  {
+    "file": "FRMCHAR1.bas",
+    "name": "lblCall_Change",
+    "kind": "Sub",
+    "start_line": 231,
+    "signature": "Sub lblCall_Change ()",
+    "end_line": 242,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHAR1.bas",
+    "name": "msgBlast_event0000",
+    "kind": "Sub",
+    "start_line": 244,
+    "signature": "Sub msgBlast_event0000 (p00CA As Integer ' 41, p00CC As Integer ' 41)",
+    "end_line": 256,
+    "referenced_generated_symbols": [
+      "sub15BE"
+    ]
+  },
+  {
+    "file": "FRMCHAR1.bas",
+    "name": "picTabPicture_Paint",
+    "kind": "Sub",
+    "start_line": 258,
+    "signature": "Sub picTabPicture_Paint ()",
+    "end_line": 316,
+    "referenced_generated_symbols": [
+      "sub04FC",
+      "sub151C"
+    ]
+  },
+  {
+    "file": "FRMCHAR1.bas",
+    "name": "tabStatTab_event0000",
+    "kind": "Sub",
+    "start_line": 318,
+    "signature": "Sub tabStatTab_event0000 ()",
+    "end_line": 337,
+    "referenced_generated_symbols": [
+      "sub14E0",
+      "sub150A"
+    ]
+  },
+  {
+    "file": "FRMCHAR1.bas",
+    "name": "tabStatTab_event000D",
+    "kind": "Sub",
+    "start_line": 339,
+    "signature": "Sub tabStatTab_event000D (p00F6 As Integer ' 41, p00F8 As Integer ' 41)",
+    "end_line": 392,
+    "referenced_generated_symbols": [
+      "sub04FC",
+      "sub14E0"
+    ]
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "cmbClass_Click",
+    "kind": "Sub",
+    "start_line": 51,
+    "signature": "Sub cmbClass_Click ()",
+    "end_line": 145,
+    "referenced_generated_symbols": [
+      "fn10E5",
+      "fn142F",
+      "sub04FC"
+    ]
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "cmdCast_Click",
+    "kind": "Sub",
+    "start_line": 147,
+    "signature": "Sub cmdCast_Click ()",
+    "end_line": 184,
+    "referenced_generated_symbols": [
+      "fn0EEF",
+      "fn10E5",
+      "fn1173",
+      "fn1448",
+      "fn16B8",
+      "sub0775",
+      "sub085B",
+      "sub0BCD",
+      "sub0FE1"
+    ]
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "cmdCommand_Click",
+    "kind": "Sub",
+    "start_line": 186,
+    "signature": "Sub cmdCommand_Click (Index%)",
+    "end_line": 246,
+    "referenced_generated_symbols": [
+      "fn1121",
+      "fn12EF",
+      "sub085B",
+      "sub08B9",
+      "sub0EDA",
+      "sub0F74",
+      "sub150A",
+      "sub1577"
+    ]
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "cmdCommand_DragDrop",
+    "kind": "Sub",
+    "start_line": 248,
+    "signature": "Sub cmdCommand_DragDrop (Index%, Source As Control, X As Single, Y As Single)",
+    "end_line": 250,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "cmdCompanion_Click",
+    "kind": "Sub",
+    "start_line": 252,
+    "signature": "Sub cmdCompanion_Click (Index%)",
+    "end_line": 277,
+    "referenced_generated_symbols": [
+      "fn0B6C",
+      "fn1235",
+      "sub0775",
+      "sub085B",
+      "sub0B82"
+    ]
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "cmdInfo_Click",
+    "kind": "Sub",
+    "start_line": 279,
+    "signature": "Sub cmdInfo_Click ()",
+    "end_line": 298,
+    "referenced_generated_symbols": [
+      "fn16B8",
+      "sub0775",
+      "sub150A"
+    ]
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "Form_Activate",
+    "kind": "Sub",
+    "start_line": 300,
+    "signature": "Sub Form_Activate ()",
+    "end_line": 304,
+    "referenced_generated_symbols": [
+      "sub14E0"
+    ]
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "Form_KeyDown",
+    "kind": "Sub",
+    "start_line": 306,
+    "signature": "Sub Form_KeyDown (KeyCode As Integer, Shift As Integer)",
+    "end_line": 327,
+    "referenced_generated_symbols": [
+      "fn14CB",
+      "sub0456"
+    ]
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "Form_Load",
+    "kind": "Sub",
+    "start_line": 329,
+    "signature": "Sub Form_Load ()",
+    "end_line": 399,
+    "referenced_generated_symbols": [
+      "sub0524",
+      "sub0784",
+      "sub1602",
+      "sub2263"
+    ]
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "Form_Paint",
+    "kind": "Sub",
+    "start_line": 401,
+    "signature": "Sub Form_Paint ()",
+    "end_line": 402,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "Form_Resize",
+    "kind": "Sub",
+    "start_line": 404,
+    "signature": "Sub Form_Resize ()",
+    "end_line": 440,
+    "referenced_generated_symbols": [
+      "sub07C5",
+      "sub07D4",
+      "sub0B82"
+    ]
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "Form_Unload",
+    "kind": "Sub",
+    "start_line": 442,
+    "signature": "Sub Form_Unload (Cancel As Integer)",
+    "end_line": 445,
+    "referenced_generated_symbols": [
+      "sub15BE"
+    ]
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "lblCall_Change",
+    "kind": "Sub",
+    "start_line": 447,
+    "signature": "Sub lblCall_Change ()",
+    "end_line": 472,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "lblCompName_Click",
+    "kind": "Sub",
+    "start_line": 474,
+    "signature": "Sub lblCompName_Click (Index%)",
+    "end_line": 483,
+    "referenced_generated_symbols": [
+      "fn0EEF",
+      "fn1235",
+      "fn16A0",
+      "sub0B82"
+    ]
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "lblGuild_Click",
+    "kind": "Sub",
+    "start_line": 485,
+    "signature": "Sub lblGuild_Click (Index%)",
+    "end_line": 487,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "lblGuild_DblClick",
+    "kind": "Sub",
+    "start_line": 489,
+    "signature": "Sub lblGuild_DblClick (Index%)",
+    "end_line": 491,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "lblGuild_MouseMove",
+    "kind": "Sub",
+    "start_line": 493,
+    "signature": "Sub lblGuild_MouseMove (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",
+    "end_line": 497,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "lblGuild_MouseUp",
+    "kind": "Sub",
+    "start_line": 499,
+    "signature": "Sub lblGuild_MouseUp (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",
+    "end_line": 501,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "lblItem_Click",
+    "kind": "Sub",
+    "start_line": 503,
+    "signature": "Sub lblItem_Click (Index%)",
+    "end_line": 511,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "lblItem_DblClick",
+    "kind": "Sub",
+    "start_line": 513,
+    "signature": "Sub lblItem_DblClick (Index%)",
+    "end_line": 516,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "lblItem_DragDrop",
+    "kind": "Sub",
+    "start_line": 518,
+    "signature": "Sub lblItem_DragDrop (Index%, Source As Control, X As Single, Y As Single)",
+    "end_line": 580,
+    "referenced_generated_symbols": [
+      "fn03BD",
+      "fn129A",
+      "fn12EF",
+      "sub0730",
+      "sub085B",
+      "sub0F4C",
+      "sub0F61"
+    ]
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "lblItem_DragOver",
+    "kind": "Sub",
+    "start_line": 582,
+    "signature": "Sub lblItem_DragOver (Index%, Source As Control, X As Single, Y As Single, State As Integer)",
+    "end_line": 583,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "lblItem_MouseMove",
+    "kind": "Sub",
+    "start_line": 585,
+    "signature": "Sub lblItem_MouseMove (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",
+    "end_line": 593,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "lblLevel_Click",
+    "kind": "Sub",
+    "start_line": 595,
+    "signature": "Sub lblLevel_Click (Index%)",
+    "end_line": 597,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "lblLevel_DblClick",
+    "kind": "Sub",
+    "start_line": 599,
+    "signature": "Sub lblLevel_DblClick (Index%)",
+    "end_line": 601,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "lblLevel_MouseMove",
+    "kind": "Sub",
+    "start_line": 603,
+    "signature": "Sub lblLevel_MouseMove (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",
+    "end_line": 607,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "lblLevel_MouseUp",
+    "kind": "Sub",
+    "start_line": 609,
+    "signature": "Sub lblLevel_MouseUp (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",
+    "end_line": 611,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "lblName_DblClick",
+    "kind": "Sub",
+    "start_line": 613,
+    "signature": "Sub lblName_DblClick (Index%)",
+    "end_line": 616,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "lblName_MouseDown",
+    "kind": "Sub",
+    "start_line": 618,
+    "signature": "Sub lblName_MouseDown (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",
+    "end_line": 632,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "lblName_MouseMove",
+    "kind": "Sub",
+    "start_line": 634,
+    "signature": "Sub lblName_MouseMove (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",
+    "end_line": 638,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "lblName_MouseUp",
+    "kind": "Sub",
+    "start_line": 640,
+    "signature": "Sub lblName_MouseUp (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",
+    "end_line": 642,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "lblPoints_Click",
+    "kind": "Sub",
+    "start_line": 644,
+    "signature": "Sub lblPoints_Click (Index%)",
+    "end_line": 646,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "lblPoints_DblClick",
+    "kind": "Sub",
+    "start_line": 648,
+    "signature": "Sub lblPoints_DblClick (Index%)",
+    "end_line": 650,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "lblPoints_MouseMove",
+    "kind": "Sub",
+    "start_line": 652,
+    "signature": "Sub lblPoints_MouseMove (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",
+    "end_line": 656,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "lblPoints_MouseUp",
+    "kind": "Sub",
+    "start_line": 658,
+    "signature": "Sub lblPoints_MouseUp (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",
+    "end_line": 660,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "sub2263",
+    "kind": "Sub",
+    "start_line": 662,
+    "signature": "Sub sub2263 ()",
+    "end_line": 674,
+    "referenced_generated_symbols": [
+      "sub0F61"
+    ]
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "sub2424",
+    "kind": "Sub",
+    "start_line": 676,
+    "signature": "Sub sub2424 ()",
+    "end_line": 724,
+    "referenced_generated_symbols": [
+      "fn10E5"
+    ]
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "msgBlast_event0000",
+    "kind": "Sub",
+    "start_line": 726,
+    "signature": "Sub msgBlast_event0000 (p0282 As Integer ' 41, p0284 As Integer ' 41)",
+    "end_line": 738,
+    "referenced_generated_symbols": [
+      "sub15BE"
+    ]
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "picCompanion_DblClick",
+    "kind": "Sub",
+    "start_line": 740,
+    "signature": "Sub picCompanion_DblClick (Index%)",
+    "end_line": 757,
+    "referenced_generated_symbols": [
+      "fn121C",
+      "sub06FE",
+      "sub150A"
+    ]
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "picCompanion_DragDrop",
+    "kind": "Sub",
+    "start_line": 759,
+    "signature": "Sub picCompanion_DragDrop (Index%, Source As Control, X As Single, Y As Single)",
+    "end_line": 777,
+    "referenced_generated_symbols": [
+      "sub085B",
+      "sub0B82"
+    ]
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "picCompanion_MouseDown",
+    "kind": "Sub",
+    "start_line": 779,
+    "signature": "Sub picCompanion_MouseDown (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",
+    "end_line": 789,
+    "referenced_generated_symbols": [
+      "fn0B6C",
+      "sub085B"
+    ]
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "picCompanion_MouseMove",
+    "kind": "Sub",
+    "start_line": 791,
+    "signature": "Sub picCompanion_MouseMove (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",
+    "end_line": 795,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "picCompanion_Paint",
+    "kind": "Sub",
+    "start_line": 797,
+    "signature": "Sub picCompanion_Paint (Index%)",
+    "end_line": 818,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "tabItemTab_event0000",
+    "kind": "Sub",
+    "start_line": 820,
+    "signature": "Sub tabItemTab_event0000 ()",
+    "end_line": 824,
+    "referenced_generated_symbols": [
+      "sub14E0"
+    ]
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "tabItemTab_event000D",
+    "kind": "Sub",
+    "start_line": 826,
+    "signature": "Sub tabItemTab_event000D (p02F0 As Integer ' 41, p02F2 As Integer ' 41)",
+    "end_line": 839,
+    "referenced_generated_symbols": [
+      "sub0B82",
+      "sub14E0"
+    ]
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "txtSpell_DragDrop",
+    "kind": "Sub",
+    "start_line": 841,
+    "signature": "Sub txtSpell_DragDrop (Source As Control, X As Single, Y As Single)",
+    "end_line": 845,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "txtSpell_KeyDown",
+    "kind": "Sub",
+    "start_line": 847,
+    "signature": "Sub txtSpell_KeyDown (KeyCode As Integer, Shift As Integer)",
+    "end_line": 857,
+    "referenced_generated_symbols": [
+      "sub0775"
+    ]
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "txtSpell_KeyPress",
+    "kind": "Sub",
+    "start_line": 859,
+    "signature": "Sub txtSpell_KeyPress (KeyAscii As Integer)",
+    "end_line": 866,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "vsbItems_Change",
+    "kind": "Sub",
+    "start_line": 868,
+    "signature": "Sub vsbItems_Change ()",
+    "end_line": 875,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHAR3.bas",
+    "name": "vsbSpells_Change",
+    "kind": "Sub",
+    "start_line": 877,
+    "signature": "Sub vsbSpells_Change ()",
+    "end_line": 909,
+    "referenced_generated_symbols": [
+      "sub2424"
+    ]
+  },
+  {
+    "file": "FRMCHAR4.bas",
+    "name": "Form_KeyDown",
+    "kind": "Sub",
+    "start_line": 13,
+    "signature": "Sub Form_KeyDown (KeyCode As Integer, Shift As Integer)",
+    "end_line": 29,
+    "referenced_generated_symbols": [
+      "fn14CB",
+      "sub0456"
+    ]
+  },
+  {
+    "file": "FRMCHAR4.bas",
+    "name": "Form_Load",
+    "kind": "Sub",
+    "start_line": 31,
+    "signature": "Sub Form_Load ()",
+    "end_line": 53,
+    "referenced_generated_symbols": [
+      "sub0524",
+      "sub0784"
+    ]
+  },
+  {
+    "file": "FRMCHAR4.bas",
+    "name": "Form_Paint",
+    "kind": "Sub",
+    "start_line": 55,
+    "signature": "Sub Form_Paint ()",
+    "end_line": 56,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHAR4.bas",
+    "name": "Form_Resize",
+    "kind": "Sub",
+    "start_line": 58,
+    "signature": "Sub Form_Resize ()",
+    "end_line": 78,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHAR4.bas",
+    "name": "Form_Unload",
+    "kind": "Sub",
+    "start_line": 80,
+    "signature": "Sub Form_Unload (Cancel As Integer)",
+    "end_line": 82,
+    "referenced_generated_symbols": [
+      "sub15BE"
+    ]
+  },
+  {
+    "file": "FRMCHAR4.bas",
+    "name": "lstMessages_DblClick",
+    "kind": "Sub",
+    "start_line": 84,
+    "signature": "Sub lstMessages_DblClick ()",
+    "end_line": 89,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHAR4.bas",
+    "name": "msgBlast_event0000",
+    "kind": "Sub",
+    "start_line": 91,
+    "signature": "Sub msgBlast_event0000 (p005A As Integer ' 41, p005C As Integer ' 41)",
+    "end_line": 103,
+    "referenced_generated_symbols": [
+      "sub15BE"
+    ]
+  },
+  {
+    "file": "FRMCHARL.bas",
+    "name": "cmdExit_Click",
+    "kind": "Sub",
+    "start_line": 8,
+    "signature": "Sub cmdExit_Click ()",
+    "end_line": 10,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHARL.bas",
+    "name": "Form_Deactivate",
+    "kind": "Sub",
+    "start_line": 12,
+    "signature": "Sub Form_Deactivate ()",
+    "end_line": 14,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHARL.bas",
+    "name": "Form_Load",
+    "kind": "Sub",
+    "start_line": 16,
+    "signature": "Sub Form_Load ()",
+    "end_line": 65,
+    "referenced_generated_symbols": [
+      "sub02FE",
+      "sub0802"
+    ]
+  },
+  {
+    "file": "FRMCHARL.bas",
+    "name": "Form_LostFocus",
+    "kind": "Sub",
+    "start_line": 67,
+    "signature": "Sub Form_LostFocus ()",
+    "end_line": 69,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCHARL.bas",
+    "name": "Form_Resize",
+    "kind": "Sub",
+    "start_line": 71,
+    "signature": "Sub Form_Resize ()",
+    "end_line": 75,
+    "referenced_generated_symbols": [
+      "sub07B3"
+    ]
+  },
+  {
+    "file": "FRMCITYB.bas",
+    "name": "cmdCommand_Click",
+    "kind": "Sub",
+    "start_line": 20,
+    "signature": "Sub cmdCommand_Click (Index%)",
+    "end_line": 62,
+    "referenced_generated_symbols": [
+      "fn03BD",
+      "sub08A9",
+      "sub2884"
+    ]
+  },
+  {
+    "file": "FRMCITYB.bas",
+    "name": "cmdExit_Click",
+    "kind": "Sub",
+    "start_line": 64,
+    "signature": "Sub cmdExit_Click ()",
+    "end_line": 68,
+    "referenced_generated_symbols": [
+      "sub0792"
+    ]
+  },
+  {
+    "file": "FRMCITYB.bas",
+    "name": "cmdInfo_Click",
+    "kind": "Sub",
+    "start_line": 70,
+    "signature": "Sub cmdInfo_Click ()",
+    "end_line": 80,
+    "referenced_generated_symbols": [
+      "sub150A"
+    ]
+  },
+  {
+    "file": "FRMCITYB.bas",
+    "name": "Form_KeyDown",
+    "kind": "Sub",
+    "start_line": 82,
+    "signature": "Sub Form_KeyDown (KeyCode As Integer, Shift As Integer)",
+    "end_line": 99,
+    "referenced_generated_symbols": [
+      "fn14CB",
+      "fn1589"
+    ]
+  },
+  {
+    "file": "FRMCITYB.bas",
+    "name": "Form_Load",
+    "kind": "Sub",
+    "start_line": 101,
+    "signature": "Sub Form_Load ()",
+    "end_line": 131,
+    "referenced_generated_symbols": [
+      "sub02FE",
+      "sub0524",
+      "sub0784",
+      "sub2897",
+      "sub28A7"
+    ]
+  },
+  {
+    "file": "FRMCITYB.bas",
+    "name": "Form_Resize",
+    "kind": "Sub",
+    "start_line": 133,
+    "signature": "Sub Form_Resize ()",
+    "end_line": 138,
+    "referenced_generated_symbols": [
+      "sub07B3",
+      "sub07C5"
+    ]
+  },
+  {
+    "file": "FRMCITYB.bas",
+    "name": "Form_Unload",
+    "kind": "Sub",
+    "start_line": 140,
+    "signature": "Sub Form_Unload (Cancel As Integer)",
+    "end_line": 144,
+    "referenced_generated_symbols": [
+      "sub15BE"
+    ]
+  },
+  {
+    "file": "FRMCITYB.bas",
+    "name": "lblCall_Change",
+    "kind": "Sub",
+    "start_line": 146,
+    "signature": "Sub lblCall_Change ()",
+    "end_line": 160,
+    "referenced_generated_symbols": [
+      "sub2884",
+      "sub2897",
+      "sub28A7"
+    ]
+  },
+  {
+    "file": "FRMCITYB.bas",
+    "name": "lstItems_Click",
+    "kind": "Sub",
+    "start_line": 162,
+    "signature": "Sub lstItems_Click ()",
+    "end_line": 166,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCITYB.bas",
+    "name": "lstItems_DragDrop",
+    "kind": "Sub",
+    "start_line": 168,
+    "signature": "Sub lstItems_DragDrop (Source As Control, X As Single, Y As Single)",
+    "end_line": 202,
+    "referenced_generated_symbols": [
+      "fn03BD",
+      "sub085B",
+      "sub0F4C",
+      "sub0F61",
+      "sub28A7"
+    ]
+  },
+  {
+    "file": "FRMCITYB.bas",
+    "name": "lstItems_MouseMove",
+    "kind": "Sub",
+    "start_line": 204,
+    "signature": "Sub lstItems_MouseMove (Button As Integer, Shift As Integer, X As Single, Y As Single)",
+    "end_line": 214,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCITYB.bas",
+    "name": "lstItems_MouseUp",
+    "kind": "Sub",
+    "start_line": 216,
+    "signature": "Sub lstItems_MouseUp (Button As Integer, Shift As Integer, X As Single, Y As Single)",
+    "end_line": 220,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCITYB.bas",
+    "name": "sub28A7",
+    "kind": "Sub",
+    "start_line": 222,
+    "signature": "Sub sub28A7 ()",
+    "end_line": 250,
+    "referenced_generated_symbols": [
+      "fn12EF",
+      "sub2884"
+    ]
+  },
+  {
+    "file": "FRMCITYB.bas",
+    "name": "sub2897",
+    "kind": "Sub",
+    "start_line": 252,
+    "signature": "Sub sub2897 ()",
+    "end_line": 272,
+    "referenced_generated_symbols": [
+      "sub085B"
+    ]
+  },
+  {
+    "file": "FRMCITYB.bas",
+    "name": "sub2884",
+    "kind": "Sub",
+    "start_line": 274,
+    "signature": "Sub sub2884 ()",
+    "end_line": 291,
+    "referenced_generated_symbols": [
+      "fn036D",
+      "sub1043"
+    ]
+  },
+  {
+    "file": "FRMCITYB.bas",
+    "name": "txtAmount_KeyDown",
+    "kind": "Sub",
+    "start_line": 293,
+    "signature": "Sub txtAmount_KeyDown (Index%, KeyCode As Integer, Shift As Integer)",
+    "end_line": 297,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCITYB.bas",
+    "name": "txtAmount_KeyPress",
+    "kind": "Sub",
+    "start_line": 299,
+    "signature": "Sub txtAmount_KeyPress (Index%, KeyAscii As Integer)",
+    "end_line": 328,
+    "referenced_generated_symbols": [
+      "sub08A9",
+      "sub2884"
+    ]
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "cmdAlign_Click",
+    "kind": "Sub",
+    "start_line": 46,
+    "signature": "Sub cmdAlign_Click (Index%)",
+    "end_line": 48,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "cmdBind_Click",
+    "kind": "Sub",
+    "start_line": 50,
+    "signature": "Sub cmdBind_Click ()",
+    "end_line": 94,
+    "referenced_generated_symbols": [
+      "fn036D",
+      "fn114E",
+      "fn33B9",
+      "fn33DB",
+      "sub08A9",
+      "sub0B82"
+    ]
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "cmdBuy_Click",
+    "kind": "Sub",
+    "start_line": 96,
+    "signature": "Sub cmdBuy_Click ()",
+    "end_line": 169,
+    "referenced_generated_symbols": [
+      "fn036D",
+      "fn114E",
+      "fn33CC",
+      "sub085B",
+      "sub0B82",
+      "sub3347"
+    ]
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "cmdExit_Click",
+    "kind": "Sub",
+    "start_line": 171,
+    "signature": "Sub cmdExit_Click ()",
+    "end_line": 175,
+    "referenced_generated_symbols": [
+      "sub0792"
+    ]
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "cmdID_Click",
+    "kind": "Sub",
+    "start_line": 177,
+    "signature": "Sub cmdID_Click ()",
+    "end_line": 202,
+    "referenced_generated_symbols": [
+      "fn114E",
+      "fn33DB",
+      "fn33E9",
+      "sub06FE",
+      "sub0B82",
+      "sub150A"
+    ]
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "cmdIDInfo_Click",
+    "kind": "Sub",
+    "start_line": 204,
+    "signature": "Sub cmdIDInfo_Click ()",
+    "end_line": 217,
+    "referenced_generated_symbols": [
+      "fn33DB",
+      "sub150A"
+    ]
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "cmdInfo_Click",
+    "kind": "Sub",
+    "start_line": 219,
+    "signature": "Sub cmdInfo_Click ()",
+    "end_line": 236,
+    "referenced_generated_symbols": [
+      "sub150A"
+    ]
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "cmdRealign_Click",
+    "kind": "Sub",
+    "start_line": 238,
+    "signature": "Sub cmdRealign_Click (Index%)",
+    "end_line": 270,
+    "referenced_generated_symbols": [
+      "fn036D",
+      "fn114E",
+      "fn33A6",
+      "fn33DB",
+      "sub0B82"
+    ]
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "cmdSell_Click",
+    "kind": "Sub",
+    "start_line": 272,
+    "signature": "Sub cmdSell_Click ()",
+    "end_line": 296,
+    "referenced_generated_symbols": [
+      "fn33DB",
+      "fn33FA",
+      "sub08A9",
+      "sub0B82",
+      "sub268D",
+      "sub3347"
+    ]
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "elaComp_event0000",
+    "kind": "Sub",
+    "start_line": 298,
+    "signature": "Sub elaComp_event0000 (p0132 As Integer ' 41)",
+    "end_line": 366,
+    "referenced_generated_symbols": [
+      "fn036D",
+      "fn03BD",
+      "fn33CC",
+      "sub05D8",
+      "sub336F"
+    ]
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "elaCompInfo_event0000",
+    "kind": "Sub",
+    "start_line": 368,
+    "signature": "Sub elaCompInfo_event0000 (p0162 ' 40)",
+    "end_line": 370,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "Form_Activate",
+    "kind": "Sub",
+    "start_line": 372,
+    "signature": "Sub Form_Activate ()",
+    "end_line": 374,
+    "referenced_generated_symbols": [
+      "sub0792"
+    ]
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "Form_KeyDown",
+    "kind": "Sub",
+    "start_line": 376,
+    "signature": "Sub Form_KeyDown (KeyCode As Integer, Shift As Integer)",
+    "end_line": 394,
+    "referenced_generated_symbols": [
+      "fn14CB",
+      "fn1589"
+    ]
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "Form_Load",
+    "kind": "Sub",
+    "start_line": 396,
+    "signature": "Sub Form_Load ()",
+    "end_line": 422,
+    "referenced_generated_symbols": [
+      "sub02FE",
+      "sub0524",
+      "sub0784",
+      "sub168B",
+      "sub3347"
+    ]
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "Form_Resize",
+    "kind": "Sub",
+    "start_line": 424,
+    "signature": "Sub Form_Resize ()",
+    "end_line": 429,
+    "referenced_generated_symbols": [
+      "sub07B3",
+      "sub07C5"
+    ]
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "Form_Unload",
+    "kind": "Sub",
+    "start_line": 431,
+    "signature": "Sub Form_Unload (Cancel As Integer)",
+    "end_line": 447,
+    "referenced_generated_symbols": [
+      "fn0425",
+      "fn04ED",
+      "sub15BE"
+    ]
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "lblCall_Change",
+    "kind": "Sub",
+    "start_line": 449,
+    "signature": "Sub lblCall_Change ()",
+    "end_line": 470,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "sub3347",
+    "kind": "Sub",
+    "start_line": 472,
+    "signature": "Sub sub3347 (p01C8 As Integer ' 41)",
+    "end_line": 522,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "fn33A6",
+    "kind": "Function",
+    "start_line": 524,
+    "signature": "Function fn33A6 (p01D6 As Integer ' 41) As Currency ' 5",
+    "end_line": 600,
+    "referenced_generated_symbols": [
+      "fn0380"
+    ]
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "fn33B9",
+    "kind": "Function",
+    "start_line": 602,
+    "signature": "Function fn33B9 (p0202 As Integer ' 41) As Currency ' 5",
+    "end_line": 614,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "fn33CC",
+    "kind": "Function",
+    "start_line": 616,
+    "signature": "Function fn33CC (p020C As Integer ' 41, p020E ' 40) As Long ' 2",
+    "end_line": 637,
+    "referenced_generated_symbols": [
+      "fn33A6",
+      "sub04FC"
+    ]
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "sub268D",
+    "kind": "Sub",
+    "start_line": 639,
+    "signature": "Sub sub268D ()",
+    "end_line": 648,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "fn33DB",
+    "kind": "Function",
+    "start_line": 650,
+    "signature": "Function fn33DB (p0222 As String ' 47) As Integer ' 1",
+    "end_line": 668,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "fn33E9",
+    "kind": "Function",
+    "start_line": 670,
+    "signature": "Function fn33E9 (p0228 As Integer ' 41) As Long ' 2",
+    "end_line": 688,
+    "referenced_generated_symbols": [
+      "fn33A6"
+    ]
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "fn33FA",
+    "kind": "Function",
+    "start_line": 690,
+    "signature": "Function fn33FA (p023A As Integer ' 41) As Currency ' 5",
+    "end_line": 719,
+    "referenced_generated_symbols": [
+      "fn33A6"
+    ]
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "sub336F",
+    "kind": "Sub",
+    "start_line": 721,
+    "signature": "Sub sub336F (p0250 As Integer ' 41)",
+    "end_line": 731,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "txtBind_Change",
+    "kind": "Sub",
+    "start_line": 733,
+    "signature": "Sub txtBind_Change ()",
+    "end_line": 738,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "txtBind_DragDrop",
+    "kind": "Sub",
+    "start_line": 740,
+    "signature": "Sub txtBind_DragDrop (Source As Control, X As Single, Y As Single)",
+    "end_line": 748,
+    "referenced_generated_symbols": [
+      "sub085B"
+    ]
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "txtBind_KeyDown",
+    "kind": "Sub",
+    "start_line": 750,
+    "signature": "Sub txtBind_KeyDown (KeyCode As Integer, Shift As Integer)",
+    "end_line": 754,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "txtBind_KeyPress",
+    "kind": "Sub",
+    "start_line": 756,
+    "signature": "Sub txtBind_KeyPress (KeyAscii As Integer)",
+    "end_line": 782,
+    "referenced_generated_symbols": [
+      "fn036D",
+      "fn33B9",
+      "fn33DB"
+    ]
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "txtID_DragDrop",
+    "kind": "Sub",
+    "start_line": 784,
+    "signature": "Sub txtID_DragDrop (Source As Control, X As Single, Y As Single)",
+    "end_line": 792,
+    "referenced_generated_symbols": [
+      "sub085B"
+    ]
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "txtID_KeyDown",
+    "kind": "Sub",
+    "start_line": 794,
+    "signature": "Sub txtID_KeyDown (KeyCode As Integer, Shift As Integer)",
+    "end_line": 798,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "txtID_KeyPress",
+    "kind": "Sub",
+    "start_line": 800,
+    "signature": "Sub txtID_KeyPress (KeyAscii As Integer)",
+    "end_line": 842,
+    "referenced_generated_symbols": [
+      "fn036D",
+      "fn12D6",
+      "fn33DB",
+      "fn33E9",
+      "fn33FA",
+      "sub268D"
+    ]
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "txtSearch_KeyDown",
+    "kind": "Sub",
+    "start_line": 844,
+    "signature": "Sub txtSearch_KeyDown (KeyCode As Integer, Shift As Integer)",
+    "end_line": 848,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "txtSearch_KeyPress",
+    "kind": "Sub",
+    "start_line": 850,
+    "signature": "Sub txtSearch_KeyPress (KeyAscii As Integer)",
+    "end_line": 890,
+    "referenced_generated_symbols": [
+      "sub07E2"
+    ]
+  },
+  {
+    "file": "FRMCITYC.bas",
+    "name": "vsbComps_Change",
+    "kind": "Sub",
+    "start_line": 892,
+    "signature": "Sub vsbComps_Change ()",
+    "end_line": 941,
+    "referenced_generated_symbols": [
+      "sub04FC",
+      "sub336F"
+    ]
+  },
+  {
+    "file": "FRMCONTR.bas",
+    "name": "cmdCommand_Click",
+    "kind": "Sub",
+    "start_line": 36,
+    "signature": "Sub cmdCommand_Click (Index%)",
+    "end_line": 198,
+    "referenced_generated_symbols": [
+      "sub04FC",
+      "sub074E",
+      "sub0775"
+    ]
+  },
+  {
+    "file": "FRMCONTR.bas",
+    "name": "Form_Load",
+    "kind": "Sub",
+    "start_line": 200,
+    "signature": "Sub Form_Load ()",
+    "end_line": 231,
+    "referenced_generated_symbols": [
+      "sub0802"
+    ]
+  },
+  {
+    "file": "FRMCONTR.bas",
+    "name": "Form_Paint",
+    "kind": "Sub",
+    "start_line": 233,
+    "signature": "Sub Form_Paint ()",
+    "end_line": 234,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCONTR.bas",
+    "name": "Form_Resize",
+    "kind": "Sub",
+    "start_line": 236,
+    "signature": "Sub Form_Resize ()",
+    "end_line": 240,
+    "referenced_generated_symbols": [
+      "sub07B3"
+    ]
+  },
+  {
+    "file": "FRMCONTR.bas",
+    "name": "Form_Unload",
+    "kind": "Sub",
+    "start_line": 242,
+    "signature": "Sub Form_Unload (Cancel As Integer)",
+    "end_line": 244,
+    "referenced_generated_symbols": [
+      "sub0930"
+    ]
+  },
+  {
+    "file": "FRMCREDI.bas",
+    "name": "cmdOK_Click",
+    "kind": "Sub",
+    "start_line": 8,
+    "signature": "Sub cmdOK_Click ()",
+    "end_line": 10,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCREDI.bas",
+    "name": "Form_Load",
+    "kind": "Sub",
+    "start_line": 12,
+    "signature": "Sub Form_Load ()",
+    "end_line": 68,
+    "referenced_generated_symbols": [
+      "sub02FE"
+    ]
+  },
+  {
+    "file": "FRMCREDI.bas",
+    "name": "Form_Unload",
+    "kind": "Sub",
+    "start_line": 70,
+    "signature": "Sub Form_Unload (Cancel As Integer)",
+    "end_line": 73,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCREDI.bas",
+    "name": "timAnimate_Timer",
+    "kind": "Sub",
+    "start_line": 75,
+    "signature": "Sub timAnimate_Timer ()",
+    "end_line": 92,
+    "referenced_generated_symbols": [
+      "sub086D"
+    ]
+  },
+  {
+    "file": "FRMCTYG.bas",
+    "name": "cmdExit_Click",
+    "kind": "Sub",
+    "start_line": 35,
+    "signature": "Sub cmdExit_Click ()",
+    "end_line": 39,
+    "referenced_generated_symbols": [
+      "sub0792"
+    ]
+  },
+  {
+    "file": "FRMCTYG.bas",
+    "name": "cmdInfo_Click",
+    "kind": "Sub",
+    "start_line": 41,
+    "signature": "Sub cmdInfo_Click ()",
+    "end_line": 78,
+    "referenced_generated_symbols": [
+      "fn036D",
+      "fn124B",
+      "fn125C"
+    ]
+  },
+  {
+    "file": "FRMCTYG.bas",
+    "name": "cmdJoin_Click",
+    "kind": "Sub",
+    "start_line": 80,
+    "signature": "Sub cmdJoin_Click ()",
+    "end_line": 164,
+    "referenced_generated_symbols": [
+      "fn036D",
+      "fn1139",
+      "fn114E",
+      "fn131D",
+      "fn137E",
+      "fn1397",
+      "sub0578",
+      "sub085B",
+      "sub08A9",
+      "sub1602",
+      "sub294F",
+      "sub2962",
+      "sub2974"
+    ]
+  },
+  {
+    "file": "FRMCTYG.bas",
+    "name": "cmdLibrary_Click",
+    "kind": "Sub",
+    "start_line": 166,
+    "signature": "Sub cmdLibrary_Click ()",
+    "end_line": 168,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCTYG.bas",
+    "name": "cmdLog_Click",
+    "kind": "Sub",
+    "start_line": 170,
+    "signature": "Sub cmdLog_Click ()",
+    "end_line": 173,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCTYG.bas",
+    "name": "cmdMake_Click",
+    "kind": "Sub",
+    "start_line": 175,
+    "signature": "Sub cmdMake_Click ()",
+    "end_line": 574,
+    "referenced_generated_symbols": [
+      "fn114E",
+      "fn124B",
+      "fn125C",
+      "fn126E",
+      "fn129A",
+      "fn12EF",
+      "fn136C",
+      "fn137E",
+      "fn1397",
+      "fn1BF0",
+      "sub04FC",
+      "sub0578",
+      "sub0730",
+      "sub085B",
+      "sub086D",
+      "sub08A9",
+      "sub0BF1",
+      "sub0EDA",
+      "sub0F4C",
+      "sub0F61",
+      "sub1043",
+      "sub1602",
+      "sub294F",
+      "sub2974",
+      "sub29BD",
+      "sub29D0",
+      "sub29DF"
+    ]
+  },
+  {
+    "file": "FRMCTYG.bas",
+    "name": "cmdVisit_Click",
+    "kind": "Sub",
+    "start_line": 576,
+    "signature": "Sub cmdVisit_Click ()",
+    "end_line": 588,
+    "referenced_generated_symbols": [
+      "fn124B",
+      "fn125C",
+      "sub294F",
+      "sub2962"
+    ]
+  },
+  {
+    "file": "FRMCTYG.bas",
+    "name": "Form_Activate",
+    "kind": "Sub",
+    "start_line": 590,
+    "signature": "Sub Form_Activate ()",
+    "end_line": 592,
+    "referenced_generated_symbols": [
+      "sub0792"
+    ]
+  },
+  {
+    "file": "FRMCTYG.bas",
+    "name": "Form_KeyDown",
+    "kind": "Sub",
+    "start_line": 594,
+    "signature": "Sub Form_KeyDown (KeyCode As Integer, Shift As Integer)",
+    "end_line": 611,
+    "referenced_generated_symbols": [
+      "fn14CB",
+      "fn1589"
+    ]
+  },
+  {
+    "file": "FRMCTYG.bas",
+    "name": "Form_Load",
+    "kind": "Sub",
+    "start_line": 613,
+    "signature": "Sub Form_Load ()",
+    "end_line": 652,
+    "referenced_generated_symbols": [
+      "fn124B",
+      "fn125C",
+      "sub02FE",
+      "sub0524",
+      "sub0784",
+      "sub294F",
+      "sub2962",
+      "sub2974"
+    ]
+  },
+  {
+    "file": "FRMCTYG.bas",
+    "name": "Form_Resize",
+    "kind": "Sub",
+    "start_line": 654,
+    "signature": "Sub Form_Resize ()",
+    "end_line": 659,
+    "referenced_generated_symbols": [
+      "sub07B3",
+      "sub07C5"
+    ]
+  },
+  {
+    "file": "FRMCTYG.bas",
+    "name": "Form_Unload",
+    "kind": "Sub",
+    "start_line": 661,
+    "signature": "Sub Form_Unload (Cancel As Integer)",
+    "end_line": 665,
+    "referenced_generated_symbols": [
+      "sub15BE"
+    ]
+  },
+  {
+    "file": "FRMCTYG.bas",
+    "name": "lblCall_Change",
+    "kind": "Sub",
+    "start_line": 667,
+    "signature": "Sub lblCall_Change ()",
+    "end_line": 682,
+    "referenced_generated_symbols": [
+      "fn124B",
+      "fn125C",
+      "sub294F",
+      "sub2962",
+      "sub2974"
+    ]
+  },
+  {
+    "file": "FRMCTYG.bas",
+    "name": "sub29DF",
+    "kind": "Sub",
+    "start_line": 684,
+    "signature": "Sub sub29DF (ByVal pv016C As Integer ' 81, p016E As Integer ' 41)",
+    "end_line": 754,
+    "referenced_generated_symbols": [
+      "sub04FC",
+      "sub0578",
+      "sub085B",
+      "sub0F61"
+    ]
+  },
+  {
+    "file": "FRMCTYG.bas",
+    "name": "sub2974",
+    "kind": "Sub",
+    "start_line": 756,
+    "signature": "Sub sub2974 ()",
+    "end_line": 771,
+    "referenced_generated_symbols": [
+      "fn115C"
+    ]
+  },
+  {
+    "file": "FRMCTYG.bas",
+    "name": "sub2962",
+    "kind": "Sub",
+    "start_line": 773,
+    "signature": "Sub sub2962 ()",
+    "end_line": 823,
+    "referenced_generated_symbols": [
+      "fn0380",
+      "fn14A0"
+    ]
+  },
+  {
+    "file": "FRMCTYG.bas",
+    "name": "sub294F",
+    "kind": "Sub",
+    "start_line": 825,
+    "signature": "Sub sub294F ()",
+    "end_line": 841,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCTYG.bas",
+    "name": "sub29BD",
+    "kind": "Sub",
+    "start_line": 843,
+    "signature": "Sub sub29BD (p01BE As Integer ' 41, p01C0 As Integer ' 41)",
+    "end_line": 960,
+    "referenced_generated_symbols": [
+      "fn110D",
+      "fn124B",
+      "fn126E",
+      "fn137E",
+      "fn1397",
+      "sub0578",
+      "sub086D",
+      "sub08A9",
+      "sub0BF1",
+      "sub0F4C",
+      "sub0F74",
+      "sub1602",
+      "sub2962",
+      "sub2974",
+      "sub29D0"
+    ]
+  },
+  {
+    "file": "FRMCTYG.bas",
+    "name": "sub29D0",
+    "kind": "Sub",
+    "start_line": 962,
+    "signature": "Sub sub29D0 (p01DC As Integer ' 41, p01DE As Integer ' 41)",
+    "end_line": 1032,
+    "referenced_generated_symbols": [
+      "sub04FC",
+      "sub085B"
+    ]
+  },
+  {
+    "file": "FRMCTYM.bas",
+    "name": "Form_Activate",
+    "kind": "Sub",
+    "start_line": 23,
+    "signature": "Sub Form_Activate ()",
+    "end_line": 25,
+    "referenced_generated_symbols": [
+      "sub0792"
+    ]
+  },
+  {
+    "file": "FRMCTYM.bas",
+    "name": "Form_GotFocus",
+    "kind": "Sub",
+    "start_line": 27,
+    "signature": "Sub Form_GotFocus ()",
+    "end_line": 29,
+    "referenced_generated_symbols": [
+      "sub0792"
+    ]
+  },
+  {
+    "file": "FRMCTYM.bas",
+    "name": "Form_KeyDown",
+    "kind": "Sub",
+    "start_line": 31,
+    "signature": "Sub Form_KeyDown (KeyCode As Integer, Shift As Integer)",
+    "end_line": 64,
+    "referenced_generated_symbols": [
+      "fn14CB"
+    ]
+  },
+  {
+    "file": "FRMCTYM.bas",
+    "name": "Form_Load",
+    "kind": "Sub",
+    "start_line": 66,
+    "signature": "Sub Form_Load ()",
+    "end_line": 157,
+    "referenced_generated_symbols": [
+      "fn03BD",
+      "fn04ED",
+      "fn1338",
+      "sub048C",
+      "sub04FC",
+      "sub0524",
+      "sub063F",
+      "sub0784",
+      "sub0792",
+      "sub085B",
+      "sub08A9",
+      "sub08B9",
+      "sub0941",
+      "sub0956",
+      "sub096E",
+      "sub0A7C",
+      "sub0B82",
+      "sub0EAE",
+      "sub0F38",
+      "sub1043",
+      "sub14E0",
+      "sub15A1",
+      "sub25A3"
+    ]
+  },
+  {
+    "file": "FRMCTYM.bas",
+    "name": "Form_Resize",
+    "kind": "Sub",
+    "start_line": 159,
+    "signature": "Sub Form_Resize ()",
+    "end_line": 163,
+    "referenced_generated_symbols": [
+      "sub0760"
+    ]
+  },
+  {
+    "file": "FRMCTYM.bas",
+    "name": "Form_Unload",
+    "kind": "Sub",
+    "start_line": 165,
+    "signature": "Sub Form_Unload (Cancel As Integer)",
+    "end_line": 177,
+    "referenced_generated_symbols": [
+      "sub0792",
+      "sub15BE"
+    ]
+  },
+  {
+    "file": "FRMCTYM.bas",
+    "name": "imgPicture_Click",
+    "kind": "Sub",
+    "start_line": 179,
+    "signature": "Sub imgPicture_Click (Index%)",
+    "end_line": 218,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCTYM.bas",
+    "name": "lblSelection_Click",
+    "kind": "Sub",
+    "start_line": 220,
+    "signature": "Sub lblSelection_Click (Index%)",
+    "end_line": 222,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCTYM.bas",
+    "name": "sub25A3",
+    "kind": "Sub",
+    "start_line": 224,
+    "signature": "Sub sub25A3 ()",
+    "end_line": 225,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "cmdAlign_Click",
+    "kind": "Sub",
+    "start_line": 33,
+    "signature": "Sub cmdAlign_Click (Index%)",
+    "end_line": 35,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "cmdBuy_Click",
+    "kind": "Sub",
+    "start_line": 37,
+    "signature": "Sub cmdBuy_Click ()",
+    "end_line": 106,
+    "referenced_generated_symbols": [
+      "fn036D",
+      "fn114E",
+      "fn272C",
+      "sub085B",
+      "sub0F61",
+      "sub260A"
+    ]
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "cmdCommand_Click",
+    "kind": "Sub",
+    "start_line": 108,
+    "signature": "Sub cmdCommand_Click (Index%)",
+    "end_line": 116,
+    "referenced_generated_symbols": [
+      "sub2621"
+    ]
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "cmdExit_Click",
+    "kind": "Sub",
+    "start_line": 118,
+    "signature": "Sub cmdExit_Click ()",
+    "end_line": 122,
+    "referenced_generated_symbols": [
+      "sub0792"
+    ]
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "cmdID_Click",
+    "kind": "Sub",
+    "start_line": 124,
+    "signature": "Sub cmdID_Click ()",
+    "end_line": 146,
+    "referenced_generated_symbols": [
+      "fn114E",
+      "fn12C4",
+      "fn271B",
+      "sub0730",
+      "sub0F61"
+    ]
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "cmdIDInfo_Click",
+    "kind": "Sub",
+    "start_line": 148,
+    "signature": "Sub cmdIDInfo_Click ()",
+    "end_line": 164,
+    "referenced_generated_symbols": [
+      "fn12C4",
+      "sub150A"
+    ]
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "cmdInfo_Click",
+    "kind": "Sub",
+    "start_line": 166,
+    "signature": "Sub cmdInfo_Click ()",
+    "end_line": 184,
+    "referenced_generated_symbols": [
+      "sub150A"
+    ]
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "cmdRealign_Click",
+    "kind": "Sub",
+    "start_line": 186,
+    "signature": "Sub cmdRealign_Click (Index%)",
+    "end_line": 215,
+    "referenced_generated_symbols": [
+      "fn036D",
+      "fn114E",
+      "fn12C4",
+      "sub0F61"
+    ]
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "cmdSell_Click",
+    "kind": "Sub",
+    "start_line": 217,
+    "signature": "Sub cmdSell_Click ()",
+    "end_line": 282,
+    "referenced_generated_symbols": [
+      "fn12C4",
+      "fn273B",
+      "sub08A9",
+      "sub0EDA",
+      "sub0F61",
+      "sub0F74",
+      "sub260A",
+      "sub268D"
+    ]
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "cmdUncurse_Click",
+    "kind": "Sub",
+    "start_line": 284,
+    "signature": "Sub cmdUncurse_Click ()",
+    "end_line": 320,
+    "referenced_generated_symbols": [
+      "fn114E",
+      "fn12C4",
+      "fn274F",
+      "sub0730",
+      "sub085B",
+      "sub08A9",
+      "sub0F61",
+      "sub0F74"
+    ]
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "elaItem_event0000",
+    "kind": "Sub",
+    "start_line": 322,
+    "signature": "Sub elaItem_event0000 (p0156 As Integer ' 41)",
+    "end_line": 388,
+    "referenced_generated_symbols": [
+      "fn036D",
+      "fn03BD",
+      "fn272C",
+      "sub05D8",
+      "sub26C8"
+    ]
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "elaItemInfo_event0000",
+    "kind": "Sub",
+    "start_line": 390,
+    "signature": "Sub elaItemInfo_event0000 (p0186 ' 40)",
+    "end_line": 392,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "sub26EC",
+    "kind": "Sub",
+    "start_line": 394,
+    "signature": "Sub sub26EC ()",
+    "end_line": 397,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "Form_Activate",
+    "kind": "Sub",
+    "start_line": 399,
+    "signature": "Sub Form_Activate ()",
+    "end_line": 401,
+    "referenced_generated_symbols": [
+      "sub0792"
+    ]
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "Form_KeyDown",
+    "kind": "Sub",
+    "start_line": 403,
+    "signature": "Sub Form_KeyDown (KeyCode As Integer, Shift As Integer)",
+    "end_line": 421,
+    "referenced_generated_symbols": [
+      "fn14CB",
+      "fn1589"
+    ]
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "Form_Load",
+    "kind": "Sub",
+    "start_line": 423,
+    "signature": "Sub Form_Load ()",
+    "end_line": 448,
+    "referenced_generated_symbols": [
+      "sub02FE",
+      "sub0524",
+      "sub0784",
+      "sub168B",
+      "sub260A"
+    ]
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "Form_Resize",
+    "kind": "Sub",
+    "start_line": 450,
+    "signature": "Sub Form_Resize ()",
+    "end_line": 455,
+    "referenced_generated_symbols": [
+      "sub07B3",
+      "sub07C5"
+    ]
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "Form_Unload",
+    "kind": "Sub",
+    "start_line": 457,
+    "signature": "Sub Form_Unload (Cancel As Integer)",
+    "end_line": 473,
+    "referenced_generated_symbols": [
+      "fn0425",
+      "fn04ED",
+      "sub15BE"
+    ]
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "lblCall_Change",
+    "kind": "Sub",
+    "start_line": 475,
+    "signature": "Sub lblCall_Change ()",
+    "end_line": 498,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "lblCombine_Change",
+    "kind": "Sub",
+    "start_line": 500,
+    "signature": "Sub lblCombine_Change ()",
+    "end_line": 506,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "sub260A",
+    "kind": "Sub",
+    "start_line": 508,
+    "signature": "Sub sub260A (p01E0 As Integer ' 41)",
+    "end_line": 551,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "sub268D",
+    "kind": "Sub",
+    "start_line": 553,
+    "signature": "Sub sub268D ()",
+    "end_line": 562,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "fn271B",
+    "kind": "Function",
+    "start_line": 564,
+    "signature": "Function fn271B (p01EE As Integer ' 41) As Long ' 2",
+    "end_line": 581,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "fn272C",
+    "kind": "Function",
+    "start_line": 583,
+    "signature": "Function fn272C (p01FE As Integer ' 41, p0200 As Integer ' 41) As Long ' 2",
+    "end_line": 610,
+    "referenced_generated_symbols": [
+      "sub04FC"
+    ]
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "sub2621",
+    "kind": "Sub",
+    "start_line": 612,
+    "signature": "Sub sub2621 ()",
+    "end_line": 693,
+    "referenced_generated_symbols": [
+      "sub085B",
+      "sub0F61"
+    ]
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "fn273B",
+    "kind": "Function",
+    "start_line": 695,
+    "signature": "Function fn273B (p0228 As Integer ' 41) As Long ' 2",
+    "end_line": 749,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "sub26C8",
+    "kind": "Sub",
+    "start_line": 751,
+    "signature": "Sub sub26C8 (p0242 As Integer ' 41)",
+    "end_line": 761,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "fn274F",
+    "kind": "Function",
+    "start_line": 763,
+    "signature": "Function fn274F (p024A As Integer ' 41) As Long ' 2",
+    "end_line": 765,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "txtCombine_DragDrop",
+    "kind": "Sub",
+    "start_line": 767,
+    "signature": "Sub txtCombine_DragDrop (Source As Control, X As Single, Y As Single)",
+    "end_line": 776,
+    "referenced_generated_symbols": [
+      "sub085B"
+    ]
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "txtCombine_KeyDown",
+    "kind": "Sub",
+    "start_line": 778,
+    "signature": "Sub txtCombine_KeyDown (KeyCode As Integer, Shift As Integer)",
+    "end_line": 782,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "txtCombine_KeyPress",
+    "kind": "Sub",
+    "start_line": 784,
+    "signature": "Sub txtCombine_KeyPress (KeyAscii As Integer)",
+    "end_line": 805,
+    "referenced_generated_symbols": [
+      "fn12C4"
+    ]
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "txtID_DragDrop",
+    "kind": "Sub",
+    "start_line": 807,
+    "signature": "Sub txtID_DragDrop (Source As Control, X As Single, Y As Single)",
+    "end_line": 815,
+    "referenced_generated_symbols": [
+      "sub085B"
+    ]
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "txtID_KeyDown",
+    "kind": "Sub",
+    "start_line": 817,
+    "signature": "Sub txtID_KeyDown (KeyCode As Integer, Shift As Integer)",
+    "end_line": 821,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "txtID_KeyPress",
+    "kind": "Sub",
+    "start_line": 823,
+    "signature": "Sub txtID_KeyPress (KeyAscii As Integer)",
+    "end_line": 883,
+    "referenced_generated_symbols": [
+      "fn036D",
+      "fn1121",
+      "fn12C4",
+      "fn12D6",
+      "fn271B",
+      "fn273B",
+      "sub085B",
+      "sub268D"
+    ]
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "txtSearch_KeyDown",
+    "kind": "Sub",
+    "start_line": 885,
+    "signature": "Sub txtSearch_KeyDown (KeyCode As Integer, Shift As Integer)",
+    "end_line": 889,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "txtSearch_KeyPress",
+    "kind": "Sub",
+    "start_line": 891,
+    "signature": "Sub txtSearch_KeyPress (KeyAscii As Integer)",
+    "end_line": 931,
+    "referenced_generated_symbols": [
+      "sub07E2"
+    ]
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "txtUncurse_Change",
+    "kind": "Sub",
+    "start_line": 933,
+    "signature": "Sub txtUncurse_Change ()",
+    "end_line": 938,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "txtUncurse_DragDrop",
+    "kind": "Sub",
+    "start_line": 940,
+    "signature": "Sub txtUncurse_DragDrop (Source As Control, X As Single, Y As Single)",
+    "end_line": 948,
+    "referenced_generated_symbols": [
+      "sub085B"
+    ]
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "txtUncurse_KeyDown",
+    "kind": "Sub",
+    "start_line": 950,
+    "signature": "Sub txtUncurse_KeyDown (KeyCode As Integer, Shift As Integer)",
+    "end_line": 954,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "txtUncurse_KeyPress",
+    "kind": "Sub",
+    "start_line": 956,
+    "signature": "Sub txtUncurse_KeyPress (KeyAscii As Integer)",
+    "end_line": 970,
+    "referenced_generated_symbols": [
+      "fn036D",
+      "fn12C4",
+      "fn274F"
+    ]
+  },
+  {
+    "file": "FRMCTYS.bas",
+    "name": "vsbItems_Change",
+    "kind": "Sub",
+    "start_line": 972,
+    "signature": "Sub vsbItems_Change ()",
+    "end_line": 1022,
+    "referenced_generated_symbols": [
+      "fn036D",
+      "fn110D",
+      "sub26C8"
+    ]
+  },
+  {
+    "file": "FRMDIREC.bas",
+    "name": "cmdCommand_Click",
+    "kind": "Sub",
+    "start_line": 8,
+    "signature": "Sub cmdCommand_Click (Index%)",
+    "end_line": 20,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMDIREC.bas",
+    "name": "dirDirectory_Change",
+    "kind": "Sub",
+    "start_line": 22,
+    "signature": "Sub dirDirectory_Change ()",
+    "end_line": 26,
+    "referenced_generated_symbols": [
+      "sub34AE"
+    ]
+  },
+  {
+    "file": "FRMDIREC.bas",
+    "name": "drvDrive_Change",
+    "kind": "Sub",
+    "start_line": 28,
+    "signature": "Sub drvDrive_Change ()",
+    "end_line": 40,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMDIREC.bas",
+    "name": "Form_Load",
+    "kind": "Sub",
+    "start_line": 42,
+    "signature": "Sub Form_Load ()",
+    "end_line": 49,
+    "referenced_generated_symbols": [
+      "sub07ED",
+      "sub34AE"
+    ]
+  },
+  {
+    "file": "FRMDIREC.bas",
+    "name": "Form_Resize",
+    "kind": "Sub",
+    "start_line": 51,
+    "signature": "Sub Form_Resize ()",
+    "end_line": 55,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMDIREC.bas",
+    "name": "sub34AE",
+    "kind": "Sub",
+    "start_line": 57,
+    "signature": "Sub sub34AE ()",
+    "end_line": 66,
+    "referenced_generated_symbols": [
+      "fn034F",
+      "fn0360"
+    ]
+  },
+  {
+    "file": "FRMDUNM.bas",
+    "name": "cmdAction_Click",
+    "kind": "Sub",
+    "start_line": 72,
+    "signature": "Sub cmdAction_Click (Index%)",
+    "end_line": 105,
+    "referenced_generated_symbols": [
+      "fn03BD",
+      "sub0456"
+    ]
+  },
+  {
+    "file": "FRMDUNM.bas",
+    "name": "cmdBuffer_Click",
+    "kind": "Sub",
+    "start_line": 107,
+    "signature": "Sub cmdBuffer_Click (Index%)",
+    "end_line": 119,
+    "referenced_generated_symbols": [
+      "sub0456"
+    ]
+  },
+  {
+    "file": "FRMDUNM.bas",
+    "name": "cmdMove_Click",
+    "kind": "Sub",
+    "start_line": 121,
+    "signature": "Sub cmdMove_Click (Index%)",
+    "end_line": 138,
+    "referenced_generated_symbols": [
+      "sub0456"
+    ]
+  },
+  {
+    "file": "FRMDUNM.bas",
+    "name": "cmdWait_Click",
+    "kind": "Sub",
+    "start_line": 140,
+    "signature": "Sub cmdWait_Click ()",
+    "end_line": 192,
+    "referenced_generated_symbols": [
+      "fn0380",
+      "fn0A34",
+      "sub08A9",
+      "sub0930",
+      "sub0EAE"
+    ]
+  },
+  {
+    "file": "FRMDUNM.bas",
+    "name": "Form_Activate",
+    "kind": "Sub",
+    "start_line": 194,
+    "signature": "Sub Form_Activate ()",
+    "end_line": 195,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMDUNM.bas",
+    "name": "Form_KeyDown",
+    "kind": "Sub",
+    "start_line": 197,
+    "signature": "Sub Form_KeyDown (KeyCode As Integer, Shift As Integer)",
+    "end_line": 216,
+    "referenced_generated_symbols": [
+      "fn14CB",
+      "sub0456"
+    ]
+  },
+  {
+    "file": "FRMDUNM.bas",
+    "name": "Form_Load",
+    "kind": "Sub",
+    "start_line": 218,
+    "signature": "Sub Form_Load ()",
+    "end_line": 303,
+    "referenced_generated_symbols": [
+      "fn03BD",
+      "fn0992",
+      "fn0A0B",
+      "fn0AE8",
+      "sub050F",
+      "sub0524",
+      "sub063F",
+      "sub0784",
+      "sub0792",
+      "sub0835",
+      "sub09CC",
+      "sub0A49",
+      "sub0A7C",
+      "sub0A91",
+      "sub168B"
+    ]
+  },
+  {
+    "file": "FRMDUNM.bas",
+    "name": "Form_Paint",
+    "kind": "Sub",
+    "start_line": 305,
+    "signature": "Sub Form_Paint ()",
+    "end_line": 306,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMDUNM.bas",
+    "name": "Form_Resize",
+    "kind": "Sub",
+    "start_line": 308,
+    "signature": "Sub Form_Resize ()",
+    "end_line": 354,
+    "referenced_generated_symbols": [
+      "fn09A4",
+      "sub0760",
+      "sub0A64",
+      "sub0B82"
+    ]
+  },
+  {
+    "file": "FRMDUNM.bas",
+    "name": "Form_Unload",
+    "kind": "Sub",
+    "start_line": 356,
+    "signature": "Sub Form_Unload (Cancel As Integer)",
+    "end_line": 363,
+    "referenced_generated_symbols": [
+      "sub0792",
+      "sub15BE"
+    ]
+  },
+  {
+    "file": "FRMDUNM.bas",
+    "name": "lblMonster_Click",
+    "kind": "Sub",
+    "start_line": 365,
+    "signature": "Sub lblMonster_Click (Index%)",
+    "end_line": 371,
+    "referenced_generated_symbols": [
+      "sub0BCD"
+    ]
+  },
+  {
+    "file": "FRMDUNM.bas",
+    "name": "lblRoom_Click",
+    "kind": "Sub",
+    "start_line": 373,
+    "signature": "Sub lblRoom_Click ()",
+    "end_line": 375,
+    "referenced_generated_symbols": [
+      "sub0456"
+    ]
+  },
+  {
+    "file": "FRMDUNM.bas",
+    "name": "picMaze2_Paint",
+    "kind": "Sub",
+    "start_line": 377,
+    "signature": "Sub picMaze2_Paint ()",
+    "end_line": 381,
+    "referenced_generated_symbols": [
+      "sub0980"
+    ]
+  },
+  {
+    "file": "FRMDUNM.bas",
+    "name": "picMonsters_Paint",
+    "kind": "Sub",
+    "start_line": 383,
+    "signature": "Sub picMonsters_Paint ()",
+    "end_line": 389,
+    "referenced_generated_symbols": [
+      "sub0B9B",
+      "sub0BAA",
+      "sub0BBA"
+    ]
+  },
+  {
+    "file": "FRMDUNM.bas",
+    "name": "timAilment_Timer",
+    "kind": "Sub",
+    "start_line": 391,
+    "signature": "Sub timAilment_Timer ()",
+    "end_line": 610,
+    "referenced_generated_symbols": [
+      "fn0380",
+      "fn0AD3",
+      "fn0AE8",
+      "fn0DCD",
+      "fn0E23",
+      "fn0EEF",
+      "fn1121",
+      "fn12AF",
+      "sub04FC",
+      "sub06FE",
+      "sub085B",
+      "sub086D",
+      "sub08A9",
+      "sub091E",
+      "sub0930",
+      "sub09DE",
+      "sub0BBA",
+      "sub0BF1",
+      "sub0C00",
+      "sub0D1D",
+      "sub0EDA",
+      "sub15EC"
+    ]
+  },
+  {
+    "file": "FRMDUNM.bas",
+    "name": "timCombat_Timer",
+    "kind": "Sub",
+    "start_line": 612,
+    "signature": "Sub timCombat_Timer ()",
+    "end_line": 626,
+    "referenced_generated_symbols": [
+      "sub155A"
+    ]
+  },
+  {
+    "file": "FRMEDITC.bas",
+    "name": "cmbCombo_KeyDown",
+    "kind": "Sub",
+    "start_line": 29,
+    "signature": "Sub cmbCombo_KeyDown (Index%, KeyCode As Integer, Shift As Integer)",
+    "end_line": 43,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMEDITC.bas",
+    "name": "cmbCombo_KeyPress",
+    "kind": "Sub",
+    "start_line": 45,
+    "signature": "Sub cmbCombo_KeyPress (Index%, KeyAscii As Integer)",
+    "end_line": 53,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMEDITC.bas",
+    "name": "cmdCommand_Click",
+    "kind": "Sub",
+    "start_line": 55,
+    "signature": "Sub cmdCommand_Click (Index%)",
+    "end_line": 179,
+    "referenced_generated_symbols": [
+      "fn0A0B",
+      "fn164C",
+      "fn16A0",
+      "sub047C",
+      "sub0835",
+      "sub08A9",
+      "sub0980",
+      "sub0B82",
+      "sub31E0",
+      "sub31F1"
+    ]
+  },
+  {
+    "file": "FRMEDITC.bas",
+    "name": "Form_Load",
+    "kind": "Sub",
+    "start_line": 181,
+    "signature": "Sub Form_Load ()",
+    "end_line": 201,
+    "referenced_generated_symbols": [
+      "sub02FE"
+    ]
+  },
+  {
+    "file": "FRMEDITC.bas",
+    "name": "Form_Unload",
+    "kind": "Sub",
+    "start_line": 203,
+    "signature": "Sub Form_Unload (Cancel As Integer)",
+    "end_line": 205,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMEDITC.bas",
+    "name": "sub31F1",
+    "kind": "Sub",
+    "start_line": 207,
+    "signature": "Sub sub31F1 (p00C0 As Integer ' 41, p00C2 As Integer ' 41)",
+    "end_line": 226,
+    "referenced_generated_symbols": [
+      "sub0F61"
+    ]
+  },
+  {
+    "file": "FRMEDITC.bas",
+    "name": "sub31E0",
+    "kind": "Sub",
+    "start_line": 228,
+    "signature": "Sub sub31E0 ()",
+    "end_line": 255,
+    "referenced_generated_symbols": [
+      "fn110D",
+      "sub31F1"
+    ]
+  },
+  {
+    "file": "FRMEXCHA.bas",
+    "name": "cmdCommand_Click",
+    "kind": "Sub",
+    "start_line": 17,
+    "signature": "Sub cmdCommand_Click (Index%)",
+    "end_line": 30,
+    "referenced_generated_symbols": [
+      "fn04ED"
+    ]
+  },
+  {
+    "file": "FRMEXCHA.bas",
+    "name": "Form_Load",
+    "kind": "Sub",
+    "start_line": 32,
+    "signature": "Sub Form_Load ()",
+    "end_line": 72,
+    "referenced_generated_symbols": [
+      "sub02FE",
+      "sub0784",
+      "sub07ED",
+      "sub0F61",
+      "sub2D61"
+    ]
+  },
+  {
+    "file": "FRMEXCHA.bas",
+    "name": "sub2D61",
+    "kind": "Sub",
+    "start_line": 74,
+    "signature": "Sub sub2D61 ()",
+    "end_line": 86,
+    "referenced_generated_symbols": [
+      "fn036D"
+    ]
+  },
+  {
+    "file": "FRMEXCHA.bas",
+    "name": "pnlGold_DragDrop",
+    "kind": "Sub",
+    "start_line": 88,
+    "signature": "Sub pnlGold_DragDrop (Index%, Source As Control, X As Single, Y As Single)",
+    "end_line": 127,
+    "referenced_generated_symbols": [
+      "sub2D61"
+    ]
+  },
+  {
+    "file": "FRMEXCHA.bas",
+    "name": "pnlGold_MouseMove",
+    "kind": "Sub",
+    "start_line": 129,
+    "signature": "Sub pnlGold_MouseMove (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",
+    "end_line": 133,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMEXCHA.bas",
+    "name": "pnlItem_Click",
+    "kind": "Sub",
+    "start_line": 135,
+    "signature": "Sub pnlItem_Click (Index%)",
+    "end_line": 150,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMEXCHA.bas",
+    "name": "pnlItem_DragDrop",
+    "kind": "Sub",
+    "start_line": 152,
+    "signature": "Sub pnlItem_DragDrop (Index%, Source As Control, X As Single, Y As Single)",
+    "end_line": 210,
+    "referenced_generated_symbols": [
+      "fn1121",
+      "fn129A",
+      "sub0F61"
+    ]
+  },
+  {
+    "file": "FRMEXCHA.bas",
+    "name": "pnlItem_MouseMove",
+    "kind": "Sub",
+    "start_line": 212,
+    "signature": "Sub pnlItem_MouseMove (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",
+    "end_line": 217,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMEXCHA.bas",
+    "name": "vsbItems_Change",
+    "kind": "Sub",
+    "start_line": 219,
+    "signature": "Sub vsbItems_Change (Index%)",
+    "end_line": 228,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMGLDL.bas",
+    "name": "cmdClean_Click",
+    "kind": "Sub",
+    "start_line": 14,
+    "signature": "Sub cmdClean_Click ()",
+    "end_line": 18,
+    "referenced_generated_symbols": [
+      "sub316B"
+    ]
+  },
+  {
+    "file": "FRMGLDL.bas",
+    "name": "cmdDone_Click",
+    "kind": "Sub",
+    "start_line": 20,
+    "signature": "Sub cmdDone_Click ()",
+    "end_line": 22,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMGLDL.bas",
+    "name": "Form_Load",
+    "kind": "Sub",
+    "start_line": 24,
+    "signature": "Sub Form_Load ()",
+    "end_line": 28,
+    "referenced_generated_symbols": [
+      "sub0802"
+    ]
+  },
+  {
+    "file": "FRMGLDL.bas",
+    "name": "Form_Resize",
+    "kind": "Sub",
+    "start_line": 30,
+    "signature": "Sub Form_Resize ()",
+    "end_line": 41,
+    "referenced_generated_symbols": [
+      "sub07B3",
+      "sub318B"
+    ]
+  },
+  {
+    "file": "FRMGLDL.bas",
+    "name": "Form_Unload",
+    "kind": "Sub",
+    "start_line": 43,
+    "signature": "Sub Form_Unload (Cancel As Integer)",
+    "end_line": 45,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMGLDL.bas",
+    "name": "sub316B",
+    "kind": "Sub",
+    "start_line": 47,
+    "signature": "Sub sub316B ()",
+    "end_line": 125,
+    "referenced_generated_symbols": [
+      "sub318B"
+    ]
+  },
+  {
+    "file": "FRMGLDL.bas",
+    "name": "sub318B",
+    "kind": "Sub",
+    "start_line": 127,
+    "signature": "Sub sub318B ()",
+    "end_line": 183,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMGROUP.bas",
+    "name": "cmdCommand_Click",
+    "kind": "Sub",
+    "start_line": 28,
+    "signature": "Sub cmdCommand_Click (Index%)",
+    "end_line": 42,
+    "referenced_generated_symbols": [
+      "fn0EEF",
+      "sub085B",
+      "sub14E0",
+      "sub1547"
+    ]
+  },
+  {
+    "file": "FRMGROUP.bas",
+    "name": "Form_Deactivate",
+    "kind": "Sub",
+    "start_line": 44,
+    "signature": "Sub Form_Deactivate ()",
+    "end_line": 45,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMGROUP.bas",
+    "name": "Form_KeyDown",
+    "kind": "Sub",
+    "start_line": 47,
+    "signature": "Sub Form_KeyDown (KeyCode As Integer, Shift As Integer)",
+    "end_line": 62,
+    "referenced_generated_symbols": [
+      "fn14CB",
+      "sub0456"
+    ]
+  },
+  {
+    "file": "FRMGROUP.bas",
+    "name": "Form_Load",
+    "kind": "Sub",
+    "start_line": 64,
+    "signature": "Sub Form_Load ()",
+    "end_line": 92,
+    "referenced_generated_symbols": [
+      "sub02FE",
+      "sub0524",
+      "sub0784",
+      "sub178B",
+      "sub2F40",
+      "sub2F5A"
+    ]
+  },
+  {
+    "file": "FRMGROUP.bas",
+    "name": "Form_Paint",
+    "kind": "Sub",
+    "start_line": 94,
+    "signature": "Sub Form_Paint ()",
+    "end_line": 95,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMGROUP.bas",
+    "name": "Form_Resize",
+    "kind": "Sub",
+    "start_line": 97,
+    "signature": "Sub Form_Resize ()",
+    "end_line": 124,
+    "referenced_generated_symbols": [
+      "sub07B3",
+      "sub07C5"
+    ]
+  },
+  {
+    "file": "FRMGROUP.bas",
+    "name": "Form_Unload",
+    "kind": "Sub",
+    "start_line": 126,
+    "signature": "Sub Form_Unload (Cancel As Integer)",
+    "end_line": 135,
+    "referenced_generated_symbols": [
+      "sub096E",
+      "sub14E0",
+      "sub15BE"
+    ]
+  },
+  {
+    "file": "FRMGROUP.bas",
+    "name": "lblCall_Change",
+    "kind": "Sub",
+    "start_line": 137,
+    "signature": "Sub lblCall_Change ()",
+    "end_line": 153,
+    "referenced_generated_symbols": [
+      "sub178B",
+      "sub2F40",
+      "sub2F5A"
+    ]
+  },
+  {
+    "file": "FRMGROUP.bas",
+    "name": "lblHits_Click",
+    "kind": "Sub",
+    "start_line": 155,
+    "signature": "Sub lblHits_Click (Index%)",
+    "end_line": 157,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMGROUP.bas",
+    "name": "lblHits_DblClick",
+    "kind": "Sub",
+    "start_line": 159,
+    "signature": "Sub lblHits_DblClick (Index%)",
+    "end_line": 161,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMGROUP.bas",
+    "name": "lblHits_DragDrop",
+    "kind": "Sub",
+    "start_line": 163,
+    "signature": "Sub lblHits_DragDrop (Index%, Source As Control, X As Single, Y As Single)",
+    "end_line": 165,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMGROUP.bas",
+    "name": "lblHits_MouseMove",
+    "kind": "Sub",
+    "start_line": 167,
+    "signature": "Sub lblHits_MouseMove (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",
+    "end_line": 169,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMGROUP.bas",
+    "name": "lblName_Click",
+    "kind": "Sub",
+    "start_line": 171,
+    "signature": "Sub lblName_Click (Index%)",
+    "end_line": 175,
+    "referenced_generated_symbols": [
+      "sub178B"
+    ]
+  },
+  {
+    "file": "FRMGROUP.bas",
+    "name": "lblName_DblClick",
+    "kind": "Sub",
+    "start_line": 177,
+    "signature": "Sub lblName_DblClick (Index%)",
+    "end_line": 179,
+    "referenced_generated_symbols": [
+      "sub14E0"
+    ]
+  },
+  {
+    "file": "FRMGROUP.bas",
+    "name": "lblName_DragDrop",
+    "kind": "Sub",
+    "start_line": 181,
+    "signature": "Sub lblName_DragDrop (Index%, Source As Control, X As Single, Y As Single)",
+    "end_line": 246,
+    "referenced_generated_symbols": [
+      "fn03BD",
+      "fn0EEF",
+      "sub085B",
+      "sub08A9",
+      "sub145F",
+      "sub14E0",
+      "sub178B",
+      "sub2F40"
+    ]
+  },
+  {
+    "file": "FRMGROUP.bas",
+    "name": "lblName_MouseMove",
+    "kind": "Sub",
+    "start_line": 248,
+    "signature": "Sub lblName_MouseMove (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",
+    "end_line": 256,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMGROUP.bas",
+    "name": "lblOption_Click",
+    "kind": "Sub",
+    "start_line": 258,
+    "signature": "Sub lblOption_Click (Index%)",
+    "end_line": 260,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMGROUP.bas",
+    "name": "lblOption_DblClick",
+    "kind": "Sub",
+    "start_line": 262,
+    "signature": "Sub lblOption_DblClick (Index%)",
+    "end_line": 264,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMGROUP.bas",
+    "name": "lblOption_DragDrop",
+    "kind": "Sub",
+    "start_line": 266,
+    "signature": "Sub lblOption_DragDrop (Index%, Source As Control, X As Single, Y As Single)",
+    "end_line": 268,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMGROUP.bas",
+    "name": "lblOption_MouseMove",
+    "kind": "Sub",
+    "start_line": 270,
+    "signature": "Sub lblOption_MouseMove (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",
+    "end_line": 272,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMGROUP.bas",
+    "name": "lblSpells_Click",
+    "kind": "Sub",
+    "start_line": 274,
+    "signature": "Sub lblSpells_Click (Index%)",
+    "end_line": 276,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMGROUP.bas",
+    "name": "lblSpells_DblClick",
+    "kind": "Sub",
+    "start_line": 278,
+    "signature": "Sub lblSpells_DblClick (Index%)",
+    "end_line": 280,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMGROUP.bas",
+    "name": "lblSpells_DragDrop",
+    "kind": "Sub",
+    "start_line": 282,
+    "signature": "Sub lblSpells_DragDrop (Index%, Source As Control, X As Single, Y As Single)",
+    "end_line": 284,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMGROUP.bas",
+    "name": "lblSpells_MouseMove",
+    "kind": "Sub",
+    "start_line": 286,
+    "signature": "Sub lblSpells_MouseMove (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",
+    "end_line": 288,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMGROUP.bas",
+    "name": "lblStatus_Click",
+    "kind": "Sub",
+    "start_line": 290,
+    "signature": "Sub lblStatus_Click (Index%)",
+    "end_line": 292,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMGROUP.bas",
+    "name": "lblStatus_DblClick",
+    "kind": "Sub",
+    "start_line": 294,
+    "signature": "Sub lblStatus_DblClick (Index%)",
+    "end_line": 296,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMGROUP.bas",
+    "name": "lblStatus_DragDrop",
+    "kind": "Sub",
+    "start_line": 298,
+    "signature": "Sub lblStatus_DragDrop (Index%, Source As Control, X As Single, Y As Single)",
+    "end_line": 300,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMGROUP.bas",
+    "name": "lblStatus_MouseMove",
+    "kind": "Sub",
+    "start_line": 302,
+    "signature": "Sub lblStatus_MouseMove (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",
+    "end_line": 304,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMGROUP.bas",
+    "name": "sub2F40",
+    "kind": "Sub",
+    "start_line": 306,
+    "signature": "Sub sub2F40 ()",
+    "end_line": 398,
+    "referenced_generated_symbols": [
+      "fn09A4",
+      "sub04DC",
+      "sub04FC",
+      "sub085B",
+      "sub08A9",
+      "sub091E",
+      "sub0956",
+      "sub096E",
+      "sub0980",
+      "sub14E0",
+      "sub178B",
+      "sub2F5A"
+    ]
+  },
+  {
+    "file": "FRMGROUP.bas",
+    "name": "sub2F5A",
+    "kind": "Sub",
+    "start_line": 400,
+    "signature": "Sub sub2F5A ()",
+    "end_line": 479,
+    "referenced_generated_symbols": [
+      "fn0EEF",
+      "sub04FC"
+    ]
+  },
+  {
+    "file": "FRMGROUP.bas",
+    "name": "msgBlast_event0000",
+    "kind": "Sub",
+    "start_line": 481,
+    "signature": "Sub msgBlast_event0000 (p0162 As Integer ' 41, p0164 As Integer ' 41)",
+    "end_line": 493,
+    "referenced_generated_symbols": [
+      "sub15BE"
+    ]
+  },
+  {
+    "file": "FRMHALL.bas",
+    "name": "cmdCommand_Click",
+    "kind": "Sub",
+    "start_line": 31,
+    "signature": "Sub cmdCommand_Click (Index%)",
+    "end_line": 38,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMHALL.bas",
+    "name": "Form_Load",
+    "kind": "Sub",
+    "start_line": 40,
+    "signature": "Sub Form_Load ()",
+    "end_line": 46,
+    "referenced_generated_symbols": [
+      "sub0802",
+      "sub1EBA",
+      "sub32F6"
+    ]
+  },
+  {
+    "file": "FRMHALL.bas",
+    "name": "Form_Resize",
+    "kind": "Sub",
+    "start_line": 48,
+    "signature": "Sub Form_Resize ()",
+    "end_line": 52,
+    "referenced_generated_symbols": [
+      "sub07B3"
+    ]
+  },
+  {
+    "file": "FRMHALL.bas",
+    "name": "sub3308",
+    "kind": "Sub",
+    "start_line": 54,
+    "signature": "Sub sub3308 (p003A As Integer ' 41, p003C As Integer ' 41, p003E As Integer ' 41, p0040 As Variant ' 46, p0044 As Integer ' 41)",
+    "end_line": 81,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMHALL.bas",
+    "name": "sub32F6",
+    "kind": "Sub",
+    "start_line": 83,
+    "signature": "Sub sub32F6 ()",
+    "end_line": 275,
+    "referenced_generated_symbols": [
+      "fn036D",
+      "fn1C07"
+    ]
+  },
+  {
+    "file": "FRMHALL.bas",
+    "name": "sub1EBA",
+    "kind": "Sub",
+    "start_line": 277,
+    "signature": "Sub sub1EBA ()",
+    "end_line": 279,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMINTER.bas",
+    "name": "cmbCharacter_KeyDown",
+    "kind": "Sub",
+    "start_line": 13,
+    "signature": "Sub cmbCharacter_KeyDown (KeyCode As Integer, Shift As Integer)",
+    "end_line": 19,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMINTER.bas",
+    "name": "cmbCharacter_KeyPress",
+    "kind": "Sub",
+    "start_line": 21,
+    "signature": "Sub cmbCharacter_KeyPress (KeyAscii As Integer)",
+    "end_line": 30,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMINTER.bas",
+    "name": "cmdCancel_Click",
+    "kind": "Sub",
+    "start_line": 32,
+    "signature": "Sub cmdCancel_Click ()",
+    "end_line": 43,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMINTER.bas",
+    "name": "cmdCompanion_Click",
+    "kind": "Sub",
+    "start_line": 45,
+    "signature": "Sub cmdCompanion_Click (Index%)",
+    "end_line": 49,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMINTER.bas",
+    "name": "cmdOK_Click",
+    "kind": "Sub",
+    "start_line": 51,
+    "signature": "Sub cmdOK_Click ()",
+    "end_line": 290,
+    "referenced_generated_symbols": [
+      "fn12C4",
+      "fn13C0",
+      "sub07E2"
+    ]
+  },
+  {
+    "file": "FRMINTER.bas",
+    "name": "cmdSelf_Click",
+    "kind": "Sub",
+    "start_line": 292,
+    "signature": "Sub cmdSelf_Click ()",
+    "end_line": 299,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMINTER.bas",
+    "name": "Form_Load",
+    "kind": "Sub",
+    "start_line": 301,
+    "signature": "Sub Form_Load ()",
+    "end_line": 316,
+    "referenced_generated_symbols": [
+      "sub02FE",
+      "sub0784"
+    ]
+  },
+  {
+    "file": "FRMINTER.bas",
+    "name": "Form_Resize",
+    "kind": "Sub",
+    "start_line": 318,
+    "signature": "Sub Form_Resize ()",
+    "end_line": 490,
+    "referenced_generated_symbols": [
+      "fn13C0",
+      "sub0695"
+    ]
+  },
+  {
+    "file": "FRMINTER.bas",
+    "name": "Form_Unload",
+    "kind": "Sub",
+    "start_line": 492,
+    "signature": "Sub Form_Unload (Cancel As Integer)",
+    "end_line": 493,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMINTER.bas",
+    "name": "lblCall_Change",
+    "kind": "Sub",
+    "start_line": 495,
+    "signature": "Sub lblCall_Change ()",
+    "end_line": 505,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMINTER.bas",
+    "name": "txtQuestion_KeyDown",
+    "kind": "Sub",
+    "start_line": 507,
+    "signature": "Sub txtQuestion_KeyDown (KeyCode As Integer, Shift As Integer)",
+    "end_line": 511,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMINTER.bas",
+    "name": "txtQuestion_KeyPress",
+    "kind": "Sub",
+    "start_line": 513,
+    "signature": "Sub txtQuestion_KeyPress (KeyAscii As Integer)",
+    "end_line": 522,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMLIBRA.bas",
+    "name": "cmdCommand_Click",
+    "kind": "Sub",
+    "start_line": 13,
+    "signature": "Sub cmdCommand_Click (Index%)",
+    "end_line": 20,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMLIBRA.bas",
+    "name": "Form_Load",
+    "kind": "Sub",
+    "start_line": 22,
+    "signature": "Sub Form_Load ()",
+    "end_line": 30,
+    "referenced_generated_symbols": [
+      "sub0802",
+      "sub327E"
+    ]
+  },
+  {
+    "file": "FRMLIBRA.bas",
+    "name": "Form_Resize",
+    "kind": "Sub",
+    "start_line": 32,
+    "signature": "Sub Form_Resize ()",
+    "end_line": 36,
+    "referenced_generated_symbols": [
+      "sub07B3"
+    ]
+  },
+  {
+    "file": "FRMLIBRA.bas",
+    "name": "Form_Unload",
+    "kind": "Sub",
+    "start_line": 38,
+    "signature": "Sub Form_Unload (Cancel As Integer)",
+    "end_line": 40,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMLIBRA.bas",
+    "name": "lstList_Click",
+    "kind": "Sub",
+    "start_line": 42,
+    "signature": "Sub lstList_Click ()",
+    "end_line": 51,
+    "referenced_generated_symbols": [
+      "fn1BBE"
+    ]
+  },
+  {
+    "file": "FRMLIBRA.bas",
+    "name": "sub327E",
+    "kind": "Sub",
+    "start_line": 53,
+    "signature": "Sub sub327E ()",
+    "end_line": 84,
+    "referenced_generated_symbols": [
+      "fn1BD5",
+      "sub0F9A"
+    ]
+  },
+  {
+    "file": "FRMLIBRA.bas",
+    "name": "optOption_Click",
+    "kind": "Sub",
+    "start_line": 86,
+    "signature": "Sub optOption_Click (Index%)",
+    "end_line": 91,
+    "referenced_generated_symbols": [
+      "sub327E"
+    ]
+  },
+  {
+    "file": "FRMLIBRA.bas",
+    "name": "picMonster_Paint",
+    "kind": "Sub",
+    "start_line": 93,
+    "signature": "Sub picMonster_Paint ()",
+    "end_line": 116,
+    "referenced_generated_symbols": [
+      "fn0C3B"
+    ]
+  },
+  {
+    "file": "FRMLIBRA.bas",
+    "name": "txtInfo_KeyDown",
+    "kind": "Sub",
+    "start_line": 118,
+    "signature": "Sub txtInfo_KeyDown (KeyCode As Integer, Shift As Integer)",
+    "end_line": 120,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMLIBRA.bas",
+    "name": "txtInfo_KeyPress",
+    "kind": "Sub",
+    "start_line": 122,
+    "signature": "Sub txtInfo_KeyPress (KeyAscii As Integer)",
+    "end_line": 124,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMLIBRA.bas",
+    "name": "txtSearch_KeyDown",
+    "kind": "Sub",
+    "start_line": 126,
+    "signature": "Sub txtSearch_KeyDown (KeyCode As Integer, Shift As Integer)",
+    "end_line": 152,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMLIBRA.bas",
+    "name": "txtSearch_KeyPress",
+    "kind": "Sub",
+    "start_line": 154,
+    "signature": "Sub txtSearch_KeyPress (KeyAscii As Integer)",
+    "end_line": 158,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMMAIN.bas",
+    "name": "cmdTool_Click",
+    "kind": "Sub",
+    "start_line": 44,
+    "signature": "Sub cmdTool_Click (Index%)",
+    "end_line": 104,
+    "referenced_generated_symbols": [
+      "fn14CB",
+      "sub152F"
+    ]
+  },
+  {
+    "file": "FRMMAIN.bas",
+    "name": "cmdTool_KeyDown",
+    "kind": "Sub",
+    "start_line": 106,
+    "signature": "Sub cmdTool_KeyDown (Index%, KeyCode As Integer, Shift As Integer)",
+    "end_line": 112,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMMAIN.bas",
+    "name": "cmdTool_KeyPress",
+    "kind": "Sub",
+    "start_line": 114,
+    "signature": "Sub cmdTool_KeyPress (Index%, KeyAscii As Integer)",
+    "end_line": 116,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMMAIN.bas",
+    "name": "mciMusic_Done",
+    "kind": "Sub",
+    "start_line": 118,
+    "signature": "Sub mciMusic_Done (NotifyCode As Integer)",
+    "end_line": 120,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMMAIN.bas",
+    "name": "MDIForm_Activate",
+    "kind": "Sub",
+    "start_line": 122,
+    "signature": "Sub MDIForm_Activate ()",
+    "end_line": 124,
+    "referenced_generated_symbols": [
+      "sub050F"
+    ]
+  },
+  {
+    "file": "FRMMAIN.bas",
+    "name": "MDIForm_Load",
+    "kind": "Sub",
+    "start_line": 126,
+    "signature": "Sub MDIForm_Load ()",
+    "end_line": 161,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMMAIN.bas",
+    "name": "MDIForm_QueryUnload",
+    "kind": "Sub",
+    "start_line": 163,
+    "signature": "Sub MDIForm_QueryUnload (Cancel As Integer, UnloadMode As Integer)",
+    "end_line": 196,
+    "referenced_generated_symbols": [
+      "fn0EEF",
+      "sub05F6",
+      "sub085B",
+      "sub165F"
+    ]
+  },
+  {
+    "file": "FRMMAIN.bas",
+    "name": "MDIForm_Resize",
+    "kind": "Sub",
+    "start_line": 198,
+    "signature": "Sub MDIForm_Resize ()",
+    "end_line": 231,
+    "referenced_generated_symbols": [
+      "fn03BD",
+      "sub1A50",
+      "sub1B76",
+      "sub2074"
+    ]
+  },
+  {
+    "file": "FRMMAIN.bas",
+    "name": "MDIForm_Unload",
+    "kind": "Sub",
+    "start_line": 233,
+    "signature": "Sub MDIForm_Unload (Cancel As Integer)",
+    "end_line": 245,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMMAIN.bas",
+    "name": "sub2074",
+    "kind": "Sub",
+    "start_line": 247,
+    "signature": "Sub sub2074 ()",
+    "end_line": 254,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMMAIN.bas",
+    "name": "msgBlast_event0000",
+    "kind": "Sub",
+    "start_line": 256,
+    "signature": "Sub msgBlast_event0000 (p010C As Integer ' 41, p010E As Integer ' 41, p0110 As Integer ' 41)",
+    "end_line": 281,
+    "referenced_generated_symbols": [
+      "sub1B76",
+      "sub1D61"
+    ]
+  },
+  {
+    "file": "FRMMAIN.bas",
+    "name": "picToolbar_Paint",
+    "kind": "Sub",
+    "start_line": 283,
+    "signature": "Sub picToolbar_Paint ()",
+    "end_line": 286,
+    "referenced_generated_symbols": [
+      "sub08B9"
+    ]
+  },
+  {
+    "file": "FRMMAIN.bas",
+    "name": "timMusic_Timer",
+    "kind": "Sub",
+    "start_line": 288,
+    "signature": "Sub timMusic_Timer ()",
+    "end_line": 300,
+    "referenced_generated_symbols": [
+      "sub168B",
+      "sub1A50"
+    ]
+  },
+  {
+    "file": "FRMMENU.bas",
+    "name": "cmdCommand_Click",
+    "kind": "Sub",
+    "start_line": 23,
+    "signature": "Sub cmdCommand_Click (Index%)",
+    "end_line": 119,
+    "referenced_generated_symbols": [
+      "fn03BD",
+      "fn04ED",
+      "fn16A0",
+      "sub04DC",
+      "sub16CB",
+      "sub2D04",
+      "sub2D18",
+      "sub2D2E"
+    ]
+  },
+  {
+    "file": "FRMMENU.bas",
+    "name": "Form_Load",
+    "kind": "Sub",
+    "start_line": 121,
+    "signature": "Sub Form_Load ()",
+    "end_line": 159,
+    "referenced_generated_symbols": [
+      "fn0360",
+      "fn03F1",
+      "sub02FE",
+      "sub063F",
+      "sub2D2E"
+    ]
+  },
+  {
+    "file": "FRMMENU.bas",
+    "name": "Form_Unload",
+    "kind": "Sub",
+    "start_line": 161,
+    "signature": "Sub Form_Unload (Cancel As Integer)",
+    "end_line": 163,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMMENU.bas",
+    "name": "sub2D18",
+    "kind": "Sub",
+    "start_line": 165,
+    "signature": "Sub sub2D18 ()",
+    "end_line": 198,
+    "referenced_generated_symbols": [
+      "sub04DC",
+      "sub0565",
+      "sub096E"
+    ]
+  },
+  {
+    "file": "FRMMENU.bas",
+    "name": "sub2D04",
+    "kind": "Sub",
+    "start_line": 200,
+    "signature": "Sub sub2D04 (p00CA As Integer ' 41)",
+    "end_line": 239,
+    "referenced_generated_symbols": [
+      "fn04CD",
+      "fn16A0"
+    ]
+  },
+  {
+    "file": "FRMMENU.bas",
+    "name": "sub2D2E",
+    "kind": "Sub",
+    "start_line": 241,
+    "signature": "Sub sub2D2E ()",
+    "end_line": 256,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMMORG.bas",
+    "name": "cmdCommand_Click",
+    "kind": "Sub",
+    "start_line": 25,
+    "signature": "Sub cmdCommand_Click (Index%)",
+    "end_line": 186,
+    "referenced_generated_symbols": [
+      "fn036D",
+      "fn114E",
+      "fn13C0",
+      "fn13D7",
+      "fn16A0",
+      "sub085B",
+      "sub086D",
+      "sub0A7C",
+      "sub0B82",
+      "sub0F38"
+    ]
+  },
+  {
+    "file": "FRMMORG.bas",
+    "name": "cmdExit_Click",
+    "kind": "Sub",
+    "start_line": 188,
+    "signature": "Sub cmdExit_Click ()",
+    "end_line": 192,
+    "referenced_generated_symbols": [
+      "sub0792"
+    ]
+  },
+  {
+    "file": "FRMMORG.bas",
+    "name": "Form_KeyDown",
+    "kind": "Sub",
+    "start_line": 194,
+    "signature": "Sub Form_KeyDown (KeyCode As Integer, Shift As Integer)",
+    "end_line": 211,
+    "referenced_generated_symbols": [
+      "fn14CB",
+      "fn1589"
+    ]
+  },
+  {
+    "file": "FRMMORG.bas",
+    "name": "Form_Load",
+    "kind": "Sub",
+    "start_line": 213,
+    "signature": "Sub Form_Load ()",
+    "end_line": 231,
+    "referenced_generated_symbols": [
+      "sub02FE",
+      "sub0524",
+      "sub0784",
+      "sub2BDB"
+    ]
+  },
+  {
+    "file": "FRMMORG.bas",
+    "name": "Form_Resize",
+    "kind": "Sub",
+    "start_line": 233,
+    "signature": "Sub Form_Resize ()",
+    "end_line": 238,
+    "referenced_generated_symbols": [
+      "sub07B3",
+      "sub07C5"
+    ]
+  },
+  {
+    "file": "FRMMORG.bas",
+    "name": "Form_Unload",
+    "kind": "Sub",
+    "start_line": 240,
+    "signature": "Sub Form_Unload (Cancel As Integer)",
+    "end_line": 244,
+    "referenced_generated_symbols": [
+      "sub15BE"
+    ]
+  },
+  {
+    "file": "FRMMORG.bas",
+    "name": "lblCall_Change",
+    "kind": "Sub",
+    "start_line": 246,
+    "signature": "Sub lblCall_Change ()",
+    "end_line": 252,
+    "referenced_generated_symbols": [
+      "sub2BDB"
+    ]
+  },
+  {
+    "file": "FRMMORG.bas",
+    "name": "sub2BDB",
+    "kind": "Sub",
+    "start_line": 254,
+    "signature": "Sub sub2BDB ()",
+    "end_line": 265,
+    "referenced_generated_symbols": [
+      "fn036D",
+      "fn1235"
+    ]
+  },
+  {
+    "file": "FRMOPTIO.bas",
+    "name": "chkCheck_Click",
+    "kind": "Sub",
+    "start_line": 58,
+    "signature": "Sub chkCheck_Click (Index%, Value As Integer)",
+    "end_line": 113,
+    "referenced_generated_symbols": [
+      "fn03BD",
+      "fn19DC",
+      "fn1A08",
+      "fn1A1B",
+      "sub0618",
+      "sub063F",
+      "sub09DE",
+      "sub170B"
+    ]
+  },
+  {
+    "file": "FRMOPTIO.bas",
+    "name": "cmdCommand_Click",
+    "kind": "Sub",
+    "start_line": 115,
+    "signature": "Sub cmdCommand_Click (Index%)",
+    "end_line": 309,
+    "referenced_generated_symbols": [
+      "fn034F",
+      "fn0360",
+      "fn0662",
+      "sub05F6",
+      "sub170B",
+      "sub2C63"
+    ]
+  },
+  {
+    "file": "FRMOPTIO.bas",
+    "name": "Form_Load",
+    "kind": "Sub",
+    "start_line": 311,
+    "signature": "Sub Form_Load ()",
+    "end_line": 361,
+    "referenced_generated_symbols": [
+      "fn034F",
+      "sub0802",
+      "sub2C63",
+      "sub2C76"
+    ]
+  },
+  {
+    "file": "FRMOPTIO.bas",
+    "name": "Form_Paint",
+    "kind": "Sub",
+    "start_line": 363,
+    "signature": "Sub Form_Paint ()",
+    "end_line": 364,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMOPTIO.bas",
+    "name": "Form_Resize",
+    "kind": "Sub",
+    "start_line": 366,
+    "signature": "Sub Form_Resize ()",
+    "end_line": 370,
+    "referenced_generated_symbols": [
+      "sub07B3"
+    ]
+  },
+  {
+    "file": "FRMOPTIO.bas",
+    "name": "Form_Unload",
+    "kind": "Sub",
+    "start_line": 372,
+    "signature": "Sub Form_Unload (Cancel As Integer)",
+    "end_line": 383,
+    "referenced_generated_symbols": [
+      "fn19DC",
+      "fn1A1B",
+      "sub063F"
+    ]
+  },
+  {
+    "file": "FRMOPTIO.bas",
+    "name": "hsbVolume_Change",
+    "kind": "Sub",
+    "start_line": 385,
+    "signature": "Sub hsbVolume_Change (Index%)",
+    "end_line": 387,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMOPTIO.bas",
+    "name": "hsbVolume_Scroll",
+    "kind": "Sub",
+    "start_line": 389,
+    "signature": "Sub hsbVolume_Scroll (Index%)",
+    "end_line": 410,
+    "referenced_generated_symbols": [
+      "sub09DE"
+    ]
+  },
+  {
+    "file": "FRMOPTIO.bas",
+    "name": "sub2C76",
+    "kind": "Sub",
+    "start_line": 412,
+    "signature": "Sub sub2C76 ()",
+    "end_line": 416,
+    "referenced_generated_symbols": [
+      "fn0360",
+      "fn03F1"
+    ]
+  },
+  {
+    "file": "FRMOPTIO.bas",
+    "name": "sub2C63",
+    "kind": "Sub",
+    "start_line": 418,
+    "signature": "Sub sub2C63 ()",
+    "end_line": 425,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMORDER.bas",
+    "name": "cmdCommand_Click",
+    "kind": "Sub",
+    "start_line": 5,
+    "signature": "Sub cmdCommand_Click (Index%)",
+    "end_line": 7,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMORDER.bas",
+    "name": "Form_Load",
+    "kind": "Sub",
+    "start_line": 9,
+    "signature": "Sub Form_Load ()",
+    "end_line": 31,
+    "referenced_generated_symbols": [
+      "sub0802"
+    ]
+  },
+  {
+    "file": "FRMORDER.bas",
+    "name": "Form_Resize",
+    "kind": "Sub",
+    "start_line": 33,
+    "signature": "Sub Form_Resize ()",
+    "end_line": 37,
+    "referenced_generated_symbols": [
+      "sub07B3"
+    ]
+  },
+  {
+    "file": "FRMPINFO.bas",
+    "name": "cmbBuffer_Click",
+    "kind": "Sub",
+    "start_line": 9,
+    "signature": "Sub cmbBuffer_Click ()",
+    "end_line": 14,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMPINFO.bas",
+    "name": "cmdCommand_Click",
+    "kind": "Sub",
+    "start_line": 16,
+    "signature": "Sub cmdCommand_Click ()",
+    "end_line": 18,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMPINFO.bas",
+    "name": "Form_Load",
+    "kind": "Sub",
+    "start_line": 20,
+    "signature": "Sub Form_Load ()",
+    "end_line": 32,
+    "referenced_generated_symbols": [
+      "sub02FE",
+      "sub0784"
+    ]
+  },
+  {
+    "file": "FRMPINFO.bas",
+    "name": "lstCharacters_Click",
+    "kind": "Sub",
+    "start_line": 34,
+    "signature": "Sub lstCharacters_Click ()",
+    "end_line": 45,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMPINFO.bas",
+    "name": "optOption_Click",
+    "kind": "Sub",
+    "start_line": 47,
+    "signature": "Sub optOption_Click (Index%)",
+    "end_line": 61,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMPRINT.bas",
+    "name": "Form_Load",
+    "kind": "Sub",
+    "start_line": 7,
+    "signature": "Sub Form_Load ()",
+    "end_line": 28,
+    "referenced_generated_symbols": [
+      "sub02FE",
+      "sub34F3"
+    ]
+  },
+  {
+    "file": "FRMPRINT.bas",
+    "name": "Form_Resize",
+    "kind": "Sub",
+    "start_line": 30,
+    "signature": "Sub Form_Resize ()",
+    "end_line": 35,
+    "referenced_generated_symbols": [
+      "sub3502"
+    ]
+  },
+  {
+    "file": "FRMPRINT.bas",
+    "name": "sub3502",
+    "kind": "Sub",
+    "start_line": 37,
+    "signature": "Sub sub3502 ()",
+    "end_line": 60,
+    "referenced_generated_symbols": [
+      "fn192B",
+      "sub085B"
+    ]
+  },
+  {
+    "file": "FRMPRINT.bas",
+    "name": "sub34F3",
+    "kind": "Sub",
+    "start_line": 62,
+    "signature": "Sub sub34F3 ()",
+    "end_line": 79,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMSEEK.bas",
+    "name": "cmdCommand_Click",
+    "kind": "Sub",
+    "start_line": 17,
+    "signature": "Sub cmdCommand_Click (Index%)",
+    "end_line": 368,
+    "referenced_generated_symbols": [
+      "fn036D",
+      "fn0380",
+      "fn0992",
+      "fn0A0B",
+      "fn0B01",
+      "fn0E23",
+      "fn114E",
+      "fn16A0",
+      "sub321C"
+    ]
+  },
+  {
+    "file": "FRMSEEK.bas",
+    "name": "Form_KeyDown",
+    "kind": "Sub",
+    "start_line": 370,
+    "signature": "Sub Form_KeyDown (KeyCode As Integer, Shift As Integer)",
+    "end_line": 375,
+    "referenced_generated_symbols": [
+      "fn14CB"
+    ]
+  },
+  {
+    "file": "FRMSEEK.bas",
+    "name": "Form_Load",
+    "kind": "Sub",
+    "start_line": 377,
+    "signature": "Sub Form_Load ()",
+    "end_line": 394,
+    "referenced_generated_symbols": [
+      "sub02FE",
+      "sub0524",
+      "sub0784"
+    ]
+  },
+  {
+    "file": "FRMSEEK.bas",
+    "name": "Form_Resize",
+    "kind": "Sub",
+    "start_line": 396,
+    "signature": "Sub Form_Resize ()",
+    "end_line": 401,
+    "referenced_generated_symbols": [
+      "sub07B3",
+      "sub07C5"
+    ]
+  },
+  {
+    "file": "FRMSEEK.bas",
+    "name": "Form_Unload",
+    "kind": "Sub",
+    "start_line": 403,
+    "signature": "Sub Form_Unload (Cancel As Integer)",
+    "end_line": 407,
+    "referenced_generated_symbols": [
+      "sub15BE"
+    ]
+  },
+  {
+    "file": "FRMSEEK.bas",
+    "name": "sub321C",
+    "kind": "Sub",
+    "start_line": 409,
+    "signature": "Sub sub321C (p00F4 As Integer ' 41, p00F6 As Integer ' 41, p00F8 As Integer ' 41)",
+    "end_line": 424,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMWELCO.bas",
+    "name": "Form_Load",
+    "kind": "Sub",
+    "start_line": 6,
+    "signature": "Sub Form_Load ()",
+    "end_line": 21,
+    "referenced_generated_symbols": [
+      "sub02FE"
+    ]
+  },
+  {
+    "file": "FRMWELCO.bas",
+    "name": "Form_Unload",
+    "kind": "Sub",
+    "start_line": 23,
+    "signature": "Sub Form_Unload (Cancel As Integer)",
+    "end_line": 26,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "FRMWELCO.bas",
+    "name": "lblLoading_Change",
+    "kind": "Sub",
+    "start_line": 28,
+    "signature": "Sub lblLoading_Change ()",
+    "end_line": 30,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module1.bas",
+    "name": "sub02FE",
+    "kind": "Sub",
+    "start_line": 114,
+    "signature": "Sub sub02FE (p05D4 As Form ' 49)",
+    "end_line": 117,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module1.bas",
+    "name": "fn030F",
+    "kind": "Function",
+    "start_line": 119,
+    "signature": "Function fn030F (p05DC As Integer ' 41, p05DE As Integer ' 41) As Integer ' 1",
+    "end_line": 128,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module1.bas",
+    "name": "fn0326",
+    "kind": "Function",
+    "start_line": 130,
+    "signature": "Function fn0326 (p05E6 As String ' 47) As Integer ' 1",
+    "end_line": 134,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module1.bas",
+    "name": "fn0339",
+    "kind": "Function",
+    "start_line": 136,
+    "signature": "Function fn0339 (ByVal p05EA As String ' 47) As String ' 7",
+    "end_line": 151,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module1.bas",
+    "name": "fn034F",
+    "kind": "Function",
+    "start_line": 153,
+    "signature": "Function fn034F (ByVal p05F0 As String ' 47) As Integer ' 1",
+    "end_line": 180,
+    "referenced_generated_symbols": [
+      "fn0339"
+    ]
+  },
+  {
+    "file": "Module1.bas",
+    "name": "fn0360",
+    "kind": "Function",
+    "start_line": 182,
+    "signature": "Function fn0360 (p05F6 As String ' 47) As String ' 7",
+    "end_line": 188,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module1.bas",
+    "name": "fn036D",
+    "kind": "Function",
+    "start_line": 190,
+    "signature": "Function fn036D (p05FA As Currency ' 45, p05FC As Integer ' 41) As String ' 7",
+    "end_line": 209,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module1.bas",
+    "name": "fn0380",
+    "kind": "Function",
+    "start_line": 211,
+    "signature": "Function fn0380 (ByVal pv0602 As Integer ' 81, ByVal pv0604 As Currency ' 85) As Integer ' 1",
+    "end_line": 217,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module1.bas",
+    "name": "sub038D",
+    "kind": "Sub",
+    "start_line": 219,
+    "signature": "Sub sub038D ()",
+    "end_line": 604,
+    "referenced_generated_symbols": [
+      "fn0360",
+      "sub03A2"
+    ]
+  },
+  {
+    "file": "Module1.bas",
+    "name": "sub03A2",
+    "kind": "Sub",
+    "start_line": 606,
+    "signature": "Sub sub03A2 ()",
+    "end_line": 649,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module1.bas",
+    "name": "fn03BD",
+    "kind": "Function",
+    "start_line": 651,
+    "signature": "Function fn03BD (p06B8 As Form ' 49) As Integer ' 1",
+    "end_line": 659,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module1.bas",
+    "name": "fn03D0",
+    "kind": "Function",
+    "start_line": 661,
+    "signature": "Function fn03D0 (ByVal p06C2 As String ' 47) As Integer ' 1",
+    "end_line": 909,
+    "referenced_generated_symbols": [
+      "fn0326",
+      "fn0425"
+    ]
+  },
+  {
+    "file": "Module1.bas",
+    "name": "sub03E3",
+    "kind": "Sub",
+    "start_line": 911,
+    "signature": "Sub sub03E3 (p06DC As Integer ' 41)",
+    "end_line": 993,
+    "referenced_generated_symbols": [
+      "fn0360",
+      "fn03F1"
+    ]
+  },
+  {
+    "file": "Module1.bas",
+    "name": "fn03F1",
+    "kind": "Function",
+    "start_line": 995,
+    "signature": "Function fn03F1 (ByVal p06F4 As String ' 47, ByVal p06F6 As String ' 47, ByVal p06F8 As String ' 47) As String ' 7",
+    "end_line": 1009,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module1.bas",
+    "name": "fn0403",
+    "kind": "Function",
+    "start_line": 1011,
+    "signature": "Function fn0403 (ByVal p0700 As String ' 47, ByVal p0702 As String ' 47, ByVal p0704 As String ' 47, p0706 As Single ' 43) As Single ' 3",
+    "end_line": 1015,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module1.bas",
+    "name": "fn0418",
+    "kind": "Function",
+    "start_line": 1017,
+    "signature": "Function fn0418 (ByVal pv070C As Integer ' 81, ByVal pv070E As Currency ' 85, ByVal pv0710 As Integer ' 81) As Long ' 2",
+    "end_line": 1027,
+    "referenced_generated_symbols": [
+      "fn0380"
+    ]
+  },
+  {
+    "file": "Module1.bas",
+    "name": "fn0425",
+    "kind": "Function",
+    "start_line": 1029,
+    "signature": "Function fn0425 (ByVal p0714 As String ' 47) As Integer ' 1",
+    "end_line": 1085,
+    "referenced_generated_symbols": [
+      "fn0326"
+    ]
+  },
+  {
+    "file": "Module10.bas",
+    "name": "sub1B11",
+    "kind": "Sub",
+    "start_line": 11,
+    "signature": "Sub sub1B11 (p003C As Integer ' 41, p003E As Integer ' 41, p0042 As T72D7 ' 4A, p0046 As T72D7 ' 4A)",
+    "end_line": 30,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module10.bas",
+    "name": "sub1B2B",
+    "kind": "Sub",
+    "start_line": 32,
+    "signature": "Sub sub1B2B ()",
+    "end_line": 59,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module10.bas",
+    "name": "sub173B",
+    "kind": "Sub",
+    "start_line": 61,
+    "signature": "Sub sub173B ()",
+    "end_line": 92,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module10.bas",
+    "name": "sub1B47",
+    "kind": "Sub",
+    "start_line": 94,
+    "signature": "Sub sub1B47 ()",
+    "end_line": 121,
+    "referenced_generated_symbols": [
+      "sub1B11"
+    ]
+  },
+  {
+    "file": "Module10.bas",
+    "name": "fn1B61",
+    "kind": "Function",
+    "start_line": 123,
+    "signature": "Function fn1B61 (p0086 As String ' 47, p008A As T72D7 ' 4A) As Integer ' 1",
+    "end_line": 171,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module10.bas",
+    "name": "sub1B76",
+    "kind": "Sub",
+    "start_line": 173,
+    "signature": "Sub sub1B76 ()",
+    "end_line": 176,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module10.bas",
+    "name": "fn1B8E",
+    "kind": "Function",
+    "start_line": 178,
+    "signature": "Function fn1B8E (p009E As String ' 47, p00A2 As T72D7 ' 4A) As Integer ' 1",
+    "end_line": 200,
+    "referenced_generated_symbols": [
+      "fn034F"
+    ]
+  },
+  {
+    "file": "Module11.bas",
+    "name": "sub0578",
+    "kind": "Sub",
+    "start_line": 25,
+    "signature": "Sub sub0578 (p0030 ' 40, ByVal p0032 As String ' 47)",
+    "end_line": 53,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module11.bas",
+    "name": "sub0F9A",
+    "kind": "Sub",
+    "start_line": 55,
+    "signature": "Sub sub0F9A (p0044 As Integer ' 41, p0046 As Integer ' 41, p004A ' 40)",
+    "end_line": 76,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module11.bas",
+    "name": "fn1BBE",
+    "kind": "Function",
+    "start_line": 78,
+    "signature": "Function fn1BBE (ByVal p0058 As String ' 47, p005A As Integer ' 41) As String ' 7",
+    "end_line": 405,
+    "referenced_generated_symbols": [
+      "fn030F",
+      "fn0380",
+      "fn0E0D",
+      "fn0E23",
+      "sub0F9A"
+    ]
+  },
+  {
+    "file": "Module11.bas",
+    "name": "fn1BD5",
+    "kind": "Function",
+    "start_line": 407,
+    "signature": "Function fn1BD5 (p00FC As Integer ' 41) As Integer ' 1",
+    "end_line": 426,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module11.bas",
+    "name": "sub1043",
+    "kind": "Sub",
+    "start_line": 428,
+    "signature": "Sub sub1043 (p0100 ' 40, p0102 ' 40, ByVal pv0104 As Currency ' 85)",
+    "end_line": 519,
+    "referenced_generated_symbols": [
+      "fn036D",
+      "fn1BF0",
+      "fn1C07",
+      "fn1C1A",
+      "sub04FC",
+      "sub0578",
+      "sub085B"
+    ]
+  },
+  {
+    "file": "Module11.bas",
+    "name": "fn1BF0",
+    "kind": "Function",
+    "start_line": 521,
+    "signature": "Function fn1BF0 (p0128 As Integer ' 41, p012A As Integer ' 41, p012C As Integer ' 41) As Integer ' 1",
+    "end_line": 602,
+    "referenced_generated_symbols": [
+      "fn0380",
+      "fn11E9",
+      "sub04FC"
+    ]
+  },
+  {
+    "file": "Module11.bas",
+    "name": "fn1C07",
+    "kind": "Function",
+    "start_line": 604,
+    "signature": "Function fn1C07 (p014E As Integer ' 41, p0152 ' 40) As Integer ' 1",
+    "end_line": 618,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module11.bas",
+    "name": "fn1C1A",
+    "kind": "Function",
+    "start_line": 620,
+    "signature": "Function fn1C1A (p015A As Integer ' 41, p015E ' 40) As Integer ' 1",
+    "end_line": 633,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module11.bas",
+    "name": "fn1C2E",
+    "kind": "Function",
+    "start_line": 635,
+    "signature": "Function fn1C2E () As Integer ' 1",
+    "end_line": 668,
+    "referenced_generated_symbols": [
+      "sub1C40"
+    ]
+  },
+  {
+    "file": "Module11.bas",
+    "name": "sub0FCB",
+    "kind": "Sub",
+    "start_line": 670,
+    "signature": "Sub sub0FCB (p016C As Integer ' 41, p016E As Integer ' 41, p0172 ' 40)",
+    "end_line": 689,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module11.bas",
+    "name": "sub0FB0",
+    "kind": "Sub",
+    "start_line": 691,
+    "signature": "Sub sub0FB0 (p0178 As Integer ' 41, p017A ' 40)",
+    "end_line": 708,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module11.bas",
+    "name": "sub1C40",
+    "kind": "Sub",
+    "start_line": 710,
+    "signature": "Sub sub1C40 ()",
+    "end_line": 786,
+    "referenced_generated_symbols": [
+      "fn034F"
+    ]
+  },
+  {
+    "file": "Module12.bas",
+    "name": "sub1D18",
+    "kind": "Sub",
+    "start_line": 17,
+    "signature": "Sub sub1D18 (p0134 As Integer ' 41, p0136 As Long ' 42)",
+    "end_line": 40,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module12.bas",
+    "name": "sub1D29",
+    "kind": "Sub",
+    "start_line": 42,
+    "signature": "Sub sub1D29 (p0156 As Integer ' 41)",
+    "end_line": 65,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module12.bas",
+    "name": "sub1725",
+    "kind": "Sub",
+    "start_line": 67,
+    "signature": "Sub sub1725 ()",
+    "end_line": 119,
+    "referenced_generated_symbols": [
+      "fn034F",
+      "sub1D3C"
+    ]
+  },
+  {
+    "file": "Module12.bas",
+    "name": "sub1D3C",
+    "kind": "Sub",
+    "start_line": 121,
+    "signature": "Sub sub1D3C (p0186 As Integer ' 41, ByVal p0188 As String ' 47, p018A As Integer ' 41)",
+    "end_line": 141,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module12.bas",
+    "name": "sub0607",
+    "kind": "Sub",
+    "start_line": 143,
+    "signature": "Sub sub0607 ()",
+    "end_line": 184,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module12.bas",
+    "name": "sub1D52",
+    "kind": "Sub",
+    "start_line": 186,
+    "signature": "Sub sub1D52 (p01AA As PictureBox ' 49, p01AE As Form ' 49)",
+    "end_line": 221,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module12.bas",
+    "name": "sub1D61",
+    "kind": "Sub",
+    "start_line": 223,
+    "signature": "Sub sub1D61 (p01D0 As Integer ' 41, p01D2 As Integer ' 41, p01D4 As Integer ' 41)",
+    "end_line": 250,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module13.bas",
+    "name": "fn1E6F",
+    "kind": "Function",
+    "start_line": 16,
+    "signature": "Function fn1E6F (p006A As Integer ' 41) As Variant ' 6",
+    "end_line": 37,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module2.bas",
+    "name": "sub0456",
+    "kind": "Sub",
+    "start_line": 84,
+    "signature": "Sub sub0456 (p0026 As Integer ' 41, p0028 As Integer ' 41)",
+    "end_line": 96,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module2.bas",
+    "name": "sub046B",
+    "kind": "Sub",
+    "start_line": 98,
+    "signature": "Sub sub046B ()",
+    "end_line": 230,
+    "referenced_generated_symbols": [
+      "fn034F",
+      "sub047C",
+      "sub048C",
+      "sub04A3"
+    ]
+  },
+  {
+    "file": "Module2.bas",
+    "name": "fn04B9",
+    "kind": "Function",
+    "start_line": 232,
+    "signature": "Function fn04B9 (ByVal p0090 As String ' 47) As Integer ' 1",
+    "end_line": 277,
+    "referenced_generated_symbols": [
+      "fn0326"
+    ]
+  },
+  {
+    "file": "Module2.bas",
+    "name": "fn04CD",
+    "kind": "Function",
+    "start_line": 279,
+    "signature": "Function fn04CD (p00A4 As String ' 47, p00A6 As String ' 47, ByVal pv00A8 As Integer ' 81, p00AA As Integer ' 41) As Integer ' 1",
+    "end_line": 349,
+    "referenced_generated_symbols": [
+      "fn0326",
+      "fn1397",
+      "sub04DC"
+    ]
+  },
+  {
+    "file": "Module2.bas",
+    "name": "fn04ED",
+    "kind": "Function",
+    "start_line": 351,
+    "signature": "Function fn04ED (p00D6 As T5810 ' 4A) As Integer ' 1",
+    "end_line": 412,
+    "referenced_generated_symbols": [
+      "fn0326"
+    ]
+  },
+  {
+    "file": "Module2.bas",
+    "name": "sub04DC",
+    "kind": "Sub",
+    "start_line": 414,
+    "signature": "Sub sub04DC (p00E6 As Integer ' 41)",
+    "end_line": 462,
+    "referenced_generated_symbols": [
+      "fn03BD",
+      "fn04ED",
+      "sub04FC"
+    ]
+  },
+  {
+    "file": "Module2.bas",
+    "name": "sub050F",
+    "kind": "Sub",
+    "start_line": 464,
+    "signature": "Sub sub050F ()",
+    "end_line": 480,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module2.bas",
+    "name": "sub0524",
+    "kind": "Sub",
+    "start_line": 482,
+    "signature": "Sub sub0524 (p0108 As Form ' 49)",
+    "end_line": 489,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module2.bas",
+    "name": "sub0536",
+    "kind": "Sub",
+    "start_line": 491,
+    "signature": "Sub sub0536 ()",
+    "end_line": 520,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module2.bas",
+    "name": "sub054E",
+    "kind": "Sub",
+    "start_line": 522,
+    "signature": "Sub sub054E ()",
+    "end_line": 560,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module2.bas",
+    "name": "sub0565",
+    "kind": "Sub",
+    "start_line": 562,
+    "signature": "Sub sub0565 (p013E As Integer ' 41)",
+    "end_line": 642,
+    "referenced_generated_symbols": [
+      "fn0360",
+      "fn0380",
+      "fn0418",
+      "sub0578"
+    ]
+  },
+  {
+    "file": "Module2.bas",
+    "name": "sub0595",
+    "kind": "Sub",
+    "start_line": 644,
+    "signature": "Sub sub0595 ()",
+    "end_line": 717,
+    "referenced_generated_symbols": [
+      "fn034F"
+    ]
+  },
+  {
+    "file": "Module2.bas",
+    "name": "sub05AA",
+    "kind": "Sub",
+    "start_line": 719,
+    "signature": "Sub sub05AA ()",
+    "end_line": 795,
+    "referenced_generated_symbols": [
+      "fn034F"
+    ]
+  },
+  {
+    "file": "Module2.bas",
+    "name": "sub04A3",
+    "kind": "Sub",
+    "start_line": 797,
+    "signature": "Sub sub04A3 ()",
+    "end_line": 842,
+    "referenced_generated_symbols": [
+      "fn034F"
+    ]
+  },
+  {
+    "file": "Module2.bas",
+    "name": "sub05C2",
+    "kind": "Sub",
+    "start_line": 844,
+    "signature": "Sub sub05C2 ()",
+    "end_line": 911,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module2.bas",
+    "name": "sub05D8",
+    "kind": "Sub",
+    "start_line": 913,
+    "signature": "Sub sub05D8 ()",
+    "end_line": 916,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module2.bas",
+    "name": "sub05F6",
+    "kind": "Sub",
+    "start_line": 918,
+    "signature": "Sub sub05F6 ()",
+    "end_line": 947,
+    "referenced_generated_symbols": [
+      "fn19DC",
+      "sub0607",
+      "sub0618",
+      "sub062D",
+      "sub063F",
+      "sub064E"
+    ]
+  },
+  {
+    "file": "Module2.bas",
+    "name": "fn0662",
+    "kind": "Function",
+    "start_line": 949,
+    "signature": "Function fn0662 (p01F0 As Integer ' 41, p01F2 ' 40) As Integer ' 1",
+    "end_line": 1041,
+    "referenced_generated_symbols": [
+      "fn034F",
+      "fn0360",
+      "fn0679"
+    ]
+  },
+  {
+    "file": "Module2.bas",
+    "name": "fn0679",
+    "kind": "Function",
+    "start_line": 1043,
+    "signature": "Function fn0679 (ByVal p0216 As String ' 47) As Long ' 2",
+    "end_line": 1050,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module2.bas",
+    "name": "sub068A",
+    "kind": "Sub",
+    "start_line": 1052,
+    "signature": "Sub sub068A (p021A As Single ' 43)",
+    "end_line": 1056,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module2.bas",
+    "name": "sub0695",
+    "kind": "Sub",
+    "start_line": 1058,
+    "signature": "Sub sub0695 ()",
+    "end_line": 1163,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module2.bas",
+    "name": "sub06A9",
+    "kind": "Sub",
+    "start_line": 1165,
+    "signature": "Sub sub06A9 ()",
+    "end_line": 1168,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module2.bas",
+    "name": "sub06B4",
+    "kind": "Sub",
+    "start_line": 1170,
+    "signature": "Sub sub06B4 ()",
+    "end_line": 1274,
+    "referenced_generated_symbols": [
+      "fn034F",
+      "fn0360",
+      "fn03D0",
+      "fn03F1",
+      "fn0403",
+      "fn04CD",
+      "fn1C2E",
+      "sub046B",
+      "sub04A3",
+      "sub0536",
+      "sub054E",
+      "sub0565",
+      "sub0595",
+      "sub05AA",
+      "sub05C2",
+      "sub06C6",
+      "sub06D7"
+    ]
+  },
+  {
+    "file": "Module2.bas",
+    "name": "sub06E8",
+    "kind": "Sub",
+    "start_line": 1276,
+    "signature": "Sub sub06E8 (p026C As Integer ' 41)",
+    "end_line": 1477,
+    "referenced_generated_symbols": [
+      "fn0425",
+      "fn09F6",
+      "sub04FC",
+      "sub06FE"
+    ]
+  },
+  {
+    "file": "Module2.bas",
+    "name": "sub071B",
+    "kind": "Sub",
+    "start_line": 1479,
+    "signature": "Sub sub071B (p02A6 As Integer ' 41)",
+    "end_line": 1678,
+    "referenced_generated_symbols": [
+      "fn0380",
+      "fn0425",
+      "fn09F6",
+      "sub04FC",
+      "sub0730"
+    ]
+  },
+  {
+    "file": "Module2.bas",
+    "name": "sub074E",
+    "kind": "Sub",
+    "start_line": 1680,
+    "signature": "Sub sub074E (p02D0 As String ' 47)",
+    "end_line": 1743,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module2.bas",
+    "name": "sub0760",
+    "kind": "Sub",
+    "start_line": 1745,
+    "signature": "Sub sub0760 (p02F8 As Form ' 49, p02FC As T5E14 ' 4A)",
+    "end_line": 1845,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module2.bas",
+    "name": "sub0775",
+    "kind": "Sub",
+    "start_line": 1847,
+    "signature": "Sub sub0775 ()",
+    "end_line": 1855,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module2.bas",
+    "name": "sub0784",
+    "kind": "Sub",
+    "start_line": 1857,
+    "signature": "Sub sub0784 (p031E As Form ' 49)",
+    "end_line": 1893,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module2.bas",
+    "name": "sub0792",
+    "kind": "Sub",
+    "start_line": 1895,
+    "signature": "Sub sub0792 (p0326 As Form ' 49)",
+    "end_line": 1902,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module2.bas",
+    "name": "sub07A0",
+    "kind": "Sub",
+    "start_line": 1904,
+    "signature": "Sub sub07A0 (p0328 As Integer ' 41)",
+    "end_line": 1910,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module2.bas",
+    "name": "sub07B3",
+    "kind": "Sub",
+    "start_line": 1912,
+    "signature": "Sub sub07B3 (p032C As Form ' 49, p0330 As ? ' 49)",
+    "end_line": 1918,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module2.bas",
+    "name": "sub07C5",
+    "kind": "Sub",
+    "start_line": 1920,
+    "signature": "Sub sub07C5 (p033C As Form ' 49, p0340 As T5E14 ' 4A)",
+    "end_line": 1977,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module2.bas",
+    "name": "sub07D4",
+    "kind": "Sub",
+    "start_line": 1979,
+    "signature": "Sub sub07D4 (p0352 As Form ' 49, p0356 As ? ' 49)",
+    "end_line": 1982,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module2.bas",
+    "name": "sub07E2",
+    "kind": "Sub",
+    "start_line": 1984,
+    "signature": "Sub sub07E2 (p0358 As Single ' 43)",
+    "end_line": 1994,
+    "referenced_generated_symbols": [
+      "sub05D8"
+    ]
+  },
+  {
+    "file": "Module2.bas",
+    "name": "sub07ED",
+    "kind": "Sub",
+    "start_line": 1996,
+    "signature": "Sub sub07ED (p0360 As Form ' 49)",
+    "end_line": 2019,
+    "referenced_generated_symbols": [
+      "sub02FE",
+      "sub0760"
+    ]
+  },
+  {
+    "file": "Module2.bas",
+    "name": "sub0802",
+    "kind": "Sub",
+    "start_line": 2021,
+    "signature": "Sub sub0802 (p036E As Form ' 49)",
+    "end_line": 2084,
+    "referenced_generated_symbols": [
+      "sub02FE"
+    ]
+  },
+  {
+    "file": "Module3.bas",
+    "name": "sub08E1",
+    "kind": "Sub",
+    "start_line": 49,
+    "signature": "Sub sub08E1 (ByVal pv007A As Integer ' 81)",
+    "end_line": 59,
+    "referenced_generated_symbols": [
+      "sub085B"
+    ]
+  },
+  {
+    "file": "Module3.bas",
+    "name": "fn0AD3",
+    "kind": "Function",
+    "start_line": 61,
+    "signature": "Function fn0AD3 (p008C As Integer ' 41) As Long ' 2",
+    "end_line": 71,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module3.bas",
+    "name": "fn0AE8",
+    "kind": "Function",
+    "start_line": 73,
+    "signature": "Function fn0AE8 (p0098 As T5810 ' 4A) As Integer ' 1",
+    "end_line": 81,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module3.bas",
+    "name": "fn0B01",
+    "kind": "Function",
+    "start_line": 83,
+    "signature": "Function fn0B01 (p00A0 As Integer ' 41, p00A2 As Integer ' 41) As Integer ' 1",
+    "end_line": 91,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module3.bas",
+    "name": "sub08F5",
+    "kind": "Sub",
+    "start_line": 93,
+    "signature": "Sub sub08F5 (ByVal pv00A4 As Integer ' 81)",
+    "end_line": 134,
+    "referenced_generated_symbols": [
+      "fn0992",
+      "fn0A0B",
+      "fn0A34",
+      "fn0AE8",
+      "sub085B",
+      "sub08E1"
+    ]
+  },
+  {
+    "file": "Module3.bas",
+    "name": "fn0B1B",
+    "kind": "Function",
+    "start_line": 136,
+    "signature": "Function fn0B1B (p00C6 As T5810 ' 4A) As Long ' 2",
+    "end_line": 180,
+    "referenced_generated_symbols": [
+      "fn0380",
+      "fn0418",
+      "fn0AD3",
+      "fn0B01"
+    ]
+  },
+  {
+    "file": "Module3.bas",
+    "name": "sub096E",
+    "kind": "Sub",
+    "start_line": 182,
+    "signature": "Sub sub096E ()",
+    "end_line": 228,
+    "referenced_generated_symbols": [
+      "sub04FC"
+    ]
+  },
+  {
+    "file": "Module3.bas",
+    "name": "fn0992",
+    "kind": "Function",
+    "start_line": 230,
+    "signature": "Function fn0992 (p00FE As Integer ' 41) As Integer ' 1",
+    "end_line": 248,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module3.bas",
+    "name": "fn09A4",
+    "kind": "Function",
+    "start_line": 250,
+    "signature": "Function fn09A4 (p0106 As Integer ' 41, p0108 As Integer ' 41) As Integer ' 1",
+    "end_line": 341,
+    "referenced_generated_symbols": [
+      "sub04FC",
+      "sub09B8"
+    ]
+  },
+  {
+    "file": "Module3.bas",
+    "name": "sub09CC",
+    "kind": "Sub",
+    "start_line": 343,
+    "signature": "Sub sub09CC ()",
+    "end_line": 376,
+    "referenced_generated_symbols": [
+      "fn09A4",
+      "sub085B",
+      "sub09DE"
+    ]
+  },
+  {
+    "file": "Module3.bas",
+    "name": "fn09F6",
+    "kind": "Function",
+    "start_line": 378,
+    "signature": "Function fn09F6 () As Integer ' 1",
+    "end_line": 401,
+    "referenced_generated_symbols": [
+      "fn0326"
+    ]
+  },
+  {
+    "file": "Module3.bas",
+    "name": "fn0A0B",
+    "kind": "Function",
+    "start_line": 403,
+    "signature": "Function fn0A0B (ByVal pv0158 As Integer ' 81) As Integer ' 1",
+    "end_line": 443,
+    "referenced_generated_symbols": [
+      "fn09F6",
+      "sub085B",
+      "sub096E"
+    ]
+  },
+  {
+    "file": "Module3.bas",
+    "name": "sub0A1D",
+    "kind": "Sub",
+    "start_line": 445,
+    "signature": "Sub sub0A1D ()",
+    "end_line": 603,
+    "referenced_generated_symbols": [
+      "fn0380",
+      "fn0418",
+      "fn0A34",
+      "fn0ABD",
+      "fn0AD3",
+      "fn0B01",
+      "fn11D4",
+      "sub04FC",
+      "sub085B"
+    ]
+  },
+  {
+    "file": "Module3.bas",
+    "name": "sub087C",
+    "kind": "Sub",
+    "start_line": 605,
+    "signature": "Sub sub087C (p0188 As Integer ' 41, p018A As Integer ' 41)",
+    "end_line": 717,
+    "referenced_generated_symbols": [
+      "fn0380",
+      "fn0418",
+      "fn0A34",
+      "fn0ABD",
+      "fn11D4",
+      "sub04FC",
+      "sub085B"
+    ]
+  },
+  {
+    "file": "Module3.bas",
+    "name": "fn0A34",
+    "kind": "Function",
+    "start_line": 719,
+    "signature": "Function fn0A34 (p01A4 ' 40, p01A6 ' 40) As Long ' 2",
+    "end_line": 730,
+    "referenced_generated_symbols": [
+      "fn0B01"
+    ]
+  },
+  {
+    "file": "Module3.bas",
+    "name": "sub0A49",
+    "kind": "Sub",
+    "start_line": 732,
+    "signature": "Sub sub0A49 ()",
+    "end_line": 736,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module3.bas",
+    "name": "sub0980",
+    "kind": "Sub",
+    "start_line": 738,
+    "signature": "Sub sub0980 ()",
+    "end_line": 1493,
+    "referenced_generated_symbols": [
+      "fn0380",
+      "fn0418",
+      "fn04ED",
+      "fn0992",
+      "fn09A4",
+      "fn0A0B",
+      "fn0AD3",
+      "fn0AE8",
+      "fn0C3B",
+      "fn0F88",
+      "sub0941",
+      "sub0956",
+      "sub09CC",
+      "sub0A1D",
+      "sub0A64",
+      "sub0A7C",
+      "sub0A91",
+      "sub0AA6"
+    ]
+  },
+  {
+    "file": "Module3.bas",
+    "name": "fn0ABD",
+    "kind": "Function",
+    "start_line": 1495,
+    "signature": "Function fn0ABD (p0266 ' 40, p0268 ' 40, p026A ' 40) As Integer ' 1",
+    "end_line": 1504,
+    "referenced_generated_symbols": [
+      "fn0B01"
+    ]
+  },
+  {
+    "file": "Module3.bas",
+    "name": "sub0835",
+    "kind": "Sub",
+    "start_line": 1506,
+    "signature": "Sub sub0835 (p026E As Integer ' 41)",
+    "end_line": 1897,
+    "referenced_generated_symbols": [
+      "fn0380",
+      "fn0418",
+      "fn0992",
+      "fn0A0B",
+      "fn0A34",
+      "fn0ABD",
+      "fn0AD3",
+      "fn0AE8",
+      "fn0B01",
+      "fn11D4",
+      "sub0578",
+      "sub0848",
+      "sub085B",
+      "sub086D",
+      "sub087C",
+      "sub0894",
+      "sub08A9",
+      "sub08B9",
+      "sub08D1",
+      "sub08E1",
+      "sub08F5",
+      "sub0908",
+      "sub091E",
+      "sub0930",
+      "sub0941",
+      "sub0956",
+      "sub096E",
+      "sub0980"
+    ]
+  },
+  {
+    "file": "Module4.bas",
+    "name": "sub0CDF",
+    "kind": "Sub",
+    "start_line": 169,
+    "signature": "Sub sub0CDF (ByVal pv00A8 As Integer ' 81, p00AA As Integer ' 41, p00AC As Integer ' 41, p00AE As Single ' 43)",
+    "end_line": 178,
+    "referenced_generated_symbols": [
+      "sub0F11"
+    ]
+  },
+  {
+    "file": "Module4.bas",
+    "name": "fn0FF5",
+    "kind": "Function",
+    "start_line": 180,
+    "signature": "Function fn0FF5 (p00C8 As Integer ' 41) As Integer ' 1",
+    "end_line": 244,
+    "referenced_generated_symbols": [
+      "fn0380",
+      "sub1005"
+    ]
+  },
+  {
+    "file": "Module4.bas",
+    "name": "sub1019",
+    "kind": "Sub",
+    "start_line": 246,
+    "signature": "Sub sub1019 (ByVal pv00F4 As Integer ' 81)",
+    "end_line": 517,
+    "referenced_generated_symbols": [
+      "fn0380",
+      "fn0418",
+      "fn0DCD",
+      "fn0DEE",
+      "fn1173",
+      "fn11D4",
+      "sub07E2",
+      "sub09DE",
+      "sub0BBA",
+      "sub0BCD",
+      "sub0C53",
+      "sub0CB7",
+      "sub0CDF",
+      "sub0CF3",
+      "sub0D08",
+      "sub102F",
+      "sub1043"
+    ]
+  },
+  {
+    "file": "Module4.bas",
+    "name": "fn0B6C",
+    "kind": "Function",
+    "start_line": 519,
+    "signature": "Function fn0B6C (ByVal pv016E As Integer ' 81, p0170 As Integer ' 41, p0172 As Integer ' 41) As Integer ' 1",
+    "end_line": 602,
+    "referenced_generated_symbols": [
+      "fn0DCD",
+      "fn1235",
+      "sub04FC",
+      "sub085B",
+      "sub0A64",
+      "sub0B82",
+      "sub0B9B",
+      "sub0BAA",
+      "sub0BBA",
+      "sub0BCD",
+      "sub0BDE",
+      "sub0BF1"
+    ]
+  },
+  {
+    "file": "Module4.bas",
+    "name": "sub0C00",
+    "kind": "Sub",
+    "start_line": 604,
+    "signature": "Sub sub0C00 (ByVal pv0190 As Integer ' 81)",
+    "end_line": 660,
+    "referenced_generated_symbols": [
+      "fn0B6C",
+      "fn0D78",
+      "fn1235",
+      "fn131D",
+      "sub085B",
+      "sub0B82"
+    ]
+  },
+  {
+    "file": "Module4.bas",
+    "name": "sub0A91",
+    "kind": "Sub",
+    "start_line": 662,
+    "signature": "Sub sub0A91 (p01AA ' 40)",
+    "end_line": 740,
+    "referenced_generated_symbols": [
+      "fn0D4D",
+      "fn0DCD",
+      "fn0DDC",
+      "fn0E38",
+      "sub06FE",
+      "sub085B",
+      "sub0B9B",
+      "sub0BAA",
+      "sub0BBA",
+      "sub0BCD",
+      "sub0BDE",
+      "sub0BF1",
+      "sub0C15",
+      "sub0C29"
+    ]
+  },
+  {
+    "file": "Module4.bas",
+    "name": "fn0C3B",
+    "kind": "Function",
+    "start_line": 742,
+    "signature": "Function fn0C3B (p01C4 As Integer ' 41, p01C6 As Integer ' 41) As Integer ' 1",
+    "end_line": 751,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module4.bas",
+    "name": "sub0C53",
+    "kind": "Sub",
+    "start_line": 753,
+    "signature": "Sub sub0C53 ()",
+    "end_line": 787,
+    "referenced_generated_symbols": [
+      "fn09A4",
+      "fn0C3B",
+      "fn0DBF",
+      "fn0DDC",
+      "fn0F88",
+      "sub0980",
+      "sub0B9B",
+      "sub0BAA",
+      "sub0BBA",
+      "sub0BCD",
+      "sub0BF1",
+      "sub0C29",
+      "sub0C61"
+    ]
+  },
+  {
+    "file": "Module4.bas",
+    "name": "sub0C79",
+    "kind": "Sub",
+    "start_line": 789,
+    "signature": "Sub sub0C79 (p01D6 ' 40)",
+    "end_line": 799,
+    "referenced_generated_symbols": [
+      "fn0F88"
+    ]
+  },
+  {
+    "file": "Module4.bas",
+    "name": "sub0C8A",
+    "kind": "Sub",
+    "start_line": 801,
+    "signature": "Sub sub0C8A (ByVal pv01E4 As Integer ' 81)",
+    "end_line": 1354,
+    "referenced_generated_symbols": [
+      "fn0380",
+      "fn0AD3",
+      "fn0AE8",
+      "fn0D64",
+      "fn0DAB",
+      "fn0DCD",
+      "fn0DEE",
+      "fn0E4A",
+      "fn0E5F",
+      "fn0EEF",
+      "fn0FF5",
+      "fn1173",
+      "fn1235",
+      "fn1286",
+      "fn131D",
+      "sub04FC",
+      "sub07E2",
+      "sub085B",
+      "sub08A9",
+      "sub091E",
+      "sub09DE",
+      "sub0B82",
+      "sub0BBA",
+      "sub0BCD",
+      "sub0C53",
+      "sub0CA0",
+      "sub0CB7",
+      "sub0CCC",
+      "sub0CDF",
+      "sub0CF3",
+      "sub0D08",
+      "sub0D1D",
+      "sub0D35"
+    ]
+  },
+  {
+    "file": "Module4.bas",
+    "name": "fn0D4D",
+    "kind": "Function",
+    "start_line": 1356,
+    "signature": "Function fn0D4D (p0256 ' 40) As Integer ' 1",
+    "end_line": 1984,
+    "referenced_generated_symbols": [
+      "fn0380",
+      "fn0AD3",
+      "fn0AE8",
+      "fn0DFC",
+      "fn0F88",
+      "fn12AF",
+      "sub085B",
+      "sub09DE",
+      "sub0B9B",
+      "sub0C79"
+    ]
+  },
+  {
+    "file": "Module4.bas",
+    "name": "sub0D08",
+    "kind": "Sub",
+    "start_line": 1986,
+    "signature": "Sub sub0D08 (ByVal pv0352 As Integer ' 81)",
+    "end_line": 2013,
+    "referenced_generated_symbols": [
+      "fn0C3B",
+      "sub0980"
+    ]
+  },
+  {
+    "file": "Module4.bas",
+    "name": "fn0D64",
+    "kind": "Function",
+    "start_line": 2015,
+    "signature": "Function fn0D64 (ByVal pv035E As Integer ' 81, p0360 As Integer ' 41, p0362 As Integer ' 41) As Integer ' 1",
+    "end_line": 2047,
+    "referenced_generated_symbols": [
+      "fn1205"
+    ]
+  },
+  {
+    "file": "Module4.bas",
+    "name": "fn0D78",
+    "kind": "Function",
+    "start_line": 2049,
+    "signature": "Function fn0D78 (ByVal pv0372 As Integer ' 81, p0374 As Integer ' 41) As Single ' 3",
+    "end_line": 2069,
+    "referenced_generated_symbols": [
+      "fn131D"
+    ]
+  },
+  {
+    "file": "Module4.bas",
+    "name": "fn0D92",
+    "kind": "Function",
+    "start_line": 2071,
+    "signature": "Function fn0D92 (ByVal pv037E As Integer ' 81, p0380 ' 40) As String ' 7",
+    "end_line": 2098,
+    "referenced_generated_symbols": [
+      "fn0D78"
+    ]
+  },
+  {
+    "file": "Module4.bas",
+    "name": "fn0DAB",
+    "kind": "Function",
+    "start_line": 2100,
+    "signature": "Function fn0DAB (ByVal pv0388 As Integer ' 81) As Integer ' 1",
+    "end_line": 2119,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module4.bas",
+    "name": "fn0DBF",
+    "kind": "Function",
+    "start_line": 2121,
+    "signature": "Function fn0DBF () As Long ' 2",
+    "end_line": 2183,
+    "referenced_generated_symbols": [
+      "fn036D",
+      "fn0F88",
+      "sub04FC",
+      "sub07E2",
+      "sub08A9"
+    ]
+  },
+  {
+    "file": "Module4.bas",
+    "name": "fn0DCD",
+    "kind": "Function",
+    "start_line": 2185,
+    "signature": "Function fn0DCD (p03AC As Integer ' 41) As Integer ' 1",
+    "end_line": 2204,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module4.bas",
+    "name": "fn0DDC",
+    "kind": "Function",
+    "start_line": 2206,
+    "signature": "Function fn0DDC () As Integer ' 1",
+    "end_line": 2210,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module4.bas",
+    "name": "fn0DEE",
+    "kind": "Function",
+    "start_line": 2212,
+    "signature": "Function fn0DEE (p03B6 As Integer ' 41, p03B8 As Integer ' 41, p03BA As Integer ' 41, ByVal pv03BC As Integer ' 81, ByVal pv03BE As Single ' 83) As Integer ' 1",
+    "end_line": 2258,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module4.bas",
+    "name": "fn0DFC",
+    "kind": "Function",
+    "start_line": 2260,
+    "signature": "Function fn0DFC (p03D4 As T4E8B ' 4A) As Single ' 3",
+    "end_line": 2262,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module4.bas",
+    "name": "fn0E0D",
+    "kind": "Function",
+    "start_line": 2264,
+    "signature": "Function fn0E0D (p03D8 As Integer ' 41) As Integer ' 1",
+    "end_line": 2272,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module4.bas",
+    "name": "fn0E23",
+    "kind": "Function",
+    "start_line": 2274,
+    "signature": "Function fn0E23 (ByVal pv03E0 As Integer ' 81, p03E2 As Integer ' 41, p03E6 As T4E8B ' 4A) As String ' 7",
+    "end_line": 2360,
+    "referenced_generated_symbols": [
+      "fn0380"
+    ]
+  },
+  {
+    "file": "Module4.bas",
+    "name": "fn0E38",
+    "kind": "Function",
+    "start_line": 2362,
+    "signature": "Function fn0E38 (p03FA As Integer ' 41) As Integer ' 1",
+    "end_line": 2384,
+    "referenced_generated_symbols": [
+      "sub0C79"
+    ]
+  },
+  {
+    "file": "Module4.bas",
+    "name": "fn0E4A",
+    "kind": "Function",
+    "start_line": 2386,
+    "signature": "Function fn0E4A (p0406 As Integer ' 41, p0408 As Integer ' 41, p040A As Integer ' 41) As Integer ' 1",
+    "end_line": 2457,
+    "referenced_generated_symbols": [
+      "fn0380",
+      "fn131D",
+      "sub085B"
+    ]
+  },
+  {
+    "file": "Module4.bas",
+    "name": "fn0E5F",
+    "kind": "Function",
+    "start_line": 2459,
+    "signature": "Function fn0E5F (ByVal pv0420 As Integer ' 81, p0422 As Integer ' 41, p0424 As Integer ' 41, p0426 As Integer ' 41, ByVal pv0428 As Integer ' 81) As Integer ' 1",
+    "end_line": 2583,
+    "referenced_generated_symbols": [
+      "fn0380",
+      "fn1417",
+      "sub04FC"
+    ]
+  },
+  {
+    "file": "Module4.bas",
+    "name": "sub0E72",
+    "kind": "Sub",
+    "start_line": 2585,
+    "signature": "Sub sub0E72 ()",
+    "end_line": 2586,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module4.bas",
+    "name": "sub0E85",
+    "kind": "Sub",
+    "start_line": 2588,
+    "signature": "Sub sub0E85 (ByVal pv0442 As Integer ' 81, p0444 As Integer ' 41)",
+    "end_line": 3413,
+    "referenced_generated_symbols": [
+      "fn036D",
+      "fn0380",
+      "fn0418",
+      "fn0AD3",
+      "fn0AE8",
+      "fn0DCD",
+      "fn0DEE",
+      "fn0E23",
+      "fn0E5F",
+      "fn0FF5",
+      "fn10D1",
+      "fn1121",
+      "fn1139",
+      "fn11D4",
+      "fn1235",
+      "fn131D",
+      "fn13A8",
+      "sub047C",
+      "sub04FC",
+      "sub06FE",
+      "sub07E2",
+      "sub085B",
+      "sub08A9",
+      "sub091E",
+      "sub09DE",
+      "sub0B82",
+      "sub0BBA",
+      "sub0BCD",
+      "sub0C53",
+      "sub0CA0",
+      "sub0CB7",
+      "sub0CCC",
+      "sub0D08",
+      "sub0D1D",
+      "sub0D35",
+      "sub0E99",
+      "sub0EAE",
+      "sub0EBF",
+      "sub0EDA"
+    ]
+  },
+  {
+    "file": "Module4.bas",
+    "name": "fn0EEF",
+    "kind": "Function",
+    "start_line": 3415,
+    "signature": "Function fn0EEF () As Variant ' 6",
+    "end_line": 3428,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module4.bas",
+    "name": "sub0F01",
+    "kind": "Sub",
+    "start_line": 3430,
+    "signature": "Sub sub0F01 (ByVal pv04F2 As Integer ' 81)",
+    "end_line": 3877,
+    "referenced_generated_symbols": [
+      "fn0380",
+      "fn0992",
+      "fn0A34",
+      "fn0AD3",
+      "fn0AE8",
+      "fn0DBF",
+      "fn0DCD",
+      "fn0F88",
+      "fn1121",
+      "fn11D4",
+      "fn129A",
+      "fn12EF",
+      "sub04FC",
+      "sub0730",
+      "sub07E2",
+      "sub085B",
+      "sub086D",
+      "sub0894",
+      "sub08A9",
+      "sub08B9",
+      "sub08E1",
+      "sub0908",
+      "sub091E",
+      "sub0980",
+      "sub09DE",
+      "sub0B82",
+      "sub0BAA",
+      "sub0EAE",
+      "sub0EDA",
+      "sub0F11",
+      "sub0F29",
+      "sub0F38",
+      "sub0F4C",
+      "sub0F61",
+      "sub0F74"
+    ]
+  },
+  {
+    "file": "Module4.bas",
+    "name": "sub0D1D",
+    "kind": "Sub",
+    "start_line": 3879,
+    "signature": "Sub sub0D1D (ByVal pv05AE As Integer ' 81, p05B0 As Integer ' 41, p05B2 As Integer ' 41)",
+    "end_line": 3901,
+    "referenced_generated_symbols": [
+      "sub047C",
+      "sub08A9"
+    ]
+  },
+  {
+    "file": "Module4.bas",
+    "name": "fn0F88",
+    "kind": "Function",
+    "start_line": 3903,
+    "signature": "Function fn0F88 (p05BA As Integer ' 41) As Integer ' 1",
+    "end_line": 3931,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module4.bas",
+    "name": "sub06FE",
+    "kind": "Sub",
+    "start_line": 3933,
+    "signature": "Sub sub06FE (p05D0 As T4E8B ' 4A, p05D2 As Integer ' 41, p05D4 As Integer ' 41, p05D6 As Integer ' 41, p05D8 As Integer ' 41)",
+    "end_line": 4001,
+    "referenced_generated_symbols": [
+      "fn0380",
+      "fn121C",
+      "fn1BD5",
+      "sub0F9A",
+      "sub0FB0",
+      "sub0FCB"
+    ]
+  },
+  {
+    "file": "Module4.bas",
+    "name": "sub0C29",
+    "kind": "Sub",
+    "start_line": 4003,
+    "signature": "Sub sub0C29 (p05F8 ' 40)",
+    "end_line": 4005,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module4.bas",
+    "name": "sub06C6",
+    "kind": "Sub",
+    "start_line": 4007,
+    "signature": "Sub sub06C6 ()",
+    "end_line": 4031,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module4.bas",
+    "name": "sub06D7",
+    "kind": "Sub",
+    "start_line": 4033,
+    "signature": "Sub sub06D7 ()",
+    "end_line": 4057,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module4.bas",
+    "name": "sub0BAA",
+    "kind": "Sub",
+    "start_line": 4059,
+    "signature": "Sub sub0BAA ()",
+    "end_line": 4191,
+    "referenced_generated_symbols": [
+      "fn0EEF",
+      "fn11D4",
+      "sub04FC"
+    ]
+  },
+  {
+    "file": "Module4.bas",
+    "name": "sub0BCD",
+    "kind": "Sub",
+    "start_line": 4193,
+    "signature": "Sub sub0BCD ()",
+    "end_line": 4232,
+    "referenced_generated_symbols": [
+      "fn0DCD",
+      "fn0EEF",
+      "sub04FC",
+      "sub0BF1"
+    ]
+  },
+  {
+    "file": "Module4.bas",
+    "name": "sub0C61",
+    "kind": "Sub",
+    "start_line": 4234,
+    "signature": "Sub sub0C61 (p064A As Integer ' 41)",
+    "end_line": 4286,
+    "referenced_generated_symbols": [
+      "sub0578"
+    ]
+  },
+  {
+    "file": "Module4.bas",
+    "name": "sub0AA6",
+    "kind": "Sub",
+    "start_line": 4288,
+    "signature": "Sub sub0AA6 ()",
+    "end_line": 4298,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module4.bas",
+    "name": "sub0BBA",
+    "kind": "Sub",
+    "start_line": 4300,
+    "signature": "Sub sub0BBA (ByVal pv065C As Integer ' 81)",
+    "end_line": 4428,
+    "referenced_generated_symbols": [
+      "fn0380",
+      "fn0C3B",
+      "fn0E23",
+      "fn0EEF",
+      "sub04FC",
+      "sub0B9B"
+    ]
+  },
+  {
+    "file": "Module4.bas",
+    "name": "sub0B9B",
+    "kind": "Sub",
+    "start_line": 4430,
+    "signature": "Sub sub0B9B ()",
+    "end_line": 4468,
+    "referenced_generated_symbols": [
+      "fn0EEF"
+    ]
+  },
+  {
+    "file": "Module4.bas",
+    "name": "sub0FE1",
+    "kind": "Sub",
+    "start_line": 4470,
+    "signature": "Sub sub0FE1 ()",
+    "end_line": 4481,
+    "referenced_generated_symbols": [
+      "fn0EEF"
+    ]
+  },
+  {
+    "file": "Module4.bas",
+    "name": "fn0B4E",
+    "kind": "Function",
+    "start_line": 4483,
+    "signature": "Function fn0B4E () As Integer ' 1",
+    "end_line": 4500,
+    "referenced_generated_symbols": [
+      "fn0380",
+      "sub04FC"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "Main",
+    "kind": "Sub",
+    "start_line": 274,
+    "signature": "Sub Main ()",
+    "end_line": 320,
+    "referenced_generated_symbols": [
+      "fn1A08",
+      "fn1A1B",
+      "sub038D",
+      "sub03E3",
+      "sub05F6",
+      "sub06B4",
+      "sub096E",
+      "sub16EB",
+      "sub170B",
+      "sub1725",
+      "sub173B"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub0EAE",
+    "kind": "Sub",
+    "start_line": 322,
+    "signature": "Sub sub0EAE (p00C0 As Integer ' 41, p00C2 As Integer ' 41, ByVal pv00C4 As Integer ' 81, p00C6 As Integer ' 41)",
+    "end_line": 391,
+    "referenced_generated_symbols": [
+      "sub04FC",
+      "sub06E8",
+      "sub071B",
+      "sub085B",
+      "sub08A9"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn114E",
+    "kind": "Function",
+    "start_line": 393,
+    "signature": "Function fn114E (p00E0 As Long ' 42) As Integer ' 1",
+    "end_line": 409,
+    "referenced_generated_symbols": [
+      "sub08A9"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn115C",
+    "kind": "Function",
+    "start_line": 411,
+    "signature": "Function fn115C (p00E6 As Integer ' 41, p00EA As T5810 ' 4A) As Integer ' 1",
+    "end_line": 422,
+    "referenced_generated_symbols": [
+      "fn0380"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn1173",
+    "kind": "Function",
+    "start_line": 424,
+    "signature": "Function fn1173 (ByVal pv00FA As Integer ' 81, ByVal pv00FC As Integer ' 81, p00FE ' 40, p0100 As Integer ' 41) As Integer ' 1",
+    "end_line": 1325,
+    "referenced_generated_symbols": [
+      "fn0380",
+      "fn0418",
+      "fn09A4",
+      "fn0A0B",
+      "fn0A34",
+      "fn0ABD",
+      "fn0AD3",
+      "fn0AE8",
+      "fn0B01",
+      "fn0C3B",
+      "fn0DCD",
+      "fn0E5F",
+      "fn0EEF",
+      "fn10BA",
+      "fn10D1",
+      "fn10E5",
+      "fn1235",
+      "fn13D7",
+      "fn1417",
+      "fn142F",
+      "fn1448",
+      "fn164C",
+      "fn16A0",
+      "sub04FC",
+      "sub07E2",
+      "sub0835",
+      "sub0848",
+      "sub085B",
+      "sub086D",
+      "sub0894",
+      "sub08A9",
+      "sub08B9",
+      "sub091E",
+      "sub0930",
+      "sub0941",
+      "sub0956",
+      "sub0980",
+      "sub0A7C",
+      "sub0B82",
+      "sub0BAA",
+      "sub0BBA",
+      "sub0BCD",
+      "sub0C53",
+      "sub0CB7",
+      "sub0CDF",
+      "sub0CF3",
+      "sub0D08",
+      "sub0D1D",
+      "sub0EAE",
+      "sub0F29",
+      "sub0F38",
+      "sub1005",
+      "sub102F",
+      "sub1043",
+      "sub1187"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn10BA",
+    "kind": "Function",
+    "start_line": 1327,
+    "signature": "Function fn10BA (ByVal pv0254 As Integer ' 81, p0258 As T4E8B ' 4A, p025A As Integer ' 41, p025C As Integer ' 41) As Integer ' 1",
+    "end_line": 1348,
+    "referenced_generated_symbols": [
+      "fn121C",
+      "sub0B82"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn10D1",
+    "kind": "Function",
+    "start_line": 1350,
+    "signature": "Function fn10D1 (ByVal pv0264 As Integer ' 81) As Integer ' 1",
+    "end_line": 1359,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn10E5",
+    "kind": "Function",
+    "start_line": 1361,
+    "signature": "Function fn10E5 (ByVal pv026C As Integer ' 81, ByVal pv026E As Integer ' 81, p0270 As Integer ' 41, p0272 As Integer ' 41) As Integer ' 1",
+    "end_line": 1499,
+    "referenced_generated_symbols": [
+      "fn0380",
+      "fn0AD3",
+      "fn0AE8",
+      "fn0EEF",
+      "fn142F",
+      "fn1448",
+      "sub04FC",
+      "sub085B",
+      "sub087C",
+      "sub0BBA",
+      "sub0BCD",
+      "sub0BDE",
+      "sub102F"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub10F9",
+    "kind": "Sub",
+    "start_line": 1501,
+    "signature": "Sub sub10F9 (ByVal pv0296 As Integer ' 81, p0298 As Integer ' 41, p029A ' 40)",
+    "end_line": 1510,
+    "referenced_generated_symbols": [
+      "sub08A9",
+      "sub091E",
+      "sub0930"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn110D",
+    "kind": "Function",
+    "start_line": 1512,
+    "signature": "Function fn110D (ByVal pv02A0 As Integer ' 81, p02A2 As Integer ' 41, p02A4 As Integer ' 41, p02A6 As Integer ' 41) As Variant ' 6",
+    "end_line": 1596,
+    "referenced_generated_symbols": [
+      "fn030F",
+      "fn0380",
+      "sub085B"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn1121",
+    "kind": "Function",
+    "start_line": 1598,
+    "signature": "Function fn1121 (p02CA As Integer ' 41) As Integer ' 1",
+    "end_line": 1602,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn1139",
+    "kind": "Function",
+    "start_line": 1604,
+    "signature": "Function fn1139 (ByVal pv02CE As Integer ' 81, p02D0 As Integer ' 41) As Integer ' 1",
+    "end_line": 1632,
+    "referenced_generated_symbols": [
+      "fn110D",
+      "fn12EF",
+      "sub04FC",
+      "sub085B",
+      "sub0F74"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub0CF3",
+    "kind": "Sub",
+    "start_line": 1634,
+    "signature": "Sub sub0CF3 (p02DA As Integer ' 41)",
+    "end_line": 1653,
+    "referenced_generated_symbols": [
+      "fn1286",
+      "sub085B"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn11A1",
+    "kind": "Function",
+    "start_line": 1655,
+    "signature": "Function fn11A1 (ByVal pv02E4 As Integer ' 81) As Integer ' 1",
+    "end_line": 1701,
+    "referenced_generated_symbols": [
+      "fn04ED",
+      "fn110D",
+      "sub047C",
+      "sub086D",
+      "sub08A9",
+      "sub0EAE",
+      "sub0F74"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub04FC",
+    "kind": "Sub",
+    "start_line": 1703,
+    "signature": "Sub sub04FC (ByVal p0302 As String ' 47)",
+    "end_line": 1719,
+    "referenced_generated_symbols": [
+      "sub085B"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub0F74",
+    "kind": "Sub",
+    "start_line": 1721,
+    "signature": "Sub sub0F74 (ByVal pv0308 As Integer ' 81, p030A As Integer ' 41)",
+    "end_line": 1883,
+    "referenced_generated_symbols": [
+      "fn110D",
+      "sub047C",
+      "sub085B",
+      "sub0894",
+      "sub08A9",
+      "sub0F61",
+      "sub11B9"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub11B9",
+    "kind": "Sub",
+    "start_line": 1885,
+    "signature": "Sub sub11B9 (ByVal pv0324 As Integer ' 81)",
+    "end_line": 1923,
+    "referenced_generated_symbols": [
+      "fn0380",
+      "fn0418",
+      "sub08A9",
+      "sub08B9"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub0F29",
+    "kind": "Sub",
+    "start_line": 1925,
+    "signature": "Sub sub0F29 (ByVal pv0330 As Integer ' 81)",
+    "end_line": 1930,
+    "referenced_generated_symbols": [
+      "fn1338"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn11D4",
+    "kind": "Function",
+    "start_line": 1932,
+    "signature": "Function fn11D4 (ByVal pv0336 As Integer ' 81, p0338 As Integer ' 41, p033A As Integer ' 41) As Single ' 3",
+    "end_line": 1999,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn11E9",
+    "kind": "Function",
+    "start_line": 2001,
+    "signature": "Function fn11E9 (ByVal pv0362 As Integer ' 81, p0364 ' 40) As Integer ' 1",
+    "end_line": 2024,
+    "referenced_generated_symbols": [
+      "fn11D4",
+      "fn1305",
+      "fn1354"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn1205",
+    "kind": "Function",
+    "start_line": 2026,
+    "signature": "Function fn1205 () As Integer ' 1",
+    "end_line": 2039,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub0CCC",
+    "kind": "Sub",
+    "start_line": 2041,
+    "signature": "Sub sub0CCC (ByVal pv0374 As Integer ' 81)",
+    "end_line": 2098,
+    "referenced_generated_symbols": [
+      "fn1235",
+      "sub04FC",
+      "sub085B",
+      "sub0B82"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn121C",
+    "kind": "Function",
+    "start_line": 2100,
+    "signature": "Function fn121C (ByVal pv037C As Integer ' 81, p037E As Integer ' 41, p0380 As Integer ' 41, p0382 As Integer ' 41) As Integer ' 1",
+    "end_line": 2122,
+    "referenced_generated_symbols": [
+      "fn12AF"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn1235",
+    "kind": "Function",
+    "start_line": 2124,
+    "signature": "Function fn1235 (p0390 As Integer ' 41, p0392 As Integer ' 41) As String ' 7",
+    "end_line": 2130,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn124B",
+    "kind": "Function",
+    "start_line": 2132,
+    "signature": "Function fn124B (p0398 As T5810 ' 4A) As Long ' 2",
+    "end_line": 2152,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn125C",
+    "kind": "Function",
+    "start_line": 2154,
+    "signature": "Function fn125C (p03AE As T5810 ' 4A) As Long ' 2",
+    "end_line": 2169,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn126E",
+    "kind": "Function",
+    "start_line": 2171,
+    "signature": "Function fn126E (p03C4 As Integer ' 41) As Variant ' 6",
+    "end_line": 2484,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn1286",
+    "kind": "Function",
+    "start_line": 2486,
+    "signature": "Function fn1286 (p03C8 As Integer ' 41) As String ' 7",
+    "end_line": 2492,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn129A",
+    "kind": "Function",
+    "start_line": 2494,
+    "signature": "Function fn129A (ByVal pv03CE As Integer ' 81, p03D0 As Integer ' 41) As Variant ' 6",
+    "end_line": 2514,
+    "referenced_generated_symbols": [
+      "fn12AF"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn12AF",
+    "kind": "Function",
+    "start_line": 2516,
+    "signature": "Function fn12AF (ByVal pv03DA As Integer ' 81) As Single ' 3",
+    "end_line": 2535,
+    "referenced_generated_symbols": [
+      "fn131D",
+      "sub04FC"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn12C4",
+    "kind": "Function",
+    "start_line": 2537,
+    "signature": "Function fn12C4 (p03E6 As String ' 47) As Integer ' 1",
+    "end_line": 2565,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn12D6",
+    "kind": "Function",
+    "start_line": 2567,
+    "signature": "Function fn12D6 (p03F2 As Integer ' 41) As String ' 7",
+    "end_line": 2578,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn12EF",
+    "kind": "Function",
+    "start_line": 2580,
+    "signature": "Function fn12EF (p03F6 As Integer ' 41, p03F8 As Integer ' 41, p03FA As Integer ' 41, p03FC As Integer ' 41) As String ' 7",
+    "end_line": 2607,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn1305",
+    "kind": "Function",
+    "start_line": 2609,
+    "signature": "Function fn1305 (p0408 As Variant ' 46) As Single ' 3",
+    "end_line": 2637,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn131D",
+    "kind": "Function",
+    "start_line": 2639,
+    "signature": "Function fn131D (ByVal pv041C As Integer ' 81) As Integer ' 1",
+    "end_line": 2648,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn1338",
+    "kind": "Function",
+    "start_line": 2650,
+    "signature": "Function fn1338 (ByVal pv0424 As Integer ' 81) As Integer ' 1",
+    "end_line": 2652,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn1354",
+    "kind": "Function",
+    "start_line": 2654,
+    "signature": "Function fn1354 (p0428 As Variant ' 46) As Single ' 3",
+    "end_line": 2684,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn136C",
+    "kind": "Function",
+    "start_line": 2686,
+    "signature": "Function fn136C (ByVal pv043A As Integer ' 81) As String ' 7",
+    "end_line": 2692,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn137E",
+    "kind": "Function",
+    "start_line": 2694,
+    "signature": "Function fn137E (p043E As Integer ' 41, p0440 As Integer ' 41) As Integer ' 1",
+    "end_line": 2722,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn1397",
+    "kind": "Function",
+    "start_line": 2724,
+    "signature": "Function fn1397 (p044E As T5810 ' 4A) As Long ' 2",
+    "end_line": 2728,
+    "referenced_generated_symbols": [
+      "fn124B"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn13A8",
+    "kind": "Function",
+    "start_line": 2730,
+    "signature": "Function fn13A8 (ByVal pv0452 As Integer ' 81) As Integer ' 1",
+    "end_line": 2734,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn13C0",
+    "kind": "Function",
+    "start_line": 2736,
+    "signature": "Function fn13C0 (p0458 As Integer ' 41) As Variant ' 6",
+    "end_line": 2750,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn13D7",
+    "kind": "Function",
+    "start_line": 2752,
+    "signature": "Function fn13D7 (p0464 As Integer ' 41, p0466 As Integer ' 41) As Integer ' 1",
+    "end_line": 2804,
+    "referenced_generated_symbols": [
+      "sub085B"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub0894",
+    "kind": "Sub",
+    "start_line": 2806,
+    "signature": "Sub sub0894 (ByVal pv0476 As Integer ' 81)",
+    "end_line": 2849,
+    "referenced_generated_symbols": [
+      "fn0380",
+      "fn0EEF",
+      "sub0BBA",
+      "sub13F1"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn13FF",
+    "kind": "Function",
+    "start_line": 2851,
+    "signature": "Function fn13FF (ByVal pv047C As Integer ' 81, p047E As Integer ' 41) As Integer ' 1",
+    "end_line": 2866,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn1417",
+    "kind": "Function",
+    "start_line": 2868,
+    "signature": "Function fn1417 (ByVal pv0488 As Integer ' 81, p048A As Integer ' 41) As Integer ' 1",
+    "end_line": 2882,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn142F",
+    "kind": "Function",
+    "start_line": 2884,
+    "signature": "Function fn142F (ByVal pv0494 As Integer ' 81, p0496 As Integer ' 41) As Integer ' 1",
+    "end_line": 2922,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn1448",
+    "kind": "Function",
+    "start_line": 2924,
+    "signature": "Function fn1448 (p04AA As Integer ' 41) As Integer ' 1",
+    "end_line": 2938,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub145F",
+    "kind": "Sub",
+    "start_line": 2940,
+    "signature": "Sub sub145F (p04B0 As Integer ' 41, p04B2 As Integer ' 41, p04B4 As Integer ' 41, p04B6 As Long ' 42)",
+    "end_line": 3023,
+    "referenced_generated_symbols": [
+      "fn036D",
+      "fn1121",
+      "fn129A",
+      "fn12EF",
+      "sub0730",
+      "sub085B",
+      "sub08A9",
+      "sub0EDA",
+      "sub0F61"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub13F1",
+    "kind": "Sub",
+    "start_line": 3025,
+    "signature": "Sub sub13F1 (ByVal pv04C8 As Integer ' 81)",
+    "end_line": 3030,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub0930",
+    "kind": "Sub",
+    "start_line": 3032,
+    "signature": "Sub sub0930 (ByVal pv04CC As Integer ' 81)",
+    "end_line": 3150,
+    "referenced_generated_symbols": [
+      "fn036D",
+      "fn04ED",
+      "fn09A4",
+      "fn10A3",
+      "fn114E",
+      "fn11A1",
+      "fn131D",
+      "fn13D7",
+      "sub048C",
+      "sub04FC",
+      "sub0578",
+      "sub085B",
+      "sub086D",
+      "sub08A9",
+      "sub091E",
+      "sub0B82",
+      "sub0EAE",
+      "sub0EBF",
+      "sub0F38",
+      "sub1476"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub1476",
+    "kind": "Sub",
+    "start_line": 3152,
+    "signature": "Sub sub1476 (ByVal pv04EA As Integer ' 81)",
+    "end_line": 3173,
+    "referenced_generated_symbols": [
+      "fn04ED",
+      "fn09A4",
+      "sub0835",
+      "sub08A9",
+      "sub096E",
+      "sub0980"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub148A",
+    "kind": "Sub",
+    "start_line": 3175,
+    "signature": "Sub sub148A ()",
+    "end_line": 3203,
+    "referenced_generated_symbols": [
+      "sub0894",
+      "sub0930",
+      "sub0F38"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn14A0",
+    "kind": "Function",
+    "start_line": 3205,
+    "signature": "Function fn14A0 (p0506 As T5810 ' 4A) As Integer ' 1",
+    "end_line": 3211,
+    "referenced_generated_symbols": [
+      "fn124B",
+      "fn125C"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub085B",
+    "kind": "Sub",
+    "start_line": 3213,
+    "signature": "Sub sub085B (p0508 As String ' 47)",
+    "end_line": 3226,
+    "referenced_generated_symbols": [
+      "sub09DE"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub14B4",
+    "kind": "Sub",
+    "start_line": 3228,
+    "signature": "Sub sub14B4 ()",
+    "end_line": 3262,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub09B8",
+    "kind": "Sub",
+    "start_line": 3264,
+    "signature": "Sub sub09B8 (p0530 As Control ' 49, p0532 As Integer ' 41, p0534 As Integer ' 41, p0536 As String ' 47, p0538 As Integer ' 41)",
+    "end_line": 3299,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn14CB",
+    "kind": "Function",
+    "start_line": 3301,
+    "signature": "Function fn14CB (p054E ' 40, p0550 ' 40) As Integer ' 1",
+    "end_line": 4185,
+    "referenced_generated_symbols": [
+      "fn0380",
+      "fn03BD",
+      "fn0418",
+      "fn04CD",
+      "fn0A0B",
+      "fn0A34",
+      "fn0ABD",
+      "fn0AD3",
+      "fn0AE8",
+      "fn0B1B",
+      "fn0DCD",
+      "fn0EEF",
+      "fn10A3",
+      "fn10BA",
+      "fn10D1",
+      "fn10E5",
+      "fn1173",
+      "fn11D4",
+      "fn1235",
+      "fn1338",
+      "fn1448",
+      "fn1589",
+      "fn16A0",
+      "sub04DC",
+      "sub04FC",
+      "sub0835",
+      "sub0848",
+      "sub085B",
+      "sub08A9",
+      "sub08F5",
+      "sub0930",
+      "sub0980",
+      "sub09DE",
+      "sub0A7C",
+      "sub0B82",
+      "sub0BBA",
+      "sub0BCD",
+      "sub0BDE",
+      "sub0C53",
+      "sub0D08",
+      "sub0F01",
+      "sub0F38",
+      "sub0F4C",
+      "sub0F61",
+      "sub0FE1",
+      "sub145F",
+      "sub14E0",
+      "sub14F4",
+      "sub150A",
+      "sub151C",
+      "sub152F",
+      "sub1547",
+      "sub155A",
+      "sub1577"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn1589",
+    "kind": "Function",
+    "start_line": 4187,
+    "signature": "Function fn1589 (p064A As Integer ' 41, p064C As Integer ' 41) As Integer ' 1",
+    "end_line": 4260,
+    "referenced_generated_symbols": [
+      "sub04FC"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub15A1",
+    "kind": "Sub",
+    "start_line": 4262,
+    "signature": "Sub sub15A1 (ByVal pv0662 As Integer ' 81)",
+    "end_line": 4283,
+    "referenced_generated_symbols": [
+      "sub085B",
+      "sub0F61"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub0730",
+    "kind": "Sub",
+    "start_line": 4285,
+    "signature": "Sub sub0730 (ByVal pv0668 As Integer ' 81, ByVal pv066A As Integer ' 81, ByVal pv066C As Integer ' 81, p066E As Integer ' 41, p0670 As Integer ' 41)",
+    "end_line": 4340,
+    "referenced_generated_symbols": [
+      "fn1BD5",
+      "sub0F9A",
+      "sub0FB0",
+      "sub0FCB"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub0EDA",
+    "kind": "Sub",
+    "start_line": 4342,
+    "signature": "Sub sub0EDA (ByVal pv0686 As Integer ' 81, p0688 As Integer ' 41)",
+    "end_line": 4369,
+    "referenced_generated_symbols": [
+      "sub04FC",
+      "sub0F4C",
+      "sub0F61",
+      "sub0F74"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub048C",
+    "kind": "Sub",
+    "start_line": 4371,
+    "signature": "Sub sub048C (ByVal pv068E As Integer ' 81)",
+    "end_line": 4385,
+    "referenced_generated_symbols": [
+      "sub0894",
+      "sub0D1D"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub15BE",
+    "kind": "Sub",
+    "start_line": 4387,
+    "signature": "Sub sub15BE (ByVal pv0692 As Integer ' 81, ByVal pv0694 As Integer ' 81, p0698 As Form ' 49, p069A As Integer ' 41)",
+    "end_line": 4417,
+    "referenced_generated_symbols": [
+      "sub04FC"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub15D6",
+    "kind": "Sub",
+    "start_line": 4419,
+    "signature": "Sub sub15D6 ()",
+    "end_line": 4465,
+    "referenced_generated_symbols": [
+      "fn03BD"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub047C",
+    "kind": "Sub",
+    "start_line": 4467,
+    "signature": "Sub sub047C (ByVal pv06A6 As Integer ' 81, p06A8 As Integer ' 41)",
+    "end_line": 4560,
+    "referenced_generated_symbols": [
+      "sub04FC"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub091E",
+    "kind": "Sub",
+    "start_line": 4562,
+    "signature": "Sub sub091E (ByVal pv06AE As Integer ' 81, p06B0 As Integer ' 41)",
+    "end_line": 4603,
+    "referenced_generated_symbols": [
+      "fn0418",
+      "fn0A34",
+      "fn0ABD",
+      "fn0F88",
+      "sub04FC",
+      "sub0578",
+      "sub086D"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub150A",
+    "kind": "Sub",
+    "start_line": 4605,
+    "signature": "Sub sub150A (p06BC As Integer ' 41, p06BE As Integer ' 41, p06C0 As Integer ' 41, p06C2 As Integer ' 41, p06C4 As Integer ' 41, p06C6 As Integer ' 41)",
+    "end_line": 4643,
+    "referenced_generated_symbols": [
+      "sub04FC"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub0F4C",
+    "kind": "Sub",
+    "start_line": 4645,
+    "signature": "Sub sub0F4C (p06CE As Integer ' 41)",
+    "end_line": 4682,
+    "referenced_generated_symbols": [
+      "fn12EF",
+      "fn142F",
+      "sub04FC"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub15EC",
+    "kind": "Sub",
+    "start_line": 4684,
+    "signature": "Sub sub15EC (p06DA As Control ' 49, ByVal p06DC As String ' 47)",
+    "end_line": 4688,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub0F38",
+    "kind": "Sub",
+    "start_line": 4690,
+    "signature": "Sub sub0F38 ()",
+    "end_line": 4719,
+    "referenced_generated_symbols": [
+      "fn1235",
+      "sub04FC"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub0B82",
+    "kind": "Sub",
+    "start_line": 4721,
+    "signature": "Sub sub0B82 (ByVal pv06DE As Integer ' 81)",
+    "end_line": 4778,
+    "referenced_generated_symbols": [
+      "fn03BD",
+      "sub04FC",
+      "sub085B",
+      "sub0F38"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub151C",
+    "kind": "Sub",
+    "start_line": 4780,
+    "signature": "Sub sub151C (p06F2 As Integer ' 41, p06F4 As Integer ' 41, p06F6 As Integer ' 41, p06F8 As Integer ' 41)",
+    "end_line": 5380,
+    "referenced_generated_symbols": [
+      "fn030F",
+      "fn036D",
+      "fn0380",
+      "fn09A4",
+      "fn0D92",
+      "fn11D4",
+      "fn11E9",
+      "fn124B",
+      "fn125C",
+      "fn12D6",
+      "fn12EF",
+      "fn13FF",
+      "fn1417",
+      "fn142F",
+      "fn1BF0",
+      "sub047C",
+      "sub04FC",
+      "sub085B",
+      "sub09B8"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub0F61",
+    "kind": "Sub",
+    "start_line": 5382,
+    "signature": "Sub sub0F61 (ByVal pv07A6 As Integer ' 81, ByVal pv07A8 As Integer ' 81, ByVal pv07AA As Integer ' 81)",
+    "end_line": 5520,
+    "referenced_generated_symbols": [
+      "fn12EF",
+      "sub04FC",
+      "sub085B"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub1602",
+    "kind": "Sub",
+    "start_line": 5522,
+    "signature": "Sub sub1602 ()",
+    "end_line": 5551,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub0EBF",
+    "kind": "Sub",
+    "start_line": 5553,
+    "signature": "Sub sub0EBF (ByVal pv07C8 As Integer ' 81, p07CA As Integer ' 41, p07CC As Integer ' 41)",
+    "end_line": 5581,
+    "referenced_generated_symbols": [
+      "sub04FC",
+      "sub085B"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub08A9",
+    "kind": "Sub",
+    "start_line": 5583,
+    "signature": "Sub sub08A9 (p07D0 As Integer ' 41, p07D2 As Integer ' 41)",
+    "end_line": 5671,
+    "referenced_generated_symbols": [
+      "fn036D",
+      "fn03BD",
+      "fn126E",
+      "fn1338",
+      "sub04FC",
+      "sub1617"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub1631",
+    "kind": "Sub",
+    "start_line": 5673,
+    "signature": "Sub sub1631 (p07E2 As Integer ' 41, p07E4 As Integer ' 41, p07E6 As Integer ' 41)",
+    "end_line": 5681,
+    "referenced_generated_symbols": [
+      "sub0CCC"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub0CA0",
+    "kind": "Sub",
+    "start_line": 5683,
+    "signature": "Sub sub0CA0 (ByVal pv07E8 As Integer ' 81, p07EA As Integer ' 41)",
+    "end_line": 5699,
+    "referenced_generated_symbols": [
+      "sub085B"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub1187",
+    "kind": "Sub",
+    "start_line": 5701,
+    "signature": "Sub sub1187 (ByVal pv07EE As Integer ' 81, p07F0 As Integer ' 41)",
+    "end_line": 5728,
+    "referenced_generated_symbols": [
+      "sub04FC",
+      "sub0EDA",
+      "sub0F4C",
+      "sub0F61"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub152F",
+    "kind": "Sub",
+    "start_line": 5730,
+    "signature": "Sub sub152F (p07F6 As Integer ' 41)",
+    "end_line": 5748,
+    "referenced_generated_symbols": [
+      "sub08B9"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn164C",
+    "kind": "Function",
+    "start_line": 5750,
+    "signature": "Function fn164C (ByVal p0800 As String ' 47, p0802 As String ' 47) As Variant ' 6",
+    "end_line": 5924,
+    "referenced_generated_symbols": [
+      "fn0380",
+      "fn0418",
+      "fn0A0B",
+      "fn0A34",
+      "fn0ABD",
+      "fn0AD3",
+      "fn0AE8",
+      "sub04FC",
+      "sub0835",
+      "sub085B",
+      "sub086D",
+      "sub091E",
+      "sub0930",
+      "sub0956",
+      "sub0980"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn10A3",
+    "kind": "Function",
+    "start_line": 5926,
+    "signature": "Function fn10A3 (ByVal pv0822 As Integer ' 81) As Integer ' 1",
+    "end_line": 5983,
+    "referenced_generated_symbols": [
+      "fn04ED",
+      "fn11A1",
+      "sub0578",
+      "sub085B",
+      "sub086D",
+      "sub08A9",
+      "sub096E",
+      "sub0EAE",
+      "sub0EBF"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub165F",
+    "kind": "Sub",
+    "start_line": 5985,
+    "signature": "Sub sub165F ()",
+    "end_line": 6029,
+    "referenced_generated_symbols": [
+      "fn0360",
+      "fn03F1",
+      "fn04ED",
+      "fn179B",
+      "sub04DC",
+      "sub085B",
+      "sub1673"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub1673",
+    "kind": "Sub",
+    "start_line": 6031,
+    "signature": "Sub sub1673 ()",
+    "end_line": 6042,
+    "referenced_generated_symbols": [
+      "sub15D6"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub0A7C",
+    "kind": "Sub",
+    "start_line": 6044,
+    "signature": "Sub sub0A7C (p0844 As Integer ' 41, p0846 As Integer ' 41, p0848 As Integer ' 41)",
+    "end_line": 6072,
+    "referenced_generated_symbols": [
+      "sub04FC",
+      "sub085B"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub168B",
+    "kind": "Sub",
+    "start_line": 6074,
+    "signature": "Sub sub168B ()",
+    "end_line": 6093,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub08B9",
+    "kind": "Sub",
+    "start_line": 6095,
+    "signature": "Sub sub08B9 (p085A As Integer ' 41)",
+    "end_line": 6128,
+    "referenced_generated_symbols": [
+      "sub09B8"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub1617",
+    "kind": "Sub",
+    "start_line": 6130,
+    "signature": "Sub sub1617 (ByVal pv0868 As Integer ' 81, p086A As Integer ' 41)",
+    "end_line": 6149,
+    "referenced_generated_symbols": [
+      "fn036D",
+      "fn124B"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub1577",
+    "kind": "Sub",
+    "start_line": 6151,
+    "signature": "Sub sub1577 (ByVal pv086E As Integer ' 81, p0870 As Integer ' 41)",
+    "end_line": 6310,
+    "referenced_generated_symbols": [
+      "fn0EEF",
+      "fn10E5",
+      "fn110D",
+      "fn1139",
+      "fn1173",
+      "fn1448",
+      "sub047C",
+      "sub04FC",
+      "sub085B",
+      "sub086D",
+      "sub08A9",
+      "sub0B9B",
+      "sub0BCD",
+      "sub0BDE",
+      "sub0EAE",
+      "sub0EBF",
+      "sub1043",
+      "sub1187",
+      "sub1602"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn16A0",
+    "kind": "Function",
+    "start_line": 6312,
+    "signature": "Function fn16A0 (ByVal p0888 As String ' 47, ByVal p088A As String ' 47, ByVal p088C As String ' 47, ByVal p088E As String ' 47) As String ' 7",
+    "end_line": 6334,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module6.bas",
+    "name": "fn16B8",
+    "kind": "Function",
+    "start_line": 6336,
+    "signature": "Function fn16B8 (p0892 As String ' 47) As Integer ' 1",
+    "end_line": 6364,
+    "referenced_generated_symbols": [
+      "sub085B"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub16CB",
+    "kind": "Sub",
+    "start_line": 6366,
+    "signature": "Sub sub16CB ()",
+    "end_line": 6407,
+    "referenced_generated_symbols": [
+      "fn04ED",
+      "sub05F6",
+      "sub0695",
+      "sub085B",
+      "sub0BDE",
+      "sub148A",
+      "sub15D6",
+      "sub165F",
+      "sub1673",
+      "sub168B",
+      "sub16D8"
+    ]
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub16EB",
+    "kind": "Sub",
+    "start_line": 6409,
+    "signature": "Sub sub16EB ()",
+    "end_line": 6415,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module6.bas",
+    "name": "sub0F11",
+    "kind": "Sub",
+    "start_line": 6417,
+    "signature": "Sub sub0F11 (ByVal pv08AA As Integer ' 81, p08AC As Long ' 42)",
+    "end_line": 6449,
+    "referenced_generated_symbols": [
+      "fn124B",
+      "sub085B",
+      "sub08A9"
+    ]
+  },
+  {
+    "file": "Module7.bas",
+    "name": "sub0908",
+    "kind": "Sub",
+    "start_line": 37,
+    "signature": "Sub sub0908 ()",
+    "end_line": 105,
+    "referenced_generated_symbols": [
+      "fn0A0B",
+      "sub04DC",
+      "sub04FC",
+      "sub085B",
+      "sub091E",
+      "sub096E",
+      "sub14E0",
+      "sub1776"
+    ]
+  },
+  {
+    "file": "Module7.bas",
+    "name": "fn17AE",
+    "kind": "Function",
+    "start_line": 107,
+    "signature": "Function fn17AE () As Integer ' 1",
+    "end_line": 125,
+    "referenced_generated_symbols": [
+      "sub04FC"
+    ]
+  },
+  {
+    "file": "Module7.bas",
+    "name": "sub0BDE",
+    "kind": "Sub",
+    "start_line": 127,
+    "signature": "Sub sub0BDE (p0038 As Integer ' 41)",
+    "end_line": 194,
+    "referenced_generated_symbols": [
+      "fn0EEF",
+      "fn10E5",
+      "sub102F",
+      "sub1577"
+    ]
+  },
+  {
+    "file": "Module7.bas",
+    "name": "sub16D8",
+    "kind": "Sub",
+    "start_line": 196,
+    "signature": "Sub sub16D8 ()",
+    "end_line": 276,
+    "referenced_generated_symbols": [
+      "fn04CD",
+      "sub04DC",
+      "sub085B",
+      "sub14F4"
+    ]
+  },
+  {
+    "file": "Module7.bas",
+    "name": "sub0A64",
+    "kind": "Sub",
+    "start_line": 278,
+    "signature": "Sub sub0A64 (p008A As Integer ' 41)",
+    "end_line": 371,
+    "referenced_generated_symbols": [
+      "sub04FC",
+      "sub0930",
+      "sub0E85"
+    ]
+  },
+  {
+    "file": "Module7.bas",
+    "name": "sub14F4",
+    "kind": "Sub",
+    "start_line": 373,
+    "signature": "Sub sub14F4 ()",
+    "end_line": 380,
+    "referenced_generated_symbols": [
+      "fn03BD",
+      "sub0775",
+      "sub08A9",
+      "sub0CCC"
+    ]
+  },
+  {
+    "file": "Module7.bas",
+    "name": "fn179B",
+    "kind": "Function",
+    "start_line": 382,
+    "signature": "Function fn179B (p00C0 As Integer ' 41) As Integer ' 1",
+    "end_line": 439,
+    "referenced_generated_symbols": [
+      "sub04FC"
+    ]
+  },
+  {
+    "file": "Module7.bas",
+    "name": "sub0848",
+    "kind": "Sub",
+    "start_line": 441,
+    "signature": "Sub sub0848 (p00D0 As Integer ' 41)",
+    "end_line": 460,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module7.bas",
+    "name": "sub102F",
+    "kind": "Sub",
+    "start_line": 462,
+    "signature": "Sub sub102F (p00DA As Integer ' 41, p00DC As Integer ' 41)",
+    "end_line": 480,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module7.bas",
+    "name": "sub0C15",
+    "kind": "Sub",
+    "start_line": 482,
+    "signature": "Sub sub0C15 ()",
+    "end_line": 490,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module7.bas",
+    "name": "sub155A",
+    "kind": "Sub",
+    "start_line": 492,
+    "signature": "Sub sub155A (p00E2 As Integer ' 41)",
+    "end_line": 594,
+    "referenced_generated_symbols": [
+      "fn0DCD",
+      "fn0EEF",
+      "sub04FC",
+      "sub0941",
+      "sub0A64",
+      "sub0BBA",
+      "sub0BCD",
+      "sub0BDE",
+      "sub0C8A",
+      "sub0F01",
+      "sub0FE1",
+      "sub1019"
+    ]
+  },
+  {
+    "file": "Module7.bas",
+    "name": "sub0BF1",
+    "kind": "Sub",
+    "start_line": 596,
+    "signature": "Sub sub0BF1 ()",
+    "end_line": 598,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module7.bas",
+    "name": "sub178B",
+    "kind": "Sub",
+    "start_line": 600,
+    "signature": "Sub sub178B (p00FA As Integer ' 41)",
+    "end_line": 647,
+    "referenced_generated_symbols": [
+      "fn03BD",
+      "fn0EEF",
+      "sub04FC",
+      "sub0792",
+      "sub08B9",
+      "sub0BAA",
+      "sub0BBA",
+      "sub0BCD",
+      "sub0F4C",
+      "sub14E0",
+      "sub1617"
+    ]
+  },
+  {
+    "file": "Module7.bas",
+    "name": "sub14E0",
+    "kind": "Sub",
+    "start_line": 649,
+    "signature": "Sub sub14E0 (p0118 As Integer ' 41)",
+    "end_line": 694,
+    "referenced_generated_symbols": [
+      "fn03BD",
+      "sub04FC",
+      "sub08A9",
+      "sub08B9",
+      "sub0B82",
+      "sub0F4C",
+      "sub0F61",
+      "sub1602"
+    ]
+  },
+  {
+    "file": "Module7.bas",
+    "name": "sub1776",
+    "kind": "Sub",
+    "start_line": 696,
+    "signature": "Sub sub1776 ()",
+    "end_line": 699,
+    "referenced_generated_symbols": [
+      "sub08A9"
+    ]
+  },
+  {
+    "file": "Module7.bas",
+    "name": "sub0941",
+    "kind": "Sub",
+    "start_line": 701,
+    "signature": "Sub sub0941 (ByVal p0138 As String ' 47)",
+    "end_line": 703,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module7.bas",
+    "name": "sub0956",
+    "kind": "Sub",
+    "start_line": 705,
+    "signature": "Sub sub0956 ()",
+    "end_line": 732,
+    "referenced_generated_symbols": [
+      "fn0992",
+      "fn0AE8"
+    ]
+  },
+  {
+    "file": "Module7.bas",
+    "name": "sub1547",
+    "kind": "Sub",
+    "start_line": 734,
+    "signature": "Sub sub1547 (ByVal pv014E As Integer ' 81)",
+    "end_line": 755,
+    "referenced_generated_symbols": [
+      "fn03BD",
+      "fn0EEF",
+      "sub04DC",
+      "sub085B",
+      "sub14E0",
+      "sub1776",
+      "sub178B"
+    ]
+  },
+  {
+    "file": "Module8.bas",
+    "name": "fn192B",
+    "kind": "Function",
+    "start_line": 26,
+    "signature": "Function fn192B (ByVal pv004E As Variant ' 86, ByVal pv0052 As Variant ' 86, ByVal pv0056 As Variant ' 86, ByVal pv005A As Variant ' 86, ByVal pv0062 As Variant ' 86, ByVal pv0066 As Single ' 83, ByVal pv0068 As Single ' 83) As Variant ' 6",
+    "end_line": 127,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module8.bas",
+    "name": "fn193D",
+    "kind": "Function",
+    "start_line": 129,
+    "signature": "Function fn193D (ByVal pv00C6 As Integer ' 81, ByVal pv00C8 As Integer ' 81, ByVal pv00CA As Integer ' 81, ByVal pv00CC As Integer ' 81, ByVal pv00D0 As Integer ' 81, ByVal pv00D2 As Integer ' 81, ByVal pv00D4 As Integer ' 81) As Variant ' 6",
+    "end_line": 204,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module9.bas",
+    "name": "sub1A31",
+    "kind": "Sub",
+    "start_line": 25,
+    "signature": "Sub sub1A31 (p00F0 As Integer ' 41, p00F2 As Integer ' 41)",
+    "end_line": 72,
+    "referenced_generated_symbols": [
+      "fn034F",
+      "fn19F4",
+      "sub04FC",
+      "sub1A3F"
+    ]
+  },
+  {
+    "file": "Module9.bas",
+    "name": "sub1A50",
+    "kind": "Sub",
+    "start_line": 74,
+    "signature": "Sub sub1A50 ()",
+    "end_line": 92,
+    "referenced_generated_symbols": [
+      "sub063F"
+    ]
+  },
+  {
+    "file": "Module9.bas",
+    "name": "sub0CB7",
+    "kind": "Sub",
+    "start_line": 94,
+    "signature": "Sub sub0CB7 (p011C As Integer ' 41)",
+    "end_line": 117,
+    "referenced_generated_symbols": [
+      "sub09DE"
+    ]
+  },
+  {
+    "file": "Module9.bas",
+    "name": "sub0E99",
+    "kind": "Sub",
+    "start_line": 119,
+    "signature": "Sub sub0E99 (p0126 As Integer ' 41)",
+    "end_line": 129,
+    "referenced_generated_symbols": [
+      "sub09DE"
+    ]
+  },
+  {
+    "file": "Module9.bas",
+    "name": "sub09DE",
+    "kind": "Sub",
+    "start_line": 131,
+    "signature": "Sub sub09DE (p0128 ' 40)",
+    "end_line": 164,
+    "referenced_generated_symbols": [
+      "sub1A31"
+    ]
+  },
+  {
+    "file": "Module9.bas",
+    "name": "sub1005",
+    "kind": "Sub",
+    "start_line": 166,
+    "signature": "Sub sub1005 (p013E As Integer ' 41)",
+    "end_line": 193,
+    "referenced_generated_symbols": [
+      "sub09DE"
+    ]
+  },
+  {
+    "file": "Module9.bas",
+    "name": "sub086D",
+    "kind": "Sub",
+    "start_line": 195,
+    "signature": "Sub sub086D (p0150 ' 40)",
+    "end_line": 224,
+    "referenced_generated_symbols": [
+      "sub1A31"
+    ]
+  },
+  {
+    "file": "Module9.bas",
+    "name": "sub08D1",
+    "kind": "Sub",
+    "start_line": 226,
+    "signature": "Sub sub08D1 (p015C ' 40)",
+    "end_line": 243,
+    "referenced_generated_symbols": [
+      "sub1A31"
+    ]
+  },
+  {
+    "file": "Module9.bas",
+    "name": "sub1A3F",
+    "kind": "Sub",
+    "start_line": 245,
+    "signature": "Sub sub1A3F ()",
+    "end_line": 256,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module9.bas",
+    "name": "sub064E",
+    "kind": "Sub",
+    "start_line": 258,
+    "signature": "Sub sub064E (p016E As Long ' 42)",
+    "end_line": 261,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module9.bas",
+    "name": "sub0618",
+    "kind": "Sub",
+    "start_line": 263,
+    "signature": "Sub sub0618 ()",
+    "end_line": 284,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module9.bas",
+    "name": "fn19DC",
+    "kind": "Function",
+    "start_line": 286,
+    "signature": "Function fn19DC () As Integer ' 1",
+    "end_line": 297,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module9.bas",
+    "name": "sub062D",
+    "kind": "Sub",
+    "start_line": 299,
+    "signature": "Sub sub062D ()",
+    "end_line": 341,
+    "referenced_generated_symbols": [
+      "sub04FC"
+    ]
+  },
+  {
+    "file": "Module9.bas",
+    "name": "fn19F4",
+    "kind": "Function",
+    "start_line": 343,
+    "signature": "Function fn19F4 () As Integer ' 1",
+    "end_line": 369,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module9.bas",
+    "name": "fn1A08",
+    "kind": "Function",
+    "start_line": 371,
+    "signature": "Function fn1A08 () As Integer ' 1",
+    "end_line": 394,
+    "referenced_generated_symbols": [
+      "fn03BD"
+    ]
+  },
+  {
+    "file": "Module9.bas",
+    "name": "sub170B",
+    "kind": "Sub",
+    "start_line": 396,
+    "signature": "Sub sub170B ()",
+    "end_line": 417,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module9.bas",
+    "name": "fn1A1B",
+    "kind": "Function",
+    "start_line": 419,
+    "signature": "Function fn1A1B () As Integer ' 1",
+    "end_line": 426,
+    "referenced_generated_symbols": []
+  },
+  {
+    "file": "Module9.bas",
+    "name": "sub063F",
+    "kind": "Sub",
+    "start_line": 428,
+    "signature": "Sub sub063F (p01B2 As Integer ' 41)",
+    "end_line": 464,
+    "referenced_generated_symbols": [
+      "fn034F",
+      "sub04FC",
+      "sub062D"
+    ]
+  },
+  {
+    "file": "Module9.bas",
+    "name": "sub0D35",
+    "kind": "Sub",
+    "start_line": 466,
+    "signature": "Sub sub0D35 (p01B6 As Integer ' 41)",
+    "end_line": 515,
+    "referenced_generated_symbols": [
+      "sub09DE"
+    ]
+  }
+]

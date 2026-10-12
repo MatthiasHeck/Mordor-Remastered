@@ -1,0 +1,1446 @@
+{
+  "status": "STATIC_TRACE_SPECS_BUILT_RUNTIME_PENDING",
+  "routine_count": 8,
+  "total_rnd_events": 59,
+  "specs": [
+    {
+      "category": "combat",
+      "file": "Module4.bas",
+      "procedure": "fn0DEE",
+      "source_start": 2212,
+      "source_end": 2258,
+      "events": [
+        {
+          "line": 2241,
+          "expression": "pv03BC = CInt(pv03BC - (Log(pv03BC) * ((Log(pv03BC) - 2.4#) * 2.25#))) + 1",
+          "tokens": [
+            {
+              "kind": "numeric_conversion",
+              "token": "CInt",
+              "column": 15,
+              "ordinal": null
+            }
+          ]
+        },
+        {
+          "line": 2248,
+          "expression": "l03C8 = Int((Rnd * ((pv03BC + 10) / 2)) + ((pv03BC + 10) / 4)) / 10",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 14,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 19,
+              "ordinal": 1
+            }
+          ]
+        },
+        {
+          "line": 2249,
+          "expression": "l03CE = Int((l03C4 * l03C6 * l03C8) * pv03BE)",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 14,
+              "ordinal": null
+            }
+          ]
+        },
+        {
+          "line": 2250,
+          "expression": "l03CA = Int(((p03B8 - p03B6) / 2) / 4)",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 14,
+              "ordinal": null
+            }
+          ]
+        },
+        {
+          "line": 2251,
+          "expression": "l03CA = l03CA - (Int(Rnd * (l03CA + 1)) / 1) + 1",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 23,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 27,
+              "ordinal": 2
+            }
+          ]
+        },
+        {
+          "line": 2252,
+          "expression": "l03CC = Int(Rnd * 1000) + 1",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 14,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 18,
+              "ordinal": 3
+            }
+          ]
+        },
+        {
+          "line": 2255,
+          "expression": "l03CC = Int(Rnd * 100) + 1",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 14,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 18,
+              "ordinal": 4
+            }
+          ]
+        }
+      ],
+      "rnd_count": 4,
+      "expected_trace": null,
+      "status": "static_trace_spec_runtime_pending",
+      "trace_requirements": [
+        "capture each Rnd output in listed order",
+        "capture VB conversion result or runtime error",
+        "capture final state and branch decisions",
+        "repeat with music enabled and disabled when category is music or combat"
+      ]
+    },
+    {
+      "category": "combat",
+      "file": "Module4.bas",
+      "procedure": "sub1019",
+      "source_start": 246,
+      "source_end": 517,
+      "events": [
+        {
+          "line": 317,
+          "expression": "l00F8 = CInt(fn11D4(pv00F4, mc0134, False))",
+          "tokens": [
+            {
+              "kind": "numeric_conversion",
+              "token": "CInt",
+              "column": 13,
+              "ordinal": null
+            }
+          ]
+        },
+        {
+          "line": 348,
+          "expression": "If  gv1426(gv14C2(pv00F4).M5997(l0106)).M5693 < Int(gv14F6(gv1E38(gv1E66(pv00F4).M547A).M4ED4).M5693 / 2) Then",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 73,
+              "ordinal": null
+            }
+          ]
+        },
+        {
+          "line": 378,
+          "expression": "l00F8 = CInt(fn11D4(pv00F4, mc014A, False))",
+          "tokens": [
+            {
+              "kind": "numeric_conversion",
+              "token": "CInt",
+              "column": 33,
+              "ordinal": null
+            }
+          ]
+        },
+        {
+          "line": 396,
+          "expression": "If  Int(Rnd * 100) < l010C Then",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 29,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 33,
+              "ordinal": 1
+            }
+          ]
+        },
+        {
+          "line": 400,
+          "expression": "l00F8 = CInt(fn11D4(pv00F4, mc0150, False))",
+          "tokens": [
+            {
+              "kind": "numeric_conversion",
+              "token": "CInt",
+              "column": 33,
+              "ordinal": null
+            }
+          ]
+        },
+        {
+          "line": 418,
+          "expression": "If  Int(Rnd * 100) < l010C Then",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 29,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 33,
+              "ordinal": 2
+            }
+          ]
+        }
+      ],
+      "rnd_count": 2,
+      "expected_trace": null,
+      "status": "static_trace_spec_runtime_pending",
+      "trace_requirements": [
+        "capture each Rnd output in listed order",
+        "capture VB conversion result or runtime error",
+        "capture final state and branch decisions",
+        "repeat with music enabled and disabled when category is music or combat"
+      ]
+    },
+    {
+      "category": "combat",
+      "file": "Module4.bas",
+      "procedure": "sub0C8A",
+      "source_start": 801,
+      "source_end": 1354,
+      "events": [
+        {
+          "line": 879,
+          "expression": "If  Int(Rnd * 100) < l01FE Then",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 21,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 25,
+              "ordinal": 1
+            }
+          ]
+        },
+        {
+          "line": 1113,
+          "expression": "l01FC = Int(Rnd * 100) + 1",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 33,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 37,
+              "ordinal": 2
+            }
+          ]
+        },
+        {
+          "line": 1131,
+          "expression": "l01FC = Int(Rnd * 100) + 1",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 33,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 37,
+              "ordinal": 3
+            }
+          ]
+        },
+        {
+          "line": 1219,
+          "expression": "If  (Int(Rnd * 100) + 1) > l0210 Then",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 34,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 38,
+              "ordinal": 4
+            }
+          ]
+        },
+        {
+          "line": 1230,
+          "expression": "If  Rnd * 100 > l0210 Then",
+          "tokens": [
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 37,
+              "ordinal": 5
+            }
+          ]
+        }
+      ],
+      "rnd_count": 5,
+      "expected_trace": null,
+      "status": "static_trace_spec_runtime_pending",
+      "trace_requirements": [
+        "capture each Rnd output in listed order",
+        "capture VB conversion result or runtime error",
+        "capture final state and branch decisions",
+        "repeat with music enabled and disabled when category is music or combat"
+      ]
+    },
+    {
+      "category": "combat",
+      "file": "Module4.bas",
+      "procedure": "sub0E85",
+      "source_start": 2588,
+      "source_end": 3413,
+      "events": [
+        {
+          "line": 2701,
+          "expression": "If  Int(Rnd * 100) < l046A Then",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 21,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 25,
+              "ordinal": 1
+            }
+          ]
+        },
+        {
+          "line": 2703,
+          "expression": "l0468 = Int(((((Log(l046C) + (l046C / 15)) / Log(1.08#)) - (gv14C2(pv0442).M5584(gv14C2(pv0442).M58BB).M4E82 / 20)) + 1))",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 29,
+              "ordinal": null
+            }
+          ]
+        },
+        {
+          "line": 2704,
+          "expression": "l0460 = ((Int(((Rnd * l0468) + 1) / 2) + (l0468 / 4)) * .7#) / 2",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 31,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 37,
+              "ordinal": 2
+            }
+          ]
+        },
+        {
+          "line": 2771,
+          "expression": "l0474 = Int(Rnd * (mc01A0 + 1))",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 33,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 37,
+              "ordinal": 3
+            }
+          ]
+        },
+        {
+          "line": 2779,
+          "expression": "If  Int(Rnd * 100) < l046A Then",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 21,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 25,
+              "ordinal": 4
+            }
+          ]
+        },
+        {
+          "line": 2781,
+          "expression": "l0468 = Int(((((Log(l046C) + (l046C / 15)) / Log(1.08#)) - (gv14C2(pv0442).M5584(gv14C2(pv0442).M58BB).M4E82 / 10)) + 1))",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 29,
+              "ordinal": null
+            }
+          ]
+        },
+        {
+          "line": 2782,
+          "expression": "l0460 = (Int(((Rnd * l0468) + 1) / 2) + (l0468 / 2)) * .7#",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 30,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 36,
+              "ordinal": 5
+            }
+          ]
+        },
+        {
+          "line": 2878,
+          "expression": "If  (Int(Rnd * 100) + 1) < (100 / (l0472 + 1)) Then",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 26,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 30,
+              "ordinal": 6
+            }
+          ]
+        },
+        {
+          "line": 2882,
+          "expression": "l0474 = Int(Rnd * mc01A0) + 1",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 37,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 41,
+              "ordinal": 7
+            }
+          ]
+        },
+        {
+          "line": 2917,
+          "expression": "l0468 = Int(Rnd * 100) + 1",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 29,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 33,
+              "ordinal": 8
+            }
+          ]
+        },
+        {
+          "line": 2928,
+          "expression": "l0468 = Int(Rnd * 100) + 1",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 29,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 33,
+              "ordinal": 9
+            }
+          ]
+        },
+        {
+          "line": 3058,
+          "expression": "If  Int(Rnd * 100) < l046A Then",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 25,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 29,
+              "ordinal": 10
+            }
+          ]
+        },
+        {
+          "line": 3060,
+          "expression": "l0468 = Int(((((Log(l046C) + (l046C / 15)) / Log(1.08#)) - (l0480 / 10)) + 1))",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 33,
+              "ordinal": null
+            }
+          ]
+        },
+        {
+          "line": 3061,
+          "expression": "l0460 = (Int(((Rnd * l0468) + 1) / 2) + (l0468 / 2)) * .7#",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 34,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 40,
+              "ordinal": 11
+            }
+          ]
+        },
+        {
+          "line": 3112,
+          "expression": "If  (Int(Rnd * 100) + 1) > ((gv14C2(pv0442).M55B5(mc0248) + gv14C2(pv0442).M584B(mc0248)) * 2.5#) - ((gv14F6(gv1E38(l0456).M4ED4).M5693) * 2) Then",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 22,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 26,
+              "ordinal": 12
+            }
+          ]
+        },
+        {
+          "line": 3120,
+          "expression": "l049E = Int(Rnd * (mc04A2 * 5)) + 1",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 29,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 33,
+              "ordinal": 13
+            }
+          ]
+        },
+        {
+          "line": 3138,
+          "expression": "l0480 = Int(Rnd * CInt((gv14F6(gv1E38(l0456).M4ED4).M5693 / 2) + .5#)) + 1",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 25,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 29,
+              "ordinal": 14
+            },
+            {
+              "kind": "numeric_conversion",
+              "token": "CInt",
+              "column": 35,
+              "ordinal": null
+            }
+          ]
+        },
+        {
+          "line": 3140,
+          "expression": "If  (Int(Rnd * 100) + 1) > gv14C2(pv0442).M5548(mc04A6) Then",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 26,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 30,
+              "ordinal": 15
+            }
+          ]
+        },
+        {
+          "line": 3141,
+          "expression": "If  (Int(Rnd * 100) + 1) > ((gv14C2(pv0442).M55B5(mc0248) + gv14C2(pv0442).M584B(mc0248)) * 2.5#) - ((gv14F6(gv1E38(l0456).M4ED4).M5693) * 2) Then",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 30,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 34,
+              "ordinal": 16
+            }
+          ]
+        },
+        {
+          "line": 3142,
+          "expression": "l04A8 = Int(Rnd * mc04AC + 1)",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 37,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 41,
+              "ordinal": 17
+            }
+          ]
+        },
+        {
+          "line": 3196,
+          "expression": "If  (Int(Rnd * 100) + 1) > l0480 Then",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 26,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 30,
+              "ordinal": 18
+            }
+          ]
+        },
+        {
+          "line": 3203,
+          "expression": "l046E = Int(Rnd * 100) + 1",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 37,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 41,
+              "ordinal": 19
+            }
+          ]
+        },
+        {
+          "line": 3241,
+          "expression": "l0468 = Int(Rnd * 100) + 1",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 21,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 25,
+              "ordinal": 20
+            }
+          ]
+        },
+        {
+          "line": 3258,
+          "expression": "l0468 = Int(Rnd * 100) + 1",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 21,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 25,
+              "ordinal": 21
+            }
+          ]
+        },
+        {
+          "line": 3280,
+          "expression": "If  (Int(Rnd * 100) + 1) > l0468 And gv14C2(pv0442).M56B9(mc0122) = 0 Then",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 22,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 26,
+              "ordinal": 22
+            }
+          ]
+        },
+        {
+          "line": 3295,
+          "expression": "l0494 = Int(Rnd * (mc04D0 - 1)) + 1",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 25,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 29,
+              "ordinal": 23
+            }
+          ]
+        },
+        {
+          "line": 3305,
+          "expression": "If  (Int(Rnd * 100) + 1) > l044C% Then",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 26,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 30,
+              "ordinal": 24
+            }
+          ]
+        },
+        {
+          "line": 3324,
+          "expression": "l0468 = Int(Rnd * 100)",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 25,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 29,
+              "ordinal": 25
+            }
+          ]
+        },
+        {
+          "line": 3327,
+          "expression": "l044C% = CInt(fn11D4(gv1A86, m04E0, False))",
+          "tokens": [
+            {
+              "kind": "numeric_conversion",
+              "token": "CInt",
+              "column": 26,
+              "ordinal": null
+            }
+          ]
+        },
+        {
+          "line": 3328,
+          "expression": "l0468 = l0468 + Int((Rnd * (gv141C.M5B9F * gv141C.M5B95)) + (gv141C.M5B9F / 2) * 1.5#)",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 33,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 38,
+              "ordinal": 26
+            }
+          ]
+        },
+        {
+          "line": 3332,
+          "expression": "l04DE = Int(Rnd * (((gv14C2(pv0442).M5470 + gv1E38(l0456).M4E97) * (3353.452# * l04DC)) / gv14C2(pv0442).M5584(gv14C2(pv0442).M58BB).M4E82))",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 33,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 37,
+              "ordinal": 27
+            }
+          ]
+        },
+        {
+          "line": 3351,
+          "expression": "l0494 = Int(Rnd * (mc04D0 - 1)) + 2",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 37,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 41,
+              "ordinal": 28
+            }
+          ]
+        },
+        {
+          "line": 3371,
+          "expression": "If  ((Int(Rnd * 100) + 1) > 30 And l04DE > 0) Or l0494 > -1 Then",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 31,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 35,
+              "ordinal": 29
+            }
+          ]
+        }
+      ],
+      "rnd_count": 29,
+      "expected_trace": null,
+      "status": "static_trace_spec_runtime_pending",
+      "trace_requirements": [
+        "capture each Rnd output in listed order",
+        "capture VB conversion result or runtime error",
+        "capture final state and branch decisions",
+        "repeat with music enabled and disabled when category is music or combat"
+      ]
+    },
+    {
+      "category": "combat",
+      "file": "Module6.bas",
+      "procedure": "fn1173",
+      "source_start": 424,
+      "source_end": 1325,
+      "events": [
+        {
+          "line": 546,
+          "expression": "l0124 = Int(Rnd * 100)",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 13,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 17,
+              "ordinal": 1
+            }
+          ]
+        },
+        {
+          "line": 587,
+          "expression": "If  CInt(Left(frmCharStat1!lblCall.Tag, 1)) = mc0148 Then",
+          "tokens": [
+            {
+              "kind": "numeric_conversion",
+              "token": "CInt",
+              "column": 29,
+              "ordinal": null
+            }
+          ]
+        },
+        {
+          "line": 600,
+          "expression": "l011E = CInt(gv152A(pv00FC).M4E82 + Log((10 + fn1417(pv00FA, pv00FC)) / 5))",
+          "tokens": [
+            {
+              "kind": "numeric_conversion",
+              "token": "CInt",
+              "column": 25,
+              "ordinal": null
+            }
+          ]
+        },
+        {
+          "line": 659,
+          "expression": "l0160 = Int((gv14C2(pv00FA).M5584(gv14C2(pv00FA).M58BB).M4E82 / 2) + .5#)",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 37,
+              "ordinal": null
+            }
+          ]
+        },
+        {
+          "line": 666,
+          "expression": "l015E = l015E + Int((l0160 / 10) * gv152A(pv00FC).M5B41)",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 41,
+              "ordinal": null
+            }
+          ]
+        },
+        {
+          "line": 667,
+          "expression": "l015A = Int(Rnd * (l015E - ((l0160 - 1) / l0160 ^ 2)) / 2) + 1",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 33,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 37,
+              "ordinal": 2
+            }
+          ]
+        },
+        {
+          "line": 668,
+          "expression": "l015C = Int(l015E - l015A)",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 33,
+              "ordinal": null
+            }
+          ]
+        },
+        {
+          "line": 752,
+          "expression": "gv14C2(l010A).M56B9(mc017A) = Int(fn1417(pv00FA, pv00FC) / 2) + 1",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 51,
+              "ordinal": null
+            }
+          ]
+        },
+        {
+          "line": 781,
+          "expression": "If  Int(Rnd * 100) > l018C Then",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 25,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 29,
+              "ordinal": 3
+            }
+          ]
+        }
+      ],
+      "rnd_count": 3,
+      "expected_trace": null,
+      "status": "static_trace_spec_runtime_pending",
+      "trace_requirements": [
+        "capture each Rnd output in listed order",
+        "capture VB conversion result or runtime error",
+        "capture final state and branch decisions",
+        "repeat with music enabled and disabled when category is music or combat"
+      ]
+    },
+    {
+      "category": "creation",
+      "file": "FRMCTYG.bas",
+      "procedure": "cmdMake_Click",
+      "source_start": 175,
+      "source_end": 574,
+      "events": [
+        {
+          "line": 286,
+          "expression": "l00AE = Int(Log(gv14C2(gv1A86).M5584(l0094).M4E82 + 1))",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 17,
+              "ordinal": null
+            }
+          ]
+        },
+        {
+          "line": 303,
+          "expression": "l00B0 = Int((gv14C2(gv1A86).M5584(gv14C2(gv1A86).M58BB).M4E82 / 2) + .5#)",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 13,
+              "ordinal": null
+            }
+          ]
+        },
+        {
+          "line": 361,
+          "expression": "l009A = Int(Rnd * 3) + 1",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 17,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 21,
+              "ordinal": 1
+            }
+          ]
+        },
+        {
+          "line": 364,
+          "expression": "gv14C2(gv1A86).M4EB4 = gv14C2(gv1A86).M4EB4 + Int(Rnd * gv145A(l0094).M5591 / 5) + 1",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 63,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 67,
+              "ordinal": 2
+            }
+          ]
+        },
+        {
+          "line": 366,
+          "expression": "gv14C2(gv1A86).M4EB4 = gv14C2(gv1A86).M4EB4 + Int(Rnd * gv145A(l0094).M5591 / 5) + 1",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 63,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 67,
+              "ordinal": 3
+            }
+          ]
+        },
+        {
+          "line": 370,
+          "expression": "gv14C2(gv1A86).M4EB4 = gv14C2(gv1A86).M4EB4 + Int(Rnd * (gv14C2(gv1A86).M55B5(mc00D8) - 16)) + 1",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 59,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 63,
+              "ordinal": 4
+            }
+          ]
+        },
+        {
+          "line": 379,
+          "expression": "l009E = gv14C2(gv1A86).M5584(l0094).M4E82 Mod Int(gv145A(l0094).M5626)",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 59,
+              "ordinal": null
+            }
+          ]
+        },
+        {
+          "line": 456,
+          "expression": "l010E = Rnd * 100",
+          "tokens": [
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 13,
+              "ordinal": 5
+            }
+          ]
+        },
+        {
+          "line": 467,
+          "expression": "l0110 = CInt((gv14C2(gv1A86).M5584(l0094).M4E82 / 25))",
+          "tokens": [
+            {
+              "kind": "numeric_conversion",
+              "token": "CInt",
+              "column": 13,
+              "ordinal": null
+            }
+          ]
+        },
+        {
+          "line": 473,
+          "expression": "l010E = Rnd * 100",
+          "tokens": [
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 13,
+              "ordinal": 6
+            }
+          ]
+        },
+        {
+          "line": 478,
+          "expression": "l010E = Rnd * 100",
+          "tokens": [
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 13,
+              "ordinal": 7
+            }
+          ]
+        },
+        {
+          "line": 487,
+          "expression": "l0116 = Int(Rnd * gv1BF2)",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 25,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 29,
+              "ordinal": 8
+            }
+          ]
+        },
+        {
+          "line": 488,
+          "expression": "If  Int(Rnd * 100) < 40 Then",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 21,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 25,
+              "ordinal": 9
+            }
+          ]
+        },
+        {
+          "line": 511,
+          "expression": "l0118 = CInt(Rnd * (l0114 - l0112))",
+          "tokens": [
+            {
+              "kind": "numeric_conversion",
+              "token": "CInt",
+              "column": 25,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 30,
+              "ordinal": 10
+            }
+          ]
+        },
+        {
+          "line": 513,
+          "expression": "If  gv14F6(l0118).M56A0 < 10 And ((Rnd * 100) > 25) Then",
+          "tokens": [
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 52,
+              "ordinal": 11
+            }
+          ]
+        },
+        {
+          "line": 520,
+          "expression": "l0110 = Int(l0110 / 1.5#) + 1",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 21,
+              "ordinal": null
+            }
+          ]
+        },
+        {
+          "line": 525,
+          "expression": "l0126 = Int(Rnd * gv1BEE)",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 33,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 37,
+              "ordinal": 12
+            }
+          ]
+        },
+        {
+          "line": 546,
+          "expression": "l0128 = Int(Rnd * (l0124 - l0122) + 1)",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 25,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 29,
+              "ordinal": 13
+            }
+          ]
+        },
+        {
+          "line": 554,
+          "expression": "ElseIf gv1426(l0128).M56A0 < 5 And (Rnd * 100) > 25 Then",
+          "tokens": [
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 57,
+              "ordinal": 14
+            }
+          ]
+        }
+      ],
+      "rnd_count": 14,
+      "expected_trace": null,
+      "status": "static_trace_spec_runtime_pending",
+      "trace_requirements": [
+        "capture each Rnd output in listed order",
+        "capture VB conversion result or runtime error",
+        "capture final state and branch decisions",
+        "repeat with music enabled and disabled when category is music or combat"
+      ]
+    },
+    {
+      "category": "music",
+      "file": "Module9.bas",
+      "procedure": "sub1A50",
+      "source_start": 74,
+      "source_end": 92,
+      "events": [
+        {
+          "line": 82,
+          "expression": "If  Int(Rnd * 100) <= 25 Then",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 13,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 17,
+              "ordinal": 1
+            }
+          ]
+        },
+        {
+          "line": 88,
+          "expression": "sub063F Int(Rnd * (gc2094 - 1)) + 1",
+          "tokens": [
+            {
+              "kind": "int",
+              "token": "Int",
+              "column": 25,
+              "ordinal": null
+            },
+            {
+              "kind": "rnd",
+              "token": "Rnd",
+              "column": 29,
+              "ordinal": 2
+            }
+          ]
+        }
+      ],
+      "rnd_count": 2,
+      "expected_trace": null,
+      "status": "static_trace_spec_runtime_pending",
+      "trace_requirements": [
+        "capture each Rnd output in listed order",
+        "capture VB conversion result or runtime error",
+        "capture final state and branch decisions",
+        "repeat with music enabled and disabled when category is music or combat"
+      ]
+    },
+    {
+      "category": "music",
+      "file": "FRMMAIN.bas",
+      "procedure": "timMusic_Timer",
+      "source_start": 288,
+      "source_end": 300,
+      "events": [],
+      "rnd_count": 0,
+      "expected_trace": null,
+      "status": "static_trace_spec_runtime_pending",
+      "trace_requirements": [
+        "capture each Rnd output in listed order",
+        "capture VB conversion result or runtime error",
+        "capture final state and branch decisions",
+        "repeat with music enabled and disabled when category is music or combat"
+      ]
+    }
+  ]
+}

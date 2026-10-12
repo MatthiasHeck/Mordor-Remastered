@@ -1,0 +1,28 @@
+{
+  "review_date": "2026-10-10",
+  "original_runtime_executed": false,
+  "audio_files": 87,
+  "audio_types": {
+    ".WAV": 71,
+    ".MID": 16
+  },
+  "audio_index_assignments": 88,
+  "missing_indexed_audio": [
+    "FIGHT.WAV"
+  ],
+  "audio_call_sites": 119,
+  "form_timer_candidates": 4,
+  "reko_files": 151,
+  "reko_status_counts": {
+    "unmapped": 16,
+    "dump_bytes_match_excluding_fixups": 135
+  },
+  "reko_matching_dump_bytes": 852334,
+  "reko_unbacked_dump_bytes": 28,
+  "reko_unexplained_mismatch_bytes": 0,
+  "source_literal_occurrences": 685,
+  "source_literal_matches": 685,
+  "random_timer_combat_references": 272,
+  "runtime_libraries_staged": 9,
+  "original_files_unchanged": true
+}

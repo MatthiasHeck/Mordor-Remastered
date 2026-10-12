@@ -1,0 +1,15 @@
+{
+  "revision": "1.4",
+  "status": "EXPORT_AND_DOCUMENT_CHECKS_PASSED",
+  "checks": {
+    "fingerprinted_inputs_match": 83,
+    "exact_bmp_bytes_png_pixels_and_monster_crops": true,
+    "complete_code_copies_indexes_and_exact_excerpts": true,
+    "all_item_base_values_match_preceding_export": true,
+    "dungeon_counts_combined_flags_and_recorded_discrepancy": true,
+    "preceding_whole_tree_preservation_passed": true,
+    "documents_links_tables_controls_and_html": true
+  },
+  "local_document_links_checked": 236,
+  "runtime_game_tests_executed": false
+}

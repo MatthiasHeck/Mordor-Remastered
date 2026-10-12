@@ -1,0 +1,311 @@
+{
+  "status": "STATIC_PRESENTATION_AUDIO_TRACE_BUILT_RUNTIME_PENDING",
+  "data": {
+    "audio_file_count": 87,
+    "wave_file_count": 71,
+    "midi_file_count": 16,
+    "audio_index_assignment_count": 88,
+    "audio_call_site_count": 119,
+    "missing_indexed_assets": [
+      "FIGHT.WAV"
+    ],
+    "wave_archive_comparison_count": 71,
+    "source_status": "exact copied audio assets, call-site index map and static multimedia paths",
+    "interpretation": "Asset bytes and caller/index relationships are preserved; device timing, MIDI behavior, missing-cue handling and visual equivalence require original-runtime observation."
+  },
+  "source_procedures": [
+    {
+      "file": "Module9.bas",
+      "procedure": "sub170B",
+      "role": "music_catalogue",
+      "start_line": 396,
+      "end_line": 417,
+      "signature": "Sub sub170B ()",
+      "summary": "selects the shareware or retail MIDI filename table",
+      "evidence": "original-export/code/source/Module9.bas:396"
+    },
+    {
+      "file": "Module9.bas",
+      "procedure": "sub063F",
+      "role": "music_open_play",
+      "start_line": 428,
+      "end_line": 464,
+      "signature": "Sub sub063F (p01B2 As Integer ' 41)",
+      "summary": "resolves a MIDI index, checks file presence, opens and plays the device",
+      "evidence": "original-export/code/source/Module9.bas:428"
+    },
+    {
+      "file": "Module9.bas",
+      "procedure": "sub1A50",
+      "role": "music_timer",
+      "start_line": 74,
+      "end_line": 92,
+      "signature": "Sub sub1A50 ()",
+      "summary": "advances music selection when playback completes or changes state",
+      "evidence": "original-export/code/source/Module9.bas:74"
+    },
+    {
+      "file": "Module9.bas",
+      "procedure": "sub09DE",
+      "role": "wave_play",
+      "start_line": 131,
+      "end_line": 164,
+      "signature": "Sub sub09DE (p0128 ' 40)",
+      "summary": "opens and plays a WaveMix sound effect when enabled",
+      "evidence": "original-export/code/source/Module9.bas:131"
+    },
+    {
+      "file": "Module9.bas",
+      "procedure": "sub086D",
+      "role": "wave_play_alt",
+      "start_line": 195,
+      "end_line": 224,
+      "signature": "Sub sub086D (p0150 ' 40)",
+      "summary": "plays a sound effect through the alternate helper and RNG-selected index callers",
+      "evidence": "original-export/code/source/Module9.bas:195"
+    },
+    {
+      "file": "FRMMAIN.bas",
+      "procedure": "mciMusic_Done",
+      "role": "music_completion",
+      "start_line": 118,
+      "end_line": 120,
+      "signature": "Sub mciMusic_Done (NotifyCode As Integer)",
+      "summary": "marks the active MIDI track complete for timer-driven selection",
+      "evidence": "original-export/code/source/FRMMAIN.bas:118"
+    },
+    {
+      "file": "FRMMAIN.bas",
+      "procedure": "timMusic_Timer",
+      "role": "music_timer_callback",
+      "start_line": 288,
+      "end_line": 300,
+      "signature": "Sub timMusic_Timer ()",
+      "summary": "dispatches the music callback from the main form timer",
+      "evidence": "original-export/code/source/FRMMAIN.bas:288"
+    },
+    {
+      "file": "FRMOPTIO.bas",
+      "procedure": "chkCheck_Click",
+      "role": "audio_options",
+      "start_line": 58,
+      "end_line": 113,
+      "signature": "Sub chkCheck_Click (Index%, Value As Integer)",
+      "summary": "enables/disables MIDI and wave output and refreshes selections",
+      "evidence": "original-export/code/source/FRMOPTIO.bas:58"
+    },
+    {
+      "file": "FRMOPTIO.bas",
+      "procedure": "hsbVolume_Scroll",
+      "role": "wave_volume",
+      "start_line": 389,
+      "end_line": 410,
+      "signature": "Sub hsbVolume_Scroll (Index%)",
+      "summary": "updates WaveMix volume and plays a confirmation cue",
+      "evidence": "original-export/code/source/FRMOPTIO.bas:389"
+    },
+    {
+      "file": "Module13.bas",
+      "procedure": "fn1E6F",
+      "role": "wavemix_error",
+      "start_line": 16,
+      "end_line": 37,
+      "signature": "Function fn1E6F (p006A As Integer ' 41) As Variant ' 6",
+      "summary": "maps WaveMix device errors to legacy messages",
+      "evidence": "original-export/code/source/Module13.bas:16"
+    }
+  ],
+  "source_events": [
+    {
+      "file": "Module1.bas",
+      "line": 304,
+      "procedure": "audio_index_initialization",
+      "event": "audio_catalogue_entry",
+      "expression": "index zero is assigned FIGHT.WAV although the supplied archive lacks it",
+      "source_text": "gv20CA(m0624) = \"FIGHT.WAV\""
+    },
+    {
+      "file": "Module9.bas",
+      "line": 396,
+      "procedure": "sub170B",
+      "event": "midi_catalogue_shareware",
+      "expression": "shareware MIDI names are selected when the edition flag is set",
+      "source_text": "Sub sub170B ()"
+    },
+    {
+      "file": "Module9.bas",
+      "line": 408,
+      "procedure": "sub170B",
+      "event": "midi_catalogue_retail",
+      "expression": "retail MIDI names are selected otherwise",
+      "source_text": "gv2164(gv2096) = \"CITY.MID\""
+    },
+    {
+      "file": "Module9.bas",
+      "line": 131,
+      "procedure": "sub09DE",
+      "event": "wave_guard",
+      "expression": "wave playback returns when sound effects are disabled",
+      "source_text": "Sub sub09DE (p0128 ' 40)"
+    },
+    {
+      "file": "Module9.bas",
+      "line": 142,
+      "procedure": "sub09DE",
+      "event": "wave_open",
+      "expression": "WaveMix opens the indexed wave asset before playback",
+      "source_text": "If  gv20FE(p0128).M7208 = False Then"
+    },
+    {
+      "file": "Module9.bas",
+      "line": 195,
+      "procedure": "sub086D",
+      "event": "wave_alt_guard",
+      "expression": "alternate wave helper preserves the same disabled guard",
+      "source_text": "Sub sub086D (p0150 ' 40)"
+    },
+    {
+      "file": "Module9.bas",
+      "line": 428,
+      "procedure": "sub063F",
+      "event": "midi_guard",
+      "expression": "MIDI playback returns for disabled/error states and duplicate active index",
+      "source_text": "Sub sub063F (p01B2 As Integer ' 41)"
+    },
+    {
+      "file": "Module9.bas",
+      "line": 450,
+      "procedure": "sub063F",
+      "event": "midi_open_play",
+      "expression": "MCI opens and plays the selected MIDI path",
+      "source_text": "frmMain!mciMusic.FileName = gv19E8 + gc1C78 + gv2164(p01B2)"
+    },
+    {
+      "file": "Module9.bas",
+      "line": 74,
+      "procedure": "sub1A50",
+      "event": "music_completion_dispatch",
+      "expression": "timer callback selects the next track after completion",
+      "source_text": "Sub sub1A50 ()"
+    },
+    {
+      "file": "FRMMAIN.bas",
+      "line": 118,
+      "procedure": "mciMusic_Done",
+      "event": "mci_completion",
+      "expression": "completion notification marks the track done",
+      "source_text": "Sub mciMusic_Done (NotifyCode As Integer)"
+    },
+    {
+      "file": "FRMMAIN.bas",
+      "line": 288,
+      "procedure": "timMusic_Timer",
+      "event": "music_timer_entry",
+      "expression": "main-form timer invokes music progression",
+      "source_text": "Sub timMusic_Timer ()"
+    },
+    {
+      "file": "FRMOPTIO.bas",
+      "line": 58,
+      "procedure": "chkCheck_Click",
+      "event": "option_toggle",
+      "expression": "MIDI/wave option changes dispatch to initialization or stop paths",
+      "source_text": "Sub chkCheck_Click (Index%, Value As Integer)"
+    },
+    {
+      "file": "FRMOPTIO.bas",
+      "line": 406,
+      "procedure": "hsbVolume_Scroll",
+      "event": "volume_confirmation",
+      "expression": "volume changes use a confirmation cue",
+      "source_text": "sub09DE mc010E"
+    },
+    {
+      "file": "Module13.bas",
+      "line": 16,
+      "procedure": "fn1E6F",
+      "event": "wavemix_error_map",
+      "expression": "WaveMix error codes map to user-facing messages",
+      "source_text": "Function fn1E6F (p006A As Integer ' 41) As Variant ' 6"
+    }
+  ],
+  "source_event_count": 14,
+  "runtime_cases": [
+    {
+      "id": "AUDIO-MATRIX",
+      "setup": "every indexed wave/MIDI entry with audio on/off",
+      "trace_focus": "requested index, filename, present/missing result and game state",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "FIGHT-MISSING",
+      "setup": "request index zero in supplied installation",
+      "trace_focus": "missing cue handling, logging, timing and gameplay continuation",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "MIDI-EDITION",
+      "setup": "shareware versus retail edition flags",
+      "trace_focus": "catalogue names, selected file and playback completion",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "MIDI-COMPLETION",
+      "setup": "short/long tracks and timer boundaries",
+      "trace_focus": "MCI notification, timer interval and next-track selection",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "WAVE-OVERLAP",
+      "setup": "rapid simultaneous wave calls",
+      "trace_focus": "channel allocation, mixing order and dropped cues",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "AUDIO-TOGGLE",
+      "setup": "enable/disable MIDI and wave output while active",
+      "trace_focus": "stop/close state and subsequent call behavior",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "VOLUME",
+      "setup": "minimum, maximum and intermediate wave volume",
+      "trace_focus": "device value and confirmation cue",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "DEVICE-ERROR",
+      "setup": "missing device, unsupported format and allocation failure",
+      "trace_focus": "legacy message, flags and simulation state",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "RNG-AUDIO",
+      "setup": "audio on/off around music-related random draws",
+      "trace_focus": "RNG sequence and gameplay trace coupling",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "PRESENTATION",
+      "setup": "combat, dungeon, town and menu visual/audio triggers",
+      "trace_focus": "rendered state, cue index and event ordering",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    }
+  ],
+  "runtime_case_count": 10,
+  "runtime_requirements": [
+    "run the exact original executable with the supplied audio archive unchanged",
+    "record device/profile, MCI/WaveMix callbacks, channel timing and missing-file behavior",
+    "compare presentation state and RNG traces with audio enabled and disabled without assuming equivalence"
+  ]
+}

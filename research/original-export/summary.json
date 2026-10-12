@@ -1,0 +1,48 @@
+{
+  "review_date": "2026-10-10",
+  "source_root": "D:\\Programming Projects\\Mordor",
+  "unique_bmp_assets": 34,
+  "bmp_occurrences": 78,
+  "graphics_library_sheets": 10,
+  "monster_grid_crops": 90,
+  "monster_records_mapped": 401,
+  "item_base_prices": 366,
+  "code_files": 46,
+  "indexed_procedures": 691,
+  "selected_routines": 37,
+  "dungeon_cells": 13500,
+  "special_squares_excluding_rock_and_edges": 3965,
+  "door_edge_flags": 2328,
+  "active_teleporters": 86,
+  "active_chutes": 17,
+  "unknown_terrain_bits": 0,
+  "prior_item_monster_cell_exports_match": true,
+  "teleporter_chute_cross_checks": {
+    "teleporters": {
+      "active_slots": 86,
+      "flagged_cells": 88,
+      "slots_without_cell_flag": [],
+      "flagged_cells_without_slot": [
+        [
+          8,
+          5,
+          6
+        ],
+        [
+          8,
+          6,
+          6
+        ]
+      ],
+      "exact_match": false
+    },
+    "chutes": {
+      "active_slots": 17,
+      "flagged_cells": 17,
+      "slots_without_cell_flag": [],
+      "flagged_cells_without_slot": [],
+      "exact_match": true
+    }
+  },
+  "runtime_verified": false
+}

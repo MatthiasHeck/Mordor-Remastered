@@ -1,0 +1,472 @@
+{
+  "status": "partial_conversion_runtime_parity_pending",
+  "procedures": [
+    {
+      "file": "Module1.bas",
+      "name": "fn0380",
+      "status": "translated_candidate",
+      "target": "core/original_rules.gd:has_flag"
+    },
+    {
+      "file": "Module3.bas",
+      "name": "fn0AE8",
+      "status": "translated_candidate",
+      "target": "core/original_rules.gd:cell_number"
+    },
+    {
+      "file": "Module3.bas",
+      "name": "fn0B01",
+      "status": "translated_candidate",
+      "target": "core/original_rules.gd:cell_number"
+    },
+    {
+      "file": "Module4.bas",
+      "name": "fn0DEE",
+      "status": "translated_candidate",
+      "target": "core/original_rules.gd:damage"
+    },
+    {
+      "file": "Module6.bas",
+      "name": "fn115C",
+      "status": "translated_candidate",
+      "target": "core/original_rules.gd:guild_allows"
+    },
+    {
+      "file": "Module6.bas",
+      "name": "fn131D",
+      "status": "translated_candidate",
+      "target": "core/original_rules.gd:highest_guild_level"
+    },
+    {
+      "file": "Module6.bas",
+      "name": "fn1338",
+      "status": "translated_candidate",
+      "target": "core/original_rules.gd:capacity"
+    },
+    {
+      "file": "Module6.bas",
+      "name": "fn137E",
+      "status": "translated_candidate",
+      "target": "core/original_rules.gd:level_boundary"
+    },
+    {
+      "file": "CHARCREA.bas",
+      "name": "cmbRace_Click",
+      "status": "partial",
+      "target": "core/original_rules.gd:creation_state",
+      "remaining": "UI global state and event wiring"
+    },
+    {
+      "file": "CHARCREA.bas",
+      "name": "cmdAdd_Click",
+      "status": "translated_candidate",
+      "target": "core/original_rules.gd:adjust_creation_stat"
+    },
+    {
+      "file": "CHARCREA.bas",
+      "name": "cmdSubtract_Click",
+      "status": "translated_candidate",
+      "target": "core/original_rules.gd:adjust_creation_stat"
+    },
+    {
+      "file": "CHARCREA.bas",
+      "name": "sub1EBA",
+      "status": "partial",
+      "target": "core/original_rules.gd:eligible_guilds",
+      "remaining": "Original form rendering"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "name": "fn271B",
+      "status": "translated_candidate",
+      "target": "core/original_rules.gd:identify_price"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "name": "fn273B",
+      "status": "translated_candidate",
+      "target": "core/original_rules.gd:sell_price"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "name": "fn274F",
+      "status": "translated_candidate",
+      "target": "core/original_rules.gd:uncurse_price"
+    },
+    {
+      "file": "Module6.bas",
+      "name": "fn124B",
+      "status": "translated_candidate",
+      "target": "core/town_rules.gd:experience_required",
+      "limits": "Rejects intermediate Currency magnitudes beyond exact double integer precision"
+    },
+    {
+      "file": "Module6.bas",
+      "name": "fn1397",
+      "status": "translated_candidate",
+      "target": "core/town_rules.gd:next_experience"
+    },
+    {
+      "file": "Module6.bas",
+      "name": "fn125C",
+      "status": "translated_candidate",
+      "target": "core/town_rules.gd:training_price"
+    },
+    {
+      "file": "Module6.bas",
+      "name": "sub047C",
+      "status": "partial",
+      "target": "core/town_rules.gd:stat_ad",
+      "remaining": "Both arithmetic modes translated; original global UI reentry protocol replaced by synchronous copy-based changes"
+    },
+    {
+      "file": "CHARCREA.bas",
+      "name": "sub1F1F",
+      "status": "partial",
+      "target": "core/town_rules.gd:new_character",
+      "remaining": "Original window metadata pending; initial Nomad log entry now committed with the character"
+    },
+    {
+      "file": "FRMCITYB.bas",
+      "name": "txtAmount_KeyPress",
+      "status": "partial",
+      "target": "core/town_rules.gd:bank_transfer",
+      "remaining": "Gold branches translated, including negative withdrawal; new decimal parser and atomic overflow handling differ from CCur and On Error Resume Next"
+    },
+    {
+      "file": "Module1.bas",
+      "name": "fn030F",
+      "status": "translated_candidate",
+      "target": "core/guild_rules.gd:equipment_level"
+    },
+    {
+      "file": "Module6.bas",
+      "name": "fn126E",
+      "status": "translated_candidate",
+      "target": "core/guild_rules.gd:title"
+    },
+    {
+      "file": "Module6.bas",
+      "name": "fn114E",
+      "status": "translated_candidate",
+      "target": "core/guild_rules.gd:pay",
+      "limits": "ByRef Long output returned explicitly; failures are atomic"
+    },
+    {
+      "file": "Module6.bas",
+      "name": "fn13FF",
+      "status": "translated_candidate",
+      "target": "core/guild_rules.gd:casting_guild"
+    },
+    {
+      "file": "Module6.bas",
+      "name": "fn1417",
+      "status": "translated_candidate",
+      "target": "core/guild_rules.gd:casting_guild",
+      "limits": "Selected guild is returned with level instead of stored in gv1D08"
+    },
+    {
+      "file": "FRMCTYG.bas",
+      "name": "sub29D0",
+      "status": "translated_candidate",
+      "target": "core/guild_rules.gd:adjust_guild_ad"
+    },
+    {
+      "file": "Module11.bas",
+      "name": "sub0578",
+      "status": "translated_candidate",
+      "target": "core/guild_log.gd:append",
+      "limits": "Caller supplies VB date; transactional writer replaces original in-place I/O and dialogs"
+    },
+    {
+      "file": "Module6.bas",
+      "name": "fn110D",
+      "status": "translated_candidate",
+      "target": "core/guild_rules.gd:can_use_item"
+    },
+    {
+      "file": "Module6.bas",
+      "name": "fn1139",
+      "status": "partial",
+      "target": "core/guild_rules.gd:join_quote",
+      "remaining": "Town automatic unequipping and slot exclusions translated; dungeon room refresh and original presentation callbacks pending"
+    },
+    {
+      "file": "FRMCTYG.bas",
+      "name": "cmdJoin_Click",
+      "status": "partial",
+      "target": "core/guild_rules.gd:join",
+      "remaining": "Membership, payment, logging and automatic unequipping translated; original form/global presentation callbacks replaced by native UI"
+    },
+    {
+      "file": "FRMCTYG.bas",
+      "name": "cmdMake_Click",
+      "status": "partial",
+      "target": "core/guild_rules.gd:growth_preview",
+      "remaining": "Preflight, HP/AD/critical growth and spell-knowledge loops translated. Original RNG, quest generation/forfeiture, item identification, guildmaster awards, and training save action pending"
+    },
+    {
+      "file": "Module6.bas",
+      "name": "fn12EF",
+      "status": "translated_candidate",
+      "target": "core/equipment.gd:item_name"
+    },
+    {
+      "file": "Module6.bas",
+      "name": "sub11B9",
+      "status": "translated_candidate",
+      "target": "core/equipment.gd:refresh_item_effects",
+      "limits": "Presentation callbacks replaced by native UI refresh"
+    },
+    {
+      "file": "Module6.bas",
+      "name": "sub13F1",
+      "status": "translated_candidate",
+      "target": "core/equipment.gd:refresh_effects"
+    },
+    {
+      "file": "Module6.bas",
+      "name": "sub0894",
+      "status": "partial",
+      "target": "core/equipment.gd:refresh_effects",
+      "remaining": "Town effects translated; dungeon encounter/room refresh pending"
+    },
+    {
+      "file": "Module6.bas",
+      "name": "sub0F74",
+      "status": "partial",
+      "target": "core/equipment.gd:toggle",
+      "remaining": "Town mutations translated; failed equip is atomic instead of retaining the original early intrinsic-curse assignment, dungeon callbacks pending"
+    },
+    {
+      "file": "Module3.bas",
+      "name": "fn0B1B",
+      "status": "translated_candidate",
+      "target": "core/dungeon_rules.gd:edge",
+      "limits": "Returns the original wall/door/secret mask with edge metadata; invalid coordinates/facing fail closed"
+    },
+    {
+      "file": "Module3.bas",
+      "name": "fn0A34",
+      "status": "translated_candidate",
+      "target": "core/automap.gd:flags",
+      "limits": "Same ten-byte Random record indexing; invalid coordinates fail closed instead of aliasing neighboring records"
+    },
+    {
+      "file": "Module3.bas",
+      "name": "fn0ABD",
+      "status": "partial",
+      "target": "core/automap.gd:put",
+      "remaining": "Original lost-state write guards and record bytes translated; transactional I/O and invalid-coordinate errors replace original in-place writes"
+    },
+    {
+      "file": "FRMCTYM.bas",
+      "name": "imgPicture_Click",
+      "status": "partial",
+      "target": "core/dungeon_rules.gd:act",
+      "remaining": "Dungeon entry coordinate/facing branch translated; other town services and party/form callbacks pending"
+    },
+    {
+      "file": "Module6.bas",
+      "name": "fn14CB",
+      "status": "partial",
+      "target": "core/dungeon_rules.gd:act",
+      "remaining": "Solo forward/turn/Take stairs and crossed-door mapping translated. Keyboard configuration, party/combat, chute and other dispatch branches pending. Invalid/hazard destinations fail atomically"
+    },
+    {
+      "file": "Module3.bas",
+      "name": "sub0835",
+      "status": "partial",
+      "target": "core/dungeon_rules.gd:enter_square",
+      "remaining": "Visited recovery, compass flags, extinguish, area/first-depth updates, fixed teleporters and unmatched slots translated. Map discovery is conservative: random perception/secret discovery and lost recovery, random teleporters, pit/water/quicksand/rotator/chute, party, encounter/timer and death dispatch pending. Unsupported hazards and cyclic/invalid destinations reject the entire move"
+    },
+    {
+      "file": "Module6.bas",
+      "name": "fn11D4",
+      "status": "translated_candidate",
+      "target": "core/combat_rules.gd:ability",
+      "limits": "Selected guild metadata is returned instead of stored in gv141C; trap-disarm room context must be supplied explicitly"
+    },
+    {
+      "file": "Module6.bas",
+      "name": "fn13A8",
+      "status": "translated_candidate",
+      "target": "core/combat_rules.gd:defensive_bonus"
+    },
+    {
+      "file": "Module4.bas",
+      "name": "fn0DCD",
+      "status": "translated_candidate",
+      "target": "core/combat_rules.gd:active_group",
+      "limits": "Invalid requested indices fail closed through first-live-group selection"
+    },
+    {
+      "file": "Module4.bas",
+      "name": "sub1019",
+      "status": "partial",
+      "target": "core/combat_rules.gd:player_attack",
+      "remaining": "Physical weapon actions now feed saved campaign rounds; player spells are dispatched through battle_rules. Damaged l011C defense argument is modeled as zero and needs executable comparison. Party, special encounter transitions and leaderboards pending."
+    },
+    {
+      "file": "Module4.bas",
+      "name": "sub0E85",
+      "status": "partial",
+      "target": "core/battle_rules.gd:monster_attack",
+      "remaining": "Solo physical/spell/breath/acid/electricity/status/age/drain/item/theft paths integrated with campaign transactions. Companions, process globals, special encounter callbacks and executable verification pending; thief replacement uses the attacking group instead of ambiguous selected-group dispatch."
+    },
+    {
+      "file": "Module4.bas",
+      "name": "sub0D08",
+      "status": "partial",
+      "target": "core/combat_rules.gd:replace_member",
+      "remaining": "Next-member attack/defense and two-draw HP reset translated; empty-group special encounter and original presentation callbacks pending"
+    },
+    {
+      "file": "Module4.bas",
+      "name": "sub0CDF",
+      "status": "partial",
+      "target": "core/combat_rules.gd:award_experience",
+      "remaining": "Solo damage XP now persists with encounters and RNG; party multipliers and original UI/state integration pending."
+    },
+    {
+      "file": "Module6.bas",
+      "name": "sub0F11",
+      "status": "partial",
+      "target": "core/combat_rules.gd:award_experience",
+      "remaining": "Solo Currency XP and pin caps persist in campaign combat; party multipliers and training notifications pending."
+    },
+    {
+      "file": "Module6.bas",
+      "name": "sub0CF3",
+      "status": "partial",
+      "target": "core/combat_rules.gd:player_attack",
+      "remaining": "Solo monster quests persist with physical/spell kills; party dispatch and original callbacks pending."
+    },
+    {
+      "file": "Module4.bas",
+      "name": "fn0E38",
+      "status": "partial",
+      "target": "core/world_encounters.gd:room",
+      "remaining": "Original 28-byte room records decoded; bounds/corruption checks and transactional working-file ownership replace global file handles."
+    },
+    {
+      "file": "Module4.bas",
+      "name": "fn0F88",
+      "status": "partial",
+      "target": "core/world_encounters.gd:put",
+      "remaining": "Group/meta payloads serialized losslessly; atomic transactions replace in-place original error handling and file-switch globals."
+    },
+    {
+      "file": "Module4.bas",
+      "name": "fn0D4D",
+      "status": "partial",
+      "target": "core/encounter_generator.gd:generate",
+      "remaining": "Primary weighting, starting-area rejection, group expansion, chest/trap/lock metadata, HP/gold, mood, identification and offers translated. Empty secondary pools and ambiguous retry-label control flow fail closed; rare primary fallback/widening, stud terrain and original Timer/stream coupling require further work."
+    },
+    {
+      "file": "Module4.bas",
+      "name": "fn0FF5",
+      "status": "translated_candidate",
+      "target": "core/battle_rules.gd:select_monster_spell",
+      "limits": "Source category mask, level pool, skip rolls and damaging-spell checks; presentation callback omitted."
+    },
+    {
+      "file": "Module4.bas",
+      "name": "fn0E5F",
+      "status": "partial",
+      "target": "core/battle_rules.gd:spell_hits",
+      "remaining": "Player/monster damage, Single/Integer conversions, resistance, immunity, type restrictions and killing-only checks translated. Companion/charged-item paths and executable comparison pending."
+    },
+    {
+      "file": "Module6.bas",
+      "name": "fn142F",
+      "status": "translated_candidate",
+      "target": "core/battle_rules.gd:spell_cost",
+      "limits": "Guild selection, rounded scaled level, clamped half-level and minimum SP cost retained; no item-charge pathway."
+    },
+    {
+      "file": "Module4.bas",
+      "name": "sub0D1D",
+      "status": "translated_candidate",
+      "target": "core/battle_rules.gd:paralysis",
+      "limits": "Stat AD delta apply/restore translated; synchronous caller replaces UI reentry."
+    },
+    {
+      "file": "Module7.bas",
+      "name": "sub155A",
+      "status": "partial",
+      "target": "core/battle_rules.gd:round_action",
+      "remaining": "Solo player-before-monster rounds and peaceful hostility roll translated. Party/companion turns, rummage cooldown and original globals pending."
+    },
+    {
+      "file": "Module7.bas",
+      "name": "sub0A64",
+      "status": "partial",
+      "target": "core/battle_rules.gd:round_action",
+      "remaining": "Solo target draw and each live group's normal/area-exit attack scheduling translated. Party target search, flee mode and original globals pending."
+    },
+    {
+      "file": "Module6.bas",
+      "name": "fn1173",
+      "status": "partial",
+      "target": "core/battle_rules.gd:player_spell",
+      "remaining": "Solo damage, healing/cures, levitation/invisibility/defense/resistance/extinguish and floor/facing spells. Charm, teleportation, raise, summons, charged items and party targets pending."
+    },
+    {
+      "file": "Module6.bas",
+      "name": "sub091E",
+      "status": "partial",
+      "target": "core/campaign.gd:death_log",
+      "remaining": "Solo normal/stone death markers, HP, Currency counter and binary guild death log save together. Recovery/morgue, library and party handling pending."
+    },
+    {
+      "file": "Module4.bas",
+      "name": "fn0DBF",
+      "status": "partial",
+      "target": "core/campaign.gd:settle_victory",
+      "remaining": "Solo loose gold Long conversions and recovered-theft accumulator persist with cleared-room marker/counter. Chests, items, special encounters and party shares pending."
+    },
+    {
+      "file": "Module6.bas",
+      "name": "fn12AF",
+      "status": "translated_candidate",
+      "target": "core/encounter_generator.gd:identify",
+      "limits": "Identification skill arithmetic inlined in room generator; highest guild and original INT/WIS modifier sums retained."
+    },
+    {
+      "file": "Module4.bas",
+      "name": "fn0DFC",
+      "status": "translated_candidate",
+      "target": "core/encounter_generator.gd:identify",
+      "limits": "Monster threat arithmetic inlined in identification."
+    },
+    {
+      "file": "Module6.bas",
+      "name": "sub0EDA",
+      "status": "partial",
+      "target": "core/battle_rules.gd:remove_item",
+      "remaining": "Original slot clearing and forced unequip arithmetic used for combat destruction/theft; inventory is not compacted. Sentinel-slot behavior, original UI/global callbacks and dungeon refresh verification pending."
+    },
+    {
+      "file": "FRMDUNM.bas",
+      "name": "timCombat_Timer",
+      "status": "partial",
+      "target": "ui/game.gd:_process",
+      "remaining": "One-second timer drives transactional rounds while the dungeon is visible. New pause/control UI and no catch-up behavior; original timer-order and global guards not runtime compared."
+    },
+    {
+      "file": "FRMDUNM.bas",
+      "name": "timAilment_Timer",
+      "status": "partial",
+      "target": "core/battle_rules.gd:ailments",
+      "remaining": "Four-second poison/disease/paralysis candidates; source disease roll retains poison severity. Ambient music, aging, companion regeneration and perception callbacks pending."
+    },
+    {
+      "file": "Module6.bas",
+      "name": "fn10E5",
+      "status": "partial",
+      "target": "core/battle_rules.gd:spell_reason",
+      "remaining": "Separate guild knowledge/cap and rounded scaled-level loops, natural+modifier stat checks, SP and terrain eligibility feed campaign casting. Combat classification handled by dispatcher; charged items, original globals and presentation callbacks pending."
+    }
+  ]
+}

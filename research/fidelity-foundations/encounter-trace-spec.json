@@ -1,0 +1,302 @@
+{
+  "status": "STATIC_ENCOUNTER_TRACE_BUILT_RUNTIME_PENDING",
+  "data": {
+    "monster_record_count": 401,
+    "monster_duplicate_id_count": 1,
+    "floor_count": 15,
+    "area_count": 3015,
+    "cell_count": 13500,
+    "active_teleporter_slot_count": 86,
+    "chute_count": 17,
+    "special_square_count": 3965,
+    "source_status": "shareware_candidate_data_and_static_decompiler_paths",
+    "interpretation": "Monster and map records are preserved candidates. Record identity, duplicate IDs, spawn flags and reward fields are not executable-verified semantics."
+  },
+  "source_procedures": [
+    {
+      "file": "Module4.bas",
+      "procedure": "sub0A91",
+      "role": "encounter_lifecycle",
+      "start_line": 662,
+      "end_line": 740,
+      "signature": "Sub sub0A91 (p01AA ' 40)",
+      "summary": "reads current monsters, applies generation timing, displays groups and handles encounter refresh",
+      "evidence": "original-export/code/source/Module4.bas:662"
+    },
+    {
+      "file": "Module4.bas",
+      "procedure": "fn0D4D",
+      "role": "monster_generation",
+      "start_line": 1356,
+      "end_line": 1984,
+      "signature": "Function fn0D4D (p0256 ' 40) As Integer ' 1",
+      "summary": "selects a special/final or normal encounter and builds generated groups",
+      "evidence": "original-export/code/source/Module4.bas:1356"
+    },
+    {
+      "file": "Module4.bas",
+      "procedure": "fn0DCD",
+      "role": "active_group_selection",
+      "start_line": 2185,
+      "end_line": 2204,
+      "signature": "Function fn0DCD (p03AC As Integer ' 41) As Integer ' 1",
+      "summary": "finds the current monster group",
+      "evidence": "original-export/code/source/Module4.bas:2185"
+    },
+    {
+      "file": "Module4.bas",
+      "procedure": "fn0E38",
+      "role": "monster_record_read",
+      "start_line": 2362,
+      "end_line": 2384,
+      "signature": "Function fn0E38 (p03FA As Integer ' 41) As Integer ' 1",
+      "summary": "loads monster records for the current encounter",
+      "evidence": "original-export/code/source/Module4.bas:2362"
+    },
+    {
+      "file": "Module4.bas",
+      "procedure": "sub0E85",
+      "role": "monster_attack_and_loot_effects",
+      "start_line": 2588,
+      "end_line": 3413,
+      "signature": "Sub sub0E85 (ByVal pv0442 As Integer ' 81, p0444 As Integer ' 41)",
+      "summary": "resolves monster attacks, statuses, item destruction and consequences",
+      "evidence": "original-export/code/source/Module4.bas:2588"
+    },
+    {
+      "file": "Module4.bas",
+      "procedure": "sub0F01",
+      "role": "trap_resolution",
+      "start_line": 3430,
+      "end_line": 3877,
+      "signature": "Sub sub0F01 (ByVal pv04F2 As Integer ' 81)",
+      "summary": "disarms or applies trap effects and updates party state",
+      "evidence": "original-export/code/source/Module4.bas:3430"
+    },
+    {
+      "file": "Module4.bas",
+      "procedure": "sub0C8A",
+      "role": "combat_resolution",
+      "start_line": 801,
+      "end_line": 1354,
+      "signature": "Sub sub0C8A (ByVal pv01E4 As Integer ' 81)",
+      "summary": "executes combat round outcomes and death/reward transitions",
+      "evidence": "original-export/code/source/Module4.bas:801"
+    },
+    {
+      "file": "Module4.bas",
+      "procedure": "fn0E4A",
+      "role": "special_hit_power",
+      "start_line": 2386,
+      "end_line": 2457,
+      "signature": "Function fn0E4A (p0406 As Integer ' 41, p0408 As Integer ' 41, p040A As Integer ' 41) As Integer ' 1",
+      "summary": "computes special-hit magnitude with level and resistance inputs",
+      "evidence": "original-export/code/source/Module4.bas:2386"
+    },
+    {
+      "file": "Module4.bas",
+      "procedure": "sub0F01",
+      "role": "chest_loot",
+      "start_line": 3430,
+      "end_line": 3877,
+      "signature": "Sub sub0F01 (ByVal pv04F2 As Integer ' 81)",
+      "summary": "chest opening and item/gold selection path requires generated source anchor",
+      "evidence": "original-export/code/source/Module4.bas:3430"
+    }
+  ],
+  "source_events": [
+    {
+      "file": "Module4.bas",
+      "line": 662,
+      "procedure": "sub0A91",
+      "event": "encounter_refresh_entry",
+      "expression": "sub0A91 reads current-square monsters and controls generation timing",
+      "source_text": "Sub sub0A91 (p01AA ' 40)"
+    },
+    {
+      "file": "Module4.bas",
+      "line": 683,
+      "procedure": "sub0A91",
+      "event": "monster_read_failure",
+      "expression": "Error reading monsters",
+      "source_text": "sub085B \"Error reading monsters!\""
+    },
+    {
+      "file": "Module4.bas",
+      "line": 707,
+      "procedure": "sub0A91",
+      "event": "monster_generation_failure",
+      "expression": "Error generating monsters",
+      "source_text": "sub085B \"Error generating monsters!\""
+    },
+    {
+      "file": "Module4.bas",
+      "line": 1356,
+      "procedure": "fn0D4D",
+      "event": "generation_entry",
+      "expression": "encounter selection starts from current square data and depth",
+      "source_text": "Function fn0D4D (p0256 ' 40) As Integer ' 1"
+    },
+    {
+      "file": "Module4.bas",
+      "line": 1392,
+      "procedure": "fn0D4D",
+      "event": "special_encounter_roll",
+      "expression": "special/final encounter branch uses Rnd",
+      "source_text": "Static m02B4 As Integer ' 61"
+    },
+    {
+      "file": "Module4.bas",
+      "line": 1450,
+      "procedure": "fn0D4D",
+      "event": "monster_candidate_selection",
+      "expression": "candidate monster records are filtered by square flags",
+      "source_text": "If  (Rnd * 100) <= gc1DC8 Then"
+    },
+    {
+      "file": "Module4.bas",
+      "line": 2185,
+      "procedure": "fn0DCD",
+      "event": "current_group_scan",
+      "expression": "active group is found among generated records",
+      "source_text": "Function fn0DCD (p03AC As Integer ' 41) As Integer ' 1"
+    },
+    {
+      "file": "Module4.bas",
+      "line": 2362,
+      "procedure": "fn0E38",
+      "event": "record_load",
+      "expression": "monster record fields are loaded into encounter state",
+      "source_text": "Function fn0E38 (p03FA As Integer ' 41) As Integer ' 1"
+    },
+    {
+      "file": "Module4.bas",
+      "line": 2588,
+      "procedure": "sub0E85",
+      "event": "monster_attack_entry",
+      "expression": "monster attacks resolve against party members",
+      "source_text": "Sub sub0E85 (ByVal pv0442 As Integer ' 81, p0444 As Integer ' 41)"
+    },
+    {
+      "file": "Module4.bas",
+      "line": 3430,
+      "procedure": "sub0F01",
+      "event": "trap_entry",
+      "expression": "trap type is selected and trap state is consumed",
+      "source_text": "Sub sub0F01 (ByVal pv04F2 As Integer ' 81)"
+    },
+    {
+      "file": "Module4.bas",
+      "line": 3498,
+      "procedure": "sub0F01",
+      "event": "trap_roll",
+      "expression": "trap disarm and effect roll begins",
+      "source_text": "l0510 = \"Not Trapped\""
+    },
+    {
+      "file": "Module4.bas",
+      "line": 3657,
+      "procedure": "sub0F01",
+      "event": "chest_roll",
+      "expression": "treasure/chest success roll begins",
+      "source_text": "l0502 = Int(Rnd * 100) + 1"
+    },
+    {
+      "file": "Module4.bas",
+      "line": 3672,
+      "procedure": "sub0F01",
+      "event": "chest_item_selection",
+      "expression": "item class and item record are selected",
+      "source_text": "frmDungeonMain!lblCharacterHit.Caption = \"Going through Treasure...\""
+    },
+    {
+      "file": "Module4.bas",
+      "line": 3804,
+      "procedure": "sub0F01",
+      "event": "item_mutation",
+      "expression": "curse/charge and recipient item state are mutated",
+      "source_text": "l04FE = Int(Rnd * (mc0596 + 1))"
+    },
+    {
+      "file": "Module4.bas",
+      "line": 801,
+      "procedure": "sub0C8A",
+      "event": "combat_round_entry",
+      "expression": "combat round resolves generated encounter state",
+      "source_text": "Sub sub0C8A (ByVal pv01E4 As Integer ' 81)"
+    },
+    {
+      "file": "Module4.bas",
+      "line": 2386,
+      "procedure": "fn0E4A",
+      "event": "special_hit_entry",
+      "expression": "special-hit power uses monster and target resistance",
+      "source_text": "Function fn0E4A (p0406 As Integer ' 41, p0408 As Integer ' 41, p040A As Integer ' 41) As Integer ' 1"
+    }
+  ],
+  "source_event_count": 16,
+  "runtime_cases": [
+    {
+      "id": "ENCOUNTER-GENERATION",
+      "setup": "same floor/square with fixed RNG and depth",
+      "trace_focus": "candidate group, hostility, final/special branch and generated records",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "ENCOUNTER-LAIR",
+      "setup": "lair flag and ordinary square at same depth",
+      "trace_focus": "lair selection and persistence",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "ENCOUNTER-GROUP",
+      "setup": "one, multiple and full group slots",
+      "trace_focus": "group counts, active group and member order",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "CHEST-REWARD",
+      "setup": "empty, locked and opened chest states",
+      "trace_focus": "chest gate, gold, item class and item recipient",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "TRAP-DISARM",
+      "setup": "trap with low/high perception and resistance",
+      "trace_focus": "disarm roll, trap consumption and damage/status",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "LOOT-ORDER",
+      "setup": "multiple item candidates with full/partial party inventory",
+      "trace_focus": "RNG order, slot selection and no-room behavior",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "DUPLICATE-MONSTER-ID",
+      "setup": "record index versus duplicate ID 307",
+      "trace_focus": "record identity and lookup semantics",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "FINAL-ENCOUNTER",
+      "setup": "final/special encounter flags at boundary depths",
+      "trace_focus": "special branch, rewards and world persistence",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    }
+  ],
+  "runtime_case_count": 8,
+  "runtime_requirements": [
+    "run the exact original executable with copied map/monster data and controlled RNG observations",
+    "capture group generation, hostility, trap/chest consumption, item/gold selection, duplicate-ID lookup and final encounter persistence",
+    "separate candidate table fields from executable behavior and preserve every random draw in order"
+  ]
+}

@@ -1,0 +1,273 @@
+file,line,procedure,category,expression
+FRMAUTOM.bas,317,sub2E6E,timer_or_pause,If  Not gv1A66.M5F8E Then timBlinker.Enabled = True
+FRMAUTOM.bas,325,sub2E6E,timer_or_pause,timBlinker.Enabled = False
+FRMAUTOM.bas,330,sub2E6E,timer_or_pause,timBlinker.Enabled = False
+FRMAUTOM.bas,610,timBlinker_Timer,timer_or_pause,timBlinker.Enabled = False
+FRMCREDI.bas,88,timAnimate_Timer,random,sub086D Int(Rnd * (mc004A - 1))
+FRMCTYG.bas,361,cmdMake_Click,random,l009A = Int(Rnd * 3) + 1
+FRMCTYG.bas,364,cmdMake_Click,random,gv14C2(gv1A86).M4EB4 = gv14C2(gv1A86).M4EB4 + Int(Rnd * gv145A(l0094).M5591 / 5) + 1
+FRMCTYG.bas,366,cmdMake_Click,random,gv14C2(gv1A86).M4EB4 = gv14C2(gv1A86).M4EB4 + Int(Rnd * gv145A(l0094).M5591 / 5) + 1
+FRMCTYG.bas,370,cmdMake_Click,random,gv14C2(gv1A86).M4EB4 = gv14C2(gv1A86).M4EB4 + Int(Rnd * (gv14C2(gv1A86).M55B5(mc00D8) - 16)) + 1
+FRMCTYG.bas,456,cmdMake_Click,random,l010E = Rnd * 100
+FRMCTYG.bas,473,cmdMake_Click,random,l010E = Rnd * 100
+FRMCTYG.bas,478,cmdMake_Click,random,l010E = Rnd * 100
+FRMCTYG.bas,487,cmdMake_Click,random,l0116 = Int(Rnd * gv1BF2)
+FRMCTYG.bas,488,cmdMake_Click,random,If  Int(Rnd * 100) < 40 Then
+FRMCTYG.bas,511,cmdMake_Click,random,l0118 = CInt(Rnd * (l0114 - l0112))
+FRMCTYG.bas,513,cmdMake_Click,random,If  gv14F6(l0118).M56A0 < 10 And ((Rnd * 100) > 25) Then
+FRMCTYG.bas,525,cmdMake_Click,random,l0126 = Int(Rnd * gv1BEE)
+FRMCTYG.bas,546,cmdMake_Click,random,l0128 = Int(Rnd * (l0124 - l0122) + 1)
+FRMCTYG.bas,554,cmdMake_Click,random,ElseIf gv1426(l0128).M56A0 < 5 And (Rnd * 100) > 25 Then
+FRMCTYG.bas,878,sub29BD,random,l01CE = Int(Rnd * 3) + 1
+FRMCTYG.bas,881,sub29BD,random,gv14C2(gv1A86).M4EB4 = gv14C2(gv1A86).M4EB4 - Int(Rnd * gv145A(p01BE).M5591 / 5) + 1
+FRMCTYG.bas,883,sub29BD,random,gv14C2(gv1A86).M4EB4 = gv14C2(gv1A86).M4EB4 - Int(Rnd * gv145A(p01BE).M5591 / 5) + 1
+FRMDUNM.bas,177,cmdWait_Click,random,If  Rnd * l007C <= l007A Then
+FRMDUNM.bas,334,Form_Resize,timer_or_pause,frmDungeonMain!timCombat.Enabled = False
+FRMDUNM.bas,336,Form_Resize,timer_or_pause,frmDungeonMain!timCombat.Enabled = True
+FRMDUNM.bas,347,Form_Resize,timer_or_pause,frmDungeonMain!timCombat.Enabled = False
+FRMDUNM.bas,349,Form_Resize,timer_or_pause,frmDungeonMain!timCombat.Enabled = True
+FRMDUNM.bas,427,timAilment_Timer,timer_or_pause,If  m0026 = True Or gv1ACC.M602F = True Then
+FRMDUNM.bas,442,timAilment_Timer,random,If  (Rnd * 100) < 10 Then
+FRMDUNM.bas,443,timAilment_Timer,random,sub086D mc014C + Int(Rnd * 3)
+FRMDUNM.bas,463,timAilment_Timer,random,If  Rnd * 100 < l0142 Then
+FRMDUNM.bas,477,timAilment_Timer,random,l013C = Int(Rnd * 100) + 1
+FRMDUNM.bas,507,timAilment_Timer,random,If  Int(Rnd * 100) < ((gv14C2(l0144).M5470 / 25) * 100) Then
+FRMDUNM.bas,508,timAilment_Timer,random,l013C = Int(Rnd * (mc0178 - 1)) + 1
+FRMDUNM.bas,531,timAilment_Timer,random,l013C = Int(Rnd * 200) + ((gv14C2(l0144).M55B5(mc018A) + (gv14C2(l0144).M584B(mc018A)) - 10) * 2) - (gv14C2(l0144).M56B9(m0188) * 2)
+FRMDUNM.bas,541,timAilment_Timer,random,l013C = Int(Rnd * 200) + ((gv14C2(l0144).M55B5(mc018A) + (gv14C2(l0144).M584B(mc018A)) - 10) * 2) - (gv14C2(l0144).M56B9(m0188) * 2)
+FRMDUNM.bas,557,timAilment_Timer,random,If  (Int(Rnd * 100) + 1) > l0196 Or fn0EEF() = False Then
+FRMDUNM.bas,565,timAilment_Timer,random,If  Int(Rnd * 100) < 5 + Log(((((gv14C2(l0144).M5577 / mc019E) / gv148E(gv14C2(l0144).M5821).M5577) * 100) - 98)) Then
+FRMDUNM.bas,585,timAilment_Timer,random,"If  (fn0380(mc0164, fn0AD3(fn0AE8(gv14C2(m00A4))))) <> False And (Rnd * 100) < 25 Then"
+FRMDUNM.bas,589,timAilment_Timer,random,sub086D mc01AA + Int(Rnd * 2)
+FRMDUNM.bas,613,timCombat_Timer,timer_or_pause,If  m0024 = True Or gv1ACC.M602F = True Then
+FRMDUNM.bas,617,timCombat_Timer,timer_or_pause,timCombat.Enabled = False
+FRMDUNM.bas,622,timCombat_Timer,combat_entry,sub155A gv14C2(m00A4).M59BB
+FRMEDITC.bas,103,cmdCommand_Click,timer_or_pause,frmDungeonMain!timCombat.Enabled = True
+FRMEDITC.bas,104,cmdCommand_Click,timer_or_pause,frmDungeonMain!timAilment.Enabled = True
+FRMMAIN.bas,209,MDIForm_Resize,timer_or_pause,gv1ACC.M602F = True
+FRMMAIN.bas,221,MDIForm_Resize,timer_or_pause,gv1ACC.M602F = False
+FRMMAIN.bas,292,timMusic_Timer,timer_or_pause,If  gv1ACC.M602F = False Then
+FRMMORG.bas,91,cmdCommand_Click,random,If  Int(Rnd * 100) > l005C Then
+FRMMORG.bas,148,cmdCommand_Click,random,If  Rnd * 100 > (l0076(2) * 4) Then
+FRMSEEK.bas,95,cmdCommand_Click,random,l002A = (l002A + (Rnd * l002A / 4)) / 2
+FRMSEEK.bas,104,cmdCommand_Click,random,l0032 = Int(Rnd * 100) + 1
+FRMSEEK.bas,106,cmdCommand_Click,random,If  (Rnd * 100) >= gv14F6(l0038).M5693 * 5 Then
+FRMSEEK.bas,129,cmdCommand_Click,random,If  Rnd * 100 < 75 Then
+FRMSEEK.bas,168,cmdCommand_Click,random,l0070 = Int(Rnd * UBound(l007E)) + 1
+FRMSEEK.bas,191,cmdCommand_Click,random,If  Rnd * 100 < 75 Then
+FRMSEEK.bas,242,cmdCommand_Click,random,l002A = (l002A + (Rnd * l002A / 4)) / 2
+FRMSEEK.bas,251,cmdCommand_Click,random,l0032 = Int(Rnd * 100) + 1
+FRMSEEK.bas,253,cmdCommand_Click,random,If  (Rnd * 100) >= gv1426(l0038).M5693 * 5 Then
+FRMSEEK.bas,265,cmdCommand_Click,random,l00C0 = Int(Rnd * 3)
+FRMSEEK.bas,294,cmdCommand_Click,random,l0070 = l0070 - (Rnd * l0070)
+FRMSEEK.bas,302,cmdCommand_Click,random,l003A = Int(Rnd * UBound(l00B8) + 1)
+FRMSEEK.bas,341,cmdCommand_Click,random,l0032 = Int(Rnd * 100) + 1
+FRMSEEK.bas,410,sub321C,random,If  Int(Rnd * 2) Then
+FRMSEEK.bas,411,sub321C,random,p00F4 = p00F4 - Int(Rnd * p00F8)
+FRMSEEK.bas,413,sub321C,random,p00F4 = p00F4 + Int(Rnd * p00F8)
+FRMSEEK.bas,415,sub321C,random,If  Int(Rnd * 2) Then
+FRMSEEK.bas,416,sub321C,random,p00F6 = p00F6 - Int(Rnd * p00F8)
+FRMSEEK.bas,418,sub321C,random,p00F6 = p00F6 + Int(Rnd * p00F8)
+Module2.bas,752,sub05AA,random,l018C.M5C00 = Int(Rnd * 5) + 1
+Module2.bas,753,sub05AA,random,l018C.M5C21 = CLng(Date) - (Int(Rnd * 5) + 2)
+Module2.bas,772,sub05AA,random,l018C.M5C21 = CLng(Date) - (Int(Rnd * 5) + 2)
+Module2.bas,1310,sub06E8,random,If  (Rnd * 100) > l0284 Then
+Module2.bas,1314,sub06E8,random,If  (Rnd * 100) < 60 Then
+Module2.bas,1320,sub06E8,random,l0274 = Int(Rnd * 100) + 1
+Module2.bas,1332,sub06E8,random,l027E = (Rnd * gv1BF2)
+Module2.bas,1362,sub06E8,random,l0276 = Rnd * 100
+Module2.bas,1392,sub06E8,random,l027E = (Rnd * gv1BF2)
+Module2.bas,1422,sub06E8,random,l0276 = Rnd * 100
+Module2.bas,1443,sub06E8,random,l0288 = Int(Rnd * (mc02A0 + 1))
+Module2.bas,1508,sub071B,random,If  (Rnd * 100) > l02BE Then
+Module2.bas,1512,sub071B,random,If  (Rnd * 100) < 60 Then
+Module2.bas,1518,sub071B,random,l02AE = Int(Rnd * 100) + 1
+Module2.bas,1530,sub071B,random,l02B8 = (Rnd * gv1BEE)
+Module2.bas,1560,sub071B,random,l02B0 = Rnd * 100
+Module2.bas,1574,sub071B,random,l02C2 = Int(Rnd * (mc02A0 + 1))
+Module2.bas,1593,sub071B,random,l02B8 = (Rnd * gv1BEE)
+Module2.bas,1623,sub071B,random,l02B0 = Rnd * 100
+Module2.bas,1644,sub071B,random,l02C2 = Int(Rnd * (mc02A0 + 1))
+Module3.bas,124,sub08F5,random,l00B6 = Int(Rnd * (gv14C2(pv00A4).M5470 * 10.5#)) * Log(gv148E(gv14C2(pv00A4).M5821).M5565 + 2) + 5
+Module3.bas,515,sub0A1D,random,"If  fn0380(gc1D36, l016E) And (Rnd * 100) < (l016A) Then"
+Module3.bas,526,sub0A1D,random,"If  fn0380(gc1D2E, l016E) And (Rnd * 100) < (l016A) Then"
+Module3.bas,535,sub0A1D,random,"If  fn0380(gc1D30, l016E) And (Rnd * 100) < (l016A) Then"
+Module3.bas,544,sub0A1D,random,"If  fn0380(gc1D32, l016E) And (Rnd * 100) < (l016A) Then"
+Module3.bas,553,sub0A1D,random,"If  fn0380(gc1D40, l016E) And (Rnd * 100) < (l016A) Then"
+Module3.bas,562,sub0A1D,random,"If  fn0380(gc1D2C, l016E) And (Rnd * 100) < (l016A) Then"
+Module3.bas,571,sub0A1D,random,"If  fn0380(gc1D38, l016E) And (Rnd * 100) < (l016A) Then"
+Module3.bas,580,sub0A1D,random,"If  fn0380(gc1D2A, l016E) And (Rnd * 100) < (l016A) Then"
+Module3.bas,623,sub087C,random,If  (Int(Rnd * 100) + 1) > l0190 And p0188 <> gc1D32 Then
+Module3.bas,631,sub087C,random,If  (Int(Rnd * 100) + 1) <= (l0190 / 2) Or p0188 = gc1D32 Or p018A = True Then
+Module3.bas,650,sub087C,random,l018C = Int(Rnd * mc019A)
+Module3.bas,734,sub0A49,timer_or_pause,frmDungeonMain!timCombat.Interval = mc01B0
+Module3.bas,812,sub0980,timer_or_pause,frmDungeonMain!timCombat.Enabled = False
+Module3.bas,823,sub0980,timer_or_pause,frmDungeonMain!timCombat.Enabled = False
+Module3.bas,1465,sub0980,timer_or_pause,frmDungeonMain!timCombat.Enabled = False
+Module3.bas,1467,sub0980,timer_or_pause,frmDungeonMain!timCombat.Enabled = True
+Module3.bas,1543,sub0835,random,"If  (Log(fn11D4(m00C0, mc0180, False)) * Log(fn11D4(m00C0, mc0180, False)) / 15) > Rnd * 100 Then"
+Module3.bas,1550,sub0835,random,"If  (Log(fn11D4(m00C0, mc0180, False)) * Log(fn11D4(m00C0, mc0180, False)) / 20) > Rnd * 100 Then"
+Module3.bas,1556,sub0835,random,"If  (Log(fn11D4(m00C0, mc0180, False)) * Log(fn11D4(m00C0, mc0180, False)) / 25) > Rnd * 100 Then"
+Module3.bas,1593,sub0835,random,"If  Int(Rnd * 100) < (fn11D4(m00C0, mc0180, False) / 5) Then"
+Module3.bas,1650,sub0835,random,"If  Int(Rnd * 100) < (fn11D4(m00C0, mc0180, False) / 5) Then"
+Module3.bas,1675,sub0835,random,"If  Int(Rnd * 100) < (fn11D4(m00C0, mc0180, False) / 5) Then"
+Module3.bas,1727,sub0835,random,gv14C2(m00C0).M5899 = Int(Rnd * mc00D8) + 1
+Module3.bas,1728,sub0835,random,"If  fn11D4(m00C0, mc0180, False) < (Rnd * 70) + (gv14C2(m00C0).M5470 * 2) Then"
+Module3.bas,1751,sub0835,random,If  5 + (gv14C2(gv1A84).M5470 / 4) < (Rnd * 100) Then
+Module3.bas,1759,sub0835,random,l0270 = Int(Rnd * (((gv14C2(gv1A84).M5470 + 1) / 2) * 15.5#)) * Log(gv148E(gv14C2(gv1A84).M5821).M5565 + 2) + 1
+Module3.bas,1796,sub0835,random,gv14C2(gv1A84).M583F = Int(Rnd * gv1864.M4216) + 1
+Module3.bas,1797,sub0835,random,gv14C2(gv1A84).M5845 = Int(Rnd * gv1864.M420C) + 1
+Module3.bas,1843,sub0835,random,If  5 + (gv14C2(l0276).M5470 / 4) < (Rnd * 100) Then
+Module4.bas,195,fn0FF5,random,l00CE = Int(Rnd * mc00DC)
+Module4.bas,227,fn0FF5,random,If  Int(Rnd * 100) < 10 Then
+Module4.bas,232,fn0FF5,random,If  Rnd * 100 < 50 Then
+Module4.bas,237,fn0FF5,random,l00CC = Int(Rnd * l00DA)
+Module4.bas,289,sub1019,timer_or_pause,If  frmDungeonMain!timCombat.Enabled = False Then
+Module4.bas,369,sub1019,timer_or_pause,If  frmDungeonMain!timCombat.Enabled = False Then
+Module4.bas,396,sub1019,random,If  Int(Rnd * 100) < l010C Then
+Module4.bas,418,sub1019,random,If  Int(Rnd * 100) < l010C Then
+Module4.bas,433,sub1019,combat_entry,"l0102 = fn0DEE(l0116, l011C, l011E, l011A, l0120)"
+Module4.bas,501,sub1019,timer_or_pause,If  frmDungeonMain!timCombat.Enabled = False Then
+Module4.bas,536,fn0B6C,random,If  gv14F6(l0178).M4EBF = mc0180 And (Rnd * 100) < 75 Then l017A = True
+Module4.bas,537,fn0B6C,random,If  gv14F6(l0178).M4EBF = mc0182 And (Rnd * 100) < 15 Then l017A = True
+Module4.bas,588,fn0B6C,timer_or_pause,frmDungeonMain!timCombat.Enabled = False
+Module4.bas,590,fn0B6C,timer_or_pause,frmDungeonMain!timCombat.Enabled = True
+Module4.bas,626,sub0C00,random,If  Rnd * 200 < l019E Then
+Module4.bas,646,sub0C00,random,"If  Rnd * 200 < fn0D78(pv0190, l0192) Or gv14C2(pv0190).M58CB(l0192).M57E1 = 0 Then"
+Module4.bas,678,sub0A91,timer_or_pause,frmDungeonMain!timCombat.Enabled = False
+Module4.bas,857,sub0C8A,timer_or_pause,If  gv1E66(pv01E4).M547A = -1 Or frmDungeonMain!timCombat.Enabled = False Then
+Module4.bas,879,sub0C8A,random,If  Int(Rnd * 100) < l01FE Then
+Module4.bas,1113,sub0C8A,random,l01FC = Int(Rnd * 100) + 1
+Module4.bas,1131,sub0C8A,random,l01FC = Int(Rnd * 100) + 1
+Module4.bas,1152,sub0C8A,combat_entry,"l01F0 = fn0DEE(l0218, l021A, l0220, l021C, l0222)"
+Module4.bas,1219,sub0C8A,random,If  (Int(Rnd * 100) + 1) > l0210 Then
+Module4.bas,1230,sub0C8A,random,If  Rnd * 100 > l0210 Then
+Module4.bas,1450,fn0D4D,random,If  (Rnd * 100) <= gc1DC8 Then
+Module4.bas,1465,fn0D4D,random,If  (Int(Rnd * 100) + 1) < 2 And m0264 = False Then
+Module4.bas,1466,fn0D4D,random,m025E = Int(Rnd * gv1BF2)
+Module4.bas,1478,fn0D4D,random,m025E = Int(Rnd * gv1BF2)
+Module4.bas,1482,fn0D4D,random,m026A = Int(Rnd * 100) + 1
+Module4.bas,1492,fn0D4D,random,If  Rnd * 75 < 50 Then
+Module4.bas,1535,fn0D4D,random,m025E = m02EE(CInt(Rnd * (UBound(m02EE) - 1)))
+Module4.bas,1537,fn0D4D,random,m026A = Rnd * 101
+Module4.bas,1619,fn0D4D,random,m026A = Rnd * 100
+Module4.bas,1651,fn0D4D,random,m026A = Rnd * 99
+Module4.bas,1653,fn0D4D,random,m026A = Rnd * 99
+Module4.bas,1678,fn0D4D,random,m026A = Int(Rnd * 100) + 1
+Module4.bas,1682,fn0D4D,random,m026A = Int(Rnd * (mc0338 + 1))
+Module4.bas,1693,fn0D4D,random,m026A = Int(Rnd * 100) + 1
+Module4.bas,1700,fn0D4D,random,If  Int(Rnd * 100) < ((m0262 / (mc0186 * 2)) * 100) Then
+Module4.bas,1701,fn0D4D,random,m0262 = m0262 - Int(Rnd * ((gv14F6(m0294).M5A0E / 2) + 1))
+Module4.bas,1713,fn0D4D,random,If  Int(Rnd * 100) < 40 Then
+Module4.bas,1803,fn0D4D,random,m026A = Rnd * 99
+Module4.bas,1850,fn0D4D,random,gv1E38(m0286).M4EDC = gv1E38(m0286).M4EDC - CInt(Rnd * (gv14F6(m0284).M5A57 / 2))
+Module4.bas,1859,fn0D4D,random,m02A4 = ((m02A4 / 4) + (Rnd * (m02A4 / 2)) + (Rnd * (m02A4 / 2))) * (Log((gv14F6(m0284).M5693 + 1) / Log(2)))
+Module4.bas,1861,fn0D4D,random,m02A4 = Int(Rnd * 500) + 2
+Module4.bas,1867,fn0D4D,random,m026A = Int(Rnd * 2)
+Module4.bas,1868,fn0D4D,random,m026E = Int(Rnd * (gv14F6(m0284).M4EAC * .5#) / 2) + 1
+Module4.bas,1892,fn0D4D,random,m026A = Int(Rnd * 100) + 1
+Module4.bas,1908,fn0D4D,random,m02AE = Rnd * (Log(gv14F6(gv1E38(m0286).M4ED4).M5693) + 2.5#)
+Module4.bas,1911,fn0D4D,random,If  Int(Rnd * 100) + 1 < m027E Then
+Module4.bas,1916,fn0D4D,random,m02AC = Int(Rnd * (m02AE + 1.5#))
+Module4.bas,1947,fn0D4D,random,m026A = Int(Rnd * 3000) + 1
+Module4.bas,1958,fn0D4D,random,gv1E38(m0286).M4EF9 = Int(Rnd * m026A) + 1
+Module4.bas,1995,sub0D08,random,l0358 = Int(Rnd * 2)
+Module4.bas,1996,sub0D08,random,l035A = Int(Rnd * (gv14F6(l0354).M4EAC * .5#) / 2) + 1
+Module4.bas,2024,fn0D64,random,If  (Rnd * 100) < l036C Then
+Module4.bas,2025,fn0D64,random,l0368 = CInt(Rnd * UBound(gv14C2)) + 1
+Module4.bas,2032,fn0D64,random,If  (Rnd * 100) < l036C Then
+Module4.bas,2033,fn0D64,random,l0368 = CInt(Rnd * UBound(gv14C2)) + 1
+Module4.bas,2040,fn0D64,random,If  (Rnd * 100) < l036C Then
+Module4.bas,2041,fn0D64,random,l0368 = CInt(Rnd * UBound(gv14C2)) + 1
+Module4.bas,2112,fn0DAB,random,If  (Rnd * 100) < (l0390 / (l0390 + 1) * 100) Then
+Module4.bas,2114,fn0DAB,random,l0394 = Int(Rnd * mc01A0)
+Module4.bas,2212,fn0DEE,combat_entry,"Function fn0DEE (p03B6 As Integer ' 41, p03B8 As Integer ' 41, p03BA As Integer ' 41, ByVal pv03BC As Integer ' 81, ByVal pv03BE As Single ' 83) As Integer ' 1"
+Module4.bas,2248,fn0DEE,random,l03C8 = Int((Rnd * ((pv03BC + 10) / 2)) + ((pv03BC + 10) / 4)) / 10
+Module4.bas,2251,fn0DEE,random,l03CA = l03CA - (Int(Rnd * (l03CA + 1)) / 1) + 1
+Module4.bas,2252,fn0DEE,random,l03CC = Int(Rnd * 1000) + 1
+Module4.bas,2255,fn0DEE,random,l03CC = Int(Rnd * 100) + 1
+Module4.bas,2257,fn0DEE,combat_entry,fn0DEE = l03CE
+Module4.bas,2408,fn0E4A,random,l0410 = (Int(((Rnd * l040E) + 1) / 2) + (l040E / 4)) * .7#
+Module4.bas,2425,fn0E4A,random,l0410 = (Int(((Rnd * l040E) + 1) / 2) + (l040E / 2)) * .7#
+Module4.bas,2438,fn0E4A,random,l0410 = (Int(((Rnd * l040E) + 1) / 2) + (l040E / 2)) * .7#
+Module4.bas,2508,fn0E5F,random,l042E = Int(Rnd * (l0430 - ((l042A - 1) / l042A ^ 2)) / 2) + 1
+Module4.bas,2701,sub0E85,random,If  Int(Rnd * 100) < l046A Then
+Module4.bas,2704,sub0E85,random,l0460 = ((Int(((Rnd * l0468) + 1) / 2) + (l0468 / 4)) * .7#) / 2
+Module4.bas,2771,sub0E85,random,l0474 = Int(Rnd * (mc01A0 + 1))
+Module4.bas,2779,sub0E85,random,If  Int(Rnd * 100) < l046A Then
+Module4.bas,2782,sub0E85,random,l0460 = (Int(((Rnd * l0468) + 1) / 2) + (l0468 / 2)) * .7#
+Module4.bas,2878,sub0E85,random,If  (Int(Rnd * 100) + 1) < (100 / (l0472 + 1)) Then
+Module4.bas,2882,sub0E85,random,l0474 = Int(Rnd * mc01A0) + 1
+Module4.bas,2917,sub0E85,random,l0468 = Int(Rnd * 100) + 1
+Module4.bas,2928,sub0E85,random,l0468 = Int(Rnd * 100) + 1
+Module4.bas,2946,sub0E85,combat_entry,"l0460 = fn0DEE(l048A, l048C, l0490, l048E, l0492)"
+Module4.bas,3058,sub0E85,random,If  Int(Rnd * 100) < l046A Then
+Module4.bas,3061,sub0E85,random,l0460 = (Int(((Rnd * l0468) + 1) / 2) + (l0468 / 2)) * .7#
+Module4.bas,3112,sub0E85,random,If  (Int(Rnd * 100) + 1) > ((gv14C2(pv0442).M55B5(mc0248) + gv14C2(pv0442).M584B(mc0248)) * 2.5#) - ((gv14F6(gv1E38(l0456).M4ED4).M5693) * 2) Then
+Module4.bas,3120,sub0E85,random,l049E = Int(Rnd * (mc04A2 * 5)) + 1
+Module4.bas,3138,sub0E85,random,l0480 = Int(Rnd * CInt((gv14F6(gv1E38(l0456).M4ED4).M5693 / 2) + .5#)) + 1
+Module4.bas,3140,sub0E85,random,If  (Int(Rnd * 100) + 1) > gv14C2(pv0442).M5548(mc04A6) Then
+Module4.bas,3141,sub0E85,random,If  (Int(Rnd * 100) + 1) > ((gv14C2(pv0442).M55B5(mc0248) + gv14C2(pv0442).M584B(mc0248)) * 2.5#) - ((gv14F6(gv1E38(l0456).M4ED4).M5693) * 2) Then
+Module4.bas,3142,sub0E85,random,l04A8 = Int(Rnd * mc04AC + 1)
+Module4.bas,3196,sub0E85,random,If  (Int(Rnd * 100) + 1) > l0480 Then
+Module4.bas,3203,sub0E85,random,l046E = Int(Rnd * 100) + 1
+Module4.bas,3241,sub0E85,random,l0468 = Int(Rnd * 100) + 1
+Module4.bas,3258,sub0E85,random,l0468 = Int(Rnd * 100) + 1
+Module4.bas,3280,sub0E85,random,If  (Int(Rnd * 100) + 1) > l0468 And gv14C2(pv0442).M56B9(mc0122) = 0 Then
+Module4.bas,3295,sub0E85,random,l0494 = Int(Rnd * (mc04D0 - 1)) + 1
+Module4.bas,3305,sub0E85,random,If  (Int(Rnd * 100) + 1) > l044C% Then
+Module4.bas,3324,sub0E85,random,l0468 = Int(Rnd * 100)
+Module4.bas,3328,sub0E85,random,l0468 = l0468 + Int((Rnd * (gv141C.M5B9F * gv141C.M5B95)) + (gv141C.M5B9F / 2) * 1.5#)
+Module4.bas,3332,sub0E85,random,l04DE = Int(Rnd * (((gv14C2(pv0442).M5470 + gv1E38(l0456).M4E97) * (3353.452# * l04DC)) / gv14C2(pv0442).M5584(gv14C2(pv0442).M58BB).M4E82))
+Module4.bas,3351,sub0E85,random,l0494 = Int(Rnd * (mc04D0 - 1)) + 2
+Module4.bas,3371,sub0E85,random,If  ((Int(Rnd * 100) + 1) > 30 And l04DE > 0) Or l0494 > -1 Then
+Module4.bas,3394,sub0E85,timer_or_pause,If  frmDungeonMain!timCombat.Enabled = False Then
+Module4.bas,3499,sub0F01,random,l0502 = Int(Rnd * 100) + 1
+Module4.bas,3515,sub0F01,random,If  (Rnd * 100) < (gv14C2(l0500).M5548(mc04BA) / 2) Then
+Module4.bas,3522,sub0F01,random,If  (Rnd * 100) < (gv14C2(l0500).M5548(mc04C2) / 2) Then
+Module4.bas,3529,sub0F01,random,l0502 = Int(Rnd * (gv14C2(l0500).M5470 * 4 * Log(gv14C2(l0500).M5470 + 2))) + 1
+Module4.bas,3535,sub0F01,random,l0502 = Int(Rnd * (gv14C2(l0500).M5470 * 6 * Log(gv14C2(l0500).M5470 + 2))) + 1
+Module4.bas,3541,sub0F01,random,l0502 = Int(Rnd * 100) + 1
+Module4.bas,3543,sub0F01,random,l0502 = Int(Rnd * (mc04D0 - 1)) + 1
+Module4.bas,3568,sub0F01,random,gv14C2(pv04F2).M583F = Int(Rnd * 30) + 1
+Module4.bas,3569,sub0F01,random,gv14C2(pv04F2).M5845 = Int(Rnd * 30) + 1
+Module4.bas,3657,sub0F01,random,l0502 = Int(Rnd * 100) + 1
+Module4.bas,3678,sub0F01,random,If  Rnd * 100 < gv14F6(l04FC).M5A4A(mc0330) Then
+Module4.bas,3703,sub0F01,random,l0504 = Int(Rnd * (mc058A))
+Module4.bas,3706,sub0F01,random,l0514 = Int(Rnd * gv1BEE)
+Module4.bas,3765,sub0F01,random,l0502 = Rnd * 100
+Module4.bas,3783,sub0F01,random,l0526 = CInt(Rnd * UBound(gv14C2))
+Module4.bas,3804,sub0F01,random,l04FE = Int(Rnd * (mc0596 + 1))
+Module4.bas,3814,sub0F01,random,If  Int(Rnd * 2) = False Then
+Module4.bas,3815,sub0F01,random,gv14C2(l0526).M5857(l051A).M56DB = gv14C2(l0526).M5857(l051A).M56DB + Int(((Rnd * gv1426(l04FA).M56DB / 2)))
+Module4.bas,3817,sub0F01,random,gv14C2(l0526).M5857(l051A).M56DB = gv14C2(l0526).M5857(l051A).M56DB - Int(((Rnd * gv1426(l04FA).M56DB / 2)))
+Module4.bas,3858,sub0F01,random,l0502 = Int(Rnd * 100) + 1
+Module4.bas,4141,sub0BAA,random,l0638 = Int(Rnd * 100) + 1
+Module4.bas,4143,sub0BAA,random,l063A = Int(Rnd * (mc0338))
+Module4.bas,4410,sub0BBA,timer_or_pause,frmDungeonMain!timCombat.Enabled = False
+Module4.bas,4415,sub0BBA,timer_or_pause,frmDungeonMain!timCombat.Enabled = True
+Module6.bas,281,Main,random,Randomize
+Module6.bas,546,fn1173,random,l0124 = Int(Rnd * 100)
+Module6.bas,667,fn1173,random,l015A = Int(Rnd * (l015E - ((l0160 - 1) / l0160 ^ 2)) / 2) + 1
+Module6.bas,781,fn1173,random,If  Int(Rnd * 100) > l018C Then
+Module6.bas,1665,fn11A1,random,If  (Int(Rnd * 100) < ((gv14C2(pv02E4).M5577 / mc0204) / (gv148E(gv14C2(pv02E4).M5821).M5577 / 2)) * 100) Or gv14C2(pv02E4).M5483 = mc01C8 Then
+Module6.bas,1927,sub0F29,random,l0332 = Int(Rnd * 3)
+Module6.bas,1928,sub0F29,random,gv14C2(pv0330).M4EAC = Int(Rnd * gv14C2(pv0330).M4EB4) + 1
+Module6.bas,1929,sub0F29,random,gv14C2(pv0330).M5830 = Int(Rnd * fn1338(pv0330)) + 1
+Module6.bas,3058,sub0930,timer_or_pause,frmDungeonMain!timCombat.Enabled = False
+Module6.bas,3112,sub0930,random,"If  Int(Rnd * 100) > fn13D7(-1, -1) Then"
+Module6.bas,3131,sub0930,random,If  Rnd * 100 < (50 - gv14C2(pv04CC).M55B5(mc018E) * 2) Then
+Module6.bas,3160,sub1476,timer_or_pause,frmDungeonMain!timCombat.Enabled = True
+Module6.bas,3161,sub1476,timer_or_pause,frmDungeonMain!timAilment.Enabled = True
+Module6.bas,4048,fn14CB,combat_entry,sub155A gv14C2(m00DC).M59BB
+Module6.bas,5945,fn10A3,random,If  Int(Rnd * 100) > gv14C2(pv0822).M58E9 Then
+Module6.bas,5960,fn10A3,random,If  Rnd * 100 < (50 - gv14C2(pv0822).M55B5(mc018E) * 2) Then
+Module6.bas,6082,sub168B,timer_or_pause,If  gv1ACC.M602F = False Then
+Module7.bas,310,sub0A64,random,l0092 = Int(Rnd * 100) + 1
+Module7.bas,334,sub0A64,random,If  (Int(Rnd * 100) + 1) < l009E Then
+Module7.bas,347,sub0A64,random,l0092 = Int(Rnd * 100) + 1
+Module7.bas,492,sub155A,combat_entry,Sub sub155A (p00E2 As Integer ' 41)
+Module7.bas,577,sub155A,random,If  Int(Rnd * 100) + 1 < (l00EE - l00F0) Then
+Module9.bas,82,sub1A50,random,If  Int(Rnd * 100) <= 25 Then
+Module9.bas,88,sub1A50,random,sub063F Int(Rnd * (gc2094 - 1)) + 1
+main.txt,543,declarations,timer_or_pause,M602F As Integer ' 1

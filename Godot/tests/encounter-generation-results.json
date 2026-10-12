@@ -1,0 +1,686 @@
+{
+	"generated": 2283,
+	"guarded": [
+		{
+			"area": 14,
+			"floor": 2,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 116,
+			"floor": 2,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 26,
+			"floor": 2,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 46,
+			"floor": 2,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 81,
+			"floor": 2,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 150,
+			"floor": 2,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 121,
+			"floor": 3,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 55,
+			"floor": 3,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 65,
+			"floor": 4,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 14,
+			"floor": 5,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 29,
+			"floor": 5,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 103,
+			"floor": 5,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 111,
+			"floor": 5,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 156,
+			"floor": 5,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 77,
+			"floor": 5,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 97,
+			"floor": 6,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 156,
+			"floor": 6,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 126,
+			"floor": 7,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 8,
+			"floor": 7,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 3,
+			"floor": 7,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 124,
+			"floor": 7,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 164,
+			"floor": 7,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 137,
+			"floor": 7,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 158,
+			"floor": 7,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 111,
+			"floor": 7,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 145,
+			"floor": 7,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 103,
+			"floor": 7,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 24,
+			"floor": 7,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 91,
+			"floor": 7,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 54,
+			"floor": 7,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 95,
+			"floor": 7,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 67,
+			"floor": 7,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 73,
+			"floor": 7,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 35,
+			"floor": 7,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 71,
+			"floor": 7,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 158,
+			"floor": 8,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 55,
+			"floor": 8,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 31,
+			"floor": 8,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 49,
+			"floor": 8,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 65,
+			"floor": 8,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 167,
+			"floor": 8,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 70,
+			"floor": 8,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 145,
+			"floor": 8,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 14,
+			"floor": 8,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 84,
+			"floor": 8,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 137,
+			"floor": 8,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 10,
+			"floor": 8,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 92,
+			"floor": 8,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 97,
+			"floor": 8,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 133,
+			"floor": 8,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 120,
+			"floor": 8,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 50,
+			"floor": 9,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 44,
+			"floor": 9,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 48,
+			"floor": 9,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 51,
+			"floor": 9,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 84,
+			"floor": 9,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 52,
+			"floor": 9,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 67,
+			"floor": 9,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 23,
+			"floor": 9,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 25,
+			"floor": 9,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 17,
+			"floor": 9,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 18,
+			"floor": 9,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 104,
+			"floor": 9,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 105,
+			"floor": 9,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 87,
+			"floor": 9,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 12,
+			"floor": 9,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 10,
+			"floor": 9,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 97,
+			"floor": 9,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 4,
+			"floor": 9,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 91,
+			"floor": 9,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 72,
+			"floor": 9,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 3,
+			"floor": 9,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 44,
+			"floor": 10,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 155,
+			"floor": 10,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 30,
+			"floor": 10,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 23,
+			"floor": 10,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 25,
+			"floor": 10,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 124,
+			"floor": 10,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 133,
+			"floor": 10,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 138,
+			"floor": 10,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 148,
+			"floor": 10,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 112,
+			"floor": 10,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 165,
+			"floor": 10,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 99,
+			"floor": 10,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 167,
+			"floor": 10,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 97,
+			"floor": 10,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 98,
+			"floor": 10,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 100,
+			"floor": 10,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 91,
+			"floor": 10,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 171,
+			"floor": 10,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 172,
+			"floor": 10,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 70,
+			"floor": 10,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 72,
+			"floor": 10,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 64,
+			"floor": 10,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 185,
+			"floor": 10,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 4,
+			"floor": 10,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 61,
+			"floor": 10,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 53,
+			"floor": 10,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 79,
+			"floor": 11,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 57,
+			"floor": 11,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 70,
+			"floor": 11,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 38,
+			"floor": 11,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 51,
+			"floor": 11,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 27,
+			"floor": 11,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 130,
+			"floor": 12,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 135,
+			"floor": 12,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 116,
+			"floor": 12,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 123,
+			"floor": 12,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 83,
+			"floor": 12,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 96,
+			"floor": 12,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 30,
+			"floor": 12,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 9,
+			"floor": 12,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 70,
+			"floor": 12,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 2,
+			"floor": 12,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 17,
+			"floor": 12,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 68,
+			"floor": 13,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 70,
+			"floor": 13,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 43,
+			"floor": 13,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 30,
+			"floor": 13,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 9,
+			"floor": 13,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 130,
+			"floor": 14,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 158,
+			"floor": 14,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 172,
+			"floor": 14,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 9,
+			"floor": 14,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 43,
+			"floor": 14,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 18,
+			"floor": 14,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 3,
+			"floor": 14,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 49,
+			"floor": 15,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 62,
+			"floor": 15,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 90,
+			"floor": 15,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 88,
+			"floor": 15,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 22,
+			"floor": 15,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 75,
+			"floor": 15,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 129,
+			"floor": 15,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 10,
+			"floor": 15,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		},
+		{
+			"area": 8,
+			"floor": 15,
+			"reason": "Encounter secondary pool is empty; original retry label requires runtime verification."
+		}
+	],
+	"scope": "One controlled seed per original populated area; generation candidate, not an executable comparison."
+}

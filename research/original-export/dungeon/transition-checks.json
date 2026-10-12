@@ -1,0 +1,27 @@
+{
+  "teleporters": {
+    "active_slots": 86,
+    "flagged_cells": 88,
+    "slots_without_cell_flag": [],
+    "flagged_cells_without_slot": [
+      [
+        8,
+        5,
+        6
+      ],
+      [
+        8,
+        6,
+        6
+      ]
+    ],
+    "exact_match": false
+  },
+  "chutes": {
+    "active_slots": 17,
+    "flagged_cells": 17,
+    "slots_without_cell_flag": [],
+    "flagged_cells_without_slot": [],
+    "exact_match": true
+  }
+}

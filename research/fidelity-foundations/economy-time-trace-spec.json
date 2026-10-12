@@ -1,0 +1,360 @@
+{
+  "status": "STATIC_ECONOMY_TIME_TRACE_BUILT_RUNTIME_PENDING",
+  "data": {
+    "source_status": "static_decompiler_paths_and_preserved_store_records",
+    "store_price_functions": [
+      "fn271B",
+      "fn272C",
+      "fn273B",
+      "fn274F"
+    ],
+    "payment_function": "fn114E",
+    "world_time_function": "sub0EAE",
+    "interpretation": "Quote formulas, balance ordering, stock caps and elapsed-world updates are candidate semantics until observed in the original runtime; no replacement behavior is certified."
+  },
+  "source_procedures": [
+    {
+      "file": "FRMCTYS.bas",
+      "procedure": "Form_Load",
+      "role": "store_open",
+      "start_line": 423,
+      "end_line": 448,
+      "signature": "Sub Form_Load ()",
+      "summary": "initializes store controls and calls the stock-list refresh path",
+      "evidence": "original-export/code/source/FRMCTYS.bas:423"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "procedure": "Form_Unload",
+      "role": "store_persist",
+      "start_line": 457,
+      "end_line": 473,
+      "signature": "Sub Form_Unload (Cancel As Integer)",
+      "summary": "writes the store file after mutations and saves the active character",
+      "evidence": "original-export/code/source/FRMCTYS.bas:457"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "procedure": "cmdBuy_Click",
+      "role": "buy_transaction",
+      "start_line": 37,
+      "end_line": 106,
+      "signature": "Sub cmdBuy_Click ()",
+      "summary": "checks free inventory and funds, creates an item instance and decrements stock",
+      "evidence": "original-export/code/source/FRMCTYS.bas:37"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "procedure": "cmdSell_Click",
+      "role": "sell_transaction",
+      "start_line": 217,
+      "end_line": 282,
+      "signature": "Sub cmdSell_Click ()",
+      "summary": "quotes a sale, mutates funds, stock, charges and inventory",
+      "evidence": "original-export/code/source/FRMCTYS.bas:217"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "procedure": "sub260A",
+      "role": "stock_refresh",
+      "start_line": 508,
+      "end_line": 551,
+      "signature": "Sub sub260A (p01E0 As Integer ' 41)",
+      "summary": "enumerates nonempty store records and rebuilds the visible item list",
+      "evidence": "original-export/code/source/FRMCTYS.bas:508"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "procedure": "fn271B",
+      "role": "identify_quote",
+      "start_line": 564,
+      "end_line": 581,
+      "signature": "Function fn271B (p01EE As Integer ' 41) As Long ' 2",
+      "summary": "computes the identification service quote from item price, stock and knowledge",
+      "evidence": "original-export/code/source/FRMCTYS.bas:564"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "procedure": "fn272C",
+      "role": "buy_quote",
+      "start_line": 583,
+      "end_line": 610,
+      "signature": "Function fn272C (p01FE As Integer ' 41, p0200 As Integer ' 41) As Long ' 2",
+      "summary": "computes candidate buy pricing with stock and item-value terms",
+      "evidence": "original-export/code/source/FRMCTYS.bas:583"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "procedure": "fn273B",
+      "role": "sell_quote",
+      "start_line": 695,
+      "end_line": 749,
+      "signature": "Function fn273B (p0228 As Integer ' 41) As Long ' 2",
+      "summary": "computes candidate sell pricing with stock, identity, charges and curse state",
+      "evidence": "original-export/code/source/FRMCTYS.bas:695"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "fn114E",
+      "role": "payment_split",
+      "start_line": 393,
+      "end_line": 409,
+      "signature": "Function fn114E (p00E0 As Long ' 42) As Integer ' 1",
+      "summary": "spends carried gold first and then banked gold, failing atomically when combined funds are insufficient",
+      "evidence": "original-export/code/source/Module6.bas:393"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "sub0EAE",
+      "role": "world_time_update",
+      "start_line": 322,
+      "end_line": 391,
+      "signature": "Sub sub0EAE (p00C0 As Integer ' 41, p00C2 As Integer ' 41, ByVal pv00C4 As Integer ' 81, p00C6 As Integer ' 41)",
+      "summary": "adds explicit or derived rest days, formats elapsed time and invokes world updates",
+      "evidence": "original-export/code/source/Module6.bas:322"
+    },
+    {
+      "file": "FRMCTYM.bas",
+      "procedure": "Form_Load",
+      "role": "town_entry_time",
+      "start_line": 66,
+      "end_line": 157,
+      "signature": "Sub Form_Load ()",
+      "summary": "applies age/healing and world-state updates for each party member on town entry",
+      "evidence": "original-export/code/source/FRMCTYM.bas:66"
+    }
+  ],
+  "source_events": [
+    {
+      "file": "FRMCTYS.bas",
+      "line": 37,
+      "procedure": "cmdBuy_Click",
+      "event": "buy_slot_scan",
+      "expression": "the first empty inventory slot is selected before payment",
+      "source_text": "Sub cmdBuy_Click ()"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "line": 61,
+      "procedure": "cmdBuy_Click",
+      "event": "buy_payment_gate",
+      "expression": "payment failure exits before item creation",
+      "source_text": "l006C% = MsgBox(\"Not enough gold!\", 64, \"BUY ITEM\")"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "line": 66,
+      "procedure": "cmdBuy_Click",
+      "event": "buy_instance_copy",
+      "expression": "definition fields, alignment and charges are copied into the new instance",
+      "source_text": "gv14C2(gv1A86).M5857(l0070).M4ED4 = l0072"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "line": 73,
+      "procedure": "cmdBuy_Click",
+      "event": "buy_stock_debit",
+      "expression": "stock is debited for the selected alignment/quality slot",
+      "source_text": "If  gv1426(l0072).M5693 > False Or m0028% > 0 Then"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "line": 84,
+      "procedure": "cmdBuy_Click",
+      "event": "buy_stock_clear",
+      "expression": "empty stock clears the store display identity",
+      "source_text": "gv15FA(l0072).M5766 = 0"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "line": 236,
+      "procedure": "cmdSell_Click",
+      "event": "sell_funds_credit",
+      "expression": "the sale quote is added to carried funds",
+      "source_text": "gv14C2(gv1A86).M4F2D = gv14C2(gv1A86).M4F2D + fn273B(l011E)"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "line": 263,
+      "procedure": "cmdSell_Click",
+      "event": "sell_stock_return",
+      "expression": "eligible stock receives a returned unit up to the display cap",
+      "source_text": "If  l0122 = True And gv1426(gv14C2(gv1A86).M5857(l011E).M4ED4).M572A = False And gv15FA(gv14C2(gv1A86).M5857(l011E).M4ED4).M5557(gv14C2(gv1A86).M5857(l011E).M4EBF) < mc00B6 Then"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "line": 278,
+      "procedure": "cmdSell_Click",
+      "event": "sell_instance_clear",
+      "expression": "the sold instance is removed when no charge remainder survives",
+      "source_text": "txtID_KeyPress 13"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "line": 508,
+      "procedure": "sub260A",
+      "event": "stock_refresh_entry",
+      "expression": "stock refresh rebuilds the visible list from nonempty records",
+      "source_text": "Sub sub260A (p01E0 As Integer ' 41)"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "line": 564,
+      "procedure": "fn271B",
+      "event": "identify_quote_formula",
+      "expression": "identification price is derived from base value, stock and knowledge",
+      "source_text": "Function fn271B (p01EE As Integer ' 41) As Long ' 2"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "line": 583,
+      "procedure": "fn272C",
+      "event": "buy_quote_formula",
+      "expression": "buy quote applies stock/logarithm and level-value terms",
+      "source_text": "Function fn272C (p01FE As Integer ' 41, p0200 As Integer ' 41) As Long ' 2"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "line": 695,
+      "procedure": "fn273B",
+      "event": "sell_quote_formula",
+      "expression": "sell quote applies identity, stock, charge and curse branches",
+      "source_text": "Function fn273B (p0228 As Integer ' 41) As Long ' 2"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 393,
+      "procedure": "fn114E",
+      "event": "payment_split_entry",
+      "expression": "payment compares requested cost with carried plus banked gold",
+      "source_text": "Function fn114E (p00E0 As Long ' 42) As Integer ' 1"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 399,
+      "procedure": "fn114E",
+      "event": "payment_bank_fallback",
+      "expression": "banked gold covers the remainder after carried gold is exhausted",
+      "source_text": "p00E0 = p00E0 - gv14C2(gv1A86).M4F2D"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 405,
+      "procedure": "fn114E",
+      "event": "payment_carried_debit",
+      "expression": "carried gold is debited when sufficient",
+      "source_text": "gv14C2(gv1A86).M4F2D = gv14C2(gv1A86).M4F2D - p00E0"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 322,
+      "procedure": "sub0EAE",
+      "event": "age_days_entry",
+      "expression": "rest and explicit-day calls enter the shared age update",
+      "source_text": "Sub sub0EAE (p00C0 As Integer ' 41, p00C2 As Integer ' 41, ByVal pv00C4 As Integer ' 81, p00C6 As Integer ' 41)"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 329,
+      "procedure": "sub0EAE",
+      "event": "derived_rest_days",
+      "expression": "incomplete HP produces an integer day count from the 3.25 divisor",
+      "source_text": "' Const m00DC = 0 ' &H0%"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 350,
+      "procedure": "sub0EAE",
+      "event": "world_update_hooks",
+      "expression": "party-zero rest invokes world update helpers",
+      "source_text": "End If"
+    },
+    {
+      "file": "FRMCTYM.bas",
+      "line": 66,
+      "procedure": "Form_Load",
+      "event": "town_party_iteration",
+      "expression": "town entry loops over current party members and applies time/recovery",
+      "source_text": "Sub Form_Load ()"
+    }
+  ],
+  "source_event_count": 19,
+  "runtime_cases": [
+    {
+      "id": "BUY-FUNDS",
+      "setup": "carried-only, bank-only and combined funds around exact quote",
+      "trace_focus": "payment result and carried/banked balances",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "BUY-STOCK",
+      "setup": "zero, one, capped and depleted stock entries",
+      "trace_focus": "quote, display and stock mutation",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "SELL-QUOTE",
+      "setup": "identified/unidentified, charged and cursed item states",
+      "trace_focus": "sell quote and inventory/funds result",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "SELL-RETURN",
+      "setup": "returnable versus nonreturnable item classes at stock cap",
+      "trace_focus": "stock restoration and charge remainder",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "STORE-SAVE",
+      "setup": "open, buy, sell, combine and close store sequences",
+      "trace_focus": "lossless store/character persistence",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "IDENTIFY-QUOTE",
+      "setup": "knowledge levels and stock boundaries",
+      "trace_focus": "service price and knowledge decrement",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "REST-DAYS",
+      "setup": "full HP, partial HP and explicit day values",
+      "trace_focus": "integer day count, HP fill and age",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "TOWN-ORDER",
+      "setup": "party members with unequal HP, SP and conditions",
+      "trace_focus": "iteration order, world hooks and saved locations",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "PAYMENT-ATOMIC",
+      "setup": "insufficient combined carried plus banked gold",
+      "trace_focus": "no partial debit on failure",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "WORLD-REFRESH",
+      "setup": "time advance followed by town/store reopen",
+      "trace_focus": "world timestamps and refreshed store state",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    }
+  ],
+  "runtime_case_count": 10,
+  "runtime_requirements": [
+    "run the exact original executable with copied store, character and world records",
+    "capture carried/banked payment order, quote rounding, stock mutation and save timing",
+    "capture rest/town iteration order, world hooks, age changes and store refresh after elapsed time"
+  ]
+}

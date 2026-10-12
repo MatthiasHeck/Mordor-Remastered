@@ -1,0 +1,355 @@
+{
+  "status": "STATIC_ITEM_TRACE_BUILT_RUNTIME_PENDING",
+  "data": {
+    "item_record_count": 366,
+    "distinct_item_ids": 366,
+    "slot_zero_record_count": 1,
+    "spell_linked_item_count": 132,
+    "charged_item_count": 151,
+    "cursed_definition_count": 43,
+    "source_status": "shareware_candidate_data_and_static_decompiler_paths",
+    "interpretation": "Item records preserve candidate fields. Charges, deleted values, slot numbering and field semantics require original-build/runtime correlation; zero is not treated as universally absent."
+  },
+  "source_procedures": [
+    {
+      "file": "Module6.bas",
+      "procedure": "fn110D",
+      "role": "item_eligibility",
+      "start_line": 1512,
+      "end_line": 1596,
+      "signature": "Function fn110D (ByVal pv02A0 As Integer ' 81, p02A2 As Integer ' 41, p02A4 As Integer ' 41, p02A6 As Integer ' 41) As Variant ' 6",
+      "summary": "checks hands, guild masks, guild levels and stat requirements",
+      "evidence": "original-export/code/source/Module6.bas:1512"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "fn1139",
+      "role": "equipment_recheck",
+      "start_line": 1604,
+      "end_line": 1632,
+      "signature": "Function fn1139 (ByVal pv02CE As Integer ' 81, p02D0 As Integer ' 41) As Integer ' 1",
+      "summary": "rechecks equipped items and unequips invalid items",
+      "evidence": "original-export/code/source/Module6.bas:1604"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "sub0F74",
+      "role": "equip_unequip",
+      "start_line": 1721,
+      "end_line": 1883,
+      "signature": "Sub sub0F74 (ByVal pv0308 As Integer ' 81, p030A As Integer ' 41)",
+      "summary": "applies or removes item bonuses, curse guards and alignment effects",
+      "evidence": "original-export/code/source/Module6.bas:1721"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "fn129A",
+      "role": "identification_level",
+      "start_line": 2494,
+      "end_line": 2514,
+      "signature": "Function fn129A (ByVal pv03CE As Integer ' 81, p03D0 As Integer ' 41) As Variant ' 6",
+      "summary": "computes item identification from perception and guild skill",
+      "evidence": "original-export/code/source/Module6.bas:2494"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "fn12EF",
+      "role": "item_display",
+      "start_line": 2580,
+      "end_line": 2607,
+      "signature": "Function fn12EF (p03F6 As Integer ' 41, p03F8 As Integer ' 41, p03FA As Integer ' 41, p03FC As Integer ' 41) As String ' 7",
+      "summary": "formats item identity, charges, curse and identification state",
+      "evidence": "original-export/code/source/Module6.bas:2580"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "sub0730",
+      "role": "item_knowledge_update",
+      "start_line": 4285,
+      "end_line": 4340,
+      "signature": "Sub sub0730 (ByVal pv0668 As Integer ' 81, ByVal pv066A As Integer ' 81, ByVal pv066C As Integer ' 81, p066E As Integer ' 41, p0670 As Integer ' 41)",
+      "summary": "writes item knowledge and source metadata",
+      "evidence": "original-export/code/source/Module6.bas:4285"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "sub0EDA",
+      "role": "remove_item",
+      "start_line": 4342,
+      "end_line": 4369,
+      "signature": "Sub sub0EDA (ByVal pv0686 As Integer ' 81, p0688 As Integer ' 41)",
+      "summary": "unequips when needed and clears an item instance",
+      "evidence": "original-export/code/source/Module6.bas:4342"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "sub1577",
+      "role": "item_use_dispatch",
+      "start_line": 6151,
+      "end_line": 6310,
+      "signature": "Sub sub1577 (ByVal pv086E As Integer ' 81, p0870 As Integer ' 41)",
+      "summary": "checks and dispatches item use, including spell items and charges",
+      "evidence": "original-export/code/source/Module6.bas:6151"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "procedure": "cmdBuy_Click",
+      "role": "store_buy",
+      "start_line": 37,
+      "end_line": 106,
+      "signature": "Sub cmdBuy_Click ()",
+      "summary": "creates a purchased instance and assigns base charges",
+      "evidence": "original-export/code/source/FRMCTYS.bas:37"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "procedure": "cmdSell_Click",
+      "role": "store_sell",
+      "start_line": 217,
+      "end_line": 282,
+      "signature": "Sub cmdSell_Click ()",
+      "summary": "quotes, debits and mutates stock/charge state",
+      "evidence": "original-export/code/source/FRMCTYS.bas:217"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "procedure": "cmdUncurse_Click",
+      "role": "uncurse",
+      "start_line": 284,
+      "end_line": 320,
+      "signature": "Sub cmdUncurse_Click ()",
+      "summary": "charges a service, identifies and separates/clears eligible curses",
+      "evidence": "original-export/code/source/FRMCTYS.bas:284"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "procedure": "fn273B",
+      "role": "sell_quote",
+      "start_line": 695,
+      "end_line": 749,
+      "signature": "Function fn273B (p0228 As Integer ' 41) As Long ' 2",
+      "summary": "computes candidate sell quote from price, stock, identity and charges",
+      "evidence": "original-export/code/source/FRMCTYS.bas:695"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "procedure": "fn274F",
+      "role": "uncurse_fee",
+      "start_line": 763,
+      "end_line": 765,
+      "signature": "Function fn274F (p024A As Integer ' 41) As Long ' 2",
+      "summary": "computes candidate uncurse fee from base price",
+      "evidence": "original-export/code/source/FRMCTYS.bas:763"
+    }
+  ],
+  "source_events": [
+    {
+      "file": "Module6.bas",
+      "line": 1512,
+      "procedure": "fn110D",
+      "event": "eligibility_entry",
+      "expression": "item eligibility checks begin",
+      "source_text": "Function fn110D (ByVal pv02A0 As Integer ' 81, p02A2 As Integer ' 41, p02A4 As Integer ' 41, p02A6 As Integer ' 41) As Variant ' 6"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 1530,
+      "procedure": "fn110D",
+      "event": "guild_and_level_gate",
+      "expression": "guild mask and level paths are checked",
+      "source_text": "l02AA = True"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 1578,
+      "procedure": "fn110D",
+      "event": "stat_gate",
+      "expression": "all natural stat requirements are checked",
+      "source_text": "sub085B \"All guild levels too low to use item!\""
+    },
+    {
+      "file": "Module6.bas",
+      "line": 1721,
+      "procedure": "sub0F74",
+      "event": "equip_toggle_entry",
+      "expression": "negative slot indicates forced unequip path",
+      "source_text": "Sub sub0F74 (ByVal pv0308 As Integer ' 81, p030A As Integer ' 41)"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 1748,
+      "procedure": "sub0F74",
+      "event": "curse_unequip_guard",
+      "expression": "cursed equipped item blocks normal unequip",
+      "source_text": "sub085B \"Cannot unequip!  Item is cursed!\""
+    },
+    {
+      "file": "Module6.bas",
+      "line": 1830,
+      "procedure": "sub0F74",
+      "event": "equip_stat_failure",
+      "expression": "modified-stat and natural-stat attach failures differ",
+      "source_text": "sub085B \"Your stats are too low for the item to properly attach!\""
+    },
+    {
+      "file": "Module6.bas",
+      "line": 2494,
+      "procedure": "fn129A",
+      "event": "identification_entry",
+      "expression": "identification level calculation begins",
+      "source_text": "Function fn129A (ByVal pv03CE As Integer ' 81, p03D0 As Integer ' 41) As Variant ' 6"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 2580,
+      "procedure": "fn12EF",
+      "event": "display_identity",
+      "expression": "display preserves unidentified and cursed states",
+      "source_text": "Function fn12EF (p03F6 As Integer ' 41, p03F8 As Integer ' 41, p03FA As Integer ' 41, p03FC As Integer ' 41) As String ' 7"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 4285,
+      "procedure": "sub0730",
+      "event": "knowledge_write",
+      "expression": "item knowledge and discovery metadata are written",
+      "source_text": "Sub sub0730 (ByVal pv0668 As Integer ' 81, ByVal pv066A As Integer ' 81, ByVal pv066C As Integer ' 81, p066E As Integer ' 41, p0670 As Integer ' 41)"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 4342,
+      "procedure": "sub0EDA",
+      "event": "remove_instance",
+      "expression": "item definition, charges and instance flags are cleared",
+      "source_text": "Sub sub0EDA (ByVal pv0686 As Integer ' 81, p0688 As Integer ' 41)"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 6151,
+      "procedure": "sub1577",
+      "event": "item_use_entry",
+      "expression": "item use checks charges/equipped state and dispatches effects",
+      "source_text": "Sub sub1577 (ByVal pv086E As Integer ' 81, p0870 As Integer ' 41)"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "line": 37,
+      "procedure": "cmdBuy_Click",
+      "event": "buy_entry",
+      "expression": "store purchase creates an inventory instance",
+      "source_text": "Sub cmdBuy_Click ()"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "line": 124,
+      "procedure": "cmdID_Click",
+      "event": "identify_service",
+      "expression": "identification service charges gold and writes knowledge",
+      "source_text": "Sub cmdID_Click ()"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "line": 217,
+      "procedure": "cmdSell_Click",
+      "event": "sell_entry",
+      "expression": "sale path selects quote and mutates inventory/stock",
+      "source_text": "Sub cmdSell_Click ()"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "line": 284,
+      "procedure": "cmdUncurse_Click",
+      "event": "uncurse_entry",
+      "expression": "uncurse path charges, separates and clears eligible curse",
+      "source_text": "Sub cmdUncurse_Click ()"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "line": 695,
+      "procedure": "fn273B",
+      "event": "sell_quote_formula",
+      "expression": "price, stock, identification and charges feed quote",
+      "source_text": "Function fn273B (p0228 As Integer ' 41) As Long ' 2"
+    },
+    {
+      "file": "FRMCTYS.bas",
+      "line": 763,
+      "procedure": "fn274F",
+      "event": "uncurse_fee_formula",
+      "expression": "base price feeds service fee",
+      "source_text": "Function fn274F (p024A As Integer ' 41) As Long ' 2"
+    }
+  ],
+  "source_event_count": 17,
+  "runtime_cases": [
+    {
+      "id": "SLOT-ZERO",
+      "setup": "record/index zero through every acquisition path",
+      "trace_focus": "reserved/usable index behavior and save round-trip",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "ELIGIBILITY",
+      "setup": "guild mask, level, hand and natural-stat boundaries",
+      "trace_focus": "equip/unequip result and messages",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "ALIGNMENT",
+      "setup": "same item under matching, opposed and unrestricted alignment",
+      "trace_focus": "eligibility, bonuses and transaction behavior",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "CURSE",
+      "setup": "inherent versus instance curse while equipped/unequipped",
+      "trace_focus": "unequip block, uncurse effect and persistence",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "CHARGES",
+      "setup": "zero, one, base and over-base charge values",
+      "trace_focus": "use, depletion, recharge, sale and combining",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "IDENTIFICATION",
+      "setup": "knowledge levels zero through complete",
+      "trace_focus": "display, service price and stat exposure",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "ITEM-SPELL",
+      "setup": "same spell from item and spellbook",
+      "trace_focus": "fixed/scaled cast level, charge debit and context",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "STORE-QUOTE",
+      "setup": "stock, price, identity and charge boundaries",
+      "trace_focus": "buy/sell quote conversion and stock update",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "COMBINE",
+      "setup": "matching and mismatched definitions/alignment",
+      "trace_focus": "accepted donor subset and slot mutation",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    }
+  ],
+  "runtime_case_count": 9,
+  "runtime_requirements": [
+    "run the exact original executable with copied item data and controlled character/store states",
+    "capture slot indexing, eligibility, alignment, curses, identification, charge/combining transitions and item-spell dispatch",
+    "retain raw item fields and distinguish candidate data from observed runtime semantics"
+  ]
+}

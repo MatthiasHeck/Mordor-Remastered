@@ -1,0 +1,946 @@
+' main.txt - global definitions
+Type T3751
+  M375F As Integer ' 1
+  M376B As Integer ' 1
+  M3777 As Integer ' 1
+  M3784 As Integer ' 1
+  M3799 As Integer ' 1
+  M37AE As Integer ' 1
+  M37C0 As Integer ' 1
+  M37D2 As Integer ' 1
+  M37DE As String * 1 ' 8
+  M37EA As String * 1 ' 8
+  M37FA As String * 1 ' 8
+  M3809 As String * 1 ' 8
+  M3818 As String * 1 ' 8
+  M3826 As String * 1 ' 8
+  M3837 As String * 1 ' 8
+  M3846 As String * 1 ' 8
+  M385A As String * 1 ' 8
+  M3867 As Integer ' 1
+  M3875 As Integer ' 1
+  M388B As Integer ' 1
+End Type
+
+Global gv015A As Integer ' A1
+Global gv015C As Integer ' A1
+Global gv0180 As Integer ' A1
+Global Const gc0182 = 15 ' &HF%
+Global Const gc0186 = "1.1"
+Global Const gc018A = "Welcome to MORDOR 1.1!"
+Global Const gc0192 = "Mordor"
+Global Const gc0196 = "7/20/95"
+Global Const gc01A2 = ","
+Global Const gc01A6 = "-"
+Global Const gc01CA = "X"
+Type T41C8
+  M41D4 As String ' 7
+  M41DB As String ' 7
+  M41E5 As Single ' 3
+  M41F0 As Single ' 3
+End Type
+
+Type T41FE
+  M420C As Single ' 3
+  M4216 As Single ' 3
+End Type
+
+Type T424C
+  M4216 As Integer ' 1
+  M420C As Integer ' 1
+  M4258 As Integer ' 1
+  M425F As Integer ' 1
+End Type
+
+Global Const gc02CC = 23 ' &H17%
+Global Const gc02D2 = 4 ' &H4%
+Global Const gc02D6 = 8 ' &H8%
+Global Const gc03CA = 6 ' &H6%
+Global Const gc03CC = 6 ' &H6%
+Global Const gc03CE = 6 ' &H6%
+Global Const gc03D0 = 11 ' &HB%
+Global Const gc03D2 = 4 ' &H4%
+Global Const gc03D4 = 3 ' &H3%
+Global Const gc03D6 = 6 ' &H6%
+Global Const gc03D8 = 18 ' &H12%
+Global Const gc03E0 = 7 ' &H7%
+Global Const gc03E2 = 8 ' &H8%
+Global Const gc03E6 = 4 ' &H4%
+Global Const gc03E8 = 11 ' &HB%
+Global Const gc03EA = 3 ' &H3%
+Global Const gc03EC = 4 ' &H4%
+Global Const gc03EE = 11 ' &HB%
+Global Const gc03F0 = 6 ' &H6%
+Global Const gc03F2 = 14 ' &HE%
+Global Const gc03F4 = 8 ' &H8%
+Global Const gc03FA = 17 ' &H11%
+Type T4E6B
+  M4E78 As Integer ' 1
+  M4E7D As Integer ' 1
+  M4E82 As Integer ' 1
+End Type
+
+Type T4E8B
+  M4E97 As Integer ' 1
+  M4EA1 As Integer ' 1
+  M4EAC As Integer ' 1
+  M4EB4 As Integer ' 1
+  M4EBF As Integer ' 1
+  M4ECC As Integer ' 1
+  M4ED4 As Integer ' 1
+  M4EDC As Integer ' 1
+  M4EE6 As Single ' 3
+  M4EEE As Integer ' 1
+  M4EF9 As Integer ' 1
+  M4F01 As Integer ' 1
+End Type
+
+Type T4F0B
+  M4F1B As Integer ' 1
+  M4F24 As Integer ' 1
+  M4F2D As Currency ' 5
+  M4F35 As Integer ' 1
+  M4F3D As Integer ' 1
+End Type
+
+Global gv0518 As Integer ' A1
+Global Const gc051C = 2 ' &H2%
+Global Const gc051E = 3 ' &H3%
+Global Const gc0522 = 5 ' &H5%
+Global Const gc0526 = 10 ' &HA%
+Global Const gc0528 = 11 ' &HB%
+Global Const gc052A = 12 ' &HC%
+Global Const gc052C = 13 ' &HD%
+Global Const gc052E = 14 ' &HE%
+Global Const gc0530 = 15 ' &HF%
+Global Const gc0532 = 16 ' &H10%
+Global Const gc0534 = 17 ' &H11%
+Global Const gc0536 = 18 ' &H12%
+Global Const gc0538 = 19 ' &H13%
+Global Const gc0562 = "Courier New"
+Global Const gc0566 = "MS Sans Serif"
+Global gv058A() As String ' B7
+Global gv05BC() As String ' B7
+Global gv05EE() As String ' B7
+Global gv0620() As String ' B7
+Global gv0652() As String ' B7
+Global gv0684() As String ' B7
+Global gv06B6() As String ' B7
+Global gv06E8() As String ' B7
+Global gv074C() As String ' B7
+Global gv077E() As String ' B7
+Global gv07B0() As String ' B7
+Global gv07E2() As String ' B7
+Global gv0814() As String ' B7
+Global gv0846() As String ' B7
+Global gv0878() As String ' B7
+Global gv08AA() As String ' B7
+Global gv08DC() As String ' B7
+Global gv090E() As String ' B7
+Global gv0940() As String ' B7
+Global gv0972() As String ' B7
+Type T544D
+  M545D As Integer ' 1
+  M5467 As Integer ' 1
+  M5470 As Integer ' 1
+  M547A As Integer ' 1
+  M5483 As Integer ' 1
+  M548B As String ' 7
+  M4E82 As Integer ' 1
+  M5493 As Integer ' 1
+  M4EAC As Integer ' 1
+  M549C As Integer ' 1
+End Type
+
+Type T54A5
+  M54B1 As Integer ' 1
+  M54BD As Integer ' 1
+End Type
+
+Type T54C8
+  M548B As String ' 7
+  M54D5 As Integer ' 1
+End Type
+
+Type T54E1
+  M548B As String ' 7
+  M54F1 As Integer ' 1
+End Type
+
+Type T54FE
+  M548B As String ' 7
+  M550A As Integer ' 1
+End Type
+
+Type T5515
+  M548B As String ' 7
+  M4E78 As Integer ' 1
+End Type
+
+Type T5524
+  M548B As String ' 7
+  M5530(6) As Integer ' 1
+  M553C(6) As Integer ' 1
+  M5548(11) As Integer ' 1
+  M5557 As Long ' 2
+  M5565 As Integer ' 1
+  M556D As Integer ' 1
+  M5577 As Integer ' 1
+  M557E As Single ' 3
+End Type
+
+Type T5584
+  M548B As String ' 7
+  M5591 As Integer ' 1
+  M559A As Integer ' 1
+  M55A4 As Integer ' 1
+  M557E As Single ' 3
+  M55AD As Integer ' 1
+  M55B5(6) As Integer ' 1
+  M5557 As Long ' 2
+  M55BE(6) As Single ' 3
+  M55CB As Integer ' 1
+  M55D8 As Single ' 3
+  M55E6 As Integer ' 1
+  M55F6(18, 1) As Single ' 3
+  M5604 As Long ' 2
+  M4F2D As Integer ' 1
+  M560D As Single ' 3
+  M4E97 As Single ' 3
+  M4EA1 As Single ' 3
+  M561A As Integer ' 1
+  M5626 As Single ' 3
+  M5631 As Integer ' 1
+  M563F As Integer ' 1
+End Type
+
+Type T564C
+  M548B As String ' 7
+  M4E82 As Integer ' 1
+End Type
+
+Type T565F
+  M5671 As String ' 7
+  M4E82 As Integer ' 1
+End Type
+
+Type T567A
+  M548B As String ' 7
+  M5467 As Integer ' 1
+  M4E97 As Integer ' 1
+  M4EA1 As Integer ' 1
+  M5686 As Long ' 2
+  M5693 As Integer ' 1
+  M56A0 As Integer ' 1
+  M55BE As Long ' 2
+  M56AF As Integer ' 1
+  M56B9 As Integer ' 1
+  M56C4 As Integer ' 1
+  M56CD As Integer ' 1
+  M56DB As Integer ' 1
+  M4ED4 As Integer ' 1
+  M56E6 As Long ' 2
+  M560D As Integer ' 1
+  M56F7 As Single ' 3
+  M5557 As Long ' 2
+  M5700 As Integer ' 1
+  M5709 As Integer ' 1
+  M5548 As Long ' 2
+  M5712(6) As Integer ' 1
+  M571E(6) As Integer ' 1
+  M572A As Integer ' 1
+  M5734 As Integer ' 1
+  M5742 As Integer ' 1
+End Type
+
+Type T5755
+  M5766 As Integer ' 1
+  M5467 As Integer ' 1
+  M5557(4) As Integer ' 1
+End Type
+
+Type T576E
+  M4E97 As Integer ' 1
+  M4EA1 As Integer ' 1
+  M4ED4 As Integer ' 1
+  M5467 As Integer ' 1
+  M4EBF As Integer ' 1
+  M56DB As Integer ' 1
+  M577E As Integer ' 1
+  M4EEE As Integer ' 1
+  M572A As Integer ' 1
+End Type
+
+Type T578A
+  M4E82 As Integer ' 1
+  M579B As Currency ' 5
+  M55CB As Integer ' 1
+  M57A9 As Integer ' 1
+  M57B2 As Integer ' 1
+  M4E97 As Single ' 3
+  M4EA1 As Single ' 3
+End Type
+
+Type T57BF
+  M548B As String * 15 ' 8
+  M4ED4 As Integer ' 1
+  M57D4 As Integer ' 1
+  M4EAC As Integer ' 1
+  M4EB4 As Integer ' 1
+  M4EBF As Integer ' 1
+  M4E97 As Integer ' 1
+  M4EA1 As Integer ' 1
+  M57E1 As Integer ' 1
+  M4EEE As Integer ' 1
+End Type
+
+Type T57EF
+  M425F As Long ' 2
+  M4258 As Long ' 2
+  M4216 As Long ' 2
+  M420C As Long ' 2
+  M5801 As Integer ' 1
+End Type
+
+Type T5810
+  M548B As String * 30 ' 8
+  M5821 As Integer ' 1
+  M4EBF As Integer ' 1
+  M5829 As Integer ' 1
+  M5577 As Single ' 3
+  M5830 As Integer ' 1
+  M5470 As Integer ' 1
+  M583F As Integer ' 1
+  M5845 As Integer ' 1
+  M4E97 As Single ' 3
+  M4EA1 As Single ' 3
+  M55B5(6) As Integer ' 1
+  M584B(6) As Integer ' 1
+  M5857(40) As T576E ' A
+  M5860(40) As T576E ' A
+  M586D(35) As Integer ' 1
+  M56F7 As Integer ' 1
+  M587C As Single ' 3
+  M588A As Single ' 3
+  M5899 As Integer ' 1
+  M58A6 As Integer ' 1
+  M579B As Currency ' 5
+  M4F2D As Currency ' 5
+  M4EAC As Integer ' 1
+  M4EB4 As Integer ' 1
+  M58AF As Currency ' 5
+  M56AF As Integer ' 1
+  M58BB As Integer ' 1
+  M5584(15) As T578A ' A
+  M58CB(4) As T57BF ' A
+  M5700 As Integer ' 1
+  M58DC As Integer ' 1
+  M58E9 As Integer ' 1
+  M58F9 As String * 30 ' 8
+  M5906(8) As Currency ' 5
+  M5914(5) As Integer ' 1
+  M56B9(7) As Integer ' 1
+  M5548(11) As Integer ' 1
+  M591F As Long ' 2
+  M592F(11) As Integer ' 1
+  M5483 As Integer ' 1
+  M5943 As Integer ' 1
+  M594C As String * 10 ' 8
+  M5958(20) As T57EF ' A
+  M5962 As Integer ' 1
+  M5970 As Long ' 2
+  M5977 As Long ' 2
+  M5985(11) As Integer ' 1
+  M5997(1) As Integer ' 1
+  M59A1 As Integer ' 1
+  M59B0(10) As Integer ' 1
+  M59BB As Integer ' 1
+  M59CB As Integer ' 1
+  M59D9 As Integer ' 1
+  M59E7 As T4E6B ' A
+  M59F4(2) As Integer ' 1
+End Type
+
+Type T59FF
+  M548B As String ' 7
+  M4E97 As Integer ' 1
+  M4EA1 As Integer ' 1
+  M5467 As Integer ' 1
+  M4EAC As Integer ' 1
+  M5A0E As Integer ' 1
+  M5A1B As Integer ' 1
+  M5A26 As Integer ' 1
+  M5693 As Integer ' 1
+  M5548(11) As Integer ' 1
+  M55BE As Long ' 2
+  M5A35 As Long ' 2
+  M5A40 As Long ' 2
+  M56A0 As Integer ' 1
+  M5A4A(3) As Integer ' 1
+  M4EBF As Integer ' 1
+  M5A57 As Integer ' 1
+  M5A64 As Long ' 2
+  M5A70 As Long ' 2
+  M5A7C As Integer ' 1
+  M55B5(6) As Integer ' 1
+  M4ED4 As Integer ' 1
+  M56F7 As Single ' 3
+  M5A89 As Integer ' 1
+  M5A96 As Integer ' 1
+  M5AAA As Integer ' 1
+  M5AC3(10) As Integer ' 1
+  M5ACF As Integer ' 1
+  M5ADA As Integer ' 1
+  M5565 As Integer ' 1
+  M560D As Integer ' 1
+  M5AEE As Integer ' 1
+End Type
+
+Type T5AFD
+  M548B As String ' 7
+  M5467 As Integer ' 1
+  M5709 As Integer ' 1
+  M4E82 As Integer ' 1
+  M556D As Integer ' 1
+  M5B0A As Integer ' 1
+  M5B12 As Integer ' 1
+  M5B1D As Integer ' 1
+  M5B28 As Integer ' 1
+  M5B33 As Integer ' 1
+  M5B41 As Integer ' 1
+  M56B9 As Integer ' 1
+  M5B4F(6) As Integer ' 1
+  M5B5B As Integer ' 1
+End Type
+
+Type T5B69
+  M56C4 As Integer ' 1
+  M5493 As Integer ' 1
+  M4E82 As Integer ' 1
+  M556D As Integer ' 1
+  M5B7A As Integer ' 1
+End Type
+
+Type T5B86
+  M5493 As Integer ' 1
+  M5B95 As Single ' 3
+  M5B9F As Integer ' 1
+End Type
+
+Type T5BF1
+  M5467 As Integer ' 1
+  M4EEE As Integer ' 1
+  M5C00 As Currency ' 5
+  M5C09 As String * 30 ' 8
+  M5C14 As Integer ' 1
+  M5C21 As Long ' 2
+  M5C2F As String * 8 ' 8
+  M5C3D As Integer ' 1
+End Type
+
+Global gv1408 As Integer ' A1
+Global gv141C As T5B86 ' AA
+Global gv1426() As T567A ' BA
+Global gv145A() As T5584 ' BA
+Global gv148E() As T5524 ' BA
+Global gv14C2() As T5810 ' BA
+Global gv14F6() As T59FF ' BA
+Global gv152A() As T5AFD ' BA
+Global gv1592() As T54C8 ' BA
+Global gv15C6() As T54E1 ' BA
+Global gv15FA() As T5755 ' BA
+Global gv162E() As T5755 ' BA
+Global gv1662() As T54FE ' BA
+Global gv1696() As T5515 ' BA
+Global gv16CA() As T564C ' BA
+Global gv1732() As T544D ' BA
+Type T5CE8
+  M420C As Integer ' 1
+  M4216 As Integer ' 1
+  M4E82 As Integer ' 1
+  M5CF4 As Integer ' 1
+  M5D01 As Integer ' 1
+  M5D0E As Integer ' 1
+End Type
+
+Type T5D20
+  M547A As Integer ' 1
+  M5D2C As Currency ' 5
+  M56B9 As Integer ' 1
+End Type
+
+Type T5D38
+  M5D45 As Long ' 2
+  M5D55 As Integer ' 1
+End Type
+
+Type T5D64
+  M5D74 As Integer ' 1
+  M5D7E As Integer ' 1
+  M5D88 As Integer ' 1
+  M5D90 As Integer ' 1
+  M5D98 As Integer ' 1
+End Type
+
+Type T5DA4
+  M5D74 As Integer ' 1
+  M5D7E As Integer ' 1
+  M5DB1 As Integer ' 1
+End Type
+
+Type T5DBB
+  M5DC7 As String ' 7
+  M4E78 As Integer ' 1
+  M4E7D As Integer ' 1
+  M4E82 As Integer ' 1
+  M5DD3 As Integer ' 1
+End Type
+
+Global gv1864 As T5CE8 ' AA
+Global gv194E() As String ' B7
+Type T5E14
+  M5E20 As Integer ' 1
+  M5E2D As Integer ' 1
+  M420C As Integer ' 1
+  M4216 As Integer ' 1
+  M5E3B As Single ' 3
+  M5E47 As Integer ' 1
+  M5E4F As Integer ' 1
+End Type
+
+Global gv19C2(20) As T5E14 ' BA
+Global gv19D8 As Integer ' A1
+Global gv19E0 ' A0
+Global gv19E2 As Integer ' A1
+Global gv19E4 As String ' A7
+Global gv19E8 As String ' A7
+Type T5EDA
+  M5EE9 As Integer ' 1
+  M5EF1 As Integer ' 1
+  M5EFC As Integer ' 1
+  M5F04 As Integer ' 1
+  M5F11 As Integer ' 1
+  M5F1B As Integer ' 1
+  M5F2C As Integer ' 1
+  M5F39 As Integer ' 1
+  M5F48 As Integer ' 1
+  M5F55 As Integer ' 1
+  M5F63 As Integer ' 1
+  M5F71 As Integer ' 1
+  M5F80 As Integer ' 1
+  M5F8E As Integer ' 1
+End Type
+
+Global gv1A66 As T5EDA ' AA
+Global gv1A82 As Integer ' A1
+Global gv1A84 As Integer ' A1
+Global gv1A86 As Integer ' A1
+Type T5FE6
+  M5FF2 As Integer ' 1
+  M6008 As Integer ' 1
+  M6014 As Integer ' 1
+  M6023 As Integer ' 1
+  M602F As Integer ' 1
+  M6039 As Integer ' 1
+  M6049 As Integer ' 1
+End Type
+
+Global gv1ACC As T5FE6 ' AA
+Global gv1ADC As T41C8 ' AA
+Global gv1AEC() As Integer ' B1
+Global gv1B1E() As Single ' B3
+Global gv1B50 As Integer ' A1
+Global gv1B52 As Integer ' A1
+Global gv1B54 As Integer ' A1
+Global gv1B56 As Integer ' A1
+Global gv1B58 As Integer ' A1
+Global gv1B5C(25) As Integer ' B1
+Global gv1B72(8) As Long ' B2
+Global gv1B88(30) As Integer ' B1
+Global gv1B9E(35) As Currency ' B5
+Global gv1BB6() As T424C ' BA
+Global gv1BE8 As Integer ' A1
+Global gv1BEA As Integer ' A1
+Global gv1BEC As Integer ' A1
+Global gv1BEE As Integer ' A1
+Global gv1BF0 As Integer ' A1
+Global gv1BF2 As Integer ' A1
+Global gv1BF4 ' A0
+Global gv1BF6 As Integer ' A1
+Global gv1BF8 As Integer ' A1
+Global gv1BFC As Form ' A9
+Global Const gc1C00 = "CHARSTAT.TXT"
+Global Const gc1C04 = "MDATA1.MDR"
+Global Const gc1C08 = "MDATA2.MDR"
+Global Const gc1C0C = "MDATA3.MDR"
+Global Const gc1C10 = "MDATA4.MDR"
+Global Const gc1C14 = "MDATA5.MDR"
+Global Const gc1C18 = "MDATA6.MDR"
+Global Const gc1C1C = "MDATA7.MDR"
+Global Const gc1C20 = "MDATA8.MDR"
+Global Const gc1C24 = "MDATA9.MDR"
+Global Const gc1C28 = "MDATA9B.MDR"
+Global Const gc1C2C = "GUILDLOG.TXT"
+Global Const gc1C30 = "MDATA10.MDR"
+Global Const gc1C34 = "MDATA11.MDR"
+Global Const gc1C38 = "MDATA12.MDR"
+Global Const gc1C3C = "MDATA13.MDR"
+Global Const gc1C40 = "MDATA14.MDR"
+Global Const gc1C44 = "MDATA15.MDR"
+Global Const gc1C48 = "MORDORSS.SCR"
+Global Const gc1C4C = "MG11.DLL"
+Global Const gc1C50 = "MORDOR.HLP"
+Global Const gc1C54 = "MERROR.TXT"
+Global Const gc1C5A = 260 ' &H104%
+Global Const gc1C5C = 160 ' &HA0%
+Global Const gc1C62 = 128 ' &H80%
+Global Const gc1C66 = 16 ' &H10%
+Global Const gc1C68 = 75 ' &H4B%
+Global Const gc1C6A = 125 ' &H7D%
+Global Const gc1C72 = 16 ' &H10%
+Global Const gc1C74 = "DATA\"
+Global Const gc1C78 = "MUSIC\"
+Global Const gc1C7C = "BACKUP\"
+Global Const gc1C80 = "SSAVER\"
+Global gv1C8E As String * 1 ' A8
+Global gv1C92 As String * 1 ' A8
+Global gv1C96 As String * 1 ' A8
+Global gv1C9A As String * 1 ' A8
+Global Const gc1C9C = ","
+Global Const gc1CA0 = ","
+Global Const gc1CA4 = ","
+Global Const gc1CA8 = ","
+Type T6536
+  M6541 As Integer ' 1
+  M654C As Integer ' 1
+End Type
+
+Global gv1CC6 As Integer ' A1
+Global gv1CCA() As T6536 ' BA
+Global gv1CFE As T6536 ' AA
+Global gv1D02 As Integer ' A1
+Global gv1D06 As Integer ' A1
+Global gv1D08 As Integer ' A1
+Global Const gc1D12 = 100 ' &H64%
+Global Const gc1D14 = 100 ' &H64%
+Global gv1D16 As Integer ' A1
+Global Const gc1D18 = 1 ' &H1%
+Global Const gc1D1A = 2 ' &H2%
+Global Const gc1D1C = 3 ' &H3%
+Global Const gc1D1E = 4 ' &H4%
+Global Const gc1D20 = 5 ' &H5%
+Global Const gc1D22 = 6 ' &H6%
+Global Const gc1D24 = 7 ' &H7%
+Global Const gc1D26 = 8 ' &H8%
+Global Const gc1D28 = 9 ' &H9%
+Global Const gc1D2A = 10 ' &HA%
+Global Const gc1D2C = 11 ' &HB%
+Global Const gc1D2E = 12 ' &HC%
+Global Const gc1D30 = 13 ' &HD%
+Global Const gc1D32 = 14 ' &HE%
+Global Const gc1D34 = 15 ' &HF%
+Global Const gc1D36 = 16 ' &H10%
+Global Const gc1D38 = 17 ' &H11%
+Global Const gc1D3A = 18 ' &H12%
+Global Const gc1D3C = 19 ' &H13%
+Global Const gc1D3E = 20 ' &H14%
+Global Const gc1D40 = 21 ' &H15%
+Global Const gc1D42 = 22 ' &H16%
+Global gv1D44 As Integer ' A1
+Global Const gc1D46 = 1 ' &H1%
+Global Const gc1D48 = 2 ' &H2%
+Global gv1D4A As Integer ' A1
+Global Const gc1D50 = 23 ' &H17%
+Global gv1D52 As Integer ' A1
+Global gv1D54 As Integer ' A1
+Global gv1D58 As Single ' A3
+Global gv1D5C As Single ' A3
+Global gv1D60 As Integer ' A1
+Global gv1D62 As Integer ' A1
+Global gv1D64 As Integer ' A1
+Global gv1D66 As Integer ' A1
+Global gv1D68 As Integer ' A1
+Global gv1D6A As Integer ' A1
+Global gv1D6C As Integer ' A1
+Global gv1D6E As Integer ' A1
+Global Const gc1D70 = .25
+Global Const gc1D78 = 100 ' &H64%
+Global Const gc1D7A = 1 ' &H1%
+Global Const gc1D7C =-1 ' &HFFFF%
+Global gv1D7E As Integer ' A1
+Type T68BA
+  M4E97 As Integer ' 1
+  M56C4 As Integer ' 1
+  M547A As Integer ' 1
+  M5766 As Integer ' 1
+  M68C8 As Currency ' 5
+End Type
+
+Global gv1DB0 As Integer ' A1
+Global Const gc1DB2 = 1 ' &H1%
+Global Const gc1DB4 = 2 ' &H2%
+Global Const gc1DBA = 1 ' &H1%
+Global gv1DBE As Integer ' A1
+Global Const gc1DC0 = 1 ' &H1%
+Global Const gc1DC2 = 2 ' &H2%
+Global Const gc1DC4 = 3 ' &H3%
+Global Const gc1DC6 = 4 ' &H4%
+Global Const gc1DC8 = 75 ' &H4B%
+Global Const gc1DCA = 25 ' &H19%
+Global Const gc1DD0 = 2 ' &H2%
+Global gv1DD2() As Integer ' B1
+Global gv1E04() As Integer ' B1
+Global gv1E38(3) As T4E8B ' BA
+Global gv1E50 As T4F0B ' AA
+Global gv1E60 As Integer ' A1
+Global gv1E66(4) As T68BA ' BA
+Global gv1E7C() As Integer ' B1
+Global gv1EAE As Integer ' A1
+Global gv1EB0 As Integer ' A1
+Global gv1EB2 As Integer ' A1
+Global gv1EB4 As Integer ' A1
+Global gv1EB6 As Integer ' A1
+Global gv1EB8 As Integer ' A1
+Global gv1EBC As T57BF ' AA
+Global gv1EDE As Integer ' A1
+Global gv1EE0 As Integer ' A1
+Global Const gc1EE2 = 1 ' &H1%
+Global Const gc1EE4 = 2 ' &H2%
+Global gv1EE6 As Integer ' A1
+Type T6B05
+  M6B0F As Integer ' 1
+  M6B19 As Integer ' 1
+  M6B24 As Integer ' 1
+  M6B30 As Integer ' 1
+  M6B40 As String * 1 ' 8
+  M6B4C As String * 1 ' 8
+  M6B5B As Long ' 2
+End Type
+
+Type T6B65
+  M6B7E As Long ' 2
+  M6B88 As Long ' 2
+  M6B93 As Long ' 2
+  M6B9F As Integer ' 1
+  M6BAB As Integer ' 1
+  M6BB9 As Long ' 2
+  M6BCA As Long ' 2
+  M6BD9 As Long ' 2
+  M6BEC As Long ' 2
+  M6BFF As Long ' 2
+  M6C0C As Long ' 2
+End Type
+
+Type T6C1E
+  M6C31 As T6B65 ' A
+  M6C45 As String * 1024 ' 8
+End Type
+
+Type T6C52
+  M425F As Integer ' 1
+  M4258 As Integer ' 1
+  M6C5E As Integer ' 1
+  M6C67 As Integer ' 1
+End Type
+
+Type T6C71
+  M4E78 As Integer ' 1
+  M4E7D As Integer ' 1
+End Type
+
+Global Const gc1FE6 = 8 ' &H8%
+Global Const gc1FE8 = 10 ' &HA%
+Global Const gc1FEC = 12 ' &HC%
+Global Const gc1FEE = 14 ' &HE%
+Global gv1FF0 As Integer ' A1
+Global gv1FF8 As Integer ' A1
+Global Const gc1FFA = 2 ' &H2%
+Global Const gc1FFC = 2056 ' &H808%
+Global gv1FFE ' A0
+Global Const gc2002 = 72 ' &H48%
+Global Const gc200A = 3 ' &H3%
+Global Const gc200C = 4 ' &H4%
+Global Const gc201E = 13 ' &HD%
+Global Const gc2020 = 14 ' &HE%
+Global Const gc2022 = 15 ' &HF%
+Global Const gc2024 = 16 ' &H10%
+Global Const gc2026 = 17 ' &H11%
+Global Const gc2028 = 18 ' &H12%
+Global Const gc202A = 19 ' &H13%
+Global Const gc202C = 20 ' &H14%
+Global Const gc202E = 21 ' &H15%
+Global Const gc2030 = 22 ' &H16%
+Global Const gc2032 = 23 ' &H17%
+Global Const gc2034 = 24 ' &H18%
+Global Const gc2036 = 25 ' &H19%
+Global Const gc203C = 28 ' &H1C%
+Global Const gc2040 = 30 ' &H1E%
+Global Const gc2042 = 31 ' &H1F%
+Global Const gc2044 = 32 ' &H20%
+Global Const gc2046 = 33 ' &H21%
+Global Const gc204A = 35 ' &H23%
+Global Const gc2058 = 42 ' &H2A%
+Global Const gc205A = 43 ' &H2B%
+Global Const gc205C = 44 ' &H2C%
+Global Const gc2070 = 54 ' &H36%
+Global Const gc2072 = 55 ' &H37%
+Global Const gc2076 = 57 ' &H39%
+Global Const gc2078 = 58 ' &H3A%
+Global Const gc207A = 59 ' &H3B%
+Global Const gc207C = 60 ' &H3C%
+Global Const gc2084 = 64 ' &H40%
+Global Const gc208C = 68 ' &H44%
+Global Const gc208E = 69 ' &H45%
+Global Const gc2094 = 8 ' &H8%
+Global gv2096 As Integer ' A1
+Global Const gc2098 = 1 ' &H1%
+Global Const gc209A = 2 ' &H2%
+Global Const gc209C = 3 ' &H3%
+Global Const gc209E = 4 ' &H4%
+Global Const gc20A0 = 5 ' &H5%
+Global Const gc20A2 = 6 ' &H6%
+Global Const gc20A4 = 7 ' &H7%
+Global Const gc20A6 =-2 ' &HFFFE%
+Type T71F8
+  M7208 As Long ' 2
+  M5467 As Integer ' 1
+  M4EE6 As Single ' 3
+End Type
+
+Global gv20C8 As Integer ' A1
+Global gv20CA() As String ' B7
+Global gv20FE() As T71F8 ' BA
+Global gv2130() As Integer ' B1
+Global gv2162 As Integer ' A1
+Global gv2164() As String ' B7
+Global gv2196 As Long ' A2
+Global gv219A As Long ' A2
+Global gv219E As Long ' A2
+Type T729E
+  M72AE As String * 1 ' 8
+  M72B7 As String * 1 ' 8
+  M72C2 As String * 1 ' 8
+  M72CC As String * 1 ' 8
+End Type
+
+Type T72D7
+  M72E5 As Integer ' 1
+  M72F3 As Integer ' 1
+  M7304(255) As T729E ' A
+End Type
+
+Global Const gc2206 = 104 ' &H68%
+Global Const gc220C = 1 ' &H1%
+Global Const gc220E = 4 ' &H4%
+Global Const gc2210 = 24 ' &H18%
+Global gv2214 As T72D7 ' AA
+Global gv261A As T72D7 ' AA
+Global gv2A1E As Integer ' A1
+Global gv2A20 As Integer ' A1
+Global gv2A22 As Integer ' A1
+Type T73E9
+  M73F5 As Currency ' 5
+  M73FE As String * 30 ' 8
+  M7406 As Long ' 2
+End Type
+
+Global gv2A4A As Integer ' A1
+Global Const gc2A4C = 1 ' &H1%
+Global Const gc2A4E = 2 ' &H2%
+Global Const gc2A50 = 3 ' &H3%
+Global Const gc2A52 = 4 ' &H4%
+Global Const gc2A54 = 5 ' &H5%
+Global Const gc2A56 = 6 ' &H6%
+Global Const gc2A58 = 7 ' &H7%
+Global Const gc2A5A = 8 ' &H8%
+Global Const gc2A5C = 9 ' &H9%
+Global Const gc2A5E = 10 ' &HA%
+Global Const gc2A60 = 11 ' &HB%
+Global gv2A64 As Integer ' A1
+Global gv2A66 As Integer ' A1
+Type T74B3
+  M4E78 As Integer ' 1
+  M4E7D As Integer ' 1
+End Type
+
+Type T74BF
+  M74CB As Integer ' 1
+  M74D6 As Long ' 2
+  M74E1 As Integer ' 1
+End Type
+
+Type T74EC
+  M74F6 As Integer ' 1
+  M7503 As T74B3 ' A
+  M7510 As Long ' 2
+End Type
+
+Global gv2B02 As Integer ' A1
+Global Const gc2B20 = 5 ' &H5%
+Global gv2B26 ' A0
+Global gv2BAC ' A0
+Global gv2BB0 As Integer ' A1
+Global gv2BB2 As Integer ' A1
+Global gv2BB4 As Integer ' A1
+Global gv2BB6 As Integer ' A1
+Global gv2BB8 As Integer ' A1
+Global gv2BBA As Integer ' A1
+Global gv2BBC As Integer ' A1
+Global gv2BBE As Integer ' A1
+Global gv2BC0 As Integer ' A1
+Global gv2BC2 As Integer ' A1
+Global gv2BC4 As Integer ' A1
+Global gv2BC6 As Integer ' A1
+Global gv2BC8 As Integer ' A1
+Global gv2BCA As Integer ' A1
+Global gv2BCC As Integer ' A1
+Global gv2BCE As Integer ' A1
+Global gv2BD0 As Integer ' A1
+Global gv2BD2 As Integer ' A1
+Global gv2BD4 As Integer ' A1
+Global gv2BD6 As Integer ' A1
+Global gv2BD8 As Integer ' A1
+Global gv2BDA As Integer ' A1
+Global gv2BDC As Integer ' A1
+Global gv2BDE ' A0
+Global gv2BE0 ' A0
+Global gv2BE2 ' A0
+Global gv2BE4 ' A0
+Global gv2BE6 ' A0
+Global gv2BE8 ' A0
+Global gv2BEA ' A0
+Global gv2BEC ' A0
+Global gv2BEE ' A0
+Global gv2BF0 ' A0
+Type T7DD6
+  M7DE7 As Integer ' 1
+  M7DF0 As Integer ' 1
+  M7DFF As Integer ' 1
+  M7E0B As Long ' 2
+  M7E18 As Integer ' 1
+  M7E26 As Long ' 2
+  M7E31 As Integer ' 1
+End Type
+
+Type T7E3B
+  M7DE7 As Integer ' 1
+  M7E4A As String * 1 ' 8
+  M7E5B As String * 1 ' 8
+  M7E6C As String * 12 ' 8
+  M7E76 As Long ' 2
+End Type
+
+Type T7EB7
+  M7DE7 As Integer ' 1
+  M7E26 As Long ' 2
+  M7EC4 As Integer ' 1
+  M7ED1 As Integer ' 1
+End Type
+
+Global Const gc2CDC = 5 ' &H5%
+Global Const gc2CDE = 2 ' &H2%
+Global Const gc2CE0 = 4 ' &H4%
+Global Const gc2CE2 = 7 ' &H7%
+Global Const gc2CE4 = 1 ' &H1%
+Global Const gc2CE6 = 32 ' &H20%
+Global Const gc2CE8 = 35 ' &H23%

@@ -1,0 +1,23 @@
+{
+  "revision": "1.4",
+  "checks": {
+    "designDesktop": {
+      "sections": 27,
+      "horizontalOverflow": false,
+      "version": true
+    },
+    "designNarrow": {
+      "horizontalOverflow": false
+    },
+    "galleryDesktop": {
+      "images": 34,
+      "broken": [],
+      "horizontalOverflow": false
+    },
+    "galleryNarrow": {
+      "horizontalOverflow": false
+    }
+  },
+  "pageErrors": [],
+  "runtimeGameTestsExecuted": false
+}

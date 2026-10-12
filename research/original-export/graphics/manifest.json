@@ -1,0 +1,888 @@
+[
+  {
+    "name": "MG11_MAZE_000000",
+    "bmp": "graphics/bitmaps/MG11_MAZE_000000.bmp",
+    "png": "graphics/png/MG11_MAZE_000000.png",
+    "width": 1250,
+    "height": 200,
+    "sha256": "46dda186f6c083dd7917b62e4dc12cfd1070e2077022522e05dbc08cd0c236c6",
+    "origins": [
+      {
+        "source": "ORIGINAL_DATA/MG11.DLL",
+        "offset": 3072,
+        "bytes": 251478,
+        "resource": "MORDOR/MAZE",
+        "sha256": "46dda186f6c083dd7917b62e4dc12cfd1070e2077022522e05dbc08cd0c236c6"
+      }
+    ]
+  },
+  {
+    "name": "MG11_MONS_000000",
+    "bmp": "graphics/bitmaps/MG11_MONS_000000.bmp",
+    "png": "graphics/png/MG11_MONS_000000.png",
+    "width": 600,
+    "height": 540,
+    "sha256": "cc1292c1f149d841b61dfb4cb5143ffb62c4b19f7f0ffa3eef97c508dc31ce8c",
+    "origins": [
+      {
+        "source": "ORIGINAL_DATA/MG11.DLL",
+        "offset": 254560,
+        "bytes": 324660,
+        "resource": "MORDOR/MONS",
+        "sha256": "cc1292c1f149d841b61dfb4cb5143ffb62c4b19f7f0ffa3eef97c508dc31ce8c"
+      }
+    ]
+  },
+  {
+    "name": "MG11_MISC_000000",
+    "bmp": "graphics/bitmaps/MG11_MISC_000000.bmp",
+    "png": "graphics/png/MG11_MISC_000000.png",
+    "width": 270,
+    "height": 45,
+    "sha256": "c8070b54097ef435143d0e3aa7153603034897d4f56cf5bb768fddea37c6c7bc",
+    "origins": [
+      {
+        "source": "ORIGINAL_DATA/MG11.DLL",
+        "offset": 579232,
+        "bytes": 13318,
+        "resource": "MORDOR/MISC",
+        "sha256": "c8070b54097ef435143d0e3aa7153603034897d4f56cf5bb768fddea37c6c7bc"
+      }
+    ]
+  },
+  {
+    "name": "MG11_DOOR_000000",
+    "bmp": "graphics/bitmaps/MG11_DOOR_000000.bmp",
+    "png": "graphics/png/MG11_DOOR_000000.png",
+    "width": 200,
+    "height": 79,
+    "sha256": "53d2c5204a4907c137fd68761f4d11e5b096d66c301101dfbed5c78da0eb2192",
+    "origins": [
+      {
+        "source": "ORIGINAL_DATA/MG11.DLL",
+        "offset": 592560,
+        "bytes": 16878,
+        "resource": "MORDOR/DOOR",
+        "sha256": "53d2c5204a4907c137fd68761f4d11e5b096d66c301101dfbed5c78da0eb2192"
+      }
+    ]
+  },
+  {
+    "name": "MG11_WATR_000000",
+    "bmp": "graphics/bitmaps/MG11_WATR_000000.bmp",
+    "png": "graphics/png/MG11_WATR_000000.png",
+    "width": 50,
+    "height": 20,
+    "sha256": "3fffc8abb137dc5b87f4a7b6b56dc9719bbf9af6a7635481eda7c734d6c2c3e1",
+    "origins": [
+      {
+        "source": "ORIGINAL_DATA/MG11.DLL",
+        "offset": 609440,
+        "bytes": 2118,
+        "resource": "MORDOR/WATR",
+        "sha256": "3fffc8abb137dc5b87f4a7b6b56dc9719bbf9af6a7635481eda7c734d6c2c3e1"
+      }
+    ]
+  },
+  {
+    "name": "MG11_QSND_000000",
+    "bmp": "graphics/bitmaps/MG11_QSND_000000.bmp",
+    "png": "graphics/png/MG11_QSND_000000.png",
+    "width": 50,
+    "height": 18,
+    "sha256": "48659fb994253f7173c1322cccdfb2cce2eef5acdba9983c01fdf0aa908e2caf",
+    "origins": [
+      {
+        "source": "ORIGINAL_DATA/MG11.DLL",
+        "offset": 611568,
+        "bytes": 2014,
+        "resource": "MORDOR/QSND",
+        "sha256": "48659fb994253f7173c1322cccdfb2cce2eef5acdba9983c01fdf0aa908e2caf"
+      }
+    ]
+  },
+  {
+    "name": "MG11_FOG_000000",
+    "bmp": "graphics/bitmaps/MG11_FOG_000000.bmp",
+    "png": "graphics/png/MG11_FOG_000000.png",
+    "width": 50,
+    "height": 50,
+    "sha256": "d0ee4dddf765cb7017c295c6a905636cb204a7fc78606809a888e1a4ae825b34",
+    "origins": [
+      {
+        "source": "ORIGINAL_DATA/MG11.DLL",
+        "offset": 613584,
+        "bytes": 3678,
+        "resource": "MORDOR/FOG",
+        "sha256": "d0ee4dddf765cb7017c295c6a905636cb204a7fc78606809a888e1a4ae825b34"
+      }
+    ]
+  },
+  {
+    "name": "MG11_BLNK_000000",
+    "bmp": "graphics/bitmaps/MG11_BLNK_000000.bmp",
+    "png": "graphics/png/MG11_BLNK_000000.png",
+    "width": 100,
+    "height": 100,
+    "sha256": "554846b35a5d3a3d12d619feb69263870892b8312a5c5cb42557e298a51b1d4e",
+    "origins": [
+      {
+        "source": "ORIGINAL_DATA/MG11.DLL",
+        "offset": 617264,
+        "bytes": 11078,
+        "resource": "MORDOR/BLNK",
+        "sha256": "554846b35a5d3a3d12d619feb69263870892b8312a5c5cb42557e298a51b1d4e"
+      }
+    ]
+  },
+  {
+    "name": "MG11_PICS_000000",
+    "bmp": "graphics/bitmaps/MG11_PICS_000000.bmp",
+    "png": "graphics/png/MG11_PICS_000000.png",
+    "width": 405,
+    "height": 15,
+    "sha256": "84a24faee5823fbf652b9b1bc88a08441dc4bdbedb154eb391cec8ca3c2659d3",
+    "origins": [
+      {
+        "source": "ORIGINAL_DATA/MG11.DLL",
+        "offset": 628352,
+        "bytes": 7198,
+        "resource": "MORDOR/PICS",
+        "sha256": "84a24faee5823fbf652b9b1bc88a08441dc4bdbedb154eb391cec8ca3c2659d3"
+      }
+    ]
+  },
+  {
+    "name": "MG11_ASMO_000000",
+    "bmp": "graphics/bitmaps/MG11_ASMO_000000.bmp",
+    "png": "graphics/png/MG11_ASMO_000000.png",
+    "width": 100,
+    "height": 100,
+    "sha256": "c178c66a62296d927693a7bcaea82bc0c6566a0c9f89d667196c1ac013e70c87",
+    "origins": [
+      {
+        "source": "ORIGINAL_DATA/MG11.DLL",
+        "offset": 635552,
+        "bytes": 11078,
+        "resource": "MORDOR/ASMO",
+        "sha256": "c178c66a62296d927693a7bcaea82bc0c6566a0c9f89d667196c1ac013e70c87"
+      }
+    ]
+  },
+  {
+    "name": "MORDOR_4_000292",
+    "bmp": "graphics/bitmaps/MORDOR_4_000292.bmp",
+    "png": "graphics/png/MORDOR_4_000292.png",
+    "width": 7,
+    "height": 5,
+    "sha256": "9b9719bad3272bc783f7d0bdd9a8ad7893ba4bc3fd7ddff36b549dd4111d0064",
+    "origins": [
+      {
+        "source": "Mordor/MORDOR.EXE",
+        "offset": 658322,
+        "bytes": 138,
+        "resource": "10/4",
+        "sha256": "9b9719bad3272bc783f7d0bdd9a8ad7893ba4bc3fd7ddff36b549dd4111d0064"
+      },
+      {
+        "source": "Mordor/MORDOR.EXE",
+        "offset": 658750,
+        "bytes": 138,
+        "resource": "10/4",
+        "sha256": "9b9719bad3272bc783f7d0bdd9a8ad7893ba4bc3fd7ddff36b549dd4111d0064"
+      },
+      {
+        "source": "Mordor/MORDOR.EXE",
+        "offset": 659178,
+        "bytes": 138,
+        "resource": "10/4",
+        "sha256": "9b9719bad3272bc783f7d0bdd9a8ad7893ba4bc3fd7ddff36b549dd4111d0064"
+      },
+      {
+        "source": "Mordor/MORDOR.EXE",
+        "offset": 659606,
+        "bytes": 138,
+        "resource": "10/4",
+        "sha256": "9b9719bad3272bc783f7d0bdd9a8ad7893ba4bc3fd7ddff36b549dd4111d0064"
+      },
+      {
+        "source": "Mordor/MORDOR.EXE",
+        "offset": 660034,
+        "bytes": 138,
+        "resource": "10/4",
+        "sha256": "9b9719bad3272bc783f7d0bdd9a8ad7893ba4bc3fd7ddff36b549dd4111d0064"
+      },
+      {
+        "source": "Mordor/MORDOR.EXE",
+        "offset": 660462,
+        "bytes": 138,
+        "resource": "10/4",
+        "sha256": "9b9719bad3272bc783f7d0bdd9a8ad7893ba4bc3fd7ddff36b549dd4111d0064"
+      },
+      {
+        "source": "POOP/CHARCREA.FRM",
+        "offset": 577,
+        "bytes": 138,
+        "resource": "VB3 form embedded BMP",
+        "sha256": "9b9719bad3272bc783f7d0bdd9a8ad7893ba4bc3fd7ddff36b549dd4111d0064"
+      },
+      {
+        "source": "POOP/CHARCREA.FRM",
+        "offset": 976,
+        "bytes": 138,
+        "resource": "VB3 form embedded BMP",
+        "sha256": "9b9719bad3272bc783f7d0bdd9a8ad7893ba4bc3fd7ddff36b549dd4111d0064"
+      },
+      {
+        "source": "POOP/CHARCREA.FRM",
+        "offset": 1375,
+        "bytes": 138,
+        "resource": "VB3 form embedded BMP",
+        "sha256": "9b9719bad3272bc783f7d0bdd9a8ad7893ba4bc3fd7ddff36b549dd4111d0064"
+      },
+      {
+        "source": "POOP/CHARCREA.FRM",
+        "offset": 1774,
+        "bytes": 138,
+        "resource": "VB3 form embedded BMP",
+        "sha256": "9b9719bad3272bc783f7d0bdd9a8ad7893ba4bc3fd7ddff36b549dd4111d0064"
+      },
+      {
+        "source": "POOP/CHARCREA.FRM",
+        "offset": 2173,
+        "bytes": 138,
+        "resource": "VB3 form embedded BMP",
+        "sha256": "9b9719bad3272bc783f7d0bdd9a8ad7893ba4bc3fd7ddff36b549dd4111d0064"
+      },
+      {
+        "source": "POOP/CHARCREA.FRM",
+        "offset": 2572,
+        "bytes": 138,
+        "resource": "VB3 form embedded BMP",
+        "sha256": "9b9719bad3272bc783f7d0bdd9a8ad7893ba4bc3fd7ddff36b549dd4111d0064"
+      }
+    ]
+  },
+  {
+    "name": "MORDOR_4_000368",
+    "bmp": "graphics/bitmaps/MORDOR_4_000368.bmp",
+    "png": "graphics/png/MORDOR_4_000368.png",
+    "width": 7,
+    "height": 5,
+    "sha256": "1f9e4832be75f73064cb9bf243b72af07ff70221f3f5b2b760378a9a7f103cee",
+    "origins": [
+      {
+        "source": "Mordor/MORDOR.EXE",
+        "offset": 658536,
+        "bytes": 138,
+        "resource": "10/4",
+        "sha256": "1f9e4832be75f73064cb9bf243b72af07ff70221f3f5b2b760378a9a7f103cee"
+      },
+      {
+        "source": "Mordor/MORDOR.EXE",
+        "offset": 658964,
+        "bytes": 138,
+        "resource": "10/4",
+        "sha256": "1f9e4832be75f73064cb9bf243b72af07ff70221f3f5b2b760378a9a7f103cee"
+      },
+      {
+        "source": "Mordor/MORDOR.EXE",
+        "offset": 659392,
+        "bytes": 138,
+        "resource": "10/4",
+        "sha256": "1f9e4832be75f73064cb9bf243b72af07ff70221f3f5b2b760378a9a7f103cee"
+      },
+      {
+        "source": "Mordor/MORDOR.EXE",
+        "offset": 659820,
+        "bytes": 138,
+        "resource": "10/4",
+        "sha256": "1f9e4832be75f73064cb9bf243b72af07ff70221f3f5b2b760378a9a7f103cee"
+      },
+      {
+        "source": "Mordor/MORDOR.EXE",
+        "offset": 660248,
+        "bytes": 138,
+        "resource": "10/4",
+        "sha256": "1f9e4832be75f73064cb9bf243b72af07ff70221f3f5b2b760378a9a7f103cee"
+      },
+      {
+        "source": "Mordor/MORDOR.EXE",
+        "offset": 660676,
+        "bytes": 138,
+        "resource": "10/4",
+        "sha256": "1f9e4832be75f73064cb9bf243b72af07ff70221f3f5b2b760378a9a7f103cee"
+      },
+      {
+        "source": "POOP/CHARCREA.FRM",
+        "offset": 779,
+        "bytes": 138,
+        "resource": "VB3 form embedded BMP",
+        "sha256": "1f9e4832be75f73064cb9bf243b72af07ff70221f3f5b2b760378a9a7f103cee"
+      },
+      {
+        "source": "POOP/CHARCREA.FRM",
+        "offset": 1178,
+        "bytes": 138,
+        "resource": "VB3 form embedded BMP",
+        "sha256": "1f9e4832be75f73064cb9bf243b72af07ff70221f3f5b2b760378a9a7f103cee"
+      },
+      {
+        "source": "POOP/CHARCREA.FRM",
+        "offset": 1577,
+        "bytes": 138,
+        "resource": "VB3 form embedded BMP",
+        "sha256": "1f9e4832be75f73064cb9bf243b72af07ff70221f3f5b2b760378a9a7f103cee"
+      },
+      {
+        "source": "POOP/CHARCREA.FRM",
+        "offset": 1976,
+        "bytes": 138,
+        "resource": "VB3 form embedded BMP",
+        "sha256": "1f9e4832be75f73064cb9bf243b72af07ff70221f3f5b2b760378a9a7f103cee"
+      },
+      {
+        "source": "POOP/CHARCREA.FRM",
+        "offset": 2375,
+        "bytes": 138,
+        "resource": "VB3 form embedded BMP",
+        "sha256": "1f9e4832be75f73064cb9bf243b72af07ff70221f3f5b2b760378a9a7f103cee"
+      },
+      {
+        "source": "POOP/CHARCREA.FRM",
+        "offset": 2774,
+        "bytes": 138,
+        "resource": "VB3 form embedded BMP",
+        "sha256": "1f9e4832be75f73064cb9bf243b72af07ff70221f3f5b2b760378a9a7f103cee"
+      }
+    ]
+  },
+  {
+    "name": "MORDOR_6_0008a6",
+    "bmp": "graphics/bitmaps/MORDOR_6_0008a6.bmp",
+    "png": "graphics/png/MORDOR_6_0008a6.png",
+    "width": 100,
+    "height": 100,
+    "sha256": "ba2840f4a7babc21717dace8f02e1a655f4e8361e0a3bb3ab285ea91158bdabb",
+    "origins": [
+      {
+        "source": "Mordor/MORDOR.EXE",
+        "offset": 664998,
+        "bytes": 11078,
+        "resource": "10/6",
+        "sha256": "ba2840f4a7babc21717dace8f02e1a655f4e8361e0a3bb3ab285ea91158bdabb"
+      },
+      {
+        "source": "POOP/FRMMAIN.FRM",
+        "offset": 2187,
+        "bytes": 11078,
+        "resource": "VB3 form embedded BMP",
+        "sha256": "ba2840f4a7babc21717dace8f02e1a655f4e8361e0a3bb3ab285ea91158bdabb"
+      }
+    ]
+  },
+  {
+    "name": "MORDOR_6_0038e1",
+    "bmp": "graphics/bitmaps/MORDOR_6_0038e1.bmp",
+    "png": "graphics/png/MORDOR_6_0038e1.png",
+    "width": 20,
+    "height": 20,
+    "sha256": "bd49ed0b1fced1865f9ea47d50f49af55e24c7df50cb9b55259035f3f8ad526c",
+    "origins": [
+      {
+        "source": "Mordor/MORDOR.EXE",
+        "offset": 677345,
+        "bytes": 358,
+        "resource": "10/6",
+        "sha256": "bd49ed0b1fced1865f9ea47d50f49af55e24c7df50cb9b55259035f3f8ad526c"
+      },
+      {
+        "source": "POOP/FRMMAIN.FRM",
+        "offset": 14545,
+        "bytes": 358,
+        "resource": "VB3 form embedded BMP",
+        "sha256": "bd49ed0b1fced1865f9ea47d50f49af55e24c7df50cb9b55259035f3f8ad526c"
+      }
+    ]
+  },
+  {
+    "name": "MORDOR_6_003a96",
+    "bmp": "graphics/bitmaps/MORDOR_6_003a96.bmp",
+    "png": "graphics/png/MORDOR_6_003a96.png",
+    "width": 20,
+    "height": 20,
+    "sha256": "73aaaef7506ca3f15fb9c8af4e096629650b7a3d294d53987a262ca7a5385519",
+    "origins": [
+      {
+        "source": "Mordor/MORDOR.EXE",
+        "offset": 677782,
+        "bytes": 358,
+        "resource": "10/6",
+        "sha256": "73aaaef7506ca3f15fb9c8af4e096629650b7a3d294d53987a262ca7a5385519"
+      },
+      {
+        "source": "POOP/FRMMAIN.FRM",
+        "offset": 14966,
+        "bytes": 358,
+        "resource": "VB3 form embedded BMP",
+        "sha256": "73aaaef7506ca3f15fb9c8af4e096629650b7a3d294d53987a262ca7a5385519"
+      }
+    ]
+  },
+  {
+    "name": "MORDOR_6_003c48",
+    "bmp": "graphics/bitmaps/MORDOR_6_003c48.bmp",
+    "png": "graphics/png/MORDOR_6_003c48.png",
+    "width": 20,
+    "height": 20,
+    "sha256": "2861379a5a4aadc55ad580095b252d5a69e3c2b020a91d7141debd4d31fd3c79",
+    "origins": [
+      {
+        "source": "Mordor/MORDOR.EXE",
+        "offset": 678216,
+        "bytes": 358,
+        "resource": "10/6",
+        "sha256": "2861379a5a4aadc55ad580095b252d5a69e3c2b020a91d7141debd4d31fd3c79"
+      },
+      {
+        "source": "POOP/FRMMAIN.FRM",
+        "offset": 15384,
+        "bytes": 358,
+        "resource": "VB3 form embedded BMP",
+        "sha256": "2861379a5a4aadc55ad580095b252d5a69e3c2b020a91d7141debd4d31fd3c79"
+      }
+    ]
+  },
+  {
+    "name": "MORDOR_6_003e8f",
+    "bmp": "graphics/bitmaps/MORDOR_6_003e8f.bmp",
+    "png": "graphics/png/MORDOR_6_003e8f.png",
+    "width": 20,
+    "height": 20,
+    "sha256": "0419212bd187baf947ebb5166607466a87aba02073fc508b5a09e2334cde9270",
+    "origins": [
+      {
+        "source": "Mordor/MORDOR.EXE",
+        "offset": 678799,
+        "bytes": 358,
+        "resource": "10/6",
+        "sha256": "0419212bd187baf947ebb5166607466a87aba02073fc508b5a09e2334cde9270"
+      },
+      {
+        "source": "POOP/FRMMAIN.FRM",
+        "offset": 15883,
+        "bytes": 358,
+        "resource": "VB3 form embedded BMP",
+        "sha256": "0419212bd187baf947ebb5166607466a87aba02073fc508b5a09e2334cde9270"
+      }
+    ]
+  },
+  {
+    "name": "MORDOR_6_004041",
+    "bmp": "graphics/bitmaps/MORDOR_6_004041.bmp",
+    "png": "graphics/png/MORDOR_6_004041.png",
+    "width": 20,
+    "height": 20,
+    "sha256": "0a62aea97ab01c4a2c3680896ae7c55555e18f5c342053b3b5fef3cb708c7ba1",
+    "origins": [
+      {
+        "source": "Mordor/MORDOR.EXE",
+        "offset": 679233,
+        "bytes": 358,
+        "resource": "10/6",
+        "sha256": "0a62aea97ab01c4a2c3680896ae7c55555e18f5c342053b3b5fef3cb708c7ba1"
+      },
+      {
+        "source": "POOP/FRMMAIN.FRM",
+        "offset": 16301,
+        "bytes": 358,
+        "resource": "VB3 form embedded BMP",
+        "sha256": "0a62aea97ab01c4a2c3680896ae7c55555e18f5c342053b3b5fef3cb708c7ba1"
+      }
+    ]
+  },
+  {
+    "name": "MORDOR_6_0041f3",
+    "bmp": "graphics/bitmaps/MORDOR_6_0041f3.bmp",
+    "png": "graphics/png/MORDOR_6_0041f3.png",
+    "width": 20,
+    "height": 20,
+    "sha256": "f4f6768613a7f2eefbdb0ff1a868203a150da91418a2eb8207809471e8320f5e",
+    "origins": [
+      {
+        "source": "Mordor/MORDOR.EXE",
+        "offset": 679667,
+        "bytes": 358,
+        "resource": "10/6",
+        "sha256": "f4f6768613a7f2eefbdb0ff1a868203a150da91418a2eb8207809471e8320f5e"
+      },
+      {
+        "source": "POOP/FRMMAIN.FRM",
+        "offset": 16719,
+        "bytes": 358,
+        "resource": "VB3 form embedded BMP",
+        "sha256": "f4f6768613a7f2eefbdb0ff1a868203a150da91418a2eb8207809471e8320f5e"
+      }
+    ]
+  },
+  {
+    "name": "MORDOR_6_0043a5",
+    "bmp": "graphics/bitmaps/MORDOR_6_0043a5.bmp",
+    "png": "graphics/png/MORDOR_6_0043a5.png",
+    "width": 20,
+    "height": 20,
+    "sha256": "cc14708a26d480affc88ff2e1e2df8ada8e7cdf75e8777275fd37b52946e9581",
+    "origins": [
+      {
+        "source": "Mordor/MORDOR.EXE",
+        "offset": 680101,
+        "bytes": 358,
+        "resource": "10/6",
+        "sha256": "cc14708a26d480affc88ff2e1e2df8ada8e7cdf75e8777275fd37b52946e9581"
+      },
+      {
+        "source": "POOP/FRMMAIN.FRM",
+        "offset": 17137,
+        "bytes": 358,
+        "resource": "VB3 form embedded BMP",
+        "sha256": "cc14708a26d480affc88ff2e1e2df8ada8e7cdf75e8777275fd37b52946e9581"
+      }
+    ]
+  },
+  {
+    "name": "MORDOR_6_004557",
+    "bmp": "graphics/bitmaps/MORDOR_6_004557.bmp",
+    "png": "graphics/png/MORDOR_6_004557.png",
+    "width": 20,
+    "height": 20,
+    "sha256": "b3fd07c3a18f58b11461bbdcad0269b732e428f56481a5d88a580d9c20eb6501",
+    "origins": [
+      {
+        "source": "Mordor/MORDOR.EXE",
+        "offset": 680535,
+        "bytes": 358,
+        "resource": "10/6",
+        "sha256": "b3fd07c3a18f58b11461bbdcad0269b732e428f56481a5d88a580d9c20eb6501"
+      },
+      {
+        "source": "POOP/FRMMAIN.FRM",
+        "offset": 17555,
+        "bytes": 358,
+        "resource": "VB3 form embedded BMP",
+        "sha256": "b3fd07c3a18f58b11461bbdcad0269b732e428f56481a5d88a580d9c20eb6501"
+      }
+    ]
+  },
+  {
+    "name": "MORDOR_6_004709",
+    "bmp": "graphics/bitmaps/MORDOR_6_004709.bmp",
+    "png": "graphics/png/MORDOR_6_004709.png",
+    "width": 20,
+    "height": 20,
+    "sha256": "96d08f00e46933ad94b489bae61e7167c63b7beb8842761c89b08379d7e1be86",
+    "origins": [
+      {
+        "source": "Mordor/MORDOR.EXE",
+        "offset": 680969,
+        "bytes": 358,
+        "resource": "10/6",
+        "sha256": "96d08f00e46933ad94b489bae61e7167c63b7beb8842761c89b08379d7e1be86"
+      },
+      {
+        "source": "POOP/FRMMAIN.FRM",
+        "offset": 17973,
+        "bytes": 358,
+        "resource": "VB3 form embedded BMP",
+        "sha256": "96d08f00e46933ad94b489bae61e7167c63b7beb8842761c89b08379d7e1be86"
+      }
+    ]
+  },
+  {
+    "name": "MORDOR_14_0003a6",
+    "bmp": "graphics/bitmaps/MORDOR_14_0003a6.bmp",
+    "png": "graphics/png/MORDOR_14_0003a6.png",
+    "width": 120,
+    "height": 42,
+    "sha256": "8b6ad60268a1502305e182baf0eb821f20d4f9048c7f1008d2c99b0f3d6f60ad",
+    "origins": [
+      {
+        "source": "Mordor/MORDOR.EXE",
+        "offset": 700326,
+        "bytes": 6086,
+        "resource": "10/14",
+        "sha256": "8b6ad60268a1502305e182baf0eb821f20d4f9048c7f1008d2c99b0f3d6f60ad"
+      },
+      {
+        "source": "POOP/FRMCTYM.FRM",
+        "offset": 908,
+        "bytes": 6086,
+        "resource": "VB3 form embedded BMP",
+        "sha256": "8b6ad60268a1502305e182baf0eb821f20d4f9048c7f1008d2c99b0f3d6f60ad"
+      }
+    ]
+  },
+  {
+    "name": "MORDOR_14_001b9c",
+    "bmp": "graphics/bitmaps/MORDOR_14_001b9c.bmp",
+    "png": "graphics/png/MORDOR_14_001b9c.png",
+    "width": 120,
+    "height": 87,
+    "sha256": "4b36952ba02e0cd4cb3615627c22ecaff841c5b1a7d3d42fb6694a87dd85d4f9",
+    "origins": [
+      {
+        "source": "Mordor/MORDOR.EXE",
+        "offset": 706460,
+        "bytes": 11486,
+        "resource": "10/14",
+        "sha256": "4b36952ba02e0cd4cb3615627c22ecaff841c5b1a7d3d42fb6694a87dd85d4f9"
+      },
+      {
+        "source": "POOP/FRMCTYM.FRM",
+        "offset": 7037,
+        "bytes": 11486,
+        "resource": "VB3 form embedded BMP",
+        "sha256": "4b36952ba02e0cd4cb3615627c22ecaff841c5b1a7d3d42fb6694a87dd85d4f9"
+      }
+    ]
+  },
+  {
+    "name": "MORDOR_14_0048aa",
+    "bmp": "graphics/bitmaps/MORDOR_14_0048aa.bmp",
+    "png": "graphics/png/MORDOR_14_0048aa.png",
+    "width": 120,
+    "height": 87,
+    "sha256": "e3aacd6b575e355b3dcb175c27917d3ae5075b557d1cfacb38f3cb6f30f368e5",
+    "origins": [
+      {
+        "source": "Mordor/MORDOR.EXE",
+        "offset": 717994,
+        "bytes": 11486,
+        "resource": "10/14",
+        "sha256": "e3aacd6b575e355b3dcb175c27917d3ae5075b557d1cfacb38f3cb6f30f368e5"
+      },
+      {
+        "source": "POOP/FRMCTYM.FRM",
+        "offset": 18566,
+        "bytes": 11486,
+        "resource": "VB3 form embedded BMP",
+        "sha256": "e3aacd6b575e355b3dcb175c27917d3ae5075b557d1cfacb38f3cb6f30f368e5"
+      }
+    ]
+  },
+  {
+    "name": "MORDOR_14_007689",
+    "bmp": "graphics/bitmaps/MORDOR_14_007689.bmp",
+    "png": "graphics/png/MORDOR_14_007689.png",
+    "width": 120,
+    "height": 87,
+    "sha256": "c0851416547dc7dace62dce9370549f7b281c1a447238a8943ff3d319bee2aec",
+    "origins": [
+      {
+        "source": "Mordor/MORDOR.EXE",
+        "offset": 729737,
+        "bytes": 11486,
+        "resource": "10/14",
+        "sha256": "c0851416547dc7dace62dce9370549f7b281c1a447238a8943ff3d319bee2aec"
+      },
+      {
+        "source": "POOP/FRMCTYM.FRM",
+        "offset": 30265,
+        "bytes": 11486,
+        "resource": "VB3 form embedded BMP",
+        "sha256": "c0851416547dc7dace62dce9370549f7b281c1a447238a8943ff3d319bee2aec"
+      }
+    ]
+  },
+  {
+    "name": "MORDOR_14_00a397",
+    "bmp": "graphics/bitmaps/MORDOR_14_00a397.bmp",
+    "png": "graphics/png/MORDOR_14_00a397.png",
+    "width": 120,
+    "height": 87,
+    "sha256": "9c752cedab8be18a8a9874c76499c97efe1b10e83b1919338be76f4571d37fdb",
+    "origins": [
+      {
+        "source": "Mordor/MORDOR.EXE",
+        "offset": 741271,
+        "bytes": 11486,
+        "resource": "10/14",
+        "sha256": "9c752cedab8be18a8a9874c76499c97efe1b10e83b1919338be76f4571d37fdb"
+      },
+      {
+        "source": "POOP/FRMCTYM.FRM",
+        "offset": 41794,
+        "bytes": 11486,
+        "resource": "VB3 form embedded BMP",
+        "sha256": "9c752cedab8be18a8a9874c76499c97efe1b10e83b1919338be76f4571d37fdb"
+      }
+    ]
+  },
+  {
+    "name": "MORDOR_14_00d0a5",
+    "bmp": "graphics/bitmaps/MORDOR_14_00d0a5.bmp",
+    "png": "graphics/png/MORDOR_14_00d0a5.png",
+    "width": 120,
+    "height": 87,
+    "sha256": "17d27a379321cbf6432409c5c1b0b26746051c4610d66d690a7bcc249aa82574",
+    "origins": [
+      {
+        "source": "Mordor/MORDOR.EXE",
+        "offset": 752805,
+        "bytes": 11486,
+        "resource": "10/14",
+        "sha256": "17d27a379321cbf6432409c5c1b0b26746051c4610d66d690a7bcc249aa82574"
+      },
+      {
+        "source": "POOP/FRMCTYM.FRM",
+        "offset": 53323,
+        "bytes": 11486,
+        "resource": "VB3 form embedded BMP",
+        "sha256": "17d27a379321cbf6432409c5c1b0b26746051c4610d66d690a7bcc249aa82574"
+      }
+    ]
+  },
+  {
+    "name": "MORDOR_14_00fdb3",
+    "bmp": "graphics/bitmaps/MORDOR_14_00fdb3.bmp",
+    "png": "graphics/png/MORDOR_14_00fdb3.png",
+    "width": 120,
+    "height": 87,
+    "sha256": "a04a5365104057a0445d9808563cdd11c3133aa9c0d80f3572f79d4cc818d7c8",
+    "origins": [
+      {
+        "source": "Mordor/MORDOR.EXE",
+        "offset": 764339,
+        "bytes": 11486,
+        "resource": "10/14",
+        "sha256": "a04a5365104057a0445d9808563cdd11c3133aa9c0d80f3572f79d4cc818d7c8"
+      },
+      {
+        "source": "POOP/FRMCTYM.FRM",
+        "offset": 64852,
+        "bytes": 11486,
+        "resource": "VB3 form embedded BMP",
+        "sha256": "a04a5365104057a0445d9808563cdd11c3133aa9c0d80f3572f79d4cc818d7c8"
+      }
+    ]
+  },
+  {
+    "name": "MORDOR_14_012c27",
+    "bmp": "graphics/bitmaps/MORDOR_14_012c27.bmp",
+    "png": "graphics/png/MORDOR_14_012c27.png",
+    "width": 120,
+    "height": 87,
+    "sha256": "d4099fd9be368e8c8d61df21867e61203e581c23e77dea117d2ceb2ccf598d33",
+    "origins": [
+      {
+        "source": "Mordor/MORDOR.EXE",
+        "offset": 776231,
+        "bytes": 11486,
+        "resource": "10/14",
+        "sha256": "d4099fd9be368e8c8d61df21867e61203e581c23e77dea117d2ceb2ccf598d33"
+      },
+      {
+        "source": "POOP/FRMCTYM.FRM",
+        "offset": 76674,
+        "bytes": 11486,
+        "resource": "VB3 form embedded BMP",
+        "sha256": "d4099fd9be368e8c8d61df21867e61203e581c23e77dea117d2ceb2ccf598d33"
+      }
+    ]
+  },
+  {
+    "name": "MORDOR_24_0000b2",
+    "bmp": "graphics/bitmaps/MORDOR_24_0000b2.bmp",
+    "png": "graphics/png/MORDOR_24_0000b2.png",
+    "width": 15,
+    "height": 14,
+    "sha256": "10753699f5b6052cfc23b8cc165ad607c168accf480cf6a08ecdeb536aa25b70",
+    "origins": [
+      {
+        "source": "Mordor/MORDOR.EXE",
+        "offset": 803250,
+        "bytes": 1302,
+        "resource": "10/24",
+        "sha256": "10753699f5b6052cfc23b8cc165ad607c168accf480cf6a08ecdeb536aa25b70"
+      },
+      {
+        "source": "POOP/FRMWELCO.FRM",
+        "offset": 160,
+        "bytes": 1302,
+        "resource": "VB3 form embedded BMP",
+        "sha256": "10753699f5b6052cfc23b8cc165ad607c168accf480cf6a08ecdeb536aa25b70"
+      }
+    ]
+  },
+  {
+    "name": "MORDOR_24_00070d",
+    "bmp": "graphics/bitmaps/MORDOR_24_00070d.bmp",
+    "png": "graphics/png/MORDOR_24_00070d.png",
+    "width": 300,
+    "height": 300,
+    "sha256": "a387de5b70bc1a7161327806ec22f986c18f4172180fcfb91e5cbd104dca7009",
+    "origins": [
+      {
+        "source": "Mordor/MORDOR.EXE",
+        "offset": 804877,
+        "bytes": 91046,
+        "resource": "10/24",
+        "sha256": "a387de5b70bc1a7161327806ec22f986c18f4172180fcfb91e5cbd104dca7009"
+      },
+      {
+        "source": "POOP/FRMWELCO.FRM",
+        "offset": 1799,
+        "bytes": 91046,
+        "resource": "VB3 form embedded BMP",
+        "sha256": "a387de5b70bc1a7161327806ec22f986c18f4172180fcfb91e5cbd104dca7009"
+      }
+    ]
+  },
+  {
+    "name": "MORDOR_36_0005c7",
+    "bmp": "graphics/bitmaps/MORDOR_36_0005c7.bmp",
+    "png": "graphics/png/MORDOR_36_0005c7.png",
+    "width": 600,
+    "height": 400,
+    "sha256": "80dd012d579086546e1938f2fbd84e798fc43ae111db98b505f113f2f652da89",
+    "origins": [
+      {
+        "source": "Mordor/MORDOR.EXE",
+        "offset": 906439,
+        "bytes": 241078,
+        "resource": "10/36",
+        "sha256": "80dd012d579086546e1938f2fbd84e798fc43ae111db98b505f113f2f652da89"
+      },
+      {
+        "source": "POOP/FRMMENU.FRM",
+        "offset": 1315,
+        "bytes": 241078,
+        "resource": "VB3 form embedded BMP",
+        "sha256": "80dd012d579086546e1938f2fbd84e798fc43ae111db98b505f113f2f652da89"
+      }
+    ]
+  },
+  {
+    "name": "MORDOR_54_00012b",
+    "bmp": "graphics/bitmaps/MORDOR_54_00012b.bmp",
+    "png": "graphics/png/MORDOR_54_00012b.png",
+    "width": 150,
+    "height": 150,
+    "sha256": "2c980134d288f6dcd9ec6c437a7ea93ceac071f0e6fc6b0a40a33a1701db0c18",
+    "origins": [
+      {
+        "source": "Mordor/MORDOR.EXE",
+        "offset": 1166379,
+        "bytes": 23846,
+        "resource": "10/54",
+        "sha256": "2c980134d288f6dcd9ec6c437a7ea93ceac071f0e6fc6b0a40a33a1701db0c18"
+      },
+      {
+        "source": "POOP/FRMCREDI.FRM",
+        "offset": 291,
+        "bytes": 23846,
+        "resource": "VB3 form embedded BMP",
+        "sha256": "2c980134d288f6dcd9ec6c437a7ea93ceac071f0e6fc6b0a40a33a1701db0c18"
+      }
+    ]
+  }
+]

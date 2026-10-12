@@ -1,0 +1,5 @@
+{
+	"checks": 12519,
+	"failures": [],
+	"scope": "Static VB RNG candidate; saved solo rounds, spells/special attack outcomes, ailments, original room records, generation sweep and guarded branches, victory/death, reload/rollback/interruption/stale writers and native UI. No original-runtime comparison; companions/chests/remaining spells and generation branches remain partial."
+}

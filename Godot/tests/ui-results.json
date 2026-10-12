@@ -1,0 +1,5 @@
+{
+	"checks": 61,
+	"failures": [],
+	"scope": "Scene startup and native control signals"
+}

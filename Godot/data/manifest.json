@@ -1,0 +1,1254 @@
+{
+  "format": 1,
+  "source_installation": "D:\\Programming Projects\\Mordor\\_Original Game Files",
+  "behavioral_parity": false,
+  "files": [
+    {
+      "source": "_Original Game Files/DATA/MDATA1.MDR",
+      "target": "data/original/MDATA1.MDR",
+      "bytes": 30952,
+      "sha256": "b8086bf87fb71c86a6bf8c4654b6437160bacf6e3f318be4c0e63e96bc2d032f"
+    },
+    {
+      "source": "_Original Game Files/DATA/MDATA10.MDR",
+      "target": "data/original/MDATA10.MDR",
+      "bytes": 420436,
+      "sha256": "e8c505d57a9c383e9542ac2e88dfa3916cb4fa22f4b305b4db811f1809c23926"
+    },
+    {
+      "source": "_Original Game Files/DATA/MDATA11.MDR",
+      "target": "data/original/MDATA11.MDR",
+      "bytes": 339606,
+      "sha256": "0cfc52dc554f9a3362a222ad19f87a13cb829b50a3818574fa8fcbccd2d757a1"
+    },
+    {
+      "source": "_Original Game Files/DATA/MDATA12.MDR",
+      "target": "data/original/MDATA12.MDR",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "_Original Game Files/DATA/MDATA13.MDR",
+      "target": "data/original/MDATA13.MDR",
+      "bytes": 77158,
+      "sha256": "4c092e8424b65e2defc04da67775c91bf6dbdbd3c2835fa861c5669209c9fd96"
+    },
+    {
+      "source": "_Original Game Files/DATA/MDATA14.MDR",
+      "target": "data/original/MDATA14.MDR",
+      "bytes": 582,
+      "sha256": "9ba056a5153440da06b1341e311e71381dc23e98ef627443e67dc00943a68230"
+    },
+    {
+      "source": "_Original Game Files/DATA/MDATA15.MDR",
+      "target": "data/original/MDATA15.MDR",
+      "bytes": 6462,
+      "sha256": "bf6a1f108aab7e3ecc74051eefcaee7c84846b20e4a87faa6835f6e9f68fc049"
+    },
+    {
+      "source": "_Original Game Files/DATA/MDATA2.MDR",
+      "target": "data/original/MDATA2.MDR",
+      "bytes": 10934,
+      "sha256": "cd811db2c9067a392835e740c6a94a587bb0235cb173eb91682e8f69001908dd"
+    },
+    {
+      "source": "_Original Game Files/DATA/MDATA3.MDR",
+      "target": "data/original/MDATA3.MDR",
+      "bytes": 46103,
+      "sha256": "babf9ede941bc2f3dab073283a304d80fd59ed34d9fcd7099cde1e0f7988d7c7"
+    },
+    {
+      "source": "_Original Game Files/DATA/MDATA4.MDR",
+      "target": "data/original/MDATA4.MDR",
+      "bytes": 8687,
+      "sha256": "527c1f0f6087ac4f7f41ebb424e77813863f4fddbd9a60245eff04e2dec4ac43"
+    },
+    {
+      "source": "_Original Game Files/DATA/MDATA5.MDR",
+      "target": "data/original/MDATA5.MDR",
+      "bytes": 64623,
+      "sha256": "dc95efef50ef62eb6063a11b3fa9a116a06a4dab7d0000804e39324324a6c124"
+    },
+    {
+      "source": "_Original Game Files/DATA/MDATA6.MDR",
+      "target": "data/original/MDATA6.MDR",
+      "bytes": 5902,
+      "sha256": "1d840b72be9f6b79916b10b7d7f5d6b5d385004f7bc62014a82ee5bd946498fb"
+    },
+    {
+      "source": "_Original Game Files/DATA/MDATA7.MDR",
+      "target": "data/original/MDATA7.MDR",
+      "bytes": 1554,
+      "sha256": "5b146ca23868c6cb6671de942a18de39929d8d2a60d8347ea7562f1eda9555b7"
+    },
+    {
+      "source": "_Original Game Files/DATA/MDATA8.MDR",
+      "target": "data/original/MDATA8.MDR",
+      "bytes": 135164,
+      "sha256": "4a7a224385c12a0cd351f439e73bcc9340fa3e9f79ac79d0434364c15c8ce54e"
+    },
+    {
+      "source": "_Original Game Files/DATA/MDATA9.MDR",
+      "target": "data/original/MDATA9.MDR",
+      "bytes": 1978,
+      "sha256": "39b56a12b0d33583c6244f6ca48abd14692cd8476a4da85a55a8e3156438c9a2"
+    },
+    {
+      "source": "POOP/CHARCREA.bas",
+      "target": "reference/vb/CHARCREA.bas",
+      "bytes": 14213,
+      "sha256": "a6a7b5641b5fda5a5d0a4600bf63f249f49b1ad3f3879716a1fe8dd60aad2958"
+    },
+    {
+      "source": "POOP/FRMABOUT.bas",
+      "target": "reference/vb/FRMABOUT.bas",
+      "bytes": 439,
+      "sha256": "8c327f94b5bd358d4baef83ea906713a57d63594485611b120cc249e59d17825"
+    },
+    {
+      "source": "POOP/FRMAUTOM.bas",
+      "target": "reference/vb/FRMAUTOM.bas",
+      "bytes": 23541,
+      "sha256": "cf8dc26cefd5606840f14ccb388163a4cd2eab13e1f86b7f9710717a34871d29"
+    },
+    {
+      "source": "POOP/FRMCHAR1.bas",
+      "target": "reference/vb/FRMCHAR1.bas",
+      "bytes": 12701,
+      "sha256": "d4b2070a23adc05c827ddb4f31ec6d96883d8cb49a70fd42c172bd2479c8cb06"
+    },
+    {
+      "source": "POOP/FRMCHAR3.bas",
+      "target": "reference/vb/FRMCHAR3.bas",
+      "bytes": 32726,
+      "sha256": "c40cc5ba278b56c8c70d6969bc043f67b0e9748b0f879f165e244b991fe16a89"
+    },
+    {
+      "source": "POOP/FRMCHAR4.bas",
+      "target": "reference/vb/FRMCHAR4.bas",
+      "bytes": 3118,
+      "sha256": "76d5dd99c40c693bfee40f10ce4c2a44d33afb335e10d59ba2dd4ce1f700409a"
+    },
+    {
+      "source": "POOP/FRMCHARL.bas",
+      "target": "reference/vb/FRMCHARL.bas",
+      "bytes": 1994,
+      "sha256": "2a8f8d79dfa8ed55963e46de1deb709b5c7cd0a840ed1c19af7509df810ff2f9"
+    },
+    {
+      "source": "POOP/FRMCITYB.bas",
+      "target": "reference/vb/FRMCITYB.bas",
+      "bytes": 10965,
+      "sha256": "577da099ad61004027af6504d4315f1f46611ddbc273638050c0ac70f99c2d70"
+    },
+    {
+      "source": "POOP/FRMCITYC.bas",
+      "target": "reference/vb/FRMCITYC.bas",
+      "bytes": 30379,
+      "sha256": "c4be92507b07c57e4972dfe00340b55b25fb9899b2b235c90120e9a7d064539b"
+    },
+    {
+      "source": "POOP/FRMCONTR.bas",
+      "target": "reference/vb/FRMCONTR.bas",
+      "bytes": 9103,
+      "sha256": "b94302ece10c523f63acdd582df48d7fc9649678038a03089aecd3be4c852c73"
+    },
+    {
+      "source": "POOP/FRMCREDI.bas",
+      "target": "reference/vb/FRMCREDI.bas",
+      "bytes": 3356,
+      "sha256": "e9d14c91bd5a1bd0b61aef914bc810ee41460c5f0b275222772e5f0353877694"
+    },
+    {
+      "source": "POOP/FRMCTYG.bas",
+      "target": "reference/vb/FRMCTYG.bas",
+      "bytes": 41609,
+      "sha256": "936513525da8750b3fdd3509bf9771ed89eb2d13fc8ad4ecd0ae8c6c0174584d"
+    },
+    {
+      "source": "POOP/FRMCTYM.bas",
+      "target": "reference/vb/FRMCTYM.bas",
+      "bytes": 6396,
+      "sha256": "5eb5f334a48150c51a90553291719413907b365f9e7efc428a045c923da26ed2"
+    },
+    {
+      "source": "POOP/FRMCTYS.bas",
+      "target": "reference/vb/FRMCTYS.bas",
+      "bytes": 34463,
+      "sha256": "7ecd21a04584bce074efae10af05c90a52b781f1bde1c09fc908b60fbb71853b"
+    },
+    {
+      "source": "POOP/FRMDIREC.bas",
+      "target": "reference/vb/FRMDIREC.bas",
+      "bytes": 1580,
+      "sha256": "f1040d69f3a578c86777d5961cad497eece99e1fbea80bd9a3993a943abb23b8"
+    },
+    {
+      "source": "POOP/FRMDUNM.bas",
+      "target": "reference/vb/FRMDUNM.bas",
+      "bytes": 22853,
+      "sha256": "bb21f09a475ffbc19fc8007108819b69d413fdf6aa5bb3ed846cd10cb8407d93"
+    },
+    {
+      "source": "POOP/FRMEDITC.bas",
+      "target": "reference/vb/FRMEDITC.bas",
+      "bytes": 9207,
+      "sha256": "a87cb0833993a91bb54c3e2ed4166d98d2f809bcdf10f6feaa5784db0dca51de"
+    },
+    {
+      "source": "POOP/FRMEXCHA.bas",
+      "target": "reference/vb/FRMEXCHA.bas",
+      "bytes": 7805,
+      "sha256": "de00919f22700c5bd63f315c1c12411f44b3fcb6c96e775877a09123c2e26e54"
+    },
+    {
+      "source": "POOP/FRMGLDL.bas",
+      "target": "reference/vb/FRMGLDL.bas",
+      "bytes": 5411,
+      "sha256": "7b38b29b93901786a89a693ec167c9547da611d98212ecdee7cde4cbfebce2d4"
+    },
+    {
+      "source": "POOP/FRMGROUP.bas",
+      "target": "reference/vb/FRMGROUP.bas",
+      "bytes": 15211,
+      "sha256": "fd7b5a511d150918d7792e33aef257e82d25aa21f23550b881c2a84e8a30a141"
+    },
+    {
+      "source": "POOP/FRMHALL.bas",
+      "target": "reference/vb/FRMHALL.bas",
+      "bytes": 11255,
+      "sha256": "c9ef5600f748c5950f732fafeca8ecd2c83727d09f3cd8860b41e27b685bbd58"
+    },
+    {
+      "source": "POOP/FRMINTER.bas",
+      "target": "reference/vb/FRMINTER.bas",
+      "bytes": 19528,
+      "sha256": "e7ad05b4824055f9f976943a103ee95f534dee3978efee2b3df0fe7e19898eb9"
+    },
+    {
+      "source": "POOP/FRMLIBRA.bas",
+      "target": "reference/vb/FRMLIBRA.bas",
+      "bytes": 4771,
+      "sha256": "d77b1517387f56abb14d2c7e6d373588298e8ca1fa997be171dcf9a37b1bef3c"
+    },
+    {
+      "source": "POOP/FRMMAIN.bas",
+      "target": "reference/vb/FRMMAIN.bas",
+      "bytes": 9042,
+      "sha256": "74abb7ad2604cc68c42ecc6435cd6d28a534484c48969503dac19ce8b6d47331"
+    },
+    {
+      "source": "POOP/FRMMENU.bas",
+      "target": "reference/vb/FRMMENU.bas",
+      "bytes": 9046,
+      "sha256": "a0094a077698d8aaa0311696059517d547da3c2033fe31ee592dc90f8121371b"
+    },
+    {
+      "source": "POOP/FRMMORG.bas",
+      "target": "reference/vb/FRMMORG.bas",
+      "bytes": 10295,
+      "sha256": "aafb6881ecbc051a6ec67368719aec31333de6a94605d699e405f049c1a9d0c8"
+    },
+    {
+      "source": "POOP/FRMOPTIO.bas",
+      "target": "reference/vb/FRMOPTIO.bas",
+      "bytes": 16318,
+      "sha256": "236c4910567ea96fb3747a4f9b3dbaa3a1833c73baa00cbda9db9ba687438ef0"
+    },
+    {
+      "source": "POOP/FRMORDER.bas",
+      "target": "reference/vb/FRMORDER.bas",
+      "bytes": 2098,
+      "sha256": "cc8019950c031caaa4f62b1e8e750c8554afc04a2adad42d549468f6e33c03d2"
+    },
+    {
+      "source": "POOP/FRMPINFO.bas",
+      "target": "reference/vb/FRMPINFO.bas",
+      "bytes": 1751,
+      "sha256": "374d5672b290735534f4b06320b8dcc912fa6ddcc86265db9ab62766fba4ab31"
+    },
+    {
+      "source": "POOP/FRMPRINT.bas",
+      "target": "reference/vb/FRMPRINT.bas",
+      "bytes": 2608,
+      "sha256": "69f46f6161e7b74e2397faa65b9d8002c61a6fd161fe0ecac6e8b2d800c6bed3"
+    },
+    {
+      "source": "POOP/FRMSEEK.bas",
+      "target": "reference/vb/FRMSEEK.bas",
+      "bytes": 20710,
+      "sha256": "3ec4819d1b45a52fa8686f077c99cebcb40b984b12d4d30d9ed9d1a657e34d4e"
+    },
+    {
+      "source": "POOP/FRMWELCO.bas",
+      "target": "reference/vb/FRMWELCO.bas",
+      "bytes": 659,
+      "sha256": "774c0a946d420f17c9addc448c0da91521ce86ff5e524132ec3ba4c3259e24f1"
+    },
+    {
+      "source": "POOP/Module1.bas",
+      "target": "reference/vb/Module1.bas",
+      "bytes": 38323,
+      "sha256": "5bc7b670d9c0aec451f6dc2cd5c3e582cc5c39850280e12d0feedba31f2ff445"
+    },
+    {
+      "source": "POOP/Module10.bas",
+      "target": "reference/vb/Module10.bas",
+      "bytes": 6880,
+      "sha256": "f915b2b79f31d39071e31dd2082e69b5a650bf6d0e35e0138ed586e88a9627e8"
+    },
+    {
+      "source": "POOP/Module11.bas",
+      "target": "reference/vb/Module11.bas",
+      "bytes": 29637,
+      "sha256": "ba316e0680e94d668c6c0463e7b063d6283349417aebc6dece08a4f57186fd59"
+    },
+    {
+      "source": "POOP/Module12.bas",
+      "target": "reference/vb/Module12.bas",
+      "bytes": 8805,
+      "sha256": "dd9412a12871780dd3668bc970783d714b7c168a277e2043ebd70e79e33cac49"
+    },
+    {
+      "source": "POOP/Module13.bas",
+      "target": "reference/vb/Module13.bas",
+      "bytes": 2104,
+      "sha256": "39a278e083c47dc75461247606569a845063297fc29cf325a6552805d954ec28"
+    },
+    {
+      "source": "POOP/Module2.bas",
+      "target": "reference/vb/Module2.bas",
+      "bytes": 73482,
+      "sha256": "08aa42b9a376dc57f81157d469c888b9a78983afc75d48028dcd981cc8dd3276"
+    },
+    {
+      "source": "POOP/Module3.bas",
+      "target": "reference/vb/Module3.bas",
+      "bytes": 76132,
+      "sha256": "794fe7d4a65f78c5472b5ef864449379fc1f25966cac99935154486bd07ebfe8"
+    },
+    {
+      "source": "POOP/Module4.bas",
+      "target": "reference/vb/Module4.bas",
+      "bytes": 193313,
+      "sha256": "ba21ed7f6fc036281450dd99b2036468c96d6030c4f04c05fa8b8d1a7b88851e"
+    },
+    {
+      "source": "POOP/Module5.bas",
+      "target": "reference/vb/Module5.bas",
+      "bytes": 105,
+      "sha256": "391f5a29605c7ee9e5f2dc265456150d52acf14778ab96935a0254c58361915e"
+    },
+    {
+      "source": "POOP/Module6.bas",
+      "target": "reference/vb/Module6.bas",
+      "bytes": 269759,
+      "sha256": "ae7bb58596c41ea12fda68ecfa2e719e40cfe1af5175d096fb95a35aaa435f41"
+    },
+    {
+      "source": "POOP/Module7.bas",
+      "target": "reference/vb/Module7.bas",
+      "bytes": 25235,
+      "sha256": "3c7e9656ce944973ff1fcc1a968a5c0de3a6cb1793c9afef708e6196106940da"
+    },
+    {
+      "source": "POOP/Module8.bas",
+      "target": "reference/vb/Module8.bas",
+      "bytes": 8690,
+      "sha256": "b990f244ef6236ac7a23f22c06507e2ec5b4fac04cb24387e408b2ba70bbe823"
+    },
+    {
+      "source": "POOP/Module9.bas",
+      "target": "reference/vb/Module9.bas",
+      "bytes": 14462,
+      "sha256": "4ca2749f8c814026f18681f7710cc80aa64d0866963e5a4c4521d329605b9a93"
+    },
+    {
+      "source": "POOP/main.txt",
+      "target": "reference/vb/main.txt",
+      "bytes": 23041,
+      "sha256": "438f82b6b305ff527e4687f1dfffaea36de03889aab19c587b8ad5a9aa5715b9"
+    },
+    {
+      "source": "CodeFiles/MLoader.cpp",
+      "target": "reference/cpp/MLoader.cpp",
+      "bytes": 8096,
+      "sha256": "7ca56df303b9eb94c5339cd3247e0de05e6f1adb466c1dac064387ad0ea0d871"
+    },
+    {
+      "source": "CodeFiles/MLoader.h",
+      "target": "reference/cpp/MLoader.h",
+      "bytes": 847,
+      "sha256": "bc58a18d376ffe9d5b34d81b8cca9f9ff5653ed68c6f6b673f967c775b747b28"
+    },
+    {
+      "source": "CodeFiles/MSaver.cpp",
+      "target": "reference/cpp/MSaver.cpp",
+      "bytes": 1880,
+      "sha256": "4799ff05b9f56fd31f4e5eb120e615164284a2cc937cd2af1c786967eebf202a"
+    },
+    {
+      "source": "CodeFiles/MSaver.h",
+      "target": "reference/cpp/MSaver.h",
+      "bytes": 214,
+      "sha256": "5066e5748e1f670224e0ed83451f60a75dfcf6ddf9e2beefb6263d0eb5356f8f"
+    },
+    {
+      "source": "CodeFiles/MTypes.h",
+      "target": "reference/cpp/MTypes.h",
+      "bytes": 7187,
+      "sha256": "41a97fc80e12f4b1c30afe82f4a4cbf82108f07669be18504265c6df66364ae9"
+    },
+    {
+      "source": "CodeFiles/RecordReader.h",
+      "target": "reference/cpp/RecordReader.h",
+      "bytes": 3197,
+      "sha256": "41b494f9fca4fd96d8b05817f354a990b6b5b103a8120f71c90264a7a7a83ae8"
+    },
+    {
+      "source": "CodeFiles/RecordWriter.h",
+      "target": "reference/cpp/RecordWriter.h",
+      "bytes": 1121,
+      "sha256": "8d9a9cf1c90a8e44b0e4a6e8eaeb22d8910438d20e5b4fcb96efe75e11e653e0"
+    },
+    {
+      "source": "CodeFiles/itemdump.cpp",
+      "target": "reference/cpp/itemdump.cpp",
+      "bytes": 4484,
+      "sha256": "2dd2a63b5968596088b951e3291695c1de6bb9bf91e35a08a82a03f3b1fee1fc"
+    },
+    {
+      "source": "research/original-export/graphics/png/MG11_ASMO_000000.png",
+      "target": "assets/graphics/MG11_ASMO_000000.png",
+      "bytes": 10198,
+      "sha256": "5fafb2502d5dd496e057bbe70a6b53be07222ad3be8a1a80853d8d760758093c"
+    },
+    {
+      "source": "research/original-export/graphics/png/MG11_BLNK_000000.png",
+      "target": "assets/graphics/MG11_BLNK_000000.png",
+      "bytes": 3216,
+      "sha256": "abc3c63964496f99dbbd106da946b93db96b18ebc3d42d20c056ca33caf45f28"
+    },
+    {
+      "source": "research/original-export/graphics/png/MG11_DOOR_000000.png",
+      "target": "assets/graphics/MG11_DOOR_000000.png",
+      "bytes": 3247,
+      "sha256": "a6f3b491373e0bfc14e739a77a01e64d382b1f99de372569edd33648927785b1"
+    },
+    {
+      "source": "research/original-export/graphics/png/MG11_FOG_000000.png",
+      "target": "assets/graphics/MG11_FOG_000000.png",
+      "bytes": 1326,
+      "sha256": "b9f1055a4a216a29b7e06e85435977e85f1487430af6b15152e6d144cedc7175"
+    },
+    {
+      "source": "research/original-export/graphics/png/MG11_MAZE_000000.png",
+      "target": "assets/graphics/MG11_MAZE_000000.png",
+      "bytes": 67829,
+      "sha256": "586fd62bc521bb6aa64e545d759bd0b84570ca93450063a552068f6e9d8a3868"
+    },
+    {
+      "source": "research/original-export/graphics/png/MG11_MISC_000000.png",
+      "target": "assets/graphics/MG11_MISC_000000.png",
+      "bytes": 13306,
+      "sha256": "325e058e833cdfbf6fa22d5113ef9af3885534fb6ad21f8abcfc3d5e5e91c60e"
+    },
+    {
+      "source": "research/original-export/graphics/png/MG11_MONS_000000.png",
+      "target": "assets/graphics/MG11_MONS_000000.png",
+      "bytes": 369039,
+      "sha256": "9ef6282007bfa380478552a93a12de6acd910e92bc8659c2e4da65e4e966bc37"
+    },
+    {
+      "source": "research/original-export/graphics/png/MG11_PICS_000000.png",
+      "target": "assets/graphics/MG11_PICS_000000.png",
+      "bytes": 927,
+      "sha256": "326858d13a32fb05d371a6f949267e35f13ebffc9d09bbc146e54c2ff69f15c9"
+    },
+    {
+      "source": "research/original-export/graphics/png/MG11_QSND_000000.png",
+      "target": "assets/graphics/MG11_QSND_000000.png",
+      "bytes": 724,
+      "sha256": "a3b6e3843f4210b870d6e4723990425b382d34ee0c802665a73d449f561b541f"
+    },
+    {
+      "source": "research/original-export/graphics/png/MG11_WATR_000000.png",
+      "target": "assets/graphics/MG11_WATR_000000.png",
+      "bytes": 600,
+      "sha256": "4dd5f5cfb6af931b7fccfa800ea4a610fb7c51eaa952b35b88f4558ff5f629f1"
+    },
+    {
+      "source": "research/original-export/graphics/png/MORDOR_14_0003a6.png",
+      "target": "assets/graphics/MORDOR_14_0003a6.png",
+      "bytes": 5154,
+      "sha256": "dff94d9cd3c25b396c8ed863dc43da92af2e9720737d7d058c8fdd1e2f7c68a1"
+    },
+    {
+      "source": "research/original-export/graphics/png/MORDOR_14_001b9c.png",
+      "target": "assets/graphics/MORDOR_14_001b9c.png",
+      "bytes": 8080,
+      "sha256": "6c095a4fdaa07a8b25ac4e0e30ff2f5917c9d96b9d6f985b7aff5ddc68b44aa3"
+    },
+    {
+      "source": "research/original-export/graphics/png/MORDOR_14_0048aa.png",
+      "target": "assets/graphics/MORDOR_14_0048aa.png",
+      "bytes": 12181,
+      "sha256": "44899bfffd72e5cb4ab57d2fd619999558803a1896203fcfe636e54e0c5e00af"
+    },
+    {
+      "source": "research/original-export/graphics/png/MORDOR_14_007689.png",
+      "target": "assets/graphics/MORDOR_14_007689.png",
+      "bytes": 7014,
+      "sha256": "3b0fd6a481a29c1a0af45230f846d72a4bbb7f7ecc414a4204c939851ba56300"
+    },
+    {
+      "source": "research/original-export/graphics/png/MORDOR_14_00a397.png",
+      "target": "assets/graphics/MORDOR_14_00a397.png",
+      "bytes": 10449,
+      "sha256": "c63db47cad7f4e36d014b184362112f6cc2839e368dd73dc0d2488fe6a352db7"
+    },
+    {
+      "source": "research/original-export/graphics/png/MORDOR_14_00d0a5.png",
+      "target": "assets/graphics/MORDOR_14_00d0a5.png",
+      "bytes": 12587,
+      "sha256": "0fa222d2c98ee9ed466303ff311c05436f8b1de110307e0531c64e01eda1eff9"
+    },
+    {
+      "source": "research/original-export/graphics/png/MORDOR_14_00fdb3.png",
+      "target": "assets/graphics/MORDOR_14_00fdb3.png",
+      "bytes": 12077,
+      "sha256": "268cf465ff0b806d4ab15e5034c976a22b3ca334a5a33b87f81d66d3a3c7d46d"
+    },
+    {
+      "source": "research/original-export/graphics/png/MORDOR_14_012c27.png",
+      "target": "assets/graphics/MORDOR_14_012c27.png",
+      "bytes": 10722,
+      "sha256": "03023dfba8a8bed59f24729239e14de72bedae5eda72be96a1cd436e9aefc4c8"
+    },
+    {
+      "source": "research/original-export/graphics/png/MORDOR_24_0000b2.png",
+      "target": "assets/graphics/MORDOR_24_0000b2.png",
+      "bytes": 417,
+      "sha256": "82368e79087aa81cfc4d6bea4f9f67d5c317e88a44e268284b9bb50956faea8a"
+    },
+    {
+      "source": "research/original-export/graphics/png/MORDOR_24_00070d.png",
+      "target": "assets/graphics/MORDOR_24_00070d.png",
+      "bytes": 53457,
+      "sha256": "f3c7d4ef88fcbfa0d757d2d23ef8bac70b08356a3cb22820070ce851b07345f7"
+    },
+    {
+      "source": "research/original-export/graphics/png/MORDOR_36_0005c7.png",
+      "target": "assets/graphics/MORDOR_36_0005c7.png",
+      "bytes": 203178,
+      "sha256": "f3685d99dc3f435408534dec2b652f7467eea87bb6470a6d590e5ee95d332a81"
+    },
+    {
+      "source": "research/original-export/graphics/png/MORDOR_4_000292.png",
+      "target": "assets/graphics/MORDOR_4_000292.png",
+      "bytes": 92,
+      "sha256": "c21bfa62796255645419e4e2f95e5d2f53fed72465c9a9bd8ba0451b07d4f4b2"
+    },
+    {
+      "source": "research/original-export/graphics/png/MORDOR_4_000368.png",
+      "target": "assets/graphics/MORDOR_4_000368.png",
+      "bytes": 91,
+      "sha256": "15e3d2234ff9e8ee8de63663ca0342a0fbd9b63d3abc1be7d37f1a703961d291"
+    },
+    {
+      "source": "research/original-export/graphics/png/MORDOR_54_00012b.png",
+      "target": "assets/graphics/MORDOR_54_00012b.png",
+      "bytes": 25143,
+      "sha256": "170ea38376ae7731ecb80468f7adb80d3abef1eff54a6f4804b76a0374fc09dc"
+    },
+    {
+      "source": "research/original-export/graphics/png/MORDOR_6_0008a6.png",
+      "target": "assets/graphics/MORDOR_6_0008a6.png",
+      "bytes": 5496,
+      "sha256": "8aa9bb39e593dfd3e0be06213fcd85cf3d261a1f32dce2ea0ecdd8bc965d510a"
+    },
+    {
+      "source": "research/original-export/graphics/png/MORDOR_6_0038e1.png",
+      "target": "assets/graphics/MORDOR_6_0038e1.png",
+      "bytes": 255,
+      "sha256": "ff9c619387843c939115fe7cd0a59c58809a9c433557462de2157b15623554f2"
+    },
+    {
+      "source": "research/original-export/graphics/png/MORDOR_6_003a96.png",
+      "target": "assets/graphics/MORDOR_6_003a96.png",
+      "bytes": 222,
+      "sha256": "ddc8329c25a0c3ead233960a1d99ee8e2a99b2fbc269b26408da2dc618d8a539"
+    },
+    {
+      "source": "research/original-export/graphics/png/MORDOR_6_003c48.png",
+      "target": "assets/graphics/MORDOR_6_003c48.png",
+      "bytes": 193,
+      "sha256": "e2651d739c88faaa3eeb795cc390e4c7254ed1c50bd77fa807a34eabe23f49f4"
+    },
+    {
+      "source": "research/original-export/graphics/png/MORDOR_6_003e8f.png",
+      "target": "assets/graphics/MORDOR_6_003e8f.png",
+      "bytes": 227,
+      "sha256": "0caa4bd38e5c6c749ba00aab0e781858845de44e542fb3d4eb8ba92e25002e81"
+    },
+    {
+      "source": "research/original-export/graphics/png/MORDOR_6_004041.png",
+      "target": "assets/graphics/MORDOR_6_004041.png",
+      "bytes": 217,
+      "sha256": "ee0acd39f681f2b0699919cf60687e17b9ef03541d1bb9cc5dc58c3b1687303e"
+    },
+    {
+      "source": "research/original-export/graphics/png/MORDOR_6_0041f3.png",
+      "target": "assets/graphics/MORDOR_6_0041f3.png",
+      "bytes": 200,
+      "sha256": "0b6f38274745c1103783f47e12d2e2475417682b7fc01e3921fbec0b3951b946"
+    },
+    {
+      "source": "research/original-export/graphics/png/MORDOR_6_0043a5.png",
+      "target": "assets/graphics/MORDOR_6_0043a5.png",
+      "bytes": 238,
+      "sha256": "9765f17ac1505e27795dd79f5c5a6e391c9f6d328387d7edebd3293da0498f08"
+    },
+    {
+      "source": "research/original-export/graphics/png/MORDOR_6_004557.png",
+      "target": "assets/graphics/MORDOR_6_004557.png",
+      "bytes": 203,
+      "sha256": "cf23c9b4d0d76cde3e2312970cd5cfbbf63626f856b4c6c50b2f3eaf5ee47d22"
+    },
+    {
+      "source": "research/original-export/graphics/png/MORDOR_6_004709.png",
+      "target": "assets/graphics/MORDOR_6_004709.png",
+      "bytes": 199,
+      "sha256": "2cae2b7fa2f2b5312f1c28f1a42f4c6bd6020c6e29af3d274453beeafa8c2731"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/ASMO.WAV",
+      "target": "assets/audio/ASMO.WAV.bin",
+      "bytes": 27629,
+      "sha256": "423fc630488865c6048f385efec0f42c57afbe393d8fb538e101df829b1c9dae"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/BETTER.WAV",
+      "target": "assets/audio/BETTER.WAV.bin",
+      "bytes": 13108,
+      "sha256": "df0ba4a7d6b837a29d2c82374fbbd2a310b7d9296d67ebeebcae83808c60f295"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/BIRD.WAV",
+      "target": "assets/audio/BIRD.WAV.bin",
+      "bytes": 10936,
+      "sha256": "ecf779c07c4f1f43b7fa08588cb18aab1a12d579b406e996953f55ea86c40823"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/BIRDDIE.WAV",
+      "target": "assets/audio/BIRDDIE.WAV.bin",
+      "bytes": 7915,
+      "sha256": "c0907255dc899b5f2a27a37b5e240afe3b1b585b03a31480d366210049358b27"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/BLACKOUT.WAV",
+      "target": "assets/audio/BLACKOUT.WAV.bin",
+      "bytes": 12188,
+      "sha256": "3ef189ef50dd611faed3106eef3320f121b615d7060db63e1753a811a03836ce"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/BSTAB.WAV",
+      "target": "assets/audio/BSTAB.WAV.bin",
+      "bytes": 6644,
+      "sha256": "0d67d2f13566b871d90d9f2716147f208023dc16e63860398fe60365af0e2b61"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/BUG.WAV",
+      "target": "assets/audio/BUG.WAV.bin",
+      "bytes": 4844,
+      "sha256": "b2258df7e633d2b7008d321620f098a3340b4d4f3298d292b915589197c1071f"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/BUGDIE.WAV",
+      "target": "assets/audio/BUGDIE.WAV.bin",
+      "bytes": 9962,
+      "sha256": "da40cc79e9b8bc63097faca371737d88b5dc31990e5e6d551c72a62b58529023"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/BYE.WAV",
+      "target": "assets/audio/BYE.WAV.bin",
+      "bytes": 8951,
+      "sha256": "938bc94f776e8450bce1e1b6a697c97011ac41fef2e07e5a65402df8192b77cf"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/CHIT.WAV",
+      "target": "assets/audio/CHIT.WAV.bin",
+      "bytes": 8264,
+      "sha256": "1ba1aa38cc8833c08b106d31a9e7fb0e96cc94394794136f8630fd02f0d6f209"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/CITY.MID",
+      "target": "assets/audio/CITY.MID.bin",
+      "bytes": 5312,
+      "sha256": "dc471a329ff481c42ca25147fddf0fcf26c48a05e5d32f19e4f74dacd3d28bc5"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/CITYSC.MID",
+      "target": "assets/audio/CITYSC.MID.bin",
+      "bytes": 6814,
+      "sha256": "79db6e639016789208c14a8ad4a4d1f5871a1b0f02603e942e48b0f2026ffe5f"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/COLD.WAV",
+      "target": "assets/audio/COLD.WAV.bin",
+      "bytes": 21744,
+      "sha256": "1bf05a7036dad1a37871800540d2a12fdd820a276a7b3dcb78f140d0e1812392"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/DEMON.WAV",
+      "target": "assets/audio/DEMON.WAV.bin",
+      "bytes": 8389,
+      "sha256": "f15bb0d91b128ed6d4c23c663c586ff3b2b22c6c800d45742708b11619ddacb5"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/DEVIL.WAV",
+      "target": "assets/audio/DEVIL.WAV.bin",
+      "bytes": 22388,
+      "sha256": "fa7cce8b1d7d4f788cea438bf58ed890ade5aae5c55d45961b2af36960e72634"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/DI-ANIM.WAV",
+      "target": "assets/audio/DI-ANIM.WAV.bin",
+      "bytes": 34121,
+      "sha256": "c787f7fd9acbba7e83cdc696fefb2d0ca1ebd50b27e7fbcf21f4a66a674c1200"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/DI-DEMON.WAV",
+      "target": "assets/audio/DI-DEMON.WAV.bin",
+      "bytes": 39336,
+      "sha256": "72768469a174515550bf14e72ea97be231fd9c79312409caa7ebc801f88661fc"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/DI-HUMAN.WAV",
+      "target": "assets/audio/DI-HUMAN.WAV.bin",
+      "bytes": 10613,
+      "sha256": "e1aa664774f7748b51625d41059ddae38f437891146bfb89df3fe0076fac9042"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/DI-UNDEA.WAV",
+      "target": "assets/audio/DI-UNDEA.WAV.bin",
+      "bytes": 22029,
+      "sha256": "191e2855e242e7a5e161fd956a6527bd73e544f06581fc8617039ae2db6d20b3"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/DIE.WAV",
+      "target": "assets/audio/DIE.WAV.bin",
+      "bytes": 22456,
+      "sha256": "ffcb3043ef9f3ae9a2d7f0ee7e3ea032d15837ef05e1f27e2ef9f379495318db"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/DISEASE.WAV",
+      "target": "assets/audio/DISEASE.WAV.bin",
+      "bytes": 13768,
+      "sha256": "45efc336e45de1134a61464dddd5a83e886b2df30fb6e2ddef15a1a9ab8437e2"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/DOG.WAV",
+      "target": "assets/audio/DOG.WAV.bin",
+      "bytes": 15758,
+      "sha256": "b40eefd75d0d17206696027d764887085fa28b17d8424b964a02cc197ab27f24"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/DRAGON.WAV",
+      "target": "assets/audio/DRAGON.WAV.bin",
+      "bytes": 19811,
+      "sha256": "41a117511e09f6fe11b28401e764dd430197eb8bdd3e2862b9d8e929af747091"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/DRAIN.WAV",
+      "target": "assets/audio/DRAIN.WAV.bin",
+      "bytes": 24172,
+      "sha256": "3610e1c125f02cf51ca0535b8fb898a4effe637a44b6b5eb4d157edff0674209"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/DROWN.WAV",
+      "target": "assets/audio/DROWN.WAV.bin",
+      "bytes": 15094,
+      "sha256": "2aa7c6da23dba8d2ab444a78de0766b1daab9c7b9f389e4be1b87caa7719183c"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/DSTSLAM.WAV",
+      "target": "assets/audio/DSTSLAM.WAV.bin",
+      "bytes": 29591,
+      "sha256": "c6f9205c26ce8468c2d6d60cdd788f174c5d4bf24c6a436c1efd2755716e5c10"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/DUNGEON.MID",
+      "target": "assets/audio/DUNGEON.MID.bin",
+      "bytes": 7050,
+      "sha256": "466a5cb451eea748d5030d7f2912108fa83fab32f1f9b8ae9d9862ae0d66ec71"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/DUNGEOSC.MID",
+      "target": "assets/audio/DUNGEOSC.MID.bin",
+      "bytes": 7395,
+      "sha256": "670724ba3ca59073e76024a8aebb4c9db50921a3c640d62641f9fbe7d2cc6541"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/EXPLOS.WAV",
+      "target": "assets/audio/EXPLOS.WAV.bin",
+      "bytes": 37511,
+      "sha256": "35e6b61bd4b27c7bc04beaca51a2b0d1be1e6111936a2bacb5e3416fc19e4e85"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/EXTING.WAV",
+      "target": "assets/audio/EXTING.WAV.bin",
+      "bytes": 14494,
+      "sha256": "1d7eb54d9f44fda3218c45db72d564df17bc37759baf724426a90dcc6eea31ca"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/FALL.WAV",
+      "target": "assets/audio/FALL.WAV.bin",
+      "bytes": 19229,
+      "sha256": "3f51bad6b35f335374021b2942382f690044b045c14b3eaa8c336181ffccff3a"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/FEAR.WAV",
+      "target": "assets/audio/FEAR.WAV.bin",
+      "bytes": 17831,
+      "sha256": "51d0de8fd6dbac93660735c6e68fc261629282fbcc9b0599d7c0eb074a8ab338"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/FIRE.WAV",
+      "target": "assets/audio/FIRE.WAV.bin",
+      "bytes": 21109,
+      "sha256": "f23cf91c1bfe186c158dc881e40d5065fa117d97ff5ab3abb2e82cccb4ba05c3"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/FOG.WAV",
+      "target": "assets/audio/FOG.WAV.bin",
+      "bytes": 50130,
+      "sha256": "94693e94f0f51073049352277682b86fac30b290d4d25261b34344dce09fefd5"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/FOUND.WAV",
+      "target": "assets/audio/FOUND.WAV.bin",
+      "bytes": 14272,
+      "sha256": "3580532031dfa39ff61f478f95e4d0d9d9332be8f97c126abb441a9e672c22a0"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/GEN2.MID",
+      "target": "assets/audio/GEN2.MID.bin",
+      "bytes": 6302,
+      "sha256": "8c9f17875ced274808022ed7838c05c98c99a872df6eaad72c51f508ef595821"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/GEN2SC.MID",
+      "target": "assets/audio/GEN2SC.MID.bin",
+      "bytes": 6348,
+      "sha256": "3debeb27c3c520a21123a71c155e30e85025ff8a4a126ca8f4b91ddfd17baee1"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/GEN3.MID",
+      "target": "assets/audio/GEN3.MID.bin",
+      "bytes": 11862,
+      "sha256": "13c35cb9b1621fb5ea6f59bb55f9227ace98e7b12bb895d760b8afbf0d43715f"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/GEN3SC.MID",
+      "target": "assets/audio/GEN3SC.MID.bin",
+      "bytes": 13362,
+      "sha256": "62320e26cca140e744661a9fa80d36e4dee2bc3c17aeae4f2fef2788ed326755"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/GENERAL.MID",
+      "target": "assets/audio/GENERAL.MID.bin",
+      "bytes": 5221,
+      "sha256": "7fd31139a27e5d0c52b51576dd62fd5d1e5e30a2e4aee7812f89ecb689e7300d"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/GENERASC.MID",
+      "target": "assets/audio/GENERASC.MID.bin",
+      "bytes": 5295,
+      "sha256": "d3bac2ad4ac2dc1c04efdf74b310967d8eeb95218a0082474698439d97df98dd"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/GIANT.WAV",
+      "target": "assets/audio/GIANT.WAV.bin",
+      "bytes": 15062,
+      "sha256": "682cd224aafd0d6058efa415d7f3d36e9e26f224f55676fb1196f0498e0d49b3"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/GOBLIN.WAV",
+      "target": "assets/audio/GOBLIN.WAV.bin",
+      "bytes": 8969,
+      "sha256": "ab268d149138324305d9d0912f038bd25a21bfb73a986fad05607a3e9bcd63ee"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/HELLO.WAV",
+      "target": "assets/audio/HELLO.WAV.bin",
+      "bytes": 10107,
+      "sha256": "7b8a4c88eeaf95ce89431200ddd78b0d10fec27c125651680d9001525b5eed47"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/HELP.WAV",
+      "target": "assets/audio/HELP.WAV.bin",
+      "bytes": 5609,
+      "sha256": "fadac66d737b748627e0442612c545769e0793c1b17e99456e439fb5df652208"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/HIT.WAV",
+      "target": "assets/audio/HIT.WAV.bin",
+      "bytes": 1324,
+      "sha256": "cc241b3f1069adf45dc45983169fb99bf7117413801ea7d8f44a67c36e4e3faf"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/INTRO.MID",
+      "target": "assets/audio/INTRO.MID.bin",
+      "bytes": 4952,
+      "sha256": "b0df6438e1c028b3ee3de5f15831a9bdc0b475cea87be3862fad921cd4dac99c"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/INTROSC.MID",
+      "target": "assets/audio/INTROSC.MID.bin",
+      "bytes": 5123,
+      "sha256": "db05a8affa7b5d2af7c990e903a4af0020e88e363d8eb4bfb88536083ea0f824"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/KILL.WAV",
+      "target": "assets/audio/KILL.WAV.bin",
+      "bytes": 15510,
+      "sha256": "f3d53c2e280bdea3fafd53d3d5dd2ed57cdef0f3fbe8cbc1794dded8feb7f330"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/LYCAN.WAV",
+      "target": "assets/audio/LYCAN.WAV.bin",
+      "bytes": 19654,
+      "sha256": "a297527a663ce9a6ca04be748e4e78359367519c02a8ac865ea8fd644d692cde"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/MAGE.WAV",
+      "target": "assets/audio/MAGE.WAV.bin",
+      "bytes": 13068,
+      "sha256": "dbb1eaac70a6aff6df0c0abe927a36b0bb63c3a0cae09633ea061362ebbb6247"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/MAGIC.WAV",
+      "target": "assets/audio/MAGIC.WAV.bin",
+      "bytes": 30128,
+      "sha256": "6ce22eed24423486a039281ab258f9ec7d085f8b5c51e1cf755c507359069e96"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/MAGIC2.WAV",
+      "target": "assets/audio/MAGIC2.WAV.bin",
+      "bytes": 28372,
+      "sha256": "810c8bcfad859bd24b661c8b9aa6ce08ec2b1f1f6a314d8c68c86c28fd93c33a"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/MAIN.MID",
+      "target": "assets/audio/MAIN.MID.bin",
+      "bytes": 9860,
+      "sha256": "4ddc4db524c301715d585c4d5c56ff57758c4cce76fb375902dfddeaf9afe02d"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/MAINSC.MID",
+      "target": "assets/audio/MAINSC.MID.bin",
+      "bytes": 10010,
+      "sha256": "52ef8d39571f8a6b71201c151ddada917b9666433c8caa38e633ae5ffa9cacb8"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/MAKELEV.WAV",
+      "target": "assets/audio/MAKELEV.WAV.bin",
+      "bytes": 32414,
+      "sha256": "02d953917379574017527e85bca1cab9c615aa7b33cc366cdc17f4338d9cbe27"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/MESSAGE.WAV",
+      "target": "assets/audio/MESSAGE.WAV.bin",
+      "bytes": 2814,
+      "sha256": "5cc575673e49eab48e4df3c7b1dcd182472b91be4319f4126d9250365f35fbbe"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/MOAN.WAV",
+      "target": "assets/audio/MOAN.WAV.bin",
+      "bytes": 43904,
+      "sha256": "b09ac44c5f1ab7e09aa7d8badb0cdeea029262469cf6d6e600e963402d7d5cd9"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/MYTHIC.WAV",
+      "target": "assets/audio/MYTHIC.WAV.bin",
+      "bytes": 15426,
+      "sha256": "dc98b36998a0c64e710f832bd45b0fcc9fa4794b2e66283dcad47fd877fb84c6"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/OPEN.WAV",
+      "target": "assets/audio/OPEN.WAV.bin",
+      "bytes": 15812,
+      "sha256": "313b33df0f588aeb1f2cb0ecb4db8bedfd43773dea1e59940c54c1ee2364b714"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/OUCH.WAV",
+      "target": "assets/audio/OUCH.WAV.bin",
+      "bytes": 8628,
+      "sha256": "788289689f96220c049f3cfae3570c18bd14e5680c79c376a3a7c0955a9d875f"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/PARAL.WAV",
+      "target": "assets/audio/PARAL.WAV.bin",
+      "bytes": 14488,
+      "sha256": "273c1579b345acae89385c7371e17681dbcec8431d1863483bcade73606d640b"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/PLANTATT.WAV",
+      "target": "assets/audio/PLANTATT.WAV.bin",
+      "bytes": 16038,
+      "sha256": "3951f376a92eabc962f3f776613455e492f28620f6d8c649171689cab5437fc4"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/POISON.WAV",
+      "target": "assets/audio/POISON.WAV.bin",
+      "bytes": 9282,
+      "sha256": "067209eff4a2ff9eaf5a0bb79ee7fc756416f8f38009ae689d6a0ff5740f91fd"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/RAISE.WAV",
+      "target": "assets/audio/RAISE.WAV.bin",
+      "bytes": 49377,
+      "sha256": "5f3d82d7ebcc36c388c2c3ea4250e49a4c563169b18616695a665d284c574f75"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/RIP.WAV",
+      "target": "assets/audio/RIP.WAV.bin",
+      "bytes": 13978,
+      "sha256": "3c5aa982eac0e5271bdefe0e972ca2e4f82e632ba641fc0dd2db8fc19b036e1c"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/SCURRY.WAV",
+      "target": "assets/audio/SCURRY.WAV.bin",
+      "bytes": 41391,
+      "sha256": "b89575b6f2661736edbf23a8ebe996a32f4175f961274f52ec699788fb826c0b"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/SHOCK.WAV",
+      "target": "assets/audio/SHOCK.WAV.bin",
+      "bytes": 8576,
+      "sha256": "c7026bd8ee4658ef8cc70fe245a2119fc430d8e7470efda7e5fd72c682e908c2"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/SLICE.WAV",
+      "target": "assets/audio/SLICE.WAV.bin",
+      "bytes": 8344,
+      "sha256": "5c3e8d85aa22ad37a8e81d3eb6b5f986c73a02186236f3887779d460023764eb"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/SLIME.WAV",
+      "target": "assets/audio/SLIME.WAV.bin",
+      "bytes": 23794,
+      "sha256": "b31976a80acbbb22d18e644f445e5faf1c0c0469e2ff8049b38d9f3109e6efe2"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/SLIMETR.WAV",
+      "target": "assets/audio/SLIMETR.WAV.bin",
+      "bytes": 19104,
+      "sha256": "5b5b103e8c49e7a491b7f7fc379789504e39e354eb4ff935d2c67c9ba6e59cb3"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/SNAKE.WAV",
+      "target": "assets/audio/SNAKE.WAV.bin",
+      "bytes": 11744,
+      "sha256": "8c972e76c2e2af780818c67950c978abd279dc26606f94d42a9a003a78b2aca2"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/SPIT.WAV",
+      "target": "assets/audio/SPIT.WAV.bin",
+      "bytes": 13320,
+      "sha256": "119e6ad0cb5a9ca5014765a171627a62c098dcd32c6483c310953c319d8506ef"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/STEAL.WAV",
+      "target": "assets/audio/STEAL.WAV.bin",
+      "bytes": 16124,
+      "sha256": "45c6322a9e1fc42bad21fa3c112b1aed2f298752a9a748273cd798fbb1d17275"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/STONE.WAV",
+      "target": "assets/audio/STONE.WAV.bin",
+      "bytes": 32178,
+      "sha256": "7f5b590c2eeb911b4ef8b2ca1044f5023b3cb1733e58ae77bc1043f292c2fdfa"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/SWING.WAV",
+      "target": "assets/audio/SWING.WAV.bin",
+      "bytes": 5146,
+      "sha256": "7ae1af2df5396af1fd73c9d81441813671ceed0d0a299733c831579411809784"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/TELEPORT.WAV",
+      "target": "assets/audio/TELEPORT.WAV.bin",
+      "bytes": 29322,
+      "sha256": "fda00c3afe852d51c9b2b8b2e8f921c7cd0699a545400d8d46a6238a2cd9038a"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/THEME.MID",
+      "target": "assets/audio/THEME.MID.bin",
+      "bytes": 14730,
+      "sha256": "d91dc31f0a3feebe5c54de5e926cef02b8427e7ee0a826fb0938b3890cf39578"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/THEMESC.MID",
+      "target": "assets/audio/THEMESC.MID.bin",
+      "bytes": 15409,
+      "sha256": "1a16aec901ff7eb1c33bb23f8dc98330eef50995fab30769303ef4a26b80f841"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/UNDEAD.WAV",
+      "target": "assets/audio/UNDEAD.WAV.bin",
+      "bytes": 22416,
+      "sha256": "98b8e6652160645964a04a28783b4b4b0140dc352b9a99e7959c0b94bbc9de89"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/WADE.WAV",
+      "target": "assets/audio/WADE.WAV.bin",
+      "bytes": 25968,
+      "sha256": "8feca38986109579b002601f23f914f5c0723b34d8eea5114cc1064e7e7e3866"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/WARRIOR.WAV",
+      "target": "assets/audio/WARRIOR.WAV.bin",
+      "bytes": 8264,
+      "sha256": "bbb5234fcea7c379889dbf2839104aa7bdb9724b5d11f0bb11dbccaa7e638399"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/WATER.WAV",
+      "target": "assets/audio/WATER.WAV.bin",
+      "bytes": 27968,
+      "sha256": "209a5e5ea87248ae152bcaf7aaadd0b710ca8d51b313edfa6acc15257d03a25e"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/WATER1.WAV",
+      "target": "assets/audio/WATER1.WAV.bin",
+      "bytes": 44681,
+      "sha256": "99f14db664a19c75ef7f1e7d21a0c99b286f604811d6d0d7cab99be0a349cc51"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/WATERD.WAV",
+      "target": "assets/audio/WATERD.WAV.bin",
+      "bytes": 10138,
+      "sha256": "de0b13c02955d1281cfdb0e6eb39e16d37b8f60d33d4c367da7eecee482b44ba"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/WITHER.WAV",
+      "target": "assets/audio/WITHER.WAV.bin",
+      "bytes": 28389,
+      "sha256": "d491338197e0c1a9ec13ffe5a46133034cf033d682743550640b6cc851c07daf"
+    },
+    {
+      "source": "research/fidelity-foundations/audio/YEECH.WAV",
+      "target": "assets/audio/YEECH.WAV.bin",
+      "bytes": 15025,
+      "sha256": "737365b3397e86e01efcf16163f1763f45abf045256f615a25996e30c9a47db6"
+    },
+    {
+      "source": "research/fidelity-foundations/audio-manifest.json",
+      "target": "tests/reference/audio-manifest.json",
+      "bytes": 28061,
+      "sha256": "4b1c20271048dcaaa1b3b43f1c8603dfc9323a6726f85073b7b52a679391bf3e"
+    },
+    {
+      "source": "research/local-original/dungeon-areas-local.csv",
+      "target": "tests/reference/dungeon-areas-local.csv",
+      "bytes": 41902,
+      "sha256": "bee63a0189e1d3b1748e706b4fdec4cdf4708ca51c66c4adf96f35da52a8ebda"
+    },
+    {
+      "source": "research/local-original/dungeon-cells-local.csv",
+      "target": "tests/reference/dungeon-cells-local.csv",
+      "bytes": 361743,
+      "sha256": "1e71071c56c7be6a92abb5b7359e3de0224fa6ca559947913e152405687700a0"
+    },
+    {
+      "source": "research/local-original/dungeon-chutes-local.csv",
+      "target": "tests/reference/dungeon-chutes-local.csv",
+      "bytes": 1755,
+      "sha256": "968463b8a5c93167adb7b8e46ed5c46eb497b7419c2e08aa67ea3f43b86031b4"
+    },
+    {
+      "source": "research/local-original/dungeon-floors-local.csv",
+      "target": "tests/reference/dungeon-floors-local.csv",
+      "bytes": 739,
+      "sha256": "d32718a2f66a6a6bd0eaf8664724851ab05505dd8f84ea1c867d2a76be3441f7"
+    },
+    {
+      "source": "research/local-original/dungeon-teleporters-local.csv",
+      "target": "tests/reference/dungeon-teleporters-local.csv",
+      "bytes": 4001,
+      "sha256": "4f4878cbb9d0c393e099a44979c3d758583eb78b04feca9d9a3c6afec972ce29"
+    },
+    {
+      "source": "research/local-original/guild-spell-access-local.csv",
+      "target": "tests/reference/guild-spell-access-local.csv",
+      "bytes": 20697,
+      "sha256": "81c6adacf8b9949cdcf520c97a383631aa51bc899b4de4cf7aed383cfd188ad3"
+    },
+    {
+      "source": "research/local-original/guilds-local.csv",
+      "target": "tests/reference/guilds-local.csv",
+      "bytes": 5271,
+      "sha256": "b6ed9ced7897d75e973f133563d081c32247ec9b13983ab6dcccd11ad7fde9db"
+    },
+    {
+      "source": "research/local-original/item-classes-local.csv",
+      "target": "tests/reference/item-classes-local.csv",
+      "bytes": 430,
+      "sha256": "b165902da2e3584dd8880feda656f9fc019924cdfd9dc722e144d679ecb847d1"
+    },
+    {
+      "source": "research/local-original/item-spell-links-local.csv",
+      "target": "tests/reference/item-spell-links-local.csv",
+      "bytes": 5900,
+      "sha256": "7c4cfbd490a5e10a93efae44c108d7ffdb1caac8f1657d3ec7343c7cfb4aeb99"
+    },
+    {
+      "source": "research/local-original/item-subtypes-local.csv",
+      "target": "tests/reference/item-subtypes-local.csv",
+      "bytes": 499,
+      "sha256": "6205d3897cc7e9cf9e1a6e81587181929cc161857e31f1c7efe4447de3aaf28b"
+    },
+    {
+      "source": "research/local-original/items-local.csv",
+      "target": "tests/reference/items-local.csv",
+      "bytes": 48074,
+      "sha256": "12577ac78c4568c9005c800c4343f0a3da7d0f2441139c1fd0da63ae98a5858e"
+    },
+    {
+      "source": "research/local-original/monster-subtypes-local.csv",
+      "target": "tests/reference/monster-subtypes-local.csv",
+      "bytes": 231,
+      "sha256": "89e973a581dcffabf85a4d4484e013c4b215845a4ce9985590b07a9c7a9d0877"
+    },
+    {
+      "source": "research/local-original/monster-types-local.csv",
+      "target": "tests/reference/monster-types-local.csv",
+      "bytes": 271,
+      "sha256": "c4f8a3e0fcaa85d760894ea6192c33c5f042415f90c857fbd25d481e70515d65"
+    },
+    {
+      "source": "research/local-original/monsters-local.csv",
+      "target": "tests/reference/monsters-local.csv",
+      "bytes": 71682,
+      "sha256": "e051eb3b6303d6d5839e1be363742af04ff3c7a9568c0e86ad98c6a04df79711"
+    },
+    {
+      "source": "research/local-original/races-local.csv",
+      "target": "tests/reference/races-local.csv",
+      "bytes": 1317,
+      "sha256": "fba7a7dbb76bb8d59e25a70101b5c35a765f8978343d5fac02a21e9708a65622"
+    },
+    {
+      "source": "research/local-original/spells-local.csv",
+      "target": "tests/reference/spells-local.csv",
+      "bytes": 7261,
+      "sha256": "1a388ce63caf33ae4688357a5e3c9dc547a47622f479673400ae33725fafb23d"
+    }
+  ],
+  "executable_sha256": "bd1332c37eb9d6a024d95ba1b70daf03c1a6c64c622964fb3d8bcc6297d06309",
+  "type_count": 55,
+  "procedure_count": 691,
+  "translated_procedures": 37,
+  "partial_procedures": 33
+}

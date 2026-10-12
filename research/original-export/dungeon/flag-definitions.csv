@@ -1,0 +1,24 @@
+bit,mask,label,class
+0,1,Right Wall,edge
+1,2,Upper Wall,edge
+2,4,Right Door,edge
+3,8,Upper Door,edge
+4,16,Right SDoor,edge
+5,32,Upper SDoor,edge
+6,64,Face North,special
+7,128,Face East,special
+8,256,Face South,special
+9,512,Face West,special
+10,1024,Extinguish,special
+11,2048,Pit,special
+12,4096,Stairs Up,special
+13,8192,Stairs Down,special
+14,16384,Teleporter,special
+15,32768,Water,special
+16,65536,Quicksand,special
+17,131072,Rotator,special
+18,262144,Anti-Magic,special
+19,524288,Rock,solid
+20,1048576,Fog,special
+21,2097152,Chute,special
+22,4194304,Stud,special

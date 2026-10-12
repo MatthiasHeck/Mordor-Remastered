@@ -1,0 +1,373 @@
+{
+  "status": "STATIC_PARTY_COMPANION_TRACE_BUILT_RUNTIME_PENDING",
+  "data": {
+    "companion_slot_count": 4,
+    "binding_cap_candidate": 12,
+    "purchase_binding_cap_candidate": 10,
+    "source_status": "static_decompiler_paths_and_preserved_companion_records",
+    "interpretation": "Party and companion conditions, random obedience, reward sharing and casting limits remain candidate semantics until observed in the original runtime."
+  },
+  "source_procedures": [
+    {
+      "file": "FRMCITYC.bas",
+      "procedure": "cmdBuy_Click",
+      "role": "companion_purchase",
+      "start_line": 96,
+      "end_line": 169,
+      "signature": "Sub cmdBuy_Click ()",
+      "summary": "checks four companion slots, pays, copies base fields and assigns initial binding",
+      "evidence": "original-export/code/source/FRMCITYC.bas:96"
+    },
+    {
+      "file": "FRMCITYC.bas",
+      "procedure": "cmdBind_Click",
+      "role": "binding_service",
+      "start_line": 50,
+      "end_line": 94,
+      "signature": "Sub cmdBind_Click ()",
+      "summary": "raises binding by four with a cap at twelve and charges the service",
+      "evidence": "original-export/code/source/FRMCITYC.bas:50"
+    },
+    {
+      "file": "FRMCITYC.bas",
+      "procedure": "cmdSell_Click",
+      "role": "companion_release",
+      "start_line": 272,
+      "end_line": 296,
+      "signature": "Sub cmdSell_Click ()",
+      "summary": "credits funds, returns eligible stock and clears the companion slot",
+      "evidence": "original-export/code/source/FRMCITYC.bas:272"
+    },
+    {
+      "file": "FRMCITYC.bas",
+      "procedure": "fn33B9",
+      "role": "binding_quote",
+      "start_line": 602,
+      "end_line": 614,
+      "signature": "Function fn33B9 (p0202 As Integer ' 41) As Currency ' 5",
+      "summary": "computes the discontinuous binding fee from current binding and monster fields",
+      "evidence": "original-export/code/source/FRMCITYC.bas:602"
+    },
+    {
+      "file": "FRMCITYC.bas",
+      "procedure": "fn33CC",
+      "role": "companion_buy_quote",
+      "start_line": 616,
+      "end_line": 637,
+      "signature": "Function fn33CC (p020C As Integer ' 41, p020E ' 40) As Long ' 2",
+      "summary": "computes the companion purchase quote from stock and base value",
+      "evidence": "original-export/code/source/FRMCITYC.bas:616"
+    },
+    {
+      "file": "FRMCHAR3.bas",
+      "procedure": "cmdCompanion_Click",
+      "role": "companion_kick",
+      "start_line": 252,
+      "end_line": 277,
+      "signature": "Sub cmdCompanion_Click (Index%)",
+      "summary": "blocks invalid drops/city kicks and delegates bound-companion hostility handling",
+      "evidence": "original-export/code/source/FRMCHAR3.bas:252"
+    },
+    {
+      "file": "FRMCHAR3.bas",
+      "procedure": "picCompanion_DblClick",
+      "role": "companion_cast_context",
+      "start_line": 740,
+      "end_line": 757,
+      "signature": "Sub picCompanion_DblClick (Index%)",
+      "summary": "prepares a companion spell context and clamps learned spell level",
+      "evidence": "original-export/code/source/FRMCHAR3.bas:740"
+    },
+    {
+      "file": "FRMCHAR3.bas",
+      "procedure": "picCompanion_DragDrop",
+      "role": "companion_reorder",
+      "start_line": 759,
+      "end_line": 777,
+      "signature": "Sub picCompanion_DragDrop (Index%, Source As Control, X As Single, Y As Single)",
+      "summary": "swaps living companion slots and rejects dead-slot rearrangement",
+      "evidence": "original-export/code/source/FRMCHAR3.bas:759"
+    },
+    {
+      "file": "FRMGROUP.bas",
+      "procedure": "cmdCommand_Click",
+      "role": "party_command",
+      "start_line": 28,
+      "end_line": 42,
+      "signature": "Sub cmdCommand_Click (Index%)",
+      "summary": "dispatches group commands through the active party form",
+      "evidence": "original-export/code/source/FRMGROUP.bas:28"
+    },
+    {
+      "file": "FRMGROUP.bas",
+      "procedure": "sub2F40",
+      "role": "party_member_update",
+      "start_line": 306,
+      "end_line": 398,
+      "signature": "Sub sub2F40 ()",
+      "summary": "removes dead members, repairs active indices and rebuilds party controls",
+      "evidence": "original-export/code/source/FRMGROUP.bas:306"
+    },
+    {
+      "file": "FRMGROUP.bas",
+      "procedure": "sub2F5A",
+      "role": "party_status_refresh",
+      "start_line": 400,
+      "end_line": 479,
+      "signature": "Sub sub2F5A ()",
+      "summary": "renders HP, spells, ailments, commands and member states in party order",
+      "evidence": "original-export/code/source/FRMGROUP.bas:400"
+    },
+    {
+      "file": "Module4.bas",
+      "procedure": "fn0B6C",
+      "role": "companion_obedience",
+      "start_line": 519,
+      "end_line": 602,
+      "signature": "Function fn0B6C (ByVal pv016E As Integer ' 81, p0170 As Integer ' 41, p0172 As Integer ' 41) As Integer ' 1",
+      "summary": "uses alignment, binding and random checks to join, refuse or turn on the party",
+      "evidence": "original-export/code/source/Module4.bas:519"
+    }
+  ],
+  "source_events": [
+    {
+      "file": "FRMCITYC.bas",
+      "line": 96,
+      "procedure": "cmdBuy_Click",
+      "event": "companion_slot_scan",
+      "expression": "the four companion slots are searched for the first empty record",
+      "source_text": "Sub cmdBuy_Click ()"
+    },
+    {
+      "file": "FRMCITYC.bas",
+      "line": 112,
+      "procedure": "cmdBuy_Click",
+      "event": "companion_payment_gate",
+      "expression": "payment failure exits before a companion record is created",
+      "source_text": "Next l00B0"
+    },
+    {
+      "file": "FRMCITYC.bas",
+      "line": 125,
+      "procedure": "cmdBuy_Click",
+      "event": "companion_binding_seed",
+      "expression": "initial binding is derived from the monster field and capped at ten",
+      "source_text": "gv14C2(gv1A86).M58CB(l00B2).M57D4 = gv14F6(l00B4).M5467"
+    },
+    {
+      "file": "FRMCITYC.bas",
+      "line": 50,
+      "procedure": "cmdBind_Click",
+      "event": "binding_cap_gate",
+      "expression": "binding at or above twelve is rejected",
+      "source_text": "Sub cmdBind_Click ()"
+    },
+    {
+      "file": "FRMCITYC.bas",
+      "line": 62,
+      "procedure": "cmdBind_Click",
+      "event": "binding_payment",
+      "expression": "the service fee is paid before the binding mutation",
+      "source_text": "If  l0072 > -1 Then"
+    },
+    {
+      "file": "FRMCITYC.bas",
+      "line": 272,
+      "procedure": "cmdSell_Click",
+      "event": "companion_sell_credit",
+      "expression": "sale proceeds are credited and stock may be restored",
+      "source_text": "Sub cmdSell_Click ()"
+    },
+    {
+      "file": "FRMCITYC.bas",
+      "line": 602,
+      "procedure": "fn33B9",
+      "event": "binding_quote_formula",
+      "expression": "absolute binding and the four-point increment feed the fee",
+      "source_text": "Function fn33B9 (p0202 As Integer ' 41) As Currency ' 5"
+    },
+    {
+      "file": "FRMCITYC.bas",
+      "line": 616,
+      "procedure": "fn33CC",
+      "event": "companion_quote_formula",
+      "expression": "stock and logarithm terms feed the buy quote",
+      "source_text": "Function fn33CC (p020C As Integer ' 41, p020E ' 40) As Long ' 2"
+    },
+    {
+      "file": "FRMCHAR3.bas",
+      "line": 252,
+      "procedure": "cmdCompanion_Click",
+      "event": "kick_guard",
+      "expression": "dead carried companions and city kicks take separate paths",
+      "source_text": "Sub cmdCompanion_Click (Index%)"
+    },
+    {
+      "file": "FRMCHAR3.bas",
+      "line": 265,
+      "procedure": "cmdCompanion_Click",
+      "event": "bound_kick_warning",
+      "expression": "positive binding warns that the companion may turn hostile",
+      "source_text": "l0148 = l0148 + Chr(13) + Chr(13) + \"WARNING: Since the companion is bound, you will risk them turning on you!\""
+    },
+    {
+      "file": "FRMCHAR3.bas",
+      "line": 740,
+      "procedure": "picCompanion_DblClick",
+      "event": "companion_spell_context",
+      "expression": "spell-level clamp and combat context are prepared for companion casting",
+      "source_text": "Sub picCompanion_DblClick (Index%)"
+    },
+    {
+      "file": "FRMCHAR3.bas",
+      "line": 759,
+      "procedure": "picCompanion_DragDrop",
+      "event": "companion_reorder_guard",
+      "expression": "dead source or destination slots reject reordering",
+      "source_text": "Sub picCompanion_DragDrop (Index%, Source As Control, X As Single, Y As Single)"
+    },
+    {
+      "file": "FRMGROUP.bas",
+      "line": 212,
+      "procedure": "cmdCommand_Click",
+      "event": "combat_reorder_guard",
+      "expression": "party rearrangement is rejected during combat",
+      "source_text": "sub085B \"You cannot rearrange the party during combat!\""
+    },
+    {
+      "file": "FRMGROUP.bas",
+      "line": 239,
+      "procedure": "lblName_DragDrop",
+      "event": "party_leader_swap",
+      "expression": "leader changes are reported after member records swap",
+      "source_text": "sub085B Chr$(34) + RTrim(gv14C2(m0052).M548B) + Chr$(34) + \" is now party leader!\""
+    },
+    {
+      "file": "FRMGROUP.bas",
+      "line": 306,
+      "procedure": "sub2F40",
+      "event": "dead_member_removal",
+      "expression": "dead records are removed and active indices repaired",
+      "source_text": "Sub sub2F40 ()"
+    },
+    {
+      "file": "FRMGROUP.bas",
+      "line": 400,
+      "procedure": "sub2F5A",
+      "event": "party_status_order",
+      "expression": "status and command labels are rendered in party order",
+      "source_text": "Sub sub2F5A ()"
+    },
+    {
+      "file": "Module4.bas",
+      "line": 519,
+      "procedure": "fn0B6C",
+      "event": "obedience_entry",
+      "expression": "binding and alignment conditions gate companion combat behavior",
+      "source_text": "Function fn0B6C (ByVal pv016E As Integer ' 81, p0170 As Integer ' 41, p0172 As Integer ' 41) As Integer ' 1"
+    },
+    {
+      "file": "Module4.bas",
+      "line": 528,
+      "procedure": "fn0B6C",
+      "event": "obedience_rng",
+      "expression": "random obedience checks use separate Rnd draws",
+      "source_text": "' Const m0188 = 0 ' &H0%"
+    },
+    {
+      "file": "Module4.bas",
+      "line": 543,
+      "procedure": "fn0B6C",
+      "event": "refusal_branch",
+      "expression": "a companion can refuse to join the current monsters",
+      "source_text": "sub085B \"Your companion refuses to join the current monsters!\""
+    },
+    {
+      "file": "Module4.bas",
+      "line": 579,
+      "procedure": "fn0B6C",
+      "event": "turn_hostile_branch",
+      "expression": "a companion can turn on the party and enter combat",
+      "source_text": "sub085B Chr$(34) + RTrim(gv14C2(pv016E).M548B) + Chr$(34) + \": \" + fn1235(pv016E, p0170) + \" has turned on the party!\""
+    }
+  ],
+  "source_event_count": 20,
+  "runtime_cases": [
+    {
+      "id": "PARTY-FORMATION",
+      "setup": "one leader plus full/partial party with swaps",
+      "trace_focus": "formation order, leader index, controls and saved records",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "COMPANION-BUY",
+      "setup": "zero through four occupied companion slots",
+      "trace_focus": "capacity gate, initial fields, binding and stock",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "BINDING-BOUNDARY",
+      "setup": "binding levels \u22121, 0, 8, 9, 10, 11 and 12",
+      "trace_focus": "fee, cap, sign semantics and service result",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "COMPANION-KICK",
+      "setup": "dead carried, living unbound and living bound companions",
+      "trace_focus": "city/combat guards, hostility and slot clearing",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "OBEDIENCE",
+      "setup": "matching, adjacent and opposed alignment with binding boundaries",
+      "trace_focus": "refusal, join, turn-hostile and RNG draws",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "COMPANION-CAST",
+      "setup": "companion spell below, at and above learned level",
+      "trace_focus": "level clamp, target context, cost and effect",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "PARTY-REWARD",
+      "setup": "mixed human/companion party after combat",
+      "trace_focus": "reward sharing, death removal and active indices",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "FRIENDLY-FIRE",
+      "setup": "manual attack against good/neutral/evil companion",
+      "trace_focus": "alignment guard, combat entry and messages",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "PARTY-REORDER",
+      "setup": "living/living, living/dead and dead/dead drag swaps",
+      "trace_focus": "accepted swap and rejection messages",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "COMPANION-RESCUE",
+      "setup": "dead, carried and pending companion states entering town",
+      "trace_focus": "recovery, carrying reference and party order",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    }
+  ],
+  "runtime_case_count": 10,
+  "runtime_requirements": [
+    "run the exact original executable with controlled human and companion records",
+    "capture formation, leader, death/removal, carrying, binding and hostility transitions",
+    "capture companion casting arbitration, friendly-fire guards, reward sharing and RNG order"
+  ]
+}

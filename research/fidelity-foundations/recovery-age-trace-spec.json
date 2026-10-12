@@ -1,0 +1,394 @@
+{
+  "status": "STATIC_RECOVERY_AGE_TRACE_BUILT_RUNTIME_PENDING",
+  "data": {
+    "source_status": "static_decompiler_paths_and_preserved_character_records",
+    "threshold_clamp_candidate": [
+      10,
+      98
+    ],
+    "ordinary_recovery_days_candidate": 54,
+    "stoning_recovery_days_candidate": 84,
+    "complication_age_days_candidate": 5475,
+    "interpretation": "Recovery fees, chance comparisons, pending fields, HP restoration, complications and elapsed age remain candidate semantics until original-runtime observation."
+  },
+  "source_procedures": [
+    {
+      "file": "FRMMORG.bas",
+      "procedure": "cmdCommand_Click",
+      "role": "morgue_commands",
+      "start_line": 25,
+      "end_line": 186,
+      "signature": "Sub cmdCommand_Click (Index%)",
+      "summary": "dispatches raise companion, raise character and paid rescue paths",
+      "evidence": "original-export/code/source/FRMMORG.bas:25"
+    },
+    {
+      "file": "FRMMORG.bas",
+      "procedure": "sub2BDB",
+      "role": "companion_raise_quote",
+      "start_line": 254,
+      "end_line": 265,
+      "signature": "Sub sub2BDB ()",
+      "summary": "computes companion raise fee and exposes the first dead companion",
+      "evidence": "original-export/code/source/FRMMORG.bas:254"
+    },
+    {
+      "file": "FRMDUNM.bas",
+      "procedure": "cmdWait_Click",
+      "role": "wait_for_rescue",
+      "start_line": 140,
+      "end_line": 192,
+      "signature": "Sub cmdWait_Click ()",
+      "summary": "runs the depth-dependent rescue loop and invokes recovery after success",
+      "evidence": "original-export/code/source/FRMDUNM.bas:140"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "sub0EAE",
+      "role": "age_and_rest",
+      "start_line": 322,
+      "end_line": 391,
+      "signature": "Sub sub0EAE (p00C0 As Integer ' 41, p00C2 As Integer ' 41, ByVal pv00C4 As Integer ' 81, p00C6 As Integer ' 41)",
+      "summary": "adds explicit or derived days, fills HP and invokes world updates",
+      "evidence": "original-export/code/source/Module6.bas:322"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "fn13C0",
+      "role": "raise_quote",
+      "start_line": 2736,
+      "end_line": 2750,
+      "signature": "Function fn13C0 (p0458 As Integer ' 41) As Variant ' 6",
+      "summary": "rejects pending raises and computes the character raise quote",
+      "evidence": "original-export/code/source/Module6.bas:2736"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "fn13D7",
+      "role": "raise_threshold",
+      "start_line": 2752,
+      "end_line": 2804,
+      "signature": "Function fn13D7 (p0464 As Integer ' 41, p0466 As Integer ' 41) As Integer ' 1",
+      "summary": "derives and clamps recovery chance from CON and method",
+      "evidence": "original-export/code/source/Module6.bas:2752"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "sub0A7C",
+      "role": "pending_raise_write",
+      "start_line": 6044,
+      "end_line": 6072,
+      "signature": "Sub sub0A7C (p0844 As Integer ' 41, p0846 As Integer ' 41, p0848 As Integer ' 41)",
+      "summary": "writes location, threshold, initiator and method into pending state",
+      "evidence": "original-export/code/source/Module6.bas:6044"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "fn10A3",
+      "role": "pending_raise_acceptance",
+      "start_line": 5926,
+      "end_line": 5983,
+      "signature": "Function fn10A3 (ByVal pv0822 As Integer ' 81) As Integer ' 1",
+      "summary": "accepts a pending raise, rolls failure and restores method-specific HP",
+      "evidence": "original-export/code/source/Module6.bas:5926"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "fn11A1",
+      "role": "recovery_complication",
+      "start_line": 1655,
+      "end_line": 1701,
+      "signature": "Function fn11A1 (ByVal pv02E4 As Integer ' 81) As Integer ' 1",
+      "summary": "applies age/Rock complications, stat losses, HP reduction and age",
+      "evidence": "original-export/code/source/Module6.bas:1655"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "fn131D",
+      "role": "highest_guild_gate",
+      "start_line": 2639,
+      "end_line": 2648,
+      "signature": "Function fn131D (ByVal pv041C As Integer ' 81) As Integer ' 1",
+      "summary": "selects the highest guild level used by recovery subsidy logic",
+      "evidence": "original-export/code/source/Module6.bas:2639"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "sub0930",
+      "role": "self_service_recovery",
+      "start_line": 3032,
+      "end_line": 3150,
+      "signature": "Sub sub0930 (ByVal pv04CC As Integer ' 81)",
+      "summary": "performs Morgue/self-service recovery and its state transitions",
+      "evidence": "original-export/code/source/Module6.bas:3032"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "sub0894",
+      "role": "recovery_dispatch",
+      "start_line": 2806,
+      "end_line": 2849,
+      "signature": "Sub sub0894 (ByVal pv0476 As Integer ' 81)",
+      "summary": "dispatches saved-character recovery and party/death processing",
+      "evidence": "original-export/code/source/Module6.bas:2806"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "sub1476",
+      "role": "post_recovery_world",
+      "start_line": 3152,
+      "end_line": 3173,
+      "signature": "Sub sub1476 (ByVal pv04EA As Integer ' 81)",
+      "summary": "updates dungeon/world state after recovery processing",
+      "evidence": "original-export/code/source/Module6.bas:3152"
+    }
+  ],
+  "source_events": [
+    {
+      "file": "FRMMORG.bas",
+      "line": 25,
+      "procedure": "cmdCommand_Click",
+      "event": "morgue_dispatch",
+      "expression": "raise, companion raise and rescue are separate command cases",
+      "source_text": "Sub cmdCommand_Click (Index%)"
+    },
+    {
+      "file": "FRMMORG.bas",
+      "line": 52,
+      "procedure": "cmdCommand_Click",
+      "event": "rock_guard",
+      "expression": "Rock characters are rejected by the Morgue character-raise path",
+      "source_text": "On Error GoTo L74D14"
+    },
+    {
+      "file": "FRMMORG.bas",
+      "line": 61,
+      "procedure": "cmdCommand_Click",
+      "event": "pending_raise_guard",
+      "expression": "already-pending raises are rejected before payment",
+      "source_text": "Case m001A"
+    },
+    {
+      "file": "FRMMORG.bas",
+      "line": 74,
+      "procedure": "cmdCommand_Click",
+      "event": "pending_raise_write",
+      "expression": "payment precedes writing the pending recovery record",
+      "source_text": "l002E = MsgBox(\"Raise already cast on Character!\", 64, \"SORRY!\")"
+    },
+    {
+      "file": "FRMMORG.bas",
+      "line": 86,
+      "procedure": "cmdCommand_Click",
+      "event": "companion_raise_roll",
+      "expression": "companion raise uses a capped threshold and Int(Rnd * 100) comparison",
+      "source_text": "If  fn114E(m0022) = False Then"
+    },
+    {
+      "file": "FRMMORG.bas",
+      "line": 145,
+      "procedure": "cmdCommand_Click",
+      "event": "rescue_roll",
+      "expression": "paid rescue proceeds only after the floor-dependent random gate",
+      "source_text": "If  fn114E(l0080) = False Then"
+    },
+    {
+      "file": "FRMMORG.bas",
+      "line": 158,
+      "procedure": "cmdCommand_Click",
+      "event": "rescue_coordinate_gate",
+      "expression": "floor and per-axis coordinate tolerances gate retrieval",
+      "source_text": "Else"
+    },
+    {
+      "file": "FRMMORG.bas",
+      "line": 173,
+      "procedure": "cmdCommand_Click",
+      "event": "rescue_state_branch",
+      "expression": "living, Rock and other fatal states produce different transitions",
+      "source_text": "Else"
+    },
+    {
+      "file": "FRMMORG.bas",
+      "line": 254,
+      "procedure": "sub2BDB",
+      "event": "companion_raise_fee",
+      "expression": "fee uses maximum HP, 1244.34 and monster first-level field",
+      "source_text": "Sub sub2BDB ()"
+    },
+    {
+      "file": "FRMDUNM.bas",
+      "line": 140,
+      "procedure": "cmdWait_Click",
+      "event": "wait_entry",
+      "expression": "wait initializes the simulated rescue-day loop",
+      "source_text": "Sub cmdWait_Click ()"
+    },
+    {
+      "file": "FRMDUNM.bas",
+      "line": 153,
+      "procedure": "cmdWait_Click",
+      "event": "wait_denominator",
+      "expression": "depth and area state select the random denominator",
+      "source_text": "l0080 = False"
+    },
+    {
+      "file": "FRMDUNM.bas",
+      "line": 171,
+      "procedure": "cmdWait_Click",
+      "event": "wait_success",
+      "expression": "successful rescue moves the casualty to town and adds elapsed days",
+      "source_text": "If  l007A < .1# Then"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 322,
+      "procedure": "sub0EAE",
+      "event": "age_entry",
+      "expression": "rest and explicit-day callers share the age update",
+      "source_text": "Sub sub0EAE (p00C0 As Integer ' 41, p00C2 As Integer ' 41, ByVal pv00C4 As Integer ' 81, p00C6 As Integer ' 41)"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 329,
+      "procedure": "sub0EAE",
+      "event": "derived_rest_days",
+      "expression": "missing HP is converted to integer rest days by the 3.25 divisor",
+      "source_text": "' Const m00DC = 0 ' &H0%"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 350,
+      "procedure": "sub0EAE",
+      "event": "world_update_hooks",
+      "expression": "party-zero rest invokes world update helpers",
+      "source_text": "End If"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 2736,
+      "procedure": "fn13C0",
+      "event": "raise_quote_rounding",
+      "expression": "raise quote uses a Long result and pending-state guard",
+      "source_text": "Function fn13C0 (p0458 As Integer ' 41) As Variant ' 6"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 2752,
+      "procedure": "fn13D7",
+      "event": "threshold_formula",
+      "expression": "CON and method terms are converted and clamped to 10\u201398",
+      "source_text": "Function fn13D7 (p0464 As Integer ' 41, p0466 As Integer ' 41) As Integer ' 1"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 6044,
+      "procedure": "sub0A7C",
+      "event": "pending_fields",
+      "expression": "location, threshold, initiator and method are written without immediate revival",
+      "source_text": "Sub sub0A7C (p0844 As Integer ' 41, p0846 As Integer ' 41, p0848 As Integer ' 41)"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 5926,
+      "procedure": "fn10A3",
+      "event": "pending_roll",
+      "expression": "failure compares Int(Rnd * 100) against stored threshold",
+      "source_text": "Function fn10A3 (ByVal pv0822 As Integer ' 81) As Integer ' 1"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 1655,
+      "procedure": "fn11A1",
+      "event": "complication_branch",
+      "expression": "age/Rock complications can subtract stats, reduce HP and add 5,475 days",
+      "source_text": "Function fn11A1 (ByVal pv02E4 As Integer ' 81) As Integer ' 1"
+    }
+  ],
+  "source_event_count": 20,
+  "runtime_cases": [
+    {
+      "id": "RAISE-QUOTE",
+      "setup": "max HP and pending states around Long/Int conversion boundaries",
+      "trace_focus": "fee, pending rejection and rounding",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "RAISE-THRESHOLD",
+      "setup": "natural CON and methods \u22121, 20, 21, 22, 23 and Rock",
+      "trace_focus": "threshold, method gate and clamp",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "PENDING-ROUNDTRIP",
+      "setup": "paid raise followed by save, reload and acceptance",
+      "trace_focus": "pending fields and no immediate revival",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "RAISE-OUTCOME",
+      "setup": "0\u201399 draws around stored threshold",
+      "trace_focus": "failure, success, HP restoration and state clearing",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "ROCK-RECOVERY",
+      "setup": "Rock versus non-Rock in Morgue and pending paths",
+      "trace_focus": "special rejection and complication behavior",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "COMPLICATION-AGE",
+      "setup": "age percentage around trigger and exact boundaries",
+      "trace_focus": "stat losses, max HP reduction, age and equipment recheck",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "HIGHEST-GUILD",
+      "setup": "highest guild level 5/6 with carried+banked funds below fee",
+      "trace_focus": "subsidy eligibility",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "PAID-RESCUE",
+      "setup": "floor, coordinates, HP ratio and fatal state matrix",
+      "trace_focus": "payment, search roll, retrieval and message/state discrepancy",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "WAIT-RESCUE",
+      "setup": "floors 1, 8 and 15 with automap bit and area boundaries",
+      "trace_focus": "denominator, elapsed days, RNG and destination",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "TOWN-RECOVERY",
+      "setup": "party with living injured, full HP and dead companions",
+      "trace_focus": "healing, age, SP, ailments and carrying reference",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "RECOVERY-ORDER",
+      "setup": "complication plus ordinary recovery in one call chain",
+      "trace_focus": "call order and cumulative age/state changes",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    }
+  ],
+  "runtime_case_count": 11,
+  "runtime_requirements": [
+    "run the exact original executable with copied living, dead, Rock and pending characters",
+    "capture fee conversion, threshold comparisons, RNG draws, pending save fields and HP/state transitions",
+    "capture paid rescue, wait rescue, town recovery and complication call order with timestamps and records"
+  ]
+}

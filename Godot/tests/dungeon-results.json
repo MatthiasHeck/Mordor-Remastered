@@ -1,0 +1,5 @@
+{
+	"checks": 128,
+	"failures": [],
+	"scope": "Deterministic solo exploration; independent CSV edge sweep, lossless automap, transitions, recovery and native UI. No original-runtime parity claim."
+}

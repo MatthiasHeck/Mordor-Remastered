@@ -1,0 +1,367 @@
+record_index,item_id,name,base_price,first_level,subtype_raw,base_charges_candidate,cursed_raw,alignment_flags_raw,first_level_zero_buy_price_candidate,price_source,buy_rule_source
+1,0,Hands,0,0,0,0,0,1,0,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+2,1,Gnarled Hands,255671,1,0,0,1,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+3,2,Initiate's Hands,2512764,1,0,0,0,10,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+4,3,Magic Hands,12433122,4,0,0,0,10,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+5,4,Master's Hand,23433232,6,0,0,0,10,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+6,5,Hands of Death,45344232,9,0,0,0,10,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+7,6,Hands of Slaying,75899432,12,0,0,0,10,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+8,7,Hands of Destruction,158766432,15,0,0,0,10,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+9,31,Bronze Dagger,250,0,1,0,0,1,250,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+10,356,Dagger of Stealth,6244356,0,1,0,0,1,6244356,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+11,32,Bone Dagger,322132,1,1,0,1,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+12,33,Iron Dagger,23377,1,1,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+13,34,Lethe Dagger,3265432,2,1,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+14,35,Steel Dagger,1025674,3,1,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+15,36,Adamantite Dagger,4556231,5,1,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+16,37,Mithril Dagger,14566431,6,1,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+17,264,Dagger of Jagoni,456445,6,1,0,1,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+18,327,Shadow's Blade,28143764,7,1,0,0,12,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+19,38,Sabre Blade,46533420,10,1,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+20,39,Vampire Fang,87655432,13,1,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+21,40,Dagger of Swiftness,198655744,15,1,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+22,84,Cross of Redemption,784532,1,2,0,1,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+23,85,Silver Cross,5516133,2,2,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+24,86,Cross of Life,13237651,6,2,2,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+25,87,Cross of Commanding,12386539,7,2,42,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+26,88,Cross of Requnix,287566432,15,2,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+27,8,Bronze Sword,350,0,3,0,0,1,350,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+28,357,Sword of the Winds,18566343,0,3,0,0,1,18566343,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+29,9,Iron Sword,56598,1,3,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+30,10,Backlash Sword,544351,1,3,0,1,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+31,11,Thief Sword,7232593,2,3,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+32,12,Katana,8322132,2,3,0,0,10,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+33,261,Cutlass,195677,2,3,0,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+34,260,Wicked Blade,2766536,3,3,0,0,8,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+35,13,Crystal Sword,3541231,4,3,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+36,14,Steel Sword,1366742,4,3,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+37,15,Dominator,9845672,4,3,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+38,16,Adamantite Sword,5798677,5,3,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+39,262,Burgens Blade,589766,5,3,0,1,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+40,17,Mithril Sword,18965342,7,3,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+41,18,Avenger,32678540,7,3,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+42,335,Holy Sword,51356843,9,3,25,0,2,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+43,19,Sword of Slaying,45321784,11,3,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+44,284,Vorpal Blade,85677546,13,3,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+45,20,Lightning Blade,166745328,15,3,35,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+46,21,Eliminator,303566432,15,3,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+47,355,Sword of Flames,456455346,16,3,15,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+48,89,Pine Staff,185,0,4,0,0,1,185,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+49,90,Oak Staff,12455,1,4,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+50,91,Gordu Staff,321435,1,4,0,1,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+51,92,Staff of Alton,2763251,2,4,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+52,93,Iron-shod Staff,4265172,3,4,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+53,94,Staff of Striking,8965321,6,4,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+54,95,Mithril-shod Staff,15652341,7,4,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+55,96,Staff of Helarno,98455320,13,4,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+56,97,Staff of Destruction,256745328,15,4,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+57,41,Bronze Mace,325,0,5,0,0,1,325,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+58,42,Mace of Kordul,544341,1,5,0,1,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+59,43,Iron Mace,34612,2,5,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+60,44,Steel Mace,1896744,4,5,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+61,45,Adamantite Mace,4566756,5,5,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+62,46,Mithril Mace,16877644,7,5,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+63,47,Mace of Disruption,67455320,13,5,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+64,48,Warlord's Mace,178677536,15,5,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+65,22,Bronze Battle Axe,345,0,6,0,0,1,345,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+66,23,Axe of the Blackguard,543321,1,6,0,1,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+67,24,Iron Battle Axe,55675,2,6,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+68,25,Steel Battle Axe,1433231,4,6,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+69,326,Delvar's War Axe,7614873,4,6,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+70,26,Adamantite Battle Axe,5654326,5,6,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+71,263,Lead Axe,544567,6,6,0,1,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+72,27,Mithril Battle Axe,19655340,7,6,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+73,28,Axe of Power,45344312,11,6,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+74,29,Shadow Axe,124322432,15,6,45,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+75,30,Barrier Battle Axe,278566432,15,6,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+76,275,Iron Hammer,45678,1,7,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+77,98,War Hammer,5672433,2,7,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+78,276,Landria's Hammer,1244536,6,7,0,1,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+79,293,Dwarven Hammer,12433565,7,7,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+80,330,Giant King's Hammer,103548341,10,7,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+81,99,Hammer of Flames,35127840,12,7,30,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+82,100,Hammer of O'landra,243544336,15,7,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+83,49,Leather Armor,125,0,8,0,0,1,125,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+84,50,Padded Leather Armor,367455,1,8,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+85,256,Feather Leather Armor,512456,1,8,0,1,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+86,51,Suede Leather Armor,567344,2,8,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+87,52,Studded Leather Armor,3455321,3,8,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+88,53,Cuirboulli Armor,6544341,7,8,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+89,54,Studded Cuirboulli,8345623,9,8,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+90,55,Thief's Armor,234544320,15,8,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+91,56,Ninja's Armor,198566432,15,8,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+92,57,Magician's Armor,206566432,15,8,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+93,58,Bronze Chain Mail,18325,0,9,0,0,1,18325,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+94,59,Iron Chain Mail,506433,1,9,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+95,60,Black Chain Mail,1544321,1,9,0,1,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+96,61,Steel Chain Mail,3455645,3,9,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+97,62,Adamantite Chain,8235123,5,9,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+98,265,Burgens Chain Armor,1244565,6,9,0,1,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+99,63,Mithril Chain Mail,19455320,7,9,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+100,64,Spectral Chain Mail,78455640,11,9,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+101,65,Bronze Plate Mail,21825,0,10,0,0,1,21825,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+102,66,Ulsik Plate Mail,2455341,1,10,0,1,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+103,67,Iron Plate Mail,1567433,2,10,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+104,68,Steel Plate Mail,8677435,4,10,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+105,69,Adamantite Plate,12543212,6,10,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+106,70,Mithril Plate Armor,25677432,9,10,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+107,71,Spectral Plate Armor,48344320,13,10,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+108,72,Warrior's Armor,256433232,15,10,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+109,73,Paladin's Armor,287455328,15,10,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+110,164,Wooden Shield,215,0,11,0,0,1,215,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+111,165,Bronze Shield,13532,0,11,0,0,1,13532,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+112,166,Iron Shield,325456,2,11,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+113,167,Steel Shield,1322453,3,11,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+114,272,Lead Shield,567243,4,11,0,1,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+115,168,Bladed Shield,3876543,5,11,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+116,169,Adamantite Shield,9654321,5,11,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+117,328,Shield of Defense,18345371,7,11,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+118,329,Mystic Shield,17349712,7,11,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+119,170,Mithril Shield,14567831,8,11,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+120,171,Spectral Shield,56344232,14,11,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+121,317,Leather Cap,75,0,12,0,0,1,75,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+122,350,Padded Leather Cap,21437,2,12,0,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+123,322,Cap of Defense,566434,3,12,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+124,318,Magician's Cap,2455647,5,12,10,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+125,323,Cap of Visions,2144323,5,12,0,1,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+126,319,Thief's Cap,5466567,6,12,5,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+127,320,Cap of Protection,8566476,8,12,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+128,321,Cap of Death,45644565,12,12,5,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+129,349,Lamurian Crown,234716942,16,12,10,0,4,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+130,74,Copper Helm,75,0,13,0,0,1,75,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+131,75,Bronze Helmet,12435,0,13,0,0,1,12435,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+132,76,Iron Helmet,89456,2,13,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+133,77,Steel Helmet,873232,3,13,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+134,266,Helm of Blindness,455432,4,13,0,1,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+135,78,Helm of Astral Projection,5213451,5,13,10,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+136,79,Adamantite Helmet,3265428,5,13,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+137,287,Helm of Ish'taria,2455465,5,13,0,1,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+138,80,Helm of Sight,10326543,6,13,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+139,285,Paladin's Helm,9445640,6,13,0,0,2,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+140,81,Mithril Helmet,27154298,7,13,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+141,286,Ninja's Hood,12544654,7,13,0,0,10,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+142,288,Magician's Helm,18566576,9,13,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+143,82,Helm of Knowledge,89566432,12,13,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+144,83,Helm of Brilliance,128455328,14,13,40,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+145,106,Leather Gloves,125,0,14,0,0,1,125,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+146,107,Gloves of the Blackguard,543267,1,14,0,1,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+147,257,Nugena Gloves,566435,1,14,0,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+148,108,Gloves of Strength,1455376,2,14,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+149,282,Thief's Gloves,4566756,3,14,0,0,4,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+150,283,Master's Gloves,7566456,6,14,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+151,109,Gloves of Might,9224311,9,14,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+152,110,Gloves of Power,23433240,11,14,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+153,111,Gloves of Doom,56743876,14,14,20,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+154,112,Gloves of Death,198455344,15,14,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+155,113,Gloves of Light,287566336,15,14,40,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+156,358,Lethal Gauntlets,18544657,0,15,0,0,1,18544657,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+157,258,Nugena Gauntlets,543522,1,15,0,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+158,289,Gauntlets of Fumbling,245344,1,15,0,1,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+159,114,Iron Gauntlets,956328,2,15,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+160,115,Steel Gauntlets,1786451,3,15,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+161,268,Nymphlets,544567,5,15,0,1,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+162,116,Gauntlets of Might,8453432,6,15,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+163,117,Gauntlets of Power,18433240,8,15,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+164,118,Mithril Gauntlets,25644392,10,15,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+165,119,Gauntlets of Slaying,54633432,13,15,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+166,120,White Flame Gauntlets,102564784,14,15,75,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+167,121,Cloth Cloak,115,0,16,0,0,1,115,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+168,359,Cloak of Night,8544654,0,16,5,0,1,8544654,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+169,122,Brown Cloak,145327,1,16,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+170,123,Robe of Insight,289654,1,16,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+171,124,Robe of Remorse,432567,1,16,0,1,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+172,125,White Cloak,899431,3,16,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+173,126,Cloak of Invisibility,1568721,5,16,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+174,127,Black Cloak,1896543,6,16,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+175,269,Cloak of the Snakes,577687,6,16,0,1,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+176,128,Grey Cloak,3789123,8,16,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+177,129,Silver Cloak,11231431,11,16,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+178,130,Grey Elven Robe,78455312,14,16,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+179,131,Cloak of Enchantment,102453672,15,16,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+180,138,Bronze Bracers,56437,1,17,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+181,139,Iron Bracers,145343,2,17,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+182,140,Steel Bracers,1233213,3,17,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+183,325,Twisted Bracers,5379617,3,17,2,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+184,270,Lead Bracers,456786,4,17,0,1,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+185,141,Bracers of Strength,2786512,6,17,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+186,281,Elven Bracers,7556456,9,17,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+187,142,Bracers of Might,12433412,11,17,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+188,143,Bracers of Destruction,16543123,15,17,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+189,361,Dorlan's Sash,1544657,0,18,0,0,1,1544657,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+190,144,White Sash,1,2,18,25,1,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+191,145,Purple Sash,1,6,18,75,1,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+192,146,Static Sash,1,9,18,50,1,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+193,280,Magenta Sash,1,11,18,50,1,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+194,147,Gold Sash,1,14,18,75,1,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+195,101,Leather Girdle,12498,1,19,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+196,102,Girdle of Strength,875432,2,19,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+197,267,Trolls Girdle,244564,5,19,0,1,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+198,103,Girdle of Might,5432431,6,19,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+199,104,Girdle of Power,14367843,10,19,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+200,105,Girdle of Giant Strength,123433296,14,19,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+201,132,Leather Boots,175,0,20,0,0,1,175,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+202,133,Boots of Lethargy,453437,1,20,0,1,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+203,134,Boots of Swiftness,567321,2,20,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+204,135,Boots of Evading,2431897,5,20,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+205,136,Boots of Stealth,4974310,7,20,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+206,277,Boots of Levitation,9567876,9,20,35,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+207,278,Boots of Agility,18766576,11,20,35,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+208,137,Boots of the Elven Lords,98455344,14,20,35,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+209,360,Ring of Power,25466576,0,21,5,0,1,25466576,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+210,148,Shimmering Ring,122431,1,21,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+211,149,Ring of Despair,745344,1,21,0,1,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+212,298,Ring of Venom,3344567,3,21,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+213,150,Ring of Protection,1244312,5,21,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+214,151,Ring of Levitation,12455341,6,21,35,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+215,152,Ring of Opening,35123872,6,21,35,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+216,153,Elven Ring,36138656,6,21,35,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+217,154,Ring of Disruption,26541234,6,21,35,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+218,155,Ring of Entrapment,24278512,6,21,35,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+219,156,Ring of Flames,26742356,6,21,35,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+220,157,Ring of Frost,27654112,6,21,35,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+221,158,Ring of Invisibility,25578924,6,21,50,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+222,159,Ring of Teleportation,32765424,6,21,35,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+223,160,Ring of Death,4533431,6,21,5,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+224,271,Ring of Myrrn,876588,6,21,0,1,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+225,279,Ring of Defending,5344567,7,21,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+226,161,Lamurian Ring,8566453,9,21,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+227,162,Ring of Truth,12566341,11,21,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+228,163,Ring of Splendour,98455320,12,21,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+229,230,Amulet of Ultravision,356322,1,22,0,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+230,231,Amulet of Life,102512,3,22,0,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+231,232,Amulet of Flames,2763981,4,22,0,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+232,274,Amulet of the Drakul,677897,5,22,0,1,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+233,233,Amulet of Infravision,7895432,6,22,0,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+234,234,Medallion of Dragons,12765442,11,22,25,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+235,347,Lamurian Amulet,28766567,14,22,0,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+236,235,Pendragon,116435672,15,22,40,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+237,172,Potion of Intelligence,3216431,1,23,1,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+238,173,Potion of Leadership,3216431,1,23,1,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+239,174,Potion of Insight,3216431,1,23,1,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+240,175,Potion of Might,3215431,1,23,1,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+241,176,Potion of Fitness,3216431,1,23,1,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+242,177,Potion of Agility,3216431,1,23,1,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+243,178,Potion of Invisibility,324561,1,23,2,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+244,179,Potion of Sight,135433,1,23,3,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+245,180,Elven Potion,231788,1,23,2,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+246,181,Dragon's Water,93211,1,23,3,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+247,182,Potion of Health,125543,1,23,3,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+248,183,Potion of Curing,135432,1,23,3,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+249,184,Potion of Healing,139531,1,23,3,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+250,185,Potion of Flight,233221,1,23,3,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+251,186,Potion of Movement,156211,1,23,3,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+252,187,Potion of Netamu,323213,1,23,3,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+253,188,Potion of Nevamu,355672,1,23,3,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+254,189,Potion of Nesamu,355672,1,23,3,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+255,190,Potion of Negamu,345634,1,23,3,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+256,191,Potion of Nemamu,345645,1,23,3,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+257,255,Potion of Youth,1567455,1,23,1,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+258,292,Aard of Being,15466576,3,23,1,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+259,296,Elixr of Restoration,2455647,5,23,1,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+260,354,Elixr of Fate,3223435,8,23,1,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+261,192,Dragon's Blood,188456384,11,23,1,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+262,353,Elven Wine,1500,11,23,1,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+263,197,Scroll of Spells,1192455,1,24,1,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+264,198,Scroll of Negrun,482532,1,24,4,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+265,199,Scroll of Sumsae,252532,1,24,4,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+266,200,Scroll of Ketran,782458,1,24,4,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+267,201,Scroll of Nimeon,594332,1,24,4,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+268,202,Scroll of Hathron,177532,1,24,4,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+269,203,Scroll of Gorron,386537,1,24,4,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+270,204,Scroll of Kanji,102532,1,24,4,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+271,205,Scroll of Mallart,287536,1,24,4,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+272,206,Scroll of Norgus,682584,1,24,4,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+273,207,Scroll of Nantasu,582566,1,24,4,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+274,311,Scroll of Control,423556,1,24,4,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+275,297,Scroll of She'tal,3455465,3,24,2,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+276,208,Tome of Insight,2135431,1,25,1,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+277,209,Tome of Endurance,2135431,1,25,1,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+278,210,Tome of Might,2135431,1,25,1,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+279,211,Tome of Learning,2135431,1,25,1,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+280,212,Tome of Agility,2135431,1,25,1,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+281,213,Tome of Leadership,2135431,1,25,1,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+282,214,Tome of Lies,2135431,1,25,1,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+283,314,Tome of Binding,1244356,2,25,4,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+284,215,Tome of Spells,17654420,8,25,1,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+285,193,Dust of Healing,1311432,1,26,5,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+286,194,Dust of Locating,2533123,1,26,2,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+287,195,Dust of Life,4278651,3,26,2,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+288,333,Dust of Opening,8753124,5,26,4,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+289,196,Magical Dust,18654376,11,26,3,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+290,253,Crystal of Healing,546455,1,27,12,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+291,254,Prism of Sanctuary,5675435,3,27,1,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+292,331,Gem of Healing,3453891,5,27,6,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+293,332,Crystal of Restoration,43973154,9,27,4,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+294,216,Rod of Entrapment,3758439,4,28,25,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+295,217,Rod of Passage,3756421,4,28,25,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+296,218,Rod of Flames,3211123,4,28,25,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+297,219,Rod of Healing,4262713,4,28,25,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+298,220,Rod of Freezing,3734153,4,28,25,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+299,221,Rod of Power,3456789,4,28,25,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+300,222,Rod of Hardness,3635621,4,28,25,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+301,223,Rod of Locating,3854343,4,28,25,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+302,224,Rod of Lightning,3789531,4,28,25,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+303,225,Rod of Darkness,3672341,4,28,25,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+304,312,Rod of Binding,3144354,4,28,25,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+305,343,Rod of Ultimate Power,2751491,4,28,40,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+306,334,Caduceus,81345783,12,28,15,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+307,348,Lamurian Shock Lance,71234731,13,28,30,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+308,259,Glowing Rock,567433,1,29,5,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+309,226,Lodestone,4564765,3,29,8,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+310,227,Scarab of Protection,13455341,5,29,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+311,295,FlameStone,15644657,5,29,4,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+312,273,Scarab of Pain,6566756,6,29,10,1,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+313,362,Mithril Ore,3466576,6,29,0,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+314,228,Scarab of Defense,35422340,9,29,0,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+315,363,Pure Mithril,55466546,12,29,0,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+316,229,Scarab of Life,105644352,14,29,12,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+317,236,Bells of Kwalish,12318122,2,30,2,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+318,315,Orb of Life Domination,8455365,5,30,2,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+319,237,Sphere of Dislocation,8455341,6,30,25,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+320,238,Sphere of Doom,9455631,7,30,25,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+321,239,Sphere of Flames,8945341,7,30,25,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+322,240,Sphere of Frost,8453511,7,30,25,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+323,241,Sphere of Harm,9455341,7,30,25,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+324,242,Sphere of Healing,10455341,7,30,25,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+325,243,Sphere of Rulership,9566431,7,30,25,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+326,244,Sphere of Thunder,7566431,7,30,25,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+327,245,Cube of Controlling,8435623,9,31,18,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+328,246,Lightning Cube,7456431,9,31,18,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+329,247,Cube of Teleporting,8434356,9,31,18,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+330,248,Cube of Restoration,8412361,9,31,18,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+331,249,Cube of Freezing,8321611,9,31,18,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+332,250,Cube of Flames,7785412,9,31,18,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+333,251,Cube of Draining,8331267,9,31,18,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+334,252,Cube of Death,7654351,9,31,18,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+335,313,Cube of Domination,9455676,9,31,18,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+336,290,Key of Opening,1544345,1,32,1,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+337,336,Dalyn's Smile,1034783,2,32,0,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+338,291,Unicorn Horn,5433465,3,32,15,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+339,324,Slaver's Whip,4796123,3,32,15,0,12,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+340,337,Dalyn's Grin,56731,4,32,0,1,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+341,294,Mordin Glyph,10544365,5,32,2,0,14,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+342,338,Dalyn's Laugh,97312,6,32,50,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+343,316,Erik's +1 Crayons,10,8,32,0,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+344,339,Skeleton Key,6697127,8,32,3,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+345,340,Dalyn's Tear,9537912,10,32,0,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+346,341,Dalyn's Groan,4218372,12,32,1,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+347,342,Dalyn's Last Laugh,35157914,14,32,0,1,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+348,299,Crest of the Nomad,0,0,34,0,0,1,0,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+349,300,Crest of the Warrior,0,0,34,0,0,1,0,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+350,301,Crest of the Paladin,0,0,34,12,0,1,0,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+351,302,Crest of the Ninja,0,0,34,0,0,1,0,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+352,303,Crest of the Villain,0,0,34,6,0,1,0,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+353,304,Crest of the Seeker,0,0,34,6,0,1,0,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+354,305,Crest of the Thief,0,0,34,12,0,1,0,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+355,306,Crest of the Scavenger,0,0,34,6,0,1,0,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+356,307,Crest of the Mage,0,0,34,6,0,1,0,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+357,308,Crest of the Sorcerer,0,0,34,6,0,1,0,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+358,309,Crest of the Wizard,0,0,34,6,0,1,0,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+359,310,Crest of the Healer,0,0,34,6,0,1,0,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+360,365,Medusa's Head,7544657,0,33,1,0,1,7544657,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+361,344,Ball and Chain,1500000,3,33,0,2,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+362,345,Tim's Lead Weights,3500000,7,33,0,2,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+363,346,Dalyn's Evil Laugh,10000,8,33,0,2,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+364,364,Derf's Toe Lint,5678344,11,33,0,2,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+365,351,Blessing of Morash,57327982,15,33,0,0,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583
+366,352,Curse of Morash,86972314,15,33,0,2,1,,MDATA3.MDR base value; not a universal shop quote,POOP/FRMCTYS.bas:583

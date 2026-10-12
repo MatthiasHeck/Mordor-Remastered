@@ -1,0 +1,168 @@
+{
+  "status": "ALL_ACTION_ITEMS_STATICALLY_COVERED_RUNTIME_PENDING",
+  "item_count": 16,
+  "items_with_missing_evidence": 0,
+  "items_runtime_pending": 16,
+  "records": [
+    {
+      "id": "R01",
+      "area": "Reference build",
+      "static_status": "static-baseline",
+      "evidence": "binary-baseline.json;source-manifest.json;runtime-dependencies.json",
+      "missing_evidence": "",
+      "static_scope": "Edition, executable, runtime-library and data fingerprints are preserved.",
+      "remaining_runtime_blocker": "Original build behavior and configuration must be observed.",
+      "behavioral_status": "runtime_pending"
+    },
+    {
+      "id": "R02",
+      "area": "Decompiler accuracy",
+      "static_status": "static-segment-and-source-map",
+      "evidence": "critical-procedure-provenance.csv;critical-procedure-provenance.md;reko-segment-relocation-map.csv;reko-segment-relocation-summary.json",
+      "missing_evidence": "",
+      "static_scope": "All 50 Reko segment dumps map to the NE image; 37 critical procedures have conservative source provenance.",
+      "remaining_runtime_blocker": "Function-level p-code and relocation-aware procedure addresses are missing.",
+      "behavioral_status": "runtime_pending"
+    },
+    {
+      "id": "R03",
+      "area": "Numerics and randomness",
+      "static_status": "static-traces-ready",
+      "evidence": "numeric-conversion-sites.csv;rng-call-sites.csv;rng-schedule.json;numeric-rng-trace-specs.json;vb3-semantics-fixtures.json",
+      "missing_evidence": "",
+      "static_scope": "327 conversion sites, 228 Rnd sites, startup Randomize, music coupling and 8 ordered trace routines are recorded.",
+      "remaining_runtime_blocker": "VB3 results and seeded runtime traces require execution.",
+      "behavioral_status": "runtime_pending"
+    },
+    {
+      "id": "R04",
+      "area": "Combat math",
+      "static_status": "static-traces-ready",
+      "evidence": "combat-trace-spec.json;critical-procedure-provenance.csv",
+      "missing_evidence": "",
+      "static_scope": "Three fn0DEE callers, five arguments, four helper draws and eight boundary fixtures are recorded.",
+      "remaining_runtime_blocker": "Hit, damage, swing, special and XP outcomes require runtime comparison.",
+      "behavioral_status": "runtime_pending"
+    },
+    {
+      "id": "R05",
+      "area": "Timing",
+      "static_status": "static-cases-ready",
+      "evidence": "form-timer-candidates.csv;random-timer-combat-references.csv;runtime-cases.json;timing-trace-spec.json",
+      "missing_evidence": "",
+      "static_scope": "Timer fields, source guards, twelve callback/setup events and TIM01-TIM03 cases are indexed.",
+      "remaining_runtime_blocker": "Effective callback cadence and pause ordering require timestamps from the original.",
+      "behavioral_status": "runtime_pending"
+    },
+    {
+      "id": "R06",
+      "area": "Spells",
+      "static_status": "static-trace-ready",
+      "evidence": "spell-statistics-updated-help.csv;spell-guild-levels-updated-help.csv;spell-trace-spec.json;original-export/code/source/Module3.bas;original-export/code/source/Module6.bas",
+      "missing_evidence": "",
+      "static_scope": "100 spell records, 205 guild-level assignments, nine source procedures, and twenty source events are indexed for cast arbitration and effect tracing.",
+      "remaining_runtime_blocker": "Every spell's executable arbitration, power, cost, target and failure behavior requires runtime checks.",
+      "behavioral_status": "runtime_pending"
+    },
+    {
+      "id": "R07",
+      "area": "Creation and progression",
+      "static_status": "static-trace-ready",
+      "evidence": "race-statistics.csv;race-guild-eligibility.csv;guild-statistics.csv;progression-trace-spec.json;local-original-review.md;original-followup-review.md",
+      "missing_evidence": "",
+      "static_scope": "Nine races, twelve guilds, creation validation, initial defaults, XP/cost formulas and age/rest paths are indexed through ten source procedures and fifteen source events.",
+      "remaining_runtime_blocker": "Legal character matrices, advancement draws, quests and boundaries require runtime checks.",
+      "behavioral_status": "runtime_pending"
+    },
+    {
+      "id": "R08",
+      "area": "Encounters and loot",
+      "static_status": "static-trace-ready",
+      "evidence": "bestiary-provenance.json;monster-candidate-shareware.csv;encounter-trace-spec.json;original-export/dungeon/areas.csv;original-export/dungeon/special-squares.csv",
+      "missing_evidence": "",
+      "static_scope": "401 monster records, fifteen floors, 13,500 cells, 86 active teleporter slots and encounter/chest/trap source paths are indexed through nine procedures and sixteen events.",
+      "remaining_runtime_blocker": "Encounter generation, hostility, treasure, traps and drop order require runtime checks.",
+      "behavioral_status": "runtime_pending"
+    },
+    {
+      "id": "R09",
+      "area": "Items and equipment",
+      "static_status": "static-trace-ready",
+      "evidence": "item-reference.md;item-candidate-shareware.csv;item-trace-spec.json;original-followup-review.md;original-export/code/source/FRMCTYS.bas",
+      "missing_evidence": "",
+      "static_scope": "366 candidate item records, thirteen equipment/store procedures, seventeen source events and nine controlled fixtures are indexed.",
+      "remaining_runtime_blocker": "Eligibility, alignment, curse, charge, slot-zero and crest lifecycle behavior require runtime checks.",
+      "behavioral_status": "runtime_pending"
+    },
+    {
+      "id": "R10",
+      "area": "Economy and world time",
+      "static_status": "static-trace-ready",
+      "evidence": "economy-time-trace-spec.json;original-export/code/source/FRMCTYS.bas;original-export/code/source/Module6.bas;local-original-review.md;original-followup-review.md",
+      "missing_evidence": "",
+      "static_scope": "Store quote/payment/stock paths and rest/town world-time updates are indexed through eleven procedures, nineteen source events and ten controlled fixtures.",
+      "remaining_runtime_blocker": "Final quotes, stock updates and time propagation require runtime checks.",
+      "behavioral_status": "runtime_pending"
+    },
+    {
+      "id": "R11",
+      "area": "Parties and companions",
+      "static_status": "static-trace-ready",
+      "evidence": "party-companion-trace-spec.json;original-followup-review.md;original-export/code/source/Module4.bas;original-export/code/source/FRMCITYC.bas;original-export/code/source/FRMCHAR3.bas;original-export/code/source/FRMGROUP.bas",
+      "missing_evidence": "",
+      "static_scope": "Party and companion purchase, binding, formation, obedience, casting and removal paths are indexed through twelve procedures, twenty source events and ten controlled fixtures.",
+      "remaining_runtime_blocker": "Formation, obedience, escape, friendly fire, casting limits and reward sharing require runtime checks.",
+      "behavioral_status": "runtime_pending"
+    },
+    {
+      "id": "R12",
+      "area": "Recovery and age",
+      "static_status": "static-trace-ready",
+      "evidence": "recovery-age-trace-spec.json;original-followup-review.md;original-export/code/source/FRMDUNM.bas;original-export/code/source/Module6.bas;original-export/code/source/FRMMORG.bas",
+      "missing_evidence": "",
+      "static_scope": "Recovery, paid/wait rescue, pending raises, age and complication branches are indexed through thirteen procedures, twenty source events and eleven controlled fixtures.",
+      "remaining_runtime_blocker": "Costs, chances, HP restoration, losses and age accumulation require runtime checks.",
+      "behavioral_status": "runtime_pending"
+    },
+    {
+      "id": "R13",
+      "area": "Dungeon",
+      "static_status": "static-trace-ready",
+      "evidence": "dungeon-trace-spec.json;original-export/dungeon/all-cells.csv;original-export/dungeon/teleporters.csv;original-export/dungeon/transition-checks.json;original-export/dungeon/behavior-notes.md",
+      "missing_evidence": "",
+      "static_scope": "13,500 cells, 3,965 special squares, 2,328 door edges, 17 active chutes and 86 active teleporters are linked to nine traversal/hazard procedures, sixteen source events and ten controlled fixtures.",
+      "remaining_runtime_blocker": "Unmatched teleporters, combined terrain, doors, perception and traversal order require runtime checks.",
+      "behavioral_status": "runtime_pending"
+    },
+    {
+      "id": "R14",
+      "area": "Persistence",
+      "static_status": "static-trace-ready",
+      "evidence": "persistence-trace-spec.json;lab-preparation.json;original-export/code/source/Module2.bas;original-export/code/source/Module6.bas;source-manifest.json",
+      "missing_evidence": "",
+      "static_scope": "Character, automap, store, world and pending-recovery serializers are indexed through twelve procedures, eighteen source events and ten controlled fixtures.",
+      "remaining_runtime_blocker": "Complete save-field coverage, triggers and lossless legacy import require runtime checks.",
+      "behavioral_status": "runtime_pending"
+    },
+    {
+      "id": "R15",
+      "area": "Presentation and audio",
+      "static_status": "static-trace-ready",
+      "evidence": "presentation-audio-trace-spec.json;audio-manifest.json;audio-index-assignments.csv;audio-call-sites.csv;wave-archive-comparison.json",
+      "missing_evidence": "",
+      "static_scope": "All 87 audio files, 88 index assignments, 119 call sites and the missing FIGHT.WAV entry are linked through ten multimedia procedures, fourteen source events and ten controlled fixtures.",
+      "remaining_runtime_blocker": "Device timing, MIDI behavior, missing-cue handling and visual equivalence require runtime checks.",
+      "behavioral_status": "runtime_pending"
+    },
+    {
+      "id": "R16",
+      "area": "Suspected defects",
+      "static_status": "static-trace-ready",
+      "evidence": "defect-trace-spec.json;runtime-cases.json;original-followup-review.md;original-export/code/source/FRMDUNM.bas;original-export/code/source/FRMCTYS.bas;original-export/code/source/FRMCITYC.bas;original-export/code/source/Module3.bas;original-export/code/source/Module6.bas",
+      "missing_evidence": "",
+      "static_scope": "Ten suspected defects or decompiler-damage candidates are linked to eleven procedures, fifteen source events and ten controlled fixtures.",
+      "remaining_runtime_blocker": "Executable behavior must distinguish real legacy defects from decompiler damage.",
+      "behavioral_status": "runtime_pending"
+    }
+  ]
+}

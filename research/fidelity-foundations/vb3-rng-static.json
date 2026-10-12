@@ -1,0 +1,126 @@
+{
+  "status": "static_runtime_candidate_not_executed",
+  "source": "research/fidelity-foundations/runtime-libraries/VBRUN300.DLL",
+  "sha256": "eb66f71dd14b01eb3df7409b0ad73e41589046ad5bf16152f06617093f63087e",
+  "code": {
+    "offset": 228026,
+    "hex": "57a1160e8b0e9014f7e1978bdaa1180ef7e103d8a19014f726160e03d8033e9414121e941432ff8bd78916160e891e180e5f9bdb06160e9bd8369814"
+  },
+  "data_segment_file_offset": 291040,
+  "initial_seed": {
+    "ds": "0E16",
+    "offset": 294646,
+    "hex": "00000500",
+    "value": 327680
+  },
+  "constants": [
+    {
+      "ds": "1490",
+      "offset": 296304,
+      "hex": "fd430300",
+      "use": "low halfword read twice as both multiply halves"
+    },
+    {
+      "ds": "1494",
+      "offset": 296308,
+      "hex": "c39e2600",
+      "use": "low halfword plus low byte as high seed byte"
+    },
+    {
+      "ds": "1498",
+      "offset": 296312,
+      "hex": "0000804b",
+      "use": "Single divisor 2^24"
+    }
+  ],
+  "recurrence": "state = (state * 0xFD43FD + 0xC39EC3) & 0xFFFFFF; result = state / 16777216",
+  "halfword_vs_bigint_checks": 10000,
+  "golden": [
+    {
+      "draw": 1,
+      "state": 11837123,
+      "value": 0.7055475115776062
+    },
+    {
+      "draw": 2,
+      "state": 8949370,
+      "value": 0.5334240198135376
+    },
+    {
+      "draw": 3,
+      "state": 9722709,
+      "value": 0.5795186161994934
+    },
+    {
+      "draw": 4,
+      "state": 4858052,
+      "value": 0.289562463760376
+    },
+    {
+      "draw": 5,
+      "state": 5065847,
+      "value": 0.30194801092147827
+    },
+    {
+      "draw": 6,
+      "state": 12997982,
+      "value": 0.7747400999069214
+    },
+    {
+      "draw": 7,
+      "state": 235177,
+      "value": 0.014017641544342041
+    },
+    {
+      "draw": 8,
+      "state": 12762824,
+      "value": 0.7607235908508301
+    },
+    {
+      "draw": 9,
+      "state": 13664875,
+      "value": 0.814490020275116
+    },
+    {
+      "draw": 10,
+      "state": 11895682,
+      "value": 0.7090378999710083
+    },
+    {
+      "draw": 11,
+      "state": 760893,
+      "value": 0.0453527569770813
+    },
+    {
+      "draw": 12,
+      "state": 6946316,
+      "value": 0.4140326976776123
+    },
+    {
+      "draw": 13,
+      "state": 14472351,
+      "value": 0.8626193404197693
+    },
+    {
+      "draw": 14,
+      "state": 13262054,
+      "value": 0.7904800176620483
+    },
+    {
+      "draw": 15,
+      "state": 6266897,
+      "value": 0.3735361695289612
+    },
+    {
+      "draw": 16,
+      "state": 16138896,
+      "value": 0.9619531631469727
+    }
+  ],
+  "limitations": [
+    "The runtime was not executed.",
+    "Randomize seed derivation is not ported.",
+    "Shared music/ambient draws and original game call schedule are not reproduced.",
+    "Campaign uses the controlled initial seed and persists its state as a new adapter."
+  ]
+}

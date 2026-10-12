@@ -17,7 +17,7 @@ h2{font-size:28px;line-height:1.25;margin:55px 0 20px;color:#173f36;font-weight:
 @media print{aside,.tools,.skip{display:none}main{margin:0;max-width:none;padding:0}body{font:10pt/1.4 "Segoe UI",sans-serif;background:white;color:black}h1{font-size:26pt}h2{font-size:17pt;break-after:avoid;margin-top:25pt}h3{font-size:12pt;break-after:avoid}a{color:inherit;text-decoration:none}.table-wrap{overflow:visible;border-radius:0;break-inside:auto}table{font-size:8pt}tr{break-inside:avoid}td,th{padding:5pt}p{orphans:3;widows:3}@page{size:A4;margin:17mm}}
 </style></head><body>
 <a class="skip" href="#document">Skip to document</a>
-<aside aria-label="Document contents"><strong>Mordor Remastered</strong><p>Design and preservation specification<br>Research edition · October 9, 2026</p><nav><a href="#section-1">1 Product identity and historical baseline</a>
+<aside aria-label="Document contents"><strong>Mordor Remastered</strong><p>Design and preservation specification<br>Research edition · October 10, 2026</p><nav><a href="#section-1">1 Product identity and historical baseline</a>
 <a href="#section-2">2 Fidelity contract and change policy</a>
 <a href="#section-3">3 Player experience and game loop</a>
 <a href="#section-4">4 Characters and statistics</a>
@@ -46,7 +46,9 @@ h2{font-size:28px;line-height:1.25;margin:55px 0 20px;color:#173f36;font-weight:
 <a href="#section-27">27 Sources and supporting files</a></nav></aside>
 <main id="document"><article><div class="tools"><span>27 sections · numerical appendices · linked evidence</span><button type="button" onclick="window.print()">Print</button><a href="Mordor%20Remastered%20Design%20Document.md">Markdown source</a></div><h1>Mordor The Depths of Dejenol Remastered</h1>
 <h2>Game design and preservation specification</h2>
-<p><strong>Document version:</strong> 1.3 · <strong>Research date:</strong> October 9, 2026 · <strong>Scope:</strong> a faithful remaster of David Allen’s 1995 game.</p>
+<p><strong>Document version:</strong> 1.4 · <strong>Research date:</strong> October 10, 2026 · <strong>Scope:</strong> a faithful remaster of David Allen’s 1995 game with the explicitly approved input conveniences below.</p>
+<p><strong>Implementation reset — October 10:</strong> the user rejected the exploration prototype as unfaithful and requested its removal. The entire previous Godot implementation has been removed. Work now proceeds through the <a href="research/fidelity-foundations/README.md">fidelity foundation audit</a>, <a href="research/fidelity-foundations/work-items.csv">open-work register</a>, and controlled original-game comparisons. This supplement adds byte-level provenance, audio recovery, timer candidates and a music/RNG concern; it does not certify any gameplay rule or milestone.</p>
+<p><strong>Revision 1.4:</strong> exports original graphics from the supplied full-dungeon installation, preserves and indexes combat/Store/recovery/dungeon code, provides all 366 item base prices and candidate quote formulas, and catalogues special squares on every floor. It records two teleporter-flagged cells without destination slots. The user-approved controls automatically open eligible ordinary doors during movement and use one <strong>T</strong> hotkey for contextual stairs up/down. See the <a href="research/original-export/README.md">export package</a>, <a href="research/original-export/graphics-gallery.html">graphics gallery</a>, sections 10.6–10.7, 17.3 and 26.14. Static code interpretations remain unverified at runtime.</p>
 <p><strong>Revision 1.3:</strong> a further pass through the supplied original decompilation traces shop charge bundles, combining and uncurse behavior, companion services, hired and waiting rescue, pending raises, recovery penalties, town healing and timer guards. It adds source-linked algorithms and runtime fixtures, and records new discrepancies in inventory indexing, timing and suspicious recovery/ailment branches. These are static interpretations, not passed original-game tests. See the <a href="research/original-followup-review.md">follow-up review and source anchors</a> and section 26.13. Original files and prior numerical exports remain unchanged.</p>
 <p><strong>Revision 1.2:</strong> the supplied original files add a fingerprinted local baseline, 105 spell records, complete fifteen-floor cell data, race creation pools, and static evidence for HP growth, healing, spell access, item use and payment rules. Original-file exports remain separate from earlier printed/help tables. See the <a href="research/local-original-review.md">original-file review and source anchors</a> and section 26.12. The supplied <code>Mordor</code> folder is read-only; all new work is in <code>Mordor Remastered</code>.</p>
 <p><strong>Revision 1.1:</strong> a second internet research pass expands character growth, spell arbitration, item rules, shop transactions, and fidelity tests. The supplied DungeonsOfDejremake project is pinned to a specific revision and evaluated as a comparison source. Its intentional rules changes are excluded. See the <a href="research/second-pass-review.md">review and evidence record</a>.</p>
@@ -110,6 +112,7 @@ h2{font-size:28px;line-height:1.25;margin:55px 0 20px;color:#173f36;font-weight:
 <h3>2.2 What may change</h3>
 <p><strong>Proposed presentation changes:</strong> high-resolution artwork, scalable text, clearer hierarchy, accessible input bindings, tooltips explaining already-available information, resizable panels, coherent sound mixing, better installation, and reliable saving. All feed the same underlying rule implementation.</p>
 <p>Use one authoritative ruleset for the release. Optional original-style and remastered presentation profiles may share saves because they do not change simulation. A later rebalance or convenience mode must use a separate ruleset identifier and an explicit description of its differences; it is outside this design’s launch scope.</p>
+<p><strong>Approved input conveniences — October 10, 2026:</strong> automatic opening of eligible ordinary doors on attempted crossing and a single contextual <strong>T</strong> key for taking stairs are included in the remaster&#39;s default controls. These are explicit exceptions to preserving the original number of input commands. Preserve geometry, secret-door discovery, opening eligibility, simulation costs, hazard processing and destination rules. Record these conveniences in the remaster ruleset/input-policy metadata and verification results; do not describe automatic opening as proven original behavior. An original-controls preset may retain separate O input while using the same underlying opening and traversal rules.</p>
 <div class="table-wrap" tabindex="0"><table>
 <thead>
 <tr>
@@ -127,6 +130,16 @@ h2{font-size:28px;line-height:1.25;margin:55px 0 20px;color:#173f36;font-weight:
 <td>Remap a single original action</td>
 <td>Include</td>
 <td>Improves access without combining decisions</td>
+</tr>
+<tr>
+<td>Open an eligible ordinary door during attempted crossing</td>
+<td>Include; user approved</td>
+<td>Removes a separate open keystroke; preserve opening eligibility and simulation consequences</td>
+</tr>
+<tr>
+<td>Use T for contextual stairs up/down</td>
+<td>Include; user approved</td>
+<td>One Take command selects the available transition on the current square</td>
 </tr>
 <tr>
 <td>Replace artwork and record new audio</td>
@@ -370,6 +383,15 @@ h2{font-size:28px;line-height:1.25;margin:55px 0 20px;color:#173f36;font-weight:
 <p><strong>Acceptance:</strong> compare all cell fields and all directed connections; walk every stair, chute, and fixed teleporter; test random transitions statistically; cover every combined hazard flag; traverse the same route with different perception and levitation states; and save a separated, lost party before reloading it.</p>
 <h3>10.5 Full original cell manifest</h3>
 <p>The supplied MDATA11 contains fifteen 30×30 floors: <strong>13,500 cells</strong>, with raw terrain masks, area references, 201 allocated area records per floor and the transition slots. Preserve all entries, including unused/zero slots. The area-count header is not the physical number of area records to skip. Floors 1–9 allocate twenty teleporter slots; floors 10–15 ten; every floor allocates ten chute slots. Slot counts do not equal active hazards, and non-rock cells are not automatically reachable. Coordinates have static support for one-based indexing; orientation and transitions require original automap checks. <a href="research/local-original/extraction-summary.json">Cell manifest and floor summary</a>, <a href="research/local-original/dungeon-cells-local.csv">cell export</a>, <a href="research/local-original-review.md">format evidence</a>.</p>
+<h3>10.6 Exported special-square catalogue</h3>
+<p>Revision 1.4 decodes every terrain flag and selects <strong>3,965 special squares</strong>, excluding cells having only wall/door edges or solid rock. Combined properties stay on one row. The export retains original Currency-scaled masks, decoded masks, area IDs, candidate coordinates and source byte offsets. It also lists <strong>2,328 stored ordinary/secret door-edge flags</strong>, all 3,015 allocated area records, all 240 teleporter slots and all 150 chute slots. <a href="research/original-export/dungeon/special-squares.csv">Square catalogue</a>, <a href="research/original-export/dungeon/flag-definitions.csv">flag definitions</a>, <a href="research/original-export/dungeon/flag-counts.csv">counts by floor</a>, <a href="research/original-export/dungeon/behavior-notes.md">behavior and code references</a>.</p>
+<p>The code export covers forced facing, Extinguish, pit/levitation rolls, stairs, fixed/random teleporters, rotators, chute/party-follow processing, timed water/quicksand effects, Anti-Magic eligibility and perception. It preserves Fog and Stud flags without declaring their complete runtime interpretation settled. Flag presence is a file fact; effect precedence and generated field meanings are static interpretations needing executable comparison.</p>
+<p>There are <strong>86 active teleporter slots but 88 teleporter-flagged cells</strong>. On floor <strong>8</strong>, candidate coordinates <strong>(5,6)</strong> and <strong>(6,6)</strong> have teleporter flags without matching source-coordinate slots. Preserve both cells and report the unresolved behavior; do not synthesize destinations or repair the data silently. All <strong>17 active chute slots</strong> match the 17 chute-flagged cells. A stored teleporter destination floor of zero selects no floor change in the displayed code; it is not evidence of a town destination. <a href="research/original-export/dungeon/transition-checks.json">Transition cross-check</a>.</p>
+<h3>10.7 Automatic doors and contextual stairs</h3>
+<p><strong>Approved:</strong> when a movement step attempts to cross an eligible ordinary closed door, open it automatically and continue through that edge. This applies to walking and held/run movement, including backward and sidestep crossing where permitted. The same attempted crossing must complete without a second movement press. Show the opening in the corridor and give normal door feedback. Visual animation must not add an arbitrary wait or freeze combat.</p>
+<p>Resolve opening before crossing and before destination-square effects. Preserve any measured original opening cost, action eligibility, combat/timer interaction and interruption; if opening cannot complete, remain on the current square and show the observable reason. A movement shortcut cannot spend a key, item charge or spell automatically, ignore a wall, or reveal an undiscovered secret door. A discovered secret door still follows its established opening rules. Door persistence across visits/saves remains governed by the verified world rule. This convenience is local to the requested step and does not introduce pathfinding or automatic hazard avoidance.</p>
+<p>Press <strong>T</strong> once to <strong>Take stairs</strong> on the current square. Stairs-up selects the upward transition; stairs-down selects the downward transition; the valid first-floor exit returns to town. Separate default up/down hotkeys and separate required buttons are replaced by one contextual action whose label shows the available direction. The supplied <code>fn14CB</code> Take branch checks up before down, then eligible chute use; preserve that established branch priority if a cell has multiple transition flags. Show the selected known action before activation without exposing hidden terrain. A square with no eligible transition produces clear feedback and no movement or resource debit.</p>
+<p>Debounce T until key release: one press takes at most one transition, even when the destination has stairs. Clear held movement when a stair transition completes so a run does not continue onto an unseen landing. Preserve original destination, party and hazard processing. Original-runtime traversal and remaster input acceptance are separate checks, specified in section 23.9.</p>
 <h2 id="section-11">11 Monsters and encounters</h2>
 <h3>11.1 Complete record preservation</h3>
 <p>Every monster must retain its original record identity and behavior. Preserve at least name, class and subtype, picture reference, attack, defense, HP parameter and distribution, guild or combat level, six statistics where present, size, alignment, group parameters, depth and encounter eligibility, resistance values, property flags, special attacks, spell capabilities, companion associations, treasure probabilities, traps, item-drop references, and gold parameters. Preserve unused and unknown fields until their semantics are established.</p>
@@ -581,7 +603,7 @@ h2{font-size:28px;line-height:1.25;margin:55px 0 20px;color:#173f36;font-weight:
 <p>The front end provides Continue, World/Roster, Create Character, Settings, Help, and Credits. Continue restores a consistent world, then the selected character or valid party. Town exposes its services directly. Entering the dungeon restores the original entry placement and rules. Casualty management remains part of the roster and Morgue flows rather than a “reload checkpoint” menu.</p>
 <p>Selecting a party member changes whose inventory, spell resources, companions, and actions are shown. Their identity remains visible throughout an action. A targeted spell makes caster and recipient explicit. Trading similarly shows giver, recipient, item instance, and quantity or charges before commitment.</p>
 <h3>17.3 Controls</h3>
-<p>Preserve an original keyboard preset where documented: Fight on F, Defend on D, opening on O, next party member on N, direct party selection through Ctrl plus number, and spell/item buffer activation through Shift plus number. Complete exact movement and modifier bindings from the approved help/executable. Offer a modern remappable preset without changing action semantics. <a href="https://www.mocagh.org/miscgame/dejenol-refcard.pdf">Original PlayGuide</a>, combat controls.</p>
+<p>Preserve an original keyboard preset where documented: Fight on F, Defend on D, opening on O, next party member on N, direct party selection through Ctrl plus number, and spell/item buffer activation through Shift plus number. Complete exact movement and modifier bindings from the approved help/executable. The default remaster preset includes the user-approved conveniences: <strong>eligible ordinary doors open as movement crosses them; T takes stairs up or down according to the current square</strong>. Keep O available as a remappable explicit opening action. T is one contextual Take command, not two separately bound stairs commands. <a href="https://www.mocagh.org/miscgame/dejenol-refcard.pdf">Original PlayGuide</a>, combat controls; section 10.7 defines the approved exceptions and edge cases.</p>
 <p><strong>Proposed controller scheme:</strong> directional movement/facing, shoulder buttons to select a character or target according to context, a focusable action bar, and a radial view of the same ten buffers. Every operation must also work without drag-and-drop or a mouse. The radial menu may pause only to the extent an explicitly selected pause feature permits; it must not create a hidden tactical advantage.</p>
 <p>Debounce one-shot actions, distinguish held movement from discrete commands, and clear held inputs after focus loss. Do not carry a held key from a closed dialog into a destructive action. The input layer emits named commands with explicit character and target IDs; widgets never directly mutate game state.</p>
 <h3>17.4 Feedback and error handling</h3>
@@ -594,6 +616,7 @@ h2{font-size:28px;line-height:1.25;margin:55px 0 20px;color:#173f36;font-weight:
 <h3>18.2 Asset inventory</h3>
 <p>Create a manifest mapping every original asset reference to its remastered replacement, author, source, resolution, animation set, and approval status. Derive actual quantities from the game rather than commissioning one picture for every monster record: the original reuses imagery, and those associations are part of its visual vocabulary.</p>
 <p>Required groups include race and character portraits; monster portraits and encounter art; item icons by known appearance; town service scenes; dungeon wall, floor, ceiling and door materials; stairs and visible hazards; spell effects; map symbols; condition icons; interface controls; and title/credits art. Cover unidentified appearances and missing-information states explicitly.</p>
+<p><strong>Recovered reference assets — revision 1.4:</strong> <a href="research/original-export/graphics-gallery.html">the local graphics gallery</a> contains <strong>34 distinct embedded BMPs from 78 occurrences</strong>, including all ten named <code>MG11.DLL</code> sheets, town/service art, title/credits art and controls. Original BMP bytes and palettes are retained; PNG equivalents are checked for identical decoded RGB pixels. The application icon is reconstructed separately. The 600×540 monster sheet yields <strong>90 tiles of 60×60</strong>, with a <a href="research/original-export/graphics/monster-picture-map.csv">401-record picture mapping</a> and the separate ASMO drawing branch preserved as a caveat. <a href="research/original-export/graphics/manifest.json">Asset origins, hashes and aliases</a> support replacement-art mapping. This completes an embedded-BMP export from the scanned EXE/DLL/forms; shipped-help graphics and runtime-composited imagery are outside that completeness claim. Asset redistribution rights remain unresolved.</p>
 <h3>18.3 Preservation constraints</h3>
 <p>Keep recognizable creature proportions, equipment material distinctions, racial identity, and original naming. Preserve depiction-to-identification relationships. If several unknown creatures originally share one portrait, giving each a unique silhouette can leak identity; either retain a shared pre-identification appearance or document and validate an equivalent information boundary.</p>
 <p>Decorative cracks, light shafts, ambient movement, and material variation cannot indicate secret doors, lairs, danger, or loot unless the original exposed that cue. Do not theme each floor with a new biome that implies undocumented changes to content. Aesthetic depth variation may occur only without revealing hidden rules.</p>
@@ -605,7 +628,7 @@ h2{font-size:28px;line-height:1.25;margin:55px 0 20px;color:#173f36;font-weight:
 <p><strong>Proposed audio modes:</strong> an original-audio presentation where licensed and technically supported, and a remastered arrangement with the same musical identity. A remaster arrangement should retain melody, pacing, and atmosphere rather than replacing everything with a new orchestral score. If original arrangements cannot be used, record that as an explicit production decision.</p>
 <p>Map each original sound event to a cue: movement, doors, combat impact, casting, conditions, treasure, transactions, failure, death, and town transitions. New ambience may establish mood but must not identify an unseen enemy, nearby treasure, or secret door. Spatial audio must not supply navigation data unavailable to the original player.</p>
 <p>Provide independent music, effects, ambience, and interface volume; mono compatibility; visual equivalents for meaningful cues; optional haptics; and restrained peak levels. A rapid combat round should remain comprehensible without playing every sound at equal volume. Audio scheduling follows simulation events and never delays them.</p>
-<p><strong>Acceptance:</strong> disabling audio yields identical outcomes; repeated cues do not leak resources; pause and resume do not replay old attacks; the same unknown monster does not expose a unique identifying call before discovery; and every critical audible event has a non-audio representation.</p>
+<p><strong>Acceptance:</strong> repeated cues do not leak resources; pause and resume do not replay old attacks; the same unknown monster does not expose a unique identifying call before discovery; and every critical audible event has a non-audio representation. Audio-on/off outcome equivalence is now <strong>validation required</strong>: the original decompiled music scheduler calls <code>Rnd</code> at <code>Module9.bas:82,88</code>, potentially consuming the same random stream as gameplay. Compare RNG01 before separating or removing those draws. New presentation randomness must not introduce additional gameplay draws. <a href="research/fidelity-foundations/README.md">Evidence and runtime cases</a>.</p>
 <h2 id="section-20">20 Accessibility and onboarding</h2>
 <h3>20.1 Equal information and accessible operation</h3>
 <p>Include scalable text and interface elements, color-independent status symbols, visible keyboard focus, full keyboard navigation, remappable commands, controller navigation, persistent log messages, optional high contrast, and reduced motion. Tooltips must be reachable through focus, not only hover. Do not encode Good/Neutral/Evil, curses, poison, or eligibility by color alone.</p>
@@ -689,7 +712,7 @@ h2{font-size:28px;line-height:1.25;margin:55px 0 20px;color:#173f36;font-weight:
 <p>Use separate tables for races, racial resistances, guilds, race/guild eligibility, guild abilities, guild growth, spells, guild/spell access, monster definitions, item definitions, encounter rules, map cells, transitions, services, and original text/asset references. Keep definition data separate from mutable instances. Preserve original numerical precision and record both a raw parameter and its interpreted unit.</p>
 <p><strong>Unknown is not zero.</strong> A missing spell-cost formula must remain unresolved, and prevent approval of that rule. A zero resistance read from a trusted record is a real value. A blank printed cell interpreted as zero carries an explicit transcription note. Importers never fill missing behavior with a default modern RPG rule.</p>
 <h3>22.4 Randomness and numerical fidelity</h3>
-<p>Determine the original RNG algorithm, seeding, call order, range endpoints, and state persistence where possible. Centralize randomness behind a traceable interface. Do not split cosmetic and gameplay randomness by accidentally consuming gameplay draws for particles. The presentation uses a completely separate RNG that cannot change the simulation.</p>
+<p>Determine the original RNG algorithm, seeding, call order, range endpoints, and state persistence where possible. Centralize randomness behind a traceable interface. New particles and other newly introduced presentation effects use separate randomness. Original music-related draws require preservation and comparison before that boundary can be finalized: <code>Module9.sub1A50</code> calls <code>Rnd</code>, and startup executes <code>Randomize</code>. Moving those original draws to a separate stream could change seeded gameplay outcomes. Their shared-state behavior is a runtime question, tracked by RNG01 in the <a href="research/fidelity-foundations/runtime-cases.json">foundation cases</a>. The current static call-order and VB conversion fixtures are in <a href="research/fidelity-foundations/rng-schedule.json">rng-schedule.json</a> and <a href="research/fidelity-foundations/vb3-semantics-fixtures.json">vb3-semantics-fixtures.json</a>; none has an observed runtime result yet.</p>
 <p>Use exact integer or compatible numeric behavior for formulas, including truncation, ties, caps, signed fields, and percentage interpretation. The original file format’s floating values do not prove that every runtime calculation uses the same precision. Preserve observed edge behavior deliberately and document platform-dependent cases.</p>
 <h3>22.5 Tools</h3>
 <p>Build a read-only content browser, raw-to-normalized diff tool, map inspector, record validator, formula probe runner, combat trace comparator, and save-state comparator. Provide controlled test-state construction for researchers. Tools can expose complete data; ordinary game screens cannot.</p>
@@ -958,6 +981,48 @@ h2{font-size:28px;line-height:1.25;margin:55px 0 20px;color:#173f36;font-weight:
 </tr>
 </tbody></table></div>
 <p>The <a href="research/original-followup-review.md">follow-up evidence review</a> supplies source anchors and caveats for each family. Preserve suspected defects as questions until executable comparison and an explicit change decision.</p>
+<h3>23.9 Export evidence and approved input verification</h3>
+<p>The <a href="research/original-export/validation.json">export validation</a> checks source/excerpt bytes, decoded PNG pixels, monster crops, indexes, local links and rebuilt design HTML. It establishes reproducible exports and document consistency. Combat, pricing, recovery and terrain still require original/remaster comparisons.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>Case</th>
+<th>Setup</th>
+<th>Required result</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>V29 Teleporter mismatch</td>
+<td>Original floor 8 at (5,6) and (6,6); adjacent defined teleporters as controls</td>
+<td>Record original messages, destination, party state, perception and any error path; retain unresolved flags until observed</td>
+</tr>
+<tr>
+<td>V30 Terrain combinations</td>
+<td>Exported combined flags; levitating/nonlevitating party; water/quicksand burden and inventory states</td>
+<td>Preserve square-entry versus timed effects, processing order, RNG, facing, separation, losses and map knowledge</td>
+</tr>
+<tr>
+<td>V31 Shared combat routine</td>
+<td>Controlled fn0DEE callers, attack/defense zero/equal/unequal, percentage clamp and modifier bounds</td>
+<td>Verify parameter meanings, VB conversions and original RNG order; independently compare timer-triggered and command-triggered actions</td>
+</tr>
+<tr>
+<td>U01 Automatic door crossing</td>
+<td>Ordinary eligible closed/open doors; forward, backward, sidestep and held/run movement</td>
+<td>One attempted crossing opens then moves; unchanged topology, opening consequences, destination hazards and observable feedback</td>
+</tr>
+<tr>
+<td>U02 Blocked or hidden doors</td>
+<td>Opening refusal, interrupted action, wall and undiscovered secret door</td>
+<td>Remain in place when required; no free resource spend, secret reveal or wall traversal</td>
+</tr>
+<tr>
+<td>U03 T stairs</td>
+<td>Up/down squares, first-floor exit, no transition, both flags, consecutive landings, held T</td>
+<td>Contextual direction/priority, exact destination and party processing; at most one transition per press; held movement cleared</td>
+</tr>
+</tbody></table></div>
+<p>V29–V31 are unexecuted original-runtime case families. U01–U03 test intentional remaster input behavior against the approved specification; automatic-door parity with original input effort is not claimed.</p>
 <h2 id="section-24">24 Production scope and milestones</h2>
 <h3>24.1 Deliverables</h3>
 <p>Launch scope includes the complete approved original rules and content; remastered desktop presentation; full keyboard/mouse control; accessible navigation and scalable UI; tested controller support; offline persistent worlds; documentation; and a fidelity report. Original-style assets and legacy-save import are conditional features requiring successful rights and compatibility work.</p>
@@ -1038,8 +1103,8 @@ h2{font-size:28px;line-height:1.25;margin:55px 0 20px;color:#173f36;font-weight:
 <tr>
 <td>F02</td>
 <td>Full dungeon data</td>
-<td>All 13,500 cells and transition slots now exported</td>
-<td>Verify orientation, activation and traversal against original maps</td>
+<td>All 13,500 cells exported; 3,965 special squares indexed; two floor-8 teleporter flags lack slots</td>
+<td>Verify orientation, combined effects, unmatched flags, activation and traversal against original maps</td>
 </tr>
 <tr>
 <td>F03</td>
@@ -1080,8 +1145,8 @@ h2{font-size:28px;line-height:1.25;margin:55px 0 20px;color:#173f36;font-weight:
 <tr>
 <td>F09</td>
 <td>Combat math and clock</td>
-<td>Later-help 2-second default versus static 1,000 ms timer initialization; minimize guards located</td>
-<td>Measure effective cadence and pause behavior; recover hit/damage, specials, XP and rounding</td>
+<td>Full decompiler text and shared hit/damage helper exported; later-help 2-second default versus static 1,000 ms timer initialization</td>
+<td>Measure effective cadence and pause behavior; verify argument meanings, RNG, hit/damage, specials, XP and rounding</td>
 </tr>
 <tr>
 <td>F10</td>
@@ -1098,8 +1163,8 @@ h2{font-size:28px;line-height:1.25;margin:55px 0 20px;color:#173f36;font-weight:
 <tr>
 <td>F12</td>
 <td>Economy and world timers</td>
-<td>Static sale/stock/fee paths; buy-price routine references an unassigned local index</td>
-<td>Verify quote conversions and suspicious index, refresh and party world-time updates</td>
+<td>All 366 base values and quote expressions exported; buy-price routine references an unassigned local index</td>
+<td>Verify state-dependent final quotes, conversions and suspicious index, refresh and party world-time updates</td>
 </tr>
 <tr>
 <td>F13</td>
@@ -2722,6 +2787,41 @@ h2{font-size:28px;line-height:1.25;margin:55px 0 20px;color:#173f36;font-weight:
 </tr>
 </tbody></table></div>
 <p>Read the <a href="research/original-followup-review.md">full follow-up review</a>, <a href="research/original-followup/source-manifest.json">fingerprinted source anchors</a> and <a href="research/original-followup/source-preservation-check.json">whole-tree preservation check</a>. Reproduce provenance checks with <a href="research/original-followup-audit.py">original-followup-audit.py</a>. No runtime parity, complete formula recovery or executable/decompiler linkage is claimed.</p>
+<h3>26.14 Original graphics, code, prices and square exports — October 10, 2026</h3>
+<p>Revision 1.4 adds a reproducible <a href="research/original-export/README.md">export package</a> with a <a href="research/original-export/summary.json">summary</a>, <a href="research/original-export/source-manifest.json">fingerprinted inputs</a> and <a href="research/original-export/source-preservation-check.json">whole-tree preservation report</a>. All 1,273 original files match the preceding inventory. Prior item, monster and cell exports match the new direct parses. No original executable, DLL, installer, decompiler or supplied exporter was run.</p>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>Export</th>
+<th>Coverage and evidence</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Graphics</td>
+<td>34 distinct original BMPs, 78 source occurrences, ten library sheets, one reconstructed icon and 90 monster tiles; exact bytes/pixel checks</td>
+</tr>
+<tr>
+<td>Code</td>
+<td>46 complete supplied text files; 691 indexed procedures; 37 exact routine excerpts across combat, Store, recovery and dungeon</td>
+</tr>
+<tr>
+<td>Prices</td>
+<td>366 base values with raw state inputs; candidate buy/sell/identify/uncurse expressions; dynamic final-price blockers retained</td>
+</tr>
+<tr>
+<td>Squares</td>
+<td>All 13,500 cells and 3,965 special-feature rows, 23 bit definitions, per-floor counts, 2,328 door-edge flags and all area/transition slots</td>
+</tr>
+<tr>
+<td>Anomaly</td>
+<td>Floor 8 teleporter flags at (5,6) and (6,6) lack destination records; 17 chute slots match their flagged cells</td>
+</tr>
+<tr>
+<td>Controls</td>
+<td>User-approved automatic eligible ordinary-door crossing; one contextual T key for stairs; remaster acceptance cases U01–U03</td>
+</tr>
+</tbody></table></div>
+<p>Reproduce exports with <a href="research/export-original-assets.py">export-original-assets.py</a>, rebuild the reading edition with <a href="research/build-preview.mjs">build-preview.mjs</a>, then validate with <a href="research/check-original-export.py">check-original-export.py</a>. These checks do not establish runtime parity or redistribution permission. Read the <a href="research/original-export/code/README.md">code guide</a>, <a href="research/original-export/prices/README.md">price guide</a> and <a href="research/original-export/dungeon/behavior-notes.md">square behavior notes</a> before adopting production formulas.</p>
 <h2 id="section-27">27 Sources and supporting files</h2>
 <h3>27.1 Primary and technical sources</h3>
 <div class="table-wrap" tabindex="0"><table>
@@ -2789,6 +2889,7 @@ h2{font-size:28px;line-height:1.25;margin:55px 0 20px;color:#173f36;font-weight:
 <p>The <a href="https://github.com/matteo-prosperi/DungeonsOfDejremake">Dungeons of Dej’remake project</a> is used to identify changes that this remaster must avoid inheriting. Its public implementation source is not available for inspection; its documentation is not the original rules baseline. The second pass is pinned to commit <code>c932f12ec163693e120a4dc236610619f6af96ab</code> (October 1, 2026).</p>
 <h3>27.3 Supporting research files</h3>
 <ul>
+<li><a href="research/original-export/README.md">Original graphics/code/price/square export package</a>, <a href="research/original-export/graphics-gallery.html">graphics gallery</a>, <a href="research/original-export/source-manifest.json">source manifest</a>, and <a href="research/original-export/source-preservation-check.json">revision-1.4 preservation check</a></li>
 <li><a href="research/original-followup-review.md">Follow-up original-source review</a>, <a href="research/original-followup/source-manifest.json">source manifest</a>, and <a href="research/original-followup/source-preservation-check.json">revision-1.3 preservation check</a></li>
 <li><a href="research/local-original-review.md">Original-file review and source anchors</a>, <a href="research/local-original/extraction-summary.json">extraction summary</a>, and <a href="research/local-original/source-preservation-check.json">source preservation report</a></li>
 <li><a href="research/local-original/races-local.csv">Local races</a>, <a href="research/local-original/guilds-local.csv">guilds</a>, <a href="research/local-original/items-local.csv">items</a>, <a href="research/local-original/monsters-local.csv">monsters</a>, and <a href="research/local-original/spell-reference.md">spell reference</a></li>

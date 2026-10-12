@@ -1,0 +1,6 @@
+{
+	"checks": 119,
+	"failures": [],
+	"runtime_parity_verified": false,
+	"scope": "Guild transitions, growth segments, supplied draw order, native UI and multi-file failure recovery"
+}

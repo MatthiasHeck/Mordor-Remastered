@@ -1,0 +1,120 @@
+{
+  "randomize_sites": [
+    {
+      "file": "Module6.bas",
+      "line": 281,
+      "procedure": "Main",
+      "expression": "Randomize"
+    }
+  ],
+  "music_path": [
+    {
+      "file": "Module6.bas",
+      "procedure": "Main",
+      "role": "startup Randomize"
+    },
+    {
+      "file": "FRMMAIN.bas",
+      "procedure": "timMusic_Timer",
+      "role": "music timer calls sub1A50 when M602F is false and playback is not active"
+    },
+    {
+      "file": "Module9.bas",
+      "procedure": "sub1A50",
+      "role": "music selection consumes Rnd at source lines 82 and 88"
+    }
+  ],
+  "music_rng_sites": [
+    {
+      "file": "Module9.bas",
+      "line": 82,
+      "procedure": "sub1A50",
+      "ordinal_in_procedure": 1,
+      "expression": "If  Int(Rnd * 100) <= 25 Then",
+      "expected_value": "unmeasured"
+    },
+    {
+      "file": "Module9.bas",
+      "line": 88,
+      "procedure": "sub1A50",
+      "ordinal_in_procedure": 2,
+      "expression": "sub063F Int(Rnd * (gc2094 - 1)) + 1",
+      "expected_value": "unmeasured"
+    }
+  ],
+  "fixtures": [
+    {
+      "id": "NUM-CINT-TIES",
+      "operation": "CInt",
+      "inputs": [
+        -2.5,
+        -1.5,
+        -0.5,
+        0.5,
+        1.5,
+        2.5
+      ],
+      "expected": null,
+      "status": "planned_not_executed",
+      "purpose": "Determine VB3 tie rounding and sign behavior."
+    },
+    {
+      "id": "NUM-INT-FIX-NEGATIVE",
+      "operation": "Int/Fix",
+      "inputs": [
+        -2.75,
+        -2.5,
+        -2.0,
+        -1.25,
+        -0.5,
+        0.0,
+        0.5
+      ],
+      "expected": null,
+      "status": "planned_not_executed",
+      "purpose": "Separate floor semantics from truncation for negative values."
+    },
+    {
+      "id": "NUM-INTEGER-BOUNDARY",
+      "operation": "CInt",
+      "inputs": [
+        32766.4,
+        32767.0,
+        32767.4,
+        32767.5,
+        32768.0,
+        -32768.0,
+        -32768.5
+      ],
+      "expected": null,
+      "status": "planned_not_executed",
+      "purpose": "Record overflow boundary and error behavior."
+    },
+    {
+      "id": "NUM-LONG-BOUNDARY",
+      "operation": "CLng",
+      "inputs": [
+        2147483646.4,
+        2147483647.0,
+        2147483647.5,
+        -2147483648.0
+      ],
+      "expected": null,
+      "status": "planned_not_executed",
+      "purpose": "Record Long conversion boundary behavior."
+    },
+    {
+      "id": "RNG-MUSIC-COUPLING",
+      "operation": "Rnd sequence",
+      "inputs": [
+        "Randomize",
+        "FRMMAIN.timMusic_Timer",
+        "Module9.sub1A50"
+      ],
+      "expected": null,
+      "status": "planned_not_executed",
+      "purpose": "Compare gameplay draws with music enabled and disabled while preserving call order."
+    }
+  ],
+  "status": "static_schedule_built_runtime_trace_pending"
+}

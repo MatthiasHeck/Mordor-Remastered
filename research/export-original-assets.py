@@ -22,7 +22,6 @@ from PIL import Image, ImageDraw
 sys.dont_write_bytecode = True
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / 'original-export'
-SOURCE = Path(argparse.ArgumentParser(description=__doc__).parse_known_args()[1][1]).resolve() if False else None
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--source', type=Path, default=ROOT.parent.parent / 'Mordor')
 SOURCE = parser.parse_args().source.resolve()
@@ -99,9 +98,10 @@ def ne_resources(data):
             pos += 12
             offset <<= shift
             size <<= shift
-            assert offset + size <= len(data)
+            assert offset < len(data) and offset + size - len(data) < (1 << shift)
             rows.append({'type': name(typ), 'id': name(rid), 'offset': offset,
-                         'allocated_size': size, 'flags': flags})
+                         'allocated_size': size, 'available_size': min(size, len(data) - offset),
+                         'missing_alignment_padding': max(0, offset + size - len(data)), 'flags': flags})
     return rows
 
 
@@ -299,7 +299,9 @@ write_csv('code/procedures.csv', [{k: (';'.join(v) if isinstance(v, list) else v
 selections = {
     'combat': [('FRMDUNM.bas', 'timCombat_Timer'), ('Module7.bas', 'sub155A'),
                ('Module4.bas', 'sub1019'), ('Module4.bas', 'sub0C8A'), ('Module4.bas', 'sub0E85'),
-               ('Module4.bas', 'sub0F01'), ('Module6.bas', 'fn1173'), ('Module3.bas', 'sub0A49')],
+               ('Module4.bas', 'sub0F01'), ('Module4.bas', 'fn0DEE'), ('Module4.bas', 'fn0E4A'),
+               ('Module4.bas', 'fn0E5F'), ('Module7.bas', 'sub0A64'),
+               ('Module6.bas', 'fn1173'), ('Module3.bas', 'sub0A49')],
     'store': [('FRMCTYS.bas', n) for n in ['cmdBuy_Click', 'cmdSell_Click', 'cmdUncurse_Click',
                                          'fn271B', 'fn272C', 'fn273B', 'fn274F', 'sub2621']],
     'recovery': [('FRMMORG.bas', 'cmdCommand_Click'), ('FRMMORG.bas', 'sub2BDB'),
@@ -308,7 +310,7 @@ selections = {
                  ('Module6.bas', 'sub0A7C'), ('Module6.bas', 'fn131D')],
     'dungeon': [('Module3.bas', 'sub0835'), ('Module3.bas', 'sub08F5'), ('Module3.bas', 'sub0A1D'),
                 ('Module3.bas', 'sub087C'), ('Module6.bas', 'fn14CB'), ('Module6.bas', 'fn164C'),
-                ('Module6.bas', 'fn10E5'), ('FRMDUNM.bas', 'timMonsters_Timer')],
+                ('Module6.bas', 'fn10E5'), ('FRMDUNM.bas', 'timAilment_Timer')],
 }
 selected = []
 for category, entries in selections.items():
@@ -399,10 +401,17 @@ write_csv('dungeon/flag-counts.csv', [{'floor': f, 'bit': b, 'mask': 1 << b, 'la
 write_csv('dungeon/flag-definitions.csv', [{'bit': b, 'mask': 1 << b, 'label': name,
                                           'class': 'edge' if b < 6 else ('solid' if b == 19 else 'special')} for b, name in labels.items()])
 cell_lookup = {(c['floor'], c['x_candidate'], c['y_candidate']): c for c in all_cells}
+transition_checks = {}
 for rows, bit in [(teleports, 14), (chutes, 21)]:
     active = [r for r in rows if r['active_slot']]
     assert len({(r['floor'], r['x'], r['y']) for r in active}) == len(active)
-    assert {(r['floor'], r['x'], r['y']) for r in active} == {k for k, c in cell_lookup.items() if c['flags_integer'] & (1 << bit)}
+    indexed = {(r['floor'], r['x'], r['y']) for r in active}
+    flagged = {k for k, c in cell_lookup.items() if c['flags_integer'] & (1 << bit)}
+    transition_checks['teleporters' if bit == 14 else 'chutes'] = {
+        'active_slots': len(active), 'flagged_cells': len(flagged),
+        'slots_without_cell_flag': sorted(indexed - flagged),
+        'flagged_cells_without_slot': sorted(flagged - indexed), 'exact_match': indexed == flagged}
+write_json('dungeon/transition-checks.json', transition_checks)
 for r in teleports:
     if r['active_slot'] and r['destination_kind_candidate'] == 'fixed_xy':
         assert (r['effective_floor_candidate'], r['destination_x'], r['destination_y']) in cell_lookup
@@ -439,7 +448,7 @@ for index, a in enumerate(preview_assets):
     draw.text((x + 10, y + 168), f"{a['width']} x {a['height']}", fill='#aab9c8')
 contact.save(OUT / 'graphics/contact-sheet.png')
 
-summary = {'review_date': '2026-10-09', 'source_root': str(SOURCE),
+summary = {'review_date': '2026-10-10', 'source_root': str(SOURCE),
            'unique_bmp_assets': len(assets), 'bmp_occurrences': len(occurrences),
            'graphics_library_sheets': 10, 'monster_grid_crops': len(crops),
            'monster_records_mapped': len(monsters), 'item_base_prices': len(items),
@@ -448,7 +457,7 @@ summary = {'review_date': '2026-10-09', 'source_root': str(SOURCE),
            'door_edge_flags': len(doors), 'active_teleporters': sum(r['active_slot'] for r in teleports),
            'active_chutes': sum(r['active_slot'] for r in chutes),
            'unknown_terrain_bits': 0, 'prior_item_monster_cell_exports_match': True,
-           'teleporter_chute_slots_match_flagged_cells': True, 'runtime_verified': False}
+           'teleporter_chute_cross_checks': transition_checks, 'runtime_verified': False}
 write_json('summary.json', summary)
 write_json('source-manifest.json', {'source_root': str(SOURCE), 'files': inputs})
 

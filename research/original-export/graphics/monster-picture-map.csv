@@ -1,0 +1,402 @@
+record_index,monster_id,name,picture_id,grid_picture_candidate,special_picture_note
+1,0,GOBLIE,2,graphics/monsters/picture-002.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+2,1,Kobold,2,graphics/monsters/picture-002.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+3,2,Orc,2,graphics/monsters/picture-002.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+4,3,Twisted Dwarf,60,graphics/monsters/picture-060.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+5,4,Slave,2,graphics/monsters/picture-002.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+6,330,Outcast Goblin,2,graphics/monsters/picture-002.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+7,5,Disciple,29,graphics/monsters/picture-029.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+8,289,Skuldragl,45,graphics/monsters/picture-045.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+9,312,Morloch,80,graphics/monsters/picture-080.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+10,331,Slaver,78,graphics/monsters/picture-078.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+11,332,Slave Driver,14,graphics/monsters/picture-014.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+12,333,Goblin,2,graphics/monsters/picture-002.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+13,337,Large Orc,2,graphics/monsters/picture-002.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+14,6,Troll,30,graphics/monsters/picture-030.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+15,7,Elf,83,graphics/monsters/picture-083.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+16,334,Goblin Guard,2,graphics/monsters/picture-002.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+17,335,Goblin Lord,57,graphics/monsters/picture-057.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+18,336,Goblin Shaman,13,graphics/monsters/picture-013.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+19,377,Dwarf,60,graphics/monsters/picture-060.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+20,8,Gnoll,2,graphics/monsters/picture-002.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+21,9,Gnome,29,graphics/monsters/picture-029.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+22,338,Dwarven Guard,60,graphics/monsters/picture-060.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+23,339,Dwarven Lord,57,graphics/monsters/picture-057.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+24,10,Numanog,2,graphics/monsters/picture-002.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+25,11,Sprite,83,graphics/monsters/picture-083.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+26,12,Dryad,29,graphics/monsters/picture-029.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+27,340,Rock Elf,83,graphics/monsters/picture-083.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+28,341,Twisted Elf,74,graphics/monsters/picture-074.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+29,13,Gumon,29,graphics/monsters/picture-029.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+30,14,Lost Soul,29,graphics/monsters/picture-029.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+31,15,Hobgoblin,2,graphics/monsters/picture-002.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+32,309,ZBrat,2,graphics/monsters/picture-002.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+33,16,Weaponist,2,graphics/monsters/picture-002.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+34,17,Ruffian,4,graphics/monsters/picture-004.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+35,18,Jestor,4,graphics/monsters/picture-004.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+36,19,Pixie,83,graphics/monsters/picture-083.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+37,20,Filcher,4,graphics/monsters/picture-004.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+38,21,Siren,29,graphics/monsters/picture-029.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+39,195,Sharper,4,graphics/monsters/picture-004.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+40,197,Witch,29,graphics/monsters/picture-029.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+41,217,Cannibal,2,graphics/monsters/picture-002.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+42,398,Gorguni,58,graphics/monsters/picture-058.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+43,229,Coltpixie,29,graphics/monsters/picture-029.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+44,391,Shadow Ogre,20,graphics/monsters/picture-020.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+45,242,Mengu-Ogre,2,graphics/monsters/picture-002.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+46,250,Gargantuan,2,graphics/monsters/picture-002.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+47,258,Assassin,74,graphics/monsters/picture-074.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+48,270,Red Cloak Assassin,57,graphics/monsters/picture-057.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+49,22,Clean-Up,6,graphics/monsters/picture-006.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+50,23,Green Ooze,6,graphics/monsters/picture-006.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+51,288,Aboleth,33,graphics/monsters/picture-033.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+52,24,Green Slime,6,graphics/monsters/picture-006.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+53,25,Vomitis Goo,76,graphics/monsters/picture-076.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+54,295,Diseased Muck,6,graphics/monsters/picture-006.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+55,26,Purple Ooze,6,graphics/monsters/picture-006.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+56,27,Grey Ooze,33,graphics/monsters/picture-033.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+57,28,Slippery Mire,6,graphics/monsters/picture-006.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+58,29,Jubilex,76,graphics/monsters/picture-076.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+59,30,Blue Slime,6,graphics/monsters/picture-006.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+60,31,Violet Fungus,6,graphics/monsters/picture-006.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+61,238,Grey Mold,6,graphics/monsters/picture-006.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+62,252,Golden Ooze,6,graphics/monsters/picture-006.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+63,271,Rust Monster,76,graphics/monsters/picture-076.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+64,32,Dimeon,9,graphics/monsters/picture-009.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+65,33,Horned Demon,36,graphics/monsters/picture-036.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+66,313,Daemon,9,graphics/monsters/picture-009.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+67,34,Kaelmeon,9,graphics/monsters/picture-009.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+68,35,Lynch Demon,36,graphics/monsters/picture-036.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+69,36,Winged Demon,11,graphics/monsters/picture-011.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+70,300,Troll Demon,47,graphics/monsters/picture-047.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+71,37,Lassumeon,9,graphics/monsters/picture-009.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+72,38,Astral Demon,9,graphics/monsters/picture-009.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+73,39,Shaelmeon,9,graphics/monsters/picture-009.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+74,40,Wretch,9,graphics/monsters/picture-009.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+75,196,Mammon,9,graphics/monsters/picture-009.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+76,222,Incubi,9,graphics/monsters/picture-009.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+77,389,Shadow Demon,9,graphics/monsters/picture-009.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+78,221,Harpy,9,graphics/monsters/picture-009.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+79,310,Pit Fiend,36,graphics/monsters/picture-036.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+80,256,Shadow of Death,62,graphics/monsters/picture-062.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+81,260,Daemon Lord,74,graphics/monsters/picture-074.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+82,311,Demon Prince,63,graphics/monsters/picture-063.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+83,41,Margoyle,40,graphics/monsters/picture-040.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+84,42,Veyasu,7,graphics/monsters/picture-007.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+85,43,Nan-Shuma,11,graphics/monsters/picture-011.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+86,296,Gargoyle,40,graphics/monsters/picture-040.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+87,44,Screaming Devil,11,graphics/monsters/picture-011.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+88,301,Dervish,11,graphics/monsters/picture-011.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+89,45,Keenasu,7,graphics/monsters/picture-007.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+90,46,Poltergeist,29,graphics/monsters/picture-029.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+91,47,Imp,40,graphics/monsters/picture-040.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+92,48,Kei-Shuma,11,graphics/monsters/picture-011.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+93,49,Greymah,7,graphics/monsters/picture-007.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+94,198,Dust Devil,11,graphics/monsters/picture-011.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+95,199,Kenymah,7,graphics/monsters/picture-007.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+96,218,Fiend,29,graphics/monsters/picture-029.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+97,220,Guardian,16,graphics/monsters/picture-016.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+98,228,Arch-Fiend,29,graphics/monsters/picture-029.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+99,390,Shadow Devil,20,graphics/monsters/picture-020.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+100,249,Fire Lord,11,graphics/monsters/picture-011.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+101,287,Flame Devil,11,graphics/monsters/picture-011.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+102,277,Asmodeus,11,graphics/monsters/picture-011.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+103,50,Killart,10,graphics/monsters/picture-010.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+104,51,Hennart,10,graphics/monsters/picture-010.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+105,302,Air Elemental,38,graphics/monsters/picture-038.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+106,52,Ice Mist,21,graphics/monsters/picture-021.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+107,53,Dunnart,10,graphics/monsters/picture-010.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+108,54,Wisp,77,graphics/monsters/picture-077.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+109,55,Wil 'O Wisp,77,graphics/monsters/picture-077.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+110,56,Phantasmal Mist,10,graphics/monsters/picture-010.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+111,200,Junnart,10,graphics/monsters/picture-010.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+112,219,Freezing Mist,21,graphics/monsters/picture-021.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+113,231,Genie,9,graphics/monsters/picture-009.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+114,361,Efreet,36,graphics/monsters/picture-036.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+115,246,Black Mist,21,graphics/monsters/picture-021.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+116,57,I'ssus,17,graphics/monsters/picture-017.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+117,58,Ye'ssus,17,graphics/monsters/picture-017.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+118,290,Bull Snake,17,graphics/monsters/picture-017.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+119,59,Night Dragon,34,graphics/monsters/picture-034.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+120,60,Giant Serpent,17,graphics/monsters/picture-017.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+121,303,Pit Viper,17,graphics/monsters/picture-017.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+122,61,Pegan Lizard,34,graphics/monsters/picture-034.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+123,62,Rattlesnake,17,graphics/monsters/picture-017.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+124,63,Snake Servant,17,graphics/monsters/picture-017.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+125,64,Medusa,56,graphics/monsters/picture-056.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+126,65,Giant I'ssus,17,graphics/monsters/picture-017.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+127,66,Asp,17,graphics/monsters/picture-017.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+128,67,Gythyek Lizard,34,graphics/monsters/picture-034.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+129,68,Que'ssus,42,graphics/monsters/picture-042.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+130,201,Giant Snake,17,graphics/monsters/picture-017.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+131,279,Black Grengi,42,graphics/monsters/picture-042.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+132,392,Shadow Serpent,17,graphics/monsters/picture-017.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+133,358,Mother of Serpents,56,graphics/monsters/picture-056.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+134,278,Coutal,42,graphics/monsters/picture-042.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+135,280,Slither,17,graphics/monsters/picture-017.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+136,69,Pseudo-Dragon,12,graphics/monsters/picture-012.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+137,70,Firagon,12,graphics/monsters/picture-012.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+138,71,Pelagon,12,graphics/monsters/picture-012.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+139,72,Hydra,24,graphics/monsters/picture-024.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+140,308,Flame Dragon,59,graphics/monsters/picture-059.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+141,73,Silver Dragon,81,graphics/monsters/picture-081.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+142,74,Blue Pelagon,24,graphics/monsters/picture-024.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+143,75,Black Pelagon,81,graphics/monsters/picture-081.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+144,76,Gold Pelagon,81,graphics/monsters/picture-081.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+145,77,Drey Dragon,59,graphics/monsters/picture-059.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+146,78,Mundragon,41,graphics/monsters/picture-041.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+147,224,White Dragon,81,graphics/monsters/picture-081.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+148,393,Shadow Dragon,81,graphics/monsters/picture-081.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+149,239,Ice Dragon,24,graphics/monsters/picture-024.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+150,244,Spectral Dragon,12,graphics/monsters/picture-012.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+151,261,Dragon King,61,graphics/monsters/picture-061.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+152,262,Dragon Queen,61,graphics/monsters/picture-061.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+153,273,Sun Dragon,81,graphics/monsters/picture-081.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+154,79,Black Bear,5,graphics/monsters/picture-005.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+155,80,Giant Owl,18,graphics/monsters/picture-018.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+156,81,Tengu,82,graphics/monsters/picture-082.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+157,315,Brown Tyke,28,graphics/monsters/picture-028.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+158,325,Snook,50,graphics/monsters/picture-050.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+159,372,Large Rat,50,graphics/monsters/picture-050.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+160,82,Giant Badger,5,graphics/monsters/picture-005.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+161,83,Dungeon Bear,5,graphics/monsters/picture-005.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+162,84,Razor Boar,49,graphics/monsters/picture-049.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+163,85,Cave Bear,5,graphics/monsters/picture-005.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+164,86,Pandrun,5,graphics/monsters/picture-005.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+165,87,Giant Slug,6,graphics/monsters/picture-006.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+166,292,Scylla,39,graphics/monsters/picture-039.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+167,304,Spotted Tyke,28,graphics/monsters/picture-028.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+168,326,Ergu,50,graphics/monsters/picture-050.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+169,344,Giant Raven,18,graphics/monsters/picture-018.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+170,88,Falcon Wolf,28,graphics/monsters/picture-028.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+171,89,Carrion Crawler,27,graphics/monsters/picture-027.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+172,90,Giant Leech,27,graphics/monsters/picture-027.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+173,91,Giant Boar,49,graphics/monsters/picture-049.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+174,92,Havannan Lion,5,graphics/monsters/picture-005.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+175,93,Hell Hound,28,graphics/monsters/picture-028.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+176,94,Vampire Bat,18,graphics/monsters/picture-018.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+177,95,Grey Pandrun,5,graphics/monsters/picture-005.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+178,96,Giant Wolverine,5,graphics/monsters/picture-005.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+179,327,Rabid Snook,50,graphics/monsters/picture-050.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+180,97,Silver Bear,5,graphics/monsters/picture-005.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+181,98,Yundrun,5,graphics/monsters/picture-005.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+182,375,Black Wolf,28,graphics/monsters/picture-028.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+183,99,Brown Bear,5,graphics/monsters/picture-005.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+184,100,Stalker,39,graphics/monsters/picture-039.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+185,345,Death Hawk,18,graphics/monsters/picture-018.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+186,101,Mordun Pandrun,5,graphics/monsters/picture-005.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+187,314,Burrow,49,graphics/monsters/picture-049.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+188,202,Frost Bear,5,graphics/monsters/picture-005.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+189,203,Black Yundrun,5,graphics/monsters/picture-005.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+190,225,Silent Eagle,18,graphics/monsters/picture-018.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+191,328,Beechi,50,graphics/monsters/picture-050.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+192,354,Shadow Wolf,28,graphics/monsters/picture-028.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+193,233,Iron Bear,5,graphics/monsters/picture-005.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+194,251,Golden Eagle,18,graphics/monsters/picture-018.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+195,257,Death Stalker,39,graphics/monsters/picture-039.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+196,102,Giant Spider,1,graphics/monsters/picture-001.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+197,103,Giant Centipede,23,graphics/monsters/picture-023.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+198,104,Ant,32,graphics/monsters/picture-032.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+199,291,Arthropod,1,graphics/monsters/picture-001.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+200,105,Drey Spider,1,graphics/monsters/picture-001.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+201,106,Giant Beetle,32,graphics/monsters/picture-032.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+202,343,Graèl Mosquito,26,graphics/monsters/picture-026.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+203,107,Giant Ant,32,graphics/monsters/picture-032.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+204,108,Giant Scorpion,31,graphics/monsters/picture-031.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+205,109,Fire Ant,32,graphics/monsters/picture-032.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+206,110,Fire Centipede,23,graphics/monsters/picture-023.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+207,111,Orp,32,graphics/monsters/picture-032.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+208,112,Fire Beetle,32,graphics/monsters/picture-032.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+209,113,Giant Hornet,26,graphics/monsters/picture-026.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+210,114,Earwig,32,graphics/monsters/picture-032.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+211,115,Giant Wasp,26,graphics/monsters/picture-026.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+212,116,Rot Grub,27,graphics/monsters/picture-027.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+213,204,Crystal Spider,1,graphics/monsters/picture-001.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+214,205,Giant Silverfish,32,graphics/monsters/picture-032.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+215,226,Wolf Spider,1,graphics/monsters/picture-001.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+216,245,Tarantula,1,graphics/monsters/picture-001.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+217,394,Shadow Sting,31,graphics/monsters/picture-031.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+218,117,Zombie,22,graphics/monsters/picture-022.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+219,118,Hiksae,22,graphics/monsters/picture-022.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+220,119,Skeleton,44,graphics/monsters/picture-044.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+221,120,Mummy,22,graphics/monsters/picture-022.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+222,121,Milsae,22,graphics/monsters/picture-022.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+223,122,Warrior Spirit,29,graphics/monsters/picture-029.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+224,123,Munsae,8,graphics/monsters/picture-008.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+225,124,Wraith,20,graphics/monsters/picture-020.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+226,125,Walking Corpse,22,graphics/monsters/picture-022.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+227,126,Ghost,38,graphics/monsters/picture-038.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+228,305,Spook,47,graphics/monsters/picture-047.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+229,127,Ransae,8,graphics/monsters/picture-008.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+230,306,Evil Spirit,38,graphics/monsters/picture-038.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+231,128,Drakul,46,graphics/monsters/picture-046.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+232,129,Shuman Munsae,8,graphics/monsters/picture-008.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+233,130,Eidolan Phantasm,47,graphics/monsters/picture-047.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+234,281,Corpser,22,graphics/monsters/picture-022.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+235,206,Ghoul,20,graphics/monsters/picture-020.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+236,207,Asteryex,76,graphics/monsters/picture-076.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+237,216,Banshee,9,graphics/monsters/picture-009.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+238,355,Vampire,46,graphics/monsters/picture-046.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+239,223,Minion of Death,62,graphics/monsters/picture-062.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+240,286,Lich,8,graphics/monsters/picture-008.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+241,235,Angel of Death,62,graphics/monsters/picture-062.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+242,248,Etholan Phantasm,21,graphics/monsters/picture-021.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+243,255,Night Screamer,20,graphics/monsters/picture-020.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+244,356,Vampire Lord,57,graphics/monsters/picture-057.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+245,276,Reaper of Souls,55,graphics/monsters/picture-055.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+246,131,Giant Frog,15,graphics/monsters/picture-015.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+247,132,Kyu Hetha,15,graphics/monsters/picture-015.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+248,133,Kyu Yetro,15,graphics/monsters/picture-015.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+249,134,Kyu Ianmo,15,graphics/monsters/picture-015.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+250,370,Dungeon Pike,54,graphics/monsters/picture-054.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+251,135,Ice Demon,15,graphics/monsters/picture-015.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+252,293,Alligator,35,graphics/monsters/picture-035.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+253,136,Black Eel,35,graphics/monsters/picture-035.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+254,137,Kyu Hota,15,graphics/monsters/picture-015.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+255,369,Tiger Shark,54,graphics/monsters/picture-054.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+256,138,Giant Crocodile,35,graphics/monsters/picture-035.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+257,139,Kyu Nardana,15,graphics/monsters/picture-015.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+258,140,Water Snake,35,graphics/monsters/picture-035.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+259,359,Hammerhead Shark,54,graphics/monsters/picture-054.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+260,386,Lamurian Outcast,79,graphics/monsters/picture-079.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+261,208,Kyu t'Salli,15,graphics/monsters/picture-015.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+262,209,Water Watcher,82,graphics/monsters/picture-082.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+263,342,Piranha,54,graphics/monsters/picture-054.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+264,236,Lamurian,79,graphics/monsters/picture-079.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+265,282,Lamurian Scout,79,graphics/monsters/picture-079.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+266,397,Dark Shape,82,graphics/monsters/picture-082.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+267,247,Dragon Turtle,82,graphics/monsters/picture-082.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+268,380,Lamurian Soldier,79,graphics/monsters/picture-079.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+269,381,Lamurian Guard,79,graphics/monsters/picture-079.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+270,360,Great White,54,graphics/monsters/picture-054.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+271,382,Lamurian Warrior,79,graphics/monsters/picture-079.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+272,383,Lamurian Mage,13,graphics/monsters/picture-013.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+273,385,Lamurian Lord,79,graphics/monsters/picture-079.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+274,384,Lamurian High Priestess,80,graphics/monsters/picture-080.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+275,387,Destroyer of the Deep,63,graphics/monsters/picture-063.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+276,141,Slave Masher,78,graphics/monsters/picture-078.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+277,142,Horda Giant,30,graphics/monsters/picture-030.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+278,143,Geeshi,30,graphics/monsters/picture-030.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+279,307,Morgul,30,graphics/monsters/picture-030.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+280,144,Frost Giant,30,graphics/monsters/picture-030.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+281,145,Kaneeshi,30,graphics/monsters/picture-030.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+282,399,Cyclops,78,graphics/monsters/picture-078.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+283,146,Earth Golemn,30,graphics/monsters/picture-030.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+284,147,Stone Golemn,30,graphics/monsters/picture-030.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+285,148,Meeshi,30,graphics/monsters/picture-030.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+286,149,Fire Golemn,30,graphics/monsters/picture-030.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+287,210,Lava Giant,30,graphics/monsters/picture-030.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+288,357,Giant King,70,graphics/monsters/picture-070.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+289,237,Emerald Golemn,30,graphics/monsters/picture-030.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+290,243,Ogre,30,graphics/monsters/picture-030.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+291,395,Shadow Golem,30,graphics/monsters/picture-030.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+292,259,Charon,68,graphics/monsters/picture-068.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+293,269,Obsidian Golemn,30,graphics/monsters/picture-030.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+294,362,Red Gremlin,53,graphics/monsters/picture-053.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+295,150,Nastrum,43,graphics/monsters/picture-043.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+296,297,Centaur,48,graphics/monsters/picture-048.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+297,151,Satyr,48,graphics/monsters/picture-048.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+298,363,Orange Gremlin,53,graphics/monsters/picture-053.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+299,152,Sistrum,43,graphics/monsters/picture-043.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+300,153,Cockatrice,34,graphics/monsters/picture-034.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+301,347,Minotaur,64,graphics/monsters/picture-064.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+302,364,Yellow Gremlin,53,graphics/monsters/picture-053.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+303,154,Mostrum,43,graphics/monsters/picture-043.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+304,155,Morey Bilk,80,graphics/monsters/picture-080.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+305,156,Grostrum,43,graphics/monsters/picture-043.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+306,365,Green Gremlin,53,graphics/monsters/picture-053.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+307,211,Tazen,39,graphics/monsters/picture-039.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+308,366,Blue Gremlin,53,graphics/monsters/picture-053.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+309,400,Griffin,41,graphics/monsters/picture-041.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+310,283,Golden Centaur,48,graphics/monsters/picture-048.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+311,367,Purple Gremlin,53,graphics/monsters/picture-053.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+312,379,Pariah,43,graphics/monsters/picture-043.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+313,368,Indigo Gremlin,53,graphics/monsters/picture-053.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+314,264,Ancient Guardian,80,graphics/monsters/picture-080.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+315,265,Gorgon,43,graphics/monsters/picture-043.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+316,346,Phoenix,18,graphics/monsters/picture-018.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+317,388,Black Gremlin,67,graphics/monsters/picture-067.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+318,371,Wererat,50,graphics/monsters/picture-050.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+319,373,Wereboar,49,graphics/monsters/picture-049.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+320,157,Shape Shifter,76,graphics/monsters/picture-076.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+321,158,Altering Beast,39,graphics/monsters/picture-039.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+322,159,Trancor,16,graphics/monsters/picture-016.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+323,160,Doppleganger,14,graphics/monsters/picture-014.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+324,161,Malencor,16,graphics/monsters/picture-016.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+325,376,Werewolf,39,graphics/monsters/picture-039.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+326,162,Polymorph,39,graphics/monsters/picture-039.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+327,212,Phase Beast,21,graphics/monsters/picture-021.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+328,374,Werebear,5,graphics/monsters/picture-005.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+329,284,Displacer,39,graphics/monsters/picture-039.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+330,272,Life Shifter,21,graphics/monsters/picture-021.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+331,163,Footpad,2,graphics/monsters/picture-002.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+332,164,Gredlan Rogue,4,graphics/monsters/picture-004.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+333,165,Scavenger,4,graphics/monsters/picture-004.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+334,166,Cutthroat,2,graphics/monsters/picture-002.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+335,167,Thug,2,graphics/monsters/picture-002.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+336,298,Pickpocket,83,graphics/monsters/picture-083.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+337,168,Cutpurse,4,graphics/monsters/picture-004.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+338,169,Shralar Thief,45,graphics/monsters/picture-045.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+339,170,Robber,4,graphics/monsters/picture-004.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+340,171,Burgler,4,graphics/monsters/picture-004.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+341,172,Gredlan Footpad,2,graphics/monsters/picture-002.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+342,348,Hooded Thief,2,graphics/monsters/picture-002.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+343,173,Pilferer,4,graphics/monsters/picture-004.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+344,285,Brigand,45,graphics/monsters/picture-045.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+345,213,Thief,4,graphics/monsters/picture-004.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+346,234,Red-Cloaked Thief,57,graphics/monsters/picture-057.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+347,254,Master Thief,45,graphics/monsters/picture-045.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+348,267,Master of Shadows,57,graphics/monsters/picture-057.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+349,174,Enchanter,13,graphics/monsters/picture-013.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+350,378,Charmer,13,graphics/monsters/picture-013.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+351,175,Conjurer,13,graphics/monsters/picture-013.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+352,299,Element Mage,66,graphics/monsters/picture-066.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+353,176,Sorcerer,65,graphics/monsters/picture-065.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+354,177,Spell Binder,80,graphics/monsters/picture-080.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+355,178,Warlock,13,graphics/monsters/picture-013.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+356,351,Demonist,65,graphics/monsters/picture-065.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+357,179,Illusionist,66,graphics/monsters/picture-066.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+358,180,Apparitionist,13,graphics/monsters/picture-013.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+359,227,Wizard,80,graphics/monsters/picture-080.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+360,240,Illusion Master,66,graphics/monsters/picture-066.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+361,253,Mage,13,graphics/monsters/picture-013.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+362,266,Magi Lord,69,graphics/monsters/picture-069.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+363,268,Mind Twister,65,graphics/monsters/picture-065.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+364,349,Rowdy,37,graphics/monsters/picture-037.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+365,181,Pinyl,14,graphics/monsters/picture-014.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+366,182,Warrior,3,graphics/monsters/picture-003.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+367,183,Swashbuckler,73,graphics/monsters/picture-073.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+368,294,Soldier,3,graphics/monsters/picture-003.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+369,184,Rashart,14,graphics/monsters/picture-014.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+370,185,Slayer,14,graphics/monsters/picture-014.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+371,186,Bushart,73,graphics/monsters/picture-073.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+372,187,Courrier,3,graphics/monsters/picture-003.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+373,188,Gladiator,3,graphics/monsters/picture-003.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+374,189,Barbarian,37,graphics/monsters/picture-037.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+375,190,Champion,72,graphics/monsters/picture-072.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+376,191,Bushido,14,graphics/monsters/picture-014.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+377,350,Butcher,25,graphics/monsters/picture-025.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+378,192,Mercenary,14,graphics/monsters/picture-014.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+379,193,Sentinal,3,graphics/monsters/picture-003.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+380,352,Ninja,25,graphics/monsters/picture-025.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+381,194,Swordsman,3,graphics/monsters/picture-003.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+382,214,Holy Warrior,71,graphics/monsters/picture-071.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+383,215,Defender,3,graphics/monsters/picture-003.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+384,353,Master Ninja,25,graphics/monsters/picture-025.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+385,232,Hero,3,graphics/monsters/picture-003.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+386,230,Elven Lord,71,graphics/monsters/picture-071.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+387,241,Master Swordsman,3,graphics/monsters/picture-003.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+388,263,Guardsman,37,graphics/monsters/picture-037.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+389,274,Warlord,72,graphics/monsters/picture-072.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+390,307,Shadow Ninja,25,graphics/monsters/picture-025.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+391,316,Namana,51,graphics/monsters/picture-051.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+392,324,Dungeonweed,52,graphics/monsters/picture-052.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+393,317,Nakovant,51,graphics/monsters/picture-051.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+394,329,Strangleweed,52,graphics/monsters/picture-052.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+395,318,Nabutu,51,graphics/monsters/picture-051.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+396,396,Gibbering Yethwa,58,graphics/monsters/picture-058.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+397,319,NaLanea,51,graphics/monsters/picture-051.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+398,320,T'Mana,51,graphics/monsters/picture-051.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+399,321,T'Kovant,51,graphics/monsters/picture-051.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+400,322,T'Butu,51,graphics/monsters/picture-051.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately
+401,323,T'Lanea,51,graphics/monsters/picture-051.png,FRMLIBRA calls fn0C3B; ASMO override must be evaluated separately

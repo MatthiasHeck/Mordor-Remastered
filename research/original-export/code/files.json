@@ -1,0 +1,370 @@
+[
+  {
+    "source": "POOP/CHARCREA.bas",
+    "export": "code/source/CHARCREA.bas",
+    "bytes": 14213,
+    "sha256": "a6a7b5641b5fda5a5d0a4600bf63f249f49b1ad3f3879716a1fe8dd60aad2958",
+    "lines": 423,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/FRMABOUT.bas",
+    "export": "code/source/FRMABOUT.bas",
+    "bytes": 439,
+    "sha256": "8c327f94b5bd358d4baef83ea906713a57d63594485611b120cc249e59d17825",
+    "lines": 22,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/FRMAUTOM.bas",
+    "export": "code/source/FRMAUTOM.bas",
+    "bytes": 23541,
+    "sha256": "cf8dc26cefd5606840f14ccb388163a4cd2eab13e1f86b7f9710717a34871d29",
+    "lines": 628,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/FRMCHAR1.bas",
+    "export": "code/source/FRMCHAR1.bas",
+    "bytes": 12701,
+    "sha256": "d4b2070a23adc05c827ddb4f31ec6d96883d8cb49a70fd42c172bd2479c8cb06",
+    "lines": 392,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/FRMCHAR3.bas",
+    "export": "code/source/FRMCHAR3.bas",
+    "bytes": 32726,
+    "sha256": "c40cc5ba278b56c8c70d6969bc043f67b0e9748b0f879f165e244b991fe16a89",
+    "lines": 909,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/FRMCHAR4.bas",
+    "export": "code/source/FRMCHAR4.bas",
+    "bytes": 3118,
+    "sha256": "76d5dd99c40c693bfee40f10ce4c2a44d33afb335e10d59ba2dd4ce1f700409a",
+    "lines": 103,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/FRMCHARL.bas",
+    "export": "code/source/FRMCHARL.bas",
+    "bytes": 1994,
+    "sha256": "2a8f8d79dfa8ed55963e46de1deb709b5c7cd0a840ed1c19af7509df810ff2f9",
+    "lines": 75,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/FRMCITYB.bas",
+    "export": "code/source/FRMCITYB.bas",
+    "bytes": 10965,
+    "sha256": "577da099ad61004027af6504d4315f1f46611ddbc273638050c0ac70f99c2d70",
+    "lines": 328,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/FRMCITYC.bas",
+    "export": "code/source/FRMCITYC.bas",
+    "bytes": 30379,
+    "sha256": "c4be92507b07c57e4972dfe00340b55b25fb9899b2b235c90120e9a7d064539b",
+    "lines": 941,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/FRMCONTR.bas",
+    "export": "code/source/FRMCONTR.bas",
+    "bytes": 9103,
+    "sha256": "b94302ece10c523f63acdd582df48d7fc9649678038a03089aecd3be4c852c73",
+    "lines": 244,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/FRMCREDI.bas",
+    "export": "code/source/FRMCREDI.bas",
+    "bytes": 3356,
+    "sha256": "e9d14c91bd5a1bd0b61aef914bc810ee41460c5f0b275222772e5f0353877694",
+    "lines": 92,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/FRMCTYG.bas",
+    "export": "code/source/FRMCTYG.bas",
+    "bytes": 41609,
+    "sha256": "936513525da8750b3fdd3509bf9771ed89eb2d13fc8ad4ecd0ae8c6c0174584d",
+    "lines": 1032,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/FRMCTYM.bas",
+    "export": "code/source/FRMCTYM.bas",
+    "bytes": 6396,
+    "sha256": "5eb5f334a48150c51a90553291719413907b365f9e7efc428a045c923da26ed2",
+    "lines": 225,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/FRMCTYS.bas",
+    "export": "code/source/FRMCTYS.bas",
+    "bytes": 34463,
+    "sha256": "7ecd21a04584bce074efae10af05c90a52b781f1bde1c09fc908b60fbb71853b",
+    "lines": 1022,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/FRMDIREC.bas",
+    "export": "code/source/FRMDIREC.bas",
+    "bytes": 1580,
+    "sha256": "f1040d69f3a578c86777d5961cad497eece99e1fbea80bd9a3993a943abb23b8",
+    "lines": 66,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/FRMDUNM.bas",
+    "export": "code/source/FRMDUNM.bas",
+    "bytes": 22853,
+    "sha256": "bb21f09a475ffbc19fc8007108819b69d413fdf6aa5bb3ed846cd10cb8407d93",
+    "lines": 626,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/FRMEDITC.bas",
+    "export": "code/source/FRMEDITC.bas",
+    "bytes": 9207,
+    "sha256": "a87cb0833993a91bb54c3e2ed4166d98d2f809bcdf10f6feaa5784db0dca51de",
+    "lines": 255,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/FRMEXCHA.bas",
+    "export": "code/source/FRMEXCHA.bas",
+    "bytes": 7805,
+    "sha256": "de00919f22700c5bd63f315c1c12411f44b3fcb6c96e775877a09123c2e26e54",
+    "lines": 228,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/FRMGLDL.bas",
+    "export": "code/source/FRMGLDL.bas",
+    "bytes": 5411,
+    "sha256": "7b38b29b93901786a89a693ec167c9547da611d98212ecdee7cde4cbfebce2d4",
+    "lines": 183,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/FRMGROUP.bas",
+    "export": "code/source/FRMGROUP.bas",
+    "bytes": 15211,
+    "sha256": "fd7b5a511d150918d7792e33aef257e82d25aa21f23550b881c2a84e8a30a141",
+    "lines": 493,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/FRMHALL.bas",
+    "export": "code/source/FRMHALL.bas",
+    "bytes": 11255,
+    "sha256": "c9ef5600f748c5950f732fafeca8ecd2c83727d09f3cd8860b41e27b685bbd58",
+    "lines": 279,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/FRMINTER.bas",
+    "export": "code/source/FRMINTER.bas",
+    "bytes": 19528,
+    "sha256": "e7ad05b4824055f9f976943a103ee95f534dee3978efee2b3df0fe7e19898eb9",
+    "lines": 522,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/FRMLIBRA.bas",
+    "export": "code/source/FRMLIBRA.bas",
+    "bytes": 4771,
+    "sha256": "d77b1517387f56abb14d2c7e6d373588298e8ca1fa997be171dcf9a37b1bef3c",
+    "lines": 158,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/FRMMAIN.bas",
+    "export": "code/source/FRMMAIN.bas",
+    "bytes": 9042,
+    "sha256": "74abb7ad2604cc68c42ecc6435cd6d28a534484c48969503dac19ce8b6d47331",
+    "lines": 300,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/FRMMENU.bas",
+    "export": "code/source/FRMMENU.bas",
+    "bytes": 9046,
+    "sha256": "a0094a077698d8aaa0311696059517d547da3c2033fe31ee592dc90f8121371b",
+    "lines": 256,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/FRMMORG.bas",
+    "export": "code/source/FRMMORG.bas",
+    "bytes": 10295,
+    "sha256": "aafb6881ecbc051a6ec67368719aec31333de6a94605d699e405f049c1a9d0c8",
+    "lines": 265,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/FRMOPTIO.bas",
+    "export": "code/source/FRMOPTIO.bas",
+    "bytes": 16318,
+    "sha256": "236c4910567ea96fb3747a4f9b3dbaa3a1833c73baa00cbda9db9ba687438ef0",
+    "lines": 425,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/FRMORDER.bas",
+    "export": "code/source/FRMORDER.bas",
+    "bytes": 2098,
+    "sha256": "cc8019950c031caaa4f62b1e8e750c8554afc04a2adad42d549468f6e33c03d2",
+    "lines": 37,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/FRMPINFO.bas",
+    "export": "code/source/FRMPINFO.bas",
+    "bytes": 1751,
+    "sha256": "374d5672b290735534f4b06320b8dcc912fa6ddcc86265db9ab62766fba4ab31",
+    "lines": 61,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/FRMPRINT.bas",
+    "export": "code/source/FRMPRINT.bas",
+    "bytes": 2608,
+    "sha256": "69f46f6161e7b74e2397faa65b9d8002c61a6fd161fe0ecac6e8b2d800c6bed3",
+    "lines": 79,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/FRMSEEK.bas",
+    "export": "code/source/FRMSEEK.bas",
+    "bytes": 20710,
+    "sha256": "3ec4819d1b45a52fa8686f077c99cebcb40b984b12d4d30d9ed9d1a657e34d4e",
+    "lines": 424,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/FRMWELCO.bas",
+    "export": "code/source/FRMWELCO.bas",
+    "bytes": 659,
+    "sha256": "774c0a946d420f17c9addc448c0da91521ce86ff5e524132ec3ba4c3259e24f1",
+    "lines": 30,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/main.txt",
+    "export": "code/source/main.txt",
+    "bytes": 23041,
+    "sha256": "438f82b6b305ff527e4687f1dfffaea36de03889aab19c587b8ad5a9aa5715b9",
+    "lines": 946,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/Module1.bas",
+    "export": "code/source/Module1.bas",
+    "bytes": 38323,
+    "sha256": "5bc7b670d9c0aec451f6dc2cd5c3e582cc5c39850280e12d0feedba31f2ff445",
+    "lines": 1085,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/Module10.bas",
+    "export": "code/source/Module10.bas",
+    "bytes": 6880,
+    "sha256": "f915b2b79f31d39071e31dd2082e69b5a650bf6d0e35e0138ed586e88a9627e8",
+    "lines": 200,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/Module11.bas",
+    "export": "code/source/Module11.bas",
+    "bytes": 29637,
+    "sha256": "ba316e0680e94d668c6c0463e7b063d6283349417aebc6dece08a4f57186fd59",
+    "lines": 786,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/Module12.bas",
+    "export": "code/source/Module12.bas",
+    "bytes": 8805,
+    "sha256": "dd9412a12871780dd3668bc970783d714b7c168a277e2043ebd70e79e33cac49",
+    "lines": 250,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/Module13.bas",
+    "export": "code/source/Module13.bas",
+    "bytes": 2104,
+    "sha256": "39a278e083c47dc75461247606569a845063297fc29cf325a6552805d954ec28",
+    "lines": 37,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/Module2.bas",
+    "export": "code/source/Module2.bas",
+    "bytes": 73482,
+    "sha256": "08aa42b9a376dc57f81157d469c888b9a78983afc75d48028dcd981cc8dd3276",
+    "lines": 2084,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/Module3.bas",
+    "export": "code/source/Module3.bas",
+    "bytes": 76132,
+    "sha256": "794fe7d4a65f78c5472b5ef864449379fc1f25966cac99935154486bd07ebfe8",
+    "lines": 1897,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/Module4.bas",
+    "export": "code/source/Module4.bas",
+    "bytes": 193313,
+    "sha256": "ba21ed7f6fc036281450dd99b2036468c96d6030c4f04c05fa8b8d1a7b88851e",
+    "lines": 4500,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/Module5.bas",
+    "export": "code/source/Module5.bas",
+    "bytes": 105,
+    "sha256": "391f5a29605c7ee9e5f2dc265456150d52acf14778ab96935a0254c58361915e",
+    "lines": 3,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/Module6.bas",
+    "export": "code/source/Module6.bas",
+    "bytes": 269759,
+    "sha256": "ae7bb58596c41ea12fda68ecfa2e719e40cfe1af5175d096fb95a35aaa435f41",
+    "lines": 6449,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/Module7.bas",
+    "export": "code/source/Module7.bas",
+    "bytes": 25235,
+    "sha256": "3c7e9656ce944973ff1fcc1a968a5c0de3a6cb1793c9afef708e6196106940da",
+    "lines": 755,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/Module8.bas",
+    "export": "code/source/Module8.bas",
+    "bytes": 8690,
+    "sha256": "b990f244ef6236ac7a23f22c06507e2ec5b4fac04cb24387e408b2ba70bbe823",
+    "lines": 204,
+    "encoding": "cp1252"
+  },
+  {
+    "source": "POOP/Module9.bas",
+    "export": "code/source/Module9.bas",
+    "bytes": 14462,
+    "sha256": "4ca2749f8c814026f18681f7710cc80aa64d0866963e5a4c4521d329605b9a93",
+    "lines": 515,
+    "encoding": "cp1252"
+  }
+]

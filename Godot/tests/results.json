@@ -1,0 +1,8 @@
+{
+	"checks": 110512,
+	"failures": [],
+	"original_game_executed": false,
+	"runtime_parity_verified": false,
+	"scope": "Independent CSV comparison, binary record round trips, candidate rule contracts",
+	"typed_records_round_tripped": 19451
+}

@@ -1,0 +1,79 @@
+{
+  "conversion_site_count": 327,
+  "rng_site_count": 228,
+  "randomize_site_count": 1,
+  "fixtures": [
+    {
+      "id": "NUM-CINT-TIES",
+      "operation": "CInt",
+      "inputs": [
+        -2.5,
+        -1.5,
+        -0.5,
+        0.5,
+        1.5,
+        2.5
+      ],
+      "expected": null,
+      "status": "planned_not_executed",
+      "purpose": "Determine VB3 tie rounding and sign behavior."
+    },
+    {
+      "id": "NUM-INT-FIX-NEGATIVE",
+      "operation": "Int/Fix",
+      "inputs": [
+        -2.75,
+        -2.5,
+        -2.0,
+        -1.25,
+        -0.5,
+        0.0,
+        0.5
+      ],
+      "expected": null,
+      "status": "planned_not_executed",
+      "purpose": "Separate floor semantics from truncation for negative values."
+    },
+    {
+      "id": "NUM-INTEGER-BOUNDARY",
+      "operation": "CInt",
+      "inputs": [
+        32766.4,
+        32767.0,
+        32767.4,
+        32767.5,
+        32768.0,
+        -32768.0,
+        -32768.5
+      ],
+      "expected": null,
+      "status": "planned_not_executed",
+      "purpose": "Record overflow boundary and error behavior."
+    },
+    {
+      "id": "NUM-LONG-BOUNDARY",
+      "operation": "CLng",
+      "inputs": [
+        2147483646.4,
+        2147483647.0,
+        2147483647.5,
+        -2147483648.0
+      ],
+      "expected": null,
+      "status": "planned_not_executed",
+      "purpose": "Record Long conversion boundary behavior."
+    },
+    {
+      "id": "RNG-MUSIC-COUPLING",
+      "operation": "Rnd sequence",
+      "inputs": [
+        "Randomize",
+        "FRMMAIN.timMusic_Timer",
+        "Module9.sub1A50"
+      ],
+      "expected": null,
+      "status": "planned_not_executed",
+      "purpose": "Compare gameplay draws with music enabled and disabled while preserving call order."
+    }
+  ]
+}

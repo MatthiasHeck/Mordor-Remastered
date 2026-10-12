@@ -1,0 +1,378 @@
+{
+  "version": 1,
+  "status": "ALL_ACTION_ITEMS_HAVE_CONTROLLED_RUNTIME_CASES_PENDING",
+  "case_count": 16,
+  "cases": [
+    {
+      "id": "REF01",
+      "action_item": "R01",
+      "purpose": "Reference build launch and identity",
+      "setup": "Prepared original lab copy",
+      "steps": [
+        "Record original build, data, runtime, lab and clock metadata.",
+        "Run the smallest controlled input sequence that reaches the target path.",
+        "Repeat with the stated boundary or comparison condition.",
+        "Store observations separately from static predictions."
+      ],
+      "capture": [
+        "startup state",
+        "executable/data/runtime hashes",
+        "configuration",
+        "version/help identity"
+      ],
+      "observed": null,
+      "status": "planned_not_executed",
+      "runtime_requirement": "Compatible original runtime or instrumented executable required; no substitute implementation certifies the result."
+    },
+    {
+      "id": "CODE01",
+      "action_item": "R02",
+      "purpose": "Critical procedure address and call-stack capture",
+      "setup": "Instrumented original executable or function-level debugger",
+      "steps": [
+        "Record original build, data, runtime, lab and clock metadata.",
+        "Run the smallest controlled input sequence that reaches the target path.",
+        "Repeat with the stated boundary or comparison condition.",
+        "Store observations separately from static predictions."
+      ],
+      "capture": [
+        "segment:offset entry",
+        "byte range",
+        "callers",
+        "argument types",
+        "relocation evidence"
+      ],
+      "observed": null,
+      "status": "planned_not_executed",
+      "runtime_requirement": "Compatible original runtime or instrumented executable required; no substitute implementation certifies the result."
+    },
+    {
+      "id": "NUM01",
+      "action_item": "R03",
+      "purpose": "VB3 conversion and RNG trace",
+      "setup": "Minimal VB3 probe plus seeded game copy",
+      "steps": [
+        "Record original build, data, runtime, lab and clock metadata.",
+        "Run the smallest controlled input sequence that reaches the target path.",
+        "Repeat with the stated boundary or comparison condition.",
+        "Store observations separately from static predictions."
+      ],
+      "capture": [
+        "typed intermediates",
+        "conversion results/errors",
+        "Rnd outputs",
+        "music enabled/disabled state"
+      ],
+      "observed": null,
+      "status": "planned_not_executed",
+      "runtime_requirement": "Compatible original runtime or instrumented executable required; no substitute implementation certifies the result."
+    },
+    {
+      "id": "COMBAT01",
+      "action_item": "R04",
+      "purpose": "Shared combat helper and caller outcomes",
+      "setup": "Controlled hostile encounter with fixed five-argument captures",
+      "steps": [
+        "Record original build, data, runtime, lab and clock metadata.",
+        "Run the smallest controlled input sequence that reaches the target path.",
+        "Repeat with the stated boundary or comparison condition.",
+        "Store observations separately from static predictions."
+      ],
+      "capture": [
+        "fn0DEE arguments",
+        "four Rnd outputs",
+        "hit/miss",
+        "damage",
+        "swing/special/XP state"
+      ],
+      "observed": null,
+      "status": "planned_not_executed",
+      "runtime_requirement": "Compatible original runtime or instrumented executable required; no substitute implementation certifies the result."
+    },
+    {
+      "id": "TIM01",
+      "action_item": "R05",
+      "purpose": "Timer cadence and pause ordering",
+      "setup": "Idle and active hostile rooms in prepared lab copy",
+      "steps": [
+        "Record original build, data, runtime, lab and clock metadata.",
+        "Run the smallest controlled input sequence that reaches the target path.",
+        "Repeat with the stated boundary or comparison condition.",
+        "Store observations separately from static predictions."
+      ],
+      "capture": [
+        "timer intervals",
+        "callback timestamps",
+        "command timestamps",
+        "pause guards",
+        "actor order"
+      ],
+      "observed": null,
+      "status": "planned_not_executed",
+      "runtime_requirement": "Compatible original runtime or instrumented executable required; no substitute implementation certifies the result."
+    },
+    {
+      "id": "SPELL01",
+      "action_item": "R06",
+      "purpose": "Spell arbitration and effects",
+      "setup": "Character matrix covering guild access, item casts and target types",
+      "steps": [
+        "Record original build, data, runtime, lab and clock metadata.",
+        "Run the smallest controlled input sequence that reaches the target path.",
+        "Repeat with the stated boundary or comparison condition.",
+        "Store observations separately from static predictions."
+      ],
+      "capture": [
+        "cost",
+        "power",
+        "target",
+        "resistance",
+        "failure and status effects"
+      ],
+      "observed": null,
+      "status": "planned_not_executed",
+      "runtime_requirement": "Compatible original runtime or instrumented executable required; no substitute implementation certifies the result.",
+      "trace_spec": "spell-trace-spec.json"
+    },
+    {
+      "id": "PROG01",
+      "action_item": "R07",
+      "purpose": "Creation, training and progression boundaries",
+      "setup": "Fresh characters across race/guild/stat/CON boundary matrix",
+      "steps": [
+        "Record original build, data, runtime, lab and clock metadata.",
+        "Run the smallest controlled input sequence that reaches the target path.",
+        "Repeat with the stated boundary or comparison condition.",
+        "Store observations separately from static predictions."
+      ],
+      "capture": [
+        "starting fields",
+        "XP and training",
+        "quest gates",
+        "HP/SP changes",
+        "Rnd order"
+      ],
+      "observed": null,
+      "status": "planned_not_executed",
+      "runtime_requirement": "Compatible original runtime or instrumented executable required; no substitute implementation certifies the result.",
+      "trace_spec": "progression-trace-spec.json"
+    },
+    {
+      "id": "ENCOUNTER01",
+      "action_item": "R08",
+      "purpose": "Encounter, lair, trap and loot generation",
+      "setup": "Copied worlds at controlled floors and encounter states",
+      "steps": [
+        "Record original build, data, runtime, lab and clock metadata.",
+        "Run the smallest controlled input sequence that reaches the target path.",
+        "Repeat with the stated boundary or comparison condition.",
+        "Store observations separately from static predictions."
+      ],
+      "capture": [
+        "group composition",
+        "hostility",
+        "chest/trap result",
+        "drops",
+        "gold",
+        "world persistence"
+      ],
+      "observed": null,
+      "status": "planned_not_executed",
+      "runtime_requirement": "Compatible original runtime or instrumented executable required; no substitute implementation certifies the result.",
+      "trace_spec": "encounter-trace-spec.json"
+    },
+    {
+      "id": "ITEM01",
+      "action_item": "R09",
+      "purpose": "Equipment, alignment, charges and slot-zero paths",
+      "setup": "Owned item matrix with identified/unidentified and cursed states",
+      "steps": [
+        "Record original build, data, runtime, lab and clock metadata.",
+        "Run the smallest controlled input sequence that reaches the target path.",
+        "Repeat with the stated boundary or comparison condition.",
+        "Store observations separately from static predictions."
+      ],
+      "capture": [
+        "eligibility",
+        "equip result",
+        "charge debit",
+        "curse/uncurse",
+        "slot index",
+        "crest lifecycle"
+      ],
+      "observed": null,
+      "status": "planned_not_executed",
+      "runtime_requirement": "Compatible original runtime or instrumented executable required; no substitute implementation certifies the result.",
+      "trace_spec": "item-trace-spec.json"
+    },
+    {
+      "id": "ECON01",
+      "action_item": "R10",
+      "purpose": "Shop quotes, stock and world-time updates",
+      "setup": "Stores with controlled carried/bank funds and elapsed time",
+      "steps": [
+        "Record original build, data, runtime, lab and clock metadata.",
+        "Run the smallest controlled input sequence that reaches the target path.",
+        "Repeat with the stated boundary or comparison condition.",
+        "Store observations separately from static predictions."
+      ],
+      "capture": [
+        "quote",
+        "payment",
+        "stock",
+        "refresh",
+        "world timestamps",
+        "party state"
+      ],
+      "observed": null,
+      "status": "planned_not_executed",
+      "runtime_requirement": "Compatible original runtime or instrumented executable required; no substitute implementation certifies the result.",
+      "trace_spec": "economy-time-trace-spec.json"
+    },
+    {
+      "id": "PARTY01",
+      "action_item": "R11",
+      "purpose": "Party and companion transitions",
+      "setup": "Four-slot companion and multi-character party matrix",
+      "steps": [
+        "Record original build, data, runtime, lab and clock metadata.",
+        "Run the smallest controlled input sequence that reaches the target path.",
+        "Repeat with the stated boundary or comparison condition.",
+        "Store observations separately from static predictions."
+      ],
+      "capture": [
+        "formation",
+        "separation",
+        "obedience",
+        "escape",
+        "friendly fire",
+        "casting",
+        "reward sharing"
+      ],
+      "observed": null,
+      "status": "planned_not_executed",
+      "runtime_requirement": "Compatible original runtime or instrumented executable required; no substitute implementation certifies the result.",
+      "trace_spec": "party-companion-trace-spec.json"
+    },
+    {
+      "id": "RECOVERY01",
+      "action_item": "R12",
+      "purpose": "Recovery, age and pending-rescue behavior",
+      "setup": "Copied dead/aged characters across recovery methods",
+      "steps": [
+        "Record original build, data, runtime, lab and clock metadata.",
+        "Run the smallest controlled input sequence that reaches the target path.",
+        "Repeat with the stated boundary or comparison condition.",
+        "Store observations separately from static predictions."
+      ],
+      "capture": [
+        "fees",
+        "acceptance chance",
+        "HP restoration",
+        "permanent losses",
+        "pending state",
+        "age accumulation"
+      ],
+      "observed": null,
+      "status": "planned_not_executed",
+      "runtime_requirement": "Compatible original runtime or instrumented executable required; no substitute implementation certifies the result.",
+      "trace_spec": "recovery-age-trace-spec.json"
+    },
+    {
+      "id": "DUNGEON01",
+      "action_item": "R13",
+      "purpose": "Dungeon traversal, terrain and unmatched teleporters",
+      "setup": "Floor and coordinate matrix including floor-8 candidates",
+      "steps": [
+        "Record original build, data, runtime, lab and clock metadata.",
+        "Run the smallest controlled input sequence that reaches the target path.",
+        "Repeat with the stated boundary or comparison condition.",
+        "Store observations separately from static predictions."
+      ],
+      "capture": [
+        "destination",
+        "facing",
+        "terrain effects",
+        "door behavior",
+        "perception",
+        "messages",
+        "party separation"
+      ],
+      "observed": null,
+      "status": "planned_not_executed",
+      "runtime_requirement": "Compatible original runtime or instrumented executable required; no substitute implementation certifies the result.",
+      "trace_spec": "dungeon-trace-spec.json"
+    },
+    {
+      "id": "SAVE01",
+      "action_item": "R14",
+      "purpose": "Save triggers and lossless field round-trip",
+      "setup": "Fresh and mutated worlds with every known record type",
+      "steps": [
+        "Record original build, data, runtime, lab and clock metadata.",
+        "Run the smallest controlled input sequence that reaches the target path.",
+        "Repeat with the stated boundary or comparison condition.",
+        "Store observations separately from static predictions."
+      ],
+      "capture": [
+        "written fields",
+        "trigger timing",
+        "reload state",
+        "legacy import",
+        "unknown field preservation"
+      ],
+      "observed": null,
+      "status": "planned_not_executed",
+      "runtime_requirement": "Compatible original runtime or instrumented executable required; no substitute implementation certifies the result.",
+      "trace_spec": "persistence-trace-spec.json"
+    },
+    {
+      "id": "AUDIO01",
+      "action_item": "R15",
+      "purpose": "Audio index, MIDI and missing-cue behavior",
+      "setup": "Prepared install with supplied audio unchanged",
+      "steps": [
+        "Record original build, data, runtime, lab and clock metadata.",
+        "Run the smallest controlled input sequence that reaches the target path.",
+        "Repeat with the stated boundary or comparison condition.",
+        "Store observations separately from static predictions."
+      ],
+      "capture": [
+        "requested index",
+        "filename",
+        "MIDI timing",
+        "missing FIGHT.WAV path",
+        "logging",
+        "simulation state"
+      ],
+      "observed": null,
+      "status": "planned_not_executed",
+      "runtime_requirement": "Compatible original runtime or instrumented executable required; no substitute implementation certifies the result.",
+      "trace_spec": "presentation-audio-trace-spec.json"
+    },
+    {
+      "id": "DEFECT01",
+      "action_item": "R16",
+      "purpose": "Suspected legacy defects versus decompiler damage",
+      "setup": "Boundary matrix for disease, age, raise and rescue branches",
+      "steps": [
+        "Record original build, data, runtime, lab and clock metadata.",
+        "Run the smallest controlled input sequence that reaches the target path.",
+        "Repeat with the stated boundary or comparison condition.",
+        "Store observations separately from static predictions."
+      ],
+      "capture": [
+        "branch condition",
+        "error path",
+        "state mutation",
+        "message",
+        "repeatability",
+        "source/runtime disagreement"
+      ],
+      "observed": null,
+      "status": "planned_not_executed",
+      "runtime_requirement": "Compatible original runtime or instrumented executable required; no substitute implementation certifies the result.",
+      "trace_spec": "defect-trace-spec.json"
+    }
+  ]
+}

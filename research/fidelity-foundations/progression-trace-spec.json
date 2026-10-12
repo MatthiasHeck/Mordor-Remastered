@@ -1,0 +1,331 @@
+{
+  "status": "STATIC_PROGRESSION_TRACE_BUILT_RUNTIME_PENDING",
+  "data": {
+    "race_count": 9,
+    "race_guild_eligibility_rows": 9,
+    "guild_count": 12,
+    "race_names": [
+      "Human",
+      "Elf",
+      "Giant",
+      "Gnome",
+      "Dwarf",
+      "Ogre",
+      "Morloch",
+      "Osiri",
+      "Troll"
+    ],
+    "guild_names": [
+      "Nomad",
+      "Warrior",
+      "Paladin",
+      "Ninja",
+      "Villain",
+      "Seeker",
+      "Thief",
+      "Scavenger",
+      "Mage",
+      "Sorcerer",
+      "Wizard",
+      "Healer"
+    ],
+    "source_status": "playguide_transcription_static_not_executable_verified",
+    "interpretation": "Printed race/guild restrictions and growth parameters are preserved inputs; legal paths, hidden defaults and exact runtime conversions remain unverified."
+  },
+  "source_procedures": [
+    {
+      "file": "CHARCREA.bas",
+      "procedure": "cmbRace_Click",
+      "role": "race_selection",
+      "start_line": 47,
+      "end_line": 83,
+      "signature": "Sub cmbRace_Click ()",
+      "summary": "loads race minima, maxima, points and resistance display",
+      "evidence": "original-export/code/source/CHARCREA.bas:47"
+    },
+    {
+      "file": "CHARCREA.bas",
+      "procedure": "sub1EBA",
+      "role": "creation_matrix",
+      "start_line": 342,
+      "end_line": 379,
+      "signature": "Sub sub1EBA ()",
+      "summary": "updates stat controls and guild eligibility after race/stat changes",
+      "evidence": "original-export/code/source/CHARCREA.bas:342"
+    },
+    {
+      "file": "CHARCREA.bas",
+      "procedure": "cmdSave_Click",
+      "role": "creation_validation",
+      "start_line": 118,
+      "end_line": 183,
+      "signature": "Sub cmdSave_Click ()",
+      "summary": "validates name, race, sex, alignment, duplicate names and remaining points",
+      "evidence": "original-export/code/source/CHARCREA.bas:118"
+    },
+    {
+      "file": "CHARCREA.bas",
+      "procedure": "sub1F1F",
+      "role": "initial_state",
+      "start_line": 204,
+      "end_line": 259,
+      "signature": "Sub sub1F1F ()",
+      "summary": "writes initial character fields, HP/SP, location, guild, flags and quest defaults",
+      "evidence": "original-export/code/source/CHARCREA.bas:204"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "fn124B",
+      "role": "xp_threshold",
+      "start_line": 2132,
+      "end_line": 2152,
+      "signature": "Function fn124B (p0398 As T5810 ' 4A) As Long ' 2",
+      "summary": "computes experience needed for the next guild level",
+      "evidence": "original-export/code/source/Module6.bas:2132"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "fn125C",
+      "role": "training_cost",
+      "start_line": 2154,
+      "end_line": 2169,
+      "signature": "Function fn125C (p03AE As T5810 ' 4A) As Long ' 2",
+      "summary": "computes gold required for the next guild level",
+      "evidence": "original-export/code/source/Module6.bas:2154"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "fn1397",
+      "role": "next_level_projection",
+      "start_line": 2724,
+      "end_line": 2728,
+      "signature": "Function fn1397 (p044E As T5810 ' 4A) As Long ' 2",
+      "summary": "temporarily advances the active guild level to derive the next XP threshold",
+      "evidence": "original-export/code/source/Module6.bas:2724"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "fn14A0",
+      "role": "advance_gate",
+      "start_line": 3205,
+      "end_line": 3211,
+      "signature": "Function fn14A0 (p0506 As T5810 ' 4A) As Integer ' 1",
+      "summary": "requires both XP and available gold before advancement",
+      "evidence": "original-export/code/source/Module6.bas:3205"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "fn131D",
+      "role": "highest_guild_level",
+      "start_line": 2639,
+      "end_line": 2648,
+      "signature": "Function fn131D (ByVal pv041C As Integer ' 81) As Integer ' 1",
+      "summary": "returns the highest current guild level",
+      "evidence": "original-export/code/source/Module6.bas:2639"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "sub0EAE",
+      "role": "age_and_rest",
+      "start_line": 322,
+      "end_line": 391,
+      "signature": "Sub sub0EAE (p00C0 As Integer ' 41, p00C2 As Integer ' 41, ByVal pv00C4 As Integer ' 81, p00C6 As Integer ' 41)",
+      "summary": "adds age/rest time and applies healing/resource effects",
+      "evidence": "original-export/code/source/Module6.bas:322"
+    }
+  ],
+  "source_events": [
+    {
+      "file": "CHARCREA.bas",
+      "line": 54,
+      "procedure": "cmbRace_Click",
+      "event": "race_record_selected",
+      "expression": "gv14C2(gv1A84).M5821 = cmbRace.ListIndex",
+      "source_text": "gv14C2(gv1A84).M5821 = cmbRace.ListIndex"
+    },
+    {
+      "file": "CHARCREA.bas",
+      "line": 69,
+      "procedure": "cmbRace_Click",
+      "event": "stat_bounds_loaded",
+      "expression": "cmdSubtract(Index).Tag / cmdAdd(Index).Tag from race minima/maxima",
+      "source_text": "cmdSubtract(l003A).Tag = LTrim$(Str$(gv148E(cmbRace.ListIndex).M5530(l003A)))"
+    },
+    {
+      "file": "CHARCREA.bas",
+      "line": 74,
+      "procedure": "cmbRace_Click",
+      "event": "creation_points_loaded",
+      "expression": "lblPoints.Caption = race creation pool",
+      "source_text": "lblPoints.Caption = LTrim$(Str$(gv148E(cmbRace.ListIndex).M556D))"
+    },
+    {
+      "file": "CHARCREA.bas",
+      "line": 132,
+      "procedure": "cmdSave_Click",
+      "event": "required_fields_checked",
+      "expression": "name/race/sex/alignment validation before save",
+      "source_text": "If  cmbRace.ListIndex = -1 Then"
+    },
+    {
+      "file": "CHARCREA.bas",
+      "line": 149,
+      "procedure": "cmdSave_Click",
+      "event": "remaining_points_confirmation",
+      "expression": "save confirmation when points remain",
+      "source_text": "If  MsgBox(\"You still have points left.  Save Anyway?\", 68, \"POINTS\") <> 6 Then"
+    },
+    {
+      "file": "CHARCREA.bas",
+      "line": 204,
+      "procedure": "sub1F1F",
+      "event": "initialization_entry",
+      "expression": "new character defaults are written",
+      "source_text": "Sub sub1F1F ()"
+    },
+    {
+      "file": "CHARCREA.bas",
+      "line": 226,
+      "procedure": "sub1F1F",
+      "event": "initial_hp_defaults",
+      "expression": "M4EB4 = 15 and M4EAC = M4EB4",
+      "source_text": "gv14C2(m00C2).M4EB4 = 15"
+    },
+    {
+      "file": "CHARCREA.bas",
+      "line": 241,
+      "procedure": "sub1F1F",
+      "event": "initial_location",
+      "expression": "M583F = 9, M5845 = 11, M5470 = 0",
+      "source_text": "gv14C2(m00C2).M5997(0) = -1"
+    },
+    {
+      "file": "CHARCREA.bas",
+      "line": 250,
+      "procedure": "sub1F1F",
+      "event": "initial_derived_stat",
+      "expression": "M5830 = fn1338(m00C2)",
+      "source_text": "gv14C2(m00C2).M59B0(l00BE) = -1"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 2132,
+      "procedure": "fn124B",
+      "event": "experience_formula",
+      "expression": "currency intermediates and race/guild parameters determine threshold",
+      "source_text": "Function fn124B (p0398 As T5810 ' 4A) As Long ' 2"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 2154,
+      "procedure": "fn125C",
+      "event": "training_cost_formula",
+      "expression": "level loop and guild multiplier determine cost",
+      "source_text": "Function fn125C (p03AE As T5810 ' 4A) As Long ' 2"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 2639,
+      "procedure": "fn131D",
+      "event": "highest_level_scan",
+      "expression": "scans all guild levels",
+      "source_text": "Function fn131D (ByVal pv041C As Integer ' 81) As Integer ' 1"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 2724,
+      "procedure": "fn1397",
+      "event": "projected_threshold",
+      "expression": "temporarily increments active guild level",
+      "source_text": "Function fn1397 (p044E As T5810 ' 4A) As Long ' 2"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 3205,
+      "procedure": "fn14A0",
+      "event": "advance_gate",
+      "expression": "checks XP then gold",
+      "source_text": "Function fn14A0 (p0506 As T5810 ' 4A) As Integer ' 1"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 322,
+      "procedure": "sub0EAE",
+      "event": "rest_age_update",
+      "expression": "adds days/weeks and restores or ages according to flags",
+      "source_text": "Sub sub0EAE (p00C0 As Integer ' 41, p00C2 As Integer ' 41, ByVal pv00C4 As Integer ' 81, p00C6 As Integer ' 41)"
+    }
+  ],
+  "source_event_count": 15,
+  "runtime_cases": [
+    {
+      "id": "CREATION-MATRIX",
+      "setup": "all nine races across every listed guild and alignment",
+      "trace_focus": "legal guild, stat minimum and creation-point matrix",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "CREATION-BOUNDARY",
+      "setup": "each stat at race min, max and one beyond",
+      "trace_focus": "allocation clamping and save validation",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "CREATION-DEFAULTS",
+      "setup": "fresh character with zero remaining points",
+      "trace_focus": "initial fields, HP/SP, location, flags and quest state",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "XP-THRESHOLD",
+      "setup": "active guild at levels 1, 2, max and pin threshold",
+      "trace_focus": "fn124B currency/rounding output",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "TRAINING-COST",
+      "setup": "exact gold, one below and one above cost",
+      "trace_focus": "fn125C and carried/bank payment",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "ADVANCE-GATE",
+      "setup": "XP exact, XP below, gold exact and gold below",
+      "trace_focus": "fn14A0 decision and state mutation",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "HP-GROWTH",
+      "setup": "advancement across CON/stat and 999-cap boundaries",
+      "trace_focus": "Rnd order, maximum HP and current HP",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "AGE-REST",
+      "setup": "rest and elapsed time with full and damaged HP",
+      "trace_focus": "age accumulation, healing and resource changes",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "QUEST-ASSIGN",
+      "setup": "guild level 4/5/15/16 and QP boundary values",
+      "trace_focus": "quest gate and random draw ordering",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    }
+  ],
+  "runtime_case_count": 9,
+  "runtime_requirements": [
+    "run the exact original executable with controlled character files and seeded observations",
+    "capture creation validation, field defaults, XP/cost values, HP growth, quest state and age/rest mutations",
+    "separate source formulas from VB Currency/Integer/Single conversion behavior and Rnd draw order"
+  ]
+}

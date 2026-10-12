@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "status": "planned_not_executed",
+  "requirements": [
+    "Use a fresh copied world per case; never launch the original evidence directory.",
+    "Record executable/data/runtime hashes, emulator or operating system, configuration, initial save and input timestamps.",
+    "Record actual observations separately from static predictions. A prepared fixture is not a passed test.",
+    "Control or observe the original RNG state before claiming matching random sequences. Restarting invokes Randomize and is not a seed reset.",
+    "Record compatibility-layer identity. An emulator timing artifact cannot certify original Windows timer behavior."
+  ],
+  "cases": [
+    {
+      "id": "TIM01",
+      "related": ["F09", "V27"],
+      "purpose": "Separate stored timer defaults from runtime overrides and effective attack cadence.",
+      "setup": "One living character in a hostile room, no ailments; known default command and no manual input.",
+      "steps": ["Record timer properties immediately after form creation and after dungeon-entry setup.", "Timestamp combat callback entry, sub155A entry and actual actor actions independently for at least 30 seconds.", "Repeat with two and four party members and a peaceful encounter."],
+      "capture": ["timCombat.Interval", "callback timestamps", "actor actions", "party state", "guard state"],
+      "static_candidates": {"form_combat_value": 1500, "dungeon_assignment_ms": 1000, "later_help_round_ms": 2000},
+      "observed": null
+    },
+    {
+      "id": "TIM02",
+      "related": ["F09", "F23", "V27", "V28"],
+      "purpose": "Measure ailments and pause guards without conflating them with combat ticks.",
+      "setup": "Copied injured/poisoned character with sufficient HP; capture poison and disease separately.",
+      "steps": ["Observe ailment callbacks and HP changes while idle.", "Minimize and restore to normal; then minimize and restore maximized.", "Repeat with focus loss, modal dialogs and manual commands."],
+      "capture": ["timAilment.Interval", "callback timestamps", "M602F", "severity fields", "HP", "random draws"],
+      "static_candidates": {"form_ailment_value": 4000},
+      "observed": null
+    },
+    {
+      "id": "TIM03",
+      "related": ["F09", "V13", "V27", "V31"],
+      "purpose": "Determine how manual actions interact with a pending automatic round.",
+      "setup": "Controlled hostile encounter; stable party command defaults and observed timer phase.",
+      "steps": ["Issue Fight just before a callback, exactly at an observed boundary, and just after.", "Repeat with a spell, movement, target change and peaceful-to-hostile transition.", "Log callbacks, reentrancy guards and complete action order."],
+      "capture": ["input timestamps", "callback timestamps", "sub155A argument", "character/companion/monster order", "resource debits"],
+      "observed": null
+    },
+    {
+      "id": "RNG01",
+      "related": ["F09"],
+      "purpose": "Establish whether music consumes the same RNG state as gameplay.",
+      "setup": "Two copies of an identical world and a demonstrably identical observed/instrumented RNG state; MIDI playback available.",
+      "steps": ["Run the same timed inputs with music enabled and disabled.", "Trigger song completion and the music timer; capture each Rnd caller.", "Compare the subsequent combat draw sequence and final state.", "Repeat with the same music setting and different MIDI completion times."],
+      "capture": ["RNG state and outputs", "Rnd caller", "music tag/mode", "music timer", "combat state"],
+      "static_candidates": "Module9.sub1A50 calls Rnd at lines 82 and 88. The music timer reaches it through FRMMAIN.timMusic_Timer.",
+      "trace_spec": "numeric-rng-trace-specs.json",
+      "observed": null
+    },
+    {
+      "id": "NUM01",
+      "related": ["F09", "F12", "F19", "F23", "V31"],
+      "purpose": "Recover VB3 numerical semantics on the actual supplied runtime.",
+      "setup": "Instrumented isolated VB3 runtime or minimal verified VB3 probe; record DLL hash and calling convention.",
+      "steps": ["Observe CInt/CLng/implicit integer assignment at positive and negative half boundaries.", "Observe Single and Double intermediates, overflow, Int versus truncation, and Log domain errors.", "Trace fn0DEE with fixed argument tuples and captured RNG draws, including zero/equal attack-defense and clamp boundaries."],
+      "capture": ["typed input bits", "typed intermediate bits", "result", "error path", "draw sequence"],
+      "trace_spec": "numeric-rng-trace-specs.json",
+      "combat_trace_spec": "combat-trace-spec.json",
+      "observed": null
+    },
+    {
+      "id": "AUD01",
+      "related": ["R15"],
+      "purpose": "Determine the role of the missing FIGHT.WAV entry.",
+      "setup": "Copied installation with sound enabled and the supplied sound archive unchanged.",
+      "steps": ["Instrument sound-index requests while starting and fighting several encounter types.", "Establish whether index zero is reachable through direct or computed callers.", "If reached, record file lookup failure, logging, resource state and subsequent behavior."],
+      "capture": ["sound index", "caller", "requested filename", "error handling", "game state"],
+      "static_candidates": "Index-zero assignment names FIGHT.WAV; all 71 supplied WAV files match WAVES.WIP and none has that name.",
+      "observed": null
+    },
+    {
+      "id": "MAP01",
+      "related": ["F02", "V29", "V30"],
+      "purpose": "Resolve unmatched floor-8 teleporter flags and entry-order behavior.",
+      "setup": "Disposable copied world with a party able to reach floor 8; record exact starting state.",
+      "steps": ["Enter candidate coordinates (5,6) and (6,6), verifying coordinate orientation against the automap.", "Repeat with neighboring defined teleporters as controls.", "Record individual locations, facing, lost flags, messages, damage, encounters and any error exit."],
+      "capture": ["per-character before/after state", "input sequence", "messages", "destination processing"],
+      "observed": null
+    }
+  ]
+}

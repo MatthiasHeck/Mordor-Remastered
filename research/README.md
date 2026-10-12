@@ -2,6 +2,18 @@
 
 Research assembled October 8–9, 2026 for the original 1995 Mordor game. Read the main [design document](../Mordor%20Remastered%20Design%20Document.md) for the full specification and evidence policy.
 
+## Fidelity restart — October 10, 2026
+
+The previous Godot prototype has been removed at the user's request. The [foundation audit](fidelity-foundations/README.md) starts the outstanding work with executable/source correspondence, Reko byte checks, form timer candidates, original audio and recovered runtime dependencies. It preserves 87 audio files, identifies a missing `FIGHT.WAV` reference and potential music/gameplay RNG coupling, and prepares a disposable original-game comparison copy. See the [sixteen-area work register](fidelity-foundations/work-items.csv), the [complete action-item coverage matrix](fidelity-foundations/action-item-coverage.csv), and the [sixteen controlled runtime cases](fidelity-foundations/action-item-runtime-cases.json). Original runtime behavior remains untested; these are evidence and preparation results, not a new game implementation. The [recreation readiness plan](fidelity-foundations/recreation-readiness.md) defines the runtime gate and implementation order.
+
+## Original graphics, code, prices and square export — revision 1.4
+
+The October 10 [export package](original-export/README.md) provides 34 distinct original BMP assets and 90 monster tiles, all 366 item base prices plus candidate Store expressions, and 46 byte-preserved decompiler text files with 691 indexed procedures and 37 selected combat/Store/recovery/dungeon excerpts. Browse the [graphics gallery](original-export/graphics-gallery.html), [code guide](original-export/code/README.md), [price guide](original-export/prices/README.md) and [special-square reference](original-export/dungeon/behavior-notes.md).
+
+The special-square catalogue contains 3,965 cells across fifteen floors, with all combined flags and source offsets retained. There are 86 active teleporter slots but 88 flagged cells: floor 8 (5,6) and (6,6) lack matching slots. All 17 active chutes match the flags. This discrepancy remains a runtime question. The design also records the user-approved automatic ordinary-door crossing and a single contextual **T** key for stairs, with separate remaster acceptance cases.
+
+[export-original-assets.py](export-original-assets.py) reads original binaries without executing them and writes only into `original-export`. It preserves BMP bytes, checks PNG pixels, copies source bytes, compares preceding item/monster/cell tables and verifies all 1,273 original files against the immutable inventory. After rebuilding HTML with `build-preview.mjs`, run [check-original-export.py](check-original-export.py) for export and document checks. This new validator handles revision 1.4; the prior follow-up audit is specifically pinned to revision 1.3. Static decompiler expressions and field interpretations still require original-game verification.
+
 ## Original-source follow-up — revision 1.3
 
 The [follow-up review](original-followup-review.md) traces Store transactions, companion services, hired and waiting rescue, pending raises, complications, town recovery and timer guards. It adds twelve finding groups (O01–O12), with source anchors and unresolved branches, and twelve planned original/remaster comparison families (V17–V28) in the design. It remains static decompiler interpretation, not runtime verification.

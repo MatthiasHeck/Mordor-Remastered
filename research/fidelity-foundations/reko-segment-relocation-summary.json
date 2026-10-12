@@ -1,0 +1,12 @@
+{
+  "status": "SEGMENT_MAPPING_VERIFIED_FUNCTION_MAPPING_PENDING",
+  "reko_asm_segments": 50,
+  "mapped_segments": 50,
+  "byte_verified_segments": 48,
+  "declared_size_only_segments": 2,
+  "segments_with_function_listing": 1,
+  "segments_with_c_listing": 1,
+  "segments_with_relocation_records": 2,
+  "selected_procedure_addresses_resolved": 0,
+  "next_required_evidence": "Function-level Reko p-code/disassembly with entry ranges and relocation-aware call/global-reference xrefs"
+}

@@ -1,0 +1,5 @@
+{
+	"checks": 92,
+	"failures": [],
+	"scope": "Supplied-draw physical combat preview, state/draw atomicity, guild metadata, kills/replacement/quests/XP, monster groups, and campaign isolation. Original timer/RNG/encounter/runtime parity pending."
+}

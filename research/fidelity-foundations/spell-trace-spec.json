@@ -1,0 +1,361 @@
+{
+  "status": "STATIC_SPELL_TRACE_BUILT_RUNTIME_PENDING",
+  "data": {
+    "spell_record_count": 100,
+    "distinct_spell_names": 100,
+    "spell_class_counts": {
+      "Banish": 2,
+      "Bind": 3,
+      "Charm": 15,
+      "Cold": 4,
+      "Damage": 7,
+      "Dispell": 3,
+      "Electrical": 5,
+      "Element": 5,
+      "Fire": 6,
+      "Heal": 11,
+      "Kill": 6,
+      "Location": 5,
+      "Magical": 1,
+      "Mind": 4,
+      "Movement": 7,
+      "Protection": 2,
+      "Resistant": 11,
+      "Visual": 3
+    },
+    "guild_level_assignment_count": 205,
+    "distinct_assigned_spell_names": 103,
+    "guild_count": 12,
+    "missing_power_base_count": 100,
+    "missing_power_level_modifier_count": 100,
+    "source_status": "official_updated_help_not_executable_verified",
+    "interpretation": "The help tables are preserved inputs. Empty power fields are unresolved, not zero; duplicate or renamed spell identities require runtime and binary correlation."
+  },
+  "source_procedures": [
+    {
+      "file": "Module6.bas",
+      "procedure": "fn1173",
+      "role": "cast_dispatch",
+      "start_line": 424,
+      "end_line": 1325,
+      "signature": "Function fn1173 (ByVal pv00FA As Integer ' 81, ByVal pv00FC As Integer ' 81, p00FE ' 40, p0100 As Integer ' 41) As Integer ' 1",
+      "summary": "dispatches effect families, target prompts, item-vs-book casts, movement spells and party effects",
+      "evidence": "original-export/code/source/Module6.bas:424"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "fn10E5",
+      "role": "cast_eligibility",
+      "start_line": 1361,
+      "end_line": 1499,
+      "signature": "Function fn10E5 (ByVal pv026C As Integer ' 81, ByVal pv026E As Integer ' 81, p0270 As Integer ' 41, p0272 As Integer ' 41) As Integer ' 1",
+      "summary": "checks guild access, effective spell level, attributes, spell points, combat context and anti-magic",
+      "evidence": "original-export/code/source/Module6.bas:1361"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "fn1417",
+      "role": "effective_spell_level",
+      "start_line": 2868,
+      "end_line": 2882,
+      "signature": "Function fn1417 (ByVal pv0488 As Integer ' 81, p048A As Integer ' 41) As Integer ' 1",
+      "summary": "selects the highest eligible trained guild level for the spell",
+      "evidence": "original-export/code/source/Module6.bas:2868"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "fn142F",
+      "role": "spell_point_cost",
+      "start_line": 2884,
+      "end_line": 2922,
+      "signature": "Function fn142F (ByVal pv0494 As Integer ' 81, p0496 As Integer ' 41) As Integer ' 1",
+      "summary": "computes spell-point cost from spell level, guild training and spell scaling",
+      "evidence": "original-export/code/source/Module6.bas:2884"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "fn1448",
+      "role": "spell_context",
+      "start_line": 2924,
+      "end_line": 2938,
+      "signature": "Function fn1448 (p04AA As Integer ' 41) As Integer ' 1",
+      "summary": "classifies combat, non-combat and movement spell context",
+      "evidence": "original-export/code/source/Module6.bas:2924"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "fn11D4",
+      "role": "guild_effective_level",
+      "start_line": 1932,
+      "end_line": 1999,
+      "signature": "Function fn11D4 (ByVal pv0336 As Integer ' 81, p0338 As Integer ' 41, p033A As Integer ' 41) As Single ' 3",
+      "summary": "computes the highest guild-derived skill value used by dungeon effects",
+      "evidence": "original-export/code/source/Module6.bas:1932"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "fn16B8",
+      "role": "spell_name_resolution",
+      "start_line": 6336,
+      "end_line": 6364,
+      "signature": "Function fn16B8 (p0892 As String ' 47) As Integer ' 1",
+      "summary": "resolves exact and prefix spell names and reports not-found/ambiguous cases",
+      "evidence": "original-export/code/source/Module6.bas:6336"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "fn164C",
+      "role": "movement_spell_targeting",
+      "start_line": 5750,
+      "end_line": 5924,
+      "signature": "Function fn164C (ByVal p0800 As String ' 47, p0802 As String ' 47) As Variant ' 6",
+      "summary": "parses displacement/teleport coordinates and validates destination",
+      "evidence": "original-export/code/source/Module6.bas:5750"
+    },
+    {
+      "file": "Module3.bas",
+      "procedure": "sub0835",
+      "role": "dungeon_spell_effects",
+      "start_line": 1506,
+      "end_line": 1897,
+      "signature": "Sub sub0835 (p026E As Integer ' 41)",
+      "summary": "uses effective guild level and Rnd for perception and dungeon spell effects",
+      "evidence": "original-export/code/source/Module3.bas:1506"
+    }
+  ],
+  "source_events": [
+    {
+      "file": "Module6.bas",
+      "line": 562,
+      "procedure": "fn1173",
+      "event": "combat_context_gate",
+      "expression": "fn1448(pv00FC) and p0100 determine combat/non-combat spell path",
+      "source_text": "If  (fn1448(pv00FC) = gc1EE2 Or (fn1448(pv00FC) = gc1EE4 And fn0EEF() = False)) And p0100 = -1 Then"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 570,
+      "procedure": "fn1173",
+      "event": "item_charge_gate",
+      "expression": "item-cast path checks gv1E66 and decrements/invalidates charges",
+      "source_text": "Case mc013A"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 600,
+      "procedure": "fn1173",
+      "event": "effective_level_use",
+      "expression": "fn1417 supplies trained spell level for bind/protection effects",
+      "source_text": "l011E = CInt(gv152A(pv00FC).M4E82 + Log((10 + fn1417(pv00FA, pv00FC)) / 5))"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 626,
+      "procedure": "fn1173",
+      "event": "target_prompt_heal",
+      "expression": "SPELLHEAL prompt selects a character or companion target",
+      "source_text": "l010A = Val(fn16A0(\"Cast \" + Chr$(34) + gv152A(pv00FC).M548B + Chr$(34), \"Cast on Who?\", \"\", \"SPELLHEAL\"))"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 796,
+      "procedure": "fn1173",
+      "event": "raise_chance_setup",
+      "expression": "fn13D7 computes a raise threshold before sub0A7C pending recovery",
+      "source_text": "If  fn13D7(l010A, l011A) > 0 Then"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 831,
+      "procedure": "fn1173",
+      "event": "displacement_target",
+      "expression": "fn164C parses displacement coordinates",
+      "source_text": "l01A4 = fn164C(\"DISPLACEMENT\", l01A2)"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 849,
+      "procedure": "fn1173",
+      "event": "teleport_target",
+      "expression": "fn164C parses teleport coordinates",
+      "source_text": "l01A4 = fn164C(\"TELEPORT\", l01A2)"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 1062,
+      "procedure": "fn1173",
+      "event": "spell_point_debit",
+      "expression": "fn142F is subtracted from the caster's spell points",
+      "source_text": "gv14C2(pv00FA).M5830 = gv14C2(pv00FA).M5830 - fn142F(pv00FA, pv00FC)"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 1078,
+      "procedure": "fn1173",
+      "event": "combat_target_resolution",
+      "expression": "fn1235 formats the selected combat target",
+      "source_text": "sub085B Chr$(34) + gv152A(pv00FC).M548B + Chr$(34) + \" thrown on \" + fn1235(gv1A86, (Abs(l010A + 10))) + \".\""
+    },
+    {
+      "file": "Module6.bas",
+      "line": 1298,
+      "procedure": "fn1173",
+      "event": "item_spell_point_debit",
+      "expression": "item-spell path debits spell points after effect handling",
+      "source_text": "gv14C2(pv00FA).M5830 = gv14C2(pv00FA).M5830 - fn142F(pv00FA, pv00FC)"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 1390,
+      "procedure": "fn10E5",
+      "event": "guild_access_check",
+      "expression": "guild training matrix must permit the spell",
+      "source_text": "sub085B Chr$(34) + RTrim(gv14C2(pv026C).M548B) + Chr$(34) + \" does not know \" + Chr$(34) + gv152A(pv026E).M548B + Chr$(34) + \".\""
+    },
+    {
+      "file": "Module6.bas",
+      "line": 1420,
+      "procedure": "fn10E5",
+      "event": "attribute_requirement_check",
+      "expression": "spell attribute requirements are checked before casting",
+      "source_text": "gv1E66(pv026C).M56C4 = -1"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 1443,
+      "procedure": "fn10E5",
+      "event": "spell_point_check",
+      "expression": "insufficient spell points reject the cast",
+      "source_text": "If  fn142F(pv026C, pv026E) > gv14C2(pv026C).M5830 And p0270 = False Then"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 1452,
+      "procedure": "fn10E5",
+      "event": "noncombat_context_check",
+      "expression": "non-combat spell rejection is context dependent",
+      "source_text": "If  fn0EEF() > 0 And gv1E38(0).M4ECC = mc0220 And fn1448(pv026E) = gc1EE2 Then"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 1469,
+      "procedure": "fn10E5",
+      "event": "combat_context_check",
+      "expression": "combat-only and movement spell context are gated",
+      "source_text": "If  fn1448(pv026E) = gv1EE0 Or fn1448(pv026E) = gc1EE4 Then"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 1932,
+      "procedure": "fn11D4",
+      "event": "guild_effective_value",
+      "expression": "effective guild skill value feeds dungeon effects",
+      "source_text": "Function fn11D4 (ByVal pv0336 As Integer ' 81, p0338 As Integer ' 41, p033A As Integer ' 41) As Single ' 3"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 2884,
+      "procedure": "fn142F",
+      "event": "cost_formula",
+      "expression": "cost candidates use trained level, spell level, guild multiplier and 1.9 factor",
+      "source_text": "Function fn142F (ByVal pv0494 As Integer ' 81, p0496 As Integer ' 41) As Integer ' 1"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 2924,
+      "procedure": "fn1448",
+      "event": "context_classification",
+      "expression": "special cases classify healing and movement spell context",
+      "source_text": "Function fn1448 (p04AA As Integer ' 41) As Integer ' 1"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 6312,
+      "procedure": "fn16A0",
+      "event": "cast_input_dialog",
+      "expression": "cast UI returns target/coordinate input tagged by effect family",
+      "source_text": "Function fn16A0 (ByVal p0888 As String ' 47, ByVal p088A As String ' 47, ByVal p088C As String ' 47, ByVal p088E As String ' 47) As String ' 7"
+    },
+    {
+      "file": "Module3.bas",
+      "line": 1543,
+      "procedure": "sub0835",
+      "event": "perception_rng_effect",
+      "expression": "dungeon perception effect uses logarithmic guild level and Rnd",
+      "source_text": "If  (Log(fn11D4(m00C0, mc0180, False)) * Log(fn11D4(m00C0, mc0180, False)) / 15) > Rnd * 100 Then"
+    }
+  ],
+  "source_event_count": 20,
+  "runtime_cases": [
+    {
+      "id": "SPELL-ACCESS",
+      "fixture": "known spell with eligible guild",
+      "trace_focus": "guild level, spell level and attribute gate",
+      "expected_result": null,
+      "status": "planned_not_executed",
+      "required_observation": "cast succeeds or exact legacy rejection message"
+    },
+    {
+      "id": "SPELL-COST",
+      "fixture": "same spell across trained guild levels",
+      "trace_focus": "fn142F cost and integer rounding",
+      "expected_result": null,
+      "status": "planned_not_executed",
+      "required_observation": "spell-point debit matches"
+    },
+    {
+      "id": "SPELL-POWER",
+      "fixture": "healing and damage spell at multiple effective levels",
+      "trace_focus": "fn1417/fn11D4 power inputs and Rnd draws",
+      "expected_result": null,
+      "status": "planned_not_executed",
+      "required_observation": "power/effect magnitude matches"
+    },
+    {
+      "id": "SPELL-TARGET",
+      "fixture": "self, companion, party and monster target classes",
+      "trace_focus": "fn1173 target prompt and target-range branches",
+      "expected_result": null,
+      "status": "planned_not_executed",
+      "required_observation": "target selection and affected set match"
+    },
+    {
+      "id": "SPELL-RESIST",
+      "fixture": "resistant target and matching resistance family",
+      "trace_focus": "effect-family resistance handling",
+      "expected_result": null,
+      "status": "planned_not_executed",
+      "required_observation": "resist/no-effect branch matches"
+    },
+    {
+      "id": "SPELL-FAILURE",
+      "fixture": "unknown, ambiguous, too-low and insufficient-SP casts",
+      "trace_focus": "fn16B8/fn10E5 failure arbitration",
+      "expected_result": null,
+      "status": "planned_not_executed",
+      "required_observation": "failure reason and state changes match"
+    },
+    {
+      "id": "SPELL-ITEM-VS-BOOK",
+      "fixture": "same spell from item and spellbook",
+      "trace_focus": "item charge path versus normal cast path",
+      "expected_result": null,
+      "status": "planned_not_executed",
+      "required_observation": "charge, cost and context behavior match"
+    },
+    {
+      "id": "SPELL-DUPLICATE-ID",
+      "fixture": "duplicate or renamed help-table spell identity",
+      "trace_focus": "help rows correlated to binary spell records",
+      "expected_result": null,
+      "status": "planned_not_executed",
+      "required_observation": "selection and guild assignments match"
+    }
+  ],
+  "runtime_case_count": 8,
+  "runtime_requirements": [
+    "run the exact original executable under a compatible controlled environment",
+    "record spell selection, target prompts, failure text, spell points, charges, status fields and RNG draws",
+    "repeat for item casts, spellbook casts, combat/non-combat context, resistance and duplicate-name cases"
+  ]
+}

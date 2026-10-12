@@ -1,0 +1,692 @@
+file,name,kind,start_line,signature,end_line,referenced_generated_symbols
+CHARCREA.bas,cmbAlignment_Click,Sub,42,Sub cmbAlignment_Click (),45,sub1EBA
+CHARCREA.bas,cmbRace_Click,Sub,47,Sub cmbRace_Click (),83,fn0380;sub1EBA
+CHARCREA.bas,cmdAdd_Click,Sub,85,Sub cmdAdd_Click (Index%),94,sub1EBA
+CHARCREA.bas,cmdExit_Click,Sub,96,Sub cmdExit_Click (),99,
+CHARCREA.bas,cmdHelp_Click,Sub,101,Sub cmdHelp_Click (Index%),116,
+CHARCREA.bas,cmdSave_Click,Sub,118,Sub cmdSave_Click (),183,fn04B9;fn04ED;fn16A0;sub096E;sub1043;sub1F1F
+CHARCREA.bas,cmdSubtract_Click,Sub,185,Sub cmdSubtract_Click (Index%),192,sub1EBA
+CHARCREA.bas,cmdTutorial_Click,Sub,194,Sub cmdTutorial_Click (),202,
+CHARCREA.bas,sub1F1F,Sub,204,Sub sub1F1F (),259,fn1338;fn1397;sub047C;sub0578;sub1F5B
+CHARCREA.bas,Form_Load,Sub,261,Sub Form_Load (),272,sub02FE;sub07ED;sub1F7D
+CHARCREA.bas,Form_Paint,Sub,274,Sub Form_Paint (),275,
+CHARCREA.bas,sub1F5B,Sub,277,Sub sub1F5B (),340,sub14B4
+CHARCREA.bas,sub1EBA,Sub,342,Sub sub1EBA (),379,fn0380;fn115C
+CHARCREA.bas,sub1F7D,Sub,381,Sub sub1F7D (),405,
+CHARCREA.bas,txtName_KeyDown,Sub,407,"Sub txtName_KeyDown (KeyCode As Integer, Shift As Integer)",414,
+CHARCREA.bas,txtName_KeyPress,Sub,416,Sub txtName_KeyPress (KeyAscii As Integer),423,
+FRMABOUT.bas,cmdCredits_Click,Sub,6,Sub cmdCredits_Click (),8,
+FRMABOUT.bas,cmdInfo_Click,Sub,10,Sub cmdInfo_Click (),12,
+FRMABOUT.bas,cmdOK_Click,Sub,14,Sub cmdOK_Click (),16,
+FRMABOUT.bas,Form_Load,Sub,18,Sub Form_Load (),22,sub07ED
+FRMAUTOM.bas,Form_Activate,Sub,43,Sub Form_Activate (),45,sub1EBA
+FRMAUTOM.bas,Form_DblClick,Sub,47,Sub Form_DblClick (),49,
+FRMAUTOM.bas,Form_KeyDown,Sub,51,"Sub Form_KeyDown (KeyCode As Integer, Shift As Integer)",68,fn14CB;sub0456
+FRMAUTOM.bas,Form_Load,Sub,70,Sub Form_Load (),145,fn0A0B;sub050F;sub0524;sub0784;sub1EBA;sub2E18;sub2E29
+FRMAUTOM.bas,Form_Resize,Sub,147,Sub Form_Resize (),166,sub2E18;sub2E38
+FRMAUTOM.bas,Form_Unload,Sub,168,Sub Form_Unload (Cancel As Integer),188,
+FRMAUTOM.bas,hsbLevel_Change,Sub,190,Sub hsbLevel_Change (),197,sub2E29
+FRMAUTOM.bas,hsbLevel_Scroll,Sub,199,Sub hsbLevel_Scroll (),201,
+FRMAUTOM.bas,lblCall_Change,Sub,203,Sub lblCall_Change (),284,fn0380;fn0418;fn2EB5;sub04FC;sub1EBA;sub2E6E;sub2E7F
+FRMAUTOM.bas,lblInfo_Change,Sub,286,Sub lblInfo_Change (),288,
+FRMAUTOM.bas,lblLevel_Change,Sub,290,Sub lblLevel_Change (),292,
+FRMAUTOM.bas,sub2E6E,Sub,294,Sub sub2E6E (),346,sub04FC;sub2E29;sub2E38
+FRMAUTOM.bas,sub2E7F,Sub,348,"Sub sub2E7F (ByVal pv00FA As Integer ' 81, ByVal pv00FC As Integer ' 81, ByVal pv00FE As Integer ' 81, p0100 As Long ' 42)",388,fn0380;sub04FC
+FRMAUTOM.bas,sub2E29,Sub,390,Sub sub2E29 (),449,fn0380;fn0418;fn09F6;fn2EB5;sub04FC;sub1EBA;sub2E6E;sub2E7F
+FRMAUTOM.bas,sub2E38,Sub,451,Sub sub2E38 (),497,sub04FC
+FRMAUTOM.bas,sub2E18,Sub,499,Sub sub2E18 (),518,
+FRMAUTOM.bas,fn2EB5,Function,520,"Function fn2EB5 (p0134 ' 40, p0136 ' 40) As Long ' 2",535,fn0B01;sub04FC
+FRMAUTOM.bas,sub1EBA,Sub,537,Sub sub1EBA (),562,sub04FC
+FRMAUTOM.bas,msgBlast_event0000,Sub,564,"Sub msgBlast_event0000 (p0148 As Integer ' 41, p014A As Integer ' 41)",579,
+FRMAUTOM.bas,picMaze_DblClick,Sub,581,Sub picMaze_DblClick (),594,
+FRMAUTOM.bas,picMaze_MouseDown,Sub,596,"Sub picMaze_MouseDown (Button As Integer, Shift As Integer, X As Single, Y As Single)",598,sub2E29
+FRMAUTOM.bas,picPicture_Click,Sub,600,Sub picPicture_Click (),602,
+FRMAUTOM.bas,timBlinker_Timer,Sub,604,Sub timBlinker_Timer (),628,sub04FC;sub2E6E
+FRMCHAR1.bas,Form_Activate,Sub,29,Sub Form_Activate (),33,sub14E0
+FRMCHAR1.bas,Form_KeyDown,Sub,35,"Sub Form_KeyDown (KeyCode As Integer, Shift As Integer)",49,fn14CB;sub0456
+FRMCHAR1.bas,Form_Load,Sub,51,Sub Form_Load (),90,sub0524;sub0784;sub08A9;sub0F4C
+FRMCHAR1.bas,Form_Paint,Sub,92,Sub Form_Paint (),93,
+FRMCHAR1.bas,Form_Resize,Sub,95,Sub Form_Resize (),194,sub07C5;sub07D4;sub08A9
+FRMCHAR1.bas,Form_Unload,Sub,196,Sub Form_Unload (Cancel As Integer),200,sub15BE
+FRMCHAR1.bas,lblBuffer_Click,Sub,202,Sub lblBuffer_Click (Index%),213,sub0456
+FRMCHAR1.bas,lblBuffer_DragDrop,Sub,215,"Sub lblBuffer_DragDrop (Index%, Source As Control, X As Single, Y As Single)",229,sub0F4C
+FRMCHAR1.bas,lblCall_Change,Sub,231,Sub lblCall_Change (),242,
+FRMCHAR1.bas,msgBlast_event0000,Sub,244,"Sub msgBlast_event0000 (p00CA As Integer ' 41, p00CC As Integer ' 41)",256,sub15BE
+FRMCHAR1.bas,picTabPicture_Paint,Sub,258,Sub picTabPicture_Paint (),316,sub04FC;sub151C
+FRMCHAR1.bas,tabStatTab_event0000,Sub,318,Sub tabStatTab_event0000 (),337,sub14E0;sub150A
+FRMCHAR1.bas,tabStatTab_event000D,Sub,339,"Sub tabStatTab_event000D (p00F6 As Integer ' 41, p00F8 As Integer ' 41)",392,sub04FC;sub14E0
+FRMCHAR3.bas,cmbClass_Click,Sub,51,Sub cmbClass_Click (),145,fn10E5;fn142F;sub04FC
+FRMCHAR3.bas,cmdCast_Click,Sub,147,Sub cmdCast_Click (),184,fn0EEF;fn10E5;fn1173;fn1448;fn16B8;sub0775;sub085B;sub0BCD;sub0FE1
+FRMCHAR3.bas,cmdCommand_Click,Sub,186,Sub cmdCommand_Click (Index%),246,fn1121;fn12EF;sub085B;sub08B9;sub0EDA;sub0F74;sub150A;sub1577
+FRMCHAR3.bas,cmdCommand_DragDrop,Sub,248,"Sub cmdCommand_DragDrop (Index%, Source As Control, X As Single, Y As Single)",250,
+FRMCHAR3.bas,cmdCompanion_Click,Sub,252,Sub cmdCompanion_Click (Index%),277,fn0B6C;fn1235;sub0775;sub085B;sub0B82
+FRMCHAR3.bas,cmdInfo_Click,Sub,279,Sub cmdInfo_Click (),298,fn16B8;sub0775;sub150A
+FRMCHAR3.bas,Form_Activate,Sub,300,Sub Form_Activate (),304,sub14E0
+FRMCHAR3.bas,Form_KeyDown,Sub,306,"Sub Form_KeyDown (KeyCode As Integer, Shift As Integer)",327,fn14CB;sub0456
+FRMCHAR3.bas,Form_Load,Sub,329,Sub Form_Load (),399,sub0524;sub0784;sub1602;sub2263
+FRMCHAR3.bas,Form_Paint,Sub,401,Sub Form_Paint (),402,
+FRMCHAR3.bas,Form_Resize,Sub,404,Sub Form_Resize (),440,sub07C5;sub07D4;sub0B82
+FRMCHAR3.bas,Form_Unload,Sub,442,Sub Form_Unload (Cancel As Integer),445,sub15BE
+FRMCHAR3.bas,lblCall_Change,Sub,447,Sub lblCall_Change (),472,
+FRMCHAR3.bas,lblCompName_Click,Sub,474,Sub lblCompName_Click (Index%),483,fn0EEF;fn1235;fn16A0;sub0B82
+FRMCHAR3.bas,lblGuild_Click,Sub,485,Sub lblGuild_Click (Index%),487,
+FRMCHAR3.bas,lblGuild_DblClick,Sub,489,Sub lblGuild_DblClick (Index%),491,
+FRMCHAR3.bas,lblGuild_MouseMove,Sub,493,"Sub lblGuild_MouseMove (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",497,
+FRMCHAR3.bas,lblGuild_MouseUp,Sub,499,"Sub lblGuild_MouseUp (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",501,
+FRMCHAR3.bas,lblItem_Click,Sub,503,Sub lblItem_Click (Index%),511,
+FRMCHAR3.bas,lblItem_DblClick,Sub,513,Sub lblItem_DblClick (Index%),516,
+FRMCHAR3.bas,lblItem_DragDrop,Sub,518,"Sub lblItem_DragDrop (Index%, Source As Control, X As Single, Y As Single)",580,fn03BD;fn129A;fn12EF;sub0730;sub085B;sub0F4C;sub0F61
+FRMCHAR3.bas,lblItem_DragOver,Sub,582,"Sub lblItem_DragOver (Index%, Source As Control, X As Single, Y As Single, State As Integer)",583,
+FRMCHAR3.bas,lblItem_MouseMove,Sub,585,"Sub lblItem_MouseMove (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",593,
+FRMCHAR3.bas,lblLevel_Click,Sub,595,Sub lblLevel_Click (Index%),597,
+FRMCHAR3.bas,lblLevel_DblClick,Sub,599,Sub lblLevel_DblClick (Index%),601,
+FRMCHAR3.bas,lblLevel_MouseMove,Sub,603,"Sub lblLevel_MouseMove (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",607,
+FRMCHAR3.bas,lblLevel_MouseUp,Sub,609,"Sub lblLevel_MouseUp (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",611,
+FRMCHAR3.bas,lblName_DblClick,Sub,613,Sub lblName_DblClick (Index%),616,
+FRMCHAR3.bas,lblName_MouseDown,Sub,618,"Sub lblName_MouseDown (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",632,
+FRMCHAR3.bas,lblName_MouseMove,Sub,634,"Sub lblName_MouseMove (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",638,
+FRMCHAR3.bas,lblName_MouseUp,Sub,640,"Sub lblName_MouseUp (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",642,
+FRMCHAR3.bas,lblPoints_Click,Sub,644,Sub lblPoints_Click (Index%),646,
+FRMCHAR3.bas,lblPoints_DblClick,Sub,648,Sub lblPoints_DblClick (Index%),650,
+FRMCHAR3.bas,lblPoints_MouseMove,Sub,652,"Sub lblPoints_MouseMove (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",656,
+FRMCHAR3.bas,lblPoints_MouseUp,Sub,658,"Sub lblPoints_MouseUp (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",660,
+FRMCHAR3.bas,sub2263,Sub,662,Sub sub2263 (),674,sub0F61
+FRMCHAR3.bas,sub2424,Sub,676,Sub sub2424 (),724,fn10E5
+FRMCHAR3.bas,msgBlast_event0000,Sub,726,"Sub msgBlast_event0000 (p0282 As Integer ' 41, p0284 As Integer ' 41)",738,sub15BE
+FRMCHAR3.bas,picCompanion_DblClick,Sub,740,Sub picCompanion_DblClick (Index%),757,fn121C;sub06FE;sub150A
+FRMCHAR3.bas,picCompanion_DragDrop,Sub,759,"Sub picCompanion_DragDrop (Index%, Source As Control, X As Single, Y As Single)",777,sub085B;sub0B82
+FRMCHAR3.bas,picCompanion_MouseDown,Sub,779,"Sub picCompanion_MouseDown (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",789,fn0B6C;sub085B
+FRMCHAR3.bas,picCompanion_MouseMove,Sub,791,"Sub picCompanion_MouseMove (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",795,
+FRMCHAR3.bas,picCompanion_Paint,Sub,797,Sub picCompanion_Paint (Index%),818,
+FRMCHAR3.bas,tabItemTab_event0000,Sub,820,Sub tabItemTab_event0000 (),824,sub14E0
+FRMCHAR3.bas,tabItemTab_event000D,Sub,826,"Sub tabItemTab_event000D (p02F0 As Integer ' 41, p02F2 As Integer ' 41)",839,sub0B82;sub14E0
+FRMCHAR3.bas,txtSpell_DragDrop,Sub,841,"Sub txtSpell_DragDrop (Source As Control, X As Single, Y As Single)",845,
+FRMCHAR3.bas,txtSpell_KeyDown,Sub,847,"Sub txtSpell_KeyDown (KeyCode As Integer, Shift As Integer)",857,sub0775
+FRMCHAR3.bas,txtSpell_KeyPress,Sub,859,Sub txtSpell_KeyPress (KeyAscii As Integer),866,
+FRMCHAR3.bas,vsbItems_Change,Sub,868,Sub vsbItems_Change (),875,
+FRMCHAR3.bas,vsbSpells_Change,Sub,877,Sub vsbSpells_Change (),909,sub2424
+FRMCHAR4.bas,Form_KeyDown,Sub,13,"Sub Form_KeyDown (KeyCode As Integer, Shift As Integer)",29,fn14CB;sub0456
+FRMCHAR4.bas,Form_Load,Sub,31,Sub Form_Load (),53,sub0524;sub0784
+FRMCHAR4.bas,Form_Paint,Sub,55,Sub Form_Paint (),56,
+FRMCHAR4.bas,Form_Resize,Sub,58,Sub Form_Resize (),78,
+FRMCHAR4.bas,Form_Unload,Sub,80,Sub Form_Unload (Cancel As Integer),82,sub15BE
+FRMCHAR4.bas,lstMessages_DblClick,Sub,84,Sub lstMessages_DblClick (),89,
+FRMCHAR4.bas,msgBlast_event0000,Sub,91,"Sub msgBlast_event0000 (p005A As Integer ' 41, p005C As Integer ' 41)",103,sub15BE
+FRMCHARL.bas,cmdExit_Click,Sub,8,Sub cmdExit_Click (),10,
+FRMCHARL.bas,Form_Deactivate,Sub,12,Sub Form_Deactivate (),14,
+FRMCHARL.bas,Form_Load,Sub,16,Sub Form_Load (),65,sub02FE;sub0802
+FRMCHARL.bas,Form_LostFocus,Sub,67,Sub Form_LostFocus (),69,
+FRMCHARL.bas,Form_Resize,Sub,71,Sub Form_Resize (),75,sub07B3
+FRMCITYB.bas,cmdCommand_Click,Sub,20,Sub cmdCommand_Click (Index%),62,fn03BD;sub08A9;sub2884
+FRMCITYB.bas,cmdExit_Click,Sub,64,Sub cmdExit_Click (),68,sub0792
+FRMCITYB.bas,cmdInfo_Click,Sub,70,Sub cmdInfo_Click (),80,sub150A
+FRMCITYB.bas,Form_KeyDown,Sub,82,"Sub Form_KeyDown (KeyCode As Integer, Shift As Integer)",99,fn14CB;fn1589
+FRMCITYB.bas,Form_Load,Sub,101,Sub Form_Load (),131,sub02FE;sub0524;sub0784;sub2897;sub28A7
+FRMCITYB.bas,Form_Resize,Sub,133,Sub Form_Resize (),138,sub07B3;sub07C5
+FRMCITYB.bas,Form_Unload,Sub,140,Sub Form_Unload (Cancel As Integer),144,sub15BE
+FRMCITYB.bas,lblCall_Change,Sub,146,Sub lblCall_Change (),160,sub2884;sub2897;sub28A7
+FRMCITYB.bas,lstItems_Click,Sub,162,Sub lstItems_Click (),166,
+FRMCITYB.bas,lstItems_DragDrop,Sub,168,"Sub lstItems_DragDrop (Source As Control, X As Single, Y As Single)",202,fn03BD;sub085B;sub0F4C;sub0F61;sub28A7
+FRMCITYB.bas,lstItems_MouseMove,Sub,204,"Sub lstItems_MouseMove (Button As Integer, Shift As Integer, X As Single, Y As Single)",214,
+FRMCITYB.bas,lstItems_MouseUp,Sub,216,"Sub lstItems_MouseUp (Button As Integer, Shift As Integer, X As Single, Y As Single)",220,
+FRMCITYB.bas,sub28A7,Sub,222,Sub sub28A7 (),250,fn12EF;sub2884
+FRMCITYB.bas,sub2897,Sub,252,Sub sub2897 (),272,sub085B
+FRMCITYB.bas,sub2884,Sub,274,Sub sub2884 (),291,fn036D;sub1043
+FRMCITYB.bas,txtAmount_KeyDown,Sub,293,"Sub txtAmount_KeyDown (Index%, KeyCode As Integer, Shift As Integer)",297,
+FRMCITYB.bas,txtAmount_KeyPress,Sub,299,"Sub txtAmount_KeyPress (Index%, KeyAscii As Integer)",328,sub08A9;sub2884
+FRMCITYC.bas,cmdAlign_Click,Sub,46,Sub cmdAlign_Click (Index%),48,
+FRMCITYC.bas,cmdBind_Click,Sub,50,Sub cmdBind_Click (),94,fn036D;fn114E;fn33B9;fn33DB;sub08A9;sub0B82
+FRMCITYC.bas,cmdBuy_Click,Sub,96,Sub cmdBuy_Click (),169,fn036D;fn114E;fn33CC;sub085B;sub0B82;sub3347
+FRMCITYC.bas,cmdExit_Click,Sub,171,Sub cmdExit_Click (),175,sub0792
+FRMCITYC.bas,cmdID_Click,Sub,177,Sub cmdID_Click (),202,fn114E;fn33DB;fn33E9;sub06FE;sub0B82;sub150A
+FRMCITYC.bas,cmdIDInfo_Click,Sub,204,Sub cmdIDInfo_Click (),217,fn33DB;sub150A
+FRMCITYC.bas,cmdInfo_Click,Sub,219,Sub cmdInfo_Click (),236,sub150A
+FRMCITYC.bas,cmdRealign_Click,Sub,238,Sub cmdRealign_Click (Index%),270,fn036D;fn114E;fn33A6;fn33DB;sub0B82
+FRMCITYC.bas,cmdSell_Click,Sub,272,Sub cmdSell_Click (),296,fn33DB;fn33FA;sub08A9;sub0B82;sub268D;sub3347
+FRMCITYC.bas,elaComp_event0000,Sub,298,Sub elaComp_event0000 (p0132 As Integer ' 41),366,fn036D;fn03BD;fn33CC;sub05D8;sub336F
+FRMCITYC.bas,elaCompInfo_event0000,Sub,368,Sub elaCompInfo_event0000 (p0162 ' 40),370,
+FRMCITYC.bas,Form_Activate,Sub,372,Sub Form_Activate (),374,sub0792
+FRMCITYC.bas,Form_KeyDown,Sub,376,"Sub Form_KeyDown (KeyCode As Integer, Shift As Integer)",394,fn14CB;fn1589
+FRMCITYC.bas,Form_Load,Sub,396,Sub Form_Load (),422,sub02FE;sub0524;sub0784;sub168B;sub3347
+FRMCITYC.bas,Form_Resize,Sub,424,Sub Form_Resize (),429,sub07B3;sub07C5
+FRMCITYC.bas,Form_Unload,Sub,431,Sub Form_Unload (Cancel As Integer),447,fn0425;fn04ED;sub15BE
+FRMCITYC.bas,lblCall_Change,Sub,449,Sub lblCall_Change (),470,
+FRMCITYC.bas,sub3347,Sub,472,Sub sub3347 (p01C8 As Integer ' 41),522,
+FRMCITYC.bas,fn33A6,Function,524,Function fn33A6 (p01D6 As Integer ' 41) As Currency ' 5,600,fn0380
+FRMCITYC.bas,fn33B9,Function,602,Function fn33B9 (p0202 As Integer ' 41) As Currency ' 5,614,
+FRMCITYC.bas,fn33CC,Function,616,"Function fn33CC (p020C As Integer ' 41, p020E ' 40) As Long ' 2",637,fn33A6;sub04FC
+FRMCITYC.bas,sub268D,Sub,639,Sub sub268D (),648,
+FRMCITYC.bas,fn33DB,Function,650,Function fn33DB (p0222 As String ' 47) As Integer ' 1,668,
+FRMCITYC.bas,fn33E9,Function,670,Function fn33E9 (p0228 As Integer ' 41) As Long ' 2,688,fn33A6
+FRMCITYC.bas,fn33FA,Function,690,Function fn33FA (p023A As Integer ' 41) As Currency ' 5,719,fn33A6
+FRMCITYC.bas,sub336F,Sub,721,Sub sub336F (p0250 As Integer ' 41),731,
+FRMCITYC.bas,txtBind_Change,Sub,733,Sub txtBind_Change (),738,
+FRMCITYC.bas,txtBind_DragDrop,Sub,740,"Sub txtBind_DragDrop (Source As Control, X As Single, Y As Single)",748,sub085B
+FRMCITYC.bas,txtBind_KeyDown,Sub,750,"Sub txtBind_KeyDown (KeyCode As Integer, Shift As Integer)",754,
+FRMCITYC.bas,txtBind_KeyPress,Sub,756,Sub txtBind_KeyPress (KeyAscii As Integer),782,fn036D;fn33B9;fn33DB
+FRMCITYC.bas,txtID_DragDrop,Sub,784,"Sub txtID_DragDrop (Source As Control, X As Single, Y As Single)",792,sub085B
+FRMCITYC.bas,txtID_KeyDown,Sub,794,"Sub txtID_KeyDown (KeyCode As Integer, Shift As Integer)",798,
+FRMCITYC.bas,txtID_KeyPress,Sub,800,Sub txtID_KeyPress (KeyAscii As Integer),842,fn036D;fn12D6;fn33DB;fn33E9;fn33FA;sub268D
+FRMCITYC.bas,txtSearch_KeyDown,Sub,844,"Sub txtSearch_KeyDown (KeyCode As Integer, Shift As Integer)",848,
+FRMCITYC.bas,txtSearch_KeyPress,Sub,850,Sub txtSearch_KeyPress (KeyAscii As Integer),890,sub07E2
+FRMCITYC.bas,vsbComps_Change,Sub,892,Sub vsbComps_Change (),941,sub04FC;sub336F
+FRMCONTR.bas,cmdCommand_Click,Sub,36,Sub cmdCommand_Click (Index%),198,sub04FC;sub074E;sub0775
+FRMCONTR.bas,Form_Load,Sub,200,Sub Form_Load (),231,sub0802
+FRMCONTR.bas,Form_Paint,Sub,233,Sub Form_Paint (),234,
+FRMCONTR.bas,Form_Resize,Sub,236,Sub Form_Resize (),240,sub07B3
+FRMCONTR.bas,Form_Unload,Sub,242,Sub Form_Unload (Cancel As Integer),244,sub0930
+FRMCREDI.bas,cmdOK_Click,Sub,8,Sub cmdOK_Click (),10,
+FRMCREDI.bas,Form_Load,Sub,12,Sub Form_Load (),68,sub02FE
+FRMCREDI.bas,Form_Unload,Sub,70,Sub Form_Unload (Cancel As Integer),73,
+FRMCREDI.bas,timAnimate_Timer,Sub,75,Sub timAnimate_Timer (),92,sub086D
+FRMCTYG.bas,cmdExit_Click,Sub,35,Sub cmdExit_Click (),39,sub0792
+FRMCTYG.bas,cmdInfo_Click,Sub,41,Sub cmdInfo_Click (),78,fn036D;fn124B;fn125C
+FRMCTYG.bas,cmdJoin_Click,Sub,80,Sub cmdJoin_Click (),164,fn036D;fn1139;fn114E;fn131D;fn137E;fn1397;sub0578;sub085B;sub08A9;sub1602;sub294F;sub2962;sub2974
+FRMCTYG.bas,cmdLibrary_Click,Sub,166,Sub cmdLibrary_Click (),168,
+FRMCTYG.bas,cmdLog_Click,Sub,170,Sub cmdLog_Click (),173,
+FRMCTYG.bas,cmdMake_Click,Sub,175,Sub cmdMake_Click (),574,fn114E;fn124B;fn125C;fn126E;fn129A;fn12EF;fn136C;fn137E;fn1397;fn1BF0;sub04FC;sub0578;sub0730;sub085B;sub086D;sub08A9;sub0BF1;sub0EDA;sub0F4C;sub0F61;sub1043;sub1602;sub294F;sub2974;sub29BD;sub29D0;sub29DF
+FRMCTYG.bas,cmdVisit_Click,Sub,576,Sub cmdVisit_Click (),588,fn124B;fn125C;sub294F;sub2962
+FRMCTYG.bas,Form_Activate,Sub,590,Sub Form_Activate (),592,sub0792
+FRMCTYG.bas,Form_KeyDown,Sub,594,"Sub Form_KeyDown (KeyCode As Integer, Shift As Integer)",611,fn14CB;fn1589
+FRMCTYG.bas,Form_Load,Sub,613,Sub Form_Load (),652,fn124B;fn125C;sub02FE;sub0524;sub0784;sub294F;sub2962;sub2974
+FRMCTYG.bas,Form_Resize,Sub,654,Sub Form_Resize (),659,sub07B3;sub07C5
+FRMCTYG.bas,Form_Unload,Sub,661,Sub Form_Unload (Cancel As Integer),665,sub15BE
+FRMCTYG.bas,lblCall_Change,Sub,667,Sub lblCall_Change (),682,fn124B;fn125C;sub294F;sub2962;sub2974
+FRMCTYG.bas,sub29DF,Sub,684,"Sub sub29DF (ByVal pv016C As Integer ' 81, p016E As Integer ' 41)",754,sub04FC;sub0578;sub085B;sub0F61
+FRMCTYG.bas,sub2974,Sub,756,Sub sub2974 (),771,fn115C
+FRMCTYG.bas,sub2962,Sub,773,Sub sub2962 (),823,fn0380;fn14A0
+FRMCTYG.bas,sub294F,Sub,825,Sub sub294F (),841,
+FRMCTYG.bas,sub29BD,Sub,843,"Sub sub29BD (p01BE As Integer ' 41, p01C0 As Integer ' 41)",960,fn110D;fn124B;fn126E;fn137E;fn1397;sub0578;sub086D;sub08A9;sub0BF1;sub0F4C;sub0F74;sub1602;sub2962;sub2974;sub29D0
+FRMCTYG.bas,sub29D0,Sub,962,"Sub sub29D0 (p01DC As Integer ' 41, p01DE As Integer ' 41)",1032,sub04FC;sub085B
+FRMCTYM.bas,Form_Activate,Sub,23,Sub Form_Activate (),25,sub0792
+FRMCTYM.bas,Form_GotFocus,Sub,27,Sub Form_GotFocus (),29,sub0792
+FRMCTYM.bas,Form_KeyDown,Sub,31,"Sub Form_KeyDown (KeyCode As Integer, Shift As Integer)",64,fn14CB
+FRMCTYM.bas,Form_Load,Sub,66,Sub Form_Load (),157,fn03BD;fn04ED;fn1338;sub048C;sub04FC;sub0524;sub063F;sub0784;sub0792;sub085B;sub08A9;sub08B9;sub0941;sub0956;sub096E;sub0A7C;sub0B82;sub0EAE;sub0F38;sub1043;sub14E0;sub15A1;sub25A3
+FRMCTYM.bas,Form_Resize,Sub,159,Sub Form_Resize (),163,sub0760
+FRMCTYM.bas,Form_Unload,Sub,165,Sub Form_Unload (Cancel As Integer),177,sub0792;sub15BE
+FRMCTYM.bas,imgPicture_Click,Sub,179,Sub imgPicture_Click (Index%),218,
+FRMCTYM.bas,lblSelection_Click,Sub,220,Sub lblSelection_Click (Index%),222,
+FRMCTYM.bas,sub25A3,Sub,224,Sub sub25A3 (),225,
+FRMCTYS.bas,cmdAlign_Click,Sub,33,Sub cmdAlign_Click (Index%),35,
+FRMCTYS.bas,cmdBuy_Click,Sub,37,Sub cmdBuy_Click (),106,fn036D;fn114E;fn272C;sub085B;sub0F61;sub260A
+FRMCTYS.bas,cmdCommand_Click,Sub,108,Sub cmdCommand_Click (Index%),116,sub2621
+FRMCTYS.bas,cmdExit_Click,Sub,118,Sub cmdExit_Click (),122,sub0792
+FRMCTYS.bas,cmdID_Click,Sub,124,Sub cmdID_Click (),146,fn114E;fn12C4;fn271B;sub0730;sub0F61
+FRMCTYS.bas,cmdIDInfo_Click,Sub,148,Sub cmdIDInfo_Click (),164,fn12C4;sub150A
+FRMCTYS.bas,cmdInfo_Click,Sub,166,Sub cmdInfo_Click (),184,sub150A
+FRMCTYS.bas,cmdRealign_Click,Sub,186,Sub cmdRealign_Click (Index%),215,fn036D;fn114E;fn12C4;sub0F61
+FRMCTYS.bas,cmdSell_Click,Sub,217,Sub cmdSell_Click (),282,fn12C4;fn273B;sub08A9;sub0EDA;sub0F61;sub0F74;sub260A;sub268D
+FRMCTYS.bas,cmdUncurse_Click,Sub,284,Sub cmdUncurse_Click (),320,fn114E;fn12C4;fn274F;sub0730;sub085B;sub08A9;sub0F61;sub0F74
+FRMCTYS.bas,elaItem_event0000,Sub,322,Sub elaItem_event0000 (p0156 As Integer ' 41),388,fn036D;fn03BD;fn272C;sub05D8;sub26C8
+FRMCTYS.bas,elaItemInfo_event0000,Sub,390,Sub elaItemInfo_event0000 (p0186 ' 40),392,
+FRMCTYS.bas,sub26EC,Sub,394,Sub sub26EC (),397,
+FRMCTYS.bas,Form_Activate,Sub,399,Sub Form_Activate (),401,sub0792
+FRMCTYS.bas,Form_KeyDown,Sub,403,"Sub Form_KeyDown (KeyCode As Integer, Shift As Integer)",421,fn14CB;fn1589
+FRMCTYS.bas,Form_Load,Sub,423,Sub Form_Load (),448,sub02FE;sub0524;sub0784;sub168B;sub260A
+FRMCTYS.bas,Form_Resize,Sub,450,Sub Form_Resize (),455,sub07B3;sub07C5
+FRMCTYS.bas,Form_Unload,Sub,457,Sub Form_Unload (Cancel As Integer),473,fn0425;fn04ED;sub15BE
+FRMCTYS.bas,lblCall_Change,Sub,475,Sub lblCall_Change (),498,
+FRMCTYS.bas,lblCombine_Change,Sub,500,Sub lblCombine_Change (),506,
+FRMCTYS.bas,sub260A,Sub,508,Sub sub260A (p01E0 As Integer ' 41),551,
+FRMCTYS.bas,sub268D,Sub,553,Sub sub268D (),562,
+FRMCTYS.bas,fn271B,Function,564,Function fn271B (p01EE As Integer ' 41) As Long ' 2,581,
+FRMCTYS.bas,fn272C,Function,583,"Function fn272C (p01FE As Integer ' 41, p0200 As Integer ' 41) As Long ' 2",610,sub04FC
+FRMCTYS.bas,sub2621,Sub,612,Sub sub2621 (),693,sub085B;sub0F61
+FRMCTYS.bas,fn273B,Function,695,Function fn273B (p0228 As Integer ' 41) As Long ' 2,749,
+FRMCTYS.bas,sub26C8,Sub,751,Sub sub26C8 (p0242 As Integer ' 41),761,
+FRMCTYS.bas,fn274F,Function,763,Function fn274F (p024A As Integer ' 41) As Long ' 2,765,
+FRMCTYS.bas,txtCombine_DragDrop,Sub,767,"Sub txtCombine_DragDrop (Source As Control, X As Single, Y As Single)",776,sub085B
+FRMCTYS.bas,txtCombine_KeyDown,Sub,778,"Sub txtCombine_KeyDown (KeyCode As Integer, Shift As Integer)",782,
+FRMCTYS.bas,txtCombine_KeyPress,Sub,784,Sub txtCombine_KeyPress (KeyAscii As Integer),805,fn12C4
+FRMCTYS.bas,txtID_DragDrop,Sub,807,"Sub txtID_DragDrop (Source As Control, X As Single, Y As Single)",815,sub085B
+FRMCTYS.bas,txtID_KeyDown,Sub,817,"Sub txtID_KeyDown (KeyCode As Integer, Shift As Integer)",821,
+FRMCTYS.bas,txtID_KeyPress,Sub,823,Sub txtID_KeyPress (KeyAscii As Integer),883,fn036D;fn1121;fn12C4;fn12D6;fn271B;fn273B;sub085B;sub268D
+FRMCTYS.bas,txtSearch_KeyDown,Sub,885,"Sub txtSearch_KeyDown (KeyCode As Integer, Shift As Integer)",889,
+FRMCTYS.bas,txtSearch_KeyPress,Sub,891,Sub txtSearch_KeyPress (KeyAscii As Integer),931,sub07E2
+FRMCTYS.bas,txtUncurse_Change,Sub,933,Sub txtUncurse_Change (),938,
+FRMCTYS.bas,txtUncurse_DragDrop,Sub,940,"Sub txtUncurse_DragDrop (Source As Control, X As Single, Y As Single)",948,sub085B
+FRMCTYS.bas,txtUncurse_KeyDown,Sub,950,"Sub txtUncurse_KeyDown (KeyCode As Integer, Shift As Integer)",954,
+FRMCTYS.bas,txtUncurse_KeyPress,Sub,956,Sub txtUncurse_KeyPress (KeyAscii As Integer),970,fn036D;fn12C4;fn274F
+FRMCTYS.bas,vsbItems_Change,Sub,972,Sub vsbItems_Change (),1022,fn036D;fn110D;sub26C8
+FRMDIREC.bas,cmdCommand_Click,Sub,8,Sub cmdCommand_Click (Index%),20,
+FRMDIREC.bas,dirDirectory_Change,Sub,22,Sub dirDirectory_Change (),26,sub34AE
+FRMDIREC.bas,drvDrive_Change,Sub,28,Sub drvDrive_Change (),40,
+FRMDIREC.bas,Form_Load,Sub,42,Sub Form_Load (),49,sub07ED;sub34AE
+FRMDIREC.bas,Form_Resize,Sub,51,Sub Form_Resize (),55,
+FRMDIREC.bas,sub34AE,Sub,57,Sub sub34AE (),66,fn034F;fn0360
+FRMDUNM.bas,cmdAction_Click,Sub,72,Sub cmdAction_Click (Index%),105,fn03BD;sub0456
+FRMDUNM.bas,cmdBuffer_Click,Sub,107,Sub cmdBuffer_Click (Index%),119,sub0456
+FRMDUNM.bas,cmdMove_Click,Sub,121,Sub cmdMove_Click (Index%),138,sub0456
+FRMDUNM.bas,cmdWait_Click,Sub,140,Sub cmdWait_Click (),192,fn0380;fn0A34;sub08A9;sub0930;sub0EAE
+FRMDUNM.bas,Form_Activate,Sub,194,Sub Form_Activate (),195,
+FRMDUNM.bas,Form_KeyDown,Sub,197,"Sub Form_KeyDown (KeyCode As Integer, Shift As Integer)",216,fn14CB;sub0456
+FRMDUNM.bas,Form_Load,Sub,218,Sub Form_Load (),303,fn03BD;fn0992;fn0A0B;fn0AE8;sub050F;sub0524;sub063F;sub0784;sub0792;sub0835;sub09CC;sub0A49;sub0A7C;sub0A91;sub168B
+FRMDUNM.bas,Form_Paint,Sub,305,Sub Form_Paint (),306,
+FRMDUNM.bas,Form_Resize,Sub,308,Sub Form_Resize (),354,fn09A4;sub0760;sub0A64;sub0B82
+FRMDUNM.bas,Form_Unload,Sub,356,Sub Form_Unload (Cancel As Integer),363,sub0792;sub15BE
+FRMDUNM.bas,lblMonster_Click,Sub,365,Sub lblMonster_Click (Index%),371,sub0BCD
+FRMDUNM.bas,lblRoom_Click,Sub,373,Sub lblRoom_Click (),375,sub0456
+FRMDUNM.bas,picMaze2_Paint,Sub,377,Sub picMaze2_Paint (),381,sub0980
+FRMDUNM.bas,picMonsters_Paint,Sub,383,Sub picMonsters_Paint (),389,sub0B9B;sub0BAA;sub0BBA
+FRMDUNM.bas,timAilment_Timer,Sub,391,Sub timAilment_Timer (),610,fn0380;fn0AD3;fn0AE8;fn0DCD;fn0E23;fn0EEF;fn1121;fn12AF;sub04FC;sub06FE;sub085B;sub086D;sub08A9;sub091E;sub0930;sub09DE;sub0BBA;sub0BF1;sub0C00;sub0D1D;sub0EDA;sub15EC
+FRMDUNM.bas,timCombat_Timer,Sub,612,Sub timCombat_Timer (),626,sub155A
+FRMEDITC.bas,cmbCombo_KeyDown,Sub,29,"Sub cmbCombo_KeyDown (Index%, KeyCode As Integer, Shift As Integer)",43,
+FRMEDITC.bas,cmbCombo_KeyPress,Sub,45,"Sub cmbCombo_KeyPress (Index%, KeyAscii As Integer)",53,
+FRMEDITC.bas,cmdCommand_Click,Sub,55,Sub cmdCommand_Click (Index%),179,fn0A0B;fn164C;fn16A0;sub047C;sub0835;sub08A9;sub0980;sub0B82;sub31E0;sub31F1
+FRMEDITC.bas,Form_Load,Sub,181,Sub Form_Load (),201,sub02FE
+FRMEDITC.bas,Form_Unload,Sub,203,Sub Form_Unload (Cancel As Integer),205,
+FRMEDITC.bas,sub31F1,Sub,207,"Sub sub31F1 (p00C0 As Integer ' 41, p00C2 As Integer ' 41)",226,sub0F61
+FRMEDITC.bas,sub31E0,Sub,228,Sub sub31E0 (),255,fn110D;sub31F1
+FRMEXCHA.bas,cmdCommand_Click,Sub,17,Sub cmdCommand_Click (Index%),30,fn04ED
+FRMEXCHA.bas,Form_Load,Sub,32,Sub Form_Load (),72,sub02FE;sub0784;sub07ED;sub0F61;sub2D61
+FRMEXCHA.bas,sub2D61,Sub,74,Sub sub2D61 (),86,fn036D
+FRMEXCHA.bas,pnlGold_DragDrop,Sub,88,"Sub pnlGold_DragDrop (Index%, Source As Control, X As Single, Y As Single)",127,sub2D61
+FRMEXCHA.bas,pnlGold_MouseMove,Sub,129,"Sub pnlGold_MouseMove (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",133,
+FRMEXCHA.bas,pnlItem_Click,Sub,135,Sub pnlItem_Click (Index%),150,
+FRMEXCHA.bas,pnlItem_DragDrop,Sub,152,"Sub pnlItem_DragDrop (Index%, Source As Control, X As Single, Y As Single)",210,fn1121;fn129A;sub0F61
+FRMEXCHA.bas,pnlItem_MouseMove,Sub,212,"Sub pnlItem_MouseMove (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",217,
+FRMEXCHA.bas,vsbItems_Change,Sub,219,Sub vsbItems_Change (Index%),228,
+FRMGLDL.bas,cmdClean_Click,Sub,14,Sub cmdClean_Click (),18,sub316B
+FRMGLDL.bas,cmdDone_Click,Sub,20,Sub cmdDone_Click (),22,
+FRMGLDL.bas,Form_Load,Sub,24,Sub Form_Load (),28,sub0802
+FRMGLDL.bas,Form_Resize,Sub,30,Sub Form_Resize (),41,sub07B3;sub318B
+FRMGLDL.bas,Form_Unload,Sub,43,Sub Form_Unload (Cancel As Integer),45,
+FRMGLDL.bas,sub316B,Sub,47,Sub sub316B (),125,sub318B
+FRMGLDL.bas,sub318B,Sub,127,Sub sub318B (),183,
+FRMGROUP.bas,cmdCommand_Click,Sub,28,Sub cmdCommand_Click (Index%),42,fn0EEF;sub085B;sub14E0;sub1547
+FRMGROUP.bas,Form_Deactivate,Sub,44,Sub Form_Deactivate (),45,
+FRMGROUP.bas,Form_KeyDown,Sub,47,"Sub Form_KeyDown (KeyCode As Integer, Shift As Integer)",62,fn14CB;sub0456
+FRMGROUP.bas,Form_Load,Sub,64,Sub Form_Load (),92,sub02FE;sub0524;sub0784;sub178B;sub2F40;sub2F5A
+FRMGROUP.bas,Form_Paint,Sub,94,Sub Form_Paint (),95,
+FRMGROUP.bas,Form_Resize,Sub,97,Sub Form_Resize (),124,sub07B3;sub07C5
+FRMGROUP.bas,Form_Unload,Sub,126,Sub Form_Unload (Cancel As Integer),135,sub096E;sub14E0;sub15BE
+FRMGROUP.bas,lblCall_Change,Sub,137,Sub lblCall_Change (),153,sub178B;sub2F40;sub2F5A
+FRMGROUP.bas,lblHits_Click,Sub,155,Sub lblHits_Click (Index%),157,
+FRMGROUP.bas,lblHits_DblClick,Sub,159,Sub lblHits_DblClick (Index%),161,
+FRMGROUP.bas,lblHits_DragDrop,Sub,163,"Sub lblHits_DragDrop (Index%, Source As Control, X As Single, Y As Single)",165,
+FRMGROUP.bas,lblHits_MouseMove,Sub,167,"Sub lblHits_MouseMove (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",169,
+FRMGROUP.bas,lblName_Click,Sub,171,Sub lblName_Click (Index%),175,sub178B
+FRMGROUP.bas,lblName_DblClick,Sub,177,Sub lblName_DblClick (Index%),179,sub14E0
+FRMGROUP.bas,lblName_DragDrop,Sub,181,"Sub lblName_DragDrop (Index%, Source As Control, X As Single, Y As Single)",246,fn03BD;fn0EEF;sub085B;sub08A9;sub145F;sub14E0;sub178B;sub2F40
+FRMGROUP.bas,lblName_MouseMove,Sub,248,"Sub lblName_MouseMove (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",256,
+FRMGROUP.bas,lblOption_Click,Sub,258,Sub lblOption_Click (Index%),260,
+FRMGROUP.bas,lblOption_DblClick,Sub,262,Sub lblOption_DblClick (Index%),264,
+FRMGROUP.bas,lblOption_DragDrop,Sub,266,"Sub lblOption_DragDrop (Index%, Source As Control, X As Single, Y As Single)",268,
+FRMGROUP.bas,lblOption_MouseMove,Sub,270,"Sub lblOption_MouseMove (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",272,
+FRMGROUP.bas,lblSpells_Click,Sub,274,Sub lblSpells_Click (Index%),276,
+FRMGROUP.bas,lblSpells_DblClick,Sub,278,Sub lblSpells_DblClick (Index%),280,
+FRMGROUP.bas,lblSpells_DragDrop,Sub,282,"Sub lblSpells_DragDrop (Index%, Source As Control, X As Single, Y As Single)",284,
+FRMGROUP.bas,lblSpells_MouseMove,Sub,286,"Sub lblSpells_MouseMove (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",288,
+FRMGROUP.bas,lblStatus_Click,Sub,290,Sub lblStatus_Click (Index%),292,
+FRMGROUP.bas,lblStatus_DblClick,Sub,294,Sub lblStatus_DblClick (Index%),296,
+FRMGROUP.bas,lblStatus_DragDrop,Sub,298,"Sub lblStatus_DragDrop (Index%, Source As Control, X As Single, Y As Single)",300,
+FRMGROUP.bas,lblStatus_MouseMove,Sub,302,"Sub lblStatus_MouseMove (Index%, Button As Integer, Shift As Integer, X As Single, Y As Single)",304,
+FRMGROUP.bas,sub2F40,Sub,306,Sub sub2F40 (),398,fn09A4;sub04DC;sub04FC;sub085B;sub08A9;sub091E;sub0956;sub096E;sub0980;sub14E0;sub178B;sub2F5A
+FRMGROUP.bas,sub2F5A,Sub,400,Sub sub2F5A (),479,fn0EEF;sub04FC
+FRMGROUP.bas,msgBlast_event0000,Sub,481,"Sub msgBlast_event0000 (p0162 As Integer ' 41, p0164 As Integer ' 41)",493,sub15BE
+FRMHALL.bas,cmdCommand_Click,Sub,31,Sub cmdCommand_Click (Index%),38,
+FRMHALL.bas,Form_Load,Sub,40,Sub Form_Load (),46,sub0802;sub1EBA;sub32F6
+FRMHALL.bas,Form_Resize,Sub,48,Sub Form_Resize (),52,sub07B3
+FRMHALL.bas,sub3308,Sub,54,"Sub sub3308 (p003A As Integer ' 41, p003C As Integer ' 41, p003E As Integer ' 41, p0040 As Variant ' 46, p0044 As Integer ' 41)",81,
+FRMHALL.bas,sub32F6,Sub,83,Sub sub32F6 (),275,fn036D;fn1C07
+FRMHALL.bas,sub1EBA,Sub,277,Sub sub1EBA (),279,
+FRMINTER.bas,cmbCharacter_KeyDown,Sub,13,"Sub cmbCharacter_KeyDown (KeyCode As Integer, Shift As Integer)",19,
+FRMINTER.bas,cmbCharacter_KeyPress,Sub,21,Sub cmbCharacter_KeyPress (KeyAscii As Integer),30,
+FRMINTER.bas,cmdCancel_Click,Sub,32,Sub cmdCancel_Click (),43,
+FRMINTER.bas,cmdCompanion_Click,Sub,45,Sub cmdCompanion_Click (Index%),49,
+FRMINTER.bas,cmdOK_Click,Sub,51,Sub cmdOK_Click (),290,fn12C4;fn13C0;sub07E2
+FRMINTER.bas,cmdSelf_Click,Sub,292,Sub cmdSelf_Click (),299,
+FRMINTER.bas,Form_Load,Sub,301,Sub Form_Load (),316,sub02FE;sub0784
+FRMINTER.bas,Form_Resize,Sub,318,Sub Form_Resize (),490,fn13C0;sub0695
+FRMINTER.bas,Form_Unload,Sub,492,Sub Form_Unload (Cancel As Integer),493,
+FRMINTER.bas,lblCall_Change,Sub,495,Sub lblCall_Change (),505,
+FRMINTER.bas,txtQuestion_KeyDown,Sub,507,"Sub txtQuestion_KeyDown (KeyCode As Integer, Shift As Integer)",511,
+FRMINTER.bas,txtQuestion_KeyPress,Sub,513,Sub txtQuestion_KeyPress (KeyAscii As Integer),522,
+FRMLIBRA.bas,cmdCommand_Click,Sub,13,Sub cmdCommand_Click (Index%),20,
+FRMLIBRA.bas,Form_Load,Sub,22,Sub Form_Load (),30,sub0802;sub327E
+FRMLIBRA.bas,Form_Resize,Sub,32,Sub Form_Resize (),36,sub07B3
+FRMLIBRA.bas,Form_Unload,Sub,38,Sub Form_Unload (Cancel As Integer),40,
+FRMLIBRA.bas,lstList_Click,Sub,42,Sub lstList_Click (),51,fn1BBE
+FRMLIBRA.bas,sub327E,Sub,53,Sub sub327E (),84,fn1BD5;sub0F9A
+FRMLIBRA.bas,optOption_Click,Sub,86,Sub optOption_Click (Index%),91,sub327E
+FRMLIBRA.bas,picMonster_Paint,Sub,93,Sub picMonster_Paint (),116,fn0C3B
+FRMLIBRA.bas,txtInfo_KeyDown,Sub,118,"Sub txtInfo_KeyDown (KeyCode As Integer, Shift As Integer)",120,
+FRMLIBRA.bas,txtInfo_KeyPress,Sub,122,Sub txtInfo_KeyPress (KeyAscii As Integer),124,
+FRMLIBRA.bas,txtSearch_KeyDown,Sub,126,"Sub txtSearch_KeyDown (KeyCode As Integer, Shift As Integer)",152,
+FRMLIBRA.bas,txtSearch_KeyPress,Sub,154,Sub txtSearch_KeyPress (KeyAscii As Integer),158,
+FRMMAIN.bas,cmdTool_Click,Sub,44,Sub cmdTool_Click (Index%),104,fn14CB;sub152F
+FRMMAIN.bas,cmdTool_KeyDown,Sub,106,"Sub cmdTool_KeyDown (Index%, KeyCode As Integer, Shift As Integer)",112,
+FRMMAIN.bas,cmdTool_KeyPress,Sub,114,"Sub cmdTool_KeyPress (Index%, KeyAscii As Integer)",116,
+FRMMAIN.bas,mciMusic_Done,Sub,118,Sub mciMusic_Done (NotifyCode As Integer),120,
+FRMMAIN.bas,MDIForm_Activate,Sub,122,Sub MDIForm_Activate (),124,sub050F
+FRMMAIN.bas,MDIForm_Load,Sub,126,Sub MDIForm_Load (),161,
+FRMMAIN.bas,MDIForm_QueryUnload,Sub,163,"Sub MDIForm_QueryUnload (Cancel As Integer, UnloadMode As Integer)",196,fn0EEF;sub05F6;sub085B;sub165F
+FRMMAIN.bas,MDIForm_Resize,Sub,198,Sub MDIForm_Resize (),231,fn03BD;sub1A50;sub1B76;sub2074
+FRMMAIN.bas,MDIForm_Unload,Sub,233,Sub MDIForm_Unload (Cancel As Integer),245,
+FRMMAIN.bas,sub2074,Sub,247,Sub sub2074 (),254,
+FRMMAIN.bas,msgBlast_event0000,Sub,256,"Sub msgBlast_event0000 (p010C As Integer ' 41, p010E As Integer ' 41, p0110 As Integer ' 41)",281,sub1B76;sub1D61
+FRMMAIN.bas,picToolbar_Paint,Sub,283,Sub picToolbar_Paint (),286,sub08B9
+FRMMAIN.bas,timMusic_Timer,Sub,288,Sub timMusic_Timer (),300,sub168B;sub1A50
+FRMMENU.bas,cmdCommand_Click,Sub,23,Sub cmdCommand_Click (Index%),119,fn03BD;fn04ED;fn16A0;sub04DC;sub16CB;sub2D04;sub2D18;sub2D2E
+FRMMENU.bas,Form_Load,Sub,121,Sub Form_Load (),159,fn0360;fn03F1;sub02FE;sub063F;sub2D2E
+FRMMENU.bas,Form_Unload,Sub,161,Sub Form_Unload (Cancel As Integer),163,
+FRMMENU.bas,sub2D18,Sub,165,Sub sub2D18 (),198,sub04DC;sub0565;sub096E
+FRMMENU.bas,sub2D04,Sub,200,Sub sub2D04 (p00CA As Integer ' 41),239,fn04CD;fn16A0
+FRMMENU.bas,sub2D2E,Sub,241,Sub sub2D2E (),256,
+FRMMORG.bas,cmdCommand_Click,Sub,25,Sub cmdCommand_Click (Index%),186,fn036D;fn114E;fn13C0;fn13D7;fn16A0;sub085B;sub086D;sub0A7C;sub0B82;sub0F38
+FRMMORG.bas,cmdExit_Click,Sub,188,Sub cmdExit_Click (),192,sub0792
+FRMMORG.bas,Form_KeyDown,Sub,194,"Sub Form_KeyDown (KeyCode As Integer, Shift As Integer)",211,fn14CB;fn1589
+FRMMORG.bas,Form_Load,Sub,213,Sub Form_Load (),231,sub02FE;sub0524;sub0784;sub2BDB
+FRMMORG.bas,Form_Resize,Sub,233,Sub Form_Resize (),238,sub07B3;sub07C5
+FRMMORG.bas,Form_Unload,Sub,240,Sub Form_Unload (Cancel As Integer),244,sub15BE
+FRMMORG.bas,lblCall_Change,Sub,246,Sub lblCall_Change (),252,sub2BDB
+FRMMORG.bas,sub2BDB,Sub,254,Sub sub2BDB (),265,fn036D;fn1235
+FRMOPTIO.bas,chkCheck_Click,Sub,58,"Sub chkCheck_Click (Index%, Value As Integer)",113,fn03BD;fn19DC;fn1A08;fn1A1B;sub0618;sub063F;sub09DE;sub170B
+FRMOPTIO.bas,cmdCommand_Click,Sub,115,Sub cmdCommand_Click (Index%),309,fn034F;fn0360;fn0662;sub05F6;sub170B;sub2C63
+FRMOPTIO.bas,Form_Load,Sub,311,Sub Form_Load (),361,fn034F;sub0802;sub2C63;sub2C76
+FRMOPTIO.bas,Form_Paint,Sub,363,Sub Form_Paint (),364,
+FRMOPTIO.bas,Form_Resize,Sub,366,Sub Form_Resize (),370,sub07B3
+FRMOPTIO.bas,Form_Unload,Sub,372,Sub Form_Unload (Cancel As Integer),383,fn19DC;fn1A1B;sub063F
+FRMOPTIO.bas,hsbVolume_Change,Sub,385,Sub hsbVolume_Change (Index%),387,
+FRMOPTIO.bas,hsbVolume_Scroll,Sub,389,Sub hsbVolume_Scroll (Index%),410,sub09DE
+FRMOPTIO.bas,sub2C76,Sub,412,Sub sub2C76 (),416,fn0360;fn03F1
+FRMOPTIO.bas,sub2C63,Sub,418,Sub sub2C63 (),425,
+FRMORDER.bas,cmdCommand_Click,Sub,5,Sub cmdCommand_Click (Index%),7,
+FRMORDER.bas,Form_Load,Sub,9,Sub Form_Load (),31,sub0802
+FRMORDER.bas,Form_Resize,Sub,33,Sub Form_Resize (),37,sub07B3
+FRMPINFO.bas,cmbBuffer_Click,Sub,9,Sub cmbBuffer_Click (),14,
+FRMPINFO.bas,cmdCommand_Click,Sub,16,Sub cmdCommand_Click (),18,
+FRMPINFO.bas,Form_Load,Sub,20,Sub Form_Load (),32,sub02FE;sub0784
+FRMPINFO.bas,lstCharacters_Click,Sub,34,Sub lstCharacters_Click (),45,
+FRMPINFO.bas,optOption_Click,Sub,47,Sub optOption_Click (Index%),61,
+FRMPRINT.bas,Form_Load,Sub,7,Sub Form_Load (),28,sub02FE;sub34F3
+FRMPRINT.bas,Form_Resize,Sub,30,Sub Form_Resize (),35,sub3502
+FRMPRINT.bas,sub3502,Sub,37,Sub sub3502 (),60,fn192B;sub085B
+FRMPRINT.bas,sub34F3,Sub,62,Sub sub34F3 (),79,
+FRMSEEK.bas,cmdCommand_Click,Sub,17,Sub cmdCommand_Click (Index%),368,fn036D;fn0380;fn0992;fn0A0B;fn0B01;fn0E23;fn114E;fn16A0;sub321C
+FRMSEEK.bas,Form_KeyDown,Sub,370,"Sub Form_KeyDown (KeyCode As Integer, Shift As Integer)",375,fn14CB
+FRMSEEK.bas,Form_Load,Sub,377,Sub Form_Load (),394,sub02FE;sub0524;sub0784
+FRMSEEK.bas,Form_Resize,Sub,396,Sub Form_Resize (),401,sub07B3;sub07C5
+FRMSEEK.bas,Form_Unload,Sub,403,Sub Form_Unload (Cancel As Integer),407,sub15BE
+FRMSEEK.bas,sub321C,Sub,409,"Sub sub321C (p00F4 As Integer ' 41, p00F6 As Integer ' 41, p00F8 As Integer ' 41)",424,
+FRMWELCO.bas,Form_Load,Sub,6,Sub Form_Load (),21,sub02FE
+FRMWELCO.bas,Form_Unload,Sub,23,Sub Form_Unload (Cancel As Integer),26,
+FRMWELCO.bas,lblLoading_Change,Sub,28,Sub lblLoading_Change (),30,
+Module1.bas,sub02FE,Sub,114,Sub sub02FE (p05D4 As Form ' 49),117,
+Module1.bas,fn030F,Function,119,"Function fn030F (p05DC As Integer ' 41, p05DE As Integer ' 41) As Integer ' 1",128,
+Module1.bas,fn0326,Function,130,Function fn0326 (p05E6 As String ' 47) As Integer ' 1,134,
+Module1.bas,fn0339,Function,136,Function fn0339 (ByVal p05EA As String ' 47) As String ' 7,151,
+Module1.bas,fn034F,Function,153,Function fn034F (ByVal p05F0 As String ' 47) As Integer ' 1,180,fn0339
+Module1.bas,fn0360,Function,182,Function fn0360 (p05F6 As String ' 47) As String ' 7,188,
+Module1.bas,fn036D,Function,190,"Function fn036D (p05FA As Currency ' 45, p05FC As Integer ' 41) As String ' 7",209,
+Module1.bas,fn0380,Function,211,"Function fn0380 (ByVal pv0602 As Integer ' 81, ByVal pv0604 As Currency ' 85) As Integer ' 1",217,
+Module1.bas,sub038D,Sub,219,Sub sub038D (),604,fn0360;sub03A2
+Module1.bas,sub03A2,Sub,606,Sub sub03A2 (),649,
+Module1.bas,fn03BD,Function,651,Function fn03BD (p06B8 As Form ' 49) As Integer ' 1,659,
+Module1.bas,fn03D0,Function,661,Function fn03D0 (ByVal p06C2 As String ' 47) As Integer ' 1,909,fn0326;fn0425
+Module1.bas,sub03E3,Sub,911,Sub sub03E3 (p06DC As Integer ' 41),993,fn0360;fn03F1
+Module1.bas,fn03F1,Function,995,"Function fn03F1 (ByVal p06F4 As String ' 47, ByVal p06F6 As String ' 47, ByVal p06F8 As String ' 47) As String ' 7",1009,
+Module1.bas,fn0403,Function,1011,"Function fn0403 (ByVal p0700 As String ' 47, ByVal p0702 As String ' 47, ByVal p0704 As String ' 47, p0706 As Single ' 43) As Single ' 3",1015,
+Module1.bas,fn0418,Function,1017,"Function fn0418 (ByVal pv070C As Integer ' 81, ByVal pv070E As Currency ' 85, ByVal pv0710 As Integer ' 81) As Long ' 2",1027,fn0380
+Module1.bas,fn0425,Function,1029,Function fn0425 (ByVal p0714 As String ' 47) As Integer ' 1,1085,fn0326
+Module10.bas,sub1B11,Sub,11,"Sub sub1B11 (p003C As Integer ' 41, p003E As Integer ' 41, p0042 As T72D7 ' 4A, p0046 As T72D7 ' 4A)",30,
+Module10.bas,sub1B2B,Sub,32,Sub sub1B2B (),59,
+Module10.bas,sub173B,Sub,61,Sub sub173B (),92,
+Module10.bas,sub1B47,Sub,94,Sub sub1B47 (),121,sub1B11
+Module10.bas,fn1B61,Function,123,"Function fn1B61 (p0086 As String ' 47, p008A As T72D7 ' 4A) As Integer ' 1",171,
+Module10.bas,sub1B76,Sub,173,Sub sub1B76 (),176,
+Module10.bas,fn1B8E,Function,178,"Function fn1B8E (p009E As String ' 47, p00A2 As T72D7 ' 4A) As Integer ' 1",200,fn034F
+Module11.bas,sub0578,Sub,25,"Sub sub0578 (p0030 ' 40, ByVal p0032 As String ' 47)",53,
+Module11.bas,sub0F9A,Sub,55,"Sub sub0F9A (p0044 As Integer ' 41, p0046 As Integer ' 41, p004A ' 40)",76,
+Module11.bas,fn1BBE,Function,78,"Function fn1BBE (ByVal p0058 As String ' 47, p005A As Integer ' 41) As String ' 7",405,fn030F;fn0380;fn0E0D;fn0E23;sub0F9A
+Module11.bas,fn1BD5,Function,407,Function fn1BD5 (p00FC As Integer ' 41) As Integer ' 1,426,
+Module11.bas,sub1043,Sub,428,"Sub sub1043 (p0100 ' 40, p0102 ' 40, ByVal pv0104 As Currency ' 85)",519,fn036D;fn1BF0;fn1C07;fn1C1A;sub04FC;sub0578;sub085B
+Module11.bas,fn1BF0,Function,521,"Function fn1BF0 (p0128 As Integer ' 41, p012A As Integer ' 41, p012C As Integer ' 41) As Integer ' 1",602,fn0380;fn11E9;sub04FC
+Module11.bas,fn1C07,Function,604,"Function fn1C07 (p014E As Integer ' 41, p0152 ' 40) As Integer ' 1",618,
+Module11.bas,fn1C1A,Function,620,"Function fn1C1A (p015A As Integer ' 41, p015E ' 40) As Integer ' 1",633,
+Module11.bas,fn1C2E,Function,635,Function fn1C2E () As Integer ' 1,668,sub1C40
+Module11.bas,sub0FCB,Sub,670,"Sub sub0FCB (p016C As Integer ' 41, p016E As Integer ' 41, p0172 ' 40)",689,
+Module11.bas,sub0FB0,Sub,691,"Sub sub0FB0 (p0178 As Integer ' 41, p017A ' 40)",708,
+Module11.bas,sub1C40,Sub,710,Sub sub1C40 (),786,fn034F
+Module12.bas,sub1D18,Sub,17,"Sub sub1D18 (p0134 As Integer ' 41, p0136 As Long ' 42)",40,
+Module12.bas,sub1D29,Sub,42,Sub sub1D29 (p0156 As Integer ' 41),65,
+Module12.bas,sub1725,Sub,67,Sub sub1725 (),119,fn034F;sub1D3C
+Module12.bas,sub1D3C,Sub,121,"Sub sub1D3C (p0186 As Integer ' 41, ByVal p0188 As String ' 47, p018A As Integer ' 41)",141,
+Module12.bas,sub0607,Sub,143,Sub sub0607 (),184,
+Module12.bas,sub1D52,Sub,186,"Sub sub1D52 (p01AA As PictureBox ' 49, p01AE As Form ' 49)",221,
+Module12.bas,sub1D61,Sub,223,"Sub sub1D61 (p01D0 As Integer ' 41, p01D2 As Integer ' 41, p01D4 As Integer ' 41)",250,
+Module13.bas,fn1E6F,Function,16,Function fn1E6F (p006A As Integer ' 41) As Variant ' 6,37,
+Module2.bas,sub0456,Sub,84,"Sub sub0456 (p0026 As Integer ' 41, p0028 As Integer ' 41)",96,
+Module2.bas,sub046B,Sub,98,Sub sub046B (),230,fn034F;sub047C;sub048C;sub04A3
+Module2.bas,fn04B9,Function,232,Function fn04B9 (ByVal p0090 As String ' 47) As Integer ' 1,277,fn0326
+Module2.bas,fn04CD,Function,279,"Function fn04CD (p00A4 As String ' 47, p00A6 As String ' 47, ByVal pv00A8 As Integer ' 81, p00AA As Integer ' 41) As Integer ' 1",349,fn0326;fn1397;sub04DC
+Module2.bas,fn04ED,Function,351,Function fn04ED (p00D6 As T5810 ' 4A) As Integer ' 1,412,fn0326
+Module2.bas,sub04DC,Sub,414,Sub sub04DC (p00E6 As Integer ' 41),462,fn03BD;fn04ED;sub04FC
+Module2.bas,sub050F,Sub,464,Sub sub050F (),480,
+Module2.bas,sub0524,Sub,482,Sub sub0524 (p0108 As Form ' 49),489,
+Module2.bas,sub0536,Sub,491,Sub sub0536 (),520,
+Module2.bas,sub054E,Sub,522,Sub sub054E (),560,
+Module2.bas,sub0565,Sub,562,Sub sub0565 (p013E As Integer ' 41),642,fn0360;fn0380;fn0418;sub0578
+Module2.bas,sub0595,Sub,644,Sub sub0595 (),717,fn034F
+Module2.bas,sub05AA,Sub,719,Sub sub05AA (),795,fn034F
+Module2.bas,sub04A3,Sub,797,Sub sub04A3 (),842,fn034F
+Module2.bas,sub05C2,Sub,844,Sub sub05C2 (),911,
+Module2.bas,sub05D8,Sub,913,Sub sub05D8 (),916,
+Module2.bas,sub05F6,Sub,918,Sub sub05F6 (),947,fn19DC;sub0607;sub0618;sub062D;sub063F;sub064E
+Module2.bas,fn0662,Function,949,"Function fn0662 (p01F0 As Integer ' 41, p01F2 ' 40) As Integer ' 1",1041,fn034F;fn0360;fn0679
+Module2.bas,fn0679,Function,1043,Function fn0679 (ByVal p0216 As String ' 47) As Long ' 2,1050,
+Module2.bas,sub068A,Sub,1052,Sub sub068A (p021A As Single ' 43),1056,
+Module2.bas,sub0695,Sub,1058,Sub sub0695 (),1163,
+Module2.bas,sub06A9,Sub,1165,Sub sub06A9 (),1168,
+Module2.bas,sub06B4,Sub,1170,Sub sub06B4 (),1274,fn034F;fn0360;fn03D0;fn03F1;fn0403;fn04CD;fn1C2E;sub046B;sub04A3;sub0536;sub054E;sub0565;sub0595;sub05AA;sub05C2;sub06C6;sub06D7
+Module2.bas,sub06E8,Sub,1276,Sub sub06E8 (p026C As Integer ' 41),1477,fn0425;fn09F6;sub04FC;sub06FE
+Module2.bas,sub071B,Sub,1479,Sub sub071B (p02A6 As Integer ' 41),1678,fn0380;fn0425;fn09F6;sub04FC;sub0730
+Module2.bas,sub074E,Sub,1680,Sub sub074E (p02D0 As String ' 47),1743,
+Module2.bas,sub0760,Sub,1745,"Sub sub0760 (p02F8 As Form ' 49, p02FC As T5E14 ' 4A)",1845,
+Module2.bas,sub0775,Sub,1847,Sub sub0775 (),1855,
+Module2.bas,sub0784,Sub,1857,Sub sub0784 (p031E As Form ' 49),1893,
+Module2.bas,sub0792,Sub,1895,Sub sub0792 (p0326 As Form ' 49),1902,
+Module2.bas,sub07A0,Sub,1904,Sub sub07A0 (p0328 As Integer ' 41),1910,
+Module2.bas,sub07B3,Sub,1912,"Sub sub07B3 (p032C As Form ' 49, p0330 As ? ' 49)",1918,
+Module2.bas,sub07C5,Sub,1920,"Sub sub07C5 (p033C As Form ' 49, p0340 As T5E14 ' 4A)",1977,
+Module2.bas,sub07D4,Sub,1979,"Sub sub07D4 (p0352 As Form ' 49, p0356 As ? ' 49)",1982,
+Module2.bas,sub07E2,Sub,1984,Sub sub07E2 (p0358 As Single ' 43),1994,sub05D8
+Module2.bas,sub07ED,Sub,1996,Sub sub07ED (p0360 As Form ' 49),2019,sub02FE;sub0760
+Module2.bas,sub0802,Sub,2021,Sub sub0802 (p036E As Form ' 49),2084,sub02FE
+Module3.bas,sub08E1,Sub,49,Sub sub08E1 (ByVal pv007A As Integer ' 81),59,sub085B
+Module3.bas,fn0AD3,Function,61,Function fn0AD3 (p008C As Integer ' 41) As Long ' 2,71,
+Module3.bas,fn0AE8,Function,73,Function fn0AE8 (p0098 As T5810 ' 4A) As Integer ' 1,81,
+Module3.bas,fn0B01,Function,83,"Function fn0B01 (p00A0 As Integer ' 41, p00A2 As Integer ' 41) As Integer ' 1",91,
+Module3.bas,sub08F5,Sub,93,Sub sub08F5 (ByVal pv00A4 As Integer ' 81),134,fn0992;fn0A0B;fn0A34;fn0AE8;sub085B;sub08E1
+Module3.bas,fn0B1B,Function,136,Function fn0B1B (p00C6 As T5810 ' 4A) As Long ' 2,180,fn0380;fn0418;fn0AD3;fn0B01
+Module3.bas,sub096E,Sub,182,Sub sub096E (),228,sub04FC
+Module3.bas,fn0992,Function,230,Function fn0992 (p00FE As Integer ' 41) As Integer ' 1,248,
+Module3.bas,fn09A4,Function,250,"Function fn09A4 (p0106 As Integer ' 41, p0108 As Integer ' 41) As Integer ' 1",341,sub04FC;sub09B8
+Module3.bas,sub09CC,Sub,343,Sub sub09CC (),376,fn09A4;sub085B;sub09DE
+Module3.bas,fn09F6,Function,378,Function fn09F6 () As Integer ' 1,401,fn0326
+Module3.bas,fn0A0B,Function,403,Function fn0A0B (ByVal pv0158 As Integer ' 81) As Integer ' 1,443,fn09F6;sub085B;sub096E
+Module3.bas,sub0A1D,Sub,445,Sub sub0A1D (),603,fn0380;fn0418;fn0A34;fn0ABD;fn0AD3;fn0B01;fn11D4;sub04FC;sub085B
+Module3.bas,sub087C,Sub,605,"Sub sub087C (p0188 As Integer ' 41, p018A As Integer ' 41)",717,fn0380;fn0418;fn0A34;fn0ABD;fn11D4;sub04FC;sub085B
+Module3.bas,fn0A34,Function,719,"Function fn0A34 (p01A4 ' 40, p01A6 ' 40) As Long ' 2",730,fn0B01
+Module3.bas,sub0A49,Sub,732,Sub sub0A49 (),736,
+Module3.bas,sub0980,Sub,738,Sub sub0980 (),1493,fn0380;fn0418;fn04ED;fn0992;fn09A4;fn0A0B;fn0AD3;fn0AE8;fn0C3B;fn0F88;sub0941;sub0956;sub09CC;sub0A1D;sub0A64;sub0A7C;sub0A91;sub0AA6
+Module3.bas,fn0ABD,Function,1495,"Function fn0ABD (p0266 ' 40, p0268 ' 40, p026A ' 40) As Integer ' 1",1504,fn0B01
+Module3.bas,sub0835,Sub,1506,Sub sub0835 (p026E As Integer ' 41),1897,fn0380;fn0418;fn0992;fn0A0B;fn0A34;fn0ABD;fn0AD3;fn0AE8;fn0B01;fn11D4;sub0578;sub0848;sub085B;sub086D;sub087C;sub0894;sub08A9;sub08B9;sub08D1;sub08E1;sub08F5;sub0908;sub091E;sub0930;sub0941;sub0956;sub096E;sub0980
+Module4.bas,sub0CDF,Sub,169,"Sub sub0CDF (ByVal pv00A8 As Integer ' 81, p00AA As Integer ' 41, p00AC As Integer ' 41, p00AE As Single ' 43)",178,sub0F11
+Module4.bas,fn0FF5,Function,180,Function fn0FF5 (p00C8 As Integer ' 41) As Integer ' 1,244,fn0380;sub1005
+Module4.bas,sub1019,Sub,246,Sub sub1019 (ByVal pv00F4 As Integer ' 81),517,fn0380;fn0418;fn0DCD;fn0DEE;fn1173;fn11D4;sub07E2;sub09DE;sub0BBA;sub0BCD;sub0C53;sub0CB7;sub0CDF;sub0CF3;sub0D08;sub102F;sub1043
+Module4.bas,fn0B6C,Function,519,"Function fn0B6C (ByVal pv016E As Integer ' 81, p0170 As Integer ' 41, p0172 As Integer ' 41) As Integer ' 1",602,fn0DCD;fn1235;sub04FC;sub085B;sub0A64;sub0B82;sub0B9B;sub0BAA;sub0BBA;sub0BCD;sub0BDE;sub0BF1
+Module4.bas,sub0C00,Sub,604,Sub sub0C00 (ByVal pv0190 As Integer ' 81),660,fn0B6C;fn0D78;fn1235;fn131D;sub085B;sub0B82
+Module4.bas,sub0A91,Sub,662,Sub sub0A91 (p01AA ' 40),740,fn0D4D;fn0DCD;fn0DDC;fn0E38;sub06FE;sub085B;sub0B9B;sub0BAA;sub0BBA;sub0BCD;sub0BDE;sub0BF1;sub0C15;sub0C29
+Module4.bas,fn0C3B,Function,742,"Function fn0C3B (p01C4 As Integer ' 41, p01C6 As Integer ' 41) As Integer ' 1",751,
+Module4.bas,sub0C53,Sub,753,Sub sub0C53 (),787,fn09A4;fn0C3B;fn0DBF;fn0DDC;fn0F88;sub0980;sub0B9B;sub0BAA;sub0BBA;sub0BCD;sub0BF1;sub0C29;sub0C61
+Module4.bas,sub0C79,Sub,789,Sub sub0C79 (p01D6 ' 40),799,fn0F88
+Module4.bas,sub0C8A,Sub,801,Sub sub0C8A (ByVal pv01E4 As Integer ' 81),1354,fn0380;fn0AD3;fn0AE8;fn0D64;fn0DAB;fn0DCD;fn0DEE;fn0E4A;fn0E5F;fn0EEF;fn0FF5;fn1173;fn1235;fn1286;fn131D;sub04FC;sub07E2;sub085B;sub08A9;sub091E;sub09DE;sub0B82;sub0BBA;sub0BCD;sub0C53;sub0CA0;sub0CB7;sub0CCC;sub0CDF;sub0CF3;sub0D08;sub0D1D;sub0D35
+Module4.bas,fn0D4D,Function,1356,Function fn0D4D (p0256 ' 40) As Integer ' 1,1984,fn0380;fn0AD3;fn0AE8;fn0DFC;fn0F88;fn12AF;sub085B;sub09DE;sub0B9B;sub0C79
+Module4.bas,sub0D08,Sub,1986,Sub sub0D08 (ByVal pv0352 As Integer ' 81),2013,fn0C3B;sub0980
+Module4.bas,fn0D64,Function,2015,"Function fn0D64 (ByVal pv035E As Integer ' 81, p0360 As Integer ' 41, p0362 As Integer ' 41) As Integer ' 1",2047,fn1205
+Module4.bas,fn0D78,Function,2049,"Function fn0D78 (ByVal pv0372 As Integer ' 81, p0374 As Integer ' 41) As Single ' 3",2069,fn131D
+Module4.bas,fn0D92,Function,2071,"Function fn0D92 (ByVal pv037E As Integer ' 81, p0380 ' 40) As String ' 7",2098,fn0D78
+Module4.bas,fn0DAB,Function,2100,Function fn0DAB (ByVal pv0388 As Integer ' 81) As Integer ' 1,2119,
+Module4.bas,fn0DBF,Function,2121,Function fn0DBF () As Long ' 2,2183,fn036D;fn0F88;sub04FC;sub07E2;sub08A9
+Module4.bas,fn0DCD,Function,2185,Function fn0DCD (p03AC As Integer ' 41) As Integer ' 1,2204,
+Module4.bas,fn0DDC,Function,2206,Function fn0DDC () As Integer ' 1,2210,
+Module4.bas,fn0DEE,Function,2212,"Function fn0DEE (p03B6 As Integer ' 41, p03B8 As Integer ' 41, p03BA As Integer ' 41, ByVal pv03BC As Integer ' 81, ByVal pv03BE As Single ' 83) As Integer ' 1",2258,
+Module4.bas,fn0DFC,Function,2260,Function fn0DFC (p03D4 As T4E8B ' 4A) As Single ' 3,2262,
+Module4.bas,fn0E0D,Function,2264,Function fn0E0D (p03D8 As Integer ' 41) As Integer ' 1,2272,
+Module4.bas,fn0E23,Function,2274,"Function fn0E23 (ByVal pv03E0 As Integer ' 81, p03E2 As Integer ' 41, p03E6 As T4E8B ' 4A) As String ' 7",2360,fn0380
+Module4.bas,fn0E38,Function,2362,Function fn0E38 (p03FA As Integer ' 41) As Integer ' 1,2384,sub0C79
+Module4.bas,fn0E4A,Function,2386,"Function fn0E4A (p0406 As Integer ' 41, p0408 As Integer ' 41, p040A As Integer ' 41) As Integer ' 1",2457,fn0380;fn131D;sub085B
+Module4.bas,fn0E5F,Function,2459,"Function fn0E5F (ByVal pv0420 As Integer ' 81, p0422 As Integer ' 41, p0424 As Integer ' 41, p0426 As Integer ' 41, ByVal pv0428 As Integer ' 81) As Integer ' 1",2583,fn0380;fn1417;sub04FC
+Module4.bas,sub0E72,Sub,2585,Sub sub0E72 (),2586,
+Module4.bas,sub0E85,Sub,2588,"Sub sub0E85 (ByVal pv0442 As Integer ' 81, p0444 As Integer ' 41)",3413,fn036D;fn0380;fn0418;fn0AD3;fn0AE8;fn0DCD;fn0DEE;fn0E23;fn0E5F;fn0FF5;fn10D1;fn1121;fn1139;fn11D4;fn1235;fn131D;fn13A8;sub047C;sub04FC;sub06FE;sub07E2;sub085B;sub08A9;sub091E;sub09DE;sub0B82;sub0BBA;sub0BCD;sub0C53;sub0CA0;sub0CB7;sub0CCC;sub0D08;sub0D1D;sub0D35;sub0E99;sub0EAE;sub0EBF;sub0EDA
+Module4.bas,fn0EEF,Function,3415,Function fn0EEF () As Variant ' 6,3428,
+Module4.bas,sub0F01,Sub,3430,Sub sub0F01 (ByVal pv04F2 As Integer ' 81),3877,fn0380;fn0992;fn0A34;fn0AD3;fn0AE8;fn0DBF;fn0DCD;fn0F88;fn1121;fn11D4;fn129A;fn12EF;sub04FC;sub0730;sub07E2;sub085B;sub086D;sub0894;sub08A9;sub08B9;sub08E1;sub0908;sub091E;sub0980;sub09DE;sub0B82;sub0BAA;sub0EAE;sub0EDA;sub0F11;sub0F29;sub0F38;sub0F4C;sub0F61;sub0F74
+Module4.bas,sub0D1D,Sub,3879,"Sub sub0D1D (ByVal pv05AE As Integer ' 81, p05B0 As Integer ' 41, p05B2 As Integer ' 41)",3901,sub047C;sub08A9
+Module4.bas,fn0F88,Function,3903,Function fn0F88 (p05BA As Integer ' 41) As Integer ' 1,3931,
+Module4.bas,sub06FE,Sub,3933,"Sub sub06FE (p05D0 As T4E8B ' 4A, p05D2 As Integer ' 41, p05D4 As Integer ' 41, p05D6 As Integer ' 41, p05D8 As Integer ' 41)",4001,fn0380;fn121C;fn1BD5;sub0F9A;sub0FB0;sub0FCB
+Module4.bas,sub0C29,Sub,4003,Sub sub0C29 (p05F8 ' 40),4005,
+Module4.bas,sub06C6,Sub,4007,Sub sub06C6 (),4031,
+Module4.bas,sub06D7,Sub,4033,Sub sub06D7 (),4057,
+Module4.bas,sub0BAA,Sub,4059,Sub sub0BAA (),4191,fn0EEF;fn11D4;sub04FC
+Module4.bas,sub0BCD,Sub,4193,Sub sub0BCD (),4232,fn0DCD;fn0EEF;sub04FC;sub0BF1
+Module4.bas,sub0C61,Sub,4234,Sub sub0C61 (p064A As Integer ' 41),4286,sub0578
+Module4.bas,sub0AA6,Sub,4288,Sub sub0AA6 (),4298,
+Module4.bas,sub0BBA,Sub,4300,Sub sub0BBA (ByVal pv065C As Integer ' 81),4428,fn0380;fn0C3B;fn0E23;fn0EEF;sub04FC;sub0B9B
+Module4.bas,sub0B9B,Sub,4430,Sub sub0B9B (),4468,fn0EEF
+Module4.bas,sub0FE1,Sub,4470,Sub sub0FE1 (),4481,fn0EEF
+Module4.bas,fn0B4E,Function,4483,Function fn0B4E () As Integer ' 1,4500,fn0380;sub04FC
+Module6.bas,Main,Sub,274,Sub Main (),320,fn1A08;fn1A1B;sub038D;sub03E3;sub05F6;sub06B4;sub096E;sub16EB;sub170B;sub1725;sub173B
+Module6.bas,sub0EAE,Sub,322,"Sub sub0EAE (p00C0 As Integer ' 41, p00C2 As Integer ' 41, ByVal pv00C4 As Integer ' 81, p00C6 As Integer ' 41)",391,sub04FC;sub06E8;sub071B;sub085B;sub08A9
+Module6.bas,fn114E,Function,393,Function fn114E (p00E0 As Long ' 42) As Integer ' 1,409,sub08A9
+Module6.bas,fn115C,Function,411,"Function fn115C (p00E6 As Integer ' 41, p00EA As T5810 ' 4A) As Integer ' 1",422,fn0380
+Module6.bas,fn1173,Function,424,"Function fn1173 (ByVal pv00FA As Integer ' 81, ByVal pv00FC As Integer ' 81, p00FE ' 40, p0100 As Integer ' 41) As Integer ' 1",1325,fn0380;fn0418;fn09A4;fn0A0B;fn0A34;fn0ABD;fn0AD3;fn0AE8;fn0B01;fn0C3B;fn0DCD;fn0E5F;fn0EEF;fn10BA;fn10D1;fn10E5;fn1235;fn13D7;fn1417;fn142F;fn1448;fn164C;fn16A0;sub04FC;sub07E2;sub0835;sub0848;sub085B;sub086D;sub0894;sub08A9;sub08B9;sub091E;sub0930;sub0941;sub0956;sub0980;sub0A7C;sub0B82;sub0BAA;sub0BBA;sub0BCD;sub0C53;sub0CB7;sub0CDF;sub0CF3;sub0D08;sub0D1D;sub0EAE;sub0F29;sub0F38;sub1005;sub102F;sub1043;sub1187
+Module6.bas,fn10BA,Function,1327,"Function fn10BA (ByVal pv0254 As Integer ' 81, p0258 As T4E8B ' 4A, p025A As Integer ' 41, p025C As Integer ' 41) As Integer ' 1",1348,fn121C;sub0B82
+Module6.bas,fn10D1,Function,1350,Function fn10D1 (ByVal pv0264 As Integer ' 81) As Integer ' 1,1359,
+Module6.bas,fn10E5,Function,1361,"Function fn10E5 (ByVal pv026C As Integer ' 81, ByVal pv026E As Integer ' 81, p0270 As Integer ' 41, p0272 As Integer ' 41) As Integer ' 1",1499,fn0380;fn0AD3;fn0AE8;fn0EEF;fn142F;fn1448;sub04FC;sub085B;sub087C;sub0BBA;sub0BCD;sub0BDE;sub102F
+Module6.bas,sub10F9,Sub,1501,"Sub sub10F9 (ByVal pv0296 As Integer ' 81, p0298 As Integer ' 41, p029A ' 40)",1510,sub08A9;sub091E;sub0930
+Module6.bas,fn110D,Function,1512,"Function fn110D (ByVal pv02A0 As Integer ' 81, p02A2 As Integer ' 41, p02A4 As Integer ' 41, p02A6 As Integer ' 41) As Variant ' 6",1596,fn030F;fn0380;sub085B
+Module6.bas,fn1121,Function,1598,Function fn1121 (p02CA As Integer ' 41) As Integer ' 1,1602,
+Module6.bas,fn1139,Function,1604,"Function fn1139 (ByVal pv02CE As Integer ' 81, p02D0 As Integer ' 41) As Integer ' 1",1632,fn110D;fn12EF;sub04FC;sub085B;sub0F74
+Module6.bas,sub0CF3,Sub,1634,Sub sub0CF3 (p02DA As Integer ' 41),1653,fn1286;sub085B
+Module6.bas,fn11A1,Function,1655,Function fn11A1 (ByVal pv02E4 As Integer ' 81) As Integer ' 1,1701,fn04ED;fn110D;sub047C;sub086D;sub08A9;sub0EAE;sub0F74
+Module6.bas,sub04FC,Sub,1703,Sub sub04FC (ByVal p0302 As String ' 47),1719,sub085B
+Module6.bas,sub0F74,Sub,1721,"Sub sub0F74 (ByVal pv0308 As Integer ' 81, p030A As Integer ' 41)",1883,fn110D;sub047C;sub085B;sub0894;sub08A9;sub0F61;sub11B9
+Module6.bas,sub11B9,Sub,1885,Sub sub11B9 (ByVal pv0324 As Integer ' 81),1923,fn0380;fn0418;sub08A9;sub08B9
+Module6.bas,sub0F29,Sub,1925,Sub sub0F29 (ByVal pv0330 As Integer ' 81),1930,fn1338
+Module6.bas,fn11D4,Function,1932,"Function fn11D4 (ByVal pv0336 As Integer ' 81, p0338 As Integer ' 41, p033A As Integer ' 41) As Single ' 3",1999,
+Module6.bas,fn11E9,Function,2001,"Function fn11E9 (ByVal pv0362 As Integer ' 81, p0364 ' 40) As Integer ' 1",2024,fn11D4;fn1305;fn1354
+Module6.bas,fn1205,Function,2026,Function fn1205 () As Integer ' 1,2039,
+Module6.bas,sub0CCC,Sub,2041,Sub sub0CCC (ByVal pv0374 As Integer ' 81),2098,fn1235;sub04FC;sub085B;sub0B82
+Module6.bas,fn121C,Function,2100,"Function fn121C (ByVal pv037C As Integer ' 81, p037E As Integer ' 41, p0380 As Integer ' 41, p0382 As Integer ' 41) As Integer ' 1",2122,fn12AF
+Module6.bas,fn1235,Function,2124,"Function fn1235 (p0390 As Integer ' 41, p0392 As Integer ' 41) As String ' 7",2130,
+Module6.bas,fn124B,Function,2132,Function fn124B (p0398 As T5810 ' 4A) As Long ' 2,2152,
+Module6.bas,fn125C,Function,2154,Function fn125C (p03AE As T5810 ' 4A) As Long ' 2,2169,
+Module6.bas,fn126E,Function,2171,Function fn126E (p03C4 As Integer ' 41) As Variant ' 6,2484,
+Module6.bas,fn1286,Function,2486,Function fn1286 (p03C8 As Integer ' 41) As String ' 7,2492,
+Module6.bas,fn129A,Function,2494,"Function fn129A (ByVal pv03CE As Integer ' 81, p03D0 As Integer ' 41) As Variant ' 6",2514,fn12AF
+Module6.bas,fn12AF,Function,2516,Function fn12AF (ByVal pv03DA As Integer ' 81) As Single ' 3,2535,fn131D;sub04FC
+Module6.bas,fn12C4,Function,2537,Function fn12C4 (p03E6 As String ' 47) As Integer ' 1,2565,
+Module6.bas,fn12D6,Function,2567,Function fn12D6 (p03F2 As Integer ' 41) As String ' 7,2578,
+Module6.bas,fn12EF,Function,2580,"Function fn12EF (p03F6 As Integer ' 41, p03F8 As Integer ' 41, p03FA As Integer ' 41, p03FC As Integer ' 41) As String ' 7",2607,
+Module6.bas,fn1305,Function,2609,Function fn1305 (p0408 As Variant ' 46) As Single ' 3,2637,
+Module6.bas,fn131D,Function,2639,Function fn131D (ByVal pv041C As Integer ' 81) As Integer ' 1,2648,
+Module6.bas,fn1338,Function,2650,Function fn1338 (ByVal pv0424 As Integer ' 81) As Integer ' 1,2652,
+Module6.bas,fn1354,Function,2654,Function fn1354 (p0428 As Variant ' 46) As Single ' 3,2684,
+Module6.bas,fn136C,Function,2686,Function fn136C (ByVal pv043A As Integer ' 81) As String ' 7,2692,
+Module6.bas,fn137E,Function,2694,"Function fn137E (p043E As Integer ' 41, p0440 As Integer ' 41) As Integer ' 1",2722,
+Module6.bas,fn1397,Function,2724,Function fn1397 (p044E As T5810 ' 4A) As Long ' 2,2728,fn124B
+Module6.bas,fn13A8,Function,2730,Function fn13A8 (ByVal pv0452 As Integer ' 81) As Integer ' 1,2734,
+Module6.bas,fn13C0,Function,2736,Function fn13C0 (p0458 As Integer ' 41) As Variant ' 6,2750,
+Module6.bas,fn13D7,Function,2752,"Function fn13D7 (p0464 As Integer ' 41, p0466 As Integer ' 41) As Integer ' 1",2804,sub085B
+Module6.bas,sub0894,Sub,2806,Sub sub0894 (ByVal pv0476 As Integer ' 81),2849,fn0380;fn0EEF;sub0BBA;sub13F1
+Module6.bas,fn13FF,Function,2851,"Function fn13FF (ByVal pv047C As Integer ' 81, p047E As Integer ' 41) As Integer ' 1",2866,
+Module6.bas,fn1417,Function,2868,"Function fn1417 (ByVal pv0488 As Integer ' 81, p048A As Integer ' 41) As Integer ' 1",2882,
+Module6.bas,fn142F,Function,2884,"Function fn142F (ByVal pv0494 As Integer ' 81, p0496 As Integer ' 41) As Integer ' 1",2922,
+Module6.bas,fn1448,Function,2924,Function fn1448 (p04AA As Integer ' 41) As Integer ' 1,2938,
+Module6.bas,sub145F,Sub,2940,"Sub sub145F (p04B0 As Integer ' 41, p04B2 As Integer ' 41, p04B4 As Integer ' 41, p04B6 As Long ' 42)",3023,fn036D;fn1121;fn129A;fn12EF;sub0730;sub085B;sub08A9;sub0EDA;sub0F61
+Module6.bas,sub13F1,Sub,3025,Sub sub13F1 (ByVal pv04C8 As Integer ' 81),3030,
+Module6.bas,sub0930,Sub,3032,Sub sub0930 (ByVal pv04CC As Integer ' 81),3150,fn036D;fn04ED;fn09A4;fn10A3;fn114E;fn11A1;fn131D;fn13D7;sub048C;sub04FC;sub0578;sub085B;sub086D;sub08A9;sub091E;sub0B82;sub0EAE;sub0EBF;sub0F38;sub1476
+Module6.bas,sub1476,Sub,3152,Sub sub1476 (ByVal pv04EA As Integer ' 81),3173,fn04ED;fn09A4;sub0835;sub08A9;sub096E;sub0980
+Module6.bas,sub148A,Sub,3175,Sub sub148A (),3203,sub0894;sub0930;sub0F38
+Module6.bas,fn14A0,Function,3205,Function fn14A0 (p0506 As T5810 ' 4A) As Integer ' 1,3211,fn124B;fn125C
+Module6.bas,sub085B,Sub,3213,Sub sub085B (p0508 As String ' 47),3226,sub09DE
+Module6.bas,sub14B4,Sub,3228,Sub sub14B4 (),3262,
+Module6.bas,sub09B8,Sub,3264,"Sub sub09B8 (p0530 As Control ' 49, p0532 As Integer ' 41, p0534 As Integer ' 41, p0536 As String ' 47, p0538 As Integer ' 41)",3299,
+Module6.bas,fn14CB,Function,3301,"Function fn14CB (p054E ' 40, p0550 ' 40) As Integer ' 1",4185,fn0380;fn03BD;fn0418;fn04CD;fn0A0B;fn0A34;fn0ABD;fn0AD3;fn0AE8;fn0B1B;fn0DCD;fn0EEF;fn10A3;fn10BA;fn10D1;fn10E5;fn1173;fn11D4;fn1235;fn1338;fn1448;fn1589;fn16A0;sub04DC;sub04FC;sub0835;sub0848;sub085B;sub08A9;sub08F5;sub0930;sub0980;sub09DE;sub0A7C;sub0B82;sub0BBA;sub0BCD;sub0BDE;sub0C53;sub0D08;sub0F01;sub0F38;sub0F4C;sub0F61;sub0FE1;sub145F;sub14E0;sub14F4;sub150A;sub151C;sub152F;sub1547;sub155A;sub1577
+Module6.bas,fn1589,Function,4187,"Function fn1589 (p064A As Integer ' 41, p064C As Integer ' 41) As Integer ' 1",4260,sub04FC
+Module6.bas,sub15A1,Sub,4262,Sub sub15A1 (ByVal pv0662 As Integer ' 81),4283,sub085B;sub0F61
+Module6.bas,sub0730,Sub,4285,"Sub sub0730 (ByVal pv0668 As Integer ' 81, ByVal pv066A As Integer ' 81, ByVal pv066C As Integer ' 81, p066E As Integer ' 41, p0670 As Integer ' 41)",4340,fn1BD5;sub0F9A;sub0FB0;sub0FCB
+Module6.bas,sub0EDA,Sub,4342,"Sub sub0EDA (ByVal pv0686 As Integer ' 81, p0688 As Integer ' 41)",4369,sub04FC;sub0F4C;sub0F61;sub0F74
+Module6.bas,sub048C,Sub,4371,Sub sub048C (ByVal pv068E As Integer ' 81),4385,sub0894;sub0D1D
+Module6.bas,sub15BE,Sub,4387,"Sub sub15BE (ByVal pv0692 As Integer ' 81, ByVal pv0694 As Integer ' 81, p0698 As Form ' 49, p069A As Integer ' 41)",4417,sub04FC
+Module6.bas,sub15D6,Sub,4419,Sub sub15D6 (),4465,fn03BD
+Module6.bas,sub047C,Sub,4467,"Sub sub047C (ByVal pv06A6 As Integer ' 81, p06A8 As Integer ' 41)",4560,sub04FC
+Module6.bas,sub091E,Sub,4562,"Sub sub091E (ByVal pv06AE As Integer ' 81, p06B0 As Integer ' 41)",4603,fn0418;fn0A34;fn0ABD;fn0F88;sub04FC;sub0578;sub086D
+Module6.bas,sub150A,Sub,4605,"Sub sub150A (p06BC As Integer ' 41, p06BE As Integer ' 41, p06C0 As Integer ' 41, p06C2 As Integer ' 41, p06C4 As Integer ' 41, p06C6 As Integer ' 41)",4643,sub04FC
+Module6.bas,sub0F4C,Sub,4645,Sub sub0F4C (p06CE As Integer ' 41),4682,fn12EF;fn142F;sub04FC
+Module6.bas,sub15EC,Sub,4684,"Sub sub15EC (p06DA As Control ' 49, ByVal p06DC As String ' 47)",4688,
+Module6.bas,sub0F38,Sub,4690,Sub sub0F38 (),4719,fn1235;sub04FC
+Module6.bas,sub0B82,Sub,4721,Sub sub0B82 (ByVal pv06DE As Integer ' 81),4778,fn03BD;sub04FC;sub085B;sub0F38
+Module6.bas,sub151C,Sub,4780,"Sub sub151C (p06F2 As Integer ' 41, p06F4 As Integer ' 41, p06F6 As Integer ' 41, p06F8 As Integer ' 41)",5380,fn030F;fn036D;fn0380;fn09A4;fn0D92;fn11D4;fn11E9;fn124B;fn125C;fn12D6;fn12EF;fn13FF;fn1417;fn142F;fn1BF0;sub047C;sub04FC;sub085B;sub09B8
+Module6.bas,sub0F61,Sub,5382,"Sub sub0F61 (ByVal pv07A6 As Integer ' 81, ByVal pv07A8 As Integer ' 81, ByVal pv07AA As Integer ' 81)",5520,fn12EF;sub04FC;sub085B
+Module6.bas,sub1602,Sub,5522,Sub sub1602 (),5551,
+Module6.bas,sub0EBF,Sub,5553,"Sub sub0EBF (ByVal pv07C8 As Integer ' 81, p07CA As Integer ' 41, p07CC As Integer ' 41)",5581,sub04FC;sub085B
+Module6.bas,sub08A9,Sub,5583,"Sub sub08A9 (p07D0 As Integer ' 41, p07D2 As Integer ' 41)",5671,fn036D;fn03BD;fn126E;fn1338;sub04FC;sub1617
+Module6.bas,sub1631,Sub,5673,"Sub sub1631 (p07E2 As Integer ' 41, p07E4 As Integer ' 41, p07E6 As Integer ' 41)",5681,sub0CCC
+Module6.bas,sub0CA0,Sub,5683,"Sub sub0CA0 (ByVal pv07E8 As Integer ' 81, p07EA As Integer ' 41)",5699,sub085B
+Module6.bas,sub1187,Sub,5701,"Sub sub1187 (ByVal pv07EE As Integer ' 81, p07F0 As Integer ' 41)",5728,sub04FC;sub0EDA;sub0F4C;sub0F61
+Module6.bas,sub152F,Sub,5730,Sub sub152F (p07F6 As Integer ' 41),5748,sub08B9
+Module6.bas,fn164C,Function,5750,"Function fn164C (ByVal p0800 As String ' 47, p0802 As String ' 47) As Variant ' 6",5924,fn0380;fn0418;fn0A0B;fn0A34;fn0ABD;fn0AD3;fn0AE8;sub04FC;sub0835;sub085B;sub086D;sub091E;sub0930;sub0956;sub0980
+Module6.bas,fn10A3,Function,5926,Function fn10A3 (ByVal pv0822 As Integer ' 81) As Integer ' 1,5983,fn04ED;fn11A1;sub0578;sub085B;sub086D;sub08A9;sub096E;sub0EAE;sub0EBF
+Module6.bas,sub165F,Sub,5985,Sub sub165F (),6029,fn0360;fn03F1;fn04ED;fn179B;sub04DC;sub085B;sub1673
+Module6.bas,sub1673,Sub,6031,Sub sub1673 (),6042,sub15D6
+Module6.bas,sub0A7C,Sub,6044,"Sub sub0A7C (p0844 As Integer ' 41, p0846 As Integer ' 41, p0848 As Integer ' 41)",6072,sub04FC;sub085B
+Module6.bas,sub168B,Sub,6074,Sub sub168B (),6093,
+Module6.bas,sub08B9,Sub,6095,Sub sub08B9 (p085A As Integer ' 41),6128,sub09B8
+Module6.bas,sub1617,Sub,6130,"Sub sub1617 (ByVal pv0868 As Integer ' 81, p086A As Integer ' 41)",6149,fn036D;fn124B
+Module6.bas,sub1577,Sub,6151,"Sub sub1577 (ByVal pv086E As Integer ' 81, p0870 As Integer ' 41)",6310,fn0EEF;fn10E5;fn110D;fn1139;fn1173;fn1448;sub047C;sub04FC;sub085B;sub086D;sub08A9;sub0B9B;sub0BCD;sub0BDE;sub0EAE;sub0EBF;sub1043;sub1187;sub1602
+Module6.bas,fn16A0,Function,6312,"Function fn16A0 (ByVal p0888 As String ' 47, ByVal p088A As String ' 47, ByVal p088C As String ' 47, ByVal p088E As String ' 47) As String ' 7",6334,
+Module6.bas,fn16B8,Function,6336,Function fn16B8 (p0892 As String ' 47) As Integer ' 1,6364,sub085B
+Module6.bas,sub16CB,Sub,6366,Sub sub16CB (),6407,fn04ED;sub05F6;sub0695;sub085B;sub0BDE;sub148A;sub15D6;sub165F;sub1673;sub168B;sub16D8
+Module6.bas,sub16EB,Sub,6409,Sub sub16EB (),6415,
+Module6.bas,sub0F11,Sub,6417,"Sub sub0F11 (ByVal pv08AA As Integer ' 81, p08AC As Long ' 42)",6449,fn124B;sub085B;sub08A9
+Module7.bas,sub0908,Sub,37,Sub sub0908 (),105,fn0A0B;sub04DC;sub04FC;sub085B;sub091E;sub096E;sub14E0;sub1776
+Module7.bas,fn17AE,Function,107,Function fn17AE () As Integer ' 1,125,sub04FC
+Module7.bas,sub0BDE,Sub,127,Sub sub0BDE (p0038 As Integer ' 41),194,fn0EEF;fn10E5;sub102F;sub1577
+Module7.bas,sub16D8,Sub,196,Sub sub16D8 (),276,fn04CD;sub04DC;sub085B;sub14F4
+Module7.bas,sub0A64,Sub,278,Sub sub0A64 (p008A As Integer ' 41),371,sub04FC;sub0930;sub0E85
+Module7.bas,sub14F4,Sub,373,Sub sub14F4 (),380,fn03BD;sub0775;sub08A9;sub0CCC
+Module7.bas,fn179B,Function,382,Function fn179B (p00C0 As Integer ' 41) As Integer ' 1,439,sub04FC
+Module7.bas,sub0848,Sub,441,Sub sub0848 (p00D0 As Integer ' 41),460,
+Module7.bas,sub102F,Sub,462,"Sub sub102F (p00DA As Integer ' 41, p00DC As Integer ' 41)",480,
+Module7.bas,sub0C15,Sub,482,Sub sub0C15 (),490,
+Module7.bas,sub155A,Sub,492,Sub sub155A (p00E2 As Integer ' 41),594,fn0DCD;fn0EEF;sub04FC;sub0941;sub0A64;sub0BBA;sub0BCD;sub0BDE;sub0C8A;sub0F01;sub0FE1;sub1019
+Module7.bas,sub0BF1,Sub,596,Sub sub0BF1 (),598,
+Module7.bas,sub178B,Sub,600,Sub sub178B (p00FA As Integer ' 41),647,fn03BD;fn0EEF;sub04FC;sub0792;sub08B9;sub0BAA;sub0BBA;sub0BCD;sub0F4C;sub14E0;sub1617
+Module7.bas,sub14E0,Sub,649,Sub sub14E0 (p0118 As Integer ' 41),694,fn03BD;sub04FC;sub08A9;sub08B9;sub0B82;sub0F4C;sub0F61;sub1602
+Module7.bas,sub1776,Sub,696,Sub sub1776 (),699,sub08A9
+Module7.bas,sub0941,Sub,701,Sub sub0941 (ByVal p0138 As String ' 47),703,
+Module7.bas,sub0956,Sub,705,Sub sub0956 (),732,fn0992;fn0AE8
+Module7.bas,sub1547,Sub,734,Sub sub1547 (ByVal pv014E As Integer ' 81),755,fn03BD;fn0EEF;sub04DC;sub085B;sub14E0;sub1776;sub178B
+Module8.bas,fn192B,Function,26,"Function fn192B (ByVal pv004E As Variant ' 86, ByVal pv0052 As Variant ' 86, ByVal pv0056 As Variant ' 86, ByVal pv005A As Variant ' 86, ByVal pv0062 As Variant ' 86, ByVal pv0066 As Single ' 83, ByVal pv0068 As Single ' 83) As Variant ' 6",127,
+Module8.bas,fn193D,Function,129,"Function fn193D (ByVal pv00C6 As Integer ' 81, ByVal pv00C8 As Integer ' 81, ByVal pv00CA As Integer ' 81, ByVal pv00CC As Integer ' 81, ByVal pv00D0 As Integer ' 81, ByVal pv00D2 As Integer ' 81, ByVal pv00D4 As Integer ' 81) As Variant ' 6",204,
+Module9.bas,sub1A31,Sub,25,"Sub sub1A31 (p00F0 As Integer ' 41, p00F2 As Integer ' 41)",72,fn034F;fn19F4;sub04FC;sub1A3F
+Module9.bas,sub1A50,Sub,74,Sub sub1A50 (),92,sub063F
+Module9.bas,sub0CB7,Sub,94,Sub sub0CB7 (p011C As Integer ' 41),117,sub09DE
+Module9.bas,sub0E99,Sub,119,Sub sub0E99 (p0126 As Integer ' 41),129,sub09DE
+Module9.bas,sub09DE,Sub,131,Sub sub09DE (p0128 ' 40),164,sub1A31
+Module9.bas,sub1005,Sub,166,Sub sub1005 (p013E As Integer ' 41),193,sub09DE
+Module9.bas,sub086D,Sub,195,Sub sub086D (p0150 ' 40),224,sub1A31
+Module9.bas,sub08D1,Sub,226,Sub sub08D1 (p015C ' 40),243,sub1A31
+Module9.bas,sub1A3F,Sub,245,Sub sub1A3F (),256,
+Module9.bas,sub064E,Sub,258,Sub sub064E (p016E As Long ' 42),261,
+Module9.bas,sub0618,Sub,263,Sub sub0618 (),284,
+Module9.bas,fn19DC,Function,286,Function fn19DC () As Integer ' 1,297,
+Module9.bas,sub062D,Sub,299,Sub sub062D (),341,sub04FC
+Module9.bas,fn19F4,Function,343,Function fn19F4 () As Integer ' 1,369,
+Module9.bas,fn1A08,Function,371,Function fn1A08 () As Integer ' 1,394,fn03BD
+Module9.bas,sub170B,Sub,396,Sub sub170B (),417,
+Module9.bas,fn1A1B,Function,419,Function fn1A1B () As Integer ' 1,426,
+Module9.bas,sub063F,Sub,428,Sub sub063F (p01B2 As Integer ' 41),464,fn034F;sub04FC;sub062D
+Module9.bas,sub0D35,Sub,466,Sub sub0D35 (p01B6 As Integer ' 41),515,sub09DE

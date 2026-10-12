@@ -1,0 +1,53 @@
+{
+  "evidence": "Literal supplied decompiler expressions; not executable or verified pricing code",
+  "variables": {
+    "V": "base price",
+    "S": "selected alignment stock",
+    "I": "identification field",
+    "C": "instance charges",
+    "B": "definition charges",
+    "K": "bundle penalty multiplier"
+  },
+  "bundle_subtypes": [
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    30,
+    31
+  ],
+  "buy": {
+    "source": "FRMCTYS.bas:583 fn272C",
+    "first_level_zero": "V",
+    "other": "VB_Long((1.5*V)/(ln(min(S-1,9)+1)+1.15) - VB_Single(ln(abs(B - gv1426(l0202).M56DB)+1))*(0.05*V))",
+    "blockers": [
+      "l0202 is declared but not assigned in this function",
+      "S=0 reaches ln(0); eligibility caller matters",
+      "VB numeric precision and error handler must be reproduced"
+    ]
+  },
+  "sell": {
+    "source": "FRMCTYS.bas:695 fn273B",
+    "formula": "T=VB_Long((0.9*V/(S+1.15))/(I+1)); quote=VB_Long(T - VB_Single(K*ln(abs(C-B)+1))*(0.05*T))",
+    "guards": [
+      "Selected stock zero becomes one if another alignment has stock; cap S at 9",
+      "Eight bundle subtypes with B>0 use K=5 and C=min(C,B); otherwise K=1",
+      "Fully identified inherently cursed goods return zero",
+      "Earlier equipped/inherent curse guard can set V=0; caller blocks equipped cursed sales"
+    ]
+  },
+  "identify": {
+    "source": "FRMCTYS.bas:564 fn271B",
+    "formula": "VB_Long((0.23*V)/(((min(S,9)/2)+1)*0.9)/I + 1)",
+    "guard": "I=0 must be excluded by caller"
+  },
+  "uncurse": {
+    "source": "FRMCTYS.bas:763 fn274F",
+    "formula": "VB_Long((0.8*V)/0.5)",
+    "guard": "Separate item from character; intrinsic curse may remain"
+  },
+  "rounding": "VB_Long/VB_Single mark conversion boundaries, not a supplied tested emulator",
+  "stock": "Mutable save-state stock is intentionally not treated as a canonical static price table"
+}

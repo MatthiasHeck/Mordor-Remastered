@@ -1,0 +1,365 @@
+{
+  "status": "STATIC_PERSISTENCE_TRACE_BUILT_RUNTIME_PENDING",
+  "data": {
+    "character_record_length_candidate": 2900,
+    "fixed_record_files": [
+      "character",
+      "automap",
+      "companion_store",
+      "hall",
+      "library",
+      "maze",
+      "item_store"
+    ],
+    "configuration_file": "MORDOR.INI",
+    "source_status": "static random-file serializers and disposable lab preparation",
+    "interpretation": "Record layouts and write paths are preserved candidates; complete field coverage, trigger timing, legacy conversion and unknown-byte behavior require round-trip observation."
+  },
+  "source_procedures": [
+    {
+      "file": "Module2.bas",
+      "procedure": "sub046B",
+      "role": "version_migration",
+      "start_line": 98,
+      "end_line": 230,
+      "signature": "Sub sub046B ()",
+      "summary": "initializes fixed record files and migrates version-stamped character records",
+      "evidence": "original-export/code/source/Module2.bas:98"
+    },
+    {
+      "file": "Module2.bas",
+      "procedure": "fn04B9",
+      "role": "character_exists",
+      "start_line": 232,
+      "end_line": 277,
+      "signature": "Function fn04B9 (ByVal p0090 As String ' 47) As Integer ' 1",
+      "summary": "opens the character file and searches nonempty records by name",
+      "evidence": "original-export/code/source/Module2.bas:232"
+    },
+    {
+      "file": "Module2.bas",
+      "procedure": "fn04CD",
+      "role": "character_load",
+      "start_line": 279,
+      "end_line": 349,
+      "signature": "Function fn04CD (p00A4 As String ' 47, p00A6 As String ' 47, ByVal pv00A8 As Integer ' 81, p00AA As Integer ' 41) As Integer ' 1",
+      "summary": "loads a character record, expands active arrays and restores location metadata",
+      "evidence": "original-export/code/source/Module2.bas:279"
+    },
+    {
+      "file": "Module2.bas",
+      "procedure": "fn04ED",
+      "role": "character_save",
+      "start_line": 351,
+      "end_line": 412,
+      "signature": "Function fn04ED (p00D6 As T5810 ' 4A) As Integer ' 1",
+      "summary": "writes the character header/count and updates or appends a fixed record",
+      "evidence": "original-export/code/source/Module2.bas:351"
+    },
+    {
+      "file": "Module2.bas",
+      "procedure": "sub04DC",
+      "role": "character_unload",
+      "start_line": 414,
+      "end_line": 462,
+      "signature": "Sub sub04DC (p00E6 As Integer ' 41)",
+      "summary": "saves then removes a character from the active party array",
+      "evidence": "original-export/code/source/Module2.bas:414"
+    },
+    {
+      "file": "Module2.bas",
+      "procedure": "sub0536",
+      "role": "automap_create",
+      "start_line": 491,
+      "end_line": 520,
+      "signature": "Sub sub0536 ()",
+      "summary": "creates and initializes the fixed-record automap file",
+      "evidence": "original-export/code/source/Module2.bas:491"
+    },
+    {
+      "file": "Module2.bas",
+      "procedure": "sub054E",
+      "role": "companion_store_create",
+      "start_line": 522,
+      "end_line": 560,
+      "signature": "Sub sub054E ()",
+      "summary": "creates the companion stock file and its header/records",
+      "evidence": "original-export/code/source/Module2.bas:522"
+    },
+    {
+      "file": "Module2.bas",
+      "procedure": "sub05AA",
+      "role": "library_create",
+      "start_line": 719,
+      "end_line": 795,
+      "signature": "Sub sub05AA ()",
+      "summary": "creates the library file with date/randomized record fields",
+      "evidence": "original-export/code/source/Module2.bas:719"
+    },
+    {
+      "file": "Module2.bas",
+      "procedure": "sub04A3",
+      "role": "maze_create",
+      "start_line": 797,
+      "end_line": 842,
+      "signature": "Sub sub04A3 ()",
+      "summary": "creates the maze reference file and zeroed maze records",
+      "evidence": "original-export/code/source/Module2.bas:797"
+    },
+    {
+      "file": "Module2.bas",
+      "procedure": "sub05C2",
+      "role": "item_store_create",
+      "start_line": 844,
+      "end_line": 911,
+      "signature": "Sub sub05C2 ()",
+      "summary": "creates the item store file and initial stock records",
+      "evidence": "original-export/code/source/Module2.bas:844"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "sub0A7C",
+      "role": "pending_state_save",
+      "start_line": 6044,
+      "end_line": 6072,
+      "signature": "Sub sub0A7C (p0844 As Integer ' 41, p0846 As Integer ' 41, p0848 As Integer ' 41)",
+      "summary": "writes pending recovery fields into a character record",
+      "evidence": "original-export/code/source/Module6.bas:6044"
+    },
+    {
+      "file": "Module6.bas",
+      "procedure": "fn10A3",
+      "role": "recovery_save_trigger",
+      "start_line": 5926,
+      "end_line": 5983,
+      "signature": "Function fn10A3 (ByVal pv0822 As Integer ' 81) As Integer ' 1",
+      "summary": "saves the character after pending recovery acceptance/failure",
+      "evidence": "original-export/code/source/Module6.bas:5926"
+    }
+  ],
+  "source_events": [
+    {
+      "file": "Module2.bas",
+      "line": 126,
+      "procedure": "sub046B",
+      "event": "fixed_file_init",
+      "expression": "version/header files are opened and stamped before character data",
+      "source_text": "Open gv19E8 + gc1C74 + gc1C1C For Random Shared As #l003A Len = mc0048"
+    },
+    {
+      "file": "Module2.bas",
+      "line": 148,
+      "procedure": "sub046B",
+      "event": "version_migration_read",
+      "expression": "old character records are read before migration mutations",
+      "source_text": "Open gv19E8 + gc1C74 + gc1C10 For Random As #l003A Len = mc0064"
+    },
+    {
+      "file": "Module2.bas",
+      "line": 211,
+      "procedure": "sub046B",
+      "event": "version_migration_write",
+      "expression": "migrated records are written back in place",
+      "source_text": "Put #l003A, (Seek(l003A) - 1), gv14C2(m0070)"
+    },
+    {
+      "file": "Module2.bas",
+      "line": 232,
+      "procedure": "fn04B9",
+      "event": "character_lookup",
+      "expression": "character names are searched across nonempty fixed records",
+      "source_text": "Function fn04B9 (ByVal p0090 As String ' 47) As Integer ' 1"
+    },
+    {
+      "file": "Module2.bas",
+      "line": 279,
+      "procedure": "fn04CD",
+      "event": "character_load_entry",
+      "expression": "load opens the fixed-record character file",
+      "source_text": "Function fn04CD (p00A4 As String ' 47, p00A6 As String ' 47, ByVal pv00A8 As Integer ' 81, p00AA As Integer ' 41) As Integer ' 1"
+    },
+    {
+      "file": "Module2.bas",
+      "line": 321,
+      "procedure": "fn04CD",
+      "event": "character_load_record",
+      "expression": "matching record is copied into the active array",
+      "source_text": "Get #l00B0, l00B2 + 2 + l00B8, gv14C2(pv00A8)"
+    },
+    {
+      "file": "Module2.bas",
+      "line": 351,
+      "procedure": "fn04ED",
+      "event": "character_save_entry",
+      "expression": "save rejects blank names before opening the character file",
+      "source_text": "Function fn04ED (p00D6 As T5810 ' 4A) As Integer ' 1"
+    },
+    {
+      "file": "Module2.bas",
+      "line": 371,
+      "procedure": "fn04ED",
+      "event": "character_header_write",
+      "expression": "save stamps the file and writes the current count",
+      "source_text": "Put #l00DC, 1, l00D8$"
+    },
+    {
+      "file": "Module2.bas",
+      "line": 390,
+      "procedure": "fn04ED",
+      "event": "character_record_update",
+      "expression": "existing or appended record is written at its stored index",
+      "source_text": "Put #l00DC, l00DE + 2 + l00E4, p00D6"
+    },
+    {
+      "file": "Module2.bas",
+      "line": 414,
+      "procedure": "sub04DC",
+      "event": "character_remove",
+      "expression": "unload saves then compacts active arrays",
+      "source_text": "Sub sub04DC (p00E6 As Integer ' 41)"
+    },
+    {
+      "file": "Module2.bas",
+      "line": 503,
+      "procedure": "sub0536",
+      "event": "automap_write",
+      "expression": "automap header and zero-filled records are written",
+      "source_text": "Open gv19E8 + gc1C74 + gc1C20 For Random As #gv1B58 Len = mc004E"
+    },
+    {
+      "file": "Module2.bas",
+      "line": 530,
+      "procedure": "sub054E",
+      "event": "companion_store_write",
+      "expression": "companion store header, count and records are written",
+      "source_text": "Open gv19E8 + gc1C74 + gc1C44 For Random As #l0128 Len = mc0056"
+    },
+    {
+      "file": "Module2.bas",
+      "line": 632,
+      "procedure": "sub0595",
+      "event": "hall_write",
+      "expression": "hall records include date and randomized fields",
+      "source_text": "Open fn0360(gv19E8) + gc1C74 + gc1C1C For Random As #l0142 Len = mc0048"
+    },
+    {
+      "file": "Module2.bas",
+      "line": 735,
+      "procedure": "sub05AA",
+      "event": "library_write",
+      "expression": "library header/count and records are written",
+      "source_text": "Open gv19E8 + gc1C74 + gc1C3C For Random As #l0182 Len = mc0190"
+    },
+    {
+      "file": "Module2.bas",
+      "line": 813,
+      "procedure": "sub04A3",
+      "event": "maze_write",
+      "expression": "maze reference and generated records are written",
+      "source_text": "Open gv19E8 + gc1C74 + gc1C30 For Random As #l01A6 Len = mc01B2"
+    },
+    {
+      "file": "Module2.bas",
+      "line": 852,
+      "procedure": "sub05C2",
+      "event": "item_store_write",
+      "expression": "item store header/count and stock records are written",
+      "source_text": "Open gv19E8 + gc1C74 + gc1C18 For Random As #l01CC Len = mc0052"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 6044,
+      "procedure": "sub0A7C",
+      "event": "pending_record_write",
+      "expression": "pending recovery fields are written to the character record",
+      "source_text": "Sub sub0A7C (p0844 As Integer ' 41, p0846 As Integer ' 41, p0848 As Integer ' 41)"
+    },
+    {
+      "file": "Module6.bas",
+      "line": 5979,
+      "procedure": "fn10A3",
+      "event": "recovery_save",
+      "expression": "recovery result is saved through the character serializer",
+      "source_text": "l0826 = fn04ED(gv14C2(pv0822))"
+    }
+  ],
+  "source_event_count": 18,
+  "runtime_cases": [
+    {
+      "id": "CHARACTER-ROUNDTRIP",
+      "setup": "fresh, mutated, pending and deleted character records",
+      "trace_focus": "all known fields, record indices, count and active-array state",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "CHARACTER-APPEND",
+      "setup": "save with empty file, hole, and append-at-end cases",
+      "trace_focus": "header/count/index allocation and name lookup",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "CHARACTER-REMOVE",
+      "setup": "unload middle, first and last active party member",
+      "trace_focus": "save-before-compact and active index repair",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "VERSION-MIGRATION",
+      "setup": "version stamp mismatch with equipped items, spells, companions and pending state",
+      "trace_focus": "migration mutations and lossless/intentional field changes",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "AUTOMAP-ROUNDTRIP",
+      "setup": "mutate explored cells and reload",
+      "trace_focus": "coordinate records, flags and zero/default fields",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "STORE-ROUNDTRIP",
+      "setup": "mutate item and companion stock then reopen",
+      "trace_focus": "stock counts, definitions, headers and caps",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "WORLD-ROUNDTRIP",
+      "setup": "mutate maze, area and world records then reload",
+      "trace_focus": "world positions, encounters, timers and unknown fields",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "PENDING-ROUNDTRIP",
+      "setup": "write pending recovery, save, reload and accept",
+      "trace_focus": "pending location/threshold/initiator/method preservation",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "LEGACY-IMPORT",
+      "setup": "older stamped file with holes and duplicate names",
+      "trace_focus": "conversion decision, slot mapping and error paths",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    },
+    {
+      "id": "FAILURE-PATH",
+      "setup": "unwritable/corrupt/header-mismatch copies in disposable lab",
+      "trace_focus": "error handling, partial writes and runtime messages",
+      "expected_result": null,
+      "status": "planned_not_executed"
+    }
+  ],
+  "runtime_case_count": 10,
+  "runtime_requirements": [
+    "run the exact original executable against disposable copied files only",
+    "snapshot every file before and after each mutation and compare fixed records byte-for-byte",
+    "exercise version mismatch, holes, duplicate names, pending recovery and write-failure paths"
+  ]
+}

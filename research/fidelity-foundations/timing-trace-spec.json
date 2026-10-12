@@ -1,0 +1,218 @@
+{
+  "status": "STATIC_TIMING_TRACE_BUILT_RUNTIME_PENDING",
+  "timer_controls": [
+    {
+      "form": "FRMCREDI.FRM",
+      "control": "timAnimate",
+      "stored_interval_ms": 2000,
+      "bytes": "0a 74 69 6d 41 6e 69 6d 61 74 65 0b ff 03 d0 07 00 00 07 aa 0a 00 00 08 60 18 00 00 ff 03",
+      "evidence": "binary_form_candidate",
+      "observed": null
+    },
+    {
+      "form": "FRMDUNM.FRM",
+      "control": "timCombat",
+      "stored_interval_ms": 1500,
+      "bytes": "09 74 69 6d 43 6f 6d 62 61 74 0b ff 03 dc 05 00 00 07 86 10 00 00 08 ca 08 00 00 ff 03",
+      "evidence": "binary_form_candidate",
+      "observed": null
+    },
+    {
+      "form": "FRMDUNM.FRM",
+      "control": "timAilment",
+      "stored_interval_ms": 4000,
+      "bytes": "0a 74 69 6d 41 69 6c 6d 65 6e 74 0b ff 03 a0 0f 00 00 07 66 12 00 00 08 ca 08 00 00 ff 03",
+      "evidence": "binary_form_candidate",
+      "observed": null
+    },
+    {
+      "form": "FRMMAIN.FRM",
+      "control": "timMusic",
+      "stored_interval_ms": 10000,
+      "bytes": "08 74 69 6d 4d 75 73 69 63 0b ff 03 10 27 00 00 07 3b 1f 00 00 08 2d 00 00 00 ff 03",
+      "evidence": "binary_form_candidate",
+      "observed": null
+    }
+  ],
+  "source_events": [
+    {
+      "file": "Module3.bas",
+      "line": 724,
+      "procedure": "sub0A49",
+      "event": "constant_declaration",
+      "expression": "mc01B0 = 1000"
+    },
+    {
+      "file": "Module3.bas",
+      "line": 734,
+      "procedure": "sub0A49",
+      "event": "combat_interval_assignment",
+      "expression": "frmDungeonMain!timCombat.Interval = mc01B0"
+    },
+    {
+      "file": "FRMDUNM.bas",
+      "line": 240,
+      "procedure": "Form_Load",
+      "event": "combat_interval_setup_call",
+      "expression": "sub0A49"
+    },
+    {
+      "file": "FRMDUNM.bas",
+      "line": 612,
+      "procedure": "timCombat_Timer",
+      "event": "combat_callback_entry",
+      "expression": "timCombat_Timer"
+    },
+    {
+      "file": "FRMDUNM.bas",
+      "line": 613,
+      "procedure": "timCombat_Timer",
+      "event": "pause_or_reentry_guard",
+      "expression": "If m0024 = True Or gv1ACC.M602F = True Then Exit Sub"
+    },
+    {
+      "file": "FRMDUNM.bas",
+      "line": 622,
+      "procedure": "timCombat_Timer",
+      "event": "combat_round_dispatch",
+      "expression": "sub155A gv14C2(m00A4).M59BB"
+    },
+    {
+      "file": "FRMDUNM.bas",
+      "line": 391,
+      "procedure": "timAilment_Timer",
+      "event": "ailment_callback_entry",
+      "expression": "timAilment_Timer"
+    },
+    {
+      "file": "FRMDUNM.bas",
+      "line": 427,
+      "procedure": "timAilment_Timer",
+      "event": "pause_guard",
+      "expression": "If m0026 = True Or gv1ACC.M602F = True Then Exit Sub"
+    },
+    {
+      "file": "FRMMAIN.bas",
+      "line": 288,
+      "procedure": "timMusic_Timer",
+      "event": "music_callback_entry",
+      "expression": "timMusic_Timer"
+    },
+    {
+      "file": "FRMMAIN.bas",
+      "line": 292,
+      "procedure": "timMusic_Timer",
+      "event": "music_pause_guard",
+      "expression": "If gv1ACC.M602F = False Then"
+    },
+    {
+      "file": "FRMMAIN.bas",
+      "line": 209,
+      "procedure": "MDIForm_Activate",
+      "event": "pause_set",
+      "expression": "gv1ACC.M602F = True"
+    },
+    {
+      "file": "FRMMAIN.bas",
+      "line": 221,
+      "procedure": "MDIForm_Activate",
+      "event": "pause_clear",
+      "expression": "gv1ACC.M602F = False"
+    }
+  ],
+  "timer_pause_reference_count": 36,
+  "runtime_cases": [
+    {
+      "id": "TIM01",
+      "related": [
+        "F09",
+        "V27"
+      ],
+      "purpose": "Separate stored timer defaults from runtime overrides and effective attack cadence.",
+      "setup": "One living character in a hostile room, no ailments; known default command and no manual input.",
+      "steps": [
+        "Record timer properties immediately after form creation and after dungeon-entry setup.",
+        "Timestamp combat callback entry, sub155A entry and actual actor actions independently for at least 30 seconds.",
+        "Repeat with two and four party members and a peaceful encounter."
+      ],
+      "capture": [
+        "timCombat.Interval",
+        "callback timestamps",
+        "actor actions",
+        "party state",
+        "guard state"
+      ],
+      "static_candidates": {
+        "form_combat_value": 1500,
+        "dungeon_assignment_ms": 1000,
+        "later_help_round_ms": 2000
+      },
+      "observed": null
+    },
+    {
+      "id": "TIM02",
+      "related": [
+        "F09",
+        "F23",
+        "V27",
+        "V28"
+      ],
+      "purpose": "Measure ailments and pause guards without conflating them with combat ticks.",
+      "setup": "Copied injured/poisoned character with sufficient HP; capture poison and disease separately.",
+      "steps": [
+        "Observe ailment callbacks and HP changes while idle.",
+        "Minimize and restore to normal; then minimize and restore maximized.",
+        "Repeat with focus loss, modal dialogs and manual commands."
+      ],
+      "capture": [
+        "timAilment.Interval",
+        "callback timestamps",
+        "M602F",
+        "severity fields",
+        "HP",
+        "random draws"
+      ],
+      "static_candidates": {
+        "form_ailment_value": 4000
+      },
+      "observed": null
+    },
+    {
+      "id": "TIM03",
+      "related": [
+        "F09",
+        "V13",
+        "V27",
+        "V31"
+      ],
+      "purpose": "Determine how manual actions interact with a pending automatic round.",
+      "setup": "Controlled hostile encounter; stable party command defaults and observed timer phase.",
+      "steps": [
+        "Issue Fight just before a callback, exactly at an observed boundary, and just after.",
+        "Repeat with a spell, movement, target change and peaceful-to-hostile transition.",
+        "Log callbacks, reentrancy guards and complete action order."
+      ],
+      "capture": [
+        "input timestamps",
+        "callback timestamps",
+        "sub155A argument",
+        "character/companion/monster order",
+        "resource debits"
+      ],
+      "observed": null
+    }
+  ],
+  "static_candidates": {
+    "combat_form_ms": 1500,
+    "combat_assignment_ms": 1000,
+    "ailment_form_ms": 4000,
+    "music_form_ms": 10000
+  },
+  "known_discrepancy": "The form stores 1500 ms for timCombat while dungeon setup assigns 1000 ms; later help claims 2000 ms. Effective cadence is unobserved.",
+  "runtime_requirements": [
+    "timestamp timer callbacks and actual actions",
+    "capture re-entry and pause guards",
+    "repeat with party sizes and focus/minimize/modal states",
+    "separate stored interval from effective action cadence"
+  ]
+}
